@@ -13,6 +13,11 @@ def main():
     parser.add_argument("--run", type=Path, required=True)
     parser.add_argument("--analysis", type=Path, required=True)
     parser.add_argument("--output", type=Path, required=True)
+    parser.add_argument(
+        "--replication-record",
+        type=Path,
+        help="Sanitized checksum-verification record from a completed storage transfer",
+    )
     args = parser.parse_args()
     for name in ("summary.json", "metrics.json", "selector-diagnostics.json", "provenance.json"):
         immutable_json(args.output / name, read_json(args.analysis / name))
@@ -70,7 +75,9 @@ def main():
             "mode": read_json(args.run / "manifest.json")["mode"],
             "files": identities,
             "local_storage": str(args.run),
-            "remote_replication": "pending: gateway cannot reach pod",
+            "remote_replication": read_json(args.replication_record)
+            if args.replication_record
+            else {"status": "unverified", "reason": "No transfer verification record supplied"},
             "no_new_generations": not any(
                 e["event"] == "generation_start" and not e.get("copied_for_replay")
                 for e in Journal(args.run / "calls.jsonl").read()
