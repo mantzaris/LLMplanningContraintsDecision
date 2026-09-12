@@ -1,0 +1,14 @@
+{
+  "attempts": 3,
+  "authentication": "existing normal SSH identities; later attempts explicitly selected the existing RSA identity",
+  "connection_details": "kept out of Git; no direct TCP endpoint invented",
+  "generations": 0,
+  "model_loaded": false,
+  "project_inference_processes_launched": 0,
+  "recorded_at": "2026-09-12T16:37:27.814894+00:00",
+  "remote_gpu_or_jobs_inspected_this_stage": false,
+  "remote_shell_obtained": false,
+  "sanitized_diagnostic": "ssh: connect to host [gateway-internal pod address] port 2002: Connection timed out; gateway connection closed",
+  "status": "gateway_to_pod_connection_timeout",
+  "unrelated_processes_modified": false
+}

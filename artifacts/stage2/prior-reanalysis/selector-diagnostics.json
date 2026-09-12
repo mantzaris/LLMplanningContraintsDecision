@@ -1,0 +1,118 @@
+[
+  {
+    "balanced": {
+      "chosen": null,
+      "ranked_ids": [],
+      "top_tie_count": 0
+    },
+    "base_id": "g00",
+    "candidate_plan_disagreements": 0,
+    "consequence": {
+      "chosen": null,
+      "ranked_ids": [],
+      "top_tie_count": 0
+    },
+    "different_choice": false,
+    "different_ranking": false,
+    "distinct_journey_acceptance_patterns": 1,
+    "pairs": [],
+    "raw_candidates": 4,
+    "reference_equivalent_candidate": false,
+    "replicate": 0,
+    "scenario_id": "g00-infeasible-p0",
+    "semantic_classes": 0,
+    "syntactic_classes": 0,
+    "trajectory_diverged": false,
+    "valid_candidates": 0,
+    "variable_weights": false,
+    "weight_histogram": {},
+    "witness_count": 0
+  },
+  {
+    "balanced": {
+      "chosen": null,
+      "ranked_ids": [],
+      "top_tie_count": 0
+    },
+    "base_id": "g00",
+    "candidate_plan_disagreements": 0,
+    "consequence": {
+      "chosen": null,
+      "ranked_ids": [],
+      "top_tie_count": 0
+    },
+    "different_choice": false,
+    "different_ranking": false,
+    "distinct_journey_acceptance_patterns": 2,
+    "pairs": [],
+    "raw_candidates": 4,
+    "reference_equivalent_candidate": true,
+    "replicate": 0,
+    "scenario_id": "g00-negation-p0",
+    "semantic_classes": 1,
+    "syntactic_classes": 1,
+    "trajectory_diverged": false,
+    "valid_candidates": 4,
+    "variable_weights": false,
+    "weight_histogram": {},
+    "witness_count": 0
+  },
+  {
+    "balanced": {
+      "chosen": null,
+      "ranked_ids": [],
+      "top_tie_count": 0
+    },
+    "base_id": "g00",
+    "candidate_plan_disagreements": 0,
+    "consequence": {
+      "chosen": null,
+      "ranked_ids": [],
+      "top_tie_count": 0
+    },
+    "different_choice": false,
+    "different_ranking": false,
+    "distinct_journey_acceptance_patterns": 1,
+    "pairs": [],
+    "raw_candidates": 4,
+    "reference_equivalent_candidate": false,
+    "replicate": 0,
+    "scenario_id": "g00-scope-p0",
+    "semantic_classes": 1,
+    "syntactic_classes": 2,
+    "trajectory_diverged": false,
+    "valid_candidates": 4,
+    "variable_weights": false,
+    "weight_histogram": {},
+    "witness_count": 0
+  },
+  {
+    "balanced": {
+      "chosen": null,
+      "ranked_ids": [],
+      "top_tie_count": 0
+    },
+    "base_id": "g00",
+    "candidate_plan_disagreements": 0,
+    "consequence": {
+      "chosen": null,
+      "ranked_ids": [],
+      "top_tie_count": 0
+    },
+    "different_choice": false,
+    "different_ranking": false,
+    "distinct_journey_acceptance_patterns": 2,
+    "pairs": [],
+    "raw_candidates": 4,
+    "reference_equivalent_candidate": true,
+    "replicate": 0,
+    "scenario_id": "g00-timing-p0",
+    "semantic_classes": 1,
+    "syntactic_classes": 1,
+    "trajectory_diverged": false,
+    "valid_candidates": 4,
+    "variable_weights": false,
+    "weight_histogram": {},
+    "witness_count": 0
+  }
+]

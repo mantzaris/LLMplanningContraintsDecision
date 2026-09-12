@@ -1,0 +1,30 @@
+{
+  "authorized_ceiling": {
+    "aggregate_gpu_seconds": 7200,
+    "generation_attempts": 1500
+  },
+  "cumulative_additional_uncertainty_upper_bound_seconds": 30,
+  "cumulative_generation_attempts": 46,
+  "cumulative_model_resident_seconds": 237.39021502621472,
+  "events": [
+    {
+      "event": "allocation",
+      "request_limit": 1500,
+      "seconds_limit": 7170,
+      "stage": "stage2"
+    }
+  ],
+  "generation_attempts": 0,
+  "input_tokens": 0,
+  "model_resident_seconds": 0,
+  "output_tokens": 0,
+  "prior_accounting_sha256": "2412d75a388c4a8dc6b186cf4c74ef85a6c5b853ef1625f540ddda6b80cf87c2",
+  "programmatic_guard": {
+    "generation_attempts": 1500,
+    "model_resident_seconds": 7170,
+    "reserved_teardown_margin_seconds": 30
+  },
+  "stage": "stage2",
+  "stage2_additional_uncertainty_seconds": 0,
+  "status": "blocked_before_model_loading"
+}

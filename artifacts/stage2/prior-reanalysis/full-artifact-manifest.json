@@ -1,0 +1,81 @@
+{
+  "files": {
+    "bundles/g00-infeasible-p0-r0.json": {
+      "bytes": 6647,
+      "sha256": "6f4a19d4c688cbc9541dafcc3d33a6b89437fbdd9d98f655bbb94fe95661ee3f"
+    },
+    "bundles/g00-negation-p0-r0.json": {
+      "bytes": 20263,
+      "sha256": "2dfa43147f75f675116e918ba931d7418d6da6f9e8c25dabae5df844b0574d0f"
+    },
+    "bundles/g00-scope-p0-r0.json": {
+      "bytes": 36581,
+      "sha256": "c77130156e94758a2a6b448c396f010b03d6f24d894bdd12d59be791027793df"
+    },
+    "bundles/g00-timing-p0-r0.json": {
+      "bytes": 20305,
+      "sha256": "3e39b8760a349c29fb361a7bd7b38eee1c4ee29ac459fe838b25531e2d584394"
+    },
+    "calls.jsonl": {
+      "bytes": 242198,
+      "sha256": "80298423399095098508c5a2ae1d65a856812caa09d4b43a36d1530282c90453"
+    },
+    "completion.json": {
+      "bytes": 113,
+      "sha256": "fed7952fa7818e1888406dd5ee65dc0e265f84911944d1fbe56a7d7c2ca5ef83"
+    },
+    "inputs/pools/2850a636a225c1b1d214289fc5d86581603a6e380e49002562996a30f84e1e07.json": {
+      "bytes": 781984,
+      "sha256": "a624ed9e393eda3ff74d466a149957ed1bb6d982d1c6cfa7536084e2343a4d9d"
+    },
+    "inputs/pools/c4b975fa1f0958e0437f17fa47e72c92b22682ad769357cc541f1ee90d4c17f3.json": {
+      "bytes": 62579,
+      "sha256": "eb04317849da660296545a02bae642b9761c487b2ae5d455f412b4f1e9f449f4"
+    },
+    "inputs/scenarios.json": {
+      "bytes": 14301,
+      "sha256": "1f7ab9e5ad3db5c942f8ae44eabd059beaec7fe25a38d1e0c613f4e88d01d942"
+    },
+    "manifest.json": {
+      "bytes": 1801,
+      "sha256": "94d6c52b676506fcb0ee516a1584886f20a98fbc0906e3d60cc82626a8423bde"
+    },
+    "pairs/g00-infeasible-p0-r0.json": {
+      "bytes": 49929,
+      "sha256": "4f89b9cbaa0fc315de5ac94866ece9a0039ea35b6a990f7a49d8aecdc947b8f0"
+    },
+    "pairs/g00-negation-p0-r0.json": {
+      "bytes": 163044,
+      "sha256": "b733c93c7f43fe01e7f560e7a1d44d74d417ecbcc3161e73ad3a523d4fd3b678"
+    },
+    "pairs/g00-scope-p0-r0.json": {
+      "bytes": 306105,
+      "sha256": "67f19cc0fc81aa5dd1daf3db5c1e8b545b4a491cc52fec0b43a629693e9694e9"
+    },
+    "pairs/g00-timing-p0-r0.json": {
+      "bytes": 162673,
+      "sha256": "6db5980f47335d3d70774f4f0bd2a6141418a8c86b6305d585270d18a1978e7f"
+    },
+    "pools/2850a636a225c1b1d214289fc5d86581603a6e380e49002562996a30f84e1e07.json": {
+      "bytes": 781984,
+      "sha256": "a624ed9e393eda3ff74d466a149957ed1bb6d982d1c6cfa7536084e2343a4d9d"
+    },
+    "pools/c4b975fa1f0958e0437f17fa47e72c92b22682ad769357cc541f1ee90d4c17f3.json": {
+      "bytes": 62579,
+      "sha256": "eb04317849da660296545a02bae642b9761c487b2ae5d455f412b4f1e9f449f4"
+    },
+    "public-scenarios.json": {
+      "bytes": 14301,
+      "sha256": "b723bf5f29ab448586bad8a3cbac1e78281059ddcb157b441b6034a4dd44624b"
+    },
+    "scope.json": {
+      "bytes": 112,
+      "sha256": "ea04548c8cb1016616d509329f6d799eb78ce0dbb6c479c9cd62daae6a7498ad"
+    }
+  },
+  "local_storage": "runs/stage2-history-v2",
+  "mode": "stage1_saved_output_reanalysis_not_fresh_pilot",
+  "no_new_generations": true,
+  "remote_replication": "pending: gateway cannot reach pod",
+  "run_identity": "stage2-history-v2"
+}

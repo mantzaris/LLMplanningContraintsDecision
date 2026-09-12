@@ -14,3 +14,15 @@ and annotations are constructed, provisional development material; schedules are
 published services, not observed vehicle movements. The repository MIT license
 does not relicense agency data or model weights.
 
+
+## Controlled feasibility pilot (Stage 2)
+
+The [Stage 2 report](reports/STAGE2_CONTROLLED_PILOT.md) records a frozen 48-request,
+paired balanced-versus-consequence pilot, prefix budgets 0/1/2/4, a separate oracle
+replay, and reproducible analysis/figures. **Fresh GPU execution is blocked:** the
+supplied SSH gateway cannot reach its pod. Stage 2 generated no new model outputs.
+A labeled CPU reanalysis of the four previous smoke requests gives D = E = 2/4 correct,
+with no distinguishing witnesses and no oracle improvement; it is not the fresh pilot.
+See [protocol](docs/stage2-protocol.md), [annotation review](data/pilot/annotation-review.csv)
+and [exact reproduction/resume commands](docs/stage2-running.md). The research conclusion
+is inconclusive, with no demonstrated selection advantage.

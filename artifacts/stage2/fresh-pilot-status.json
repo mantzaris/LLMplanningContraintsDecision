@@ -1,0 +1,398 @@
+{
+  "completed_pairs": 0,
+  "execution": "not_started_gpu_access_blocked",
+  "method_comparison": null,
+  "missing_pairs": [
+    {
+      "replicate": 0,
+      "scenario_id": "pilot-00"
+    },
+    {
+      "replicate": 0,
+      "scenario_id": "pilot-01"
+    },
+    {
+      "replicate": 0,
+      "scenario_id": "pilot-02"
+    },
+    {
+      "replicate": 0,
+      "scenario_id": "pilot-03"
+    },
+    {
+      "replicate": 0,
+      "scenario_id": "pilot-04"
+    },
+    {
+      "replicate": 0,
+      "scenario_id": "pilot-05"
+    },
+    {
+      "replicate": 0,
+      "scenario_id": "pilot-06"
+    },
+    {
+      "replicate": 0,
+      "scenario_id": "pilot-07"
+    },
+    {
+      "replicate": 0,
+      "scenario_id": "pilot-08"
+    },
+    {
+      "replicate": 0,
+      "scenario_id": "pilot-09"
+    },
+    {
+      "replicate": 0,
+      "scenario_id": "pilot-10"
+    },
+    {
+      "replicate": 0,
+      "scenario_id": "pilot-11"
+    },
+    {
+      "replicate": 0,
+      "scenario_id": "pilot-12"
+    },
+    {
+      "replicate": 0,
+      "scenario_id": "pilot-13"
+    },
+    {
+      "replicate": 0,
+      "scenario_id": "pilot-14"
+    },
+    {
+      "replicate": 0,
+      "scenario_id": "pilot-15"
+    },
+    {
+      "replicate": 0,
+      "scenario_id": "pilot-16"
+    },
+    {
+      "replicate": 0,
+      "scenario_id": "pilot-17"
+    },
+    {
+      "replicate": 0,
+      "scenario_id": "pilot-18"
+    },
+    {
+      "replicate": 0,
+      "scenario_id": "pilot-19"
+    },
+    {
+      "replicate": 0,
+      "scenario_id": "pilot-20"
+    },
+    {
+      "replicate": 0,
+      "scenario_id": "pilot-21"
+    },
+    {
+      "replicate": 0,
+      "scenario_id": "pilot-22"
+    },
+    {
+      "replicate": 0,
+      "scenario_id": "pilot-23"
+    },
+    {
+      "replicate": 0,
+      "scenario_id": "pilot-24"
+    },
+    {
+      "replicate": 0,
+      "scenario_id": "pilot-25"
+    },
+    {
+      "replicate": 0,
+      "scenario_id": "pilot-26"
+    },
+    {
+      "replicate": 0,
+      "scenario_id": "pilot-27"
+    },
+    {
+      "replicate": 0,
+      "scenario_id": "pilot-28"
+    },
+    {
+      "replicate": 0,
+      "scenario_id": "pilot-29"
+    },
+    {
+      "replicate": 0,
+      "scenario_id": "pilot-30"
+    },
+    {
+      "replicate": 0,
+      "scenario_id": "pilot-31"
+    },
+    {
+      "replicate": 0,
+      "scenario_id": "pilot-32"
+    },
+    {
+      "replicate": 0,
+      "scenario_id": "pilot-33"
+    },
+    {
+      "replicate": 0,
+      "scenario_id": "pilot-34"
+    },
+    {
+      "replicate": 0,
+      "scenario_id": "pilot-35"
+    },
+    {
+      "replicate": 0,
+      "scenario_id": "pilot-36"
+    },
+    {
+      "replicate": 0,
+      "scenario_id": "pilot-37"
+    },
+    {
+      "replicate": 0,
+      "scenario_id": "pilot-38"
+    },
+    {
+      "replicate": 0,
+      "scenario_id": "pilot-39"
+    },
+    {
+      "replicate": 0,
+      "scenario_id": "pilot-40"
+    },
+    {
+      "replicate": 0,
+      "scenario_id": "pilot-41"
+    },
+    {
+      "replicate": 0,
+      "scenario_id": "pilot-42"
+    },
+    {
+      "replicate": 0,
+      "scenario_id": "pilot-43"
+    },
+    {
+      "replicate": 0,
+      "scenario_id": "pilot-44"
+    },
+    {
+      "replicate": 0,
+      "scenario_id": "pilot-45"
+    },
+    {
+      "replicate": 0,
+      "scenario_id": "pilot-46"
+    },
+    {
+      "replicate": 0,
+      "scenario_id": "pilot-47"
+    },
+    {
+      "replicate": 1,
+      "scenario_id": "pilot-00"
+    },
+    {
+      "replicate": 1,
+      "scenario_id": "pilot-01"
+    },
+    {
+      "replicate": 1,
+      "scenario_id": "pilot-02"
+    },
+    {
+      "replicate": 1,
+      "scenario_id": "pilot-03"
+    },
+    {
+      "replicate": 1,
+      "scenario_id": "pilot-04"
+    },
+    {
+      "replicate": 1,
+      "scenario_id": "pilot-05"
+    },
+    {
+      "replicate": 1,
+      "scenario_id": "pilot-06"
+    },
+    {
+      "replicate": 1,
+      "scenario_id": "pilot-07"
+    },
+    {
+      "replicate": 1,
+      "scenario_id": "pilot-08"
+    },
+    {
+      "replicate": 1,
+      "scenario_id": "pilot-09"
+    },
+    {
+      "replicate": 1,
+      "scenario_id": "pilot-10"
+    },
+    {
+      "replicate": 1,
+      "scenario_id": "pilot-11"
+    },
+    {
+      "replicate": 1,
+      "scenario_id": "pilot-12"
+    },
+    {
+      "replicate": 1,
+      "scenario_id": "pilot-13"
+    },
+    {
+      "replicate": 1,
+      "scenario_id": "pilot-14"
+    },
+    {
+      "replicate": 1,
+      "scenario_id": "pilot-15"
+    },
+    {
+      "replicate": 1,
+      "scenario_id": "pilot-16"
+    },
+    {
+      "replicate": 1,
+      "scenario_id": "pilot-17"
+    },
+    {
+      "replicate": 1,
+      "scenario_id": "pilot-18"
+    },
+    {
+      "replicate": 1,
+      "scenario_id": "pilot-19"
+    },
+    {
+      "replicate": 1,
+      "scenario_id": "pilot-20"
+    },
+    {
+      "replicate": 1,
+      "scenario_id": "pilot-21"
+    },
+    {
+      "replicate": 1,
+      "scenario_id": "pilot-22"
+    },
+    {
+      "replicate": 1,
+      "scenario_id": "pilot-23"
+    },
+    {
+      "replicate": 1,
+      "scenario_id": "pilot-24"
+    },
+    {
+      "replicate": 1,
+      "scenario_id": "pilot-25"
+    },
+    {
+      "replicate": 1,
+      "scenario_id": "pilot-26"
+    },
+    {
+      "replicate": 1,
+      "scenario_id": "pilot-27"
+    },
+    {
+      "replicate": 1,
+      "scenario_id": "pilot-28"
+    },
+    {
+      "replicate": 1,
+      "scenario_id": "pilot-29"
+    },
+    {
+      "replicate": 1,
+      "scenario_id": "pilot-30"
+    },
+    {
+      "replicate": 1,
+      "scenario_id": "pilot-31"
+    },
+    {
+      "replicate": 1,
+      "scenario_id": "pilot-32"
+    },
+    {
+      "replicate": 1,
+      "scenario_id": "pilot-33"
+    },
+    {
+      "replicate": 1,
+      "scenario_id": "pilot-34"
+    },
+    {
+      "replicate": 1,
+      "scenario_id": "pilot-35"
+    },
+    {
+      "replicate": 1,
+      "scenario_id": "pilot-36"
+    },
+    {
+      "replicate": 1,
+      "scenario_id": "pilot-37"
+    },
+    {
+      "replicate": 1,
+      "scenario_id": "pilot-38"
+    },
+    {
+      "replicate": 1,
+      "scenario_id": "pilot-39"
+    },
+    {
+      "replicate": 1,
+      "scenario_id": "pilot-40"
+    },
+    {
+      "replicate": 1,
+      "scenario_id": "pilot-41"
+    },
+    {
+      "replicate": 1,
+      "scenario_id": "pilot-42"
+    },
+    {
+      "replicate": 1,
+      "scenario_id": "pilot-43"
+    },
+    {
+      "replicate": 1,
+      "scenario_id": "pilot-44"
+    },
+    {
+      "replicate": 1,
+      "scenario_id": "pilot-45"
+    },
+    {
+      "replicate": 1,
+      "scenario_id": "pilot-46"
+    },
+    {
+      "replicate": 1,
+      "scenario_id": "pilot-47"
+    }
+  ],
+  "oracle_on_fresh_bundles": null,
+  "planned_base_requests": 48,
+  "planned_pairs": 96,
+  "planned_replicates": 2,
+  "protocol_commit": "1aa2ad1",
+  "protocol_id": "stage2-controlled-v1",
+  "reason": "No fresh candidate bundles exist"
+}

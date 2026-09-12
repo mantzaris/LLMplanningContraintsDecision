@@ -1,0 +1,59 @@
+{
+  "actual_new_generations": 0,
+  "config": {
+    "candidate_count": 4,
+    "gpu_request_limit": 100,
+    "gpu_seconds_limit": 3600,
+    "judge_mode": "model",
+    "judgment_limit": 4,
+    "max_new_tokens": 768,
+    "method_call_limit": 8,
+    "methods": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "model_id": "Qwen/Qwen2.5-7B-Instruct",
+    "model_revision": "a09a35458c702b33eeacc393d103063234e8bc28",
+    "principal_repair_limit": 0,
+    "record_prefixes": true,
+    "repair_limit": 0,
+    "replicates": 1,
+    "scenario_ids": [
+      "g00-timing-p0",
+      "g00-negation-p0",
+      "g00-scope-p0",
+      "g00-infeasible-p0"
+    ],
+    "seed": 104,
+    "solver_timeout_ms": 5000,
+    "temperature": 0.7,
+    "validation_budgets": [
+      0,
+      1,
+      2,
+      4
+    ]
+  },
+  "config_hash": "beaa9f05989cb76fe9cb1f1d3c5c40c3842f452f37f760a6a20baac9e5c6f24f",
+  "mode": "stage1_saved_output_reanalysis_not_fresh_pilot",
+  "model": {
+    "backend": "transformers",
+    "identifier": "Qwen/Qwen2.5-7B-Instruct",
+    "precision": "bfloat16",
+    "quantization": null,
+    "revision": "a09a35458c702b33eeacc393d103063234e8bc28",
+    "same_translation_judgment_model": true,
+    "tokenizer": "Qwen/Qwen2.5-7B-Instruct",
+    "tokenizer_revision": "a09a35458c702b33eeacc393d103063234e8bc28",
+    "torch": "2.8.0+cu128",
+    "transformers": "4.51.3"
+  },
+  "prompt_hash": "f07003581145201e3011a76dcbd8bf8043f3dc60f0079778afe7949a4b427d35",
+  "public_hash": "f22ddfe4ad0b27f99960879d8ffc64cd6706ccf12cceb2f0ca922a623460c1c6",
+  "repository_revision": "df7c5b2a986d798c1b261888e6100b66f6423fe7",
+  "source_hash": "a0e4acc5145a0103d3e8d837f39e7a5898ff2ad6923afebedf4df71ba326b7c3",
+  "source_run_manifest_hash": "2b599fef9b2b8955a03ade93dab8dcfd96a2fb6a8a8655ea3a2b88eb28045f0d"
+}

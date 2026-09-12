@@ -1,0 +1,18 @@
+{
+  "stage1": "All original smoke-v1/v2/v3 records preserved; no changes to Stage 1 accounting",
+  "stage2-history-replay-v1": {
+    "error": "Replay mismatch: public_hash; use the recorded source revision",
+    "status": "failed before replay output generation"
+  },
+  "stage2-history-v1": {
+    "fix_commit": "df7c5b2",
+    "manifest_sha256": "44edff8b8b0fb8ae503b2901e76ec5a14201388e212b032600f42f9af8839c57",
+    "reason": "storage order vs declared execution order caused public_hash mismatch",
+    "replacement": "stage2-history-v2",
+    "status": "decisions retained, replay manifest superseded"
+  },
+  "stage2-history-v2": {
+    "actual_new_generations": 0,
+    "status": "four paired outputs verified by original-revision replay"
+  }
+}

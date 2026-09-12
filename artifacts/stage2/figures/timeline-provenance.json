@@ -1,0 +1,45 @@
+{
+  "feed_hash": "82e6b822de008367b3d3d35bb52545807ea41b6f56623a9aa4b1162b3d54671b",
+  "formula": {
+    "children": [
+      {
+        "kind": "atom",
+        "op": "max_transfers",
+        "scope": "outbound",
+        "source": null,
+        "unit": "count",
+        "value": 0
+      },
+      {
+        "kind": "atom",
+        "op": "depart_ge",
+        "scope": "return",
+        "source": null,
+        "unit": "seconds",
+        "value": 54900
+      }
+    ],
+    "kind": "all",
+    "source": null
+  },
+  "journey_id": "2ed119e99caddb639e7c",
+  "pool_hash": "2850a636a225c1b1d214289fc5d86581603a6e380e49002562996a30f84e1e07",
+  "reference": {
+    "and": [
+      {
+        "direction": "outbound",
+        "requirement": "transfer_limit",
+        "target": 0
+      },
+      {
+        "direction": "return",
+        "requirement": "earliest_departure",
+        "target": 33300
+      }
+    ]
+  },
+  "request": "On 2026-09-14, plan the outbound journey from OMSI/SE Water [stop_id=13773] to SW Hall & 5th [stop_id=13780]. Also plan a return segment from SW Hall & 5th [stop_id=13780] to NE Weidler & 15th [stop_id=10425] after 09:00:00. I handle any movement between the outbound destination and return origin myself outside these journeys. On the outbound segment only, make no transfers. On the return segment, depart no earlier than 09:15:00.",
+  "scenario_id": "g00-scope-p0",
+  "selection_rule": "first lexicographic saved false-infeasibility request, earliest independently feasible pool journey",
+  "stage": "Stage 1 artifact reanalysis, not new pilot inference"
+}

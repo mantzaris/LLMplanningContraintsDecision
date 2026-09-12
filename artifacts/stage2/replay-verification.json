@@ -1,0 +1,11 @@
+{
+  "comparison": "full paired decisions, formulas, judgments, witnesses, updates and secondary results; hardware timings/cache flags excluded",
+  "run_identity": "stage2-history-v2",
+  "source_revision": "df7c5b2a986d798c1b261888e6100b66f6423fe7",
+  "verification": {
+    "g00-infeasible-p0-r0.json": true,
+    "g00-negation-p0-r0.json": true,
+    "g00-scope-p0-r0.json": true,
+    "g00-timing-p0-r0.json": true
+  }
+}

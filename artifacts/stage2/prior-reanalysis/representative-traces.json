@@ -1,0 +1,1102 @@
+{
+  "correct": {
+    "candidates": [
+      {
+        "acceptance_count": 2,
+        "acceptance_hash": "81809d842edd27a884c4ad5feef8f8505a23192eeab5d8d6acfb879d70575ef7",
+        "aliases": [
+          "c0",
+          "c1",
+          "c2",
+          "c3"
+        ],
+        "candidate_id": "c0",
+        "formula": {
+          "children": [
+            {
+              "kind": "atom",
+              "op": "depart_ge",
+              "scope": "outbound",
+              "source": null,
+              "unit": "seconds",
+              "value": 27900
+            },
+            {
+              "kind": "atom",
+              "op": "exclude_modes",
+              "scope": "outbound",
+              "source": null,
+              "unit": "mode",
+              "value": [
+                "rail",
+                "tram"
+              ]
+            },
+            {
+              "kind": "atom",
+              "op": "max_transfers",
+              "scope": "outbound",
+              "source": null,
+              "unit": "count",
+              "value": 0
+            }
+          ],
+          "kind": "all",
+          "source": null
+        },
+        "plan": {
+          "plan_id": "0251c81551866be21afa",
+          "reason": null,
+          "solver_seconds": 0.016858763992786407,
+          "status": "satisfiable"
+        }
+      }
+    ],
+    "outputs": {
+      "D": {
+        "0": {
+          "errors": [],
+          "events": [
+            "no_distinguishing_witness_in_completed_pool"
+          ],
+          "final_formula": {
+            "children": [
+              {
+                "kind": "atom",
+                "op": "depart_ge",
+                "scope": "outbound",
+                "source": null,
+                "unit": "seconds",
+                "value": 27900
+              },
+              {
+                "kind": "atom",
+                "op": "exclude_modes",
+                "scope": "outbound",
+                "source": null,
+                "unit": "mode",
+                "value": [
+                  "rail",
+                  "tram"
+                ]
+              },
+              {
+                "kind": "atom",
+                "op": "max_transfers",
+                "scope": "outbound",
+                "source": null,
+                "unit": "count",
+                "value": 0
+              }
+            ],
+            "kind": "all",
+            "source": null
+          },
+          "initial_plan_id": "0251c81551866be21afa",
+          "judgments": [],
+          "plan_id": "0251c81551866be21afa",
+          "repairs": [],
+          "semantic_status": "unverified_no_semantic_evidence",
+          "status": "satisfiable",
+          "witnesses": []
+        },
+        "1": {
+          "errors": [],
+          "events": [
+            "no_distinguishing_witness_in_completed_pool"
+          ],
+          "final_formula": {
+            "children": [
+              {
+                "kind": "atom",
+                "op": "depart_ge",
+                "scope": "outbound",
+                "source": null,
+                "unit": "seconds",
+                "value": 27900
+              },
+              {
+                "kind": "atom",
+                "op": "exclude_modes",
+                "scope": "outbound",
+                "source": null,
+                "unit": "mode",
+                "value": [
+                  "rail",
+                  "tram"
+                ]
+              },
+              {
+                "kind": "atom",
+                "op": "max_transfers",
+                "scope": "outbound",
+                "source": null,
+                "unit": "count",
+                "value": 0
+              }
+            ],
+            "kind": "all",
+            "source": null
+          },
+          "initial_plan_id": "0251c81551866be21afa",
+          "judgments": [],
+          "plan_id": "0251c81551866be21afa",
+          "repairs": [],
+          "semantic_status": "unverified_no_semantic_evidence",
+          "status": "satisfiable",
+          "witnesses": []
+        },
+        "2": {
+          "errors": [],
+          "events": [
+            "no_distinguishing_witness_in_completed_pool"
+          ],
+          "final_formula": {
+            "children": [
+              {
+                "kind": "atom",
+                "op": "depart_ge",
+                "scope": "outbound",
+                "source": null,
+                "unit": "seconds",
+                "value": 27900
+              },
+              {
+                "kind": "atom",
+                "op": "exclude_modes",
+                "scope": "outbound",
+                "source": null,
+                "unit": "mode",
+                "value": [
+                  "rail",
+                  "tram"
+                ]
+              },
+              {
+                "kind": "atom",
+                "op": "max_transfers",
+                "scope": "outbound",
+                "source": null,
+                "unit": "count",
+                "value": 0
+              }
+            ],
+            "kind": "all",
+            "source": null
+          },
+          "initial_plan_id": "0251c81551866be21afa",
+          "judgments": [],
+          "plan_id": "0251c81551866be21afa",
+          "repairs": [],
+          "semantic_status": "unverified_no_semantic_evidence",
+          "status": "satisfiable",
+          "witnesses": []
+        },
+        "4": {
+          "errors": [],
+          "events": [
+            "no_distinguishing_witness_in_completed_pool"
+          ],
+          "final_formula": {
+            "children": [
+              {
+                "kind": "atom",
+                "op": "depart_ge",
+                "scope": "outbound",
+                "source": null,
+                "unit": "seconds",
+                "value": 27900
+              },
+              {
+                "kind": "atom",
+                "op": "exclude_modes",
+                "scope": "outbound",
+                "source": null,
+                "unit": "mode",
+                "value": [
+                  "rail",
+                  "tram"
+                ]
+              },
+              {
+                "kind": "atom",
+                "op": "max_transfers",
+                "scope": "outbound",
+                "source": null,
+                "unit": "count",
+                "value": 0
+              }
+            ],
+            "kind": "all",
+            "source": null
+          },
+          "initial_plan_id": "0251c81551866be21afa",
+          "judgments": [],
+          "plan_id": "0251c81551866be21afa",
+          "repairs": [],
+          "semantic_status": "unverified_no_semantic_evidence",
+          "status": "satisfiable",
+          "witnesses": []
+        }
+      },
+      "E": {
+        "0": {
+          "errors": [],
+          "events": [
+            "no_distinguishing_witness_in_completed_pool"
+          ],
+          "final_formula": {
+            "children": [
+              {
+                "kind": "atom",
+                "op": "depart_ge",
+                "scope": "outbound",
+                "source": null,
+                "unit": "seconds",
+                "value": 27900
+              },
+              {
+                "kind": "atom",
+                "op": "exclude_modes",
+                "scope": "outbound",
+                "source": null,
+                "unit": "mode",
+                "value": [
+                  "rail",
+                  "tram"
+                ]
+              },
+              {
+                "kind": "atom",
+                "op": "max_transfers",
+                "scope": "outbound",
+                "source": null,
+                "unit": "count",
+                "value": 0
+              }
+            ],
+            "kind": "all",
+            "source": null
+          },
+          "initial_plan_id": "0251c81551866be21afa",
+          "judgments": [],
+          "plan_id": "0251c81551866be21afa",
+          "repairs": [],
+          "semantic_status": "unverified_no_semantic_evidence",
+          "status": "satisfiable",
+          "witnesses": []
+        },
+        "1": {
+          "errors": [],
+          "events": [
+            "no_distinguishing_witness_in_completed_pool"
+          ],
+          "final_formula": {
+            "children": [
+              {
+                "kind": "atom",
+                "op": "depart_ge",
+                "scope": "outbound",
+                "source": null,
+                "unit": "seconds",
+                "value": 27900
+              },
+              {
+                "kind": "atom",
+                "op": "exclude_modes",
+                "scope": "outbound",
+                "source": null,
+                "unit": "mode",
+                "value": [
+                  "rail",
+                  "tram"
+                ]
+              },
+              {
+                "kind": "atom",
+                "op": "max_transfers",
+                "scope": "outbound",
+                "source": null,
+                "unit": "count",
+                "value": 0
+              }
+            ],
+            "kind": "all",
+            "source": null
+          },
+          "initial_plan_id": "0251c81551866be21afa",
+          "judgments": [],
+          "plan_id": "0251c81551866be21afa",
+          "repairs": [],
+          "semantic_status": "unverified_no_semantic_evidence",
+          "status": "satisfiable",
+          "witnesses": []
+        },
+        "2": {
+          "errors": [],
+          "events": [
+            "no_distinguishing_witness_in_completed_pool"
+          ],
+          "final_formula": {
+            "children": [
+              {
+                "kind": "atom",
+                "op": "depart_ge",
+                "scope": "outbound",
+                "source": null,
+                "unit": "seconds",
+                "value": 27900
+              },
+              {
+                "kind": "atom",
+                "op": "exclude_modes",
+                "scope": "outbound",
+                "source": null,
+                "unit": "mode",
+                "value": [
+                  "rail",
+                  "tram"
+                ]
+              },
+              {
+                "kind": "atom",
+                "op": "max_transfers",
+                "scope": "outbound",
+                "source": null,
+                "unit": "count",
+                "value": 0
+              }
+            ],
+            "kind": "all",
+            "source": null
+          },
+          "initial_plan_id": "0251c81551866be21afa",
+          "judgments": [],
+          "plan_id": "0251c81551866be21afa",
+          "repairs": [],
+          "semantic_status": "unverified_no_semantic_evidence",
+          "status": "satisfiable",
+          "witnesses": []
+        },
+        "4": {
+          "errors": [],
+          "events": [
+            "no_distinguishing_witness_in_completed_pool"
+          ],
+          "final_formula": {
+            "children": [
+              {
+                "kind": "atom",
+                "op": "depart_ge",
+                "scope": "outbound",
+                "source": null,
+                "unit": "seconds",
+                "value": 27900
+              },
+              {
+                "kind": "atom",
+                "op": "exclude_modes",
+                "scope": "outbound",
+                "source": null,
+                "unit": "mode",
+                "value": [
+                  "rail",
+                  "tram"
+                ]
+              },
+              {
+                "kind": "atom",
+                "op": "max_transfers",
+                "scope": "outbound",
+                "source": null,
+                "unit": "count",
+                "value": 0
+              }
+            ],
+            "kind": "all",
+            "source": null
+          },
+          "initial_plan_id": "0251c81551866be21afa",
+          "judgments": [],
+          "plan_id": "0251c81551866be21afa",
+          "repairs": [],
+          "semantic_status": "unverified_no_semantic_evidence",
+          "status": "satisfiable",
+          "witnesses": []
+        }
+      }
+    },
+    "replicate": 0,
+    "request": "On 2026-09-14, plan the outbound journey from OMSI/SE Water [stop_id=13773] to SW Hall & 5th [stop_id=13780]. Do not use rail or tram. Do not depart before 07:45:00. Make no transfers.",
+    "scenario_id": "g00-negation-p0",
+    "translation_errors": []
+  },
+  "failure": {
+    "candidates": [],
+    "outputs": {
+      "D": {
+        "0": {
+          "errors": [
+            {
+              "detail": "Formula nodes must be either 'all', 'atom', or 'not'. The given formula uses unsupported operations and conditions.",
+              "index": 0,
+              "phase": "translation",
+              "status": "unsupported"
+            },
+            {
+              "detail": "Operations other than 'arrive_by' and 'depart_ge' are unsupported.; Fare, accessibility, and capacity constraints are unsupported.",
+              "index": 1,
+              "phase": "translation",
+              "status": "unsupported"
+            },
+            {
+              "detail": "Operations such as arrive_by and depart_ge are unsupported.",
+              "index": 2,
+              "phase": "translation",
+              "status": "unsupported"
+            },
+            {
+              "detail": "Formula nodes do not support the operation 'arrive_by' with a time earlier than departure.",
+              "index": 3,
+              "phase": "translation",
+              "status": "unsupported"
+            }
+          ],
+          "events": [],
+          "final_formula": null,
+          "initial_plan_id": null,
+          "judgments": [],
+          "plan_id": null,
+          "repairs": [],
+          "semantic_status": "unverified",
+          "status": "unsupported",
+          "witnesses": []
+        },
+        "1": {
+          "errors": [
+            {
+              "detail": "Formula nodes must be either 'all', 'atom', or 'not'. The given formula uses unsupported operations and conditions.",
+              "index": 0,
+              "phase": "translation",
+              "status": "unsupported"
+            },
+            {
+              "detail": "Operations other than 'arrive_by' and 'depart_ge' are unsupported.; Fare, accessibility, and capacity constraints are unsupported.",
+              "index": 1,
+              "phase": "translation",
+              "status": "unsupported"
+            },
+            {
+              "detail": "Operations such as arrive_by and depart_ge are unsupported.",
+              "index": 2,
+              "phase": "translation",
+              "status": "unsupported"
+            },
+            {
+              "detail": "Formula nodes do not support the operation 'arrive_by' with a time earlier than departure.",
+              "index": 3,
+              "phase": "translation",
+              "status": "unsupported"
+            }
+          ],
+          "events": [],
+          "final_formula": null,
+          "initial_plan_id": null,
+          "judgments": [],
+          "plan_id": null,
+          "repairs": [],
+          "semantic_status": "unverified",
+          "status": "unsupported",
+          "witnesses": []
+        },
+        "2": {
+          "errors": [
+            {
+              "detail": "Formula nodes must be either 'all', 'atom', or 'not'. The given formula uses unsupported operations and conditions.",
+              "index": 0,
+              "phase": "translation",
+              "status": "unsupported"
+            },
+            {
+              "detail": "Operations other than 'arrive_by' and 'depart_ge' are unsupported.; Fare, accessibility, and capacity constraints are unsupported.",
+              "index": 1,
+              "phase": "translation",
+              "status": "unsupported"
+            },
+            {
+              "detail": "Operations such as arrive_by and depart_ge are unsupported.",
+              "index": 2,
+              "phase": "translation",
+              "status": "unsupported"
+            },
+            {
+              "detail": "Formula nodes do not support the operation 'arrive_by' with a time earlier than departure.",
+              "index": 3,
+              "phase": "translation",
+              "status": "unsupported"
+            }
+          ],
+          "events": [],
+          "final_formula": null,
+          "initial_plan_id": null,
+          "judgments": [],
+          "plan_id": null,
+          "repairs": [],
+          "semantic_status": "unverified",
+          "status": "unsupported",
+          "witnesses": []
+        },
+        "4": {
+          "errors": [
+            {
+              "detail": "Formula nodes must be either 'all', 'atom', or 'not'. The given formula uses unsupported operations and conditions.",
+              "index": 0,
+              "phase": "translation",
+              "status": "unsupported"
+            },
+            {
+              "detail": "Operations other than 'arrive_by' and 'depart_ge' are unsupported.; Fare, accessibility, and capacity constraints are unsupported.",
+              "index": 1,
+              "phase": "translation",
+              "status": "unsupported"
+            },
+            {
+              "detail": "Operations such as arrive_by and depart_ge are unsupported.",
+              "index": 2,
+              "phase": "translation",
+              "status": "unsupported"
+            },
+            {
+              "detail": "Formula nodes do not support the operation 'arrive_by' with a time earlier than departure.",
+              "index": 3,
+              "phase": "translation",
+              "status": "unsupported"
+            }
+          ],
+          "events": [],
+          "final_formula": null,
+          "initial_plan_id": null,
+          "judgments": [],
+          "plan_id": null,
+          "repairs": [],
+          "semantic_status": "unverified",
+          "status": "unsupported",
+          "witnesses": []
+        }
+      },
+      "E": {
+        "0": {
+          "errors": [
+            {
+              "detail": "Formula nodes must be either 'all', 'atom', or 'not'. The given formula uses unsupported operations and conditions.",
+              "index": 0,
+              "phase": "translation",
+              "status": "unsupported"
+            },
+            {
+              "detail": "Operations other than 'arrive_by' and 'depart_ge' are unsupported.; Fare, accessibility, and capacity constraints are unsupported.",
+              "index": 1,
+              "phase": "translation",
+              "status": "unsupported"
+            },
+            {
+              "detail": "Operations such as arrive_by and depart_ge are unsupported.",
+              "index": 2,
+              "phase": "translation",
+              "status": "unsupported"
+            },
+            {
+              "detail": "Formula nodes do not support the operation 'arrive_by' with a time earlier than departure.",
+              "index": 3,
+              "phase": "translation",
+              "status": "unsupported"
+            }
+          ],
+          "events": [],
+          "final_formula": null,
+          "initial_plan_id": null,
+          "judgments": [],
+          "plan_id": null,
+          "repairs": [],
+          "semantic_status": "unverified",
+          "status": "unsupported",
+          "witnesses": []
+        },
+        "1": {
+          "errors": [
+            {
+              "detail": "Formula nodes must be either 'all', 'atom', or 'not'. The given formula uses unsupported operations and conditions.",
+              "index": 0,
+              "phase": "translation",
+              "status": "unsupported"
+            },
+            {
+              "detail": "Operations other than 'arrive_by' and 'depart_ge' are unsupported.; Fare, accessibility, and capacity constraints are unsupported.",
+              "index": 1,
+              "phase": "translation",
+              "status": "unsupported"
+            },
+            {
+              "detail": "Operations such as arrive_by and depart_ge are unsupported.",
+              "index": 2,
+              "phase": "translation",
+              "status": "unsupported"
+            },
+            {
+              "detail": "Formula nodes do not support the operation 'arrive_by' with a time earlier than departure.",
+              "index": 3,
+              "phase": "translation",
+              "status": "unsupported"
+            }
+          ],
+          "events": [],
+          "final_formula": null,
+          "initial_plan_id": null,
+          "judgments": [],
+          "plan_id": null,
+          "repairs": [],
+          "semantic_status": "unverified",
+          "status": "unsupported",
+          "witnesses": []
+        },
+        "2": {
+          "errors": [
+            {
+              "detail": "Formula nodes must be either 'all', 'atom', or 'not'. The given formula uses unsupported operations and conditions.",
+              "index": 0,
+              "phase": "translation",
+              "status": "unsupported"
+            },
+            {
+              "detail": "Operations other than 'arrive_by' and 'depart_ge' are unsupported.; Fare, accessibility, and capacity constraints are unsupported.",
+              "index": 1,
+              "phase": "translation",
+              "status": "unsupported"
+            },
+            {
+              "detail": "Operations such as arrive_by and depart_ge are unsupported.",
+              "index": 2,
+              "phase": "translation",
+              "status": "unsupported"
+            },
+            {
+              "detail": "Formula nodes do not support the operation 'arrive_by' with a time earlier than departure.",
+              "index": 3,
+              "phase": "translation",
+              "status": "unsupported"
+            }
+          ],
+          "events": [],
+          "final_formula": null,
+          "initial_plan_id": null,
+          "judgments": [],
+          "plan_id": null,
+          "repairs": [],
+          "semantic_status": "unverified",
+          "status": "unsupported",
+          "witnesses": []
+        },
+        "4": {
+          "errors": [
+            {
+              "detail": "Formula nodes must be either 'all', 'atom', or 'not'. The given formula uses unsupported operations and conditions.",
+              "index": 0,
+              "phase": "translation",
+              "status": "unsupported"
+            },
+            {
+              "detail": "Operations other than 'arrive_by' and 'depart_ge' are unsupported.; Fare, accessibility, and capacity constraints are unsupported.",
+              "index": 1,
+              "phase": "translation",
+              "status": "unsupported"
+            },
+            {
+              "detail": "Operations such as arrive_by and depart_ge are unsupported.",
+              "index": 2,
+              "phase": "translation",
+              "status": "unsupported"
+            },
+            {
+              "detail": "Formula nodes do not support the operation 'arrive_by' with a time earlier than departure.",
+              "index": 3,
+              "phase": "translation",
+              "status": "unsupported"
+            }
+          ],
+          "events": [],
+          "final_formula": null,
+          "initial_plan_id": null,
+          "judgments": [],
+          "plan_id": null,
+          "repairs": [],
+          "semantic_status": "unverified",
+          "status": "unsupported",
+          "witnesses": []
+        }
+      }
+    },
+    "replicate": 0,
+    "request": "On 2026-09-14, plan the outbound journey from OMSI/SE Water [stop_id=13773] to SW Hall & 5th [stop_id=13780]. Depart no earlier than 08:30:00 and arrive by 08:00:00.",
+    "scenario_id": "g00-infeasible-p0",
+    "translation_errors": [
+      {
+        "detail": "Formula nodes must be either 'all', 'atom', or 'not'. The given formula uses unsupported operations and conditions.",
+        "index": 0,
+        "phase": "translation",
+        "status": "unsupported"
+      },
+      {
+        "detail": "Operations other than 'arrive_by' and 'depart_ge' are unsupported.; Fare, accessibility, and capacity constraints are unsupported.",
+        "index": 1,
+        "phase": "translation",
+        "status": "unsupported"
+      },
+      {
+        "detail": "Operations such as arrive_by and depart_ge are unsupported.",
+        "index": 2,
+        "phase": "translation",
+        "status": "unsupported"
+      },
+      {
+        "detail": "Formula nodes do not support the operation 'arrive_by' with a time earlier than departure.",
+        "index": 3,
+        "phase": "translation",
+        "status": "unsupported"
+      }
+    ]
+  },
+  "tie": {
+    "candidates": [],
+    "outputs": {
+      "D": {
+        "0": {
+          "errors": [
+            {
+              "detail": "Formula nodes must be either 'all', 'atom', or 'not'. The given formula uses unsupported operations and conditions.",
+              "index": 0,
+              "phase": "translation",
+              "status": "unsupported"
+            },
+            {
+              "detail": "Operations other than 'arrive_by' and 'depart_ge' are unsupported.; Fare, accessibility, and capacity constraints are unsupported.",
+              "index": 1,
+              "phase": "translation",
+              "status": "unsupported"
+            },
+            {
+              "detail": "Operations such as arrive_by and depart_ge are unsupported.",
+              "index": 2,
+              "phase": "translation",
+              "status": "unsupported"
+            },
+            {
+              "detail": "Formula nodes do not support the operation 'arrive_by' with a time earlier than departure.",
+              "index": 3,
+              "phase": "translation",
+              "status": "unsupported"
+            }
+          ],
+          "events": [],
+          "final_formula": null,
+          "initial_plan_id": null,
+          "judgments": [],
+          "plan_id": null,
+          "repairs": [],
+          "semantic_status": "unverified",
+          "status": "unsupported",
+          "witnesses": []
+        },
+        "1": {
+          "errors": [
+            {
+              "detail": "Formula nodes must be either 'all', 'atom', or 'not'. The given formula uses unsupported operations and conditions.",
+              "index": 0,
+              "phase": "translation",
+              "status": "unsupported"
+            },
+            {
+              "detail": "Operations other than 'arrive_by' and 'depart_ge' are unsupported.; Fare, accessibility, and capacity constraints are unsupported.",
+              "index": 1,
+              "phase": "translation",
+              "status": "unsupported"
+            },
+            {
+              "detail": "Operations such as arrive_by and depart_ge are unsupported.",
+              "index": 2,
+              "phase": "translation",
+              "status": "unsupported"
+            },
+            {
+              "detail": "Formula nodes do not support the operation 'arrive_by' with a time earlier than departure.",
+              "index": 3,
+              "phase": "translation",
+              "status": "unsupported"
+            }
+          ],
+          "events": [],
+          "final_formula": null,
+          "initial_plan_id": null,
+          "judgments": [],
+          "plan_id": null,
+          "repairs": [],
+          "semantic_status": "unverified",
+          "status": "unsupported",
+          "witnesses": []
+        },
+        "2": {
+          "errors": [
+            {
+              "detail": "Formula nodes must be either 'all', 'atom', or 'not'. The given formula uses unsupported operations and conditions.",
+              "index": 0,
+              "phase": "translation",
+              "status": "unsupported"
+            },
+            {
+              "detail": "Operations other than 'arrive_by' and 'depart_ge' are unsupported.; Fare, accessibility, and capacity constraints are unsupported.",
+              "index": 1,
+              "phase": "translation",
+              "status": "unsupported"
+            },
+            {
+              "detail": "Operations such as arrive_by and depart_ge are unsupported.",
+              "index": 2,
+              "phase": "translation",
+              "status": "unsupported"
+            },
+            {
+              "detail": "Formula nodes do not support the operation 'arrive_by' with a time earlier than departure.",
+              "index": 3,
+              "phase": "translation",
+              "status": "unsupported"
+            }
+          ],
+          "events": [],
+          "final_formula": null,
+          "initial_plan_id": null,
+          "judgments": [],
+          "plan_id": null,
+          "repairs": [],
+          "semantic_status": "unverified",
+          "status": "unsupported",
+          "witnesses": []
+        },
+        "4": {
+          "errors": [
+            {
+              "detail": "Formula nodes must be either 'all', 'atom', or 'not'. The given formula uses unsupported operations and conditions.",
+              "index": 0,
+              "phase": "translation",
+              "status": "unsupported"
+            },
+            {
+              "detail": "Operations other than 'arrive_by' and 'depart_ge' are unsupported.; Fare, accessibility, and capacity constraints are unsupported.",
+              "index": 1,
+              "phase": "translation",
+              "status": "unsupported"
+            },
+            {
+              "detail": "Operations such as arrive_by and depart_ge are unsupported.",
+              "index": 2,
+              "phase": "translation",
+              "status": "unsupported"
+            },
+            {
+              "detail": "Formula nodes do not support the operation 'arrive_by' with a time earlier than departure.",
+              "index": 3,
+              "phase": "translation",
+              "status": "unsupported"
+            }
+          ],
+          "events": [],
+          "final_formula": null,
+          "initial_plan_id": null,
+          "judgments": [],
+          "plan_id": null,
+          "repairs": [],
+          "semantic_status": "unverified",
+          "status": "unsupported",
+          "witnesses": []
+        }
+      },
+      "E": {
+        "0": {
+          "errors": [
+            {
+              "detail": "Formula nodes must be either 'all', 'atom', or 'not'. The given formula uses unsupported operations and conditions.",
+              "index": 0,
+              "phase": "translation",
+              "status": "unsupported"
+            },
+            {
+              "detail": "Operations other than 'arrive_by' and 'depart_ge' are unsupported.; Fare, accessibility, and capacity constraints are unsupported.",
+              "index": 1,
+              "phase": "translation",
+              "status": "unsupported"
+            },
+            {
+              "detail": "Operations such as arrive_by and depart_ge are unsupported.",
+              "index": 2,
+              "phase": "translation",
+              "status": "unsupported"
+            },
+            {
+              "detail": "Formula nodes do not support the operation 'arrive_by' with a time earlier than departure.",
+              "index": 3,
+              "phase": "translation",
+              "status": "unsupported"
+            }
+          ],
+          "events": [],
+          "final_formula": null,
+          "initial_plan_id": null,
+          "judgments": [],
+          "plan_id": null,
+          "repairs": [],
+          "semantic_status": "unverified",
+          "status": "unsupported",
+          "witnesses": []
+        },
+        "1": {
+          "errors": [
+            {
+              "detail": "Formula nodes must be either 'all', 'atom', or 'not'. The given formula uses unsupported operations and conditions.",
+              "index": 0,
+              "phase": "translation",
+              "status": "unsupported"
+            },
+            {
+              "detail": "Operations other than 'arrive_by' and 'depart_ge' are unsupported.; Fare, accessibility, and capacity constraints are unsupported.",
+              "index": 1,
+              "phase": "translation",
+              "status": "unsupported"
+            },
+            {
+              "detail": "Operations such as arrive_by and depart_ge are unsupported.",
+              "index": 2,
+              "phase": "translation",
+              "status": "unsupported"
+            },
+            {
+              "detail": "Formula nodes do not support the operation 'arrive_by' with a time earlier than departure.",
+              "index": 3,
+              "phase": "translation",
+              "status": "unsupported"
+            }
+          ],
+          "events": [],
+          "final_formula": null,
+          "initial_plan_id": null,
+          "judgments": [],
+          "plan_id": null,
+          "repairs": [],
+          "semantic_status": "unverified",
+          "status": "unsupported",
+          "witnesses": []
+        },
+        "2": {
+          "errors": [
+            {
+              "detail": "Formula nodes must be either 'all', 'atom', or 'not'. The given formula uses unsupported operations and conditions.",
+              "index": 0,
+              "phase": "translation",
+              "status": "unsupported"
+            },
+            {
+              "detail": "Operations other than 'arrive_by' and 'depart_ge' are unsupported.; Fare, accessibility, and capacity constraints are unsupported.",
+              "index": 1,
+              "phase": "translation",
+              "status": "unsupported"
+            },
+            {
+              "detail": "Operations such as arrive_by and depart_ge are unsupported.",
+              "index": 2,
+              "phase": "translation",
+              "status": "unsupported"
+            },
+            {
+              "detail": "Formula nodes do not support the operation 'arrive_by' with a time earlier than departure.",
+              "index": 3,
+              "phase": "translation",
+              "status": "unsupported"
+            }
+          ],
+          "events": [],
+          "final_formula": null,
+          "initial_plan_id": null,
+          "judgments": [],
+          "plan_id": null,
+          "repairs": [],
+          "semantic_status": "unverified",
+          "status": "unsupported",
+          "witnesses": []
+        },
+        "4": {
+          "errors": [
+            {
+              "detail": "Formula nodes must be either 'all', 'atom', or 'not'. The given formula uses unsupported operations and conditions.",
+              "index": 0,
+              "phase": "translation",
+              "status": "unsupported"
+            },
+            {
+              "detail": "Operations other than 'arrive_by' and 'depart_ge' are unsupported.; Fare, accessibility, and capacity constraints are unsupported.",
+              "index": 1,
+              "phase": "translation",
+              "status": "unsupported"
+            },
+            {
+              "detail": "Operations such as arrive_by and depart_ge are unsupported.",
+              "index": 2,
+              "phase": "translation",
+              "status": "unsupported"
+            },
+            {
+              "detail": "Formula nodes do not support the operation 'arrive_by' with a time earlier than departure.",
+              "index": 3,
+              "phase": "translation",
+              "status": "unsupported"
+            }
+          ],
+          "events": [],
+          "final_formula": null,
+          "initial_plan_id": null,
+          "judgments": [],
+          "plan_id": null,
+          "repairs": [],
+          "semantic_status": "unverified",
+          "status": "unsupported",
+          "witnesses": []
+        }
+      }
+    },
+    "replicate": 0,
+    "request": "On 2026-09-14, plan the outbound journey from OMSI/SE Water [stop_id=13773] to SW Hall & 5th [stop_id=13780]. Depart no earlier than 08:30:00 and arrive by 08:00:00.",
+    "scenario_id": "g00-infeasible-p0",
+    "translation_errors": [
+      {
+        "detail": "Formula nodes must be either 'all', 'atom', or 'not'. The given formula uses unsupported operations and conditions.",
+        "index": 0,
+        "phase": "translation",
+        "status": "unsupported"
+      },
+      {
+        "detail": "Operations other than 'arrive_by' and 'depart_ge' are unsupported.; Fare, accessibility, and capacity constraints are unsupported.",
+        "index": 1,
+        "phase": "translation",
+        "status": "unsupported"
+      },
+      {
+        "detail": "Operations such as arrive_by and depart_ge are unsupported.",
+        "index": 2,
+        "phase": "translation",
+        "status": "unsupported"
+      },
+      {
+        "detail": "Formula nodes do not support the operation 'arrive_by' with a time earlier than departure.",
+        "index": 3,
+        "phase": "translation",
+        "status": "unsupported"
+      }
+    ]
+  }
+}

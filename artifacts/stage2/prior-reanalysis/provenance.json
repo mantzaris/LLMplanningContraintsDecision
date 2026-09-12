@@ -1,0 +1,5 @@
+{
+  "analysis": "offline; references inaccessible to inference",
+  "reference_file_hash": "b778bd14215e8f95efefe109d4e093a48b259fb0c6992459746f407dd7b47cc1",
+  "source_run_manifest_hash": "dd7e02a4fb5b3e05a9040b3ee99119349e39a7c83641257bc612e9fbce7acadc"
+}
