@@ -133,6 +133,7 @@ class TransformersGPU:
             "peak_memory_bytes": torch.cuda.max_memory_allocated(),
             "output_device": str(output.device),
             "truncated": len(generated) >= max_new_tokens,
+            "effective_generation_settings": {**self.model.generation_config.to_dict(), **settings},
         }
 
     def close(self):

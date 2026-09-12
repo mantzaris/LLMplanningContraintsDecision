@@ -1,0 +1,1897 @@
+{
+  "actual_compute": {
+    "failed_generations": 0,
+    "generation_attempts": 25,
+    "generation_seconds": 45.24146107095294,
+    "input_tokens": 49647,
+    "output_devices": [
+      "cuda:0"
+    ],
+    "output_tokens": 3100,
+    "peak_memory_bytes": 15791362560,
+    "successful_generations": 25
+  },
+  "evaluation": {
+    "reference_hash": "b778bd14215e8f95efefe109d4e093a48b259fb0c6992459746f407dd7b47cc1",
+    "results": [
+      {
+        "base_id": "g00",
+        "candidate_pool_equivalence": [],
+        "complete_satisfaction": false,
+        "constraint_review_flags": [
+          "no_final_interpretation"
+        ],
+        "correct_infeasibility": false,
+        "false_infeasibility": false,
+        "final_interpretation_pool_equivalent": null,
+        "initial_interpretation_pool_equivalent": null,
+        "initial_plan_correct": false,
+        "invalid_plan_returned": false,
+        "method": "A",
+        "plan_coverage": false,
+        "reference_feasible_count": 0,
+        "repair_damaged_correct_interpretation": false,
+        "repair_damaged_correct_plan": false,
+        "scenario_id": "g00-infeasible-p0",
+        "unresolved": true
+      },
+      {
+        "base_id": "g00",
+        "candidate_pool_equivalence": [],
+        "complete_satisfaction": false,
+        "constraint_review_flags": [
+          "no_final_interpretation"
+        ],
+        "correct_infeasibility": false,
+        "false_infeasibility": false,
+        "final_interpretation_pool_equivalent": null,
+        "initial_interpretation_pool_equivalent": null,
+        "initial_plan_correct": false,
+        "invalid_plan_returned": false,
+        "method": "B",
+        "plan_coverage": false,
+        "reference_feasible_count": 0,
+        "repair_damaged_correct_interpretation": false,
+        "repair_damaged_correct_plan": false,
+        "scenario_id": "g00-infeasible-p0",
+        "unresolved": true
+      },
+      {
+        "base_id": "g00",
+        "candidate_pool_equivalence": [],
+        "complete_satisfaction": false,
+        "constraint_review_flags": [
+          "no_final_interpretation"
+        ],
+        "correct_infeasibility": false,
+        "false_infeasibility": false,
+        "final_interpretation_pool_equivalent": null,
+        "initial_interpretation_pool_equivalent": null,
+        "initial_plan_correct": false,
+        "invalid_plan_returned": false,
+        "method": "C",
+        "plan_coverage": false,
+        "reference_feasible_count": 0,
+        "repair_damaged_correct_interpretation": false,
+        "repair_damaged_correct_plan": false,
+        "scenario_id": "g00-infeasible-p0",
+        "unresolved": true
+      },
+      {
+        "base_id": "g00",
+        "candidate_pool_equivalence": [],
+        "complete_satisfaction": false,
+        "constraint_review_flags": [
+          "no_final_interpretation"
+        ],
+        "correct_infeasibility": false,
+        "false_infeasibility": false,
+        "final_interpretation_pool_equivalent": null,
+        "initial_interpretation_pool_equivalent": null,
+        "initial_plan_correct": false,
+        "invalid_plan_returned": false,
+        "method": "D",
+        "plan_coverage": false,
+        "reference_feasible_count": 0,
+        "repair_damaged_correct_interpretation": false,
+        "repair_damaged_correct_plan": false,
+        "scenario_id": "g00-infeasible-p0",
+        "unresolved": true
+      },
+      {
+        "base_id": "g00",
+        "candidate_pool_equivalence": [],
+        "complete_satisfaction": false,
+        "constraint_review_flags": [
+          "no_final_interpretation"
+        ],
+        "correct_infeasibility": false,
+        "false_infeasibility": false,
+        "final_interpretation_pool_equivalent": null,
+        "initial_interpretation_pool_equivalent": null,
+        "initial_plan_correct": false,
+        "invalid_plan_returned": false,
+        "method": "E",
+        "plan_coverage": false,
+        "reference_feasible_count": 0,
+        "repair_damaged_correct_interpretation": false,
+        "repair_damaged_correct_plan": false,
+        "scenario_id": "g00-infeasible-p0",
+        "unresolved": true
+      },
+      {
+        "base_id": "g00",
+        "candidate_pool_equivalence": [
+          true
+        ],
+        "complete_satisfaction": true,
+        "constraint_review_flags": [],
+        "correct_infeasibility": false,
+        "false_infeasibility": false,
+        "final_interpretation_pool_equivalent": true,
+        "initial_interpretation_pool_equivalent": true,
+        "initial_plan_correct": true,
+        "invalid_plan_returned": false,
+        "method": "A",
+        "plan_coverage": true,
+        "reference_feasible_count": 2,
+        "repair_damaged_correct_interpretation": false,
+        "repair_damaged_correct_plan": false,
+        "scenario_id": "g00-negation-p0",
+        "unresolved": true
+      },
+      {
+        "base_id": "g00",
+        "candidate_pool_equivalence": [
+          true
+        ],
+        "complete_satisfaction": true,
+        "constraint_review_flags": [],
+        "correct_infeasibility": false,
+        "false_infeasibility": false,
+        "final_interpretation_pool_equivalent": true,
+        "initial_interpretation_pool_equivalent": true,
+        "initial_plan_correct": true,
+        "invalid_plan_returned": false,
+        "method": "B",
+        "plan_coverage": true,
+        "reference_feasible_count": 2,
+        "repair_damaged_correct_interpretation": false,
+        "repair_damaged_correct_plan": false,
+        "scenario_id": "g00-negation-p0",
+        "unresolved": true
+      },
+      {
+        "base_id": "g00",
+        "candidate_pool_equivalence": [
+          true
+        ],
+        "complete_satisfaction": true,
+        "constraint_review_flags": [],
+        "correct_infeasibility": false,
+        "false_infeasibility": false,
+        "final_interpretation_pool_equivalent": true,
+        "initial_interpretation_pool_equivalent": true,
+        "initial_plan_correct": true,
+        "invalid_plan_returned": false,
+        "method": "C",
+        "plan_coverage": true,
+        "reference_feasible_count": 2,
+        "repair_damaged_correct_interpretation": false,
+        "repair_damaged_correct_plan": false,
+        "scenario_id": "g00-negation-p0",
+        "unresolved": true
+      },
+      {
+        "base_id": "g00",
+        "candidate_pool_equivalence": [
+          true
+        ],
+        "complete_satisfaction": true,
+        "constraint_review_flags": [],
+        "correct_infeasibility": false,
+        "false_infeasibility": false,
+        "final_interpretation_pool_equivalent": true,
+        "initial_interpretation_pool_equivalent": true,
+        "initial_plan_correct": true,
+        "invalid_plan_returned": false,
+        "method": "D",
+        "plan_coverage": true,
+        "reference_feasible_count": 2,
+        "repair_damaged_correct_interpretation": false,
+        "repair_damaged_correct_plan": false,
+        "scenario_id": "g00-negation-p0",
+        "unresolved": true
+      },
+      {
+        "base_id": "g00",
+        "candidate_pool_equivalence": [
+          true
+        ],
+        "complete_satisfaction": true,
+        "constraint_review_flags": [],
+        "correct_infeasibility": false,
+        "false_infeasibility": false,
+        "final_interpretation_pool_equivalent": true,
+        "initial_interpretation_pool_equivalent": true,
+        "initial_plan_correct": true,
+        "invalid_plan_returned": false,
+        "method": "E",
+        "plan_coverage": true,
+        "reference_feasible_count": 2,
+        "repair_damaged_correct_interpretation": false,
+        "repair_damaged_correct_plan": false,
+        "scenario_id": "g00-negation-p0",
+        "unresolved": true
+      },
+      {
+        "base_id": "g00",
+        "candidate_pool_equivalence": [
+          false
+        ],
+        "complete_satisfaction": false,
+        "constraint_review_flags": [
+          "timing"
+        ],
+        "correct_infeasibility": false,
+        "false_infeasibility": true,
+        "final_interpretation_pool_equivalent": false,
+        "initial_interpretation_pool_equivalent": false,
+        "initial_plan_correct": false,
+        "invalid_plan_returned": false,
+        "method": "A",
+        "plan_coverage": false,
+        "reference_feasible_count": 2,
+        "repair_damaged_correct_interpretation": false,
+        "repair_damaged_correct_plan": false,
+        "scenario_id": "g00-scope-p0",
+        "unresolved": true
+      },
+      {
+        "base_id": "g00",
+        "candidate_pool_equivalence": [
+          false
+        ],
+        "complete_satisfaction": false,
+        "constraint_review_flags": [
+          "no_final_interpretation"
+        ],
+        "correct_infeasibility": false,
+        "false_infeasibility": false,
+        "final_interpretation_pool_equivalent": null,
+        "initial_interpretation_pool_equivalent": false,
+        "initial_plan_correct": false,
+        "invalid_plan_returned": false,
+        "method": "B",
+        "plan_coverage": false,
+        "reference_feasible_count": 2,
+        "repair_damaged_correct_interpretation": false,
+        "repair_damaged_correct_plan": false,
+        "scenario_id": "g00-scope-p0",
+        "unresolved": true
+      },
+      {
+        "base_id": "g00",
+        "candidate_pool_equivalence": [
+          false
+        ],
+        "complete_satisfaction": false,
+        "constraint_review_flags": [
+          "timing"
+        ],
+        "correct_infeasibility": false,
+        "false_infeasibility": true,
+        "final_interpretation_pool_equivalent": false,
+        "initial_interpretation_pool_equivalent": false,
+        "initial_plan_correct": false,
+        "invalid_plan_returned": false,
+        "method": "C",
+        "plan_coverage": false,
+        "reference_feasible_count": 2,
+        "repair_damaged_correct_interpretation": false,
+        "repair_damaged_correct_plan": false,
+        "scenario_id": "g00-scope-p0",
+        "unresolved": true
+      },
+      {
+        "base_id": "g00",
+        "candidate_pool_equivalence": [
+          false
+        ],
+        "complete_satisfaction": false,
+        "constraint_review_flags": [
+          "timing"
+        ],
+        "correct_infeasibility": false,
+        "false_infeasibility": true,
+        "final_interpretation_pool_equivalent": false,
+        "initial_interpretation_pool_equivalent": false,
+        "initial_plan_correct": false,
+        "invalid_plan_returned": false,
+        "method": "D",
+        "plan_coverage": false,
+        "reference_feasible_count": 2,
+        "repair_damaged_correct_interpretation": false,
+        "repair_damaged_correct_plan": false,
+        "scenario_id": "g00-scope-p0",
+        "unresolved": true
+      },
+      {
+        "base_id": "g00",
+        "candidate_pool_equivalence": [
+          false
+        ],
+        "complete_satisfaction": false,
+        "constraint_review_flags": [
+          "timing"
+        ],
+        "correct_infeasibility": false,
+        "false_infeasibility": true,
+        "final_interpretation_pool_equivalent": false,
+        "initial_interpretation_pool_equivalent": false,
+        "initial_plan_correct": false,
+        "invalid_plan_returned": false,
+        "method": "E",
+        "plan_coverage": false,
+        "reference_feasible_count": 2,
+        "repair_damaged_correct_interpretation": false,
+        "repair_damaged_correct_plan": false,
+        "scenario_id": "g00-scope-p0",
+        "unresolved": true
+      },
+      {
+        "base_id": "g00",
+        "candidate_pool_equivalence": [
+          true
+        ],
+        "complete_satisfaction": true,
+        "constraint_review_flags": [
+          "timing"
+        ],
+        "correct_infeasibility": false,
+        "false_infeasibility": false,
+        "final_interpretation_pool_equivalent": true,
+        "initial_interpretation_pool_equivalent": true,
+        "initial_plan_correct": true,
+        "invalid_plan_returned": false,
+        "method": "A",
+        "plan_coverage": true,
+        "reference_feasible_count": 1,
+        "repair_damaged_correct_interpretation": false,
+        "repair_damaged_correct_plan": false,
+        "scenario_id": "g00-timing-p0",
+        "unresolved": true
+      },
+      {
+        "base_id": "g00",
+        "candidate_pool_equivalence": [
+          true
+        ],
+        "complete_satisfaction": true,
+        "constraint_review_flags": [
+          "timing"
+        ],
+        "correct_infeasibility": false,
+        "false_infeasibility": false,
+        "final_interpretation_pool_equivalent": true,
+        "initial_interpretation_pool_equivalent": true,
+        "initial_plan_correct": true,
+        "invalid_plan_returned": false,
+        "method": "B",
+        "plan_coverage": true,
+        "reference_feasible_count": 1,
+        "repair_damaged_correct_interpretation": false,
+        "repair_damaged_correct_plan": false,
+        "scenario_id": "g00-timing-p0",
+        "unresolved": true
+      },
+      {
+        "base_id": "g00",
+        "candidate_pool_equivalence": [
+          true
+        ],
+        "complete_satisfaction": true,
+        "constraint_review_flags": [
+          "timing"
+        ],
+        "correct_infeasibility": false,
+        "false_infeasibility": false,
+        "final_interpretation_pool_equivalent": true,
+        "initial_interpretation_pool_equivalent": true,
+        "initial_plan_correct": true,
+        "invalid_plan_returned": false,
+        "method": "C",
+        "plan_coverage": true,
+        "reference_feasible_count": 1,
+        "repair_damaged_correct_interpretation": false,
+        "repair_damaged_correct_plan": false,
+        "scenario_id": "g00-timing-p0",
+        "unresolved": true
+      },
+      {
+        "base_id": "g00",
+        "candidate_pool_equivalence": [
+          true
+        ],
+        "complete_satisfaction": true,
+        "constraint_review_flags": [
+          "timing"
+        ],
+        "correct_infeasibility": false,
+        "false_infeasibility": false,
+        "final_interpretation_pool_equivalent": true,
+        "initial_interpretation_pool_equivalent": true,
+        "initial_plan_correct": true,
+        "invalid_plan_returned": false,
+        "method": "D",
+        "plan_coverage": true,
+        "reference_feasible_count": 1,
+        "repair_damaged_correct_interpretation": false,
+        "repair_damaged_correct_plan": false,
+        "scenario_id": "g00-timing-p0",
+        "unresolved": true
+      },
+      {
+        "base_id": "g00",
+        "candidate_pool_equivalence": [
+          true
+        ],
+        "complete_satisfaction": true,
+        "constraint_review_flags": [
+          "timing"
+        ],
+        "correct_infeasibility": false,
+        "false_infeasibility": false,
+        "final_interpretation_pool_equivalent": true,
+        "initial_interpretation_pool_equivalent": true,
+        "initial_plan_correct": true,
+        "invalid_plan_returned": false,
+        "method": "E",
+        "plan_coverage": true,
+        "reference_feasible_count": 1,
+        "repair_damaged_correct_interpretation": false,
+        "repair_damaged_correct_plan": false,
+        "scenario_id": "g00-timing-p0",
+        "unresolved": true
+      }
+    ],
+    "status": "provisional_unaudited",
+    "unit_of_independence": "base_id"
+  },
+  "gpu_evidence": {
+    "gpu-after-1789227243714563090.json": {
+      "architecture_support": [
+        "sm_70",
+        "sm_75",
+        "sm_80",
+        "sm_86",
+        "sm_90",
+        "sm_100",
+        "sm_120"
+      ],
+      "cuda_available": true,
+      "cuda_runtime": "12.8",
+      "device": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "gpu_processes": "274018, ../.venv/bin/python, 706 MiB",
+      "gpu_status": "NVIDIA RTX PRO 6000 Blackwell Server Edition, 97887 MiB, 715 MiB, 85 %, 595.91.07",
+      "torch": "2.8.0+cu128"
+    },
+    "gpu-evidence-1789227243714563090.json": {
+      "before": {
+        "architecture_support": [
+          "sm_70",
+          "sm_75",
+          "sm_80",
+          "sm_86",
+          "sm_90",
+          "sm_100",
+          "sm_120"
+        ],
+        "cuda_available": true,
+        "cuda_runtime": "12.8",
+        "device": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+        "gpu_processes": "",
+        "gpu_status": "NVIDIA RTX PRO 6000 Blackwell Server Edition, 97887 MiB, 3 MiB, 0 %, 595.91.07",
+        "torch": "2.8.0+cu128"
+      },
+      "loaded": {
+        "loading_seconds": 47.33296642685309,
+        "parameter_devices": [
+          "cuda:0"
+        ],
+        "pid": 274018,
+        "probe": {
+          "architecture_support": [
+            "sm_70",
+            "sm_75",
+            "sm_80",
+            "sm_86",
+            "sm_90",
+            "sm_100",
+            "sm_120"
+          ],
+          "cuda_available": true,
+          "cuda_runtime": "12.8",
+          "device": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+          "gpu_processes": "274018, ../.venv/bin/python, 15248 MiB",
+          "gpu_status": "NVIDIA RTX PRO 6000 Blackwell Server Edition, 97887 MiB, 15257 MiB, 1 %, 595.91.07",
+          "torch": "2.8.0+cu128"
+        }
+      }
+    }
+  },
+  "label": "development smoke; provisional unaudited annotations",
+  "manifest": {
+    "config": {
+      "candidate_count": 4,
+      "gpu_request_limit": 100,
+      "gpu_seconds_limit": 3600,
+      "judge_mode": "model",
+      "judgment_limit": 2,
+      "max_new_tokens": 768,
+      "method_call_limit": 7,
+      "methods": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "model_id": "Qwen/Qwen2.5-7B-Instruct",
+      "model_revision": "a09a35458c702b33eeacc393d103063234e8bc28",
+      "repair_limit": 1,
+      "scenario_ids": [
+        "g00-timing-p0",
+        "g00-negation-p0",
+        "g00-scope-p0",
+        "g00-infeasible-p0"
+      ],
+      "seed": 104,
+      "solver_timeout_ms": 5000,
+      "temperature": 0.7
+    },
+    "config_hash": "413f16f520fa1c2ae589aefb2e18121a993bedfe3725a230ef00c6c2ad38b59e",
+    "created_at": "2026-09-12T15:34:03.544568+00:00",
+    "mode": "gpu_smoke",
+    "model": {
+      "backend": "transformers",
+      "identifier": "Qwen/Qwen2.5-7B-Instruct",
+      "precision": "bfloat16",
+      "quantization": null,
+      "revision": "a09a35458c702b33eeacc393d103063234e8bc28",
+      "same_translation_judgment_model": true,
+      "tokenizer": "Qwen/Qwen2.5-7B-Instruct",
+      "tokenizer_revision": "a09a35458c702b33eeacc393d103063234e8bc28",
+      "torch": "2.8.0+cu128",
+      "transformers": "4.51.3"
+    },
+    "prompt_hash": "f07003581145201e3011a76dcbd8bf8043f3dc60f0079778afe7949a4b427d35",
+    "public_hash": "aa265efa9b910021ef017c47b45a3564c724c34f252bb7d41817aeef49402294",
+    "replay_source": null,
+    "repository_revision": "fb4258c9e22e03abae683194edbf31349e2113db",
+    "source_hash": "c1870f9194f94687913f718e77b581d594617ab7363ff198ef7887ee7797faaa",
+    "working_tree_dirty": true
+  },
+  "outputs": [
+    {
+      "base_id": "g00",
+      "candidates": [],
+      "diagnostic_fallback_plan_id": null,
+      "errors": [
+        {
+          "index": 0,
+          "phase": "translation",
+          "status": "unsupported"
+        }
+      ],
+      "events": [],
+      "initial_plan_id": null,
+      "judgments": [],
+      "logical_calls": [
+        {
+          "cached": false,
+          "input_tokens": 2261,
+          "key": "733776cd75ef32112c7f2c8caae1c621aca7d72d156ec8b3427de8ea3f36f73b",
+          "latency_seconds": 0.7773750969208777,
+          "output_tokens": 49,
+          "owner": "g00-infeasible-p0/A",
+          "purpose": "translation"
+        }
+      ],
+      "method": "A",
+      "method_wall_seconds": 0.8003931390121579,
+      "plan_id": null,
+      "repairs": [],
+      "scenario_id": "g00-infeasible-p0",
+      "semantic_status": "unverified",
+      "status": "unsupported",
+      "translation_attempts": 1,
+      "witnesses": []
+    },
+    {
+      "base_id": "g00",
+      "candidates": [],
+      "diagnostic_fallback_plan_id": null,
+      "errors": [
+        {
+          "index": 0,
+          "phase": "translation",
+          "status": "unsupported"
+        },
+        {
+          "index": null,
+          "phase": "method",
+          "status": "unsupported"
+        }
+      ],
+      "events": [],
+      "initial_plan_id": null,
+      "judgments": [],
+      "logical_calls": [
+        {
+          "cached": true,
+          "input_tokens": 2261,
+          "key": "733776cd75ef32112c7f2c8caae1c621aca7d72d156ec8b3427de8ea3f36f73b",
+          "latency_seconds": 0.7773750969208777,
+          "output_tokens": 49,
+          "owner": "g00-infeasible-p0/B",
+          "purpose": "translation"
+        },
+        {
+          "cached": false,
+          "input_tokens": 2336,
+          "key": "cbf702ee206b745494869f00cbbf055bf51cbad0b35e0304781d3da65b143e4a",
+          "latency_seconds": 1.677726048976183,
+          "output_tokens": 116,
+          "owner": "g00-infeasible-p0/B",
+          "purpose": "critique"
+        }
+      ],
+      "method": "B",
+      "method_wall_seconds": 1.7028214880265296,
+      "plan_id": null,
+      "repairs": [
+        {
+          "kind": "ordinary_critique"
+        }
+      ],
+      "scenario_id": "g00-infeasible-p0",
+      "semantic_status": "unresolved_error",
+      "status": "unresolved",
+      "translation_attempts": 1,
+      "witnesses": []
+    },
+    {
+      "base_id": "g00",
+      "candidates": [],
+      "diagnostic_fallback_plan_id": null,
+      "errors": [
+        {
+          "index": 0,
+          "phase": "translation",
+          "status": "unsupported"
+        }
+      ],
+      "events": [],
+      "initial_plan_id": null,
+      "judgments": [],
+      "logical_calls": [
+        {
+          "cached": true,
+          "input_tokens": 2261,
+          "key": "733776cd75ef32112c7f2c8caae1c621aca7d72d156ec8b3427de8ea3f36f73b",
+          "latency_seconds": 0.7773750969208777,
+          "output_tokens": 49,
+          "owner": "g00-infeasible-p0/C",
+          "purpose": "translation"
+        }
+      ],
+      "method": "C",
+      "method_wall_seconds": 0.00722678704187274,
+      "plan_id": null,
+      "repairs": [],
+      "scenario_id": "g00-infeasible-p0",
+      "semantic_status": "unverified",
+      "status": "unsupported",
+      "translation_attempts": 1,
+      "witnesses": []
+    },
+    {
+      "base_id": "g00",
+      "candidates": [],
+      "diagnostic_fallback_plan_id": null,
+      "errors": [
+        {
+          "index": 0,
+          "phase": "translation",
+          "status": "unsupported"
+        },
+        {
+          "index": 1,
+          "phase": "translation",
+          "status": "unsupported"
+        },
+        {
+          "index": 2,
+          "phase": "translation",
+          "status": "unsupported"
+        },
+        {
+          "index": 3,
+          "phase": "translation",
+          "status": "unsupported"
+        }
+      ],
+      "events": [],
+      "initial_plan_id": null,
+      "judgments": [],
+      "logical_calls": [
+        {
+          "cached": true,
+          "input_tokens": 2261,
+          "key": "733776cd75ef32112c7f2c8caae1c621aca7d72d156ec8b3427de8ea3f36f73b",
+          "latency_seconds": 0.7773750969208777,
+          "output_tokens": 49,
+          "owner": "g00-infeasible-p0/D",
+          "purpose": "translation"
+        },
+        {
+          "cached": false,
+          "input_tokens": 2261,
+          "key": "3534f2f4be7dc96b813405382454e268c0cc7b646b2ecb72aed31553faa9a2d4",
+          "latency_seconds": 0.8445461490191519,
+          "output_tokens": 54,
+          "owner": "g00-infeasible-p0/D",
+          "purpose": "translation"
+        },
+        {
+          "cached": false,
+          "input_tokens": 2261,
+          "key": "f960cb183ec6e4afc6b38b0137daae701cfaf9e472445da48432465567ba2d00",
+          "latency_seconds": 0.5946547270286828,
+          "output_tokens": 36,
+          "owner": "g00-infeasible-p0/D",
+          "purpose": "translation"
+        },
+        {
+          "cached": false,
+          "input_tokens": 2261,
+          "key": "f918a2a3903f1642b4460787b60272e956cf831a7169affe1a4003bdc461bc08",
+          "latency_seconds": 0.7048139909747988,
+          "output_tokens": 44,
+          "owner": "g00-infeasible-p0/D",
+          "purpose": "translation"
+        }
+      ],
+      "method": "D",
+      "method_wall_seconds": 2.211434703087434,
+      "plan_id": null,
+      "repairs": [],
+      "scenario_id": "g00-infeasible-p0",
+      "semantic_status": "unverified",
+      "status": "unsupported",
+      "translation_attempts": 4,
+      "witnesses": []
+    },
+    {
+      "base_id": "g00",
+      "candidates": [],
+      "diagnostic_fallback_plan_id": null,
+      "errors": [
+        {
+          "index": 0,
+          "phase": "translation",
+          "status": "unsupported"
+        },
+        {
+          "index": 1,
+          "phase": "translation",
+          "status": "unsupported"
+        },
+        {
+          "index": 2,
+          "phase": "translation",
+          "status": "unsupported"
+        },
+        {
+          "index": 3,
+          "phase": "translation",
+          "status": "unsupported"
+        }
+      ],
+      "events": [],
+      "initial_plan_id": null,
+      "judgments": [],
+      "logical_calls": [
+        {
+          "cached": true,
+          "input_tokens": 2261,
+          "key": "733776cd75ef32112c7f2c8caae1c621aca7d72d156ec8b3427de8ea3f36f73b",
+          "latency_seconds": 0.7773750969208777,
+          "output_tokens": 49,
+          "owner": "g00-infeasible-p0/E",
+          "purpose": "translation"
+        },
+        {
+          "cached": true,
+          "input_tokens": 2261,
+          "key": "3534f2f4be7dc96b813405382454e268c0cc7b646b2ecb72aed31553faa9a2d4",
+          "latency_seconds": 0.8445461490191519,
+          "output_tokens": 54,
+          "owner": "g00-infeasible-p0/E",
+          "purpose": "translation"
+        },
+        {
+          "cached": true,
+          "input_tokens": 2261,
+          "key": "f960cb183ec6e4afc6b38b0137daae701cfaf9e472445da48432465567ba2d00",
+          "latency_seconds": 0.5946547270286828,
+          "output_tokens": 36,
+          "owner": "g00-infeasible-p0/E",
+          "purpose": "translation"
+        },
+        {
+          "cached": true,
+          "input_tokens": 2261,
+          "key": "f918a2a3903f1642b4460787b60272e956cf831a7169affe1a4003bdc461bc08",
+          "latency_seconds": 0.7048139909747988,
+          "output_tokens": 44,
+          "owner": "g00-infeasible-p0/E",
+          "purpose": "translation"
+        }
+      ],
+      "method": "E",
+      "method_wall_seconds": 0.017417429015040398,
+      "plan_id": null,
+      "repairs": [],
+      "scenario_id": "g00-infeasible-p0",
+      "semantic_status": "unverified",
+      "status": "unsupported",
+      "translation_attempts": 4,
+      "witnesses": []
+    },
+    {
+      "base_id": "g00",
+      "candidates": [
+        {
+          "accepted_pool_journeys": 2,
+          "aliases": [
+            "c0"
+          ],
+          "id": "c0",
+          "plan": {
+            "plan_id": "0251c81551866be21afa",
+            "reason": null,
+            "solver_seconds": 0.011831534095108509,
+            "status": "satisfiable"
+          }
+        }
+      ],
+      "diagnostic_fallback_plan_id": null,
+      "errors": [],
+      "events": [],
+      "initial_plan_id": "0251c81551866be21afa",
+      "judgments": [],
+      "logical_calls": [
+        {
+          "cached": false,
+          "input_tokens": 2260,
+          "key": "2d77e2ca435dedee029ff310670bfafedbcf7ac2725838ed393603a9296786aa",
+          "latency_seconds": 2.417110894108191,
+          "output_tokens": 167,
+          "owner": "g00-negation-p0/A",
+          "purpose": "translation"
+        }
+      ],
+      "method": "A",
+      "method_wall_seconds": 2.4543418791145086,
+      "plan_id": "0251c81551866be21afa",
+      "repairs": [],
+      "scenario_id": "g00-negation-p0",
+      "semantic_status": "unverified_no_semantic_evidence",
+      "status": "satisfiable",
+      "translation_attempts": 1,
+      "witnesses": []
+    },
+    {
+      "base_id": "g00",
+      "candidates": [
+        {
+          "accepted_pool_journeys": 2,
+          "aliases": [
+            "c0"
+          ],
+          "id": "c0",
+          "plan": {
+            "plan_id": "0251c81551866be21afa",
+            "reason": null,
+            "solver_seconds": 0.007478718878701329,
+            "status": "satisfiable"
+          }
+        }
+      ],
+      "diagnostic_fallback_plan_id": null,
+      "errors": [],
+      "events": [],
+      "initial_plan_id": "0251c81551866be21afa",
+      "judgments": [],
+      "logical_calls": [
+        {
+          "cached": true,
+          "input_tokens": 2260,
+          "key": "2d77e2ca435dedee029ff310670bfafedbcf7ac2725838ed393603a9296786aa",
+          "latency_seconds": 2.417110894108191,
+          "output_tokens": 167,
+          "owner": "g00-negation-p0/B",
+          "purpose": "translation"
+        },
+        {
+          "cached": false,
+          "input_tokens": 2453,
+          "key": "6e6dce0289f9aef0cbe547de7bbc75d7683f5461044c5c2a3aefd3bd40abec98",
+          "latency_seconds": 2.3837811399716884,
+          "output_tokens": 167,
+          "owner": "g00-negation-p0/B",
+          "purpose": "critique"
+        }
+      ],
+      "method": "B",
+      "method_wall_seconds": 2.4282977120019495,
+      "plan_id": "0251c81551866be21afa",
+      "repairs": [
+        {
+          "kind": "ordinary_critique"
+        }
+      ],
+      "scenario_id": "g00-negation-p0",
+      "semantic_status": "unverified_no_semantic_evidence",
+      "status": "satisfiable",
+      "translation_attempts": 1,
+      "witnesses": []
+    },
+    {
+      "base_id": "g00",
+      "candidates": [
+        {
+          "accepted_pool_journeys": 2,
+          "aliases": [
+            "c0"
+          ],
+          "id": "c0",
+          "plan": {
+            "plan_id": "0251c81551866be21afa",
+            "reason": null,
+            "solver_seconds": 0.005802026018500328,
+            "status": "satisfiable"
+          }
+        }
+      ],
+      "diagnostic_fallback_plan_id": null,
+      "errors": [
+        {
+          "index": null,
+          "phase": "judgment",
+          "status": "malformed"
+        },
+        {
+          "index": null,
+          "phase": "judgment",
+          "status": "malformed"
+        }
+      ],
+      "events": [],
+      "initial_plan_id": "0251c81551866be21afa",
+      "judgments": [
+        {
+          "journey_id": "0251c81551866be21afa",
+          "source_spans": [],
+          "verdict": "uncertain"
+        },
+        {
+          "journey_id": "0b94d4b6a722212be69c",
+          "source_spans": [],
+          "verdict": "uncertain"
+        }
+      ],
+      "logical_calls": [
+        {
+          "cached": true,
+          "input_tokens": 2260,
+          "key": "2d77e2ca435dedee029ff310670bfafedbcf7ac2725838ed393603a9296786aa",
+          "latency_seconds": 2.417110894108191,
+          "output_tokens": 167,
+          "owner": "g00-negation-p0/C",
+          "purpose": "translation"
+        },
+        {
+          "cached": false,
+          "input_tokens": 483,
+          "key": "ab627c3dc05956e50de2fe2554cea16610df9f41d8cbbd0e87cab188e34eafad",
+          "latency_seconds": 0.7687700979877263,
+          "output_tokens": 59,
+          "owner": "g00-negation-p0/C",
+          "purpose": "judgment"
+        },
+        {
+          "cached": false,
+          "input_tokens": 556,
+          "key": "62bddb62a52d62210953853a0beab5f10d183eaed6f6489de9832c25fb55fa4b",
+          "latency_seconds": 0.8237283639609814,
+          "output_tokens": 63,
+          "owner": "g00-negation-p0/C",
+          "purpose": "judgment"
+        }
+      ],
+      "method": "C",
+      "method_wall_seconds": 1.6443406040780246,
+      "plan_id": "0251c81551866be21afa",
+      "repairs": [],
+      "scenario_id": "g00-negation-p0",
+      "semantic_status": "unverified_no_semantic_evidence",
+      "status": "satisfiable",
+      "translation_attempts": 1,
+      "witnesses": [
+        {
+          "journey_id": "0251c81551866be21afa",
+          "policy": "positive_negative_adaptation",
+          "predicted_label": true
+        },
+        {
+          "journey_id": "0b94d4b6a722212be69c",
+          "policy": "positive_negative_adaptation",
+          "predicted_label": false
+        }
+      ]
+    },
+    {
+      "base_id": "g00",
+      "candidates": [
+        {
+          "accepted_pool_journeys": 2,
+          "aliases": [
+            "c0",
+            "c1",
+            "c2",
+            "c3"
+          ],
+          "id": "c0",
+          "plan": {
+            "plan_id": "0251c81551866be21afa",
+            "reason": null,
+            "solver_seconds": 0.008975991047918797,
+            "status": "satisfiable"
+          }
+        }
+      ],
+      "diagnostic_fallback_plan_id": null,
+      "errors": [],
+      "events": [
+        "no_distinguishing_witness_in_completed_pool"
+      ],
+      "initial_plan_id": "0251c81551866be21afa",
+      "judgments": [],
+      "logical_calls": [
+        {
+          "cached": true,
+          "input_tokens": 2260,
+          "key": "2d77e2ca435dedee029ff310670bfafedbcf7ac2725838ed393603a9296786aa",
+          "latency_seconds": 2.417110894108191,
+          "output_tokens": 167,
+          "owner": "g00-negation-p0/D",
+          "purpose": "translation"
+        },
+        {
+          "cached": false,
+          "input_tokens": 2260,
+          "key": "438f36becb838703d1403f31b9b8b4a9470672c9018b6ca02b1552ead8c3c93f",
+          "latency_seconds": 2.666302951052785,
+          "output_tokens": 185,
+          "owner": "g00-negation-p0/D",
+          "purpose": "translation"
+        },
+        {
+          "cached": false,
+          "input_tokens": 2260,
+          "key": "8c8cc43145568cd83f433370669f673e1e2ce3efd0553c2d01381b214cabf642",
+          "latency_seconds": 2.667697160039097,
+          "output_tokens": 185,
+          "owner": "g00-negation-p0/D",
+          "purpose": "translation"
+        },
+        {
+          "cached": false,
+          "input_tokens": 2260,
+          "key": "fd596d458e88e0316dcf0fc5d3c95c70425e0dfffce79047014d71e2e8870e0f",
+          "latency_seconds": 2.665199651848525,
+          "output_tokens": 185,
+          "owner": "g00-negation-p0/D",
+          "purpose": "translation"
+        }
+      ],
+      "method": "D",
+      "method_wall_seconds": 8.086015921086073,
+      "plan_id": "0251c81551866be21afa",
+      "repairs": [],
+      "scenario_id": "g00-negation-p0",
+      "semantic_status": "unverified_no_semantic_evidence",
+      "status": "satisfiable",
+      "translation_attempts": 4,
+      "witnesses": []
+    },
+    {
+      "base_id": "g00",
+      "candidates": [
+        {
+          "accepted_pool_journeys": 2,
+          "aliases": [
+            "c0",
+            "c1",
+            "c2",
+            "c3"
+          ],
+          "id": "c0",
+          "plan": {
+            "plan_id": "0251c81551866be21afa",
+            "reason": null,
+            "solver_seconds": 0.005890017142519355,
+            "status": "satisfiable"
+          }
+        }
+      ],
+      "diagnostic_fallback_plan_id": null,
+      "errors": [],
+      "events": [
+        "no_distinguishing_witness_in_completed_pool"
+      ],
+      "initial_plan_id": "0251c81551866be21afa",
+      "judgments": [],
+      "logical_calls": [
+        {
+          "cached": true,
+          "input_tokens": 2260,
+          "key": "2d77e2ca435dedee029ff310670bfafedbcf7ac2725838ed393603a9296786aa",
+          "latency_seconds": 2.417110894108191,
+          "output_tokens": 167,
+          "owner": "g00-negation-p0/E",
+          "purpose": "translation"
+        },
+        {
+          "cached": true,
+          "input_tokens": 2260,
+          "key": "438f36becb838703d1403f31b9b8b4a9470672c9018b6ca02b1552ead8c3c93f",
+          "latency_seconds": 2.666302951052785,
+          "output_tokens": 185,
+          "owner": "g00-negation-p0/E",
+          "purpose": "translation"
+        },
+        {
+          "cached": true,
+          "input_tokens": 2260,
+          "key": "8c8cc43145568cd83f433370669f673e1e2ce3efd0553c2d01381b214cabf642",
+          "latency_seconds": 2.667697160039097,
+          "output_tokens": 185,
+          "owner": "g00-negation-p0/E",
+          "purpose": "translation"
+        },
+        {
+          "cached": true,
+          "input_tokens": 2260,
+          "key": "fd596d458e88e0316dcf0fc5d3c95c70425e0dfffce79047014d71e2e8870e0f",
+          "latency_seconds": 2.665199651848525,
+          "output_tokens": 185,
+          "owner": "g00-negation-p0/E",
+          "purpose": "translation"
+        }
+      ],
+      "method": "E",
+      "method_wall_seconds": 0.026373649016022682,
+      "plan_id": "0251c81551866be21afa",
+      "repairs": [],
+      "scenario_id": "g00-negation-p0",
+      "semantic_status": "unverified_no_semantic_evidence",
+      "status": "satisfiable",
+      "translation_attempts": 4,
+      "witnesses": []
+    },
+    {
+      "base_id": "g00",
+      "candidates": [
+        {
+          "accepted_pool_journeys": 0,
+          "aliases": [
+            "c0"
+          ],
+          "id": "c0",
+          "plan": {
+            "plan_id": null,
+            "reason": null,
+            "solver_seconds": 0.0021230068523436785,
+            "status": "infeasible_in_pool"
+          }
+        }
+      ],
+      "diagnostic_fallback_plan_id": null,
+      "errors": [],
+      "events": [],
+      "initial_plan_id": null,
+      "judgments": [],
+      "logical_calls": [
+        {
+          "cached": false,
+          "input_tokens": 2370,
+          "key": "ba831f9b5355bfafa07f60b3022e2c90bc3c2334d754add72ddbfc36ad148560",
+          "latency_seconds": 1.7960486579686403,
+          "output_tokens": 122,
+          "owner": "g00-scope-p0/A",
+          "purpose": "translation"
+        }
+      ],
+      "method": "A",
+      "method_wall_seconds": 1.8265193291008472,
+      "plan_id": null,
+      "repairs": [],
+      "scenario_id": "g00-scope-p0",
+      "semantic_status": "unverified_no_semantic_evidence",
+      "status": "infeasible_in_pool",
+      "translation_attempts": 1,
+      "witnesses": []
+    },
+    {
+      "base_id": "g00",
+      "candidates": [
+        {
+          "accepted_pool_journeys": 0,
+          "aliases": [
+            "c0"
+          ],
+          "id": "c0",
+          "plan": {
+            "plan_id": null,
+            "reason": null,
+            "solver_seconds": 0.0014147020410746336,
+            "status": "infeasible_in_pool"
+          }
+        }
+      ],
+      "diagnostic_fallback_plan_id": null,
+      "errors": [
+        {
+          "index": null,
+          "phase": "method",
+          "status": "malformed"
+        }
+      ],
+      "events": [],
+      "initial_plan_id": null,
+      "judgments": [],
+      "logical_calls": [
+        {
+          "cached": true,
+          "input_tokens": 2370,
+          "key": "ba831f9b5355bfafa07f60b3022e2c90bc3c2334d754add72ddbfc36ad148560",
+          "latency_seconds": 1.7960486579686403,
+          "output_tokens": 122,
+          "owner": "g00-scope-p0/B",
+          "purpose": "translation"
+        },
+        {
+          "cached": false,
+          "input_tokens": 2518,
+          "key": "ffa06a3dd950f7939b64e51e3ca430f88a61b4ccb0b5d62ce3e3d53cabc2e26b",
+          "latency_seconds": 1.9904528900515288,
+          "output_tokens": 138,
+          "owner": "g00-scope-p0/B",
+          "purpose": "critique"
+        }
+      ],
+      "method": "B",
+      "method_wall_seconds": 2.0223773329053074,
+      "plan_id": null,
+      "repairs": [
+        {
+          "kind": "ordinary_critique"
+        }
+      ],
+      "scenario_id": "g00-scope-p0",
+      "semantic_status": "unresolved_error",
+      "status": "unresolved",
+      "translation_attempts": 1,
+      "witnesses": []
+    },
+    {
+      "base_id": "g00",
+      "candidates": [
+        {
+          "accepted_pool_journeys": 0,
+          "aliases": [
+            "c0"
+          ],
+          "id": "c0",
+          "plan": {
+            "plan_id": null,
+            "reason": null,
+            "solver_seconds": 0.0015381020493805408,
+            "status": "infeasible_in_pool"
+          }
+        }
+      ],
+      "diagnostic_fallback_plan_id": null,
+      "errors": [
+        {
+          "index": null,
+          "phase": "judgment",
+          "status": "malformed"
+        }
+      ],
+      "events": [
+        "no_positive_example"
+      ],
+      "initial_plan_id": null,
+      "judgments": [
+        {
+          "journey_id": "2ed119e99caddb639e7c",
+          "source_spans": [],
+          "verdict": "uncertain"
+        }
+      ],
+      "logical_calls": [
+        {
+          "cached": true,
+          "input_tokens": 2370,
+          "key": "ba831f9b5355bfafa07f60b3022e2c90bc3c2334d754add72ddbfc36ad148560",
+          "latency_seconds": 1.7960486579686403,
+          "output_tokens": 122,
+          "owner": "g00-scope-p0/C",
+          "purpose": "translation"
+        },
+        {
+          "cached": false,
+          "input_tokens": 1145,
+          "key": "877ab6de6e3681fdc97dee96d6d9168d60dcf5992799ab648896aa549485ab6d",
+          "latency_seconds": 1.5489739370532334,
+          "output_tokens": 115,
+          "owner": "g00-scope-p0/C",
+          "purpose": "judgment"
+        }
+      ],
+      "method": "C",
+      "method_wall_seconds": 1.578096308046952,
+      "plan_id": null,
+      "repairs": [],
+      "scenario_id": "g00-scope-p0",
+      "semantic_status": "unverified_no_semantic_evidence",
+      "status": "infeasible_in_pool",
+      "translation_attempts": 1,
+      "witnesses": [
+        {
+          "journey_id": "2ed119e99caddb639e7c",
+          "policy": "positive_negative_adaptation",
+          "predicted_label": false
+        }
+      ]
+    },
+    {
+      "base_id": "g00",
+      "candidates": [
+        {
+          "accepted_pool_journeys": 0,
+          "aliases": [
+            "c0",
+            "c1",
+            "c2",
+            "c3"
+          ],
+          "id": "c0",
+          "plan": {
+            "plan_id": null,
+            "reason": null,
+            "solver_seconds": 0.0018319240771234035,
+            "status": "infeasible_in_pool"
+          }
+        }
+      ],
+      "diagnostic_fallback_plan_id": null,
+      "errors": [],
+      "events": [
+        "no_distinguishing_witness_in_completed_pool"
+      ],
+      "initial_plan_id": null,
+      "judgments": [],
+      "logical_calls": [
+        {
+          "cached": true,
+          "input_tokens": 2370,
+          "key": "ba831f9b5355bfafa07f60b3022e2c90bc3c2334d754add72ddbfc36ad148560",
+          "latency_seconds": 1.7960486579686403,
+          "output_tokens": 122,
+          "owner": "g00-scope-p0/D",
+          "purpose": "translation"
+        },
+        {
+          "cached": false,
+          "input_tokens": 2370,
+          "key": "8689634f4e4529e479779bf99ec4f6dfa9c7b5aea810555599f74d80b2183c55",
+          "latency_seconds": 1.7957854149863124,
+          "output_tokens": 122,
+          "owner": "g00-scope-p0/D",
+          "purpose": "translation"
+        },
+        {
+          "cached": false,
+          "input_tokens": 2370,
+          "key": "466c5e0d429b7b189f94eb3ab472e22734f3a77a240c733198f8aafe05cc3aea",
+          "latency_seconds": 1.7948867080267519,
+          "output_tokens": 122,
+          "owner": "g00-scope-p0/D",
+          "purpose": "translation"
+        },
+        {
+          "cached": false,
+          "input_tokens": 2370,
+          "key": "d7b273eaa51b9920f5a3c0763d446f424fc2008fc7efb575c0e2b7b31e47c9e6",
+          "latency_seconds": 1.7950202890206128,
+          "output_tokens": 122,
+          "owner": "g00-scope-p0/D",
+          "purpose": "translation"
+        }
+      ],
+      "method": "D",
+      "method_wall_seconds": 5.477941674878821,
+      "plan_id": null,
+      "repairs": [],
+      "scenario_id": "g00-scope-p0",
+      "semantic_status": "unverified_no_semantic_evidence",
+      "status": "infeasible_in_pool",
+      "translation_attempts": 4,
+      "witnesses": []
+    },
+    {
+      "base_id": "g00",
+      "candidates": [
+        {
+          "accepted_pool_journeys": 0,
+          "aliases": [
+            "c0",
+            "c1",
+            "c2",
+            "c3"
+          ],
+          "id": "c0",
+          "plan": {
+            "plan_id": null,
+            "reason": null,
+            "solver_seconds": 0.001302971038967371,
+            "status": "infeasible_in_pool"
+          }
+        }
+      ],
+      "diagnostic_fallback_plan_id": null,
+      "errors": [],
+      "events": [
+        "no_distinguishing_witness_in_completed_pool"
+      ],
+      "initial_plan_id": null,
+      "judgments": [],
+      "logical_calls": [
+        {
+          "cached": true,
+          "input_tokens": 2370,
+          "key": "ba831f9b5355bfafa07f60b3022e2c90bc3c2334d754add72ddbfc36ad148560",
+          "latency_seconds": 1.7960486579686403,
+          "output_tokens": 122,
+          "owner": "g00-scope-p0/E",
+          "purpose": "translation"
+        },
+        {
+          "cached": true,
+          "input_tokens": 2370,
+          "key": "8689634f4e4529e479779bf99ec4f6dfa9c7b5aea810555599f74d80b2183c55",
+          "latency_seconds": 1.7957854149863124,
+          "output_tokens": 122,
+          "owner": "g00-scope-p0/E",
+          "purpose": "translation"
+        },
+        {
+          "cached": true,
+          "input_tokens": 2370,
+          "key": "466c5e0d429b7b189f94eb3ab472e22734f3a77a240c733198f8aafe05cc3aea",
+          "latency_seconds": 1.7948867080267519,
+          "output_tokens": 122,
+          "owner": "g00-scope-p0/E",
+          "purpose": "translation"
+        },
+        {
+          "cached": true,
+          "input_tokens": 2370,
+          "key": "d7b273eaa51b9920f5a3c0763d446f424fc2008fc7efb575c0e2b7b31e47c9e6",
+          "latency_seconds": 1.7950202890206128,
+          "output_tokens": 122,
+          "owner": "g00-scope-p0/E",
+          "purpose": "translation"
+        }
+      ],
+      "method": "E",
+      "method_wall_seconds": 0.021773963002488017,
+      "plan_id": null,
+      "repairs": [],
+      "scenario_id": "g00-scope-p0",
+      "semantic_status": "unverified_no_semantic_evidence",
+      "status": "infeasible_in_pool",
+      "translation_attempts": 4,
+      "witnesses": []
+    },
+    {
+      "base_id": "g00",
+      "candidates": [
+        {
+          "accepted_pool_journeys": 1,
+          "aliases": [
+            "c0"
+          ],
+          "id": "c0",
+          "plan": {
+            "plan_id": "0251c81551866be21afa",
+            "reason": null,
+            "solver_seconds": 0.1115916958078742,
+            "status": "satisfiable"
+          }
+        }
+      ],
+      "diagnostic_fallback_plan_id": null,
+      "errors": [],
+      "events": [],
+      "initial_plan_id": "0251c81551866be21afa",
+      "judgments": [],
+      "logical_calls": [
+        {
+          "cached": false,
+          "input_tokens": 2268,
+          "key": "c2543e3beeb226c49918c749a1cbcdc7345ba250ff84071bf21613d96955e75b",
+          "latency_seconds": 2.816417420981452,
+          "output_tokens": 169,
+          "owner": "g00-timing-p0/A",
+          "purpose": "translation"
+        }
+      ],
+      "method": "A",
+      "method_wall_seconds": 2.9726928710006177,
+      "plan_id": "0251c81551866be21afa",
+      "repairs": [],
+      "scenario_id": "g00-timing-p0",
+      "semantic_status": "unverified_no_semantic_evidence",
+      "status": "satisfiable",
+      "translation_attempts": 1,
+      "witnesses": []
+    },
+    {
+      "base_id": "g00",
+      "candidates": [
+        {
+          "accepted_pool_journeys": 1,
+          "aliases": [
+            "c0"
+          ],
+          "id": "c0",
+          "plan": {
+            "plan_id": "0251c81551866be21afa",
+            "reason": null,
+            "solver_seconds": 0.0053445519879460335,
+            "status": "satisfiable"
+          }
+        }
+      ],
+      "diagnostic_fallback_plan_id": null,
+      "errors": [],
+      "events": [],
+      "initial_plan_id": "0251c81551866be21afa",
+      "judgments": [],
+      "logical_calls": [
+        {
+          "cached": true,
+          "input_tokens": 2268,
+          "key": "c2543e3beeb226c49918c749a1cbcdc7345ba250ff84071bf21613d96955e75b",
+          "latency_seconds": 2.816417420981452,
+          "output_tokens": 169,
+          "owner": "g00-timing-p0/B",
+          "purpose": "translation"
+        },
+        {
+          "cached": false,
+          "input_tokens": 2463,
+          "key": "4d73f919568397a551ecef186a5f02d138270bd673b67f4de3a510a94f672044",
+          "latency_seconds": 2.4785045708995312,
+          "output_tokens": 169,
+          "owner": "g00-timing-p0/B",
+          "purpose": "critique"
+        }
+      ],
+      "method": "B",
+      "method_wall_seconds": 2.524542605970055,
+      "plan_id": "0251c81551866be21afa",
+      "repairs": [
+        {
+          "kind": "ordinary_critique"
+        }
+      ],
+      "scenario_id": "g00-timing-p0",
+      "semantic_status": "unverified_no_semantic_evidence",
+      "status": "satisfiable",
+      "translation_attempts": 1,
+      "witnesses": []
+    },
+    {
+      "base_id": "g00",
+      "candidates": [
+        {
+          "accepted_pool_journeys": 1,
+          "aliases": [
+            "c0"
+          ],
+          "id": "c0",
+          "plan": {
+            "plan_id": "0251c81551866be21afa",
+            "reason": null,
+            "solver_seconds": 0.005479744169861078,
+            "status": "satisfiable"
+          }
+        }
+      ],
+      "diagnostic_fallback_plan_id": null,
+      "errors": [
+        {
+          "index": null,
+          "phase": "judgment",
+          "status": "malformed"
+        },
+        {
+          "index": null,
+          "phase": "judgment",
+          "status": "malformed"
+        }
+      ],
+      "events": [],
+      "initial_plan_id": "0251c81551866be21afa",
+      "judgments": [
+        {
+          "journey_id": "0251c81551866be21afa",
+          "source_spans": [],
+          "verdict": "uncertain"
+        },
+        {
+          "journey_id": "0b94d4b6a722212be69c",
+          "source_spans": [],
+          "verdict": "uncertain"
+        }
+      ],
+      "logical_calls": [
+        {
+          "cached": true,
+          "input_tokens": 2268,
+          "key": "c2543e3beeb226c49918c749a1cbcdc7345ba250ff84071bf21613d96955e75b",
+          "latency_seconds": 2.816417420981452,
+          "output_tokens": 169,
+          "owner": "g00-timing-p0/C",
+          "purpose": "translation"
+        },
+        {
+          "cached": false,
+          "input_tokens": 492,
+          "key": "3fb433608739521601830de03c94a9523b6b2b41acadd674598c5fb6a6f910fe",
+          "latency_seconds": 1.268687274074182,
+          "output_tokens": 96,
+          "owner": "g00-timing-p0/C",
+          "purpose": "judgment"
+        },
+        {
+          "cached": false,
+          "input_tokens": 565,
+          "key": "96525a39ddd83d9e58e29576a559025b6d85925abd6f91bea16af343dfea09f4",
+          "latency_seconds": 0.7250009910203516,
+          "output_tokens": 54,
+          "owner": "g00-timing-p0/C",
+          "purpose": "judgment"
+        }
+      ],
+      "method": "C",
+      "method_wall_seconds": 2.050681256921962,
+      "plan_id": "0251c81551866be21afa",
+      "repairs": [],
+      "scenario_id": "g00-timing-p0",
+      "semantic_status": "unverified_no_semantic_evidence",
+      "status": "satisfiable",
+      "translation_attempts": 1,
+      "witnesses": [
+        {
+          "journey_id": "0251c81551866be21afa",
+          "policy": "positive_negative_adaptation",
+          "predicted_label": true
+        },
+        {
+          "journey_id": "0b94d4b6a722212be69c",
+          "policy": "positive_negative_adaptation",
+          "predicted_label": false
+        }
+      ]
+    },
+    {
+      "base_id": "g00",
+      "candidates": [
+        {
+          "accepted_pool_journeys": 1,
+          "aliases": [
+            "c0",
+            "c1",
+            "c2",
+            "c3"
+          ],
+          "id": "c0",
+          "plan": {
+            "plan_id": "0251c81551866be21afa",
+            "reason": null,
+            "solver_seconds": 0.006305400049313903,
+            "status": "satisfiable"
+          }
+        }
+      ],
+      "diagnostic_fallback_plan_id": null,
+      "errors": [],
+      "events": [
+        "no_distinguishing_witness_in_completed_pool"
+      ],
+      "initial_plan_id": "0251c81551866be21afa",
+      "judgments": [],
+      "logical_calls": [
+        {
+          "cached": true,
+          "input_tokens": 2268,
+          "key": "c2543e3beeb226c49918c749a1cbcdc7345ba250ff84071bf21613d96955e75b",
+          "latency_seconds": 2.816417420981452,
+          "output_tokens": 169,
+          "owner": "g00-timing-p0/D",
+          "purpose": "translation"
+        },
+        {
+          "cached": false,
+          "input_tokens": 2268,
+          "key": "bec9dd1b1d4a7850d2c8a0cd10761ce0b831a62272c439fd44e38ba0d2253815",
+          "latency_seconds": 2.7615855471231043,
+          "output_tokens": 187,
+          "owner": "g00-timing-p0/D",
+          "purpose": "translation"
+        },
+        {
+          "cached": false,
+          "input_tokens": 2268,
+          "key": "edeb0771859e522c23b947b444112381f584d244cd0b6891549280ebaf7fe768",
+          "latency_seconds": 2.7598809129558504,
+          "output_tokens": 187,
+          "owner": "g00-timing-p0/D",
+          "purpose": "translation"
+        },
+        {
+          "cached": false,
+          "input_tokens": 2268,
+          "key": "b07d1b3d2b162e6da643b0795d61f513aaff4fe46bcb6ceef96644010e2c2883",
+          "latency_seconds": 2.718510184902698,
+          "output_tokens": 187,
+          "owner": "g00-timing-p0/D",
+          "purpose": "translation"
+        }
+      ],
+      "method": "D",
+      "method_wall_seconds": 8.346900133881718,
+      "plan_id": "0251c81551866be21afa",
+      "repairs": [],
+      "scenario_id": "g00-timing-p0",
+      "semantic_status": "unverified_no_semantic_evidence",
+      "status": "satisfiable",
+      "translation_attempts": 4,
+      "witnesses": []
+    },
+    {
+      "base_id": "g00",
+      "candidates": [
+        {
+          "accepted_pool_journeys": 1,
+          "aliases": [
+            "c0",
+            "c1",
+            "c2",
+            "c3"
+          ],
+          "id": "c0",
+          "plan": {
+            "plan_id": "0251c81551866be21afa",
+            "reason": null,
+            "solver_seconds": 0.005510473158210516,
+            "status": "satisfiable"
+          }
+        }
+      ],
+      "diagnostic_fallback_plan_id": null,
+      "errors": [],
+      "events": [
+        "no_distinguishing_witness_in_completed_pool"
+      ],
+      "initial_plan_id": "0251c81551866be21afa",
+      "judgments": [],
+      "logical_calls": [
+        {
+          "cached": true,
+          "input_tokens": 2268,
+          "key": "c2543e3beeb226c49918c749a1cbcdc7345ba250ff84071bf21613d96955e75b",
+          "latency_seconds": 2.816417420981452,
+          "output_tokens": 169,
+          "owner": "g00-timing-p0/E",
+          "purpose": "translation"
+        },
+        {
+          "cached": true,
+          "input_tokens": 2268,
+          "key": "bec9dd1b1d4a7850d2c8a0cd10761ce0b831a62272c439fd44e38ba0d2253815",
+          "latency_seconds": 2.7615855471231043,
+          "output_tokens": 187,
+          "owner": "g00-timing-p0/E",
+          "purpose": "translation"
+        },
+        {
+          "cached": true,
+          "input_tokens": 2268,
+          "key": "edeb0771859e522c23b947b444112381f584d244cd0b6891549280ebaf7fe768",
+          "latency_seconds": 2.7598809129558504,
+          "output_tokens": 187,
+          "owner": "g00-timing-p0/E",
+          "purpose": "translation"
+        },
+        {
+          "cached": true,
+          "input_tokens": 2268,
+          "key": "b07d1b3d2b162e6da643b0795d61f513aaff4fe46bcb6ceef96644010e2c2883",
+          "latency_seconds": 2.718510184902698,
+          "output_tokens": 187,
+          "owner": "g00-timing-p0/E",
+          "purpose": "translation"
+        }
+      ],
+      "method": "E",
+      "method_wall_seconds": 0.02360111800953746,
+      "plan_id": "0251c81551866be21afa",
+      "repairs": [],
+      "scenario_id": "g00-timing-p0",
+      "semantic_status": "unverified_no_semantic_evidence",
+      "status": "satisfiable",
+      "translation_attempts": 4,
+      "witnesses": []
+    }
+  ],
+  "saved_artifact_hashes": {
+    "calls.jsonl": "76c24ea0fbe5187fa5c06e42d5b8f6e9ddd1e1146dc78e4c3849e6d219be06af",
+    "evaluation.json": "a12eff79b19661ac1f7d8dc69c901a94a59fdfe17a3d6d1b70704c0c80025d65",
+    "gpu-after-1789227243714563090.json": "c683485d2097a38917ba38ba833b20d7d6a5b91d2ea7c643bf46f8f2d736484d",
+    "gpu-evidence-1789227243714563090.json": "43e7eae559a2a19e8494a28878d76f4265072eb3d228e60393a8cff44134e4d0",
+    "manifest.json": "e790a1b79c6ded35acb02f1be5c4b6c8efee4b45e6ce90e6fcc38e0a28c1603c",
+    "outputs/g00-infeasible-p0-A.json": "86f3df8697700bae9adc814f4b09fff0e4b6a60bd66d167f75b28e02da25600a",
+    "outputs/g00-infeasible-p0-B.json": "8d6f90c015ea7e55e395500f2bca555db398bcb4d3ef63fecd0b83c66c92b3fe",
+    "outputs/g00-infeasible-p0-C.json": "28f47c4612676eb2d3ca57ee5cb9e55035344cd6916e3550668d9a96bca3ccef",
+    "outputs/g00-infeasible-p0-D.json": "afc3a6d6dfc2429e61c33a25fd28b95e01652d935c0fc580f812c5617902b65c",
+    "outputs/g00-infeasible-p0-E.json": "8f6c0dbbaf80314f5f586b26f18bd109b6058838e0a3a3426fb6a5ff522b5a8c",
+    "outputs/g00-negation-p0-A.json": "470d787624399bfe9908d463cf77865f5186d8cb131bc6c3dc04350bdbbf1320",
+    "outputs/g00-negation-p0-B.json": "f1e01f6112d6e7baf6784d36698ed05010ce1b65d6858823a95cd9877b4acfa6",
+    "outputs/g00-negation-p0-C.json": "ed0bbfed93490764a88a58fdd579490901e573bfe0c8c5493ee8e3b1d7368371",
+    "outputs/g00-negation-p0-D.json": "ffa4ebb6f73c650d83cb516d179c940acf2b3ac2eff79ca92d33289ba1393840",
+    "outputs/g00-negation-p0-E.json": "88edd575c34475ad5bdab45c0cff16c79ac14a833eb8763973b06b86a91727c8",
+    "outputs/g00-scope-p0-A.json": "3dbadc7494f89a5b5a033ef6b7a1b6c048711419f544cd360c3c1c49dbcdb8fb",
+    "outputs/g00-scope-p0-B.json": "f957e54a2276562f5b9bde95393950585f0092a94bae7d0fa8ccb325108e7076",
+    "outputs/g00-scope-p0-C.json": "2d216920efbed28bad8a0f2319027bb15d3fbf842795f0f20a1c410370a6b227",
+    "outputs/g00-scope-p0-D.json": "b26704d42efe967f832a028e9997840d7f42e793a0b5779ca73f7dc1015a607b",
+    "outputs/g00-scope-p0-E.json": "99452a7efd51d7e4f5bf2ddcccb9a82431c05bc573c3b097861a9963c1eab1fb",
+    "outputs/g00-timing-p0-A.json": "dd515c7fa78019e2a9d9ddcc4f3fe9eac9f30efa3731dadd68649cf04980f0f4",
+    "outputs/g00-timing-p0-B.json": "440e7f8cce785c55078735dfa920b3141fdef461e781effe6ce021fe20eba66e",
+    "outputs/g00-timing-p0-C.json": "e7820d4c27360963f499a4f0abbc3ee4adaa808bcf23d81f44281b2b1a2b1260",
+    "outputs/g00-timing-p0-D.json": "9137cf99c58d729b42a154bed1ef89fd7810044910af52e813c70cff067c3335",
+    "outputs/g00-timing-p0-E.json": "e6aa7aceda6fe0b0cd3f9722a3423d1d5cb945cf5de967967f3966b6729b9331",
+    "pools/2850a636a225c1b1d214289fc5d86581603a6e380e49002562996a30f84e1e07.json": "a624ed9e393eda3ff74d466a149957ed1bb6d982d1c6cfa7536084e2343a4d9d",
+    "pools/c4b975fa1f0958e0437f17fa47e72c92b22682ad769357cc541f1ee90d4c17f3.json": "eb04317849da660296545a02bae642b9761c487b2ae5d455f412b4f1e9f449f4",
+    "public-scenarios.json": "1f7ab9e5ad3db5c942f8ae44eabd059beaec7fe25a38d1e0c613f4e88d01d942"
+  }
+}

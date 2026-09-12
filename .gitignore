@@ -9,8 +9,11 @@ dist/
 data/raw/
 data/prepared/
 runs/
+runs-*/
+public/
+*.safetensors
+*.gguf
 .cache/
 *.pem
 *.key
 .env
-

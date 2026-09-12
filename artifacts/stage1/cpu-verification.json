@@ -1,0 +1,25 @@
+{
+  "focused_suite": "24 passed in 1.17s",
+  "historical_replay": {
+    "v1": {
+      "all_match": true,
+      "outputs_compared": 20,
+      "verification_sha256": "0710110fcf078c8064a38951daf2d47faf1f62a2f967ce21d584e7bb8bb73547"
+    },
+    "v2": {
+      "all_match": true,
+      "outputs_compared": 20,
+      "verification_sha256": "0710110fcf078c8064a38951daf2d47faf1f62a2f967ce21d584e7bb8bb73547"
+    },
+    "v3": {
+      "all_match": true,
+      "outputs_compared": 20,
+      "verification_sha256": "0710110fcf078c8064a38951daf2d47faf1f62a2f967ce21d584e7bb8bb73547"
+    }
+  },
+  "initial_revision": "aec08b6ce05c4fdffcfa7dcafbdfcc8f7b390132",
+  "lint": "ruff check src tests scripts: passed",
+  "pytest": "pytest 8.4.2",
+  "python": "3.11.13",
+  "real_frozen_gtfs_integration": "ran; calendar exceptions and times >=24:00 present"
+}

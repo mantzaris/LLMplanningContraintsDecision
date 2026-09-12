@@ -9,6 +9,7 @@ from .budget import GPUBudget, Journal
 from .domain import Journey, PublicScenario
 from .methods import run_method
 from .model import ModelCalls, TransformersGPU, gpu_probe
+from .model_cache import verify_model_cache
 from .prompts import prompt_manifest
 from .util import digest, file_hash, immutable_json, read_json, utc_now
 
@@ -134,6 +135,10 @@ def run(
         if pending and not replay_from:
             if model_path is None:
                 raise ValueError("GPU smoke needs a local verified model path")
+            immutable_json(
+                run_dir / "model-file-verification.json",
+                verify_model_cache(Path(model_path), config["model_id"], config["model_revision"]),
+            )
             budget = GPUBudget(
                 run_dir.parent / "stage1-gpu-budget.jsonl",
                 config["gpu_request_limit"],

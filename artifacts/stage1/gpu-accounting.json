@@ -1,0 +1,325 @@
+{
+  "accounting": "all model-resident elapsed wall time; no separate warmup; attempts reserved before generation",
+  "additional_uncertainty_upper_bound_seconds": 30,
+  "events": [
+    {
+      "event": "session_start",
+      "reserved_seconds": 3599.999992330093,
+      "session": "1789226960428672198",
+      "wall_time": 1789226968.7545116
+    },
+    {
+      "event": "request_start",
+      "number": 1,
+      "session": "1789226960428672198",
+      "wall_time": 1789227017.7241209
+    },
+    {
+      "event": "request_start",
+      "number": 2,
+      "session": "1789226960428672198",
+      "wall_time": 1789227020.4916203
+    },
+    {
+      "event": "request_start",
+      "number": 3,
+      "session": "1789226960428672198",
+      "wall_time": 1789227022.9198046
+    },
+    {
+      "event": "request_start",
+      "number": 4,
+      "session": "1789226960428672198",
+      "wall_time": 1789227025.8177385
+    },
+    {
+      "event": "request_start",
+      "number": 5,
+      "session": "1789226960428672198",
+      "wall_time": 1789227028.4925456
+    },
+    {
+      "event": "request_start",
+      "number": 6,
+      "session": "1789226960428672198",
+      "wall_time": 1789227031.2722156
+    },
+    {
+      "event": "request_start",
+      "number": 7,
+      "session": "1789226960428672198",
+      "wall_time": 1789227033.5302236
+    },
+    {
+      "event": "request_start",
+      "number": 8,
+      "session": "1789226960428672198",
+      "wall_time": 1789227035.7737172
+    },
+    {
+      "event": "request_start",
+      "number": 9,
+      "session": "1789226960428672198",
+      "wall_time": 1789227037.9962792
+    },
+    {
+      "event": "request_start",
+      "number": 10,
+      "session": "1789226960428672198",
+      "wall_time": 1789227040.318313
+    },
+    {
+      "event": "request_start",
+      "number": 11,
+      "session": "1789226960428672198",
+      "wall_time": 1789227042.8898017
+    },
+    {
+      "event": "request_start",
+      "number": 12,
+      "session": "1789226960428672198",
+      "wall_time": 1789227044.876055
+    },
+    {
+      "event": "request_start",
+      "number": 13,
+      "session": "1789226960428672198",
+      "wall_time": 1789227046.942911
+    },
+    {
+      "event": "request_start",
+      "number": 14,
+      "session": "1789226960428672198",
+      "wall_time": 1789227048.0148807
+    },
+    {
+      "event": "request_start",
+      "number": 15,
+      "session": "1789226960428672198",
+      "wall_time": 1789227048.9583254
+    },
+    {
+      "event": "request_start",
+      "number": 16,
+      "session": "1789226960428672198",
+      "wall_time": 1789227050.116496
+    },
+    {
+      "event": "request_start",
+      "number": 17,
+      "session": "1789226960428672198",
+      "wall_time": 1789227051.8185241
+    },
+    {
+      "event": "request_start",
+      "number": 18,
+      "session": "1789226960428672198",
+      "wall_time": 1789227052.6148295
+    },
+    {
+      "event": "request_start",
+      "number": 19,
+      "session": "1789226960428672198",
+      "wall_time": 1789227055.254264
+    },
+    {
+      "event": "request_start",
+      "number": 20,
+      "session": "1789226960428672198",
+      "wall_time": 1789227058.4989023
+    },
+    {
+      "elapsed_seconds": 92.86454875394702,
+      "event": "session_end",
+      "requests_total": 20,
+      "session": "1789226960428672198",
+      "wall_time": 1789227061.6190522
+    },
+    {
+      "event": "session_start",
+      "reserved_seconds": 3507.135447076056,
+      "session": "1789227243714563090",
+      "wall_time": 1789227251.82184
+    },
+    {
+      "event": "request_start",
+      "number": 21,
+      "session": "1789227243714563090",
+      "wall_time": 1789227299.2378953
+    },
+    {
+      "event": "request_start",
+      "number": 22,
+      "session": "1789227243714563090",
+      "wall_time": 1789227302.2300951
+    },
+    {
+      "event": "request_start",
+      "number": 23,
+      "session": "1789227243714563090",
+      "wall_time": 1789227304.7610042
+    },
+    {
+      "event": "request_start",
+      "number": 24,
+      "session": "1789227243714563090",
+      "wall_time": 1789227306.0544162
+    },
+    {
+      "event": "request_start",
+      "number": 25,
+      "session": "1789227243714563090",
+      "wall_time": 1789227306.8179405
+    },
+    {
+      "event": "request_start",
+      "number": 26,
+      "session": "1789227243714563090",
+      "wall_time": 1789227309.6006656
+    },
+    {
+      "event": "request_start",
+      "number": 27,
+      "session": "1789227243714563090",
+      "wall_time": 1789227312.3954577
+    },
+    {
+      "event": "request_start",
+      "number": 28,
+      "session": "1789227243714563090",
+      "wall_time": 1789227315.2161028
+    },
+    {
+      "event": "request_start",
+      "number": 29,
+      "session": "1789227243714563090",
+      "wall_time": 1789227317.689638
+    },
+    {
+      "event": "request_start",
+      "number": 30,
+      "session": "1789227243714563090",
+      "wall_time": 1789227320.144277
+    },
+    {
+      "event": "request_start",
+      "number": 31,
+      "session": "1789227243714563090",
+      "wall_time": 1789227320.934295
+    },
+    {
+      "event": "request_start",
+      "number": 32,
+      "session": "1789227243714563090",
+      "wall_time": 1789227321.7888362
+    },
+    {
+      "event": "request_start",
+      "number": 33,
+      "session": "1789227243714563090",
+      "wall_time": 1789227324.479534
+    },
+    {
+      "event": "request_start",
+      "number": 34,
+      "session": "1789227243714563090",
+      "wall_time": 1789227327.1724663
+    },
+    {
+      "event": "request_start",
+      "number": 35,
+      "session": "1789227243714563090",
+      "wall_time": 1789227329.9252126
+    },
+    {
+      "event": "request_start",
+      "number": 36,
+      "session": "1789227243714563090",
+      "wall_time": 1789227330.7393196
+    },
+    {
+      "event": "request_start",
+      "number": 37,
+      "session": "1789227243714563090",
+      "wall_time": 1789227332.4601066
+    },
+    {
+      "event": "request_start",
+      "number": 38,
+      "session": "1789227243714563090",
+      "wall_time": 1789227333.328479
+    },
+    {
+      "event": "request_start",
+      "number": 39,
+      "session": "1789227243714563090",
+      "wall_time": 1789227333.9413693
+    },
+    {
+      "event": "request_start",
+      "number": 40,
+      "session": "1789227243714563090",
+      "wall_time": 1789227334.6958773
+    },
+    {
+      "event": "request_start",
+      "number": 41,
+      "session": "1789227243714563090",
+      "wall_time": 1789227336.538966
+    },
+    {
+      "event": "request_start",
+      "number": 42,
+      "session": "1789227243714563090",
+      "wall_time": 1789227338.5675466
+    },
+    {
+      "event": "request_start",
+      "number": 43,
+      "session": "1789227243714563090",
+      "wall_time": 1789227340.1540542
+    },
+    {
+      "event": "request_start",
+      "number": 44,
+      "session": "1789227243714563090",
+      "wall_time": 1789227341.9740744
+    },
+    {
+      "event": "request_start",
+      "number": 45,
+      "session": "1789227243714563090",
+      "wall_time": 1789227343.7946997
+    },
+    {
+      "elapsed_seconds": 94.00976295722649,
+      "event": "session_end",
+      "requests_total": 45,
+      "session": "1789227243714563090",
+      "wall_time": 1789227345.8316007
+    },
+    {
+      "event": "session_start",
+      "reserved_seconds": 3413.1256855886895,
+      "session": "1789227629674429726",
+      "wall_time": 1789227638.273021
+    },
+    {
+      "event": "request_start",
+      "number": 46,
+      "session": "1789227629674429726",
+      "wall_time": 1789227686.046947
+    },
+    {
+      "elapsed_seconds": 50.515903315041214,
+      "event": "session_end",
+      "requests_total": 46,
+      "session": "1789227629674429726",
+      "wall_time": 1789227688.7889216
+    }
+  ],
+  "final_gpu_processes": "",
+  "total_generation_attempts": 46,
+  "total_gpu_seconds": 237.39021502621472,
+  "uncertainty_definition": "conservative 10 seconds per session for watchdog/teardown/accounting overhead; no observed timeout"
+}

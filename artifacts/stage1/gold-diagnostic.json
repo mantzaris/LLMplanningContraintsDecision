@@ -1,0 +1,120 @@
+{
+  "balanced": {
+    "error_source": "deliberately_injected",
+    "history": [
+      {
+        "gold_label": false,
+        "witness": {
+          "cost": 1,
+          "journey_id": "a",
+          "policy": "balanced",
+          "score": 4.0,
+          "score_numerator": 4,
+          "separated_pairs": [
+            [
+              "c0",
+              "c1",
+              1
+            ],
+            [
+              "c0",
+              "c3",
+              1
+            ],
+            [
+              "c1",
+              "c2",
+              2
+            ],
+            [
+              "c2",
+              "c3",
+              1
+            ]
+          ]
+        }
+      },
+      {
+        "gold_label": false,
+        "witness": {
+          "cost": 1,
+          "journey_id": "b",
+          "policy": "balanced",
+          "score": 1.0,
+          "score_numerator": 1,
+          "separated_pairs": [
+            [
+              "c1",
+              "c3",
+              1
+            ]
+          ]
+        }
+      }
+    ],
+    "mode": "gold_label_diagnostic",
+    "plan_id": "c",
+    "survivors": [
+      "c3"
+    ]
+  },
+  "consequence": {
+    "error_source": "deliberately_injected",
+    "history": [
+      {
+        "gold_label": false,
+        "witness": {
+          "cost": 1,
+          "journey_id": "a",
+          "policy": "consequence",
+          "score": 9.0,
+          "score_numerator": 9,
+          "separated_pairs": [
+            [
+              "c0",
+              "c1",
+              1
+            ],
+            [
+              "c0",
+              "c3",
+              1
+            ],
+            [
+              "c1",
+              "c2",
+              2
+            ],
+            [
+              "c2",
+              "c3",
+              1
+            ]
+          ]
+        }
+      },
+      {
+        "gold_label": false,
+        "witness": {
+          "cost": 1,
+          "journey_id": "b",
+          "policy": "consequence",
+          "score": 2.0,
+          "score_numerator": 2,
+          "separated_pairs": [
+            [
+              "c1",
+              "c3",
+              1
+            ]
+          ]
+        }
+      }
+    ],
+    "mode": "gold_label_diagnostic",
+    "plan_id": "c",
+    "survivors": [
+      "c3"
+    ]
+  }
+}

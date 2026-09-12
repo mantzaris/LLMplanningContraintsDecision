@@ -49,6 +49,22 @@ def evaluate_run(run_dir: Path, references_path: Path) -> dict:
                     equivalent(c["formula"]) for c in output["candidates"]
                 ],
                 "constraint_review_flags": constraint_review_flags(reference, final_formula),
+                "judgment_checks": [
+                    {
+                        "journey_id": item["journey_id"],
+                        "model_verdict": item["judgment"]["verdict"],
+                        "reference_label": check_reference(
+                            reference, next(j for j in pool if j.journey_id == item["journey_id"])
+                        ),
+                        "matches_reference": None
+                        if item["judgment"]["verdict"] == "uncertain"
+                        else (item["judgment"]["verdict"] == "satisfied")
+                        == check_reference(
+                            reference, next(j for j in pool if j.journey_id == item["journey_id"])
+                        ),
+                    }
+                    for item in output["judgments"]
+                ],
             }
         )
     artifact = {

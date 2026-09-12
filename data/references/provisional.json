@@ -1,0 +1,1418 @@
+[
+  {
+    "base_id": "g00",
+    "error_injection": false,
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "earliest_departure",
+          "target": 27000
+        },
+        {
+          "direction": "outbound",
+          "requirement": "latest_arrival",
+          "target": 29700
+        },
+        {
+          "direction": "outbound",
+          "requirement": "transfer_limit",
+          "target": 1
+        }
+      ]
+    },
+    "review_status": "provisional_unaudited",
+    "scenario_id": "g00-timing-p0"
+  },
+  {
+    "base_id": "g00",
+    "error_injection": false,
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "earliest_departure",
+          "target": 27000
+        },
+        {
+          "direction": "outbound",
+          "requirement": "latest_arrival",
+          "target": 29700
+        },
+        {
+          "direction": "outbound",
+          "requirement": "transfer_limit",
+          "target": 1
+        }
+      ]
+    },
+    "review_status": "provisional_unaudited",
+    "scenario_id": "g00-timing-p1"
+  },
+  {
+    "base_id": "g00",
+    "error_injection": false,
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "forbidden_modes",
+          "target": [
+            "rail",
+            "tram"
+          ]
+        },
+        {
+          "direction": "outbound",
+          "requirement": "earliest_departure",
+          "target": 27900
+        },
+        {
+          "direction": "outbound",
+          "requirement": "transfer_limit",
+          "target": 0
+        }
+      ]
+    },
+    "review_status": "provisional_unaudited",
+    "scenario_id": "g00-negation-p0"
+  },
+  {
+    "base_id": "g00",
+    "error_injection": false,
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "forbidden_modes",
+          "target": [
+            "rail",
+            "tram"
+          ]
+        },
+        {
+          "direction": "outbound",
+          "requirement": "earliest_departure",
+          "target": 27900
+        },
+        {
+          "direction": "outbound",
+          "requirement": "transfer_limit",
+          "target": 0
+        }
+      ]
+    },
+    "review_status": "provisional_unaudited",
+    "scenario_id": "g00-negation-p1"
+  },
+  {
+    "base_id": "g00",
+    "error_injection": false,
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "ordered_calls",
+          "target": [
+            "13733",
+            "3398"
+          ]
+        },
+        {
+          "direction": "outbound",
+          "requirement": "allowed_modes",
+          "target": [
+            "bus"
+          ]
+        }
+      ]
+    },
+    "review_status": "provisional_unaudited",
+    "scenario_id": "g00-visits-p0"
+  },
+  {
+    "base_id": "g00",
+    "error_injection": false,
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "ordered_calls",
+          "target": [
+            "13733",
+            "3398"
+          ]
+        },
+        {
+          "direction": "outbound",
+          "requirement": "allowed_modes",
+          "target": [
+            "bus"
+          ]
+        }
+      ]
+    },
+    "review_status": "provisional_unaudited",
+    "scenario_id": "g00-visits-p1"
+  },
+  {
+    "base_id": "g00",
+    "error_injection": false,
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "earliest_departure",
+          "target": 30600
+        },
+        {
+          "direction": "outbound",
+          "requirement": "latest_arrival",
+          "target": 28800
+        }
+      ]
+    },
+    "review_status": "provisional_unaudited",
+    "scenario_id": "g00-infeasible-p0"
+  },
+  {
+    "base_id": "g00",
+    "error_injection": false,
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "earliest_departure",
+          "target": 30600
+        },
+        {
+          "direction": "outbound",
+          "requirement": "latest_arrival",
+          "target": 28800
+        }
+      ]
+    },
+    "review_status": "provisional_unaudited",
+    "scenario_id": "g00-infeasible-p1"
+  },
+  {
+    "base_id": "g00",
+    "error_injection": false,
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "transfer_limit",
+          "target": 0
+        },
+        {
+          "direction": "return",
+          "requirement": "earliest_departure",
+          "target": 33300
+        }
+      ]
+    },
+    "review_status": "provisional_unaudited",
+    "scenario_id": "g00-scope-p0"
+  },
+  {
+    "base_id": "g00",
+    "error_injection": false,
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "transfer_limit",
+          "target": 0
+        },
+        {
+          "direction": "return",
+          "requirement": "earliest_departure",
+          "target": 33300
+        }
+      ]
+    },
+    "review_status": "provisional_unaudited",
+    "scenario_id": "g00-scope-p1"
+  },
+  {
+    "base_id": "g01",
+    "error_injection": false,
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "earliest_departure",
+          "target": 27000
+        },
+        {
+          "direction": "outbound",
+          "requirement": "latest_arrival",
+          "target": 29700
+        },
+        {
+          "direction": "outbound",
+          "requirement": "transfer_limit",
+          "target": 1
+        }
+      ]
+    },
+    "review_status": "provisional_unaudited",
+    "scenario_id": "g01-timing-p0"
+  },
+  {
+    "base_id": "g01",
+    "error_injection": false,
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "earliest_departure",
+          "target": 27000
+        },
+        {
+          "direction": "outbound",
+          "requirement": "latest_arrival",
+          "target": 29700
+        },
+        {
+          "direction": "outbound",
+          "requirement": "transfer_limit",
+          "target": 1
+        }
+      ]
+    },
+    "review_status": "provisional_unaudited",
+    "scenario_id": "g01-timing-p1"
+  },
+  {
+    "base_id": "g01",
+    "error_injection": false,
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "forbidden_modes",
+          "target": [
+            "rail",
+            "tram"
+          ]
+        },
+        {
+          "direction": "outbound",
+          "requirement": "earliest_departure",
+          "target": 27900
+        },
+        {
+          "direction": "outbound",
+          "requirement": "transfer_limit",
+          "target": 0
+        }
+      ]
+    },
+    "review_status": "provisional_unaudited",
+    "scenario_id": "g01-negation-p0"
+  },
+  {
+    "base_id": "g01",
+    "error_injection": false,
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "forbidden_modes",
+          "target": [
+            "rail",
+            "tram"
+          ]
+        },
+        {
+          "direction": "outbound",
+          "requirement": "earliest_departure",
+          "target": 27900
+        },
+        {
+          "direction": "outbound",
+          "requirement": "transfer_limit",
+          "target": 0
+        }
+      ]
+    },
+    "review_status": "provisional_unaudited",
+    "scenario_id": "g01-negation-p1"
+  },
+  {
+    "base_id": "g01",
+    "error_injection": false,
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "ordered_calls",
+          "target": [
+            "7642",
+            "7634"
+          ]
+        },
+        {
+          "direction": "outbound",
+          "requirement": "allowed_modes",
+          "target": [
+            "bus"
+          ]
+        }
+      ]
+    },
+    "review_status": "provisional_unaudited",
+    "scenario_id": "g01-visits-p0"
+  },
+  {
+    "base_id": "g01",
+    "error_injection": false,
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "ordered_calls",
+          "target": [
+            "7642",
+            "7634"
+          ]
+        },
+        {
+          "direction": "outbound",
+          "requirement": "allowed_modes",
+          "target": [
+            "bus"
+          ]
+        }
+      ]
+    },
+    "review_status": "provisional_unaudited",
+    "scenario_id": "g01-visits-p1"
+  },
+  {
+    "base_id": "g01",
+    "error_injection": false,
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "earliest_departure",
+          "target": 30600
+        },
+        {
+          "direction": "outbound",
+          "requirement": "latest_arrival",
+          "target": 28800
+        }
+      ]
+    },
+    "review_status": "provisional_unaudited",
+    "scenario_id": "g01-infeasible-p0"
+  },
+  {
+    "base_id": "g01",
+    "error_injection": false,
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "earliest_departure",
+          "target": 30600
+        },
+        {
+          "direction": "outbound",
+          "requirement": "latest_arrival",
+          "target": 28800
+        }
+      ]
+    },
+    "review_status": "provisional_unaudited",
+    "scenario_id": "g01-infeasible-p1"
+  },
+  {
+    "base_id": "g01",
+    "error_injection": false,
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "transfer_limit",
+          "target": 0
+        },
+        {
+          "direction": "return",
+          "requirement": "earliest_departure",
+          "target": 33300
+        }
+      ]
+    },
+    "review_status": "provisional_unaudited",
+    "scenario_id": "g01-scope-p0"
+  },
+  {
+    "base_id": "g01",
+    "error_injection": false,
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "transfer_limit",
+          "target": 0
+        },
+        {
+          "direction": "return",
+          "requirement": "earliest_departure",
+          "target": 33300
+        }
+      ]
+    },
+    "review_status": "provisional_unaudited",
+    "scenario_id": "g01-scope-p1"
+  },
+  {
+    "base_id": "g02",
+    "error_injection": false,
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "earliest_departure",
+          "target": 27000
+        },
+        {
+          "direction": "outbound",
+          "requirement": "latest_arrival",
+          "target": 29700
+        },
+        {
+          "direction": "outbound",
+          "requirement": "transfer_limit",
+          "target": 1
+        }
+      ]
+    },
+    "review_status": "provisional_unaudited",
+    "scenario_id": "g02-timing-p0"
+  },
+  {
+    "base_id": "g02",
+    "error_injection": false,
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "earliest_departure",
+          "target": 27000
+        },
+        {
+          "direction": "outbound",
+          "requirement": "latest_arrival",
+          "target": 29700
+        },
+        {
+          "direction": "outbound",
+          "requirement": "transfer_limit",
+          "target": 1
+        }
+      ]
+    },
+    "review_status": "provisional_unaudited",
+    "scenario_id": "g02-timing-p1"
+  },
+  {
+    "base_id": "g02",
+    "error_injection": false,
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "forbidden_modes",
+          "target": [
+            "rail",
+            "tram"
+          ]
+        },
+        {
+          "direction": "outbound",
+          "requirement": "earliest_departure",
+          "target": 27900
+        },
+        {
+          "direction": "outbound",
+          "requirement": "transfer_limit",
+          "target": 0
+        }
+      ]
+    },
+    "review_status": "provisional_unaudited",
+    "scenario_id": "g02-negation-p0"
+  },
+  {
+    "base_id": "g02",
+    "error_injection": false,
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "forbidden_modes",
+          "target": [
+            "rail",
+            "tram"
+          ]
+        },
+        {
+          "direction": "outbound",
+          "requirement": "earliest_departure",
+          "target": 27900
+        },
+        {
+          "direction": "outbound",
+          "requirement": "transfer_limit",
+          "target": 0
+        }
+      ]
+    },
+    "review_status": "provisional_unaudited",
+    "scenario_id": "g02-negation-p1"
+  },
+  {
+    "base_id": "g02",
+    "error_injection": false,
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "ordered_calls",
+          "target": [
+            "10491",
+            "3397"
+          ]
+        },
+        {
+          "direction": "outbound",
+          "requirement": "allowed_modes",
+          "target": [
+            "bus"
+          ]
+        }
+      ]
+    },
+    "review_status": "provisional_unaudited",
+    "scenario_id": "g02-visits-p0"
+  },
+  {
+    "base_id": "g02",
+    "error_injection": false,
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "ordered_calls",
+          "target": [
+            "10491",
+            "3397"
+          ]
+        },
+        {
+          "direction": "outbound",
+          "requirement": "allowed_modes",
+          "target": [
+            "bus"
+          ]
+        }
+      ]
+    },
+    "review_status": "provisional_unaudited",
+    "scenario_id": "g02-visits-p1"
+  },
+  {
+    "base_id": "g02",
+    "error_injection": false,
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "earliest_departure",
+          "target": 30600
+        },
+        {
+          "direction": "outbound",
+          "requirement": "latest_arrival",
+          "target": 28800
+        }
+      ]
+    },
+    "review_status": "provisional_unaudited",
+    "scenario_id": "g02-infeasible-p0"
+  },
+  {
+    "base_id": "g02",
+    "error_injection": false,
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "earliest_departure",
+          "target": 30600
+        },
+        {
+          "direction": "outbound",
+          "requirement": "latest_arrival",
+          "target": 28800
+        }
+      ]
+    },
+    "review_status": "provisional_unaudited",
+    "scenario_id": "g02-infeasible-p1"
+  },
+  {
+    "base_id": "g02",
+    "error_injection": false,
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "transfer_limit",
+          "target": 0
+        },
+        {
+          "direction": "return",
+          "requirement": "earliest_departure",
+          "target": 33300
+        }
+      ]
+    },
+    "review_status": "provisional_unaudited",
+    "scenario_id": "g02-scope-p0"
+  },
+  {
+    "base_id": "g02",
+    "error_injection": false,
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "transfer_limit",
+          "target": 0
+        },
+        {
+          "direction": "return",
+          "requirement": "earliest_departure",
+          "target": 33300
+        }
+      ]
+    },
+    "review_status": "provisional_unaudited",
+    "scenario_id": "g02-scope-p1"
+  },
+  {
+    "base_id": "g03",
+    "error_injection": false,
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "earliest_departure",
+          "target": 27000
+        },
+        {
+          "direction": "outbound",
+          "requirement": "latest_arrival",
+          "target": 29700
+        },
+        {
+          "direction": "outbound",
+          "requirement": "transfer_limit",
+          "target": 1
+        }
+      ]
+    },
+    "review_status": "provisional_unaudited",
+    "scenario_id": "g03-timing-p0"
+  },
+  {
+    "base_id": "g03",
+    "error_injection": false,
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "earliest_departure",
+          "target": 27000
+        },
+        {
+          "direction": "outbound",
+          "requirement": "latest_arrival",
+          "target": 29700
+        },
+        {
+          "direction": "outbound",
+          "requirement": "transfer_limit",
+          "target": 1
+        }
+      ]
+    },
+    "review_status": "provisional_unaudited",
+    "scenario_id": "g03-timing-p1"
+  },
+  {
+    "base_id": "g03",
+    "error_injection": false,
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "forbidden_modes",
+          "target": [
+            "rail",
+            "tram"
+          ]
+        },
+        {
+          "direction": "outbound",
+          "requirement": "earliest_departure",
+          "target": 27900
+        },
+        {
+          "direction": "outbound",
+          "requirement": "transfer_limit",
+          "target": 0
+        }
+      ]
+    },
+    "review_status": "provisional_unaudited",
+    "scenario_id": "g03-negation-p0"
+  },
+  {
+    "base_id": "g03",
+    "error_injection": false,
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "forbidden_modes",
+          "target": [
+            "rail",
+            "tram"
+          ]
+        },
+        {
+          "direction": "outbound",
+          "requirement": "earliest_departure",
+          "target": 27900
+        },
+        {
+          "direction": "outbound",
+          "requirement": "transfer_limit",
+          "target": 0
+        }
+      ]
+    },
+    "review_status": "provisional_unaudited",
+    "scenario_id": "g03-negation-p1"
+  },
+  {
+    "base_id": "g03",
+    "error_injection": false,
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "ordered_calls",
+          "target": [
+            "7594",
+            "10491"
+          ]
+        },
+        {
+          "direction": "outbound",
+          "requirement": "allowed_modes",
+          "target": [
+            "bus"
+          ]
+        }
+      ]
+    },
+    "review_status": "provisional_unaudited",
+    "scenario_id": "g03-visits-p0"
+  },
+  {
+    "base_id": "g03",
+    "error_injection": false,
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "ordered_calls",
+          "target": [
+            "7594",
+            "10491"
+          ]
+        },
+        {
+          "direction": "outbound",
+          "requirement": "allowed_modes",
+          "target": [
+            "bus"
+          ]
+        }
+      ]
+    },
+    "review_status": "provisional_unaudited",
+    "scenario_id": "g03-visits-p1"
+  },
+  {
+    "base_id": "g03",
+    "error_injection": false,
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "earliest_departure",
+          "target": 30600
+        },
+        {
+          "direction": "outbound",
+          "requirement": "latest_arrival",
+          "target": 28800
+        }
+      ]
+    },
+    "review_status": "provisional_unaudited",
+    "scenario_id": "g03-infeasible-p0"
+  },
+  {
+    "base_id": "g03",
+    "error_injection": false,
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "earliest_departure",
+          "target": 30600
+        },
+        {
+          "direction": "outbound",
+          "requirement": "latest_arrival",
+          "target": 28800
+        }
+      ]
+    },
+    "review_status": "provisional_unaudited",
+    "scenario_id": "g03-infeasible-p1"
+  },
+  {
+    "base_id": "g03",
+    "error_injection": false,
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "transfer_limit",
+          "target": 0
+        },
+        {
+          "direction": "return",
+          "requirement": "earliest_departure",
+          "target": 33300
+        }
+      ]
+    },
+    "review_status": "provisional_unaudited",
+    "scenario_id": "g03-scope-p0"
+  },
+  {
+    "base_id": "g03",
+    "error_injection": false,
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "transfer_limit",
+          "target": 0
+        },
+        {
+          "direction": "return",
+          "requirement": "earliest_departure",
+          "target": 33300
+        }
+      ]
+    },
+    "review_status": "provisional_unaudited",
+    "scenario_id": "g03-scope-p1"
+  },
+  {
+    "base_id": "g04",
+    "error_injection": false,
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "earliest_departure",
+          "target": 27000
+        },
+        {
+          "direction": "outbound",
+          "requirement": "latest_arrival",
+          "target": 29700
+        },
+        {
+          "direction": "outbound",
+          "requirement": "transfer_limit",
+          "target": 1
+        }
+      ]
+    },
+    "review_status": "provisional_unaudited",
+    "scenario_id": "g04-timing-p0"
+  },
+  {
+    "base_id": "g04",
+    "error_injection": false,
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "earliest_departure",
+          "target": 27000
+        },
+        {
+          "direction": "outbound",
+          "requirement": "latest_arrival",
+          "target": 29700
+        },
+        {
+          "direction": "outbound",
+          "requirement": "transfer_limit",
+          "target": 1
+        }
+      ]
+    },
+    "review_status": "provisional_unaudited",
+    "scenario_id": "g04-timing-p1"
+  },
+  {
+    "base_id": "g04",
+    "error_injection": false,
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "forbidden_modes",
+          "target": [
+            "rail",
+            "tram"
+          ]
+        },
+        {
+          "direction": "outbound",
+          "requirement": "earliest_departure",
+          "target": 27900
+        },
+        {
+          "direction": "outbound",
+          "requirement": "transfer_limit",
+          "target": 0
+        }
+      ]
+    },
+    "review_status": "provisional_unaudited",
+    "scenario_id": "g04-negation-p0"
+  },
+  {
+    "base_id": "g04",
+    "error_injection": false,
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "forbidden_modes",
+          "target": [
+            "rail",
+            "tram"
+          ]
+        },
+        {
+          "direction": "outbound",
+          "requirement": "earliest_departure",
+          "target": 27900
+        },
+        {
+          "direction": "outbound",
+          "requirement": "transfer_limit",
+          "target": 0
+        }
+      ]
+    },
+    "review_status": "provisional_unaudited",
+    "scenario_id": "g04-negation-p1"
+  },
+  {
+    "base_id": "g04",
+    "error_injection": false,
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "ordered_calls",
+          "target": [
+            "3398",
+            "13780"
+          ]
+        },
+        {
+          "direction": "outbound",
+          "requirement": "allowed_modes",
+          "target": [
+            "bus"
+          ]
+        }
+      ]
+    },
+    "review_status": "provisional_unaudited",
+    "scenario_id": "g04-visits-p0"
+  },
+  {
+    "base_id": "g04",
+    "error_injection": false,
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "ordered_calls",
+          "target": [
+            "3398",
+            "13780"
+          ]
+        },
+        {
+          "direction": "outbound",
+          "requirement": "allowed_modes",
+          "target": [
+            "bus"
+          ]
+        }
+      ]
+    },
+    "review_status": "provisional_unaudited",
+    "scenario_id": "g04-visits-p1"
+  },
+  {
+    "base_id": "g04",
+    "error_injection": false,
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "earliest_departure",
+          "target": 30600
+        },
+        {
+          "direction": "outbound",
+          "requirement": "latest_arrival",
+          "target": 28800
+        }
+      ]
+    },
+    "review_status": "provisional_unaudited",
+    "scenario_id": "g04-infeasible-p0"
+  },
+  {
+    "base_id": "g04",
+    "error_injection": false,
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "earliest_departure",
+          "target": 30600
+        },
+        {
+          "direction": "outbound",
+          "requirement": "latest_arrival",
+          "target": 28800
+        }
+      ]
+    },
+    "review_status": "provisional_unaudited",
+    "scenario_id": "g04-infeasible-p1"
+  },
+  {
+    "base_id": "g04",
+    "error_injection": false,
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "transfer_limit",
+          "target": 0
+        },
+        {
+          "direction": "return",
+          "requirement": "earliest_departure",
+          "target": 33300
+        }
+      ]
+    },
+    "review_status": "provisional_unaudited",
+    "scenario_id": "g04-scope-p0"
+  },
+  {
+    "base_id": "g04",
+    "error_injection": false,
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "transfer_limit",
+          "target": 0
+        },
+        {
+          "direction": "return",
+          "requirement": "earliest_departure",
+          "target": 33300
+        }
+      ]
+    },
+    "review_status": "provisional_unaudited",
+    "scenario_id": "g04-scope-p1"
+  },
+  {
+    "base_id": "g05",
+    "error_injection": false,
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "earliest_departure",
+          "target": 27000
+        },
+        {
+          "direction": "outbound",
+          "requirement": "latest_arrival",
+          "target": 29700
+        },
+        {
+          "direction": "outbound",
+          "requirement": "transfer_limit",
+          "target": 1
+        }
+      ]
+    },
+    "review_status": "provisional_unaudited",
+    "scenario_id": "g05-timing-p0"
+  },
+  {
+    "base_id": "g05",
+    "error_injection": false,
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "earliest_departure",
+          "target": 27000
+        },
+        {
+          "direction": "outbound",
+          "requirement": "latest_arrival",
+          "target": 29700
+        },
+        {
+          "direction": "outbound",
+          "requirement": "transfer_limit",
+          "target": 1
+        }
+      ]
+    },
+    "review_status": "provisional_unaudited",
+    "scenario_id": "g05-timing-p1"
+  },
+  {
+    "base_id": "g05",
+    "error_injection": false,
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "forbidden_modes",
+          "target": [
+            "rail",
+            "tram"
+          ]
+        },
+        {
+          "direction": "outbound",
+          "requirement": "earliest_departure",
+          "target": 27900
+        },
+        {
+          "direction": "outbound",
+          "requirement": "transfer_limit",
+          "target": 0
+        }
+      ]
+    },
+    "review_status": "provisional_unaudited",
+    "scenario_id": "g05-negation-p0"
+  },
+  {
+    "base_id": "g05",
+    "error_injection": false,
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "forbidden_modes",
+          "target": [
+            "rail",
+            "tram"
+          ]
+        },
+        {
+          "direction": "outbound",
+          "requirement": "earliest_departure",
+          "target": 27900
+        },
+        {
+          "direction": "outbound",
+          "requirement": "transfer_limit",
+          "target": 0
+        }
+      ]
+    },
+    "review_status": "provisional_unaudited",
+    "scenario_id": "g05-negation-p1"
+  },
+  {
+    "base_id": "g05",
+    "error_injection": false,
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "ordered_calls",
+          "target": [
+            "13773",
+            "13733"
+          ]
+        },
+        {
+          "direction": "outbound",
+          "requirement": "allowed_modes",
+          "target": [
+            "bus"
+          ]
+        }
+      ]
+    },
+    "review_status": "provisional_unaudited",
+    "scenario_id": "g05-visits-p0"
+  },
+  {
+    "base_id": "g05",
+    "error_injection": false,
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "ordered_calls",
+          "target": [
+            "13773",
+            "13733"
+          ]
+        },
+        {
+          "direction": "outbound",
+          "requirement": "allowed_modes",
+          "target": [
+            "bus"
+          ]
+        }
+      ]
+    },
+    "review_status": "provisional_unaudited",
+    "scenario_id": "g05-visits-p1"
+  },
+  {
+    "base_id": "g05",
+    "error_injection": false,
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "earliest_departure",
+          "target": 30600
+        },
+        {
+          "direction": "outbound",
+          "requirement": "latest_arrival",
+          "target": 28800
+        }
+      ]
+    },
+    "review_status": "provisional_unaudited",
+    "scenario_id": "g05-infeasible-p0"
+  },
+  {
+    "base_id": "g05",
+    "error_injection": false,
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "earliest_departure",
+          "target": 30600
+        },
+        {
+          "direction": "outbound",
+          "requirement": "latest_arrival",
+          "target": 28800
+        }
+      ]
+    },
+    "review_status": "provisional_unaudited",
+    "scenario_id": "g05-infeasible-p1"
+  },
+  {
+    "base_id": "g05",
+    "error_injection": false,
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "transfer_limit",
+          "target": 0
+        },
+        {
+          "direction": "return",
+          "requirement": "earliest_departure",
+          "target": 33300
+        }
+      ]
+    },
+    "review_status": "provisional_unaudited",
+    "scenario_id": "g05-scope-p0"
+  },
+  {
+    "base_id": "g05",
+    "error_injection": false,
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "transfer_limit",
+          "target": 0
+        },
+        {
+          "direction": "return",
+          "requirement": "earliest_departure",
+          "target": 33300
+        }
+      ]
+    },
+    "review_status": "provisional_unaudited",
+    "scenario_id": "g05-scope-p1"
+  }
+]

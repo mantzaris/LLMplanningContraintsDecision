@@ -1,0 +1,123 @@
+{
+  "injected_candidates": [
+    {
+      "children": [],
+      "kind": "all",
+      "source": null
+    },
+    {
+      "kind": "atom",
+      "op": "depart_ge",
+      "scope": "outbound",
+      "source": null,
+      "unit": "seconds",
+      "value": 150
+    },
+    {
+      "kind": "atom",
+      "op": "permit_modes",
+      "scope": "outbound",
+      "source": null,
+      "unit": "mode",
+      "value": [
+        "bus"
+      ]
+    },
+    {
+      "kind": "atom",
+      "op": "depart_ge",
+      "scope": "outbound",
+      "source": null,
+      "unit": "seconds",
+      "value": 200
+    }
+  ],
+  "pool": [
+    {
+      "journey_id": "a",
+      "rides": [
+        {
+          "calls": [
+            {
+              "arrival_s": 100,
+              "departure_s": 100,
+              "stop_id": "A"
+            },
+            {
+              "arrival_s": 200,
+              "departure_s": 200,
+              "stop_id": "C"
+            }
+          ],
+          "mode": "bus",
+          "route_id": "r",
+          "scope": "outbound",
+          "trip_id": "t1"
+        }
+      ]
+    },
+    {
+      "journey_id": "b",
+      "rides": [
+        {
+          "calls": [
+            {
+              "arrival_s": 150,
+              "departure_s": 150,
+              "stop_id": "A"
+            },
+            {
+              "arrival_s": 250,
+              "departure_s": 250,
+              "stop_id": "C"
+            }
+          ],
+          "mode": "tram",
+          "route_id": "r",
+          "scope": "outbound",
+          "trip_id": "t2"
+        }
+      ]
+    },
+    {
+      "journey_id": "c",
+      "rides": [
+        {
+          "calls": [
+            {
+              "arrival_s": 200,
+              "departure_s": 200,
+              "stop_id": "A"
+            },
+            {
+              "arrival_s": 300,
+              "departure_s": 300,
+              "stop_id": "C"
+            }
+          ],
+          "mode": "bus",
+          "route_id": "r",
+          "scope": "outbound",
+          "trip_id": "t3"
+        }
+      ]
+    }
+  ],
+  "provenance": "deliberately injected synthetic unit-test data; not transit agency data",
+  "reference": {
+    "and": [
+      {
+        "direction": "outbound",
+        "requirement": "earliest_departure",
+        "target": 150
+      },
+      {
+        "direction": "outbound",
+        "requirement": "allowed_modes",
+        "target": [
+          "bus"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,1721 @@
+{
+  "actual_compute": {
+    "failed_generations": 0,
+    "generation_attempts": 20,
+    "generation_seconds": 42.65831108344719,
+    "input_tokens": 30479,
+    "output_devices": [
+      "cuda:0"
+    ],
+    "output_tokens": 3006,
+    "peak_memory_bytes": 15639515136,
+    "successful_generations": 20
+  },
+  "evaluation": {
+    "reference_hash": "b778bd14215e8f95efefe109d4e093a48b259fb0c6992459746f407dd7b47cc1",
+    "results": [
+      {
+        "base_id": "g00",
+        "candidate_pool_equivalence": [],
+        "complete_satisfaction": false,
+        "constraint_review_flags": [
+          "no_final_interpretation"
+        ],
+        "correct_infeasibility": false,
+        "false_infeasibility": false,
+        "final_interpretation_pool_equivalent": null,
+        "initial_interpretation_pool_equivalent": null,
+        "initial_plan_correct": false,
+        "invalid_plan_returned": false,
+        "method": "A",
+        "plan_coverage": false,
+        "reference_feasible_count": 0,
+        "repair_damaged_correct_interpretation": false,
+        "repair_damaged_correct_plan": false,
+        "scenario_id": "g00-infeasible-p0",
+        "unresolved": true
+      },
+      {
+        "base_id": "g00",
+        "candidate_pool_equivalence": [],
+        "complete_satisfaction": false,
+        "constraint_review_flags": [
+          "no_final_interpretation"
+        ],
+        "correct_infeasibility": false,
+        "false_infeasibility": false,
+        "final_interpretation_pool_equivalent": null,
+        "initial_interpretation_pool_equivalent": null,
+        "initial_plan_correct": false,
+        "invalid_plan_returned": false,
+        "method": "B",
+        "plan_coverage": false,
+        "reference_feasible_count": 0,
+        "repair_damaged_correct_interpretation": false,
+        "repair_damaged_correct_plan": false,
+        "scenario_id": "g00-infeasible-p0",
+        "unresolved": true
+      },
+      {
+        "base_id": "g00",
+        "candidate_pool_equivalence": [],
+        "complete_satisfaction": false,
+        "constraint_review_flags": [
+          "no_final_interpretation"
+        ],
+        "correct_infeasibility": false,
+        "false_infeasibility": false,
+        "final_interpretation_pool_equivalent": null,
+        "initial_interpretation_pool_equivalent": null,
+        "initial_plan_correct": false,
+        "invalid_plan_returned": false,
+        "method": "C",
+        "plan_coverage": false,
+        "reference_feasible_count": 0,
+        "repair_damaged_correct_interpretation": false,
+        "repair_damaged_correct_plan": false,
+        "scenario_id": "g00-infeasible-p0",
+        "unresolved": true
+      },
+      {
+        "base_id": "g00",
+        "candidate_pool_equivalence": [],
+        "complete_satisfaction": false,
+        "constraint_review_flags": [
+          "no_final_interpretation"
+        ],
+        "correct_infeasibility": false,
+        "false_infeasibility": false,
+        "final_interpretation_pool_equivalent": null,
+        "initial_interpretation_pool_equivalent": null,
+        "initial_plan_correct": false,
+        "invalid_plan_returned": false,
+        "method": "D",
+        "plan_coverage": false,
+        "reference_feasible_count": 0,
+        "repair_damaged_correct_interpretation": false,
+        "repair_damaged_correct_plan": false,
+        "scenario_id": "g00-infeasible-p0",
+        "unresolved": true
+      },
+      {
+        "base_id": "g00",
+        "candidate_pool_equivalence": [],
+        "complete_satisfaction": false,
+        "constraint_review_flags": [
+          "no_final_interpretation"
+        ],
+        "correct_infeasibility": false,
+        "false_infeasibility": false,
+        "final_interpretation_pool_equivalent": null,
+        "initial_interpretation_pool_equivalent": null,
+        "initial_plan_correct": false,
+        "invalid_plan_returned": false,
+        "method": "E",
+        "plan_coverage": false,
+        "reference_feasible_count": 0,
+        "repair_damaged_correct_interpretation": false,
+        "repair_damaged_correct_plan": false,
+        "scenario_id": "g00-infeasible-p0",
+        "unresolved": true
+      },
+      {
+        "base_id": "g00",
+        "candidate_pool_equivalence": [],
+        "complete_satisfaction": false,
+        "constraint_review_flags": [
+          "no_final_interpretation"
+        ],
+        "correct_infeasibility": false,
+        "false_infeasibility": false,
+        "final_interpretation_pool_equivalent": null,
+        "initial_interpretation_pool_equivalent": null,
+        "initial_plan_correct": false,
+        "invalid_plan_returned": false,
+        "method": "A",
+        "plan_coverage": false,
+        "reference_feasible_count": 2,
+        "repair_damaged_correct_interpretation": false,
+        "repair_damaged_correct_plan": false,
+        "scenario_id": "g00-negation-p0",
+        "unresolved": true
+      },
+      {
+        "base_id": "g00",
+        "candidate_pool_equivalence": [],
+        "complete_satisfaction": false,
+        "constraint_review_flags": [
+          "no_final_interpretation"
+        ],
+        "correct_infeasibility": false,
+        "false_infeasibility": false,
+        "final_interpretation_pool_equivalent": null,
+        "initial_interpretation_pool_equivalent": null,
+        "initial_plan_correct": false,
+        "invalid_plan_returned": false,
+        "method": "B",
+        "plan_coverage": false,
+        "reference_feasible_count": 2,
+        "repair_damaged_correct_interpretation": false,
+        "repair_damaged_correct_plan": false,
+        "scenario_id": "g00-negation-p0",
+        "unresolved": true
+      },
+      {
+        "base_id": "g00",
+        "candidate_pool_equivalence": [],
+        "complete_satisfaction": false,
+        "constraint_review_flags": [
+          "no_final_interpretation"
+        ],
+        "correct_infeasibility": false,
+        "false_infeasibility": false,
+        "final_interpretation_pool_equivalent": null,
+        "initial_interpretation_pool_equivalent": null,
+        "initial_plan_correct": false,
+        "invalid_plan_returned": false,
+        "method": "C",
+        "plan_coverage": false,
+        "reference_feasible_count": 2,
+        "repair_damaged_correct_interpretation": false,
+        "repair_damaged_correct_plan": false,
+        "scenario_id": "g00-negation-p0",
+        "unresolved": true
+      },
+      {
+        "base_id": "g00",
+        "candidate_pool_equivalence": [],
+        "complete_satisfaction": false,
+        "constraint_review_flags": [
+          "no_final_interpretation"
+        ],
+        "correct_infeasibility": false,
+        "false_infeasibility": false,
+        "final_interpretation_pool_equivalent": null,
+        "initial_interpretation_pool_equivalent": null,
+        "initial_plan_correct": false,
+        "invalid_plan_returned": false,
+        "method": "D",
+        "plan_coverage": false,
+        "reference_feasible_count": 2,
+        "repair_damaged_correct_interpretation": false,
+        "repair_damaged_correct_plan": false,
+        "scenario_id": "g00-negation-p0",
+        "unresolved": true
+      },
+      {
+        "base_id": "g00",
+        "candidate_pool_equivalence": [],
+        "complete_satisfaction": false,
+        "constraint_review_flags": [
+          "no_final_interpretation"
+        ],
+        "correct_infeasibility": false,
+        "false_infeasibility": false,
+        "final_interpretation_pool_equivalent": null,
+        "initial_interpretation_pool_equivalent": null,
+        "initial_plan_correct": false,
+        "invalid_plan_returned": false,
+        "method": "E",
+        "plan_coverage": false,
+        "reference_feasible_count": 2,
+        "repair_damaged_correct_interpretation": false,
+        "repair_damaged_correct_plan": false,
+        "scenario_id": "g00-negation-p0",
+        "unresolved": true
+      },
+      {
+        "base_id": "g00",
+        "candidate_pool_equivalence": [],
+        "complete_satisfaction": false,
+        "constraint_review_flags": [
+          "no_final_interpretation"
+        ],
+        "correct_infeasibility": false,
+        "false_infeasibility": false,
+        "final_interpretation_pool_equivalent": null,
+        "initial_interpretation_pool_equivalent": null,
+        "initial_plan_correct": false,
+        "invalid_plan_returned": false,
+        "method": "A",
+        "plan_coverage": false,
+        "reference_feasible_count": 2,
+        "repair_damaged_correct_interpretation": false,
+        "repair_damaged_correct_plan": false,
+        "scenario_id": "g00-scope-p0",
+        "unresolved": true
+      },
+      {
+        "base_id": "g00",
+        "candidate_pool_equivalence": [],
+        "complete_satisfaction": false,
+        "constraint_review_flags": [
+          "no_final_interpretation"
+        ],
+        "correct_infeasibility": false,
+        "false_infeasibility": false,
+        "final_interpretation_pool_equivalent": null,
+        "initial_interpretation_pool_equivalent": null,
+        "initial_plan_correct": false,
+        "invalid_plan_returned": false,
+        "method": "B",
+        "plan_coverage": false,
+        "reference_feasible_count": 2,
+        "repair_damaged_correct_interpretation": false,
+        "repair_damaged_correct_plan": false,
+        "scenario_id": "g00-scope-p0",
+        "unresolved": true
+      },
+      {
+        "base_id": "g00",
+        "candidate_pool_equivalence": [],
+        "complete_satisfaction": false,
+        "constraint_review_flags": [
+          "no_final_interpretation"
+        ],
+        "correct_infeasibility": false,
+        "false_infeasibility": false,
+        "final_interpretation_pool_equivalent": null,
+        "initial_interpretation_pool_equivalent": null,
+        "initial_plan_correct": false,
+        "invalid_plan_returned": false,
+        "method": "C",
+        "plan_coverage": false,
+        "reference_feasible_count": 2,
+        "repair_damaged_correct_interpretation": false,
+        "repair_damaged_correct_plan": false,
+        "scenario_id": "g00-scope-p0",
+        "unresolved": true
+      },
+      {
+        "base_id": "g00",
+        "candidate_pool_equivalence": [],
+        "complete_satisfaction": false,
+        "constraint_review_flags": [
+          "no_final_interpretation"
+        ],
+        "correct_infeasibility": false,
+        "false_infeasibility": false,
+        "final_interpretation_pool_equivalent": null,
+        "initial_interpretation_pool_equivalent": null,
+        "initial_plan_correct": false,
+        "invalid_plan_returned": false,
+        "method": "D",
+        "plan_coverage": false,
+        "reference_feasible_count": 2,
+        "repair_damaged_correct_interpretation": false,
+        "repair_damaged_correct_plan": false,
+        "scenario_id": "g00-scope-p0",
+        "unresolved": true
+      },
+      {
+        "base_id": "g00",
+        "candidate_pool_equivalence": [],
+        "complete_satisfaction": false,
+        "constraint_review_flags": [
+          "no_final_interpretation"
+        ],
+        "correct_infeasibility": false,
+        "false_infeasibility": false,
+        "final_interpretation_pool_equivalent": null,
+        "initial_interpretation_pool_equivalent": null,
+        "initial_plan_correct": false,
+        "invalid_plan_returned": false,
+        "method": "E",
+        "plan_coverage": false,
+        "reference_feasible_count": 2,
+        "repair_damaged_correct_interpretation": false,
+        "repair_damaged_correct_plan": false,
+        "scenario_id": "g00-scope-p0",
+        "unresolved": true
+      },
+      {
+        "base_id": "g00",
+        "candidate_pool_equivalence": [],
+        "complete_satisfaction": false,
+        "constraint_review_flags": [
+          "no_final_interpretation"
+        ],
+        "correct_infeasibility": false,
+        "false_infeasibility": false,
+        "final_interpretation_pool_equivalent": null,
+        "initial_interpretation_pool_equivalent": null,
+        "initial_plan_correct": false,
+        "invalid_plan_returned": false,
+        "method": "A",
+        "plan_coverage": false,
+        "reference_feasible_count": 1,
+        "repair_damaged_correct_interpretation": false,
+        "repair_damaged_correct_plan": false,
+        "scenario_id": "g00-timing-p0",
+        "unresolved": true
+      },
+      {
+        "base_id": "g00",
+        "candidate_pool_equivalence": [],
+        "complete_satisfaction": false,
+        "constraint_review_flags": [
+          "no_final_interpretation"
+        ],
+        "correct_infeasibility": false,
+        "false_infeasibility": false,
+        "final_interpretation_pool_equivalent": null,
+        "initial_interpretation_pool_equivalent": null,
+        "initial_plan_correct": false,
+        "invalid_plan_returned": false,
+        "method": "B",
+        "plan_coverage": false,
+        "reference_feasible_count": 1,
+        "repair_damaged_correct_interpretation": false,
+        "repair_damaged_correct_plan": false,
+        "scenario_id": "g00-timing-p0",
+        "unresolved": true
+      },
+      {
+        "base_id": "g00",
+        "candidate_pool_equivalence": [],
+        "complete_satisfaction": false,
+        "constraint_review_flags": [
+          "no_final_interpretation"
+        ],
+        "correct_infeasibility": false,
+        "false_infeasibility": false,
+        "final_interpretation_pool_equivalent": null,
+        "initial_interpretation_pool_equivalent": null,
+        "initial_plan_correct": false,
+        "invalid_plan_returned": false,
+        "method": "C",
+        "plan_coverage": false,
+        "reference_feasible_count": 1,
+        "repair_damaged_correct_interpretation": false,
+        "repair_damaged_correct_plan": false,
+        "scenario_id": "g00-timing-p0",
+        "unresolved": true
+      },
+      {
+        "base_id": "g00",
+        "candidate_pool_equivalence": [
+          false
+        ],
+        "complete_satisfaction": true,
+        "constraint_review_flags": [
+          "timing"
+        ],
+        "correct_infeasibility": false,
+        "false_infeasibility": false,
+        "final_interpretation_pool_equivalent": false,
+        "initial_interpretation_pool_equivalent": false,
+        "initial_plan_correct": true,
+        "invalid_plan_returned": false,
+        "method": "D",
+        "plan_coverage": true,
+        "reference_feasible_count": 1,
+        "repair_damaged_correct_interpretation": false,
+        "repair_damaged_correct_plan": false,
+        "scenario_id": "g00-timing-p0",
+        "unresolved": true
+      },
+      {
+        "base_id": "g00",
+        "candidate_pool_equivalence": [
+          false
+        ],
+        "complete_satisfaction": true,
+        "constraint_review_flags": [
+          "timing"
+        ],
+        "correct_infeasibility": false,
+        "false_infeasibility": false,
+        "final_interpretation_pool_equivalent": false,
+        "initial_interpretation_pool_equivalent": false,
+        "initial_plan_correct": true,
+        "invalid_plan_returned": false,
+        "method": "E",
+        "plan_coverage": true,
+        "reference_feasible_count": 1,
+        "repair_damaged_correct_interpretation": false,
+        "repair_damaged_correct_plan": false,
+        "scenario_id": "g00-timing-p0",
+        "unresolved": true
+      }
+    ],
+    "status": "provisional_unaudited",
+    "unit_of_independence": "base_id"
+  },
+  "gpu_evidence": {
+    "gpu-after-1789226960428672198.json": {
+      "architecture_support": [
+        "sm_70",
+        "sm_75",
+        "sm_80",
+        "sm_86",
+        "sm_90",
+        "sm_100",
+        "sm_120"
+      ],
+      "cuda_available": true,
+      "cuda_runtime": "12.8",
+      "device": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "gpu_processes": "272609, ../.venv/bin/python, 706 MiB",
+      "gpu_status": "NVIDIA RTX PRO 6000 Blackwell Server Edition, 97887 MiB, 715 MiB, 31 %, 595.91.07",
+      "torch": "2.8.0+cu128"
+    },
+    "gpu-evidence-1789226960428672198.json": {
+      "before": {
+        "architecture_support": [
+          "sm_70",
+          "sm_75",
+          "sm_80",
+          "sm_86",
+          "sm_90",
+          "sm_100",
+          "sm_120"
+        ],
+        "cuda_available": true,
+        "cuda_runtime": "12.8",
+        "device": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+        "gpu_processes": "",
+        "gpu_status": "NVIDIA RTX PRO 6000 Blackwell Server Edition, 97887 MiB, 3 MiB, 0 %, 595.91.07",
+        "torch": "2.8.0+cu128"
+      },
+      "loaded": {
+        "loading_seconds": 48.863607418956235,
+        "parameter_devices": [
+          "cuda:0"
+        ],
+        "pid": 272609,
+        "probe": {
+          "architecture_support": [
+            "sm_70",
+            "sm_75",
+            "sm_80",
+            "sm_86",
+            "sm_90",
+            "sm_100",
+            "sm_120"
+          ],
+          "cuda_available": true,
+          "cuda_runtime": "12.8",
+          "device": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+          "gpu_processes": "272609, ../.venv/bin/python, 15248 MiB",
+          "gpu_status": "NVIDIA RTX PRO 6000 Blackwell Server Edition, 97887 MiB, 15257 MiB, 0 %, 595.91.07",
+          "torch": "2.8.0+cu128"
+        }
+      }
+    }
+  },
+  "label": "development smoke; provisional unaudited annotations",
+  "manifest": {
+    "config": {
+      "candidate_count": 4,
+      "gpu_request_limit": 100,
+      "gpu_seconds_limit": 3600,
+      "judge_mode": "model",
+      "judgment_limit": 2,
+      "max_new_tokens": 768,
+      "method_call_limit": 7,
+      "methods": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "model_id": "Qwen/Qwen2.5-7B-Instruct",
+      "model_revision": "a09a35458c702b33eeacc393d103063234e8bc28",
+      "repair_limit": 1,
+      "scenario_ids": [
+        "g00-timing-p0",
+        "g00-negation-p0",
+        "g00-scope-p0",
+        "g00-infeasible-p0"
+      ],
+      "seed": 104,
+      "solver_timeout_ms": 5000,
+      "temperature": 0.7
+    },
+    "config_hash": "413f16f520fa1c2ae589aefb2e18121a993bedfe3725a230ef00c6c2ad38b59e",
+    "created_at": "2026-09-12T15:29:20.254571+00:00",
+    "mode": "gpu_smoke",
+    "model": {
+      "backend": "transformers",
+      "identifier": "Qwen/Qwen2.5-7B-Instruct",
+      "precision": "bfloat16",
+      "quantization": null,
+      "revision": "a09a35458c702b33eeacc393d103063234e8bc28",
+      "same_translation_judgment_model": true,
+      "tokenizer": "Qwen/Qwen2.5-7B-Instruct",
+      "tokenizer_revision": "a09a35458c702b33eeacc393d103063234e8bc28",
+      "torch": "2.8.0+cu128",
+      "transformers": "4.51.3"
+    },
+    "prompt_hash": "b9b5e116569e2f1695467fc8a7e376806b9ac8ec0c29484d550cdb4fb9a14d8a",
+    "public_hash": "aa265efa9b910021ef017c47b45a3564c724c34f252bb7d41817aeef49402294",
+    "replay_source": null,
+    "repository_revision": "4a644e969eb43bcf74534c0b55a26759986219ff",
+    "source_hash": "6d08c1902671de3f39b0ea112db3c74fc8188ae5dc2625eee96d7449ffd0908f",
+    "working_tree_dirty": true
+  },
+  "outputs": [
+    {
+      "base_id": "g00",
+      "candidates": [],
+      "diagnostic_fallback_plan_id": null,
+      "errors": [
+        {
+          "index": 0,
+          "phase": "translation",
+          "status": "malformed"
+        }
+      ],
+      "events": [],
+      "initial_plan_id": null,
+      "judgments": [],
+      "logical_calls": [
+        {
+          "cached": false,
+          "input_tokens": 1461,
+          "key": "ca3e40dfe0a31392fb0a4bc50c861efeabb8eb8c0ed4324e23efd6211b979474",
+          "latency_seconds": 1.9362127888016403,
+          "output_tokens": 139,
+          "owner": "g00-infeasible-p0/A",
+          "purpose": "translation"
+        }
+      ],
+      "method": "A",
+      "method_wall_seconds": 1.9754293700680137,
+      "plan_id": null,
+      "repairs": [],
+      "scenario_id": "g00-infeasible-p0",
+      "semantic_status": "unverified",
+      "status": "malformed",
+      "translation_attempts": 1,
+      "witnesses": []
+    },
+    {
+      "base_id": "g00",
+      "candidates": [],
+      "diagnostic_fallback_plan_id": null,
+      "errors": [
+        {
+          "index": 0,
+          "phase": "translation",
+          "status": "malformed"
+        },
+        {
+          "index": null,
+          "phase": "method",
+          "status": "unsupported"
+        }
+      ],
+      "events": [],
+      "initial_plan_id": null,
+      "judgments": [],
+      "logical_calls": [
+        {
+          "cached": true,
+          "input_tokens": 1461,
+          "key": "ca3e40dfe0a31392fb0a4bc50c861efeabb8eb8c0ed4324e23efd6211b979474",
+          "latency_seconds": 1.9362127888016403,
+          "output_tokens": 139,
+          "owner": "g00-infeasible-p0/B",
+          "purpose": "translation"
+        },
+        {
+          "cached": false,
+          "input_tokens": 1626,
+          "key": "879b68c9dc72011de7137db0b7dac791273400f2abfec87a6545b8f3f402e5af",
+          "latency_seconds": 2.0233888612128794,
+          "output_tokens": 146,
+          "owner": "g00-infeasible-p0/B",
+          "purpose": "critique"
+        }
+      ],
+      "method": "B",
+      "method_wall_seconds": 2.051894366974011,
+      "plan_id": null,
+      "repairs": [
+        {
+          "kind": "ordinary_critique"
+        }
+      ],
+      "scenario_id": "g00-infeasible-p0",
+      "semantic_status": "unresolved_error",
+      "status": "unresolved",
+      "translation_attempts": 1,
+      "witnesses": []
+    },
+    {
+      "base_id": "g00",
+      "candidates": [],
+      "diagnostic_fallback_plan_id": null,
+      "errors": [
+        {
+          "index": 0,
+          "phase": "translation",
+          "status": "malformed"
+        }
+      ],
+      "events": [],
+      "initial_plan_id": null,
+      "judgments": [],
+      "logical_calls": [
+        {
+          "cached": true,
+          "input_tokens": 1461,
+          "key": "ca3e40dfe0a31392fb0a4bc50c861efeabb8eb8c0ed4324e23efd6211b979474",
+          "latency_seconds": 1.9362127888016403,
+          "output_tokens": 139,
+          "owner": "g00-infeasible-p0/C",
+          "purpose": "translation"
+        }
+      ],
+      "method": "C",
+      "method_wall_seconds": 0.0029359529726207256,
+      "plan_id": null,
+      "repairs": [],
+      "scenario_id": "g00-infeasible-p0",
+      "semantic_status": "unverified",
+      "status": "malformed",
+      "translation_attempts": 1,
+      "witnesses": []
+    },
+    {
+      "base_id": "g00",
+      "candidates": [],
+      "diagnostic_fallback_plan_id": null,
+      "errors": [
+        {
+          "index": 0,
+          "phase": "translation",
+          "status": "malformed"
+        },
+        {
+          "index": 1,
+          "phase": "translation",
+          "status": "malformed"
+        },
+        {
+          "index": 2,
+          "phase": "translation",
+          "status": "malformed"
+        },
+        {
+          "index": 3,
+          "phase": "translation",
+          "status": "malformed"
+        }
+      ],
+      "events": [],
+      "initial_plan_id": null,
+      "judgments": [],
+      "logical_calls": [
+        {
+          "cached": true,
+          "input_tokens": 1461,
+          "key": "ca3e40dfe0a31392fb0a4bc50c861efeabb8eb8c0ed4324e23efd6211b979474",
+          "latency_seconds": 1.9362127888016403,
+          "output_tokens": 139,
+          "owner": "g00-infeasible-p0/D",
+          "purpose": "translation"
+        },
+        {
+          "cached": false,
+          "input_tokens": 1461,
+          "key": "17d3d1477d9680fdde1177060f87f5ac87dba0b7de64077cf2204e47eca1a0a8",
+          "latency_seconds": 1.0416051719803363,
+          "output_tokens": 73,
+          "owner": "g00-infeasible-p0/D",
+          "purpose": "translation"
+        },
+        {
+          "cached": false,
+          "input_tokens": 1461,
+          "key": "fd6ccb1fb336754258d71fe9f807dc9880a0631ae2d24fe72617c5f9016ce263",
+          "latency_seconds": 0.9199136269744486,
+          "output_tokens": 64,
+          "owner": "g00-infeasible-p0/D",
+          "purpose": "translation"
+        },
+        {
+          "cached": false,
+          "input_tokens": 1461,
+          "key": "231dac0d723dbd0951b6ad385ba6997e0c26669dc066d95971e1e6897794e60c",
+          "latency_seconds": 1.095216577872634,
+          "output_tokens": 77,
+          "owner": "g00-infeasible-p0/D",
+          "purpose": "translation"
+        }
+      ],
+      "method": "D",
+      "method_wall_seconds": 3.1349350390955806,
+      "plan_id": null,
+      "repairs": [],
+      "scenario_id": "g00-infeasible-p0",
+      "semantic_status": "unverified",
+      "status": "malformed",
+      "translation_attempts": 4,
+      "witnesses": []
+    },
+    {
+      "base_id": "g00",
+      "candidates": [],
+      "diagnostic_fallback_plan_id": null,
+      "errors": [
+        {
+          "index": 0,
+          "phase": "translation",
+          "status": "malformed"
+        },
+        {
+          "index": 1,
+          "phase": "translation",
+          "status": "malformed"
+        },
+        {
+          "index": 2,
+          "phase": "translation",
+          "status": "malformed"
+        },
+        {
+          "index": 3,
+          "phase": "translation",
+          "status": "malformed"
+        }
+      ],
+      "events": [],
+      "initial_plan_id": null,
+      "judgments": [],
+      "logical_calls": [
+        {
+          "cached": true,
+          "input_tokens": 1461,
+          "key": "ca3e40dfe0a31392fb0a4bc50c861efeabb8eb8c0ed4324e23efd6211b979474",
+          "latency_seconds": 1.9362127888016403,
+          "output_tokens": 139,
+          "owner": "g00-infeasible-p0/E",
+          "purpose": "translation"
+        },
+        {
+          "cached": true,
+          "input_tokens": 1461,
+          "key": "17d3d1477d9680fdde1177060f87f5ac87dba0b7de64077cf2204e47eca1a0a8",
+          "latency_seconds": 1.0416051719803363,
+          "output_tokens": 73,
+          "owner": "g00-infeasible-p0/E",
+          "purpose": "translation"
+        },
+        {
+          "cached": true,
+          "input_tokens": 1461,
+          "key": "fd6ccb1fb336754258d71fe9f807dc9880a0631ae2d24fe72617c5f9016ce263",
+          "latency_seconds": 0.9199136269744486,
+          "output_tokens": 64,
+          "owner": "g00-infeasible-p0/E",
+          "purpose": "translation"
+        },
+        {
+          "cached": true,
+          "input_tokens": 1461,
+          "key": "231dac0d723dbd0951b6ad385ba6997e0c26669dc066d95971e1e6897794e60c",
+          "latency_seconds": 1.095216577872634,
+          "output_tokens": 77,
+          "owner": "g00-infeasible-p0/E",
+          "purpose": "translation"
+        }
+      ],
+      "method": "E",
+      "method_wall_seconds": 0.017051636008545756,
+      "plan_id": null,
+      "repairs": [],
+      "scenario_id": "g00-infeasible-p0",
+      "semantic_status": "unverified",
+      "status": "malformed",
+      "translation_attempts": 4,
+      "witnesses": []
+    },
+    {
+      "base_id": "g00",
+      "candidates": [],
+      "diagnostic_fallback_plan_id": null,
+      "errors": [
+        {
+          "index": 0,
+          "phase": "translation",
+          "status": "malformed"
+        }
+      ],
+      "events": [],
+      "initial_plan_id": null,
+      "judgments": [],
+      "logical_calls": [
+        {
+          "cached": false,
+          "input_tokens": 1460,
+          "key": "930b48211a571bd725e1f61566a9fa069137d59cee9031d399b1cdae42b5ca26",
+          "latency_seconds": 2.2157409170176834,
+          "output_tokens": 157,
+          "owner": "g00-negation-p0/A",
+          "purpose": "translation"
+        }
+      ],
+      "method": "A",
+      "method_wall_seconds": 2.2459313969593495,
+      "plan_id": null,
+      "repairs": [],
+      "scenario_id": "g00-negation-p0",
+      "semantic_status": "unverified",
+      "status": "malformed",
+      "translation_attempts": 1,
+      "witnesses": []
+    },
+    {
+      "base_id": "g00",
+      "candidates": [],
+      "diagnostic_fallback_plan_id": null,
+      "errors": [
+        {
+          "index": 0,
+          "phase": "translation",
+          "status": "malformed"
+        },
+        {
+          "index": null,
+          "phase": "method",
+          "status": "malformed"
+        }
+      ],
+      "events": [],
+      "initial_plan_id": null,
+      "judgments": [],
+      "logical_calls": [
+        {
+          "cached": true,
+          "input_tokens": 1460,
+          "key": "930b48211a571bd725e1f61566a9fa069137d59cee9031d399b1cdae42b5ca26",
+          "latency_seconds": 2.2157409170176834,
+          "output_tokens": 157,
+          "owner": "g00-negation-p0/B",
+          "purpose": "translation"
+        },
+        {
+          "cached": false,
+          "input_tokens": 1644,
+          "key": "42d0b4967700d41dfe8924630a871518a311d0780ffdc9dec78168c6183b08a9",
+          "latency_seconds": 2.150549899088219,
+          "output_tokens": 154,
+          "owner": "g00-negation-p0/B",
+          "purpose": "critique"
+        }
+      ],
+      "method": "B",
+      "method_wall_seconds": 2.1882323790341616,
+      "plan_id": null,
+      "repairs": [
+        {
+          "kind": "ordinary_critique"
+        }
+      ],
+      "scenario_id": "g00-negation-p0",
+      "semantic_status": "unresolved_error",
+      "status": "unresolved",
+      "translation_attempts": 1,
+      "witnesses": []
+    },
+    {
+      "base_id": "g00",
+      "candidates": [],
+      "diagnostic_fallback_plan_id": null,
+      "errors": [
+        {
+          "index": 0,
+          "phase": "translation",
+          "status": "malformed"
+        }
+      ],
+      "events": [],
+      "initial_plan_id": null,
+      "judgments": [],
+      "logical_calls": [
+        {
+          "cached": true,
+          "input_tokens": 1460,
+          "key": "930b48211a571bd725e1f61566a9fa069137d59cee9031d399b1cdae42b5ca26",
+          "latency_seconds": 2.2157409170176834,
+          "output_tokens": 157,
+          "owner": "g00-negation-p0/C",
+          "purpose": "translation"
+        }
+      ],
+      "method": "C",
+      "method_wall_seconds": 0.003149094060063362,
+      "plan_id": null,
+      "repairs": [],
+      "scenario_id": "g00-negation-p0",
+      "semantic_status": "unverified",
+      "status": "malformed",
+      "translation_attempts": 1,
+      "witnesses": []
+    },
+    {
+      "base_id": "g00",
+      "candidates": [],
+      "diagnostic_fallback_plan_id": null,
+      "errors": [
+        {
+          "index": 0,
+          "phase": "translation",
+          "status": "malformed"
+        },
+        {
+          "index": 1,
+          "phase": "translation",
+          "status": "malformed"
+        },
+        {
+          "index": 2,
+          "phase": "translation",
+          "status": "malformed"
+        },
+        {
+          "index": 3,
+          "phase": "translation",
+          "status": "malformed"
+        }
+      ],
+      "events": [],
+      "initial_plan_id": null,
+      "judgments": [],
+      "logical_calls": [
+        {
+          "cached": true,
+          "input_tokens": 1460,
+          "key": "930b48211a571bd725e1f61566a9fa069137d59cee9031d399b1cdae42b5ca26",
+          "latency_seconds": 2.2157409170176834,
+          "output_tokens": 157,
+          "owner": "g00-negation-p0/D",
+          "purpose": "translation"
+        },
+        {
+          "cached": false,
+          "input_tokens": 1460,
+          "key": "91f9686409000450aca15560964bbede5e0b755b75680ba67ee06286375105b3",
+          "latency_seconds": 2.2000094221439213,
+          "output_tokens": 157,
+          "owner": "g00-negation-p0/D",
+          "purpose": "translation"
+        },
+        {
+          "cached": false,
+          "input_tokens": 1460,
+          "key": "e88d20765a9c53221b156e243166c065ce431a76e5bf7a7b29f149a08937076c",
+          "latency_seconds": 2.2757227020338178,
+          "output_tokens": 164,
+          "owner": "g00-negation-p0/D",
+          "purpose": "translation"
+        },
+        {
+          "cached": false,
+          "input_tokens": 1460,
+          "key": "b26cc8e4a993a3faf6fbf47030cc6559c973cdf7fab9a65673f90e3c89ddda5d",
+          "latency_seconds": 2.5193460748996586,
+          "output_tokens": 182,
+          "owner": "g00-negation-p0/D",
+          "purpose": "translation"
+        }
+      ],
+      "method": "D",
+      "method_wall_seconds": 7.091748745879158,
+      "plan_id": null,
+      "repairs": [],
+      "scenario_id": "g00-negation-p0",
+      "semantic_status": "unverified",
+      "status": "malformed",
+      "translation_attempts": 4,
+      "witnesses": []
+    },
+    {
+      "base_id": "g00",
+      "candidates": [],
+      "diagnostic_fallback_plan_id": null,
+      "errors": [
+        {
+          "index": 0,
+          "phase": "translation",
+          "status": "malformed"
+        },
+        {
+          "index": 1,
+          "phase": "translation",
+          "status": "malformed"
+        },
+        {
+          "index": 2,
+          "phase": "translation",
+          "status": "malformed"
+        },
+        {
+          "index": 3,
+          "phase": "translation",
+          "status": "malformed"
+        }
+      ],
+      "events": [],
+      "initial_plan_id": null,
+      "judgments": [],
+      "logical_calls": [
+        {
+          "cached": true,
+          "input_tokens": 1460,
+          "key": "930b48211a571bd725e1f61566a9fa069137d59cee9031d399b1cdae42b5ca26",
+          "latency_seconds": 2.2157409170176834,
+          "output_tokens": 157,
+          "owner": "g00-negation-p0/E",
+          "purpose": "translation"
+        },
+        {
+          "cached": true,
+          "input_tokens": 1460,
+          "key": "91f9686409000450aca15560964bbede5e0b755b75680ba67ee06286375105b3",
+          "latency_seconds": 2.2000094221439213,
+          "output_tokens": 157,
+          "owner": "g00-negation-p0/E",
+          "purpose": "translation"
+        },
+        {
+          "cached": true,
+          "input_tokens": 1460,
+          "key": "e88d20765a9c53221b156e243166c065ce431a76e5bf7a7b29f149a08937076c",
+          "latency_seconds": 2.2757227020338178,
+          "output_tokens": 164,
+          "owner": "g00-negation-p0/E",
+          "purpose": "translation"
+        },
+        {
+          "cached": true,
+          "input_tokens": 1460,
+          "key": "b26cc8e4a993a3faf6fbf47030cc6559c973cdf7fab9a65673f90e3c89ddda5d",
+          "latency_seconds": 2.5193460748996586,
+          "output_tokens": 182,
+          "owner": "g00-negation-p0/E",
+          "purpose": "translation"
+        }
+      ],
+      "method": "E",
+      "method_wall_seconds": 0.015813285019248724,
+      "plan_id": null,
+      "repairs": [],
+      "scenario_id": "g00-negation-p0",
+      "semantic_status": "unverified",
+      "status": "malformed",
+      "translation_attempts": 4,
+      "witnesses": []
+    },
+    {
+      "base_id": "g00",
+      "candidates": [],
+      "diagnostic_fallback_plan_id": null,
+      "errors": [
+        {
+          "index": 0,
+          "phase": "translation",
+          "status": "malformed"
+        }
+      ],
+      "events": [],
+      "initial_plan_id": null,
+      "judgments": [],
+      "logical_calls": [
+        {
+          "cached": false,
+          "input_tokens": 1570,
+          "key": "cdb75376c43822d457d22408e2ea3b3f8a1a0ddad227f5f2d92982c91bda215d",
+          "latency_seconds": 1.660409971140325,
+          "output_tokens": 117,
+          "owner": "g00-scope-p0/A",
+          "purpose": "translation"
+        }
+      ],
+      "method": "A",
+      "method_wall_seconds": 1.6840818889904767,
+      "plan_id": null,
+      "repairs": [],
+      "scenario_id": "g00-scope-p0",
+      "semantic_status": "unverified",
+      "status": "malformed",
+      "translation_attempts": 1,
+      "witnesses": []
+    },
+    {
+      "base_id": "g00",
+      "candidates": [],
+      "diagnostic_fallback_plan_id": null,
+      "errors": [
+        {
+          "index": 0,
+          "phase": "translation",
+          "status": "malformed"
+        },
+        {
+          "index": null,
+          "phase": "method",
+          "status": "unsupported"
+        }
+      ],
+      "events": [],
+      "initial_plan_id": null,
+      "judgments": [],
+      "logical_calls": [
+        {
+          "cached": true,
+          "input_tokens": 1570,
+          "key": "cdb75376c43822d457d22408e2ea3b3f8a1a0ddad227f5f2d92982c91bda215d",
+          "latency_seconds": 1.660409971140325,
+          "output_tokens": 117,
+          "owner": "g00-scope-p0/B",
+          "purpose": "translation"
+        },
+        {
+          "cached": false,
+          "input_tokens": 1713,
+          "key": "c9b0168f722ba295fd5c7e2a1203b2ef91f12b5f25022d7cc118a83c438ffd8d",
+          "latency_seconds": 0.7445750369224697,
+          "output_tokens": 50,
+          "owner": "g00-scope-p0/B",
+          "purpose": "critique"
+        }
+      ],
+      "method": "B",
+      "method_wall_seconds": 0.7683843551203609,
+      "plan_id": null,
+      "repairs": [
+        {
+          "kind": "ordinary_critique"
+        }
+      ],
+      "scenario_id": "g00-scope-p0",
+      "semantic_status": "unresolved_error",
+      "status": "unresolved",
+      "translation_attempts": 1,
+      "witnesses": []
+    },
+    {
+      "base_id": "g00",
+      "candidates": [],
+      "diagnostic_fallback_plan_id": null,
+      "errors": [
+        {
+          "index": 0,
+          "phase": "translation",
+          "status": "malformed"
+        }
+      ],
+      "events": [],
+      "initial_plan_id": null,
+      "judgments": [],
+      "logical_calls": [
+        {
+          "cached": true,
+          "input_tokens": 1570,
+          "key": "cdb75376c43822d457d22408e2ea3b3f8a1a0ddad227f5f2d92982c91bda215d",
+          "latency_seconds": 1.660409971140325,
+          "output_tokens": 117,
+          "owner": "g00-scope-p0/C",
+          "purpose": "translation"
+        }
+      ],
+      "method": "C",
+      "method_wall_seconds": 0.0031513250432908535,
+      "plan_id": null,
+      "repairs": [],
+      "scenario_id": "g00-scope-p0",
+      "semantic_status": "unverified",
+      "status": "malformed",
+      "translation_attempts": 1,
+      "witnesses": []
+    },
+    {
+      "base_id": "g00",
+      "candidates": [],
+      "diagnostic_fallback_plan_id": null,
+      "errors": [
+        {
+          "index": 0,
+          "phase": "translation",
+          "status": "malformed"
+        },
+        {
+          "index": 1,
+          "phase": "translation",
+          "status": "malformed"
+        },
+        {
+          "index": 2,
+          "phase": "translation",
+          "status": "malformed"
+        },
+        {
+          "index": 3,
+          "phase": "translation",
+          "status": "malformed"
+        }
+      ],
+      "events": [],
+      "initial_plan_id": null,
+      "judgments": [],
+      "logical_calls": [
+        {
+          "cached": true,
+          "input_tokens": 1570,
+          "key": "cdb75376c43822d457d22408e2ea3b3f8a1a0ddad227f5f2d92982c91bda215d",
+          "latency_seconds": 1.660409971140325,
+          "output_tokens": 117,
+          "owner": "g00-scope-p0/D",
+          "purpose": "translation"
+        },
+        {
+          "cached": false,
+          "input_tokens": 1570,
+          "key": "2e6794a40375343d2d8a10f7f795855458069ba1e9801934736a01787b120a4c",
+          "latency_seconds": 2.6148071731440723,
+          "output_tokens": 187,
+          "owner": "g00-scope-p0/D",
+          "purpose": "translation"
+        },
+        {
+          "cached": false,
+          "input_tokens": 1570,
+          "key": "d805cf4207259fdb538118efae8d7a5f2837cbe12b2a94b2b8df349855c28eb7",
+          "latency_seconds": 3.217389481840655,
+          "output_tokens": 231,
+          "owner": "g00-scope-p0/D",
+          "purpose": "translation"
+        },
+        {
+          "cached": false,
+          "input_tokens": 1570,
+          "key": "47874b3ef0fb8f89cf4f91fc3bf2058c296c034c3a5bc3f8fc77342d276a39be",
+          "latency_seconds": 2.834732037037611,
+          "output_tokens": 203,
+          "owner": "g00-scope-p0/D",
+          "purpose": "translation"
+        }
+      ],
+      "method": "D",
+      "method_wall_seconds": 8.764147583162412,
+      "plan_id": null,
+      "repairs": [],
+      "scenario_id": "g00-scope-p0",
+      "semantic_status": "unverified",
+      "status": "malformed",
+      "translation_attempts": 4,
+      "witnesses": []
+    },
+    {
+      "base_id": "g00",
+      "candidates": [],
+      "diagnostic_fallback_plan_id": null,
+      "errors": [
+        {
+          "index": 0,
+          "phase": "translation",
+          "status": "malformed"
+        },
+        {
+          "index": 1,
+          "phase": "translation",
+          "status": "malformed"
+        },
+        {
+          "index": 2,
+          "phase": "translation",
+          "status": "malformed"
+        },
+        {
+          "index": 3,
+          "phase": "translation",
+          "status": "malformed"
+        }
+      ],
+      "events": [],
+      "initial_plan_id": null,
+      "judgments": [],
+      "logical_calls": [
+        {
+          "cached": true,
+          "input_tokens": 1570,
+          "key": "cdb75376c43822d457d22408e2ea3b3f8a1a0ddad227f5f2d92982c91bda215d",
+          "latency_seconds": 1.660409971140325,
+          "output_tokens": 117,
+          "owner": "g00-scope-p0/E",
+          "purpose": "translation"
+        },
+        {
+          "cached": true,
+          "input_tokens": 1570,
+          "key": "2e6794a40375343d2d8a10f7f795855458069ba1e9801934736a01787b120a4c",
+          "latency_seconds": 2.6148071731440723,
+          "output_tokens": 187,
+          "owner": "g00-scope-p0/E",
+          "purpose": "translation"
+        },
+        {
+          "cached": true,
+          "input_tokens": 1570,
+          "key": "d805cf4207259fdb538118efae8d7a5f2837cbe12b2a94b2b8df349855c28eb7",
+          "latency_seconds": 3.217389481840655,
+          "output_tokens": 231,
+          "owner": "g00-scope-p0/E",
+          "purpose": "translation"
+        },
+        {
+          "cached": true,
+          "input_tokens": 1570,
+          "key": "47874b3ef0fb8f89cf4f91fc3bf2058c296c034c3a5bc3f8fc77342d276a39be",
+          "latency_seconds": 2.834732037037611,
+          "output_tokens": 203,
+          "owner": "g00-scope-p0/E",
+          "purpose": "translation"
+        }
+      ],
+      "method": "E",
+      "method_wall_seconds": 0.013131244108080864,
+      "plan_id": null,
+      "repairs": [],
+      "scenario_id": "g00-scope-p0",
+      "semantic_status": "unverified",
+      "status": "malformed",
+      "translation_attempts": 4,
+      "witnesses": []
+    },
+    {
+      "base_id": "g00",
+      "candidates": [],
+      "diagnostic_fallback_plan_id": null,
+      "errors": [
+        {
+          "index": 0,
+          "phase": "translation",
+          "status": "malformed"
+        }
+      ],
+      "events": [],
+      "initial_plan_id": null,
+      "judgments": [],
+      "logical_calls": [
+        {
+          "cached": false,
+          "input_tokens": 1468,
+          "key": "9bb59de1f52526d91275f125453bedb1751ba7062258e29541686fc98d70040a",
+          "latency_seconds": 2.724957467056811,
+          "output_tokens": 166,
+          "owner": "g00-timing-p0/A",
+          "purpose": "translation"
+        }
+      ],
+      "method": "A",
+      "method_wall_seconds": 2.780334234936163,
+      "plan_id": null,
+      "repairs": [],
+      "scenario_id": "g00-timing-p0",
+      "semantic_status": "unverified",
+      "status": "malformed",
+      "translation_attempts": 1,
+      "witnesses": []
+    },
+    {
+      "base_id": "g00",
+      "candidates": [],
+      "diagnostic_fallback_plan_id": null,
+      "errors": [
+        {
+          "index": 0,
+          "phase": "translation",
+          "status": "malformed"
+        },
+        {
+          "index": null,
+          "phase": "method",
+          "status": "malformed"
+        }
+      ],
+      "events": [],
+      "initial_plan_id": null,
+      "judgments": [],
+      "logical_calls": [
+        {
+          "cached": true,
+          "input_tokens": 1468,
+          "key": "9bb59de1f52526d91275f125453bedb1751ba7062258e29541686fc98d70040a",
+          "latency_seconds": 2.724957467056811,
+          "output_tokens": 166,
+          "owner": "g00-timing-p0/B",
+          "purpose": "translation"
+        },
+        {
+          "cached": false,
+          "input_tokens": 1660,
+          "key": "991aff8c1f026894c94e171f459b8291770b9181e5ac5155254e5e665ae391cb",
+          "latency_seconds": 2.359437117120251,
+          "output_tokens": 166,
+          "owner": "g00-timing-p0/B",
+          "purpose": "critique"
+        }
+      ],
+      "method": "B",
+      "method_wall_seconds": 2.3973138469737023,
+      "plan_id": null,
+      "repairs": [
+        {
+          "kind": "ordinary_critique"
+        }
+      ],
+      "scenario_id": "g00-timing-p0",
+      "semantic_status": "unresolved_error",
+      "status": "unresolved",
+      "translation_attempts": 1,
+      "witnesses": []
+    },
+    {
+      "base_id": "g00",
+      "candidates": [],
+      "diagnostic_fallback_plan_id": null,
+      "errors": [
+        {
+          "index": 0,
+          "phase": "translation",
+          "status": "malformed"
+        }
+      ],
+      "events": [],
+      "initial_plan_id": null,
+      "judgments": [],
+      "logical_calls": [
+        {
+          "cached": true,
+          "input_tokens": 1468,
+          "key": "9bb59de1f52526d91275f125453bedb1751ba7062258e29541686fc98d70040a",
+          "latency_seconds": 2.724957467056811,
+          "output_tokens": 166,
+          "owner": "g00-timing-p0/C",
+          "purpose": "translation"
+        }
+      ],
+      "method": "C",
+      "method_wall_seconds": 0.005251842085272074,
+      "plan_id": null,
+      "repairs": [],
+      "scenario_id": "g00-timing-p0",
+      "semantic_status": "unverified",
+      "status": "malformed",
+      "translation_attempts": 1,
+      "witnesses": []
+    },
+    {
+      "base_id": "g00",
+      "candidates": [
+        {
+          "accepted_pool_journeys": 43,
+          "aliases": [
+            "c0"
+          ],
+          "id": "c0",
+          "plan": {
+            "plan_id": "0251c81551866be21afa",
+            "reason": null,
+            "solver_seconds": 0.10979306092485785,
+            "status": "satisfiable"
+          }
+        }
+      ],
+      "diagnostic_fallback_plan_id": null,
+      "errors": [
+        {
+          "index": 0,
+          "phase": "translation",
+          "status": "malformed"
+        },
+        {
+          "index": 1,
+          "phase": "translation",
+          "status": "malformed"
+        },
+        {
+          "index": 3,
+          "phase": "translation",
+          "status": "malformed"
+        }
+      ],
+      "events": [
+        "no_distinguishing_witness_in_completed_pool"
+      ],
+      "initial_plan_id": "0251c81551866be21afa",
+      "judgments": [],
+      "logical_calls": [
+        {
+          "cached": true,
+          "input_tokens": 1468,
+          "key": "9bb59de1f52526d91275f125453bedb1751ba7062258e29541686fc98d70040a",
+          "latency_seconds": 2.724957467056811,
+          "output_tokens": 166,
+          "owner": "g00-timing-p0/D",
+          "purpose": "translation"
+        },
+        {
+          "cached": false,
+          "input_tokens": 1468,
+          "key": "0d13a0d0f64eaecdd960a243c6b4b89524ad70f96f5689a67883d62c9699361f",
+          "latency_seconds": 2.8636165470816195,
+          "output_tokens": 202,
+          "owner": "g00-timing-p0/D",
+          "purpose": "translation"
+        },
+        {
+          "cached": false,
+          "input_tokens": 1468,
+          "key": "9e7aba4109fa2becd84f7fbe62cc7d1164ec544dbf57c03101fe414d42b8538b",
+          "latency_seconds": 2.6520717469975352,
+          "output_tokens": 187,
+          "owner": "g00-timing-p0/D",
+          "purpose": "translation"
+        },
+        {
+          "cached": false,
+          "input_tokens": 1468,
+          "key": "af6902641fbbd1957a665086ba33bee6df046a03f0284557b957bf00ce601502",
+          "latency_seconds": 2.6086084630806,
+          "output_tokens": 184,
+          "owner": "g00-timing-p0/D",
+          "purpose": "translation"
+        }
+      ],
+      "method": "D",
+      "method_wall_seconds": 8.328793900087476,
+      "plan_id": "0251c81551866be21afa",
+      "repairs": [],
+      "scenario_id": "g00-timing-p0",
+      "semantic_status": "unverified_no_semantic_evidence",
+      "status": "satisfiable",
+      "translation_attempts": 4,
+      "witnesses": []
+    },
+    {
+      "base_id": "g00",
+      "candidates": [
+        {
+          "accepted_pool_journeys": 43,
+          "aliases": [
+            "c0"
+          ],
+          "id": "c0",
+          "plan": {
+            "plan_id": "0251c81551866be21afa",
+            "reason": null,
+            "solver_seconds": 0.009851297829300165,
+            "status": "satisfiable"
+          }
+        }
+      ],
+      "diagnostic_fallback_plan_id": null,
+      "errors": [
+        {
+          "index": 0,
+          "phase": "translation",
+          "status": "malformed"
+        },
+        {
+          "index": 1,
+          "phase": "translation",
+          "status": "malformed"
+        },
+        {
+          "index": 3,
+          "phase": "translation",
+          "status": "malformed"
+        }
+      ],
+      "events": [
+        "no_distinguishing_witness_in_completed_pool"
+      ],
+      "initial_plan_id": "0251c81551866be21afa",
+      "judgments": [],
+      "logical_calls": [
+        {
+          "cached": true,
+          "input_tokens": 1468,
+          "key": "9bb59de1f52526d91275f125453bedb1751ba7062258e29541686fc98d70040a",
+          "latency_seconds": 2.724957467056811,
+          "output_tokens": 166,
+          "owner": "g00-timing-p0/E",
+          "purpose": "translation"
+        },
+        {
+          "cached": true,
+          "input_tokens": 1468,
+          "key": "0d13a0d0f64eaecdd960a243c6b4b89524ad70f96f5689a67883d62c9699361f",
+          "latency_seconds": 2.8636165470816195,
+          "output_tokens": 202,
+          "owner": "g00-timing-p0/E",
+          "purpose": "translation"
+        },
+        {
+          "cached": true,
+          "input_tokens": 1468,
+          "key": "9e7aba4109fa2becd84f7fbe62cc7d1164ec544dbf57c03101fe414d42b8538b",
+          "latency_seconds": 2.6520717469975352,
+          "output_tokens": 187,
+          "owner": "g00-timing-p0/E",
+          "purpose": "translation"
+        },
+        {
+          "cached": true,
+          "input_tokens": 1468,
+          "key": "af6902641fbbd1957a665086ba33bee6df046a03f0284557b957bf00ce601502",
+          "latency_seconds": 2.6086084630806,
+          "output_tokens": 184,
+          "owner": "g00-timing-p0/E",
+          "purpose": "translation"
+        }
+      ],
+      "method": "E",
+      "method_wall_seconds": 0.02577277389355004,
+      "plan_id": "0251c81551866be21afa",
+      "repairs": [],
+      "scenario_id": "g00-timing-p0",
+      "semantic_status": "unverified_no_semantic_evidence",
+      "status": "satisfiable",
+      "translation_attempts": 4,
+      "witnesses": []
+    }
+  ],
+  "saved_artifact_hashes": {
+    "calls.jsonl": "99c431d3bd4f3bd643986d737585172a6183b8f123463317965370680cb4ef32",
+    "evaluation.json": "1734bccb72e7524d6cfc9afb2c49d0073878796efaef10d920929dd5af04dca4",
+    "gpu-after-1789226960428672198.json": "06cab219befd2b0bb8f1f9163c504badb1c28eaaa0b93c4bff9922b9ab33b835",
+    "gpu-evidence-1789226960428672198.json": "3b1ac9591bf02f9b7de11ec0158c2b566ecb02dd3c1b0cc36ba2bf04c96693a5",
+    "manifest.json": "5b17e63e7b5398f000677d4c360dd33bc4f090a086666e546d894b94cc132f9a",
+    "outputs/g00-infeasible-p0-A.json": "db6c202735ef8279be886c146c8571f331d09c86f92d149fa1768f3efd12fb0c",
+    "outputs/g00-infeasible-p0-B.json": "9c09f71eda86a3690516b8c37a647890e218f91e93a8d848c14ef09140dcc7ad",
+    "outputs/g00-infeasible-p0-C.json": "8c946b31a1de9ea15deac3782054149bdfaac21b47240982fa172b730366f661",
+    "outputs/g00-infeasible-p0-D.json": "ab54657b4f60828bb7ca11c52c969a91577260249f4b424aad9995892933a32a",
+    "outputs/g00-infeasible-p0-E.json": "ff3b486f54d68ef250b63b946943ec188eb966f49bf3dbb8c4dfd174868cbf10",
+    "outputs/g00-negation-p0-A.json": "cc40e4de059efce1e88ae68a732c7699b2fa19f392481f87caef05f4b0420767",
+    "outputs/g00-negation-p0-B.json": "8d88de8208e815904bc3f395b1bed9bc334c59bab747de19189a60f5f2e619c3",
+    "outputs/g00-negation-p0-C.json": "92295cdd6a9211d85316b0906576fe89d4f74e355e9915350551cd406e3cbce5",
+    "outputs/g00-negation-p0-D.json": "285f61f12f24fae044788ef2c4b1483c26588b348eed8165801e85bcd7e70805",
+    "outputs/g00-negation-p0-E.json": "433eb910e11b71d178d7db478dce6592e1f1c7748cab9c6e3e8954f32b163363",
+    "outputs/g00-scope-p0-A.json": "2597fa0a6dec34cc79e76d861f6dc9d3709e19caa3bfb0cb64b00341ab3159d6",
+    "outputs/g00-scope-p0-B.json": "e61dbc4071c1ff30342aeda0ef0fbe342607f814b9a4b4dc71cbe4823d9b0fa1",
+    "outputs/g00-scope-p0-C.json": "607a6b95f98271669aa1b7b2e782b33b96116d8185ba21e435e9f8f26ae3071d",
+    "outputs/g00-scope-p0-D.json": "e877dac0544f3f301cd73307cbf6c0b5d0cedfbd29c29cb5bf884884696ffdb4",
+    "outputs/g00-scope-p0-E.json": "a0c6606e86fe64cb155e22fd62f947e6306c5a1db25b423ea347e0ecdad70bc4",
+    "outputs/g00-timing-p0-A.json": "a1d2fc0cdb2b4489b474a4a323607d9fff32aa04b38881afa3e17633acf3e19f",
+    "outputs/g00-timing-p0-B.json": "a1b346140c28d6d984c32082a73b78bc34255de2a7f459c82f2e01783bcf1298",
+    "outputs/g00-timing-p0-C.json": "12c71ccdf2ee6f8b15c126dcaeaca824c6573530c731783d07669838b0985311",
+    "outputs/g00-timing-p0-D.json": "1c8ddc987608d7260a998ccfed28b91c10d0f09a024ede1e0eb85d72b9033ceb",
+    "outputs/g00-timing-p0-E.json": "b2423c5ce2ff74b2b6ff698763d0b5e677aa7ca22b4acbd1e3c62371e1b83884",
+    "pools/2850a636a225c1b1d214289fc5d86581603a6e380e49002562996a30f84e1e07.json": "a624ed9e393eda3ff74d466a149957ed1bb6d982d1c6cfa7536084e2343a4d9d",
+    "pools/c4b975fa1f0958e0437f17fa47e72c92b22682ad769357cc541f1ee90d4c17f3.json": "eb04317849da660296545a02bae642b9761c487b2ae5d455f412b4f1e9f449f4",
+    "public-scenarios.json": "1f7ab9e5ad3db5c942f8ae44eabd059beaec7fe25a38d1e0c613f4e88d01d942"
+  }
+}

@@ -204,7 +204,7 @@ def prepare(feed_path: Path, config: dict, destination: Path) -> dict:
     review_path = destination / "private" / "annotation-review.csv"
     if not review_path.exists():
         with review_path.open("x", newline="") as stream:
-            writer = csv.DictWriter(stream, fieldnames=list(review[0]))
+            writer = csv.DictWriter(stream, fieldnames=list(review[0]), lineterminator="\n")
             writer.writeheader()
             writer.writerows(review)
     manifest = {

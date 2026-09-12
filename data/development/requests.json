@@ -1,0 +1,1286 @@
+[
+  {
+    "authorship": "assistant-authored deterministic template; not passenger data",
+    "base_id": "g00",
+    "feed_hash": "82e6b822de008367b3d3d35bb52545807ea41b6f56623a9aa4b1162b3d54671b",
+    "pool_hash": "c4b975fa1f0958e0437f17fa47e72c92b22682ad769357cc541f1ee90d4c17f3",
+    "request": "On 2026-09-14, plan the outbound journey from OMSI/SE Water [stop_id=13773] to SW Hall & 5th [stop_id=13780]. Depart no earlier than 07:30:00 and arrive by 08:15:00, inclusive. Make at most one transfer.",
+    "scenario_id": "g00-timing-p0",
+    "segments": [
+      {
+        "destination": "13780",
+        "end_s": 36000,
+        "origin": "13773",
+        "scope": "outbound",
+        "start_s": 25200
+      }
+    ],
+    "service_date": "2026-09-14",
+    "split": "development",
+    "timezone": "America/Los_Angeles"
+  },
+  {
+    "authorship": "assistant-authored deterministic template; not passenger data",
+    "base_id": "g00",
+    "feed_hash": "82e6b822de008367b3d3d35bb52545807ea41b6f56623a9aa4b1162b3d54671b",
+    "pool_hash": "c4b975fa1f0958e0437f17fa47e72c92b22682ad769357cc541f1ee90d4c17f3",
+    "request": "Please find scheduled transport for this request. On 2026-09-14, plan the outbound journey from OMSI/SE Water [stop_id=13773] to SW Hall & 5th [stop_id=13780]. Depart no earlier than 07:30:00 and arrive by 08:15:00, inclusive. Make at most one transfer.",
+    "scenario_id": "g00-timing-p1",
+    "segments": [
+      {
+        "destination": "13780",
+        "end_s": 36000,
+        "origin": "13773",
+        "scope": "outbound",
+        "start_s": 25200
+      }
+    ],
+    "service_date": "2026-09-14",
+    "split": "development",
+    "timezone": "America/Los_Angeles"
+  },
+  {
+    "authorship": "assistant-authored deterministic template; not passenger data",
+    "base_id": "g00",
+    "feed_hash": "82e6b822de008367b3d3d35bb52545807ea41b6f56623a9aa4b1162b3d54671b",
+    "pool_hash": "c4b975fa1f0958e0437f17fa47e72c92b22682ad769357cc541f1ee90d4c17f3",
+    "request": "On 2026-09-14, plan the outbound journey from OMSI/SE Water [stop_id=13773] to SW Hall & 5th [stop_id=13780]. Do not use rail or tram. Do not depart before 07:45:00. Make no transfers.",
+    "scenario_id": "g00-negation-p0",
+    "segments": [
+      {
+        "destination": "13780",
+        "end_s": 36000,
+        "origin": "13773",
+        "scope": "outbound",
+        "start_s": 25200
+      }
+    ],
+    "service_date": "2026-09-14",
+    "split": "development",
+    "timezone": "America/Los_Angeles"
+  },
+  {
+    "authorship": "assistant-authored deterministic template; not passenger data",
+    "base_id": "g00",
+    "feed_hash": "82e6b822de008367b3d3d35bb52545807ea41b6f56623a9aa4b1162b3d54671b",
+    "pool_hash": "c4b975fa1f0958e0437f17fa47e72c92b22682ad769357cc541f1ee90d4c17f3",
+    "request": "Please find scheduled transport for this request. On 2026-09-14, plan the outbound journey from OMSI/SE Water [stop_id=13773] to SW Hall & 5th [stop_id=13780]. Do not use rail or tram. Do not depart before 07:45:00. Make no transfers.",
+    "scenario_id": "g00-negation-p1",
+    "segments": [
+      {
+        "destination": "13780",
+        "end_s": 36000,
+        "origin": "13773",
+        "scope": "outbound",
+        "start_s": 25200
+      }
+    ],
+    "service_date": "2026-09-14",
+    "split": "development",
+    "timezone": "America/Los_Angeles"
+  },
+  {
+    "authorship": "assistant-authored deterministic template; not passenger data",
+    "base_id": "g00",
+    "feed_hash": "82e6b822de008367b3d3d35bb52545807ea41b6f56623a9aa4b1162b3d54671b",
+    "pool_hash": "c4b975fa1f0958e0437f17fa47e72c92b22682ad769357cc541f1ee90d4c17f3",
+    "request": "On 2026-09-14, plan the outbound journey from OMSI/SE Water [stop_id=13773] to SW Hall & 5th [stop_id=13780]. Call at stop 13733 and then stop 3398, in that order; remaining aboard counts. Use only buses.",
+    "scenario_id": "g00-visits-p0",
+    "segments": [
+      {
+        "destination": "13780",
+        "end_s": 36000,
+        "origin": "13773",
+        "scope": "outbound",
+        "start_s": 25200
+      }
+    ],
+    "service_date": "2026-09-14",
+    "split": "development",
+    "timezone": "America/Los_Angeles"
+  },
+  {
+    "authorship": "assistant-authored deterministic template; not passenger data",
+    "base_id": "g00",
+    "feed_hash": "82e6b822de008367b3d3d35bb52545807ea41b6f56623a9aa4b1162b3d54671b",
+    "pool_hash": "c4b975fa1f0958e0437f17fa47e72c92b22682ad769357cc541f1ee90d4c17f3",
+    "request": "Please find scheduled transport for this request. On 2026-09-14, plan the outbound journey from OMSI/SE Water [stop_id=13773] to SW Hall & 5th [stop_id=13780]. Call at stop 13733 and then stop 3398, in that order; remaining aboard counts. Use only buses.",
+    "scenario_id": "g00-visits-p1",
+    "segments": [
+      {
+        "destination": "13780",
+        "end_s": 36000,
+        "origin": "13773",
+        "scope": "outbound",
+        "start_s": 25200
+      }
+    ],
+    "service_date": "2026-09-14",
+    "split": "development",
+    "timezone": "America/Los_Angeles"
+  },
+  {
+    "authorship": "assistant-authored deterministic template; not passenger data",
+    "base_id": "g00",
+    "feed_hash": "82e6b822de008367b3d3d35bb52545807ea41b6f56623a9aa4b1162b3d54671b",
+    "pool_hash": "c4b975fa1f0958e0437f17fa47e72c92b22682ad769357cc541f1ee90d4c17f3",
+    "request": "On 2026-09-14, plan the outbound journey from OMSI/SE Water [stop_id=13773] to SW Hall & 5th [stop_id=13780]. Depart no earlier than 08:30:00 and arrive by 08:00:00.",
+    "scenario_id": "g00-infeasible-p0",
+    "segments": [
+      {
+        "destination": "13780",
+        "end_s": 36000,
+        "origin": "13773",
+        "scope": "outbound",
+        "start_s": 25200
+      }
+    ],
+    "service_date": "2026-09-14",
+    "split": "development",
+    "timezone": "America/Los_Angeles"
+  },
+  {
+    "authorship": "assistant-authored deterministic template; not passenger data",
+    "base_id": "g00",
+    "feed_hash": "82e6b822de008367b3d3d35bb52545807ea41b6f56623a9aa4b1162b3d54671b",
+    "pool_hash": "c4b975fa1f0958e0437f17fa47e72c92b22682ad769357cc541f1ee90d4c17f3",
+    "request": "Please find scheduled transport for this request. On 2026-09-14, plan the outbound journey from OMSI/SE Water [stop_id=13773] to SW Hall & 5th [stop_id=13780]. Depart no earlier than 08:30:00 and arrive by 08:00:00.",
+    "scenario_id": "g00-infeasible-p1",
+    "segments": [
+      {
+        "destination": "13780",
+        "end_s": 36000,
+        "origin": "13773",
+        "scope": "outbound",
+        "start_s": 25200
+      }
+    ],
+    "service_date": "2026-09-14",
+    "split": "development",
+    "timezone": "America/Los_Angeles"
+  },
+  {
+    "authorship": "assistant-authored deterministic template; not passenger data",
+    "base_id": "g00",
+    "feed_hash": "82e6b822de008367b3d3d35bb52545807ea41b6f56623a9aa4b1162b3d54671b",
+    "pool_hash": "2850a636a225c1b1d214289fc5d86581603a6e380e49002562996a30f84e1e07",
+    "request": "On 2026-09-14, plan the outbound journey from OMSI/SE Water [stop_id=13773] to SW Hall & 5th [stop_id=13780]. Also plan a return segment from SW Hall & 5th [stop_id=13780] to NE Weidler & 15th [stop_id=10425] after 09:00:00. I handle any movement between the outbound destination and return origin myself outside these journeys. On the outbound segment only, make no transfers. On the return segment, depart no earlier than 09:15:00.",
+    "scenario_id": "g00-scope-p0",
+    "segments": [
+      {
+        "destination": "13780",
+        "end_s": 36000,
+        "origin": "13773",
+        "scope": "outbound",
+        "start_s": 25200
+      },
+      {
+        "destination": "10425",
+        "end_s": 36000,
+        "origin": "13780",
+        "scope": "return",
+        "start_s": 32400
+      }
+    ],
+    "service_date": "2026-09-14",
+    "split": "development",
+    "timezone": "America/Los_Angeles"
+  },
+  {
+    "authorship": "assistant-authored deterministic template; not passenger data",
+    "base_id": "g00",
+    "feed_hash": "82e6b822de008367b3d3d35bb52545807ea41b6f56623a9aa4b1162b3d54671b",
+    "pool_hash": "2850a636a225c1b1d214289fc5d86581603a6e380e49002562996a30f84e1e07",
+    "request": "Please find scheduled transport for this request. On 2026-09-14, plan the outbound journey from OMSI/SE Water [stop_id=13773] to SW Hall & 5th [stop_id=13780]. Also plan a return segment from SW Hall & 5th [stop_id=13780] to NE Weidler & 15th [stop_id=10425] after 09:00:00. I handle any movement between the outbound destination and return origin myself outside these journeys. On the outbound segment only, make no transfers. On the return segment, depart no earlier than 09:15:00.",
+    "scenario_id": "g00-scope-p1",
+    "segments": [
+      {
+        "destination": "13780",
+        "end_s": 36000,
+        "origin": "13773",
+        "scope": "outbound",
+        "start_s": 25200
+      },
+      {
+        "destination": "10425",
+        "end_s": 36000,
+        "origin": "13780",
+        "scope": "return",
+        "start_s": 32400
+      }
+    ],
+    "service_date": "2026-09-14",
+    "split": "development",
+    "timezone": "America/Los_Angeles"
+  },
+  {
+    "authorship": "assistant-authored deterministic template; not passenger data",
+    "base_id": "g01",
+    "feed_hash": "82e6b822de008367b3d3d35bb52545807ea41b6f56623a9aa4b1162b3d54671b",
+    "pool_hash": "d0591fae1c59cd94508bb962a048cd60d01a132dcfe2775c62c209e82ec002da",
+    "request": "On 2026-09-14, plan the outbound journey from NW 5th & Davis [stop_id=9301] to 300 Block SW Lincoln [stop_id=3397]. Depart no earlier than 07:30:00 and arrive by 08:15:00, inclusive. Make at most one transfer.",
+    "scenario_id": "g01-timing-p0",
+    "segments": [
+      {
+        "destination": "3397",
+        "end_s": 36000,
+        "origin": "9301",
+        "scope": "outbound",
+        "start_s": 25200
+      }
+    ],
+    "service_date": "2026-09-14",
+    "split": "development",
+    "timezone": "America/Los_Angeles"
+  },
+  {
+    "authorship": "assistant-authored deterministic template; not passenger data",
+    "base_id": "g01",
+    "feed_hash": "82e6b822de008367b3d3d35bb52545807ea41b6f56623a9aa4b1162b3d54671b",
+    "pool_hash": "d0591fae1c59cd94508bb962a048cd60d01a132dcfe2775c62c209e82ec002da",
+    "request": "Please find scheduled transport for this request. On 2026-09-14, plan the outbound journey from NW 5th & Davis [stop_id=9301] to 300 Block SW Lincoln [stop_id=3397]. Depart no earlier than 07:30:00 and arrive by 08:15:00, inclusive. Make at most one transfer.",
+    "scenario_id": "g01-timing-p1",
+    "segments": [
+      {
+        "destination": "3397",
+        "end_s": 36000,
+        "origin": "9301",
+        "scope": "outbound",
+        "start_s": 25200
+      }
+    ],
+    "service_date": "2026-09-14",
+    "split": "development",
+    "timezone": "America/Los_Angeles"
+  },
+  {
+    "authorship": "assistant-authored deterministic template; not passenger data",
+    "base_id": "g01",
+    "feed_hash": "82e6b822de008367b3d3d35bb52545807ea41b6f56623a9aa4b1162b3d54671b",
+    "pool_hash": "d0591fae1c59cd94508bb962a048cd60d01a132dcfe2775c62c209e82ec002da",
+    "request": "On 2026-09-14, plan the outbound journey from NW 5th & Davis [stop_id=9301] to 300 Block SW Lincoln [stop_id=3397]. Do not use rail or tram. Do not depart before 07:45:00. Make no transfers.",
+    "scenario_id": "g01-negation-p0",
+    "segments": [
+      {
+        "destination": "3397",
+        "end_s": 36000,
+        "origin": "9301",
+        "scope": "outbound",
+        "start_s": 25200
+      }
+    ],
+    "service_date": "2026-09-14",
+    "split": "development",
+    "timezone": "America/Los_Angeles"
+  },
+  {
+    "authorship": "assistant-authored deterministic template; not passenger data",
+    "base_id": "g01",
+    "feed_hash": "82e6b822de008367b3d3d35bb52545807ea41b6f56623a9aa4b1162b3d54671b",
+    "pool_hash": "d0591fae1c59cd94508bb962a048cd60d01a132dcfe2775c62c209e82ec002da",
+    "request": "Please find scheduled transport for this request. On 2026-09-14, plan the outbound journey from NW 5th & Davis [stop_id=9301] to 300 Block SW Lincoln [stop_id=3397]. Do not use rail or tram. Do not depart before 07:45:00. Make no transfers.",
+    "scenario_id": "g01-negation-p1",
+    "segments": [
+      {
+        "destination": "3397",
+        "end_s": 36000,
+        "origin": "9301",
+        "scope": "outbound",
+        "start_s": 25200
+      }
+    ],
+    "service_date": "2026-09-14",
+    "split": "development",
+    "timezone": "America/Los_Angeles"
+  },
+  {
+    "authorship": "assistant-authored deterministic template; not passenger data",
+    "base_id": "g01",
+    "feed_hash": "82e6b822de008367b3d3d35bb52545807ea41b6f56623a9aa4b1162b3d54671b",
+    "pool_hash": "d0591fae1c59cd94508bb962a048cd60d01a132dcfe2775c62c209e82ec002da",
+    "request": "On 2026-09-14, plan the outbound journey from NW 5th & Davis [stop_id=9301] to 300 Block SW Lincoln [stop_id=3397]. Call at stop 7642 and then stop 7634, in that order; remaining aboard counts. Use only buses.",
+    "scenario_id": "g01-visits-p0",
+    "segments": [
+      {
+        "destination": "3397",
+        "end_s": 36000,
+        "origin": "9301",
+        "scope": "outbound",
+        "start_s": 25200
+      }
+    ],
+    "service_date": "2026-09-14",
+    "split": "development",
+    "timezone": "America/Los_Angeles"
+  },
+  {
+    "authorship": "assistant-authored deterministic template; not passenger data",
+    "base_id": "g01",
+    "feed_hash": "82e6b822de008367b3d3d35bb52545807ea41b6f56623a9aa4b1162b3d54671b",
+    "pool_hash": "d0591fae1c59cd94508bb962a048cd60d01a132dcfe2775c62c209e82ec002da",
+    "request": "Please find scheduled transport for this request. On 2026-09-14, plan the outbound journey from NW 5th & Davis [stop_id=9301] to 300 Block SW Lincoln [stop_id=3397]. Call at stop 7642 and then stop 7634, in that order; remaining aboard counts. Use only buses.",
+    "scenario_id": "g01-visits-p1",
+    "segments": [
+      {
+        "destination": "3397",
+        "end_s": 36000,
+        "origin": "9301",
+        "scope": "outbound",
+        "start_s": 25200
+      }
+    ],
+    "service_date": "2026-09-14",
+    "split": "development",
+    "timezone": "America/Los_Angeles"
+  },
+  {
+    "authorship": "assistant-authored deterministic template; not passenger data",
+    "base_id": "g01",
+    "feed_hash": "82e6b822de008367b3d3d35bb52545807ea41b6f56623a9aa4b1162b3d54671b",
+    "pool_hash": "d0591fae1c59cd94508bb962a048cd60d01a132dcfe2775c62c209e82ec002da",
+    "request": "On 2026-09-14, plan the outbound journey from NW 5th & Davis [stop_id=9301] to 300 Block SW Lincoln [stop_id=3397]. Depart no earlier than 08:30:00 and arrive by 08:00:00.",
+    "scenario_id": "g01-infeasible-p0",
+    "segments": [
+      {
+        "destination": "3397",
+        "end_s": 36000,
+        "origin": "9301",
+        "scope": "outbound",
+        "start_s": 25200
+      }
+    ],
+    "service_date": "2026-09-14",
+    "split": "development",
+    "timezone": "America/Los_Angeles"
+  },
+  {
+    "authorship": "assistant-authored deterministic template; not passenger data",
+    "base_id": "g01",
+    "feed_hash": "82e6b822de008367b3d3d35bb52545807ea41b6f56623a9aa4b1162b3d54671b",
+    "pool_hash": "d0591fae1c59cd94508bb962a048cd60d01a132dcfe2775c62c209e82ec002da",
+    "request": "Please find scheduled transport for this request. On 2026-09-14, plan the outbound journey from NW 5th & Davis [stop_id=9301] to 300 Block SW Lincoln [stop_id=3397]. Depart no earlier than 08:30:00 and arrive by 08:00:00.",
+    "scenario_id": "g01-infeasible-p1",
+    "segments": [
+      {
+        "destination": "3397",
+        "end_s": 36000,
+        "origin": "9301",
+        "scope": "outbound",
+        "start_s": 25200
+      }
+    ],
+    "service_date": "2026-09-14",
+    "split": "development",
+    "timezone": "America/Los_Angeles"
+  },
+  {
+    "authorship": "assistant-authored deterministic template; not passenger data",
+    "base_id": "g01",
+    "feed_hash": "82e6b822de008367b3d3d35bb52545807ea41b6f56623a9aa4b1162b3d54671b",
+    "pool_hash": "cfc608f3482376c42c303e3002c24be35f24ba5ece205864a9fc6e6937b8cd18",
+    "request": "On 2026-09-14, plan the outbound journey from NW 5th & Davis [stop_id=9301] to 300 Block SW Lincoln [stop_id=3397]. Also plan a return segment from 300 Block SW Lincoln [stop_id=3397] to SE Milwaukie & Powell [stop_id=10472] after 09:00:00. I handle any movement between the outbound destination and return origin myself outside these journeys. On the outbound segment only, make no transfers. On the return segment, depart no earlier than 09:15:00.",
+    "scenario_id": "g01-scope-p0",
+    "segments": [
+      {
+        "destination": "3397",
+        "end_s": 36000,
+        "origin": "9301",
+        "scope": "outbound",
+        "start_s": 25200
+      },
+      {
+        "destination": "10472",
+        "end_s": 36000,
+        "origin": "3397",
+        "scope": "return",
+        "start_s": 32400
+      }
+    ],
+    "service_date": "2026-09-14",
+    "split": "development",
+    "timezone": "America/Los_Angeles"
+  },
+  {
+    "authorship": "assistant-authored deterministic template; not passenger data",
+    "base_id": "g01",
+    "feed_hash": "82e6b822de008367b3d3d35bb52545807ea41b6f56623a9aa4b1162b3d54671b",
+    "pool_hash": "cfc608f3482376c42c303e3002c24be35f24ba5ece205864a9fc6e6937b8cd18",
+    "request": "Please find scheduled transport for this request. On 2026-09-14, plan the outbound journey from NW 5th & Davis [stop_id=9301] to 300 Block SW Lincoln [stop_id=3397]. Also plan a return segment from 300 Block SW Lincoln [stop_id=3397] to SE Milwaukie & Powell [stop_id=10472] after 09:00:00. I handle any movement between the outbound destination and return origin myself outside these journeys. On the outbound segment only, make no transfers. On the return segment, depart no earlier than 09:15:00.",
+    "scenario_id": "g01-scope-p1",
+    "segments": [
+      {
+        "destination": "3397",
+        "end_s": 36000,
+        "origin": "9301",
+        "scope": "outbound",
+        "start_s": 25200
+      },
+      {
+        "destination": "10472",
+        "end_s": 36000,
+        "origin": "3397",
+        "scope": "return",
+        "start_s": 32400
+      }
+    ],
+    "service_date": "2026-09-14",
+    "split": "development",
+    "timezone": "America/Los_Angeles"
+  },
+  {
+    "authorship": "assistant-authored deterministic template; not passenger data",
+    "base_id": "g02",
+    "feed_hash": "82e6b822de008367b3d3d35bb52545807ea41b6f56623a9aa4b1162b3d54671b",
+    "pool_hash": "eba572152f3b56eaadd8eedd78ab644d17e09adeeff3f69d24a4d998e3760857",
+    "request": "On 2026-09-14, plan the outbound journey from SW 5th & Columbia [stop_id=7594] to South Waterfront/S Moody [stop_id=13732]. Depart no earlier than 07:30:00 and arrive by 08:15:00, inclusive. Make at most one transfer.",
+    "scenario_id": "g02-timing-p0",
+    "segments": [
+      {
+        "destination": "13732",
+        "end_s": 36000,
+        "origin": "7594",
+        "scope": "outbound",
+        "start_s": 25200
+      }
+    ],
+    "service_date": "2026-09-14",
+    "split": "development",
+    "timezone": "America/Los_Angeles"
+  },
+  {
+    "authorship": "assistant-authored deterministic template; not passenger data",
+    "base_id": "g02",
+    "feed_hash": "82e6b822de008367b3d3d35bb52545807ea41b6f56623a9aa4b1162b3d54671b",
+    "pool_hash": "eba572152f3b56eaadd8eedd78ab644d17e09adeeff3f69d24a4d998e3760857",
+    "request": "Please find scheduled transport for this request. On 2026-09-14, plan the outbound journey from SW 5th & Columbia [stop_id=7594] to South Waterfront/S Moody [stop_id=13732]. Depart no earlier than 07:30:00 and arrive by 08:15:00, inclusive. Make at most one transfer.",
+    "scenario_id": "g02-timing-p1",
+    "segments": [
+      {
+        "destination": "13732",
+        "end_s": 36000,
+        "origin": "7594",
+        "scope": "outbound",
+        "start_s": 25200
+      }
+    ],
+    "service_date": "2026-09-14",
+    "split": "development",
+    "timezone": "America/Los_Angeles"
+  },
+  {
+    "authorship": "assistant-authored deterministic template; not passenger data",
+    "base_id": "g02",
+    "feed_hash": "82e6b822de008367b3d3d35bb52545807ea41b6f56623a9aa4b1162b3d54671b",
+    "pool_hash": "eba572152f3b56eaadd8eedd78ab644d17e09adeeff3f69d24a4d998e3760857",
+    "request": "On 2026-09-14, plan the outbound journey from SW 5th & Columbia [stop_id=7594] to South Waterfront/S Moody [stop_id=13732]. Do not use rail or tram. Do not depart before 07:45:00. Make no transfers.",
+    "scenario_id": "g02-negation-p0",
+    "segments": [
+      {
+        "destination": "13732",
+        "end_s": 36000,
+        "origin": "7594",
+        "scope": "outbound",
+        "start_s": 25200
+      }
+    ],
+    "service_date": "2026-09-14",
+    "split": "development",
+    "timezone": "America/Los_Angeles"
+  },
+  {
+    "authorship": "assistant-authored deterministic template; not passenger data",
+    "base_id": "g02",
+    "feed_hash": "82e6b822de008367b3d3d35bb52545807ea41b6f56623a9aa4b1162b3d54671b",
+    "pool_hash": "eba572152f3b56eaadd8eedd78ab644d17e09adeeff3f69d24a4d998e3760857",
+    "request": "Please find scheduled transport for this request. On 2026-09-14, plan the outbound journey from SW 5th & Columbia [stop_id=7594] to South Waterfront/S Moody [stop_id=13732]. Do not use rail or tram. Do not depart before 07:45:00. Make no transfers.",
+    "scenario_id": "g02-negation-p1",
+    "segments": [
+      {
+        "destination": "13732",
+        "end_s": 36000,
+        "origin": "7594",
+        "scope": "outbound",
+        "start_s": 25200
+      }
+    ],
+    "service_date": "2026-09-14",
+    "split": "development",
+    "timezone": "America/Los_Angeles"
+  },
+  {
+    "authorship": "assistant-authored deterministic template; not passenger data",
+    "base_id": "g02",
+    "feed_hash": "82e6b822de008367b3d3d35bb52545807ea41b6f56623a9aa4b1162b3d54671b",
+    "pool_hash": "eba572152f3b56eaadd8eedd78ab644d17e09adeeff3f69d24a4d998e3760857",
+    "request": "On 2026-09-14, plan the outbound journey from SW 5th & Columbia [stop_id=7594] to South Waterfront/S Moody [stop_id=13732]. Call at stop 10491 and then stop 3397, in that order; remaining aboard counts. Use only buses.",
+    "scenario_id": "g02-visits-p0",
+    "segments": [
+      {
+        "destination": "13732",
+        "end_s": 36000,
+        "origin": "7594",
+        "scope": "outbound",
+        "start_s": 25200
+      }
+    ],
+    "service_date": "2026-09-14",
+    "split": "development",
+    "timezone": "America/Los_Angeles"
+  },
+  {
+    "authorship": "assistant-authored deterministic template; not passenger data",
+    "base_id": "g02",
+    "feed_hash": "82e6b822de008367b3d3d35bb52545807ea41b6f56623a9aa4b1162b3d54671b",
+    "pool_hash": "eba572152f3b56eaadd8eedd78ab644d17e09adeeff3f69d24a4d998e3760857",
+    "request": "Please find scheduled transport for this request. On 2026-09-14, plan the outbound journey from SW 5th & Columbia [stop_id=7594] to South Waterfront/S Moody [stop_id=13732]. Call at stop 10491 and then stop 3397, in that order; remaining aboard counts. Use only buses.",
+    "scenario_id": "g02-visits-p1",
+    "segments": [
+      {
+        "destination": "13732",
+        "end_s": 36000,
+        "origin": "7594",
+        "scope": "outbound",
+        "start_s": 25200
+      }
+    ],
+    "service_date": "2026-09-14",
+    "split": "development",
+    "timezone": "America/Los_Angeles"
+  },
+  {
+    "authorship": "assistant-authored deterministic template; not passenger data",
+    "base_id": "g02",
+    "feed_hash": "82e6b822de008367b3d3d35bb52545807ea41b6f56623a9aa4b1162b3d54671b",
+    "pool_hash": "eba572152f3b56eaadd8eedd78ab644d17e09adeeff3f69d24a4d998e3760857",
+    "request": "On 2026-09-14, plan the outbound journey from SW 5th & Columbia [stop_id=7594] to South Waterfront/S Moody [stop_id=13732]. Depart no earlier than 08:30:00 and arrive by 08:00:00.",
+    "scenario_id": "g02-infeasible-p0",
+    "segments": [
+      {
+        "destination": "13732",
+        "end_s": 36000,
+        "origin": "7594",
+        "scope": "outbound",
+        "start_s": 25200
+      }
+    ],
+    "service_date": "2026-09-14",
+    "split": "development",
+    "timezone": "America/Los_Angeles"
+  },
+  {
+    "authorship": "assistant-authored deterministic template; not passenger data",
+    "base_id": "g02",
+    "feed_hash": "82e6b822de008367b3d3d35bb52545807ea41b6f56623a9aa4b1162b3d54671b",
+    "pool_hash": "eba572152f3b56eaadd8eedd78ab644d17e09adeeff3f69d24a4d998e3760857",
+    "request": "Please find scheduled transport for this request. On 2026-09-14, plan the outbound journey from SW 5th & Columbia [stop_id=7594] to South Waterfront/S Moody [stop_id=13732]. Depart no earlier than 08:30:00 and arrive by 08:00:00.",
+    "scenario_id": "g02-infeasible-p1",
+    "segments": [
+      {
+        "destination": "13732",
+        "end_s": 36000,
+        "origin": "7594",
+        "scope": "outbound",
+        "start_s": 25200
+      }
+    ],
+    "service_date": "2026-09-14",
+    "split": "development",
+    "timezone": "America/Los_Angeles"
+  },
+  {
+    "authorship": "assistant-authored deterministic template; not passenger data",
+    "base_id": "g02",
+    "feed_hash": "82e6b822de008367b3d3d35bb52545807ea41b6f56623a9aa4b1162b3d54671b",
+    "pool_hash": "71c06b2b4148b341192e3b7a8fa0e03adfa8be5931b121f588cca573b2b289fc",
+    "request": "On 2026-09-14, plan the outbound journey from SW 5th & Columbia [stop_id=7594] to South Waterfront/S Moody [stop_id=13732]. Also plan a return segment from South Waterfront/S Moody [stop_id=13732] to SE Milwaukie & Powell [stop_id=10472] after 09:00:00. I handle any movement between the outbound destination and return origin myself outside these journeys. On the outbound segment only, make no transfers. On the return segment, depart no earlier than 09:15:00.",
+    "scenario_id": "g02-scope-p0",
+    "segments": [
+      {
+        "destination": "13732",
+        "end_s": 36000,
+        "origin": "7594",
+        "scope": "outbound",
+        "start_s": 25200
+      },
+      {
+        "destination": "10472",
+        "end_s": 36000,
+        "origin": "13732",
+        "scope": "return",
+        "start_s": 32400
+      }
+    ],
+    "service_date": "2026-09-14",
+    "split": "development",
+    "timezone": "America/Los_Angeles"
+  },
+  {
+    "authorship": "assistant-authored deterministic template; not passenger data",
+    "base_id": "g02",
+    "feed_hash": "82e6b822de008367b3d3d35bb52545807ea41b6f56623a9aa4b1162b3d54671b",
+    "pool_hash": "71c06b2b4148b341192e3b7a8fa0e03adfa8be5931b121f588cca573b2b289fc",
+    "request": "Please find scheduled transport for this request. On 2026-09-14, plan the outbound journey from SW 5th & Columbia [stop_id=7594] to South Waterfront/S Moody [stop_id=13732]. Also plan a return segment from South Waterfront/S Moody [stop_id=13732] to SE Milwaukie & Powell [stop_id=10472] after 09:00:00. I handle any movement between the outbound destination and return origin myself outside these journeys. On the outbound segment only, make no transfers. On the return segment, depart no earlier than 09:15:00.",
+    "scenario_id": "g02-scope-p1",
+    "segments": [
+      {
+        "destination": "13732",
+        "end_s": 36000,
+        "origin": "7594",
+        "scope": "outbound",
+        "start_s": 25200
+      },
+      {
+        "destination": "10472",
+        "end_s": 36000,
+        "origin": "13732",
+        "scope": "return",
+        "start_s": 32400
+      }
+    ],
+    "service_date": "2026-09-14",
+    "split": "development",
+    "timezone": "America/Los_Angeles"
+  },
+  {
+    "authorship": "assistant-authored deterministic template; not passenger data",
+    "base_id": "g03",
+    "feed_hash": "82e6b822de008367b3d3d35bb52545807ea41b6f56623a9aa4b1162b3d54671b",
+    "pool_hash": "729bc5e0fee8058f88d7f35b567c44ec81a7f27553dd1f7614f96b0dc52b761d",
+    "request": "On 2026-09-14, plan the outbound journey from SW 5th & Salmon [stop_id=7634] to OMSI/SE Water [stop_id=13772]. Depart no earlier than 07:30:00 and arrive by 08:15:00, inclusive. Make at most one transfer.",
+    "scenario_id": "g03-timing-p0",
+    "segments": [
+      {
+        "destination": "13772",
+        "end_s": 36000,
+        "origin": "7634",
+        "scope": "outbound",
+        "start_s": 25200
+      }
+    ],
+    "service_date": "2026-09-14",
+    "split": "development",
+    "timezone": "America/Los_Angeles"
+  },
+  {
+    "authorship": "assistant-authored deterministic template; not passenger data",
+    "base_id": "g03",
+    "feed_hash": "82e6b822de008367b3d3d35bb52545807ea41b6f56623a9aa4b1162b3d54671b",
+    "pool_hash": "729bc5e0fee8058f88d7f35b567c44ec81a7f27553dd1f7614f96b0dc52b761d",
+    "request": "Please find scheduled transport for this request. On 2026-09-14, plan the outbound journey from SW 5th & Salmon [stop_id=7634] to OMSI/SE Water [stop_id=13772]. Depart no earlier than 07:30:00 and arrive by 08:15:00, inclusive. Make at most one transfer.",
+    "scenario_id": "g03-timing-p1",
+    "segments": [
+      {
+        "destination": "13772",
+        "end_s": 36000,
+        "origin": "7634",
+        "scope": "outbound",
+        "start_s": 25200
+      }
+    ],
+    "service_date": "2026-09-14",
+    "split": "development",
+    "timezone": "America/Los_Angeles"
+  },
+  {
+    "authorship": "assistant-authored deterministic template; not passenger data",
+    "base_id": "g03",
+    "feed_hash": "82e6b822de008367b3d3d35bb52545807ea41b6f56623a9aa4b1162b3d54671b",
+    "pool_hash": "729bc5e0fee8058f88d7f35b567c44ec81a7f27553dd1f7614f96b0dc52b761d",
+    "request": "On 2026-09-14, plan the outbound journey from SW 5th & Salmon [stop_id=7634] to OMSI/SE Water [stop_id=13772]. Do not use rail or tram. Do not depart before 07:45:00. Make no transfers.",
+    "scenario_id": "g03-negation-p0",
+    "segments": [
+      {
+        "destination": "13772",
+        "end_s": 36000,
+        "origin": "7634",
+        "scope": "outbound",
+        "start_s": 25200
+      }
+    ],
+    "service_date": "2026-09-14",
+    "split": "development",
+    "timezone": "America/Los_Angeles"
+  },
+  {
+    "authorship": "assistant-authored deterministic template; not passenger data",
+    "base_id": "g03",
+    "feed_hash": "82e6b822de008367b3d3d35bb52545807ea41b6f56623a9aa4b1162b3d54671b",
+    "pool_hash": "729bc5e0fee8058f88d7f35b567c44ec81a7f27553dd1f7614f96b0dc52b761d",
+    "request": "Please find scheduled transport for this request. On 2026-09-14, plan the outbound journey from SW 5th & Salmon [stop_id=7634] to OMSI/SE Water [stop_id=13772]. Do not use rail or tram. Do not depart before 07:45:00. Make no transfers.",
+    "scenario_id": "g03-negation-p1",
+    "segments": [
+      {
+        "destination": "13772",
+        "end_s": 36000,
+        "origin": "7634",
+        "scope": "outbound",
+        "start_s": 25200
+      }
+    ],
+    "service_date": "2026-09-14",
+    "split": "development",
+    "timezone": "America/Los_Angeles"
+  },
+  {
+    "authorship": "assistant-authored deterministic template; not passenger data",
+    "base_id": "g03",
+    "feed_hash": "82e6b822de008367b3d3d35bb52545807ea41b6f56623a9aa4b1162b3d54671b",
+    "pool_hash": "729bc5e0fee8058f88d7f35b567c44ec81a7f27553dd1f7614f96b0dc52b761d",
+    "request": "On 2026-09-14, plan the outbound journey from SW 5th & Salmon [stop_id=7634] to OMSI/SE Water [stop_id=13772]. Call at stop 7594 and then stop 10491, in that order; remaining aboard counts. Use only buses.",
+    "scenario_id": "g03-visits-p0",
+    "segments": [
+      {
+        "destination": "13772",
+        "end_s": 36000,
+        "origin": "7634",
+        "scope": "outbound",
+        "start_s": 25200
+      }
+    ],
+    "service_date": "2026-09-14",
+    "split": "development",
+    "timezone": "America/Los_Angeles"
+  },
+  {
+    "authorship": "assistant-authored deterministic template; not passenger data",
+    "base_id": "g03",
+    "feed_hash": "82e6b822de008367b3d3d35bb52545807ea41b6f56623a9aa4b1162b3d54671b",
+    "pool_hash": "729bc5e0fee8058f88d7f35b567c44ec81a7f27553dd1f7614f96b0dc52b761d",
+    "request": "Please find scheduled transport for this request. On 2026-09-14, plan the outbound journey from SW 5th & Salmon [stop_id=7634] to OMSI/SE Water [stop_id=13772]. Call at stop 7594 and then stop 10491, in that order; remaining aboard counts. Use only buses.",
+    "scenario_id": "g03-visits-p1",
+    "segments": [
+      {
+        "destination": "13772",
+        "end_s": 36000,
+        "origin": "7634",
+        "scope": "outbound",
+        "start_s": 25200
+      }
+    ],
+    "service_date": "2026-09-14",
+    "split": "development",
+    "timezone": "America/Los_Angeles"
+  },
+  {
+    "authorship": "assistant-authored deterministic template; not passenger data",
+    "base_id": "g03",
+    "feed_hash": "82e6b822de008367b3d3d35bb52545807ea41b6f56623a9aa4b1162b3d54671b",
+    "pool_hash": "729bc5e0fee8058f88d7f35b567c44ec81a7f27553dd1f7614f96b0dc52b761d",
+    "request": "On 2026-09-14, plan the outbound journey from SW 5th & Salmon [stop_id=7634] to OMSI/SE Water [stop_id=13772]. Depart no earlier than 08:30:00 and arrive by 08:00:00.",
+    "scenario_id": "g03-infeasible-p0",
+    "segments": [
+      {
+        "destination": "13772",
+        "end_s": 36000,
+        "origin": "7634",
+        "scope": "outbound",
+        "start_s": 25200
+      }
+    ],
+    "service_date": "2026-09-14",
+    "split": "development",
+    "timezone": "America/Los_Angeles"
+  },
+  {
+    "authorship": "assistant-authored deterministic template; not passenger data",
+    "base_id": "g03",
+    "feed_hash": "82e6b822de008367b3d3d35bb52545807ea41b6f56623a9aa4b1162b3d54671b",
+    "pool_hash": "729bc5e0fee8058f88d7f35b567c44ec81a7f27553dd1f7614f96b0dc52b761d",
+    "request": "Please find scheduled transport for this request. On 2026-09-14, plan the outbound journey from SW 5th & Salmon [stop_id=7634] to OMSI/SE Water [stop_id=13772]. Depart no earlier than 08:30:00 and arrive by 08:00:00.",
+    "scenario_id": "g03-infeasible-p1",
+    "segments": [
+      {
+        "destination": "13772",
+        "end_s": 36000,
+        "origin": "7634",
+        "scope": "outbound",
+        "start_s": 25200
+      }
+    ],
+    "service_date": "2026-09-14",
+    "split": "development",
+    "timezone": "America/Los_Angeles"
+  },
+  {
+    "authorship": "assistant-authored deterministic template; not passenger data",
+    "base_id": "g03",
+    "feed_hash": "82e6b822de008367b3d3d35bb52545807ea41b6f56623a9aa4b1162b3d54671b",
+    "pool_hash": "d98388a6e109539878c239eaa1fad89df0bd51d378e29da7e44464b56c0da9a5",
+    "request": "On 2026-09-14, plan the outbound journey from SW 5th & Salmon [stop_id=7634] to OMSI/SE Water [stop_id=13772]. Also plan a return segment from OMSI/SE Water [stop_id=13772] to SE Milwaukie & Powell [stop_id=10472] after 09:00:00. I handle any movement between the outbound destination and return origin myself outside these journeys. On the outbound segment only, make no transfers. On the return segment, depart no earlier than 09:15:00.",
+    "scenario_id": "g03-scope-p0",
+    "segments": [
+      {
+        "destination": "13772",
+        "end_s": 36000,
+        "origin": "7634",
+        "scope": "outbound",
+        "start_s": 25200
+      },
+      {
+        "destination": "10472",
+        "end_s": 36000,
+        "origin": "13772",
+        "scope": "return",
+        "start_s": 32400
+      }
+    ],
+    "service_date": "2026-09-14",
+    "split": "development",
+    "timezone": "America/Los_Angeles"
+  },
+  {
+    "authorship": "assistant-authored deterministic template; not passenger data",
+    "base_id": "g03",
+    "feed_hash": "82e6b822de008367b3d3d35bb52545807ea41b6f56623a9aa4b1162b3d54671b",
+    "pool_hash": "d98388a6e109539878c239eaa1fad89df0bd51d378e29da7e44464b56c0da9a5",
+    "request": "Please find scheduled transport for this request. On 2026-09-14, plan the outbound journey from SW 5th & Salmon [stop_id=7634] to OMSI/SE Water [stop_id=13772]. Also plan a return segment from OMSI/SE Water [stop_id=13772] to SE Milwaukie & Powell [stop_id=10472] after 09:00:00. I handle any movement between the outbound destination and return origin myself outside these journeys. On the outbound segment only, make no transfers. On the return segment, depart no earlier than 09:15:00.",
+    "scenario_id": "g03-scope-p1",
+    "segments": [
+      {
+        "destination": "13772",
+        "end_s": 36000,
+        "origin": "7634",
+        "scope": "outbound",
+        "start_s": 25200
+      },
+      {
+        "destination": "10472",
+        "end_s": 36000,
+        "origin": "13772",
+        "scope": "return",
+        "start_s": 32400
+      }
+    ],
+    "service_date": "2026-09-14",
+    "split": "development",
+    "timezone": "America/Los_Angeles"
+  },
+  {
+    "authorship": "assistant-authored deterministic template; not passenger data",
+    "base_id": "g04",
+    "feed_hash": "82e6b822de008367b3d3d35bb52545807ea41b6f56623a9aa4b1162b3d54671b",
+    "pool_hash": "8a0e758684d083414824674e8f1e6b2ab84fcbf362f61d33ef949ef408d3373e",
+    "request": "On 2026-09-14, plan the outbound journey from South Waterfront/S Moody [stop_id=13733] to SW 6th & W Burnside [stop_id=7751]. Depart no earlier than 07:30:00 and arrive by 08:15:00, inclusive. Make at most one transfer.",
+    "scenario_id": "g04-timing-p0",
+    "segments": [
+      {
+        "destination": "7751",
+        "end_s": 36000,
+        "origin": "13733",
+        "scope": "outbound",
+        "start_s": 25200
+      }
+    ],
+    "service_date": "2026-09-14",
+    "split": "validation",
+    "timezone": "America/Los_Angeles"
+  },
+  {
+    "authorship": "assistant-authored deterministic template; not passenger data",
+    "base_id": "g04",
+    "feed_hash": "82e6b822de008367b3d3d35bb52545807ea41b6f56623a9aa4b1162b3d54671b",
+    "pool_hash": "8a0e758684d083414824674e8f1e6b2ab84fcbf362f61d33ef949ef408d3373e",
+    "request": "Please find scheduled transport for this request. On 2026-09-14, plan the outbound journey from South Waterfront/S Moody [stop_id=13733] to SW 6th & W Burnside [stop_id=7751]. Depart no earlier than 07:30:00 and arrive by 08:15:00, inclusive. Make at most one transfer.",
+    "scenario_id": "g04-timing-p1",
+    "segments": [
+      {
+        "destination": "7751",
+        "end_s": 36000,
+        "origin": "13733",
+        "scope": "outbound",
+        "start_s": 25200
+      }
+    ],
+    "service_date": "2026-09-14",
+    "split": "validation",
+    "timezone": "America/Los_Angeles"
+  },
+  {
+    "authorship": "assistant-authored deterministic template; not passenger data",
+    "base_id": "g04",
+    "feed_hash": "82e6b822de008367b3d3d35bb52545807ea41b6f56623a9aa4b1162b3d54671b",
+    "pool_hash": "8a0e758684d083414824674e8f1e6b2ab84fcbf362f61d33ef949ef408d3373e",
+    "request": "On 2026-09-14, plan the outbound journey from South Waterfront/S Moody [stop_id=13733] to SW 6th & W Burnside [stop_id=7751]. Do not use rail or tram. Do not depart before 07:45:00. Make no transfers.",
+    "scenario_id": "g04-negation-p0",
+    "segments": [
+      {
+        "destination": "7751",
+        "end_s": 36000,
+        "origin": "13733",
+        "scope": "outbound",
+        "start_s": 25200
+      }
+    ],
+    "service_date": "2026-09-14",
+    "split": "validation",
+    "timezone": "America/Los_Angeles"
+  },
+  {
+    "authorship": "assistant-authored deterministic template; not passenger data",
+    "base_id": "g04",
+    "feed_hash": "82e6b822de008367b3d3d35bb52545807ea41b6f56623a9aa4b1162b3d54671b",
+    "pool_hash": "8a0e758684d083414824674e8f1e6b2ab84fcbf362f61d33ef949ef408d3373e",
+    "request": "Please find scheduled transport for this request. On 2026-09-14, plan the outbound journey from South Waterfront/S Moody [stop_id=13733] to SW 6th & W Burnside [stop_id=7751]. Do not use rail or tram. Do not depart before 07:45:00. Make no transfers.",
+    "scenario_id": "g04-negation-p1",
+    "segments": [
+      {
+        "destination": "7751",
+        "end_s": 36000,
+        "origin": "13733",
+        "scope": "outbound",
+        "start_s": 25200
+      }
+    ],
+    "service_date": "2026-09-14",
+    "split": "validation",
+    "timezone": "America/Los_Angeles"
+  },
+  {
+    "authorship": "assistant-authored deterministic template; not passenger data",
+    "base_id": "g04",
+    "feed_hash": "82e6b822de008367b3d3d35bb52545807ea41b6f56623a9aa4b1162b3d54671b",
+    "pool_hash": "8a0e758684d083414824674e8f1e6b2ab84fcbf362f61d33ef949ef408d3373e",
+    "request": "On 2026-09-14, plan the outbound journey from South Waterfront/S Moody [stop_id=13733] to SW 6th & W Burnside [stop_id=7751]. Call at stop 3398 and then stop 13780, in that order; remaining aboard counts. Use only buses.",
+    "scenario_id": "g04-visits-p0",
+    "segments": [
+      {
+        "destination": "7751",
+        "end_s": 36000,
+        "origin": "13733",
+        "scope": "outbound",
+        "start_s": 25200
+      }
+    ],
+    "service_date": "2026-09-14",
+    "split": "validation",
+    "timezone": "America/Los_Angeles"
+  },
+  {
+    "authorship": "assistant-authored deterministic template; not passenger data",
+    "base_id": "g04",
+    "feed_hash": "82e6b822de008367b3d3d35bb52545807ea41b6f56623a9aa4b1162b3d54671b",
+    "pool_hash": "8a0e758684d083414824674e8f1e6b2ab84fcbf362f61d33ef949ef408d3373e",
+    "request": "Please find scheduled transport for this request. On 2026-09-14, plan the outbound journey from South Waterfront/S Moody [stop_id=13733] to SW 6th & W Burnside [stop_id=7751]. Call at stop 3398 and then stop 13780, in that order; remaining aboard counts. Use only buses.",
+    "scenario_id": "g04-visits-p1",
+    "segments": [
+      {
+        "destination": "7751",
+        "end_s": 36000,
+        "origin": "13733",
+        "scope": "outbound",
+        "start_s": 25200
+      }
+    ],
+    "service_date": "2026-09-14",
+    "split": "validation",
+    "timezone": "America/Los_Angeles"
+  },
+  {
+    "authorship": "assistant-authored deterministic template; not passenger data",
+    "base_id": "g04",
+    "feed_hash": "82e6b822de008367b3d3d35bb52545807ea41b6f56623a9aa4b1162b3d54671b",
+    "pool_hash": "8a0e758684d083414824674e8f1e6b2ab84fcbf362f61d33ef949ef408d3373e",
+    "request": "On 2026-09-14, plan the outbound journey from South Waterfront/S Moody [stop_id=13733] to SW 6th & W Burnside [stop_id=7751]. Depart no earlier than 08:30:00 and arrive by 08:00:00.",
+    "scenario_id": "g04-infeasible-p0",
+    "segments": [
+      {
+        "destination": "7751",
+        "end_s": 36000,
+        "origin": "13733",
+        "scope": "outbound",
+        "start_s": 25200
+      }
+    ],
+    "service_date": "2026-09-14",
+    "split": "validation",
+    "timezone": "America/Los_Angeles"
+  },
+  {
+    "authorship": "assistant-authored deterministic template; not passenger data",
+    "base_id": "g04",
+    "feed_hash": "82e6b822de008367b3d3d35bb52545807ea41b6f56623a9aa4b1162b3d54671b",
+    "pool_hash": "8a0e758684d083414824674e8f1e6b2ab84fcbf362f61d33ef949ef408d3373e",
+    "request": "Please find scheduled transport for this request. On 2026-09-14, plan the outbound journey from South Waterfront/S Moody [stop_id=13733] to SW 6th & W Burnside [stop_id=7751]. Depart no earlier than 08:30:00 and arrive by 08:00:00.",
+    "scenario_id": "g04-infeasible-p1",
+    "segments": [
+      {
+        "destination": "7751",
+        "end_s": 36000,
+        "origin": "13733",
+        "scope": "outbound",
+        "start_s": 25200
+      }
+    ],
+    "service_date": "2026-09-14",
+    "split": "validation",
+    "timezone": "America/Los_Angeles"
+  },
+  {
+    "authorship": "assistant-authored deterministic template; not passenger data",
+    "base_id": "g04",
+    "feed_hash": "82e6b822de008367b3d3d35bb52545807ea41b6f56623a9aa4b1162b3d54671b",
+    "pool_hash": "99d08bac530886e82096303cf24613ee21f26231bda2990bf529251be65b0953",
+    "request": "On 2026-09-14, plan the outbound journey from South Waterfront/S Moody [stop_id=13733] to SW 6th & W Burnside [stop_id=7751]. Also plan a return segment from SW 6th & W Burnside [stop_id=7751] to NE Weidler & 15th [stop_id=10425] after 09:00:00. I handle any movement between the outbound destination and return origin myself outside these journeys. On the outbound segment only, make no transfers. On the return segment, depart no earlier than 09:15:00.",
+    "scenario_id": "g04-scope-p0",
+    "segments": [
+      {
+        "destination": "7751",
+        "end_s": 36000,
+        "origin": "13733",
+        "scope": "outbound",
+        "start_s": 25200
+      },
+      {
+        "destination": "10425",
+        "end_s": 36000,
+        "origin": "7751",
+        "scope": "return",
+        "start_s": 32400
+      }
+    ],
+    "service_date": "2026-09-14",
+    "split": "validation",
+    "timezone": "America/Los_Angeles"
+  },
+  {
+    "authorship": "assistant-authored deterministic template; not passenger data",
+    "base_id": "g04",
+    "feed_hash": "82e6b822de008367b3d3d35bb52545807ea41b6f56623a9aa4b1162b3d54671b",
+    "pool_hash": "99d08bac530886e82096303cf24613ee21f26231bda2990bf529251be65b0953",
+    "request": "Please find scheduled transport for this request. On 2026-09-14, plan the outbound journey from South Waterfront/S Moody [stop_id=13733] to SW 6th & W Burnside [stop_id=7751]. Also plan a return segment from SW 6th & W Burnside [stop_id=7751] to NE Weidler & 15th [stop_id=10425] after 09:00:00. I handle any movement between the outbound destination and return origin myself outside these journeys. On the outbound segment only, make no transfers. On the return segment, depart no earlier than 09:15:00.",
+    "scenario_id": "g04-scope-p1",
+    "segments": [
+      {
+        "destination": "7751",
+        "end_s": 36000,
+        "origin": "13733",
+        "scope": "outbound",
+        "start_s": 25200
+      },
+      {
+        "destination": "10425",
+        "end_s": 36000,
+        "origin": "7751",
+        "scope": "return",
+        "start_s": 32400
+      }
+    ],
+    "service_date": "2026-09-14",
+    "split": "validation",
+    "timezone": "America/Los_Angeles"
+  },
+  {
+    "authorship": "assistant-authored deterministic template; not passenger data",
+    "base_id": "g05",
+    "feed_hash": "82e6b822de008367b3d3d35bb52545807ea41b6f56623a9aa4b1162b3d54671b",
+    "pool_hash": "18badca162f1d80cc4ff702302f9c28de5147b04d9fe44b9ae1f139b2caef0d6",
+    "request": "On 2026-09-14, plan the outbound journey from SE 7th & Tilikum Way [stop_id=13825] to SW Lincoln & 1st [stop_id=3398]. Depart no earlier than 07:30:00 and arrive by 08:15:00, inclusive. Make at most one transfer.",
+    "scenario_id": "g05-timing-p0",
+    "segments": [
+      {
+        "destination": "3398",
+        "end_s": 36000,
+        "origin": "13825",
+        "scope": "outbound",
+        "start_s": 25200
+      }
+    ],
+    "service_date": "2026-09-14",
+    "split": "held_out",
+    "timezone": "America/Los_Angeles"
+  },
+  {
+    "authorship": "assistant-authored deterministic template; not passenger data",
+    "base_id": "g05",
+    "feed_hash": "82e6b822de008367b3d3d35bb52545807ea41b6f56623a9aa4b1162b3d54671b",
+    "pool_hash": "18badca162f1d80cc4ff702302f9c28de5147b04d9fe44b9ae1f139b2caef0d6",
+    "request": "Please find scheduled transport for this request. On 2026-09-14, plan the outbound journey from SE 7th & Tilikum Way [stop_id=13825] to SW Lincoln & 1st [stop_id=3398]. Depart no earlier than 07:30:00 and arrive by 08:15:00, inclusive. Make at most one transfer.",
+    "scenario_id": "g05-timing-p1",
+    "segments": [
+      {
+        "destination": "3398",
+        "end_s": 36000,
+        "origin": "13825",
+        "scope": "outbound",
+        "start_s": 25200
+      }
+    ],
+    "service_date": "2026-09-14",
+    "split": "held_out",
+    "timezone": "America/Los_Angeles"
+  },
+  {
+    "authorship": "assistant-authored deterministic template; not passenger data",
+    "base_id": "g05",
+    "feed_hash": "82e6b822de008367b3d3d35bb52545807ea41b6f56623a9aa4b1162b3d54671b",
+    "pool_hash": "18badca162f1d80cc4ff702302f9c28de5147b04d9fe44b9ae1f139b2caef0d6",
+    "request": "On 2026-09-14, plan the outbound journey from SE 7th & Tilikum Way [stop_id=13825] to SW Lincoln & 1st [stop_id=3398]. Do not use rail or tram. Do not depart before 07:45:00. Make no transfers.",
+    "scenario_id": "g05-negation-p0",
+    "segments": [
+      {
+        "destination": "3398",
+        "end_s": 36000,
+        "origin": "13825",
+        "scope": "outbound",
+        "start_s": 25200
+      }
+    ],
+    "service_date": "2026-09-14",
+    "split": "held_out",
+    "timezone": "America/Los_Angeles"
+  },
+  {
+    "authorship": "assistant-authored deterministic template; not passenger data",
+    "base_id": "g05",
+    "feed_hash": "82e6b822de008367b3d3d35bb52545807ea41b6f56623a9aa4b1162b3d54671b",
+    "pool_hash": "18badca162f1d80cc4ff702302f9c28de5147b04d9fe44b9ae1f139b2caef0d6",
+    "request": "Please find scheduled transport for this request. On 2026-09-14, plan the outbound journey from SE 7th & Tilikum Way [stop_id=13825] to SW Lincoln & 1st [stop_id=3398]. Do not use rail or tram. Do not depart before 07:45:00. Make no transfers.",
+    "scenario_id": "g05-negation-p1",
+    "segments": [
+      {
+        "destination": "3398",
+        "end_s": 36000,
+        "origin": "13825",
+        "scope": "outbound",
+        "start_s": 25200
+      }
+    ],
+    "service_date": "2026-09-14",
+    "split": "held_out",
+    "timezone": "America/Los_Angeles"
+  },
+  {
+    "authorship": "assistant-authored deterministic template; not passenger data",
+    "base_id": "g05",
+    "feed_hash": "82e6b822de008367b3d3d35bb52545807ea41b6f56623a9aa4b1162b3d54671b",
+    "pool_hash": "18badca162f1d80cc4ff702302f9c28de5147b04d9fe44b9ae1f139b2caef0d6",
+    "request": "On 2026-09-14, plan the outbound journey from SE 7th & Tilikum Way [stop_id=13825] to SW Lincoln & 1st [stop_id=3398]. Call at stop 13773 and then stop 13733, in that order; remaining aboard counts. Use only buses.",
+    "scenario_id": "g05-visits-p0",
+    "segments": [
+      {
+        "destination": "3398",
+        "end_s": 36000,
+        "origin": "13825",
+        "scope": "outbound",
+        "start_s": 25200
+      }
+    ],
+    "service_date": "2026-09-14",
+    "split": "held_out",
+    "timezone": "America/Los_Angeles"
+  },
+  {
+    "authorship": "assistant-authored deterministic template; not passenger data",
+    "base_id": "g05",
+    "feed_hash": "82e6b822de008367b3d3d35bb52545807ea41b6f56623a9aa4b1162b3d54671b",
+    "pool_hash": "18badca162f1d80cc4ff702302f9c28de5147b04d9fe44b9ae1f139b2caef0d6",
+    "request": "Please find scheduled transport for this request. On 2026-09-14, plan the outbound journey from SE 7th & Tilikum Way [stop_id=13825] to SW Lincoln & 1st [stop_id=3398]. Call at stop 13773 and then stop 13733, in that order; remaining aboard counts. Use only buses.",
+    "scenario_id": "g05-visits-p1",
+    "segments": [
+      {
+        "destination": "3398",
+        "end_s": 36000,
+        "origin": "13825",
+        "scope": "outbound",
+        "start_s": 25200
+      }
+    ],
+    "service_date": "2026-09-14",
+    "split": "held_out",
+    "timezone": "America/Los_Angeles"
+  },
+  {
+    "authorship": "assistant-authored deterministic template; not passenger data",
+    "base_id": "g05",
+    "feed_hash": "82e6b822de008367b3d3d35bb52545807ea41b6f56623a9aa4b1162b3d54671b",
+    "pool_hash": "18badca162f1d80cc4ff702302f9c28de5147b04d9fe44b9ae1f139b2caef0d6",
+    "request": "On 2026-09-14, plan the outbound journey from SE 7th & Tilikum Way [stop_id=13825] to SW Lincoln & 1st [stop_id=3398]. Depart no earlier than 08:30:00 and arrive by 08:00:00.",
+    "scenario_id": "g05-infeasible-p0",
+    "segments": [
+      {
+        "destination": "3398",
+        "end_s": 36000,
+        "origin": "13825",
+        "scope": "outbound",
+        "start_s": 25200
+      }
+    ],
+    "service_date": "2026-09-14",
+    "split": "held_out",
+    "timezone": "America/Los_Angeles"
+  },
+  {
+    "authorship": "assistant-authored deterministic template; not passenger data",
+    "base_id": "g05",
+    "feed_hash": "82e6b822de008367b3d3d35bb52545807ea41b6f56623a9aa4b1162b3d54671b",
+    "pool_hash": "18badca162f1d80cc4ff702302f9c28de5147b04d9fe44b9ae1f139b2caef0d6",
+    "request": "Please find scheduled transport for this request. On 2026-09-14, plan the outbound journey from SE 7th & Tilikum Way [stop_id=13825] to SW Lincoln & 1st [stop_id=3398]. Depart no earlier than 08:30:00 and arrive by 08:00:00.",
+    "scenario_id": "g05-infeasible-p1",
+    "segments": [
+      {
+        "destination": "3398",
+        "end_s": 36000,
+        "origin": "13825",
+        "scope": "outbound",
+        "start_s": 25200
+      }
+    ],
+    "service_date": "2026-09-14",
+    "split": "held_out",
+    "timezone": "America/Los_Angeles"
+  },
+  {
+    "authorship": "assistant-authored deterministic template; not passenger data",
+    "base_id": "g05",
+    "feed_hash": "82e6b822de008367b3d3d35bb52545807ea41b6f56623a9aa4b1162b3d54671b",
+    "pool_hash": "76fa989e99eaba74cf0c4de3fc6a3ebf4a68c14efad85866628cadf3e4c4c60e",
+    "request": "On 2026-09-14, plan the outbound journey from SE 7th & Tilikum Way [stop_id=13825] to SW Lincoln & 1st [stop_id=3398]. Also plan a return segment from SW Lincoln & 1st [stop_id=3398] to NE Weidler & 15th [stop_id=10425] after 09:00:00. I handle any movement between the outbound destination and return origin myself outside these journeys. On the outbound segment only, make no transfers. On the return segment, depart no earlier than 09:15:00.",
+    "scenario_id": "g05-scope-p0",
+    "segments": [
+      {
+        "destination": "3398",
+        "end_s": 36000,
+        "origin": "13825",
+        "scope": "outbound",
+        "start_s": 25200
+      },
+      {
+        "destination": "10425",
+        "end_s": 36000,
+        "origin": "3398",
+        "scope": "return",
+        "start_s": 32400
+      }
+    ],
+    "service_date": "2026-09-14",
+    "split": "held_out",
+    "timezone": "America/Los_Angeles"
+  },
+  {
+    "authorship": "assistant-authored deterministic template; not passenger data",
+    "base_id": "g05",
+    "feed_hash": "82e6b822de008367b3d3d35bb52545807ea41b6f56623a9aa4b1162b3d54671b",
+    "pool_hash": "76fa989e99eaba74cf0c4de3fc6a3ebf4a68c14efad85866628cadf3e4c4c60e",
+    "request": "Please find scheduled transport for this request. On 2026-09-14, plan the outbound journey from SE 7th & Tilikum Way [stop_id=13825] to SW Lincoln & 1st [stop_id=3398]. Also plan a return segment from SW Lincoln & 1st [stop_id=3398] to NE Weidler & 15th [stop_id=10425] after 09:00:00. I handle any movement between the outbound destination and return origin myself outside these journeys. On the outbound segment only, make no transfers. On the return segment, depart no earlier than 09:15:00.",
+    "scenario_id": "g05-scope-p1",
+    "segments": [
+      {
+        "destination": "3398",
+        "end_s": 36000,
+        "origin": "13825",
+        "scope": "outbound",
+        "start_s": 25200
+      },
+      {
+        "destination": "10425",
+        "end_s": 36000,
+        "origin": "3398",
+        "scope": "return",
+        "start_s": 32400
+      }
+    ],
+    "service_date": "2026-09-14",
+    "split": "held_out",
+    "timezone": "America/Los_Angeles"
+  }
+]
