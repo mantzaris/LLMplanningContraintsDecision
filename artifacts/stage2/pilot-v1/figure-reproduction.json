@@ -1,0 +1,17 @@
+{
+  "comparison": "Four PNG previews byte-identical after regeneration from compact committed summaries. PDF/SVG graphical content is reproducible; metadata timestamps may differ.",
+  "formats": [
+    "pdf",
+    "svg",
+    "png"
+  ],
+  "label": "Fresh development pilot: 48 bases, 1 replicate; provisional references",
+  "output": "/tmp/stage2-pilot-figures",
+  "png_byte_identical": {
+    "correct-resolution.png": "91950d82cf9e0ec9ae14ab8edd43a889960e8df1529a146472201ee0bdd84d28",
+    "model-versus-oracle.png": "aa1aee518eae464cb634eef6126b40401a975a596b2bbf6e4122b92b2f74367e",
+    "paired-outcomes.png": "058fdbcf44f3208cc48b603b7f9201c18ba933af348294827f7f15908f326420",
+    "selector-degeneracy.png": "5593670577cd6eb3be823c385b4d815c19e8ca30697276e05062ebbc2bac08c7"
+  },
+  "source": "artifacts/stage2/pilot-v1"
+}

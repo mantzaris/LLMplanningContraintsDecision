@@ -1,0 +1,21 @@
+{
+  "checked_at_utc": "2026-09-12T18:37:41.891746+00:00",
+  "route": "user-supplied direct SSH endpoint for this project; endpoint intentionally omitted",
+  "separate_related_repository_pod_not_used": true,
+  "connection_layers": {
+    "network_tcp": "success",
+    "host_key": "verified after first-use enrollment; no replacement or bypass",
+    "normal_local_identity_authentication": "success",
+    "remote_command_execution": "success",
+    "same_pod_id_from_provider_environment": true
+  },
+  "gpu_status": "NVIDIA RTX PRO 6000 Blackwell Server Edition, 97887 MiB, 0 MiB, 0 %, 595.91.07",
+  "gpu_processes": "",
+  "project_inference_pid_present": false,
+  "historical_archive": {
+    "path": "/workspace/LLMplanningConstraintsStage2/preservation/stage2-retained-artifacts-20260912.tar.gz",
+    "sha256": "f5cfac0529e88e971b1a384bf3383ed6113b43d2de25f0592c59f3459e2fc62a",
+    "bytes": 693342
+  },
+  "raw_results_archive_mtime_utc": "2026-09-12T18:29:11+00:00"
+}

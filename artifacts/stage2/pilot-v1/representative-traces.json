@@ -1,0 +1,2636 @@
+{
+  "correct": {
+    "candidates": [
+      {
+        "acceptance_count": 16,
+        "acceptance_hash": "6613f9915c14c11a5bd8e335185ab5b001417084daef0da354bf8ddf519b5413",
+        "aliases": [
+          "c0",
+          "c3"
+        ],
+        "candidate_id": "c0",
+        "formula": {
+          "children": [
+            {
+              "kind": "atom",
+              "op": "depart_ge",
+              "scope": "outbound",
+              "source": null,
+              "unit": "seconds",
+              "value": 30177
+            },
+            {
+              "kind": "atom",
+              "op": "arrive_by",
+              "scope": "outbound",
+              "source": null,
+              "unit": "seconds",
+              "value": 35425
+            }
+          ],
+          "kind": "all",
+          "source": null
+        },
+        "plan": {
+          "plan_id": "0e81a91bb035a1d8574d",
+          "reason": null,
+          "solver_seconds": 0.11330406693741679,
+          "status": "satisfiable"
+        }
+      },
+      {
+        "acceptance_count": 0,
+        "acceptance_hash": "0966320eb848d7896dbad9037a4b63bfb49b1833e14ea3a92161b365b608e8c0",
+        "aliases": [
+          "c1"
+        ],
+        "candidate_id": "c1",
+        "formula": {
+          "children": [
+            {
+              "kind": "atom",
+              "op": "depart_ge",
+              "scope": "outbound",
+              "source": null,
+              "unit": "seconds",
+              "value": 302517
+            },
+            {
+              "kind": "atom",
+              "op": "arrive_by",
+              "scope": "outbound",
+              "source": null,
+              "unit": "seconds",
+              "value": 354025
+            }
+          ],
+          "kind": "all",
+          "source": null
+        },
+        "plan": {
+          "plan_id": null,
+          "reason": null,
+          "solver_seconds": 0.0020295660942792892,
+          "status": "infeasible_in_pool"
+        }
+      },
+      {
+        "acceptance_count": 7,
+        "acceptance_hash": "1c2243d65278d545dc65941be48e3c84a8b519b5d2b8909cae64b0f3038ffb4d",
+        "aliases": [
+          "c2"
+        ],
+        "candidate_id": "c2",
+        "formula": {
+          "children": [
+            {
+              "kind": "atom",
+              "op": "depart_ge",
+              "scope": "outbound",
+              "source": null,
+              "unit": "seconds",
+              "value": 30097
+            },
+            {
+              "kind": "atom",
+              "op": "arrive_by",
+              "scope": "outbound",
+              "source": null,
+              "unit": "seconds",
+              "value": 34202
+            }
+          ],
+          "kind": "all",
+          "source": null
+        },
+        "plan": {
+          "plan_id": "0e81a91bb035a1d8574d",
+          "reason": null,
+          "solver_seconds": 0.0056725849863141775,
+          "status": "satisfiable"
+        }
+      }
+    ],
+    "outputs": {
+      "D": {
+        "0": {
+          "errors": [],
+          "events": [],
+          "final_formula": {
+            "children": [
+              {
+                "kind": "atom",
+                "op": "depart_ge",
+                "scope": "outbound",
+                "source": null,
+                "unit": "seconds",
+                "value": 30177
+              },
+              {
+                "kind": "atom",
+                "op": "arrive_by",
+                "scope": "outbound",
+                "source": null,
+                "unit": "seconds",
+                "value": 35425
+              }
+            ],
+            "kind": "all",
+            "source": null
+          },
+          "initial_plan_id": "0e81a91bb035a1d8574d",
+          "judgments": [],
+          "plan_id": "0e81a91bb035a1d8574d",
+          "repairs": [],
+          "semantic_status": "unresolved_multiple_candidates",
+          "status": "satisfiable",
+          "witnesses": []
+        },
+        "1": {
+          "errors": [],
+          "events": [
+            "no_distinguishing_witness_in_completed_pool"
+          ],
+          "final_formula": {
+            "children": [
+              {
+                "kind": "atom",
+                "op": "depart_ge",
+                "scope": "outbound",
+                "source": null,
+                "unit": "seconds",
+                "value": 30177
+              },
+              {
+                "kind": "atom",
+                "op": "arrive_by",
+                "scope": "outbound",
+                "source": null,
+                "unit": "seconds",
+                "value": 35425
+              }
+            ],
+            "kind": "all",
+            "source": null
+          },
+          "initial_plan_id": "0e81a91bb035a1d8574d",
+          "judgments": [
+            {
+              "journey_id": "002ee67351572c9abe93",
+              "judgment": {
+                "reason": "Journey meets all specified requirements including departure and arrival times, stops, and number of transfers.",
+                "spans": [
+                  {
+                    "end": 5,
+                    "start": 0
+                  }
+                ],
+                "verdict": "satisfied"
+              },
+              "raw": "```json\n{\n  \"verdict\": \"satisfied\",\n  \"spans\": [\n    {\"start\": 0, \"end\": 5}\n  ],\n  \"reason\": \"Journey meets all specified requirements including departure and arrival times, stops, and number of transfers.\"\n}\n```"
+            }
+          ],
+          "plan_id": "0e81a91bb035a1d8574d",
+          "repairs": [],
+          "semantic_status": "resolved_by_model",
+          "status": "satisfiable",
+          "witnesses": [
+            {
+              "cost": 1,
+              "journey_id": "002ee67351572c9abe93",
+              "policy": "balanced",
+              "score": 2.0,
+              "score_numerator": 2,
+              "separated_pairs": [
+                [
+                  "c0",
+                  "c1",
+                  1
+                ],
+                [
+                  "c0",
+                  "c2",
+                  0
+                ]
+              ]
+            }
+          ]
+        },
+        "2": {
+          "errors": [],
+          "events": [
+            "no_distinguishing_witness_in_completed_pool"
+          ],
+          "final_formula": {
+            "children": [
+              {
+                "kind": "atom",
+                "op": "depart_ge",
+                "scope": "outbound",
+                "source": null,
+                "unit": "seconds",
+                "value": 30177
+              },
+              {
+                "kind": "atom",
+                "op": "arrive_by",
+                "scope": "outbound",
+                "source": null,
+                "unit": "seconds",
+                "value": 35425
+              }
+            ],
+            "kind": "all",
+            "source": null
+          },
+          "initial_plan_id": "0e81a91bb035a1d8574d",
+          "judgments": [
+            {
+              "journey_id": "002ee67351572c9abe93",
+              "judgment": {
+                "reason": "Journey meets all specified requirements including departure and arrival times, stops, and number of transfers.",
+                "spans": [
+                  {
+                    "end": 5,
+                    "start": 0
+                  }
+                ],
+                "verdict": "satisfied"
+              },
+              "raw": "```json\n{\n  \"verdict\": \"satisfied\",\n  \"spans\": [\n    {\"start\": 0, \"end\": 5}\n  ],\n  \"reason\": \"Journey meets all specified requirements including departure and arrival times, stops, and number of transfers.\"\n}\n```"
+            }
+          ],
+          "plan_id": "0e81a91bb035a1d8574d",
+          "repairs": [],
+          "semantic_status": "resolved_by_model",
+          "status": "satisfiable",
+          "witnesses": [
+            {
+              "cost": 1,
+              "journey_id": "002ee67351572c9abe93",
+              "policy": "balanced",
+              "score": 2.0,
+              "score_numerator": 2,
+              "separated_pairs": [
+                [
+                  "c0",
+                  "c1",
+                  1
+                ],
+                [
+                  "c0",
+                  "c2",
+                  0
+                ]
+              ]
+            }
+          ]
+        },
+        "4": {
+          "errors": [],
+          "events": [
+            "no_distinguishing_witness_in_completed_pool"
+          ],
+          "final_formula": {
+            "children": [
+              {
+                "kind": "atom",
+                "op": "depart_ge",
+                "scope": "outbound",
+                "source": null,
+                "unit": "seconds",
+                "value": 30177
+              },
+              {
+                "kind": "atom",
+                "op": "arrive_by",
+                "scope": "outbound",
+                "source": null,
+                "unit": "seconds",
+                "value": 35425
+              }
+            ],
+            "kind": "all",
+            "source": null
+          },
+          "initial_plan_id": "0e81a91bb035a1d8574d",
+          "judgments": [
+            {
+              "journey_id": "002ee67351572c9abe93",
+              "judgment": {
+                "reason": "Journey meets all specified requirements including departure and arrival times, stops, and number of transfers.",
+                "spans": [
+                  {
+                    "end": 5,
+                    "start": 0
+                  }
+                ],
+                "verdict": "satisfied"
+              },
+              "raw": "```json\n{\n  \"verdict\": \"satisfied\",\n  \"spans\": [\n    {\"start\": 0, \"end\": 5}\n  ],\n  \"reason\": \"Journey meets all specified requirements including departure and arrival times, stops, and number of transfers.\"\n}\n```"
+            }
+          ],
+          "plan_id": "0e81a91bb035a1d8574d",
+          "repairs": [],
+          "semantic_status": "resolved_by_model",
+          "status": "satisfiable",
+          "witnesses": [
+            {
+              "cost": 1,
+              "journey_id": "002ee67351572c9abe93",
+              "policy": "balanced",
+              "score": 2.0,
+              "score_numerator": 2,
+              "separated_pairs": [
+                [
+                  "c0",
+                  "c1",
+                  1
+                ],
+                [
+                  "c0",
+                  "c2",
+                  0
+                ]
+              ]
+            }
+          ]
+        }
+      },
+      "E": {
+        "0": {
+          "errors": [],
+          "events": [],
+          "final_formula": {
+            "children": [
+              {
+                "kind": "atom",
+                "op": "depart_ge",
+                "scope": "outbound",
+                "source": null,
+                "unit": "seconds",
+                "value": 30177
+              },
+              {
+                "kind": "atom",
+                "op": "arrive_by",
+                "scope": "outbound",
+                "source": null,
+                "unit": "seconds",
+                "value": 35425
+              }
+            ],
+            "kind": "all",
+            "source": null
+          },
+          "initial_plan_id": "0e81a91bb035a1d8574d",
+          "judgments": [],
+          "plan_id": "0e81a91bb035a1d8574d",
+          "repairs": [],
+          "semantic_status": "unresolved_multiple_candidates",
+          "status": "satisfiable",
+          "witnesses": []
+        },
+        "1": {
+          "errors": [],
+          "events": [],
+          "final_formula": {
+            "children": [
+              {
+                "kind": "atom",
+                "op": "depart_ge",
+                "scope": "outbound",
+                "source": null,
+                "unit": "seconds",
+                "value": 30177
+              },
+              {
+                "kind": "atom",
+                "op": "arrive_by",
+                "scope": "outbound",
+                "source": null,
+                "unit": "seconds",
+                "value": 35425
+              }
+            ],
+            "kind": "all",
+            "source": null
+          },
+          "initial_plan_id": "0e81a91bb035a1d8574d",
+          "judgments": [
+            {
+              "journey_id": "00b30b64cd73de674651",
+              "judgment": {
+                "reason": "Journey meets all specified requirements including departure time, arrival time, and stops.",
+                "spans": [
+                  {
+                    "end": 5,
+                    "start": 0
+                  }
+                ],
+                "verdict": "satisfied"
+              },
+              "raw": "```json\n{\n  \"verdict\": \"satisfied\",\n  \"spans\": [\n    {\"start\": 0, \"end\": 5}\n  ],\n  \"reason\": \"Journey meets all specified requirements including departure time, arrival time, and stops.\"\n}\n```"
+            }
+          ],
+          "plan_id": "0e81a91bb035a1d8574d",
+          "repairs": [],
+          "semantic_status": "unresolved_multiple_candidates",
+          "status": "satisfiable",
+          "witnesses": [
+            {
+              "cost": 1,
+              "journey_id": "00b30b64cd73de674651",
+              "policy": "consequence",
+              "score": 4.0,
+              "score_numerator": 4,
+              "separated_pairs": [
+                [
+                  "c0",
+                  "c1",
+                  1
+                ],
+                [
+                  "c1",
+                  "c2",
+                  1
+                ]
+              ]
+            }
+          ]
+        },
+        "2": {
+          "errors": [],
+          "events": [
+            "no_distinguishing_witness_in_completed_pool"
+          ],
+          "final_formula": {
+            "children": [
+              {
+                "kind": "atom",
+                "op": "depart_ge",
+                "scope": "outbound",
+                "source": null,
+                "unit": "seconds",
+                "value": 30177
+              },
+              {
+                "kind": "atom",
+                "op": "arrive_by",
+                "scope": "outbound",
+                "source": null,
+                "unit": "seconds",
+                "value": 35425
+              }
+            ],
+            "kind": "all",
+            "source": null
+          },
+          "initial_plan_id": "0e81a91bb035a1d8574d",
+          "judgments": [
+            {
+              "journey_id": "00b30b64cd73de674651",
+              "judgment": {
+                "reason": "Journey meets all specified requirements including departure time, arrival time, and stops.",
+                "spans": [
+                  {
+                    "end": 5,
+                    "start": 0
+                  }
+                ],
+                "verdict": "satisfied"
+              },
+              "raw": "```json\n{\n  \"verdict\": \"satisfied\",\n  \"spans\": [\n    {\"start\": 0, \"end\": 5}\n  ],\n  \"reason\": \"Journey meets all specified requirements including departure time, arrival time, and stops.\"\n}\n```"
+            },
+            {
+              "journey_id": "002ee67351572c9abe93",
+              "judgment": {
+                "reason": "Journey meets all specified requirements including departure and arrival times, stops, and number of transfers.",
+                "spans": [
+                  {
+                    "end": 5,
+                    "start": 0
+                  }
+                ],
+                "verdict": "satisfied"
+              },
+              "raw": "```json\n{\n  \"verdict\": \"satisfied\",\n  \"spans\": [\n    {\"start\": 0, \"end\": 5}\n  ],\n  \"reason\": \"Journey meets all specified requirements including departure and arrival times, stops, and number of transfers.\"\n}\n```"
+            }
+          ],
+          "plan_id": "0e81a91bb035a1d8574d",
+          "repairs": [],
+          "semantic_status": "resolved_by_model",
+          "status": "satisfiable",
+          "witnesses": [
+            {
+              "cost": 1,
+              "journey_id": "00b30b64cd73de674651",
+              "policy": "consequence",
+              "score": 4.0,
+              "score_numerator": 4,
+              "separated_pairs": [
+                [
+                  "c0",
+                  "c1",
+                  1
+                ],
+                [
+                  "c1",
+                  "c2",
+                  1
+                ]
+              ]
+            },
+            {
+              "cost": 1,
+              "journey_id": "002ee67351572c9abe93",
+              "policy": "consequence",
+              "score": 1.0,
+              "score_numerator": 1,
+              "separated_pairs": [
+                [
+                  "c0",
+                  "c2",
+                  0
+                ]
+              ]
+            }
+          ]
+        },
+        "4": {
+          "errors": [],
+          "events": [
+            "no_distinguishing_witness_in_completed_pool"
+          ],
+          "final_formula": {
+            "children": [
+              {
+                "kind": "atom",
+                "op": "depart_ge",
+                "scope": "outbound",
+                "source": null,
+                "unit": "seconds",
+                "value": 30177
+              },
+              {
+                "kind": "atom",
+                "op": "arrive_by",
+                "scope": "outbound",
+                "source": null,
+                "unit": "seconds",
+                "value": 35425
+              }
+            ],
+            "kind": "all",
+            "source": null
+          },
+          "initial_plan_id": "0e81a91bb035a1d8574d",
+          "judgments": [
+            {
+              "journey_id": "00b30b64cd73de674651",
+              "judgment": {
+                "reason": "Journey meets all specified requirements including departure time, arrival time, and stops.",
+                "spans": [
+                  {
+                    "end": 5,
+                    "start": 0
+                  }
+                ],
+                "verdict": "satisfied"
+              },
+              "raw": "```json\n{\n  \"verdict\": \"satisfied\",\n  \"spans\": [\n    {\"start\": 0, \"end\": 5}\n  ],\n  \"reason\": \"Journey meets all specified requirements including departure time, arrival time, and stops.\"\n}\n```"
+            },
+            {
+              "journey_id": "002ee67351572c9abe93",
+              "judgment": {
+                "reason": "Journey meets all specified requirements including departure and arrival times, stops, and number of transfers.",
+                "spans": [
+                  {
+                    "end": 5,
+                    "start": 0
+                  }
+                ],
+                "verdict": "satisfied"
+              },
+              "raw": "```json\n{\n  \"verdict\": \"satisfied\",\n  \"spans\": [\n    {\"start\": 0, \"end\": 5}\n  ],\n  \"reason\": \"Journey meets all specified requirements including departure and arrival times, stops, and number of transfers.\"\n}\n```"
+            }
+          ],
+          "plan_id": "0e81a91bb035a1d8574d",
+          "repairs": [],
+          "semantic_status": "resolved_by_model",
+          "status": "satisfiable",
+          "witnesses": [
+            {
+              "cost": 1,
+              "journey_id": "00b30b64cd73de674651",
+              "policy": "consequence",
+              "score": 4.0,
+              "score_numerator": 4,
+              "separated_pairs": [
+                [
+                  "c0",
+                  "c1",
+                  1
+                ],
+                [
+                  "c1",
+                  "c2",
+                  1
+                ]
+              ]
+            },
+            {
+              "cost": 1,
+              "journey_id": "002ee67351572c9abe93",
+              "policy": "consequence",
+              "score": 1.0,
+              "score_numerator": 1,
+              "separated_pairs": [
+                [
+                  "c0",
+                  "c2",
+                  0
+                ]
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "replicate": 0,
+    "request": "On 2026-09-14, plan the outbound journey from NW 5th & Davis [stop_id=9301] to SW 5th & Columbia [stop_id=7594]. Depart no earlier than 08:25:17 and arrive by 09:30:25, both inclusive.",
+    "scenario_id": "pilot-00",
+    "translation_errors": []
+  },
+  "divergence": {
+    "candidates": [
+      {
+        "acceptance_count": 16,
+        "acceptance_hash": "6613f9915c14c11a5bd8e335185ab5b001417084daef0da354bf8ddf519b5413",
+        "aliases": [
+          "c0",
+          "c3"
+        ],
+        "candidate_id": "c0",
+        "formula": {
+          "children": [
+            {
+              "kind": "atom",
+              "op": "depart_ge",
+              "scope": "outbound",
+              "source": null,
+              "unit": "seconds",
+              "value": 30177
+            },
+            {
+              "kind": "atom",
+              "op": "arrive_by",
+              "scope": "outbound",
+              "source": null,
+              "unit": "seconds",
+              "value": 35425
+            }
+          ],
+          "kind": "all",
+          "source": null
+        },
+        "plan": {
+          "plan_id": "0e81a91bb035a1d8574d",
+          "reason": null,
+          "solver_seconds": 0.11330406693741679,
+          "status": "satisfiable"
+        }
+      },
+      {
+        "acceptance_count": 0,
+        "acceptance_hash": "0966320eb848d7896dbad9037a4b63bfb49b1833e14ea3a92161b365b608e8c0",
+        "aliases": [
+          "c1"
+        ],
+        "candidate_id": "c1",
+        "formula": {
+          "children": [
+            {
+              "kind": "atom",
+              "op": "depart_ge",
+              "scope": "outbound",
+              "source": null,
+              "unit": "seconds",
+              "value": 302517
+            },
+            {
+              "kind": "atom",
+              "op": "arrive_by",
+              "scope": "outbound",
+              "source": null,
+              "unit": "seconds",
+              "value": 354025
+            }
+          ],
+          "kind": "all",
+          "source": null
+        },
+        "plan": {
+          "plan_id": null,
+          "reason": null,
+          "solver_seconds": 0.0020295660942792892,
+          "status": "infeasible_in_pool"
+        }
+      },
+      {
+        "acceptance_count": 7,
+        "acceptance_hash": "1c2243d65278d545dc65941be48e3c84a8b519b5d2b8909cae64b0f3038ffb4d",
+        "aliases": [
+          "c2"
+        ],
+        "candidate_id": "c2",
+        "formula": {
+          "children": [
+            {
+              "kind": "atom",
+              "op": "depart_ge",
+              "scope": "outbound",
+              "source": null,
+              "unit": "seconds",
+              "value": 30097
+            },
+            {
+              "kind": "atom",
+              "op": "arrive_by",
+              "scope": "outbound",
+              "source": null,
+              "unit": "seconds",
+              "value": 34202
+            }
+          ],
+          "kind": "all",
+          "source": null
+        },
+        "plan": {
+          "plan_id": "0e81a91bb035a1d8574d",
+          "reason": null,
+          "solver_seconds": 0.0056725849863141775,
+          "status": "satisfiable"
+        }
+      }
+    ],
+    "outputs": {
+      "D": {
+        "0": {
+          "errors": [],
+          "events": [],
+          "final_formula": {
+            "children": [
+              {
+                "kind": "atom",
+                "op": "depart_ge",
+                "scope": "outbound",
+                "source": null,
+                "unit": "seconds",
+                "value": 30177
+              },
+              {
+                "kind": "atom",
+                "op": "arrive_by",
+                "scope": "outbound",
+                "source": null,
+                "unit": "seconds",
+                "value": 35425
+              }
+            ],
+            "kind": "all",
+            "source": null
+          },
+          "initial_plan_id": "0e81a91bb035a1d8574d",
+          "judgments": [],
+          "plan_id": "0e81a91bb035a1d8574d",
+          "repairs": [],
+          "semantic_status": "unresolved_multiple_candidates",
+          "status": "satisfiable",
+          "witnesses": []
+        },
+        "1": {
+          "errors": [],
+          "events": [
+            "no_distinguishing_witness_in_completed_pool"
+          ],
+          "final_formula": {
+            "children": [
+              {
+                "kind": "atom",
+                "op": "depart_ge",
+                "scope": "outbound",
+                "source": null,
+                "unit": "seconds",
+                "value": 30177
+              },
+              {
+                "kind": "atom",
+                "op": "arrive_by",
+                "scope": "outbound",
+                "source": null,
+                "unit": "seconds",
+                "value": 35425
+              }
+            ],
+            "kind": "all",
+            "source": null
+          },
+          "initial_plan_id": "0e81a91bb035a1d8574d",
+          "judgments": [
+            {
+              "journey_id": "002ee67351572c9abe93",
+              "judgment": {
+                "reason": "Journey meets all specified requirements including departure and arrival times, stops, and number of transfers.",
+                "spans": [
+                  {
+                    "end": 5,
+                    "start": 0
+                  }
+                ],
+                "verdict": "satisfied"
+              },
+              "raw": "```json\n{\n  \"verdict\": \"satisfied\",\n  \"spans\": [\n    {\"start\": 0, \"end\": 5}\n  ],\n  \"reason\": \"Journey meets all specified requirements including departure and arrival times, stops, and number of transfers.\"\n}\n```"
+            }
+          ],
+          "plan_id": "0e81a91bb035a1d8574d",
+          "repairs": [],
+          "semantic_status": "resolved_by_model",
+          "status": "satisfiable",
+          "witnesses": [
+            {
+              "cost": 1,
+              "journey_id": "002ee67351572c9abe93",
+              "policy": "balanced",
+              "score": 2.0,
+              "score_numerator": 2,
+              "separated_pairs": [
+                [
+                  "c0",
+                  "c1",
+                  1
+                ],
+                [
+                  "c0",
+                  "c2",
+                  0
+                ]
+              ]
+            }
+          ]
+        },
+        "2": {
+          "errors": [],
+          "events": [
+            "no_distinguishing_witness_in_completed_pool"
+          ],
+          "final_formula": {
+            "children": [
+              {
+                "kind": "atom",
+                "op": "depart_ge",
+                "scope": "outbound",
+                "source": null,
+                "unit": "seconds",
+                "value": 30177
+              },
+              {
+                "kind": "atom",
+                "op": "arrive_by",
+                "scope": "outbound",
+                "source": null,
+                "unit": "seconds",
+                "value": 35425
+              }
+            ],
+            "kind": "all",
+            "source": null
+          },
+          "initial_plan_id": "0e81a91bb035a1d8574d",
+          "judgments": [
+            {
+              "journey_id": "002ee67351572c9abe93",
+              "judgment": {
+                "reason": "Journey meets all specified requirements including departure and arrival times, stops, and number of transfers.",
+                "spans": [
+                  {
+                    "end": 5,
+                    "start": 0
+                  }
+                ],
+                "verdict": "satisfied"
+              },
+              "raw": "```json\n{\n  \"verdict\": \"satisfied\",\n  \"spans\": [\n    {\"start\": 0, \"end\": 5}\n  ],\n  \"reason\": \"Journey meets all specified requirements including departure and arrival times, stops, and number of transfers.\"\n}\n```"
+            }
+          ],
+          "plan_id": "0e81a91bb035a1d8574d",
+          "repairs": [],
+          "semantic_status": "resolved_by_model",
+          "status": "satisfiable",
+          "witnesses": [
+            {
+              "cost": 1,
+              "journey_id": "002ee67351572c9abe93",
+              "policy": "balanced",
+              "score": 2.0,
+              "score_numerator": 2,
+              "separated_pairs": [
+                [
+                  "c0",
+                  "c1",
+                  1
+                ],
+                [
+                  "c0",
+                  "c2",
+                  0
+                ]
+              ]
+            }
+          ]
+        },
+        "4": {
+          "errors": [],
+          "events": [
+            "no_distinguishing_witness_in_completed_pool"
+          ],
+          "final_formula": {
+            "children": [
+              {
+                "kind": "atom",
+                "op": "depart_ge",
+                "scope": "outbound",
+                "source": null,
+                "unit": "seconds",
+                "value": 30177
+              },
+              {
+                "kind": "atom",
+                "op": "arrive_by",
+                "scope": "outbound",
+                "source": null,
+                "unit": "seconds",
+                "value": 35425
+              }
+            ],
+            "kind": "all",
+            "source": null
+          },
+          "initial_plan_id": "0e81a91bb035a1d8574d",
+          "judgments": [
+            {
+              "journey_id": "002ee67351572c9abe93",
+              "judgment": {
+                "reason": "Journey meets all specified requirements including departure and arrival times, stops, and number of transfers.",
+                "spans": [
+                  {
+                    "end": 5,
+                    "start": 0
+                  }
+                ],
+                "verdict": "satisfied"
+              },
+              "raw": "```json\n{\n  \"verdict\": \"satisfied\",\n  \"spans\": [\n    {\"start\": 0, \"end\": 5}\n  ],\n  \"reason\": \"Journey meets all specified requirements including departure and arrival times, stops, and number of transfers.\"\n}\n```"
+            }
+          ],
+          "plan_id": "0e81a91bb035a1d8574d",
+          "repairs": [],
+          "semantic_status": "resolved_by_model",
+          "status": "satisfiable",
+          "witnesses": [
+            {
+              "cost": 1,
+              "journey_id": "002ee67351572c9abe93",
+              "policy": "balanced",
+              "score": 2.0,
+              "score_numerator": 2,
+              "separated_pairs": [
+                [
+                  "c0",
+                  "c1",
+                  1
+                ],
+                [
+                  "c0",
+                  "c2",
+                  0
+                ]
+              ]
+            }
+          ]
+        }
+      },
+      "E": {
+        "0": {
+          "errors": [],
+          "events": [],
+          "final_formula": {
+            "children": [
+              {
+                "kind": "atom",
+                "op": "depart_ge",
+                "scope": "outbound",
+                "source": null,
+                "unit": "seconds",
+                "value": 30177
+              },
+              {
+                "kind": "atom",
+                "op": "arrive_by",
+                "scope": "outbound",
+                "source": null,
+                "unit": "seconds",
+                "value": 35425
+              }
+            ],
+            "kind": "all",
+            "source": null
+          },
+          "initial_plan_id": "0e81a91bb035a1d8574d",
+          "judgments": [],
+          "plan_id": "0e81a91bb035a1d8574d",
+          "repairs": [],
+          "semantic_status": "unresolved_multiple_candidates",
+          "status": "satisfiable",
+          "witnesses": []
+        },
+        "1": {
+          "errors": [],
+          "events": [],
+          "final_formula": {
+            "children": [
+              {
+                "kind": "atom",
+                "op": "depart_ge",
+                "scope": "outbound",
+                "source": null,
+                "unit": "seconds",
+                "value": 30177
+              },
+              {
+                "kind": "atom",
+                "op": "arrive_by",
+                "scope": "outbound",
+                "source": null,
+                "unit": "seconds",
+                "value": 35425
+              }
+            ],
+            "kind": "all",
+            "source": null
+          },
+          "initial_plan_id": "0e81a91bb035a1d8574d",
+          "judgments": [
+            {
+              "journey_id": "00b30b64cd73de674651",
+              "judgment": {
+                "reason": "Journey meets all specified requirements including departure time, arrival time, and stops.",
+                "spans": [
+                  {
+                    "end": 5,
+                    "start": 0
+                  }
+                ],
+                "verdict": "satisfied"
+              },
+              "raw": "```json\n{\n  \"verdict\": \"satisfied\",\n  \"spans\": [\n    {\"start\": 0, \"end\": 5}\n  ],\n  \"reason\": \"Journey meets all specified requirements including departure time, arrival time, and stops.\"\n}\n```"
+            }
+          ],
+          "plan_id": "0e81a91bb035a1d8574d",
+          "repairs": [],
+          "semantic_status": "unresolved_multiple_candidates",
+          "status": "satisfiable",
+          "witnesses": [
+            {
+              "cost": 1,
+              "journey_id": "00b30b64cd73de674651",
+              "policy": "consequence",
+              "score": 4.0,
+              "score_numerator": 4,
+              "separated_pairs": [
+                [
+                  "c0",
+                  "c1",
+                  1
+                ],
+                [
+                  "c1",
+                  "c2",
+                  1
+                ]
+              ]
+            }
+          ]
+        },
+        "2": {
+          "errors": [],
+          "events": [
+            "no_distinguishing_witness_in_completed_pool"
+          ],
+          "final_formula": {
+            "children": [
+              {
+                "kind": "atom",
+                "op": "depart_ge",
+                "scope": "outbound",
+                "source": null,
+                "unit": "seconds",
+                "value": 30177
+              },
+              {
+                "kind": "atom",
+                "op": "arrive_by",
+                "scope": "outbound",
+                "source": null,
+                "unit": "seconds",
+                "value": 35425
+              }
+            ],
+            "kind": "all",
+            "source": null
+          },
+          "initial_plan_id": "0e81a91bb035a1d8574d",
+          "judgments": [
+            {
+              "journey_id": "00b30b64cd73de674651",
+              "judgment": {
+                "reason": "Journey meets all specified requirements including departure time, arrival time, and stops.",
+                "spans": [
+                  {
+                    "end": 5,
+                    "start": 0
+                  }
+                ],
+                "verdict": "satisfied"
+              },
+              "raw": "```json\n{\n  \"verdict\": \"satisfied\",\n  \"spans\": [\n    {\"start\": 0, \"end\": 5}\n  ],\n  \"reason\": \"Journey meets all specified requirements including departure time, arrival time, and stops.\"\n}\n```"
+            },
+            {
+              "journey_id": "002ee67351572c9abe93",
+              "judgment": {
+                "reason": "Journey meets all specified requirements including departure and arrival times, stops, and number of transfers.",
+                "spans": [
+                  {
+                    "end": 5,
+                    "start": 0
+                  }
+                ],
+                "verdict": "satisfied"
+              },
+              "raw": "```json\n{\n  \"verdict\": \"satisfied\",\n  \"spans\": [\n    {\"start\": 0, \"end\": 5}\n  ],\n  \"reason\": \"Journey meets all specified requirements including departure and arrival times, stops, and number of transfers.\"\n}\n```"
+            }
+          ],
+          "plan_id": "0e81a91bb035a1d8574d",
+          "repairs": [],
+          "semantic_status": "resolved_by_model",
+          "status": "satisfiable",
+          "witnesses": [
+            {
+              "cost": 1,
+              "journey_id": "00b30b64cd73de674651",
+              "policy": "consequence",
+              "score": 4.0,
+              "score_numerator": 4,
+              "separated_pairs": [
+                [
+                  "c0",
+                  "c1",
+                  1
+                ],
+                [
+                  "c1",
+                  "c2",
+                  1
+                ]
+              ]
+            },
+            {
+              "cost": 1,
+              "journey_id": "002ee67351572c9abe93",
+              "policy": "consequence",
+              "score": 1.0,
+              "score_numerator": 1,
+              "separated_pairs": [
+                [
+                  "c0",
+                  "c2",
+                  0
+                ]
+              ]
+            }
+          ]
+        },
+        "4": {
+          "errors": [],
+          "events": [
+            "no_distinguishing_witness_in_completed_pool"
+          ],
+          "final_formula": {
+            "children": [
+              {
+                "kind": "atom",
+                "op": "depart_ge",
+                "scope": "outbound",
+                "source": null,
+                "unit": "seconds",
+                "value": 30177
+              },
+              {
+                "kind": "atom",
+                "op": "arrive_by",
+                "scope": "outbound",
+                "source": null,
+                "unit": "seconds",
+                "value": 35425
+              }
+            ],
+            "kind": "all",
+            "source": null
+          },
+          "initial_plan_id": "0e81a91bb035a1d8574d",
+          "judgments": [
+            {
+              "journey_id": "00b30b64cd73de674651",
+              "judgment": {
+                "reason": "Journey meets all specified requirements including departure time, arrival time, and stops.",
+                "spans": [
+                  {
+                    "end": 5,
+                    "start": 0
+                  }
+                ],
+                "verdict": "satisfied"
+              },
+              "raw": "```json\n{\n  \"verdict\": \"satisfied\",\n  \"spans\": [\n    {\"start\": 0, \"end\": 5}\n  ],\n  \"reason\": \"Journey meets all specified requirements including departure time, arrival time, and stops.\"\n}\n```"
+            },
+            {
+              "journey_id": "002ee67351572c9abe93",
+              "judgment": {
+                "reason": "Journey meets all specified requirements including departure and arrival times, stops, and number of transfers.",
+                "spans": [
+                  {
+                    "end": 5,
+                    "start": 0
+                  }
+                ],
+                "verdict": "satisfied"
+              },
+              "raw": "```json\n{\n  \"verdict\": \"satisfied\",\n  \"spans\": [\n    {\"start\": 0, \"end\": 5}\n  ],\n  \"reason\": \"Journey meets all specified requirements including departure and arrival times, stops, and number of transfers.\"\n}\n```"
+            }
+          ],
+          "plan_id": "0e81a91bb035a1d8574d",
+          "repairs": [],
+          "semantic_status": "resolved_by_model",
+          "status": "satisfiable",
+          "witnesses": [
+            {
+              "cost": 1,
+              "journey_id": "00b30b64cd73de674651",
+              "policy": "consequence",
+              "score": 4.0,
+              "score_numerator": 4,
+              "separated_pairs": [
+                [
+                  "c0",
+                  "c1",
+                  1
+                ],
+                [
+                  "c1",
+                  "c2",
+                  1
+                ]
+              ]
+            },
+            {
+              "cost": 1,
+              "journey_id": "002ee67351572c9abe93",
+              "policy": "consequence",
+              "score": 1.0,
+              "score_numerator": 1,
+              "separated_pairs": [
+                [
+                  "c0",
+                  "c2",
+                  0
+                ]
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "replicate": 0,
+    "request": "On 2026-09-14, plan the outbound journey from NW 5th & Davis [stop_id=9301] to SW 5th & Columbia [stop_id=7594]. Depart no earlier than 08:25:17 and arrive by 09:30:25, both inclusive.",
+    "scenario_id": "pilot-00",
+    "translation_errors": []
+  },
+  "failure": {
+    "candidates": [
+      {
+        "acceptance_count": 1,
+        "acceptance_hash": "5634991dc502c4d823b33772860f605dc30c2370432f4b23342c84f80510bb01",
+        "aliases": [
+          "c0",
+          "c2"
+        ],
+        "candidate_id": "c0",
+        "formula": {
+          "children": [
+            {
+              "kind": "atom",
+              "op": "depart_ge",
+              "scope": "outbound",
+              "source": null,
+              "unit": "seconds",
+              "value": 33480
+            },
+            {
+              "kind": "atom",
+              "op": "max_transfers",
+              "scope": "outbound",
+              "source": null,
+              "unit": "count",
+              "value": 0
+            },
+            {
+              "kind": "atom",
+              "op": "exclude_modes",
+              "scope": "outbound",
+              "source": null,
+              "unit": "mode",
+              "value": [
+                "rail",
+                "tram"
+              ]
+            }
+          ],
+          "kind": "all",
+          "source": null
+        },
+        "plan": {
+          "plan_id": "4f068e23d6f9f80811f2",
+          "reason": null,
+          "solver_seconds": 0.00466223806142807,
+          "status": "satisfiable"
+        }
+      },
+      {
+        "acceptance_count": 0,
+        "acceptance_hash": "0966320eb848d7896dbad9037a4b63bfb49b1833e14ea3a92161b365b608e8c0",
+        "aliases": [
+          "c1",
+          "c3"
+        ],
+        "candidate_id": "c1",
+        "formula": {
+          "children": [
+            {
+              "kind": "atom",
+              "op": "depart_ge",
+              "scope": "outbound",
+              "source": null,
+              "unit": "seconds",
+              "value": 34080
+            },
+            {
+              "kind": "atom",
+              "op": "exclude_modes",
+              "scope": "outbound",
+              "source": null,
+              "unit": "mode",
+              "value": [
+                "rail",
+                "tram"
+              ]
+            },
+            {
+              "kind": "atom",
+              "op": "max_transfers",
+              "scope": "outbound",
+              "source": null,
+              "unit": "count",
+              "value": 0
+            }
+          ],
+          "kind": "all",
+          "source": null
+        },
+        "plan": {
+          "plan_id": null,
+          "reason": null,
+          "solver_seconds": 0.0026999518740922213,
+          "status": "infeasible_in_pool"
+        }
+      }
+    ],
+    "outputs": {
+      "D": {
+        "0": {
+          "errors": [],
+          "events": [],
+          "final_formula": {
+            "children": [
+              {
+                "kind": "atom",
+                "op": "depart_ge",
+                "scope": "outbound",
+                "source": null,
+                "unit": "seconds",
+                "value": 33480
+              },
+              {
+                "kind": "atom",
+                "op": "max_transfers",
+                "scope": "outbound",
+                "source": null,
+                "unit": "count",
+                "value": 0
+              },
+              {
+                "kind": "atom",
+                "op": "exclude_modes",
+                "scope": "outbound",
+                "source": null,
+                "unit": "mode",
+                "value": [
+                  "rail",
+                  "tram"
+                ]
+              }
+            ],
+            "kind": "all",
+            "source": null
+          },
+          "initial_plan_id": "4f068e23d6f9f80811f2",
+          "judgments": [],
+          "plan_id": "4f068e23d6f9f80811f2",
+          "repairs": [],
+          "semantic_status": "unresolved_multiple_candidates",
+          "status": "satisfiable",
+          "witnesses": []
+        },
+        "1": {
+          "errors": [],
+          "events": [
+            "no_distinguishing_witness_in_completed_pool"
+          ],
+          "final_formula": {
+            "children": [
+              {
+                "kind": "atom",
+                "op": "depart_ge",
+                "scope": "outbound",
+                "source": null,
+                "unit": "seconds",
+                "value": 33480
+              },
+              {
+                "kind": "atom",
+                "op": "max_transfers",
+                "scope": "outbound",
+                "source": null,
+                "unit": "count",
+                "value": 0
+              },
+              {
+                "kind": "atom",
+                "op": "exclude_modes",
+                "scope": "outbound",
+                "source": null,
+                "unit": "mode",
+                "value": [
+                  "rail",
+                  "tram"
+                ]
+              }
+            ],
+            "kind": "all",
+            "source": null
+          },
+          "initial_plan_id": "4f068e23d6f9f80811f2",
+          "judgments": [
+            {
+              "journey_id": "4f068e23d6f9f80811f2",
+              "judgment": {
+                "reason": "Journey meets all requirements: correct date, no rail/tram, single segment, no transfers, and departs on time.",
+                "spans": [
+                  {
+                    "end": 5,
+                    "start": 0
+                  }
+                ],
+                "verdict": "satisfied"
+              },
+              "raw": "```json\n{\n  \"verdict\": \"satisfied\",\n  \"spans\": [\n    {\"start\": 0, \"end\": 5}\n  ],\n  \"reason\": \"Journey meets all requirements: correct date, no rail/tram, single segment, no transfers, and departs on time.\"\n}\n```"
+            }
+          ],
+          "plan_id": "4f068e23d6f9f80811f2",
+          "repairs": [],
+          "semantic_status": "resolved_by_model",
+          "status": "satisfiable",
+          "witnesses": [
+            {
+              "cost": 1,
+              "journey_id": "4f068e23d6f9f80811f2",
+              "policy": "balanced",
+              "score": 1.0,
+              "score_numerator": 1,
+              "separated_pairs": [
+                [
+                  "c0",
+                  "c1",
+                  1
+                ]
+              ]
+            }
+          ]
+        },
+        "2": {
+          "errors": [],
+          "events": [
+            "no_distinguishing_witness_in_completed_pool"
+          ],
+          "final_formula": {
+            "children": [
+              {
+                "kind": "atom",
+                "op": "depart_ge",
+                "scope": "outbound",
+                "source": null,
+                "unit": "seconds",
+                "value": 33480
+              },
+              {
+                "kind": "atom",
+                "op": "max_transfers",
+                "scope": "outbound",
+                "source": null,
+                "unit": "count",
+                "value": 0
+              },
+              {
+                "kind": "atom",
+                "op": "exclude_modes",
+                "scope": "outbound",
+                "source": null,
+                "unit": "mode",
+                "value": [
+                  "rail",
+                  "tram"
+                ]
+              }
+            ],
+            "kind": "all",
+            "source": null
+          },
+          "initial_plan_id": "4f068e23d6f9f80811f2",
+          "judgments": [
+            {
+              "journey_id": "4f068e23d6f9f80811f2",
+              "judgment": {
+                "reason": "Journey meets all requirements: correct date, no rail/tram, single segment, no transfers, and departs on time.",
+                "spans": [
+                  {
+                    "end": 5,
+                    "start": 0
+                  }
+                ],
+                "verdict": "satisfied"
+              },
+              "raw": "```json\n{\n  \"verdict\": \"satisfied\",\n  \"spans\": [\n    {\"start\": 0, \"end\": 5}\n  ],\n  \"reason\": \"Journey meets all requirements: correct date, no rail/tram, single segment, no transfers, and departs on time.\"\n}\n```"
+            }
+          ],
+          "plan_id": "4f068e23d6f9f80811f2",
+          "repairs": [],
+          "semantic_status": "resolved_by_model",
+          "status": "satisfiable",
+          "witnesses": [
+            {
+              "cost": 1,
+              "journey_id": "4f068e23d6f9f80811f2",
+              "policy": "balanced",
+              "score": 1.0,
+              "score_numerator": 1,
+              "separated_pairs": [
+                [
+                  "c0",
+                  "c1",
+                  1
+                ]
+              ]
+            }
+          ]
+        },
+        "4": {
+          "errors": [],
+          "events": [
+            "no_distinguishing_witness_in_completed_pool"
+          ],
+          "final_formula": {
+            "children": [
+              {
+                "kind": "atom",
+                "op": "depart_ge",
+                "scope": "outbound",
+                "source": null,
+                "unit": "seconds",
+                "value": 33480
+              },
+              {
+                "kind": "atom",
+                "op": "max_transfers",
+                "scope": "outbound",
+                "source": null,
+                "unit": "count",
+                "value": 0
+              },
+              {
+                "kind": "atom",
+                "op": "exclude_modes",
+                "scope": "outbound",
+                "source": null,
+                "unit": "mode",
+                "value": [
+                  "rail",
+                  "tram"
+                ]
+              }
+            ],
+            "kind": "all",
+            "source": null
+          },
+          "initial_plan_id": "4f068e23d6f9f80811f2",
+          "judgments": [
+            {
+              "journey_id": "4f068e23d6f9f80811f2",
+              "judgment": {
+                "reason": "Journey meets all requirements: correct date, no rail/tram, single segment, no transfers, and departs on time.",
+                "spans": [
+                  {
+                    "end": 5,
+                    "start": 0
+                  }
+                ],
+                "verdict": "satisfied"
+              },
+              "raw": "```json\n{\n  \"verdict\": \"satisfied\",\n  \"spans\": [\n    {\"start\": 0, \"end\": 5}\n  ],\n  \"reason\": \"Journey meets all requirements: correct date, no rail/tram, single segment, no transfers, and departs on time.\"\n}\n```"
+            }
+          ],
+          "plan_id": "4f068e23d6f9f80811f2",
+          "repairs": [],
+          "semantic_status": "resolved_by_model",
+          "status": "satisfiable",
+          "witnesses": [
+            {
+              "cost": 1,
+              "journey_id": "4f068e23d6f9f80811f2",
+              "policy": "balanced",
+              "score": 1.0,
+              "score_numerator": 1,
+              "separated_pairs": [
+                [
+                  "c0",
+                  "c1",
+                  1
+                ]
+              ]
+            }
+          ]
+        }
+      },
+      "E": {
+        "0": {
+          "errors": [],
+          "events": [],
+          "final_formula": {
+            "children": [
+              {
+                "kind": "atom",
+                "op": "depart_ge",
+                "scope": "outbound",
+                "source": null,
+                "unit": "seconds",
+                "value": 33480
+              },
+              {
+                "kind": "atom",
+                "op": "max_transfers",
+                "scope": "outbound",
+                "source": null,
+                "unit": "count",
+                "value": 0
+              },
+              {
+                "kind": "atom",
+                "op": "exclude_modes",
+                "scope": "outbound",
+                "source": null,
+                "unit": "mode",
+                "value": [
+                  "rail",
+                  "tram"
+                ]
+              }
+            ],
+            "kind": "all",
+            "source": null
+          },
+          "initial_plan_id": "4f068e23d6f9f80811f2",
+          "judgments": [],
+          "plan_id": "4f068e23d6f9f80811f2",
+          "repairs": [],
+          "semantic_status": "unresolved_multiple_candidates",
+          "status": "satisfiable",
+          "witnesses": []
+        },
+        "1": {
+          "errors": [],
+          "events": [
+            "no_distinguishing_witness_in_completed_pool"
+          ],
+          "final_formula": {
+            "children": [
+              {
+                "kind": "atom",
+                "op": "depart_ge",
+                "scope": "outbound",
+                "source": null,
+                "unit": "seconds",
+                "value": 33480
+              },
+              {
+                "kind": "atom",
+                "op": "max_transfers",
+                "scope": "outbound",
+                "source": null,
+                "unit": "count",
+                "value": 0
+              },
+              {
+                "kind": "atom",
+                "op": "exclude_modes",
+                "scope": "outbound",
+                "source": null,
+                "unit": "mode",
+                "value": [
+                  "rail",
+                  "tram"
+                ]
+              }
+            ],
+            "kind": "all",
+            "source": null
+          },
+          "initial_plan_id": "4f068e23d6f9f80811f2",
+          "judgments": [
+            {
+              "journey_id": "4f068e23d6f9f80811f2",
+              "judgment": {
+                "reason": "Journey meets all requirements: correct date, no rail/tram, single segment, no transfers, and departs on time.",
+                "spans": [
+                  {
+                    "end": 5,
+                    "start": 0
+                  }
+                ],
+                "verdict": "satisfied"
+              },
+              "raw": "```json\n{\n  \"verdict\": \"satisfied\",\n  \"spans\": [\n    {\"start\": 0, \"end\": 5}\n  ],\n  \"reason\": \"Journey meets all requirements: correct date, no rail/tram, single segment, no transfers, and departs on time.\"\n}\n```"
+            }
+          ],
+          "plan_id": "4f068e23d6f9f80811f2",
+          "repairs": [],
+          "semantic_status": "resolved_by_model",
+          "status": "satisfiable",
+          "witnesses": [
+            {
+              "cost": 1,
+              "journey_id": "4f068e23d6f9f80811f2",
+              "policy": "consequence",
+              "score": 2.0,
+              "score_numerator": 2,
+              "separated_pairs": [
+                [
+                  "c0",
+                  "c1",
+                  1
+                ]
+              ]
+            }
+          ]
+        },
+        "2": {
+          "errors": [],
+          "events": [
+            "no_distinguishing_witness_in_completed_pool"
+          ],
+          "final_formula": {
+            "children": [
+              {
+                "kind": "atom",
+                "op": "depart_ge",
+                "scope": "outbound",
+                "source": null,
+                "unit": "seconds",
+                "value": 33480
+              },
+              {
+                "kind": "atom",
+                "op": "max_transfers",
+                "scope": "outbound",
+                "source": null,
+                "unit": "count",
+                "value": 0
+              },
+              {
+                "kind": "atom",
+                "op": "exclude_modes",
+                "scope": "outbound",
+                "source": null,
+                "unit": "mode",
+                "value": [
+                  "rail",
+                  "tram"
+                ]
+              }
+            ],
+            "kind": "all",
+            "source": null
+          },
+          "initial_plan_id": "4f068e23d6f9f80811f2",
+          "judgments": [
+            {
+              "journey_id": "4f068e23d6f9f80811f2",
+              "judgment": {
+                "reason": "Journey meets all requirements: correct date, no rail/tram, single segment, no transfers, and departs on time.",
+                "spans": [
+                  {
+                    "end": 5,
+                    "start": 0
+                  }
+                ],
+                "verdict": "satisfied"
+              },
+              "raw": "```json\n{\n  \"verdict\": \"satisfied\",\n  \"spans\": [\n    {\"start\": 0, \"end\": 5}\n  ],\n  \"reason\": \"Journey meets all requirements: correct date, no rail/tram, single segment, no transfers, and departs on time.\"\n}\n```"
+            }
+          ],
+          "plan_id": "4f068e23d6f9f80811f2",
+          "repairs": [],
+          "semantic_status": "resolved_by_model",
+          "status": "satisfiable",
+          "witnesses": [
+            {
+              "cost": 1,
+              "journey_id": "4f068e23d6f9f80811f2",
+              "policy": "consequence",
+              "score": 2.0,
+              "score_numerator": 2,
+              "separated_pairs": [
+                [
+                  "c0",
+                  "c1",
+                  1
+                ]
+              ]
+            }
+          ]
+        },
+        "4": {
+          "errors": [],
+          "events": [
+            "no_distinguishing_witness_in_completed_pool"
+          ],
+          "final_formula": {
+            "children": [
+              {
+                "kind": "atom",
+                "op": "depart_ge",
+                "scope": "outbound",
+                "source": null,
+                "unit": "seconds",
+                "value": 33480
+              },
+              {
+                "kind": "atom",
+                "op": "max_transfers",
+                "scope": "outbound",
+                "source": null,
+                "unit": "count",
+                "value": 0
+              },
+              {
+                "kind": "atom",
+                "op": "exclude_modes",
+                "scope": "outbound",
+                "source": null,
+                "unit": "mode",
+                "value": [
+                  "rail",
+                  "tram"
+                ]
+              }
+            ],
+            "kind": "all",
+            "source": null
+          },
+          "initial_plan_id": "4f068e23d6f9f80811f2",
+          "judgments": [
+            {
+              "journey_id": "4f068e23d6f9f80811f2",
+              "judgment": {
+                "reason": "Journey meets all requirements: correct date, no rail/tram, single segment, no transfers, and departs on time.",
+                "spans": [
+                  {
+                    "end": 5,
+                    "start": 0
+                  }
+                ],
+                "verdict": "satisfied"
+              },
+              "raw": "```json\n{\n  \"verdict\": \"satisfied\",\n  \"spans\": [\n    {\"start\": 0, \"end\": 5}\n  ],\n  \"reason\": \"Journey meets all requirements: correct date, no rail/tram, single segment, no transfers, and departs on time.\"\n}\n```"
+            }
+          ],
+          "plan_id": "4f068e23d6f9f80811f2",
+          "repairs": [],
+          "semantic_status": "resolved_by_model",
+          "status": "satisfiable",
+          "witnesses": [
+            {
+              "cost": 1,
+              "journey_id": "4f068e23d6f9f80811f2",
+              "policy": "consequence",
+              "score": 2.0,
+              "score_numerator": 2,
+              "separated_pairs": [
+                [
+                  "c0",
+                  "c1",
+                  1
+                ]
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "replicate": 0,
+    "request": "On 2026-09-14, plan the outbound journey from Rose Quarter Transit Center [stop_id=1097] to N Williams & NE Tillamook [stop_id=6370]. Do not use rail or tram. Depart no later than 09:08:00, inclusive. Make at most 0 transfers.",
+    "scenario_id": "pilot-01",
+    "translation_errors": []
+  },
+  "tie": {
+    "candidates": [
+      {
+        "acceptance_count": 1,
+        "acceptance_hash": "5634991dc502c4d823b33772860f605dc30c2370432f4b23342c84f80510bb01",
+        "aliases": [
+          "c0",
+          "c2"
+        ],
+        "candidate_id": "c0",
+        "formula": {
+          "children": [
+            {
+              "kind": "atom",
+              "op": "depart_ge",
+              "scope": "outbound",
+              "source": null,
+              "unit": "seconds",
+              "value": 33480
+            },
+            {
+              "kind": "atom",
+              "op": "max_transfers",
+              "scope": "outbound",
+              "source": null,
+              "unit": "count",
+              "value": 0
+            },
+            {
+              "kind": "atom",
+              "op": "exclude_modes",
+              "scope": "outbound",
+              "source": null,
+              "unit": "mode",
+              "value": [
+                "rail",
+                "tram"
+              ]
+            }
+          ],
+          "kind": "all",
+          "source": null
+        },
+        "plan": {
+          "plan_id": "4f068e23d6f9f80811f2",
+          "reason": null,
+          "solver_seconds": 0.00466223806142807,
+          "status": "satisfiable"
+        }
+      },
+      {
+        "acceptance_count": 0,
+        "acceptance_hash": "0966320eb848d7896dbad9037a4b63bfb49b1833e14ea3a92161b365b608e8c0",
+        "aliases": [
+          "c1",
+          "c3"
+        ],
+        "candidate_id": "c1",
+        "formula": {
+          "children": [
+            {
+              "kind": "atom",
+              "op": "depart_ge",
+              "scope": "outbound",
+              "source": null,
+              "unit": "seconds",
+              "value": 34080
+            },
+            {
+              "kind": "atom",
+              "op": "exclude_modes",
+              "scope": "outbound",
+              "source": null,
+              "unit": "mode",
+              "value": [
+                "rail",
+                "tram"
+              ]
+            },
+            {
+              "kind": "atom",
+              "op": "max_transfers",
+              "scope": "outbound",
+              "source": null,
+              "unit": "count",
+              "value": 0
+            }
+          ],
+          "kind": "all",
+          "source": null
+        },
+        "plan": {
+          "plan_id": null,
+          "reason": null,
+          "solver_seconds": 0.0026999518740922213,
+          "status": "infeasible_in_pool"
+        }
+      }
+    ],
+    "outputs": {
+      "D": {
+        "0": {
+          "errors": [],
+          "events": [],
+          "final_formula": {
+            "children": [
+              {
+                "kind": "atom",
+                "op": "depart_ge",
+                "scope": "outbound",
+                "source": null,
+                "unit": "seconds",
+                "value": 33480
+              },
+              {
+                "kind": "atom",
+                "op": "max_transfers",
+                "scope": "outbound",
+                "source": null,
+                "unit": "count",
+                "value": 0
+              },
+              {
+                "kind": "atom",
+                "op": "exclude_modes",
+                "scope": "outbound",
+                "source": null,
+                "unit": "mode",
+                "value": [
+                  "rail",
+                  "tram"
+                ]
+              }
+            ],
+            "kind": "all",
+            "source": null
+          },
+          "initial_plan_id": "4f068e23d6f9f80811f2",
+          "judgments": [],
+          "plan_id": "4f068e23d6f9f80811f2",
+          "repairs": [],
+          "semantic_status": "unresolved_multiple_candidates",
+          "status": "satisfiable",
+          "witnesses": []
+        },
+        "1": {
+          "errors": [],
+          "events": [
+            "no_distinguishing_witness_in_completed_pool"
+          ],
+          "final_formula": {
+            "children": [
+              {
+                "kind": "atom",
+                "op": "depart_ge",
+                "scope": "outbound",
+                "source": null,
+                "unit": "seconds",
+                "value": 33480
+              },
+              {
+                "kind": "atom",
+                "op": "max_transfers",
+                "scope": "outbound",
+                "source": null,
+                "unit": "count",
+                "value": 0
+              },
+              {
+                "kind": "atom",
+                "op": "exclude_modes",
+                "scope": "outbound",
+                "source": null,
+                "unit": "mode",
+                "value": [
+                  "rail",
+                  "tram"
+                ]
+              }
+            ],
+            "kind": "all",
+            "source": null
+          },
+          "initial_plan_id": "4f068e23d6f9f80811f2",
+          "judgments": [
+            {
+              "journey_id": "4f068e23d6f9f80811f2",
+              "judgment": {
+                "reason": "Journey meets all requirements: correct date, no rail/tram, single segment, no transfers, and departs on time.",
+                "spans": [
+                  {
+                    "end": 5,
+                    "start": 0
+                  }
+                ],
+                "verdict": "satisfied"
+              },
+              "raw": "```json\n{\n  \"verdict\": \"satisfied\",\n  \"spans\": [\n    {\"start\": 0, \"end\": 5}\n  ],\n  \"reason\": \"Journey meets all requirements: correct date, no rail/tram, single segment, no transfers, and departs on time.\"\n}\n```"
+            }
+          ],
+          "plan_id": "4f068e23d6f9f80811f2",
+          "repairs": [],
+          "semantic_status": "resolved_by_model",
+          "status": "satisfiable",
+          "witnesses": [
+            {
+              "cost": 1,
+              "journey_id": "4f068e23d6f9f80811f2",
+              "policy": "balanced",
+              "score": 1.0,
+              "score_numerator": 1,
+              "separated_pairs": [
+                [
+                  "c0",
+                  "c1",
+                  1
+                ]
+              ]
+            }
+          ]
+        },
+        "2": {
+          "errors": [],
+          "events": [
+            "no_distinguishing_witness_in_completed_pool"
+          ],
+          "final_formula": {
+            "children": [
+              {
+                "kind": "atom",
+                "op": "depart_ge",
+                "scope": "outbound",
+                "source": null,
+                "unit": "seconds",
+                "value": 33480
+              },
+              {
+                "kind": "atom",
+                "op": "max_transfers",
+                "scope": "outbound",
+                "source": null,
+                "unit": "count",
+                "value": 0
+              },
+              {
+                "kind": "atom",
+                "op": "exclude_modes",
+                "scope": "outbound",
+                "source": null,
+                "unit": "mode",
+                "value": [
+                  "rail",
+                  "tram"
+                ]
+              }
+            ],
+            "kind": "all",
+            "source": null
+          },
+          "initial_plan_id": "4f068e23d6f9f80811f2",
+          "judgments": [
+            {
+              "journey_id": "4f068e23d6f9f80811f2",
+              "judgment": {
+                "reason": "Journey meets all requirements: correct date, no rail/tram, single segment, no transfers, and departs on time.",
+                "spans": [
+                  {
+                    "end": 5,
+                    "start": 0
+                  }
+                ],
+                "verdict": "satisfied"
+              },
+              "raw": "```json\n{\n  \"verdict\": \"satisfied\",\n  \"spans\": [\n    {\"start\": 0, \"end\": 5}\n  ],\n  \"reason\": \"Journey meets all requirements: correct date, no rail/tram, single segment, no transfers, and departs on time.\"\n}\n```"
+            }
+          ],
+          "plan_id": "4f068e23d6f9f80811f2",
+          "repairs": [],
+          "semantic_status": "resolved_by_model",
+          "status": "satisfiable",
+          "witnesses": [
+            {
+              "cost": 1,
+              "journey_id": "4f068e23d6f9f80811f2",
+              "policy": "balanced",
+              "score": 1.0,
+              "score_numerator": 1,
+              "separated_pairs": [
+                [
+                  "c0",
+                  "c1",
+                  1
+                ]
+              ]
+            }
+          ]
+        },
+        "4": {
+          "errors": [],
+          "events": [
+            "no_distinguishing_witness_in_completed_pool"
+          ],
+          "final_formula": {
+            "children": [
+              {
+                "kind": "atom",
+                "op": "depart_ge",
+                "scope": "outbound",
+                "source": null,
+                "unit": "seconds",
+                "value": 33480
+              },
+              {
+                "kind": "atom",
+                "op": "max_transfers",
+                "scope": "outbound",
+                "source": null,
+                "unit": "count",
+                "value": 0
+              },
+              {
+                "kind": "atom",
+                "op": "exclude_modes",
+                "scope": "outbound",
+                "source": null,
+                "unit": "mode",
+                "value": [
+                  "rail",
+                  "tram"
+                ]
+              }
+            ],
+            "kind": "all",
+            "source": null
+          },
+          "initial_plan_id": "4f068e23d6f9f80811f2",
+          "judgments": [
+            {
+              "journey_id": "4f068e23d6f9f80811f2",
+              "judgment": {
+                "reason": "Journey meets all requirements: correct date, no rail/tram, single segment, no transfers, and departs on time.",
+                "spans": [
+                  {
+                    "end": 5,
+                    "start": 0
+                  }
+                ],
+                "verdict": "satisfied"
+              },
+              "raw": "```json\n{\n  \"verdict\": \"satisfied\",\n  \"spans\": [\n    {\"start\": 0, \"end\": 5}\n  ],\n  \"reason\": \"Journey meets all requirements: correct date, no rail/tram, single segment, no transfers, and departs on time.\"\n}\n```"
+            }
+          ],
+          "plan_id": "4f068e23d6f9f80811f2",
+          "repairs": [],
+          "semantic_status": "resolved_by_model",
+          "status": "satisfiable",
+          "witnesses": [
+            {
+              "cost": 1,
+              "journey_id": "4f068e23d6f9f80811f2",
+              "policy": "balanced",
+              "score": 1.0,
+              "score_numerator": 1,
+              "separated_pairs": [
+                [
+                  "c0",
+                  "c1",
+                  1
+                ]
+              ]
+            }
+          ]
+        }
+      },
+      "E": {
+        "0": {
+          "errors": [],
+          "events": [],
+          "final_formula": {
+            "children": [
+              {
+                "kind": "atom",
+                "op": "depart_ge",
+                "scope": "outbound",
+                "source": null,
+                "unit": "seconds",
+                "value": 33480
+              },
+              {
+                "kind": "atom",
+                "op": "max_transfers",
+                "scope": "outbound",
+                "source": null,
+                "unit": "count",
+                "value": 0
+              },
+              {
+                "kind": "atom",
+                "op": "exclude_modes",
+                "scope": "outbound",
+                "source": null,
+                "unit": "mode",
+                "value": [
+                  "rail",
+                  "tram"
+                ]
+              }
+            ],
+            "kind": "all",
+            "source": null
+          },
+          "initial_plan_id": "4f068e23d6f9f80811f2",
+          "judgments": [],
+          "plan_id": "4f068e23d6f9f80811f2",
+          "repairs": [],
+          "semantic_status": "unresolved_multiple_candidates",
+          "status": "satisfiable",
+          "witnesses": []
+        },
+        "1": {
+          "errors": [],
+          "events": [
+            "no_distinguishing_witness_in_completed_pool"
+          ],
+          "final_formula": {
+            "children": [
+              {
+                "kind": "atom",
+                "op": "depart_ge",
+                "scope": "outbound",
+                "source": null,
+                "unit": "seconds",
+                "value": 33480
+              },
+              {
+                "kind": "atom",
+                "op": "max_transfers",
+                "scope": "outbound",
+                "source": null,
+                "unit": "count",
+                "value": 0
+              },
+              {
+                "kind": "atom",
+                "op": "exclude_modes",
+                "scope": "outbound",
+                "source": null,
+                "unit": "mode",
+                "value": [
+                  "rail",
+                  "tram"
+                ]
+              }
+            ],
+            "kind": "all",
+            "source": null
+          },
+          "initial_plan_id": "4f068e23d6f9f80811f2",
+          "judgments": [
+            {
+              "journey_id": "4f068e23d6f9f80811f2",
+              "judgment": {
+                "reason": "Journey meets all requirements: correct date, no rail/tram, single segment, no transfers, and departs on time.",
+                "spans": [
+                  {
+                    "end": 5,
+                    "start": 0
+                  }
+                ],
+                "verdict": "satisfied"
+              },
+              "raw": "```json\n{\n  \"verdict\": \"satisfied\",\n  \"spans\": [\n    {\"start\": 0, \"end\": 5}\n  ],\n  \"reason\": \"Journey meets all requirements: correct date, no rail/tram, single segment, no transfers, and departs on time.\"\n}\n```"
+            }
+          ],
+          "plan_id": "4f068e23d6f9f80811f2",
+          "repairs": [],
+          "semantic_status": "resolved_by_model",
+          "status": "satisfiable",
+          "witnesses": [
+            {
+              "cost": 1,
+              "journey_id": "4f068e23d6f9f80811f2",
+              "policy": "consequence",
+              "score": 2.0,
+              "score_numerator": 2,
+              "separated_pairs": [
+                [
+                  "c0",
+                  "c1",
+                  1
+                ]
+              ]
+            }
+          ]
+        },
+        "2": {
+          "errors": [],
+          "events": [
+            "no_distinguishing_witness_in_completed_pool"
+          ],
+          "final_formula": {
+            "children": [
+              {
+                "kind": "atom",
+                "op": "depart_ge",
+                "scope": "outbound",
+                "source": null,
+                "unit": "seconds",
+                "value": 33480
+              },
+              {
+                "kind": "atom",
+                "op": "max_transfers",
+                "scope": "outbound",
+                "source": null,
+                "unit": "count",
+                "value": 0
+              },
+              {
+                "kind": "atom",
+                "op": "exclude_modes",
+                "scope": "outbound",
+                "source": null,
+                "unit": "mode",
+                "value": [
+                  "rail",
+                  "tram"
+                ]
+              }
+            ],
+            "kind": "all",
+            "source": null
+          },
+          "initial_plan_id": "4f068e23d6f9f80811f2",
+          "judgments": [
+            {
+              "journey_id": "4f068e23d6f9f80811f2",
+              "judgment": {
+                "reason": "Journey meets all requirements: correct date, no rail/tram, single segment, no transfers, and departs on time.",
+                "spans": [
+                  {
+                    "end": 5,
+                    "start": 0
+                  }
+                ],
+                "verdict": "satisfied"
+              },
+              "raw": "```json\n{\n  \"verdict\": \"satisfied\",\n  \"spans\": [\n    {\"start\": 0, \"end\": 5}\n  ],\n  \"reason\": \"Journey meets all requirements: correct date, no rail/tram, single segment, no transfers, and departs on time.\"\n}\n```"
+            }
+          ],
+          "plan_id": "4f068e23d6f9f80811f2",
+          "repairs": [],
+          "semantic_status": "resolved_by_model",
+          "status": "satisfiable",
+          "witnesses": [
+            {
+              "cost": 1,
+              "journey_id": "4f068e23d6f9f80811f2",
+              "policy": "consequence",
+              "score": 2.0,
+              "score_numerator": 2,
+              "separated_pairs": [
+                [
+                  "c0",
+                  "c1",
+                  1
+                ]
+              ]
+            }
+          ]
+        },
+        "4": {
+          "errors": [],
+          "events": [
+            "no_distinguishing_witness_in_completed_pool"
+          ],
+          "final_formula": {
+            "children": [
+              {
+                "kind": "atom",
+                "op": "depart_ge",
+                "scope": "outbound",
+                "source": null,
+                "unit": "seconds",
+                "value": 33480
+              },
+              {
+                "kind": "atom",
+                "op": "max_transfers",
+                "scope": "outbound",
+                "source": null,
+                "unit": "count",
+                "value": 0
+              },
+              {
+                "kind": "atom",
+                "op": "exclude_modes",
+                "scope": "outbound",
+                "source": null,
+                "unit": "mode",
+                "value": [
+                  "rail",
+                  "tram"
+                ]
+              }
+            ],
+            "kind": "all",
+            "source": null
+          },
+          "initial_plan_id": "4f068e23d6f9f80811f2",
+          "judgments": [
+            {
+              "journey_id": "4f068e23d6f9f80811f2",
+              "judgment": {
+                "reason": "Journey meets all requirements: correct date, no rail/tram, single segment, no transfers, and departs on time.",
+                "spans": [
+                  {
+                    "end": 5,
+                    "start": 0
+                  }
+                ],
+                "verdict": "satisfied"
+              },
+              "raw": "```json\n{\n  \"verdict\": \"satisfied\",\n  \"spans\": [\n    {\"start\": 0, \"end\": 5}\n  ],\n  \"reason\": \"Journey meets all requirements: correct date, no rail/tram, single segment, no transfers, and departs on time.\"\n}\n```"
+            }
+          ],
+          "plan_id": "4f068e23d6f9f80811f2",
+          "repairs": [],
+          "semantic_status": "resolved_by_model",
+          "status": "satisfiable",
+          "witnesses": [
+            {
+              "cost": 1,
+              "journey_id": "4f068e23d6f9f80811f2",
+              "policy": "consequence",
+              "score": 2.0,
+              "score_numerator": 2,
+              "separated_pairs": [
+                [
+                  "c0",
+                  "c1",
+                  1
+                ]
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "replicate": 0,
+    "request": "On 2026-09-14, plan the outbound journey from Rose Quarter Transit Center [stop_id=1097] to N Williams & NE Tillamook [stop_id=6370]. Do not use rail or tram. Depart no later than 09:08:00, inclusive. Make at most 0 transfers.",
+    "scenario_id": "pilot-01",
+    "translation_errors": []
+  }
+}

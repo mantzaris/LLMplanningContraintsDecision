@@ -1,0 +1,16 @@
+{
+  "analysis_utilities_revision": "fc9b90b5d6ad2bb75d161061fad718ee69a52f4f",
+  "environment": "Python 3.11.13; committed uv.lock; dev and analysis extras",
+  "files": {
+    "scripts/export_stage2.py": "c669a2c621a19a75d73493435ca8be369da1887d79dd26b4fe99f4e321c9174b",
+    "scripts/replay_revision.py": "20ab20e4933bb034d2368c23212fe8480a4ee3cdd598f9e1618e898cdc217536",
+    "scripts/stage2_execution_accounting.py": "60b82014444bdc7c772cea7dff2bcb32b33dc5dc5d13e6f501554edea3164746",
+    "scripts/stage2_fresh_diagnostics.py": "77403e9d3884ce06dc5fe0483ebbb5721c10608048dfdb73111af9e93186af42"
+  },
+  "ordinary_execution_revision": "a544f31862ff34b359ba25b9439615b5c29abcc3",
+  "paired_bootstrap": {
+    "draws": 10000,
+    "resampling_unit": "base request, replicates kept together",
+    "seed": 2201
+  }
+}

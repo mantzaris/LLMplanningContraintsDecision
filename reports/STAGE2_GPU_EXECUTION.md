@@ -1,247 +1,491 @@
-# Pending Stage 2 GPU execution: access diagnosis and preservation
+# Fresh Stage 2 GPU execution
 
-**The fresh GPU pilot did not run. Zero of 96 scenario/replicate pairs completed.**
-The current connection failure is verified beyond the earlier timeout reports: local
-DNS, gateway TCP, host-key verification and RSA public-key authentication all succeed;
-the gateway then times out on its connection to the pod. No current pod shell or
-configured alternate authenticated route was available. This is not a fresh negative
-selector result. Candidate diversity, D/E divergence, outcome differences and the
-fresh oracle comparison remain unmeasured.
+**The frozen feasibility pilot ran on the GPU. D and E tied on correctness.** All
+48 development base requests completed with one generation replicate: **48 of the
+originally targeted 96 pairs**, and **48/48 of the scope selected by the frozen
+throughput rule**. The other replicate was removed before any witness judgment or
+comparative evaluation. There are no unexpectedly incomplete pairs or exclusions.
 
-The single action needed from the user is to **provide a current working connection
-from the RunPod Connect panel for this same existing pod**. An authenticated Jupyter
-connection may suffice if the pod's SSH service is unavailable. No pod creation,
-replacement, restart, billing change or broader experiment is requested or performed.
+At budgets 1/2/4, balanced selection (D) and consequence selection (E) each resolved
+**33/48 requests correctly (68.75%)**, versus 31/48 initially. Their witness sequences
+differed in **2/48** cases; their final plan IDs differed in one, but correctness
+never differed. The separate CPU oracle reached **35/48 for both** at budgets 2/4.
+This is evidence that the mechanism runs and can choose differently, **not evidence
+of a consequence-selection advantage**. Recommendation: **revise before expansion**,
+with one bounded candidate-generation diagnostic; do not launch a larger study yet.
 
-## Actual starting state and protocol preservation
+The [historical CPU report](STAGE2_CONTROLLED_PILOT.md) and the exact prior
+[blocked-access report](STAGE2_GPU_ACCESS_ATTEMPT_20260912.md) remain preserved. Their
+four historical cases and 2/4 result are not included in these fresh estimates.
 
-This completion attempt began at **`0e31373734c8b2077b6194fc65cf294b1f42cbf3`** on a
-clean `main`. Remote `origin/main` matched that commit. No applicable `AGENTS.md` was
-found at the repository or its ancestors. The [historical CPU-only report](STAGE2_CONTROLLED_PILOT.md),
-[execution instructions](../docs/stage2-running.md), frozen configuration, protocol,
-prepared data, provenance manifests and local budget journals were inspected.
-There was no fresh pilot manifest or completed pair in the local workspace or remote
-Git records. Pod-side storage could not be inspected, so completion elsewhere on that
-unreachable pod cannot be independently ruled out; its ledgers must be checked before
-any future launch.
+## Starting point, execution and unchanged protocol
 
-The original protocol commit is `1aa2ad1d5291d21be9ee99150e2baf51e9a62d96`;
-the historical replay adapter fix is `df7c5b2a986d798c1b261888e6100b66f6423fe7`.
-The frozen 48 base requests, two replicates, budgets 0/1/2/4, four candidates, prompts,
-sampling settings, solver objective, common journey pools, selectors and elimination-only
-D/E update policy are unchanged. No correctness fix or protocol amendment was needed.
-The implementation changes in this attempt are two offline utilities for checking the
-existing inputs and packaging retained records. Neither is imported by ordinary inference.
-There is **no GPU execution revision**, because loading and generation never started.
+The working tree was clean on `main` at **`a544f31862ff34b359ba25b9439615b5c29abcc3`**,
+which is also the execution revision in the saved run manifest. This followed the
+CPU delivery `0e31373734c8b2077b6194fc65cf294b1f42cbf3`. The original protocol commit
+is `1aa2ad1d5291d21be9ee99150e2baf51e9a62d96`; the historical replay fix is
+`df7c5b2a986d798c1b261888e6100b66f6423fe7`. Applicable instructions, implementation,
+reports, manifests and both local and pod-side ledgers were inspected. The pod
+contained Stage 1 smoke records and no equivalent Stage 2 run or allocation usage.
+Its Stage 1 ledger matched the local checksum and the historical 46 generations.
 
-## Bounded connectivity diagnosis
+Run identity: **`stage2-pilot-v1`**, created 2026-09-12 18:16:23 UTC. The frozen
+configuration, prompts, candidate count, seeds, model, solver, objective, universe,
+selectors, judgment mechanism and repair rules were unchanged. No scenario or
+reference amendment was needed. The only correctness fix, separately committed as
+**`8d34bf0`**, removes a hardcoded “gateway cannot reach pod” statement from the
+*offline compact exporter*. It accepts an explicit transfer-verification record and
+otherwise reports unverified storage. It changes no inference or evaluation decision
+and does not invalidate prior results. New diagnostic/accounting scripts are offline,
+committed at **`fc9b90b`**, with their exact file hashes in the analysis source manifest.
 
-Troubleshooting ran from **17:55:44 to 18:01:35 UTC on 2026-09-12**, about six minutes,
-within the approximately 20-minute limit. One new authenticated SSH probe was used,
-with a 15-second connection timeout, one connection attempt, a 180-second outer wall
-limit, strict host-key checking, and the existing normal RSA identity. It completed
-in **136.338 seconds**. A separate read-only TCP banner check identified the gateway
-before the authenticated probe. Repeating the same failed route was unnecessary.
+The [run manifest](../artifacts/stage2/pilot-v1/run-manifest.json) records configuration
+hash `8052d48c26cce2709e6404b34b0789411803d1258492874dd9fd01a006c87c64`,
+source hash `a0e4acc5145a0103d3e8d837f39e7a5898ff2ad6923afebedf4df71ba326b7c3`,
+and prompt/public/model identities. The frozen protocol's canonical hash remains
+`4fafc990fa3d346b741dc2ad5993413036392044ab4869b77492abab2e1df6ca`.
 
-| Layer | Measured result | Implication |
-|---|---|---|
-| Local DNS | Gateway hostname resolved | No observed DNS failure |
-| Gateway TCP | Connection succeeded; SSH banner received | Gateway is reachable from this host |
-| Host identity | Existing known-host key verified | No verification bypass or blind known-host replacement |
-| Client identity | Existing RSA public key offered and authenticated | Missing `id_ed25519` is not the blocker |
-| Gateway routing | Gateway reported an upstream connection timeout | Failure occurs after successful gateway authentication |
-| Pod shell/service | Shell sentinel never executed | Pod SSH availability/state cannot be inspected |
+## Connectivity, hardware and integration evidence
 
-The gateway exited with code zero despite reporting the upstream timeout. Exit status
-alone would therefore incorrectly suggest success; the probe checked authentication,
-the upstream diagnostic and actual shell output separately. Full verbose logs remain
-private outside the repository and the preservation archive. The committed
-[sanitized diagnostic](../artifacts/stage2/execution-attempt-20260912/connectivity.json)
-contains no private key, token, authenticated URL, pod target string or internal address.
+The gateway problem was routing after successful authentication, as documented in
+the archived access report. The user then supplied a direct TCP SSH connection for
+this project's existing pod. That route supported authenticated command execution
+and binary shell/stdin transfer. The normal RSA identity worked. The new direct
+host key was enrolled on first use, then strict verification was used throughout;
+no known-host entry was blindly replaced. The provider environment confirmed the
+expected pod ID, and the stored Stage 1 ledger/model paths matched. **The separate
+pod used by `OverseeingManyLLMs` was not used.** Endpoint and credential details stay
+outside Git. No pod restart, replacement, billing change or unrelated-job change occurred.
 
-Alternative-route inspection covered the normal SSH configuration, existing local SSH
-configuration files used by the related research workspace, relevant project connection
-files, Jupyter runtime configuration, editor Jupyter/remote configuration and RunPod CLI
-configuration. Other recorded endpoints could not be associated with this pod and were
-not contacted. Thirty local notebook-server configuration records contained no RunPod
-connection; the relevant editor records also contained none. The local RunPod CLI
-configuration exists but its API key is empty, and no RunPod credential was configured
-in the environment. Consequently authenticated pod lookup was unavailable; the documented
-[RunPod pod lookup API](https://docs.runpod.io/api-reference/pods/GET/pods/podId) requires
-an authorization credential. No authenticated Jupyter endpoint for this pod was found,
-so none was invented or probed by guessing ports.
+The current GPU was an **NVIDIA RTX PRO 6000 Blackwell Server Edition**, 97,887 MiB,
+driver 595.91.07, initially idle with no GPU process. Existing persistent `/workspace`
+storage and ample free capacity were verified. A new isolated transport clone on
+`main` used `PYTHONPATH` without modifying the shared existing environment.
 
-No current GPU identity, memory, model cache, running workload or pod-side service was
-verified in this attempt. The earlier verified Qwen2.5-7B/Transformers/CUDA environment
-remains historical evidence only. No pod, process, service, host-key record or billing
-setting was modified. Connection attempts stopped once all discovered authorized routes
-were accounted for. A request for the current same-pod connection was sent while local
-preservation work continued.
+The verified read-only model remained **Qwen/Qwen2.5-7B-Instruct**, revision
+`a09a35458c702b33eeacc393d103063234e8bc28`, BF16, no quantization, Transformers
+4.51.3, PyTorch 2.8.0+cu128/CUDA 12.8, Python 3.12.3. Translation and judgment used
+the same model in fresh invocations. The model file identities were checked before
+loading. The existing official model provenance/license record remains applicable.
+Translation temperature 0.7, top-p 0.95, seeds beginning at 21000 and maximum 768 new
+tokens were unchanged; judgments/critique/repair were greedy. Recorded inherited
+settings, including top-k 20 and repetition penalty 1.05, were retained. Greedy-mode
+top-p/top-k warnings did not alter sampling or trigger retries.
 
-## Pre-evaluation annotation and universe checks
+Model parameters and **every successful generation's output device were `cuda:0`**.
+Loading took 4.524 seconds; the GPU process occupied 15,248 MiB immediately after
+loading and approximately 18,010 MiB later. All 358 backend generations succeeded;
+none hit the output-token cap. The included timing batch was the first four
+candidate-only bundles, 16 translations, not an additional uncharged warm-up.
+Structured translations, witness rendering, judgments, bounded baseline repairs,
+checkpoint writes and replay all exercised the actual pipeline.
 
+The model was disposed in `finally`; the immediate probe retained a 706 MiB CUDA
+context. A subsequent probe confirmed **no GPU processes**, and the inference PID
+was absent. The first empty-process probe preceded archive creation at 18:29:10 UTC,
+about six seconds after ledger closure. The conservative 30-second teardown allowance
+is retained. See [GPU evidence](../artifacts/stage2/pilot-v1/gpu-evidence-1789237054700006824.json)
+and [connection/shutdown verification](../artifacts/stage2/pilot-v1/connectivity-and-shutdown.json).
+
+## Data, annotation checks and throughput decision
+
+These are **constructed, assistant-authored requests over published TriMet schedules**,
+not passenger requests or observed vehicle movements. All annotations remain
+**provisional, automatically checked, not human audited**. The unchanged
+[human review export](../data/pilot/annotation-review.csv) is available for later review.
+
+The frozen ZIP checksum is
+`82e6b822de008367b3d3d35bb52545807ea41b6f56623a9aa4b1162b3d54671b`.
+The common universe uses routes 2/4/17, all buses, 70 stops and 6,574 ride edges,
+2026-09-14 07:00–10:00 in America/Los_Angeles. Pools have at most 64 journeys per
+single segment and 256 combined journeys. The 48 pools contain 4,366 journey
+memberships; 40 pools are truncated and eight complete under the supported bounds.
+There are at most two rides per segment, exact-stop connections with a 120-second
+minimum, no invented walking or through-service. Mode exclusions are exercised
+linguistically, but this bus-only subset cannot establish multimodal transport validity.
+See [data provenance and reuse limits](../docs/data.md).
+
+Before GPU evaluation, the separate wording/reference consistency process matched
+**48/48 requests** and checked **4,366/4,366 journey memberships**. Configuration,
+prompts, data, references and scenario ordering matched frozen hashes. There were
+no identified discrepancies, amendments, dropped cases or injected candidate errors.
 The [preflight record](../artifacts/stage2/execution-attempt-20260912/preflight.json)
-confirms exact agreement with the frozen hashes for configuration, prompts, public
-scenarios, references, data manifest and retained TriMet ZIP. The selected scenario
-order and 48 unique base IDs are intact. No injected candidate error was introduced.
-The original annotation-review CSV is unchanged; its checksum is included in preflight.
+predates the run. Automated agreement is not independent human validation.
 
-The existing independent narrow wording parser again matched **48/48 requests** to
-reference dictionaries. The independent evaluator finds **40 feasible and eight
-infeasible requests** in their declared pools. The additional offline checks covered
-all **4,366 journey memberships in 48 pools**: text/public endpoint and date agreement,
-segment scope/order, stop/trip identities, route/mode membership, ride-count bounds,
-chronological scheduled calls, connection stops and minimum timing, journey horizon,
-and exclusion of the previously selected OD pairs. No discrepancy or ambiguous
-unhandled requirement was identified by these checks. No cases were corrected, dropped
-or silently rewritten; amendment and annotation-issue lists are empty.
+Coverage was fixed before model outcomes: eight requests each for timing, transfers,
+mode exclusion, outbound/return scope, ordered visits and infeasibility; 40 are
+reference-feasible and eight infeasible within their pools. Each is a distinct new
+base/OD scenario; routes, entities and service date still overlap. No publication
+holdout was used.
 
-This remains automated consistency checking of assistant-authored requests and reference
-annotations, **not human audit or proof of intended semantics**. The provisional label
-is retained. Human review was not treated as a condition preventing this exploratory
-pilot; connectivity alone prevented GPU execution. Reference files were used only by
-the offline preflight, never supplied to a translator, selector or ordinary judge.
-The previously documented bus-only network, limited transfer behavior and conditional
-pool completeness remain unchanged.
+The frozen timing rule used the first 16 translation latencies: p95 **3.8442 s**, then
+reserved 1.5×, **5.7662 s/call**, plus its prescribed overhead. Two replicates forecast
+about **8,339 seconds**, exceeding the available allocation. One replicate forecast
+**4,644.47 seconds**, with an upper bound of 768 calls. The runner wrote
+[scope.json](../artifacts/stage2/pilot-v1/scope.json) before judging and retained all
+48 bases in the predeclared order. Actual runtime was much shorter, but we did not
+restore the second replicate after observing results. This is application of the
+frozen resource rule, not an outcome-selected sample or methodological amendment.
 
-## Fresh experiment and oracle status
+## Paired comparison and independent outcomes
 
-| Required fresh measurement | This attempt |
-|---|---|
-| Base requests executed | 0 of 48 |
-| Scenario/replicate pairs completed | 0 of 96 |
-| Integration generations / new timing batch | 0 / not run |
-| Parsed interpretations and exact duplicates | Not measured |
-| Semantic alternatives / distinguishing witnesses | Not measured |
-| Reference-equivalent candidate coverage | Not measured |
-| Correct selected plans without equivalent formulas | Not measured |
-| Consequence variation / D–E example divergence | Not measured |
-| D–E final-output differences or correctness effect | Not measured |
-| Model-judgment errors, uncertain outputs or repair damage | Not measured |
-| Fresh oracle replay | No candidate bundles to replay |
+D/E shared the same four raw translations per pair, exact and finite-domain semantic
+deduplication, earliest-arrival/boardings/departure/ID objective, complete evaluation
+of the same pool, witness costs of one, judgment prompt/cache, stopping rules and
+elimination-only update. They had **zero repair allowance**. Candidate formulas,
+votes, reference labels and selector preference were absent from ordinary judge
+inputs. All 58 logically attributed D/E judge calls were matched to the deterministic
+public-only prompt. The offline reference evaluator never guided ordinary selection.
 
-All 96 planned pairs remain explicitly pending in the
-[execution-status artifact](../artifacts/stage2/execution-attempt-20260912/execution-status.json).
-No replicates or bases were reduced: the included candidate-only throughput diagnostic
-could not begin, so the predeclared reduction rule was not invoked. There is no fresh
-correct-resolution estimate, wins/ties/losses count, coverage estimate or confidence
-interval at any judgment budget. These quantities are recorded as unknown rather than
-zero measured performance. No conditional divergence subgroup exists to analyze.
+The existing runner reused prefixes for budgets 0/1/2/4. Every D/E pair used identical
+candidate bundles; every saved witness and score was independently recomputed by the
+offline audit. All 48 paired decisions, including secondary baselines, replayed exactly
+from the saved outputs under the recorded source revision. Timeouts and missing
+outputs are separate from infeasibility; none occurred in D/E here.
 
-No existing figure was relabeled or regenerated as fresh evidence. The historical
-CPU-only report and its figures remain intact. The four previously completed historical
-pairs were replayed with their recorded source revision as an integrity check; **4/4
-paired artifacts matched exactly**, with zero model calls. The [verification](../artifacts/stage2/execution-attempt-20260912/replay-verification.json)
-explicitly identifies those as historical records. Their old performance is not used
-as an answer to the fresh pilot's research questions. All **32 existing tests pass**,
-and both new offline utilities pass Ruff checks and were exercised on the actual files.
+| Allowed judgments | D correct | E correct | E wins / ties / losses | Paired E−D | Model D/E correct-rate 95% bootstrap interval |
+|---:|---:|---:|---:|---:|---:|
+| 0 | 31/48 (64.58%) | 31/48 (64.58%) | 0 / 48 / 0 | 0 pp | 50.00–77.08% |
+| 1 | 33/48 (68.75%) | 33/48 (68.75%) | 0 / 48 / 0 | 0 pp | 56.25–81.25% |
+| 2 | 33/48 (68.75%) | 33/48 (68.75%) | 0 / 48 / 0 | 0 pp | 56.25–81.25% |
+| 4 | 33/48 (68.75%) | 33/48 (68.75%) | 0 / 48 / 0 | 0 pp | 56.25–81.25% |
 
-## Compute accounting
+Intervals use the existing 10,000-draw percentile bootstrap, seed 2201, resampling
+base requests and keeping any replicates together. Here each base has one replicate.
+The empirical paired-difference interval is [0, 0] because every observed pair ties;
+it is **not a population equivalence bound or evidence of zero uncertainty**. This
+exploratory, correlated-route sample supports no significance claim.
 
-The local Stage 2 ledger contains only its original allocation event, and its checksum
-is unchanged. No model-resident session or generation request was started. The original
-Stage 1 ledger is also unchanged.
+| Budget (both D and E) | Valid plans / 40 feasible requests | Invalid plans | False infeasibility | Correct infeasibility / 8 | Unresolved | Invalid interpretation output | Timeout / infrastructure failure |
+|---:|---:|---:|---:|---:|---:|---:|---:|
+| 0 | 28 | 5 | 7 | 3 | 0 | 5 | 0 / 0 |
+| 1 | 30 | 5 | 5 | 3 | 0 | 5 | 0 / 0 |
+| 2 | 30 | 5 | 5 | 3 | 0 | 5 | 0 / 0 |
+| 4 | 30 | 5 | 5 | 3 | 0 | 5 | 0 / 0 |
 
-| Accounting scope | Generation attempts | Model-resident GPU seconds | Conservative additional uncertainty |
-|---|---:|---:|---:|
-| This completion attempt | 0 | 0 | 0 |
-| Stage 2 total | 0 | 0 | 0 |
-| Historical Stage 1 | 46 | 237.390215 | ≤30 seconds |
-| Cumulative | 46 | 237.390215 | ≤30 seconds |
+All five invalid-output bundles are infeasible requests for which every translation
+reported an unsupported interpretation. They are not correct infeasibility conclusions.
+Output coverage, defined as a plan or a finite-pool infeasibility report, is 43/48;
+25/48 cases receive model validation evidence, while 18 validly parsed bundles have
+no distinguishing witness. A model-resolved semantic status is not proof of correctness.
+At budget 4, valid returned plans are 30/35, but the primary feasible-request denominator
+remains 40. Validation improves three initial results and damages one for each method;
+D/E perform no model repair. Budgets 2 and 4 add no final correctness beyond budget 1.
 
-The existing total Stage 2 ceilings remain **1,500 generation attempts and 7,200 aggregate
-GPU seconds**. The frozen programmatic guard is 7,170 seconds, leaving the already
-specified 30-second disposal/watchdog margin. This attempt creates no new allowance.
-There were zero input/output inference tokens, loading, warm-up, retry, repair or GPU
-latency costs. Connection diagnosis is not GPU use. Local annotation evaluation, tests,
-archive creation and historical replay are CPU work, not CPU model inference. No
-project-owned inference process was launched and no rented pod was terminated.
+| Request family (8 each) | Initial correct | Model-judged D = E | Oracle D = E, budget 4 | Bundles with distinguishing alternatives |
+|---|---:|---:|---:|---:|
+| Timing | 8 | 8 | 8 | 7 |
+| Transfers | 7 | 7 | 8 | 3 |
+| Mode exclusion | 5 | 5 | 5 | 7 |
+| Outbound/return scope | 3 | 3 | 4 | 3 |
+| Ordered visits | 5 | 7 | 7 | 5 |
+| Infeasible | 3 | 3 | 3 | 0 |
 
-## Artifact preservation and actual storage
+These family counts are descriptive, not independent subgroup experiments. The two
+D/E-divergent cases are both correct under both methods at every budget. That conditional
+2/2 tie is secondary; it does not replace the full 48-base result.
 
-The inventory includes the prepared fresh public pools and private provisional
-annotations; both historical reanalysis versions and their analyses; the failed v1
-replay; the successful v2 replay; this attempt's preflight and historical integrity
-replay; and both cumulative GPU journals. Original records were preserved in place.
-The raw GTFS ZIP and model caches/weights were not duplicated into the archive.
+## Missing alternatives and selector degeneracy
 
-A local archive was created and **every archived member was read back and verified**
-against its source SHA-256 and byte count:
+[Per-bundle diagnostics](../artifacts/stage2/pilot-v1/bundle-diagnostics.json) retain
+requested/parsed counts, duplicates, acceptance signatures, candidate plan statuses,
+cross-violations, witness counts, weights, reference coverage and all final outcomes.
 
-- Location: `runs/stage2-preservation-20260912-execution/stage2-retained-artifacts.tar.gz`
-- Verified members: **154**; total uncompressed bytes: **21,305,080**.
-- Archive bytes: **693,342**.
-- Archive SHA-256: `f5cfac0529e88e971b1a384bf3383ed6113b43d2de25f0592c59f3459e2fc62a`.
-- Canonical source-manifest SHA-256: `dc97265fa80fb7a1fb90bb7f9e9babc365996fd156b51c06123e547880cd4e9d`.
+| Measurement | Fresh observation |
+|---|---:|
+| Requested / returned / parsed translations | 192 / 192 / 160 |
+| Repeated identical text within bundles | 8 |
+| Parsed canonical-formula duplicates | 43 |
+| Canonical formulas after deduplication | 117 |
+| Additional syntax variants collapsed by pool equivalence | 40 |
+| Semantic candidate classes across all bundles | 77 |
+| Bundles with 0 / 1 / 2 / 3 / 4 classes | 5 / 18 / 18 / 5 / 2 |
+| At least two classes / available witnesses | 25/48 (52.08%) |
+| At least one consequential candidate-plan disagreement | 18/48 (37.50%) |
+| Incorrect initial result with a correct candidate-selected plan available | 5/48 |
+| Reference-equivalent interpretation present | 23/48 (47.92%) |
+| Correct candidate-selected plan despite no equivalent interpretation | 13/48 |
+| Correct final ordinary plan despite no equivalent interpretation | 12/48 |
+| Variable consequence weights / different initial witness rankings | 4/48 / 4/48 |
+| Different first witness / different witness sequence | 2/48 / 2/48 |
+| Different final status or plan ID / different final correctness | 1/48 / 0/48 |
 
-See the committed [per-file inventory](../artifacts/stage2/execution-attempt-20260912/source-manifest.json)
-and [archive verification](../artifacts/stage2/execution-attempt-20260912/archive-verification.json).
-The archive stays outside ordinary Git because it contains derived agency schedules.
-Compact, sanitized records and checksums are committed and pushed. **Remote or independent
-durable replication of the archive has not succeeded.** A second local copy is not a
-claim of durable replication. Its intended established remote project location is
-`/workspace/LLMplanningConstraintsStage2/preservation`; the unreachable pod prevented
-transfer and remote checksum verification. Previously stored remote Stage 1 artifacts
-were not changed.
+The 32 interpretation failures comprise 20 unsupported reports, seven entity-resolution
+failures and five malformed interpretations. These are natural model outputs, not
+injected errors or failed GPU calls. Eight bundles repeatedly produce only one canonical
+formula among their valid outputs. Twenty-six have some distinct syntax with equal
+acceptance patterns in the pool; ten of the 18 single-class bundles lose their only
+syntactic diversity this way. Seven witness-bearing bundles have no selected-plan
+consequence despite semantic differences. In 23 of 25 witness-bearing bundles the
+ordinary witness sequence is identical for D/E.
 
-## Reproduction and continuation
+There are 1,237 distinguishing journey memberships across bundles, ranging from one
+to 256 in witness-bearing pools. Twenty-one of the 25 such bundles have uniform pair
+weights, making E's score a positive scalar multiple of D's score. In particular,
+with two candidate classes there is only one pair, so the rankings necessarily agree
+at unit cost. E has a mathematical opportunity here mainly with three or four classes
+and nonuniform pair consequences; that occurs in four bundles. This is a **structural
+property plus a limited opportunity distribution**, not a coding error forcing equality.
+Twenty-three bundles have a top-score tie under each policy; stable journey-ID
+ordering resolves it. No tie rule or weight was changed after observing outcomes.
 
-Run from the repository root using the existing Python 3.11/3.12 environment:
+Pool equivalence does not establish natural-language correctness or equivalence outside
+the checked pool. Some differences are invisible because bounds are vacuous in the
+public horizon, the subset is bus-only, or there are gaps between scheduled departures.
+We did not enlarge pools after seeing outcomes. The artifacts distinguish equal pool
+vectors from repeated formulas; they cannot establish which missing outside-pool
+journeys would discriminate the interpretations. No claim of global completeness follows.
+
+### Worked calculation: actual `pilot-00-r0`
+
+The request requires departure at/after 08:25:17 and arrival by 09:30:25. All candidates
+mistranslate numerical bounds. After deduplication, c0 and c2 select the same valid
+plan, while c1 is infeasible in the pool. Their consequence scores are
+I(c0,c1)=1, I(c0,c2)=0, I(c1,c2)=1; the E weights are **2, 1, 2**. Missing-plan terms
+contribute zero under the frozen rule, without implying correct natural-language infeasibility.
+
+| Witness ID | Acceptance (c0,c1,c2) | D separation score | E weighted score |
+|---|---|---:|---:|
+| `002ee67351572c9abe93` | (true,false,false) | 1+1 = 2 | 2+1 = 3 |
+| `00b30b64cd73de674651` | (true,false,true) | 1+1 = 2 | 2+2 = 4 |
+
+Both costs are one. D ties all 16 witnesses and selects the first ID; E ties seven
+witnesses at score four and selects the second ID shown. Both judgments are correctly
+“satisfied.” D reaches c0 in one query; E keeps c0/c2 and needs a second query to reach
+c0. Both retain the same valid final plan throughout, even though no interpretation
+is reference-equivalent. This is a real selection difference with **no outcome gain
+and one locally unnecessary E query**.
+
+## Oracle diagnostic and representative causal traces
+
+Oracle replay uses only saved candidate bundles and the independent CPU reference
+checker, with identical selection/update rules and **zero GPU repair or generation
+calls**. Privileged labels appear only in its separate output tree.
+
+| Judgment budget | Oracle D correct | Oracle E correct | E wins / ties / losses | Valid plans / 40 | Invalid plans | False infeasibility | Correct infeasibility / 8 |
+|---:|---:|---:|---:|---:|---:|---:|---:|
+| 0 | 31 | 31 | 0 / 48 / 0 | 28 | 5 | 7 | 3 |
+| 1 | 34 | 34 | 0 / 48 / 0 | 31 | 3 | 6 | 3 |
+| 2 | 35 | 35 | 0 / 48 / 0 | 32 | 2 | 6 | 3 |
+| 4 | 35 | 35 | 0 / 48 / 0 | 32 | 2 | 6 | 3 |
+
+All oracle rows retain five invalid interpretations, zero unresolved outputs and no
+solver/infrastructure failures. At budget 4 the correct-rate interval is
+60.42–85.42%; all 13 remaining failures lack a reference-equivalent candidate.
+The oracle improves five initial results and damages one. Correct witness labels
+therefore help both methods equally, but do not fix missing candidate coverage.
+E uses 30 oracle judgments at budget 4 versus D's 28, without a correctness gain.
+
+Among **31 distinct ordinary D/E judgment invocations**, seven labels are wrong
+(24/31 agree with reference), none are uncertain. Logical D/E counts are 6/29 wrong
+for D and 7/29 for E; shared calls are not independent observations. Five logical
+elimination events remove a reference-equivalent candidate. Every supplied span is
+in bounds, but 26 unique calls cite “On 20,” matching the example offsets in the
+prompt; this is consistent with copying the example, not meaningful source support.
+Some correct verdicts also have incorrect explanations. Source pointers are not proof.
+
+The [saved diagnostic traces](../artifacts/stage2/pilot-v1/diagnostic-traces.json) use
+the first lexicographic case for useful validation, harmful validation, divergence,
+wrong-without-alternatives and correct-plan-without-equivalence, plus **all** divergent
+cases and **all** ordinary/oracle correctness differences. This keeps failures and
+ties visible. Timetables/full prompts remain in authorized raw storage; committed
+traces retain requests, formulas, plans, witness IDs, scores, judgments and updates.
+
+- **Useful validation, `pilot-12`:** ordered intermediate calls and buses are requested.
+  c0 invents a departure bound of 114,000 seconds and reports infeasibility; c1's
+  weaker extra bound leaves a valid selected plan. A concrete journey visits the
+  required stops in order; the judge correctly says satisfied. Both policies discard
+  c0, retain c1 and fix the false infeasibility in one query.
+- **Harmful validation, `pilot-14`:** the request says depart *no later than* 07:28:14.
+  Every candidate instead uses a lower bound, one far beyond the horizon. The first
+  candidate happens to select a valid plan. A later distinguishing journey truly
+  violates the deadline; the correct “violated” label removes both satisfiable
+  interpretations, leaving the infeasible one. Both methods, including the oracle,
+  damage a correct initial output. The model additionally invents a transfer violation
+  in its reason; the label itself is correct. This failure is candidate coverage/update
+  behavior, not a wrong oracle label or a repair implementation error.
+- **No useful alternative, `pilot-02`:** wrong intermediate-stop lists make all four
+  formulas reject every pool journey, collapsing to one infeasible class. No witness
+  exists, so neither ordinary nor oracle validation can repair the false report.
+- **Divergence without correctness benefit, `pilot-00`:** the worked calculation above
+  shows a correct plan despite wrong formulas, and an extra E query without improvement.
+- **Divergence with judge error, `pilot-37`:** E's different first witness is falsely
+  rejected for departing *earlier* than a latest-departure bound and for an invented
+  second transfer. It eliminates a reference-equivalent candidate and chooses a
+  different plan. That plan still satisfies the request; D and E remain tied on the
+  primary outcome. The oracle uses more E queries but gains no correctness advantage.
+- **Oracle-only recoveries, `pilot-34` and `pilot-40`:** in the former, the second model
+  judgment accepts a journey departing before the stated bound and eliminates the
+  useful alternative. In the latter, the judge claims that 09:42 is earlier than 09:12,
+  wrongly rejects a return journey and preserves false infeasibility. Correct oracle
+  labels recover both cases under both selectors.
+
+## Baselines, inference cost and GPU accounting
+
+The frozen secondary methods completed as provided: A (single translation + solver),
+B (one ordinary critique/repair), C (two concrete positive/negative example judgments,
+SSV adaptation, with at most one repair). Their adaptations and limits are unchanged.
+No baseline was selected using evaluation labels.
+
+| Method, maximum configured validation | Correct / 48 | Calls logically attributed | Input / output tokens | Attributed generation latency (s) | Repairs improving / damaging correctness |
+|---|---:|---:|---:|---:|---:|
+| A | 31 | 48 | 109,214 / 7,213 | 104.96 | 0 / 0 |
+| B | 32 | 96 | 226,889 / 14,584 | 210.33 | 1 / 0 |
+| C | 19 | 137 | 224,079 / 15,479 | 219.95 | 1 / 13 |
+| D, budget 4 | 33 | 221 | 455,381 / 30,421 | 439.02 | 0 / 0 |
+| E, budget 4 | 33 | 221 | 455,380 / 30,399 | 438.74 | 0 / 0 |
+
+C returns 19 correct resolutions, two invalid plans, six invalid interpretations and
+21 unresolved outputs. B returns 32 correct, four invalid plans, six false infeasibility
+reports, five invalid interpretations and one unresolved output. C's negative finding
+is retained; its unresolved outputs are never counted as infeasibility. D/E improvements
+are from elimination, not repair. Their initial four-candidate cost is much larger
+than A's single translation even when they select the same initial result.
+
+| Budget | D / E logical judgments | D / E logical calls | D input / output tokens | E input / output tokens | D / E generation latency (s) |
+|---:|---:|---:|---:|---:|---:|
+| 0 | 0 / 0 | 192 / 192 | 436,856 / 28,407 | 436,856 / 28,407 | 412.61 / 412.61 |
+| 1 | 25 / 25 | 217 / 217 | 452,919 / 30,128 | 452,919 / 30,105 | 435.19 / 434.88 |
+| 2 | 29 / 29 | 221 / 221 | 455,381 / 30,421 | 455,380 / 30,399 | 439.02 / 438.74 |
+| 4 | 29 / 29 | 221 / 221 | 455,381 / 30,421 | 455,380 / 30,399 | 439.02 / 438.74 |
+
+Saved candidate solver time is 0.726 seconds per logically attributed D/E method.
+Latency is the sum of recorded call times, attributed as if each method incurred them
+independently; it is not a separately measured end-to-end wall time for each cached
+method. Prefix rows must not be summed as separate experiments. Oracle rows retain
+candidate-generation logical cost plus their explicit privileged-query counts; their
+labels consume no model tokens. Paired selection yields no E benefit to trade against
+cost; E has 23 fewer generated/prompt tokens at maximum budget, an incidental difference.
+
+Actual hardware work is separate from those logical tables:
+
+| Stage 2 actual purpose | Attempted generations | Input tokens | Output tokens | Generation latency (s) |
+|---|---:|---:|---:|---:|
+| Translation, shared bundles | 192 | 436,856 | 28,407 | 412.61 |
+| Judgment, all methods after cache reuse | 96 | 60,920 | 6,446 | 84.56 |
+| Ordinary critique | 48 | 117,675 | 7,371 | 105.37 |
+| Concrete-feedback repair | 22 | 72,316 | 3,867 | 57.24 |
+| **Total** | **358** | **687,767** | **46,091** | **659.78** |
+
+There were zero failed backend generations, retries, truncations or additional oracle
+GPU calls. **Stage 2 model-resident time was 681.6209 seconds (11.36 minutes,
+0.1893 GPU-hours)**, including loading, inference, waits and disposal. Its 30-second
+allowance gives at most **711.6209 seconds**, well below the existing 7,200-second
+ceiling; 358 attempts are below 1,500. The ledger's 7,170-second guard and outer
+7,180-second timeout remained active. CPU model-file hashing before GPU loading,
+SSH checks, transfer and offline replay are not model-resident GPU work.
+
+Historical usage remains 46 generations and 237.3902 seconds, plus ≤30 seconds.
+**Cumulative: 404 generations, 919.0111 measured GPU seconds, plus ≤60 seconds total
+uncertainty (≤979.0111 seconds conservatively).** No allocation was reset or renewed.
+The downloaded Stage 2 journal extended the original local allocation only after
+its exact prefix matched. See [reconstructed accounting](../artifacts/stage2/pilot-v1/gpu-accounting.json).
+
+## Artifacts, verification and reproduction
+
+The full fresh run is retained locally under `runs/stage2-pilot-v1` and remotely on
+the already authorized persistent `/workspace` volume. Compact aggregate results,
+trace pointers, manifests, diagnostics and four figure types are in Git. Raw schedules,
+full prompts, weights and caches are not. Remote storage is verified replication on
+the existing volume, not a claim of an independent off-provider backup or perpetual
+availability. Reuse remains governed by the recorded TriMet terms.
+
+| Preserved archive on `/workspace/LLMplanningConstraintsStage2/` | SHA-256 | Bytes |
+|---|---|---:|
+| `stage2-pilot-v1-results.tar.gz` | `1f8b63fb3e863ec9564910bfdaf8e7304b878089cb2ff7da54d964a966383871` | 954,381 |
+| `preservation/stage2-retained-artifacts-20260912.tar.gz` | `f5cfac0529e88e971b1a384bf3383ed6113b43d2de25f0592c59f3459e2fc62a` | 693,342 |
+| `preservation/stage2-offline-analysis-v1.tar.gz` | `2359a710ce51874d1a1510bd328a72b953011d5ea901327fbcf8dd033d1dbb66` | 1,489,498 |
+
+The first contains 156 files, including the raw run, ledger and launch diagnostics;
+152 run JSON/JSONL file identities are in the compact manifest. The second durably
+replicates the previously local-only 154-file archive, including prior unsuccessful
+and corrected CPU records. Both remote/local archive checksums matched. Offline
+analysis, oracle outputs and the 48-pair replay are separately preserved with their
+own checksums in [offline replication](../artifacts/stage2/pilot-v1/offline-replication.json).
+
+All **32 tests passed** and Ruff passed. Exact saved-source replay matched **48/48
+pairs** without GPU generation; the supplementary audit recomputed every D/E witness
+and checked every ordinary judge prompt. The frozen pre-evaluation checks remain
+valid and no package source changed. The separate exporter metadata fix and new
+offline scripts were exercised on these actual artifacts. The historical failed
+access report and earlier plots/results were preserved under their original identities.
+
+The existing four plots were regenerated from actual fresh summaries, without
+hypothetical improvements: [correct resolution](../artifacts/stage2/pilot-figures/correct-resolution.pdf),
+[paired outcomes](../artifacts/stage2/pilot-figures/paired-outcomes.pdf),
+[selector variation](../artifacts/stage2/pilot-figures/selector-degeneracy.pdf), and
+[model versus oracle](../artifacts/stage2/pilot-figures/model-versus-oracle.pdf).
+Each also has SVG and PNG versions. Their labels state development provenance and
+provisional references. Historical plots remain separate.
+
+![Fresh model versus oracle results](../artifacts/stage2/pilot-figures/model-versus-oracle.png)
+
+From the repository root, after restoring the retained raw archive (or using the
+existing local run), reproduce without the GPU:
 
 ```bash
 uv sync --frozen --extra dev --extra analysis
-uv run --frozen python scripts/stage2_preflight.py \
-  --feed data/raw/trimet-82e6b822de008367b3d3d35bb52545807ea41b6f56623a9aa4b1162b3d54671b.zip \
-  --output runs/stage2-execution-preflight
-uv run --frozen python scripts/replay_revision.py --run runs/stage2-history-v2 \
-  --output runs/stage2-execution-historical-replay
-uv run --frozen --extra dev plancheck cpu-check
-uv run --frozen python scripts/preserve_stage2.py \
-  --output runs/stage2-preservation-20260912-execution
+uv run --frozen python scripts/replay_revision.py --run runs/stage2-pilot-v1 \
+  --output runs/stage2-pilot-replay-v1
+uv run --frozen plancheck pilot-analyze --run runs/stage2-pilot-v1 \
+  --public data/prepared/stage2/public --references data/pilot/references.json \
+  --output runs/stage2-pilot-analysis-v1
+uv run --frozen python scripts/stage2_fresh_diagnostics.py \
+  --run runs/stage2-pilot-v1 --analysis runs/stage2-pilot-analysis-v1 \
+  --public data/prepared/stage2/public --references data/pilot/references.json \
+  --output runs/stage2-pilot-diagnostics-v1
+uv run --frozen python scripts/stage2_execution_accounting.py \
+  --run runs/stage2-pilot-v1 --ledger runs/stage2-gpu-budget.jsonl \
+  --previous artifacts/stage2/gpu-accounting.json \
+  --output artifacts/stage2/pilot-v1/gpu-accounting.json
+uv run --frozen --extra analysis plancheck pilot-figures \
+  --analysis artifacts/stage2/pilot-v1 --output /tmp/stage2-pilot-figures \
+  --label 'Fresh development pilot: 48 bases, 1 replicate; provisional references'
 ```
 
-The utilities refuse to overwrite conflicting immutable artifacts. Use a new preflight
-or preservation identity if source records change; the recorded revision and inventory
-are historical state, not fields to rewrite. Exact archive byte hashes include source
-file metadata, so a fresh archive may have a different compressed hash while all member
-content hashes still agree.
+The last plotting command works from compact committed results alone. Full analysis
+and replay need retained schedules/model outputs, but no GPU or weight download.
+The [run guide](../docs/stage2-running.md) includes checksum-verified restoration,
+export and the exact historical launch command. Existing immutable outputs are reused;
+a changed analysis definition requires a new identity. No further GPU launch is needed
+to complete this stage.
 
-After a working connection to the same pod is supplied, first inspect existing pod-side
-runs and both journals. Reconcile any successful work found there before launching or
-copying a local zero-use ledger; **never overwrite a remotely spent allocation**. Inspect
-GPU/workloads and the verified model environment. Then use the already documented
-[stdin transfer and frozen pilot commands](../docs/stage2-running.md), keeping the
-existing aggregate ledger and resume checkpoints. A verified remote shell and actual
-GPU generation evidence are prerequisites; exit code zero from the gateway is insufficient.
+## Recommendation and evidential limits
 
-The retained archive can be transferred with the existing helper after authentication
-works, using the target stored privately in `RUNPOD_TARGET`:
+| Claim | Assessment from this pilot |
+|---|---|
+| A. The pipeline operates | Yes: actual CUDA inference, guarded completion, independent checks and exact replay |
+| B. Candidates contain useful alternatives | Sometimes: 25 distinguishable bundles, 18 consequential bundles, five opportunities to fix a wrong initial result with a selected candidate plan |
+| C. Selectors choose differently | Yes, 2/48; uniform weights and two-class bundles sharply limit opportunity |
+| D. E improves final outcomes | No observed improvement: 0 wins, 48 ties, 0 losses at every budget, including the oracle |
+| E. An advantage justifies inference cost | Not established; oracle E uses two more judgments overall without a gain |
 
-```bash
-python3 scripts/ssh_transfer.py --identity ~/.ssh/id_rsa --target "$RUNPOD_TARGET" \
-  --local runs/stage2-preservation-20260912-execution/stage2-retained-artifacts.tar.gz \
-  --remote-root /workspace/LLMplanningConstraintsStage2/preservation \
-  --remote-name stage2-retained-artifacts-20260912.tar.gz
-```
+**Revise before expansion.** A full publication-scale selector study is not justified
+by two outcome-neutral divergences. Candidate coverage and time conversion errors
+limit both policies; judge unreliability removes two otherwise recoverable outcomes.
+The finite bus-only pools also hide semantic differences. Neither the positive effect
+of extra validation over the initial output nor a synthetic selector fixture establishes
+the proposed practical contribution. The fresh tie does not prove impossibility.
 
-Require the helper's remote checksum success before updating replication status. Do
-not extract over historical files. No SCP/SFTP/rsync or guessed direct endpoint is needed.
-The existing pilot-run, pilot-analyze (separate oracle), replay and plotting commands
-remain unchanged. No extra diagnostic generations or alternative candidate prompts are
-authorized by this failed connection attempt.
+One concrete later experiment: compare the existing seconds-valued translation
+interface against **HH:MM:SS-valued time atoms compiled deterministically to seconds**,
+with the same four-candidate count, model and seeds on these development requests.
+Freeze the amendment and annotation review first; use reference-equivalent candidate
+coverage and parsed-output coverage as the main diagnostics, then CPU oracle replay.
+Do not add a suite of candidate-generation alternatives or optimize selection weights.
+This targets the observed arithmetic failures without supplying intended constraint
+semantics or evaluation labels to inference. It may reduce spurious diversity; that
+is acceptable if coverage improves. Judge redesign would remain a separate decision.
 
-## Recommendation
+The saved old arm can be reused with its logical cost charged. The new arm needs
+192 translations: at the measured **2.149 seconds/translation**, about **6.9 minutes**
+of generation, with a conservative **25-minute single-GPU envelope** based on the
+observed translation p95 and loading/overhead. Rerunning both arms would require
+384 calls and roughly twice that envelope. This is an estimate for a separately
+authorized, frozen experiment, not a new allocation or a launched stage.
 
-**Remain inconclusive because access prevents the frozen experiment.** The current
-CPU checks support input and replay integrity; they do not demonstrate fresh GPU
-operation, useful candidate alternatives, different selector choices, improved outcomes
-or value after inference cost. There is no basis here to revise the score, select
-favorable cases, expand compute, or claim an improvement.
-
-The next action is restoring a usable connection to this same pod, then completing
-the existing predeclared sample within its remaining total allocation. The candidate
-bottleneck cannot be re-diagnosed without fresh bundles. If it persists after completion,
-a later separately frozen candidate-generation comparison could test four explicitly
-source-grounded alternative parses against the current four independently sampled
-parses at matched generation cost. That experiment is only a conditional future
-proposal; it was not implemented or evaluated in this frozen pilot.
+Remaining limits are one model, one replicate, assistant-authored unaudited wording,
+shared route/date coverage, conditional pool completeness, vacuous mode constraints,
+weak source-span evidence, and only two selector-divergent cases. Human review of the
+existing export is the next non-GPU action. The completed Stage 2 pilot itself needs
+no further access intervention.

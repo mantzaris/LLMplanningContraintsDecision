@@ -17,16 +17,18 @@ does not relicense agency data or model weights.
 
 ## Controlled feasibility pilot (Stage 2)
 
-The [Stage 2 report](reports/STAGE2_CONTROLLED_PILOT.md) records a frozen 48-request,
-paired balanced-versus-consequence pilot, prefix budgets 0/1/2/4, a separate oracle
-replay, and reproducible analysis/figures. **Fresh GPU execution is blocked:** the
-supplied SSH gateway cannot reach its pod. Stage 2 generated no new model outputs.
-A labeled CPU reanalysis of the four previous smoke requests gives D = E = 2/4 correct,
-with no distinguishing witnesses and no oracle improvement; it is not the fresh pilot.
-See [protocol](docs/stage2-protocol.md), [annotation review](data/pilot/annotation-review.csv)
-and [exact reproduction/resume commands](docs/stage2-running.md). The research conclusion
-is inconclusive, with no demonstrated selection advantage.
+The [fresh Stage 2 GPU report](reports/STAGE2_GPU_EXECUTION.md) records a completed
+48-base paired pilot. The frozen throughput rule selected one replicate before
+judging. **D and E each resolved 33/48 correctly**, with different witness sequences
+in 2/48 cases and no correctness wins or losses. CPU oracle replay reached 35/48 for
+both. The run used 358 generations and 681.62 measured GPU seconds; all 48 pairs
+replayed exactly. No consequence-selection advantage was demonstrated.
 
-The subsequent [GPU completion attempt](reports/STAGE2_GPU_EXECUTION.md) isolated the
-blocker to the gateway's connection to the pod after successful key authentication.
-The fresh pilot remains unrun; the frozen inputs and all retained records are preserved.
+Candidate coverage and judgment errors need a bounded follow-up before expansion.
+See [compact fresh results](artifacts/stage2/pilot-v1),
+[figures](artifacts/stage2/pilot-figures), [frozen protocol](docs/stage2-protocol.md),
+[provisional annotation review](data/pilot/annotation-review.csv), and
+[reproduction commands](docs/stage2-running.md). No further GPU stage is running.
+The [historical CPU-only report](reports/STAGE2_CONTROLLED_PILOT.md) and
+[earlier access failure](reports/STAGE2_GPU_ACCESS_ATTEMPT_20260912.md) are preserved;
+their four historical smoke cases are separate from the fresh pilot.

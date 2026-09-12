@@ -1,0 +1,2915 @@
+{
+  "schedule_policy": "No journey timetables or full prompts; hashes and run-relative pointers support retrieval from authorized raw storage.",
+  "selection_rule": "First lexicographic named condition from diagnostic-summary, plus every D/E-divergent bundle and every bundle whose model/oracle final correctness differs. Includes useful, harmful and unchanged outcomes.",
+  "traces": [
+    {
+      "bundle_path": "bundles/pilot-00-r0.json",
+      "candidates": [
+        {
+          "aliases": [
+            "c0",
+            "c3"
+          ],
+          "candidate_id": "c0",
+          "formula": {
+            "children": [
+              {
+                "kind": "atom",
+                "op": "depart_ge",
+                "scope": "outbound",
+                "source": null,
+                "unit": "seconds",
+                "value": 30177
+              },
+              {
+                "kind": "atom",
+                "op": "arrive_by",
+                "scope": "outbound",
+                "source": null,
+                "unit": "seconds",
+                "value": 35425
+              }
+            ],
+            "kind": "all",
+            "source": null
+          },
+          "plan": {
+            "plan_id": "0e81a91bb035a1d8574d",
+            "reason": null,
+            "solver_seconds": 0.11330406693741679,
+            "status": "satisfiable"
+          }
+        },
+        {
+          "aliases": [
+            "c1"
+          ],
+          "candidate_id": "c1",
+          "formula": {
+            "children": [
+              {
+                "kind": "atom",
+                "op": "depart_ge",
+                "scope": "outbound",
+                "source": null,
+                "unit": "seconds",
+                "value": 302517
+              },
+              {
+                "kind": "atom",
+                "op": "arrive_by",
+                "scope": "outbound",
+                "source": null,
+                "unit": "seconds",
+                "value": 354025
+              }
+            ],
+            "kind": "all",
+            "source": null
+          },
+          "plan": {
+            "plan_id": null,
+            "reason": null,
+            "solver_seconds": 0.0020295660942792892,
+            "status": "infeasible_in_pool"
+          }
+        },
+        {
+          "aliases": [
+            "c2"
+          ],
+          "candidate_id": "c2",
+          "formula": {
+            "children": [
+              {
+                "kind": "atom",
+                "op": "depart_ge",
+                "scope": "outbound",
+                "source": null,
+                "unit": "seconds",
+                "value": 30097
+              },
+              {
+                "kind": "atom",
+                "op": "arrive_by",
+                "scope": "outbound",
+                "source": null,
+                "unit": "seconds",
+                "value": 34202
+              }
+            ],
+            "kind": "all",
+            "source": null
+          },
+          "plan": {
+            "plan_id": "0e81a91bb035a1d8574d",
+            "reason": null,
+            "solver_seconds": 0.0056725849863141775,
+            "status": "satisfiable"
+          }
+        }
+      ],
+      "diagnostic_reference_equivalent_ids": [],
+      "model_outputs": {
+        "D": {
+          "0": {
+            "category": "correct_feasible_plan",
+            "correct": true,
+            "plan_id": "0e81a91bb035a1d8574d",
+            "status": "satisfiable",
+            "witnesses": []
+          },
+          "1": {
+            "category": "correct_feasible_plan",
+            "correct": true,
+            "plan_id": "0e81a91bb035a1d8574d",
+            "status": "satisfiable",
+            "witnesses": [
+              "002ee67351572c9abe93"
+            ]
+          },
+          "2": {
+            "category": "correct_feasible_plan",
+            "correct": true,
+            "plan_id": "0e81a91bb035a1d8574d",
+            "status": "satisfiable",
+            "witnesses": [
+              "002ee67351572c9abe93"
+            ]
+          },
+          "4": {
+            "category": "correct_feasible_plan",
+            "correct": true,
+            "plan_id": "0e81a91bb035a1d8574d",
+            "status": "satisfiable",
+            "witnesses": [
+              "002ee67351572c9abe93"
+            ]
+          }
+        },
+        "E": {
+          "0": {
+            "category": "correct_feasible_plan",
+            "correct": true,
+            "plan_id": "0e81a91bb035a1d8574d",
+            "status": "satisfiable",
+            "witnesses": []
+          },
+          "1": {
+            "category": "correct_feasible_plan",
+            "correct": true,
+            "plan_id": "0e81a91bb035a1d8574d",
+            "status": "satisfiable",
+            "witnesses": [
+              "00b30b64cd73de674651"
+            ]
+          },
+          "2": {
+            "category": "correct_feasible_plan",
+            "correct": true,
+            "plan_id": "0e81a91bb035a1d8574d",
+            "status": "satisfiable",
+            "witnesses": [
+              "00b30b64cd73de674651",
+              "002ee67351572c9abe93"
+            ]
+          },
+          "4": {
+            "category": "correct_feasible_plan",
+            "correct": true,
+            "plan_id": "0e81a91bb035a1d8574d",
+            "status": "satisfiable",
+            "witnesses": [
+              "00b30b64cd73de674651",
+              "002ee67351572c9abe93"
+            ]
+          }
+        }
+      },
+      "oracle_outputs": {
+        "D": {
+          "0": {
+            "category": "correct_feasible_plan",
+            "correct": true,
+            "plan_id": "0e81a91bb035a1d8574d",
+            "status": "satisfiable",
+            "witnesses": []
+          },
+          "1": {
+            "category": "correct_feasible_plan",
+            "correct": true,
+            "plan_id": "0e81a91bb035a1d8574d",
+            "status": "satisfiable",
+            "witnesses": [
+              "002ee67351572c9abe93"
+            ]
+          },
+          "2": {
+            "category": "correct_feasible_plan",
+            "correct": true,
+            "plan_id": "0e81a91bb035a1d8574d",
+            "status": "satisfiable",
+            "witnesses": [
+              "002ee67351572c9abe93"
+            ]
+          },
+          "4": {
+            "category": "correct_feasible_plan",
+            "correct": true,
+            "plan_id": "0e81a91bb035a1d8574d",
+            "status": "satisfiable",
+            "witnesses": [
+              "002ee67351572c9abe93"
+            ]
+          }
+        },
+        "E": {
+          "0": {
+            "category": "correct_feasible_plan",
+            "correct": true,
+            "plan_id": "0e81a91bb035a1d8574d",
+            "status": "satisfiable",
+            "witnesses": []
+          },
+          "1": {
+            "category": "correct_feasible_plan",
+            "correct": true,
+            "plan_id": "0e81a91bb035a1d8574d",
+            "status": "satisfiable",
+            "witnesses": [
+              "00b30b64cd73de674651"
+            ]
+          },
+          "2": {
+            "category": "correct_feasible_plan",
+            "correct": true,
+            "plan_id": "0e81a91bb035a1d8574d",
+            "status": "satisfiable",
+            "witnesses": [
+              "00b30b64cd73de674651",
+              "002ee67351572c9abe93"
+            ]
+          },
+          "4": {
+            "category": "correct_feasible_plan",
+            "correct": true,
+            "plan_id": "0e81a91bb035a1d8574d",
+            "status": "satisfiable",
+            "witnesses": [
+              "00b30b64cd73de674651",
+              "002ee67351572c9abe93"
+            ]
+          }
+        }
+      },
+      "pool_hash": "c53b84e1e09cbb6bc1cd6908fc121b35d0bf86d927a738d40e141a493d3b400a",
+      "replicate": 0,
+      "request": "On 2026-09-14, plan the outbound journey from NW 5th & Davis [stop_id=9301] to SW 5th & Columbia [stop_id=7594]. Depart no earlier than 08:25:17 and arrive by 09:30:25, both inclusive.",
+      "scenario_id": "pilot-00",
+      "steps": {
+        "D": [
+          {
+            "active_after": [
+              "c0"
+            ],
+            "active_before": [
+              "c0",
+              "c1",
+              "c2"
+            ],
+            "call_key": "bfe35ad77654c28c2a434c55d837e07d5026b7809311b9b11e15494938833ca0",
+            "chosen_plan_after": "0e81a91bb035a1d8574d",
+            "chosen_plan_before": "0e81a91bb035a1d8574d",
+            "cited_request_text": [
+              "On 20"
+            ],
+            "correct": true,
+            "journey_id": "002ee67351572c9abe93",
+            "judgment_correct": true,
+            "prompt_hash": "b76494b2e747e8f7b29e3602c2359dabdb34e7b3e8c3ec557e7d670c34417ec3",
+            "query_index": 1,
+            "reason": "Journey meets all specified requirements including departure and arrival times, stops, and number of transfers.",
+            "reference_equivalent_candidates_removed": [],
+            "reference_label": true,
+            "removed_candidates": [
+              "c1",
+              "c2"
+            ],
+            "replicate": 0,
+            "scenario_id": "pilot-00",
+            "selected_score": 2.0,
+            "separated_pairs": [
+              [
+                "c0",
+                "c1",
+                1
+              ],
+              [
+                "c0",
+                "c2",
+                0
+              ]
+            ],
+            "spans": [
+              {
+                "end": 5,
+                "start": 0
+              }
+            ],
+            "supporting_spans": [
+              {
+                "end": 5,
+                "start": 0
+              }
+            ],
+            "verdict": "satisfied"
+          }
+        ],
+        "E": [
+          {
+            "active_after": [
+              "c0",
+              "c2"
+            ],
+            "active_before": [
+              "c0",
+              "c1",
+              "c2"
+            ],
+            "call_key": "8733f9ff954990036b519cec37f85a90b2b25afe46a238d43c8e1e92ae56c5f8",
+            "chosen_plan_after": "0e81a91bb035a1d8574d",
+            "chosen_plan_before": "0e81a91bb035a1d8574d",
+            "cited_request_text": [
+              "On 20"
+            ],
+            "correct": true,
+            "journey_id": "00b30b64cd73de674651",
+            "judgment_correct": true,
+            "prompt_hash": "6e6f699ad5288c950ec2203a8f676f8b1cdb037ae5e175c363ecf9f5e4b0cb2d",
+            "query_index": 1,
+            "reason": "Journey meets all specified requirements including departure time, arrival time, and stops.",
+            "reference_equivalent_candidates_removed": [],
+            "reference_label": true,
+            "removed_candidates": [
+              "c1"
+            ],
+            "replicate": 0,
+            "scenario_id": "pilot-00",
+            "selected_score": 4.0,
+            "separated_pairs": [
+              [
+                "c0",
+                "c1",
+                1
+              ],
+              [
+                "c1",
+                "c2",
+                1
+              ]
+            ],
+            "spans": [
+              {
+                "end": 5,
+                "start": 0
+              }
+            ],
+            "supporting_spans": [
+              {
+                "end": 5,
+                "start": 0
+              }
+            ],
+            "verdict": "satisfied"
+          },
+          {
+            "active_after": [
+              "c0"
+            ],
+            "active_before": [
+              "c0",
+              "c2"
+            ],
+            "call_key": "bfe35ad77654c28c2a434c55d837e07d5026b7809311b9b11e15494938833ca0",
+            "chosen_plan_after": "0e81a91bb035a1d8574d",
+            "chosen_plan_before": "0e81a91bb035a1d8574d",
+            "cited_request_text": [
+              "On 20"
+            ],
+            "correct": true,
+            "journey_id": "002ee67351572c9abe93",
+            "judgment_correct": true,
+            "prompt_hash": "b76494b2e747e8f7b29e3602c2359dabdb34e7b3e8c3ec557e7d670c34417ec3",
+            "query_index": 2,
+            "reason": "Journey meets all specified requirements including departure and arrival times, stops, and number of transfers.",
+            "reference_equivalent_candidates_removed": [],
+            "reference_label": true,
+            "removed_candidates": [
+              "c2"
+            ],
+            "replicate": 0,
+            "scenario_id": "pilot-00",
+            "selected_score": 1.0,
+            "separated_pairs": [
+              [
+                "c0",
+                "c2",
+                0
+              ]
+            ],
+            "spans": [
+              {
+                "end": 5,
+                "start": 0
+              }
+            ],
+            "supporting_spans": [
+              {
+                "end": 5,
+                "start": 0
+              }
+            ],
+            "verdict": "satisfied"
+          }
+        ]
+      }
+    },
+    {
+      "bundle_path": "bundles/pilot-02-r0.json",
+      "candidates": [
+        {
+          "aliases": [
+            "c0",
+            "c1",
+            "c2",
+            "c3"
+          ],
+          "candidate_id": "c0",
+          "formula": {
+            "children": [
+              {
+                "kind": "atom",
+                "op": "depart_ge",
+                "scope": "outbound",
+                "source": null,
+                "unit": "seconds",
+                "value": 25200
+              },
+              {
+                "kind": "atom",
+                "op": "arrive_by",
+                "scope": "outbound",
+                "source": null,
+                "unit": "seconds",
+                "value": 36000
+              },
+              {
+                "kind": "atom",
+                "op": "permit_modes",
+                "scope": "outbound",
+                "source": null,
+                "unit": "mode",
+                "value": [
+                  "bus"
+                ]
+              },
+              {
+                "kind": "atom",
+                "op": "visits",
+                "scope": "outbound",
+                "source": null,
+                "unit": "stop_id",
+                "value": [
+                  "10491",
+                  "11492",
+                  "13780"
+                ]
+              },
+              {
+                "kind": "atom",
+                "op": "max_transfers",
+                "scope": "outbound",
+                "source": null,
+                "unit": "count",
+                "value": 2
+              }
+            ],
+            "kind": "all",
+            "source": null
+          },
+          "plan": {
+            "plan_id": null,
+            "reason": null,
+            "solver_seconds": 0.007214928045868874,
+            "status": "infeasible_in_pool"
+          }
+        }
+      ],
+      "diagnostic_reference_equivalent_ids": [],
+      "model_outputs": {
+        "D": {
+          "0": {
+            "category": "false_infeasibility",
+            "correct": false,
+            "plan_id": null,
+            "status": "infeasible_in_pool",
+            "witnesses": []
+          },
+          "1": {
+            "category": "false_infeasibility",
+            "correct": false,
+            "plan_id": null,
+            "status": "infeasible_in_pool",
+            "witnesses": []
+          },
+          "2": {
+            "category": "false_infeasibility",
+            "correct": false,
+            "plan_id": null,
+            "status": "infeasible_in_pool",
+            "witnesses": []
+          },
+          "4": {
+            "category": "false_infeasibility",
+            "correct": false,
+            "plan_id": null,
+            "status": "infeasible_in_pool",
+            "witnesses": []
+          }
+        },
+        "E": {
+          "0": {
+            "category": "false_infeasibility",
+            "correct": false,
+            "plan_id": null,
+            "status": "infeasible_in_pool",
+            "witnesses": []
+          },
+          "1": {
+            "category": "false_infeasibility",
+            "correct": false,
+            "plan_id": null,
+            "status": "infeasible_in_pool",
+            "witnesses": []
+          },
+          "2": {
+            "category": "false_infeasibility",
+            "correct": false,
+            "plan_id": null,
+            "status": "infeasible_in_pool",
+            "witnesses": []
+          },
+          "4": {
+            "category": "false_infeasibility",
+            "correct": false,
+            "plan_id": null,
+            "status": "infeasible_in_pool",
+            "witnesses": []
+          }
+        }
+      },
+      "oracle_outputs": {
+        "D": {
+          "0": {
+            "category": "false_infeasibility",
+            "correct": false,
+            "plan_id": null,
+            "status": "infeasible_in_pool",
+            "witnesses": []
+          },
+          "1": {
+            "category": "false_infeasibility",
+            "correct": false,
+            "plan_id": null,
+            "status": "infeasible_in_pool",
+            "witnesses": []
+          },
+          "2": {
+            "category": "false_infeasibility",
+            "correct": false,
+            "plan_id": null,
+            "status": "infeasible_in_pool",
+            "witnesses": []
+          },
+          "4": {
+            "category": "false_infeasibility",
+            "correct": false,
+            "plan_id": null,
+            "status": "infeasible_in_pool",
+            "witnesses": []
+          }
+        },
+        "E": {
+          "0": {
+            "category": "false_infeasibility",
+            "correct": false,
+            "plan_id": null,
+            "status": "infeasible_in_pool",
+            "witnesses": []
+          },
+          "1": {
+            "category": "false_infeasibility",
+            "correct": false,
+            "plan_id": null,
+            "status": "infeasible_in_pool",
+            "witnesses": []
+          },
+          "2": {
+            "category": "false_infeasibility",
+            "correct": false,
+            "plan_id": null,
+            "status": "infeasible_in_pool",
+            "witnesses": []
+          },
+          "4": {
+            "category": "false_infeasibility",
+            "correct": false,
+            "plan_id": null,
+            "status": "infeasible_in_pool",
+            "witnesses": []
+          }
+        }
+      },
+      "pool_hash": "f076776d1f465fb8ab317f6cfb920ea42e1c3b149acf790c068bdae559cd65ef",
+      "replicate": 0,
+      "request": "On 2026-09-14, plan the outbound journey from South Waterfront/S Moody [stop_id=13733] to NW Everett & 5th [stop_id=8886]. Call at stop 3398 and then stop 13780, in that order; remaining aboard counts. Use only buses.",
+      "scenario_id": "pilot-02",
+      "steps": {
+        "D": [],
+        "E": []
+      }
+    },
+    {
+      "bundle_path": "bundles/pilot-12-r0.json",
+      "candidates": [
+        {
+          "aliases": [
+            "c0"
+          ],
+          "candidate_id": "c0",
+          "formula": {
+            "children": [
+              {
+                "kind": "atom",
+                "op": "depart_ge",
+                "scope": "outbound",
+                "source": null,
+                "unit": "seconds",
+                "value": 114000
+              },
+              {
+                "kind": "atom",
+                "op": "visits",
+                "scope": "outbound",
+                "source": null,
+                "unit": "stop_id",
+                "value": [
+                  "13773",
+                  "13733",
+                  "3398"
+                ]
+              },
+              {
+                "kind": "atom",
+                "op": "permit_modes",
+                "scope": "outbound",
+                "source": null,
+                "unit": "mode",
+                "value": [
+                  "bus"
+                ]
+              }
+            ],
+            "kind": "all",
+            "source": null
+          },
+          "plan": {
+            "plan_id": null,
+            "reason": null,
+            "solver_seconds": 0.0041386340744793415,
+            "status": "infeasible_in_pool"
+          }
+        },
+        {
+          "aliases": [
+            "c1"
+          ],
+          "candidate_id": "c1",
+          "formula": {
+            "children": [
+              {
+                "kind": "atom",
+                "op": "depart_ge",
+                "scope": "outbound",
+                "source": null,
+                "unit": "seconds",
+                "value": 19200
+              },
+              {
+                "kind": "atom",
+                "op": "visits",
+                "scope": "outbound",
+                "source": null,
+                "unit": "stop_id",
+                "value": [
+                  "13773",
+                  "13733",
+                  "3398"
+                ]
+              },
+              {
+                "kind": "atom",
+                "op": "permit_modes",
+                "scope": "outbound",
+                "source": null,
+                "unit": "mode",
+                "value": [
+                  "bus"
+                ]
+              }
+            ],
+            "kind": "all",
+            "source": null
+          },
+          "plan": {
+            "plan_id": "071622abdc3532fc0b1e",
+            "reason": null,
+            "solver_seconds": 0.010436862939968705,
+            "status": "satisfiable"
+          }
+        }
+      ],
+      "diagnostic_reference_equivalent_ids": [
+        "c1"
+      ],
+      "model_outputs": {
+        "D": {
+          "0": {
+            "category": "false_infeasibility",
+            "correct": false,
+            "plan_id": null,
+            "status": "infeasible_in_pool",
+            "witnesses": []
+          },
+          "1": {
+            "category": "correct_feasible_plan",
+            "correct": true,
+            "plan_id": "071622abdc3532fc0b1e",
+            "status": "satisfiable",
+            "witnesses": [
+              "00569e99bfadb44b56e3"
+            ]
+          },
+          "2": {
+            "category": "correct_feasible_plan",
+            "correct": true,
+            "plan_id": "071622abdc3532fc0b1e",
+            "status": "satisfiable",
+            "witnesses": [
+              "00569e99bfadb44b56e3"
+            ]
+          },
+          "4": {
+            "category": "correct_feasible_plan",
+            "correct": true,
+            "plan_id": "071622abdc3532fc0b1e",
+            "status": "satisfiable",
+            "witnesses": [
+              "00569e99bfadb44b56e3"
+            ]
+          }
+        },
+        "E": {
+          "0": {
+            "category": "false_infeasibility",
+            "correct": false,
+            "plan_id": null,
+            "status": "infeasible_in_pool",
+            "witnesses": []
+          },
+          "1": {
+            "category": "correct_feasible_plan",
+            "correct": true,
+            "plan_id": "071622abdc3532fc0b1e",
+            "status": "satisfiable",
+            "witnesses": [
+              "00569e99bfadb44b56e3"
+            ]
+          },
+          "2": {
+            "category": "correct_feasible_plan",
+            "correct": true,
+            "plan_id": "071622abdc3532fc0b1e",
+            "status": "satisfiable",
+            "witnesses": [
+              "00569e99bfadb44b56e3"
+            ]
+          },
+          "4": {
+            "category": "correct_feasible_plan",
+            "correct": true,
+            "plan_id": "071622abdc3532fc0b1e",
+            "status": "satisfiable",
+            "witnesses": [
+              "00569e99bfadb44b56e3"
+            ]
+          }
+        }
+      },
+      "oracle_outputs": {
+        "D": {
+          "0": {
+            "category": "false_infeasibility",
+            "correct": false,
+            "plan_id": null,
+            "status": "infeasible_in_pool",
+            "witnesses": []
+          },
+          "1": {
+            "category": "correct_feasible_plan",
+            "correct": true,
+            "plan_id": "071622abdc3532fc0b1e",
+            "status": "satisfiable",
+            "witnesses": [
+              "00569e99bfadb44b56e3"
+            ]
+          },
+          "2": {
+            "category": "correct_feasible_plan",
+            "correct": true,
+            "plan_id": "071622abdc3532fc0b1e",
+            "status": "satisfiable",
+            "witnesses": [
+              "00569e99bfadb44b56e3"
+            ]
+          },
+          "4": {
+            "category": "correct_feasible_plan",
+            "correct": true,
+            "plan_id": "071622abdc3532fc0b1e",
+            "status": "satisfiable",
+            "witnesses": [
+              "00569e99bfadb44b56e3"
+            ]
+          }
+        },
+        "E": {
+          "0": {
+            "category": "false_infeasibility",
+            "correct": false,
+            "plan_id": null,
+            "status": "infeasible_in_pool",
+            "witnesses": []
+          },
+          "1": {
+            "category": "correct_feasible_plan",
+            "correct": true,
+            "plan_id": "071622abdc3532fc0b1e",
+            "status": "satisfiable",
+            "witnesses": [
+              "00569e99bfadb44b56e3"
+            ]
+          },
+          "2": {
+            "category": "correct_feasible_plan",
+            "correct": true,
+            "plan_id": "071622abdc3532fc0b1e",
+            "status": "satisfiable",
+            "witnesses": [
+              "00569e99bfadb44b56e3"
+            ]
+          },
+          "4": {
+            "category": "correct_feasible_plan",
+            "correct": true,
+            "plan_id": "071622abdc3532fc0b1e",
+            "status": "satisfiable",
+            "witnesses": [
+              "00569e99bfadb44b56e3"
+            ]
+          }
+        }
+      },
+      "pool_hash": "7a7eb1471fb83f96e022fb6b4977c72c3ed3f44e8c04e0d2fe15f2e404b26b14",
+      "replicate": 0,
+      "request": "On 2026-09-14, plan the outbound journey from OMSI/SE Water [stop_id=13773] to SW 6th & Harvey Milk [stop_id=7797]. Call at stop 13733 and then stop 3398, in that order; remaining aboard counts. Use only buses.",
+      "scenario_id": "pilot-12",
+      "steps": {
+        "D": [
+          {
+            "active_after": [
+              "c1"
+            ],
+            "active_before": [
+              "c0",
+              "c1"
+            ],
+            "call_key": "7cff1d6ae7b63efd54db96721bfa7865309f4653348586f6b90e37b15ccf0a2d",
+            "chosen_plan_after": "071622abdc3532fc0b1e",
+            "chosen_plan_before": null,
+            "cited_request_text": [
+              "On 20"
+            ],
+            "correct": true,
+            "journey_id": "00569e99bfadb44b56e3",
+            "judgment_correct": true,
+            "prompt_hash": "2888161994c4564a7f66879db8e2a31b2eaaf14cdb0b334de764c19e88c5ad1e",
+            "query_index": 1,
+            "reason": "The concrete journey meets all specified requirements including the correct sequence of stops and the use of buses.",
+            "reference_equivalent_candidates_removed": [],
+            "reference_label": true,
+            "removed_candidates": [
+              "c0"
+            ],
+            "replicate": 0,
+            "scenario_id": "pilot-12",
+            "selected_score": 1.0,
+            "separated_pairs": [
+              [
+                "c0",
+                "c1",
+                1
+              ]
+            ],
+            "spans": [
+              {
+                "end": 5,
+                "start": 0
+              }
+            ],
+            "supporting_spans": [
+              {
+                "end": 5,
+                "start": 0
+              }
+            ],
+            "verdict": "satisfied"
+          }
+        ],
+        "E": [
+          {
+            "active_after": [
+              "c1"
+            ],
+            "active_before": [
+              "c0",
+              "c1"
+            ],
+            "call_key": "7cff1d6ae7b63efd54db96721bfa7865309f4653348586f6b90e37b15ccf0a2d",
+            "chosen_plan_after": "071622abdc3532fc0b1e",
+            "chosen_plan_before": null,
+            "cited_request_text": [
+              "On 20"
+            ],
+            "correct": true,
+            "journey_id": "00569e99bfadb44b56e3",
+            "judgment_correct": true,
+            "prompt_hash": "2888161994c4564a7f66879db8e2a31b2eaaf14cdb0b334de764c19e88c5ad1e",
+            "query_index": 1,
+            "reason": "The concrete journey meets all specified requirements including the correct sequence of stops and the use of buses.",
+            "reference_equivalent_candidates_removed": [],
+            "reference_label": true,
+            "removed_candidates": [
+              "c0"
+            ],
+            "replicate": 0,
+            "scenario_id": "pilot-12",
+            "selected_score": 2.0,
+            "separated_pairs": [
+              [
+                "c0",
+                "c1",
+                1
+              ]
+            ],
+            "spans": [
+              {
+                "end": 5,
+                "start": 0
+              }
+            ],
+            "supporting_spans": [
+              {
+                "end": 5,
+                "start": 0
+              }
+            ],
+            "verdict": "satisfied"
+          }
+        ]
+      }
+    },
+    {
+      "bundle_path": "bundles/pilot-14-r0.json",
+      "candidates": [
+        {
+          "aliases": [
+            "c0",
+            "c3"
+          ],
+          "candidate_id": "c0",
+          "formula": {
+            "children": [
+              {
+                "kind": "atom",
+                "op": "depart_ge",
+                "scope": "outbound",
+                "source": null,
+                "unit": "seconds",
+                "value": 26546
+              },
+              {
+                "kind": "atom",
+                "op": "max_transfers",
+                "scope": "outbound",
+                "source": null,
+                "unit": "count",
+                "value": 1
+              },
+              {
+                "kind": "atom",
+                "op": "exclude_modes",
+                "scope": "outbound",
+                "source": null,
+                "unit": "mode",
+                "value": [
+                  "rail",
+                  "tram"
+                ]
+              }
+            ],
+            "kind": "all",
+            "source": null
+          },
+          "plan": {
+            "plan_id": "061bb2461d52e2b76732",
+            "reason": null,
+            "solver_seconds": 0.008832131046801805,
+            "status": "satisfiable"
+          }
+        },
+        {
+          "aliases": [
+            "c1"
+          ],
+          "candidate_id": "c1",
+          "formula": {
+            "children": [
+              {
+                "kind": "atom",
+                "op": "depart_ge",
+                "scope": "outbound",
+                "source": null,
+                "unit": "seconds",
+                "value": 26204
+              },
+              {
+                "kind": "atom",
+                "op": "max_transfers",
+                "scope": "outbound",
+                "source": null,
+                "unit": "count",
+                "value": 1
+              },
+              {
+                "kind": "atom",
+                "op": "exclude_modes",
+                "scope": "outbound",
+                "source": null,
+                "unit": "mode",
+                "value": [
+                  "tram",
+                  "rail"
+                ]
+              }
+            ],
+            "kind": "all",
+            "source": null
+          },
+          "plan": {
+            "plan_id": "0dd63fc6b97ab5ce394b",
+            "reason": null,
+            "solver_seconds": 0.008421377977356315,
+            "status": "satisfiable"
+          }
+        },
+        {
+          "aliases": [
+            "c2"
+          ],
+          "candidate_id": "c2",
+          "formula": {
+            "children": [
+              {
+                "kind": "atom",
+                "op": "depart_ge",
+                "scope": "outbound",
+                "source": null,
+                "unit": "seconds",
+                "value": 262814
+              },
+              {
+                "kind": "atom",
+                "op": "max_transfers",
+                "scope": "outbound",
+                "source": null,
+                "unit": "count",
+                "value": 1
+              },
+              {
+                "kind": "atom",
+                "op": "exclude_modes",
+                "scope": "outbound",
+                "source": null,
+                "unit": "mode",
+                "value": [
+                  "rail",
+                  "tram"
+                ]
+              }
+            ],
+            "kind": "all",
+            "source": null
+          },
+          "plan": {
+            "plan_id": null,
+            "reason": null,
+            "solver_seconds": 0.0035507490392774343,
+            "status": "infeasible_in_pool"
+          }
+        }
+      ],
+      "diagnostic_reference_equivalent_ids": [],
+      "model_outputs": {
+        "D": {
+          "0": {
+            "category": "correct_feasible_plan",
+            "correct": true,
+            "plan_id": "061bb2461d52e2b76732",
+            "status": "satisfiable",
+            "witnesses": []
+          },
+          "1": {
+            "category": "false_infeasibility",
+            "correct": false,
+            "plan_id": null,
+            "status": "infeasible_in_pool",
+            "witnesses": [
+              "00313f83f4fcde9dd706"
+            ]
+          },
+          "2": {
+            "category": "false_infeasibility",
+            "correct": false,
+            "plan_id": null,
+            "status": "infeasible_in_pool",
+            "witnesses": [
+              "00313f83f4fcde9dd706"
+            ]
+          },
+          "4": {
+            "category": "false_infeasibility",
+            "correct": false,
+            "plan_id": null,
+            "status": "infeasible_in_pool",
+            "witnesses": [
+              "00313f83f4fcde9dd706"
+            ]
+          }
+        },
+        "E": {
+          "0": {
+            "category": "correct_feasible_plan",
+            "correct": true,
+            "plan_id": "061bb2461d52e2b76732",
+            "status": "satisfiable",
+            "witnesses": []
+          },
+          "1": {
+            "category": "false_infeasibility",
+            "correct": false,
+            "plan_id": null,
+            "status": "infeasible_in_pool",
+            "witnesses": [
+              "00313f83f4fcde9dd706"
+            ]
+          },
+          "2": {
+            "category": "false_infeasibility",
+            "correct": false,
+            "plan_id": null,
+            "status": "infeasible_in_pool",
+            "witnesses": [
+              "00313f83f4fcde9dd706"
+            ]
+          },
+          "4": {
+            "category": "false_infeasibility",
+            "correct": false,
+            "plan_id": null,
+            "status": "infeasible_in_pool",
+            "witnesses": [
+              "00313f83f4fcde9dd706"
+            ]
+          }
+        }
+      },
+      "oracle_outputs": {
+        "D": {
+          "0": {
+            "category": "correct_feasible_plan",
+            "correct": true,
+            "plan_id": "061bb2461d52e2b76732",
+            "status": "satisfiable",
+            "witnesses": []
+          },
+          "1": {
+            "category": "false_infeasibility",
+            "correct": false,
+            "plan_id": null,
+            "status": "infeasible_in_pool",
+            "witnesses": [
+              "00313f83f4fcde9dd706"
+            ]
+          },
+          "2": {
+            "category": "false_infeasibility",
+            "correct": false,
+            "plan_id": null,
+            "status": "infeasible_in_pool",
+            "witnesses": [
+              "00313f83f4fcde9dd706"
+            ]
+          },
+          "4": {
+            "category": "false_infeasibility",
+            "correct": false,
+            "plan_id": null,
+            "status": "infeasible_in_pool",
+            "witnesses": [
+              "00313f83f4fcde9dd706"
+            ]
+          }
+        },
+        "E": {
+          "0": {
+            "category": "correct_feasible_plan",
+            "correct": true,
+            "plan_id": "061bb2461d52e2b76732",
+            "status": "satisfiable",
+            "witnesses": []
+          },
+          "1": {
+            "category": "false_infeasibility",
+            "correct": false,
+            "plan_id": null,
+            "status": "infeasible_in_pool",
+            "witnesses": [
+              "00313f83f4fcde9dd706"
+            ]
+          },
+          "2": {
+            "category": "false_infeasibility",
+            "correct": false,
+            "plan_id": null,
+            "status": "infeasible_in_pool",
+            "witnesses": [
+              "00313f83f4fcde9dd706"
+            ]
+          },
+          "4": {
+            "category": "false_infeasibility",
+            "correct": false,
+            "plan_id": null,
+            "status": "infeasible_in_pool",
+            "witnesses": [
+              "00313f83f4fcde9dd706"
+            ]
+          }
+        }
+      },
+      "pool_hash": "ca642f07b3544474128606de9af97f028c551b927c2bc3c73ee62ca32e6bbcc2",
+      "replicate": 0,
+      "request": "On 2026-09-14, plan the outbound journey from SE 7th & Tilikum Way [stop_id=13825] to SW 6th & Clay [stop_id=7756]. Do not use rail or tram. Depart no later than 07:28:14, inclusive. Make at most 1 transfers.",
+      "scenario_id": "pilot-14",
+      "steps": {
+        "D": [
+          {
+            "active_after": [
+              "c2"
+            ],
+            "active_before": [
+              "c0",
+              "c1",
+              "c2"
+            ],
+            "call_key": "38410022197658f9eb2c38fbd4d9d53e3d775cd020a6ff1636a53cd630f92d37",
+            "chosen_plan_after": null,
+            "chosen_plan_before": "061bb2461d52e2b76732",
+            "cited_request_text": [
+              "14, plan the ou",
+              "op_id=7756]. Do not use r"
+            ],
+            "correct": true,
+            "journey_id": "00313f83f4fcde9dd706",
+            "judgment_correct": true,
+            "prompt_hash": "790a68948dabaffbcddf7b941ae4215c42b5f258820e60113b5aa519d71439b5",
+            "query_index": 1,
+            "reason": "The journey exceeds the maximum of 1 transfer and departs more than 07:28:14.",
+            "reference_equivalent_candidates_removed": [],
+            "reference_label": false,
+            "removed_candidates": [
+              "c0",
+              "c1"
+            ],
+            "replicate": 0,
+            "scenario_id": "pilot-14",
+            "selected_score": 2.0,
+            "separated_pairs": [
+              [
+                "c0",
+                "c2",
+                1
+              ],
+              [
+                "c1",
+                "c2",
+                1
+              ]
+            ],
+            "spans": [
+              {
+                "end": 26,
+                "start": 11
+              },
+              {
+                "end": 128,
+                "start": 103
+              }
+            ],
+            "supporting_spans": [
+              {
+                "end": 26,
+                "start": 11
+              },
+              {
+                "end": 128,
+                "start": 103
+              }
+            ],
+            "verdict": "violated"
+          }
+        ],
+        "E": [
+          {
+            "active_after": [
+              "c2"
+            ],
+            "active_before": [
+              "c0",
+              "c1",
+              "c2"
+            ],
+            "call_key": "38410022197658f9eb2c38fbd4d9d53e3d775cd020a6ff1636a53cd630f92d37",
+            "chosen_plan_after": null,
+            "chosen_plan_before": "061bb2461d52e2b76732",
+            "cited_request_text": [
+              "14, plan the ou",
+              "op_id=7756]. Do not use r"
+            ],
+            "correct": true,
+            "journey_id": "00313f83f4fcde9dd706",
+            "judgment_correct": true,
+            "prompt_hash": "790a68948dabaffbcddf7b941ae4215c42b5f258820e60113b5aa519d71439b5",
+            "query_index": 1,
+            "reason": "The journey exceeds the maximum of 1 transfer and departs more than 07:28:14.",
+            "reference_equivalent_candidates_removed": [],
+            "reference_label": false,
+            "removed_candidates": [
+              "c0",
+              "c1"
+            ],
+            "replicate": 0,
+            "scenario_id": "pilot-14",
+            "selected_score": 4.0,
+            "separated_pairs": [
+              [
+                "c0",
+                "c2",
+                1
+              ],
+              [
+                "c1",
+                "c2",
+                1
+              ]
+            ],
+            "spans": [
+              {
+                "end": 26,
+                "start": 11
+              },
+              {
+                "end": 128,
+                "start": 103
+              }
+            ],
+            "supporting_spans": [
+              {
+                "end": 26,
+                "start": 11
+              },
+              {
+                "end": 128,
+                "start": 103
+              }
+            ],
+            "verdict": "violated"
+          }
+        ]
+      }
+    },
+    {
+      "bundle_path": "bundles/pilot-34-r0.json",
+      "candidates": [
+        {
+          "aliases": [
+            "c0"
+          ],
+          "candidate_id": "c0",
+          "formula": {
+            "children": [
+              {
+                "kind": "atom",
+                "op": "max_transfers",
+                "scope": "outbound",
+                "source": null,
+                "unit": "count",
+                "value": 1
+              },
+              {
+                "kind": "atom",
+                "op": "depart_ge",
+                "scope": "outbound",
+                "source": null,
+                "unit": "seconds",
+                "value": 3207
+              }
+            ],
+            "kind": "all",
+            "source": null
+          },
+          "plan": {
+            "plan_id": "090d964b9fb94a3803e6",
+            "reason": null,
+            "solver_seconds": 0.007284719031304121,
+            "status": "satisfiable"
+          }
+        },
+        {
+          "aliases": [
+            "c1"
+          ],
+          "candidate_id": "c1",
+          "formula": {
+            "children": [
+              {
+                "kind": "atom",
+                "op": "max_transfers",
+                "scope": "outbound",
+                "source": null,
+                "unit": "count",
+                "value": 1
+              },
+              {
+                "kind": "atom",
+                "op": "depart_ge",
+                "scope": "outbound",
+                "source": null,
+                "unit": "seconds",
+                "value": 32407
+              }
+            ],
+            "kind": "all",
+            "source": null
+          },
+          "plan": {
+            "plan_id": "28bf8b43327f7f4c74cd",
+            "reason": null,
+            "solver_seconds": 0.0046517569571733475,
+            "status": "satisfiable"
+          }
+        },
+        {
+          "aliases": [
+            "c2"
+          ],
+          "candidate_id": "c2",
+          "formula": {
+            "children": [
+              {
+                "kind": "atom",
+                "op": "max_transfers",
+                "scope": "outbound",
+                "source": null,
+                "unit": "count",
+                "value": 1
+              },
+              {
+                "kind": "atom",
+                "op": "depart_ge",
+                "scope": "outbound",
+                "source": null,
+                "unit": "seconds",
+                "value": 31647
+              }
+            ],
+            "kind": "all",
+            "source": null
+          },
+          "plan": {
+            "plan_id": "2a1df07313caf5609d17",
+            "reason": null,
+            "solver_seconds": 0.0046957868617028,
+            "status": "satisfiable"
+          }
+        },
+        {
+          "aliases": [
+            "c3"
+          ],
+          "candidate_id": "c3",
+          "formula": {
+            "children": [
+              {
+                "kind": "atom",
+                "op": "depart_ge",
+                "scope": "outbound",
+                "source": null,
+                "unit": "seconds",
+                "value": 31247
+              },
+              {
+                "kind": "atom",
+                "op": "max_transfers",
+                "scope": "outbound",
+                "source": null,
+                "unit": "count",
+                "value": 1
+              }
+            ],
+            "kind": "all",
+            "source": null
+          },
+          "plan": {
+            "plan_id": "07a6773b6185c97c2900",
+            "reason": null,
+            "solver_seconds": 0.005161840934306383,
+            "status": "satisfiable"
+          }
+        }
+      ],
+      "diagnostic_reference_equivalent_ids": [
+        "c3"
+      ],
+      "model_outputs": {
+        "D": {
+          "0": {
+            "category": "incorrect_plan",
+            "correct": false,
+            "plan_id": "090d964b9fb94a3803e6",
+            "status": "satisfiable",
+            "witnesses": []
+          },
+          "1": {
+            "category": "incorrect_plan",
+            "correct": false,
+            "plan_id": "090d964b9fb94a3803e6",
+            "status": "satisfiable",
+            "witnesses": [
+              "07a6773b6185c97c2900"
+            ]
+          },
+          "2": {
+            "category": "incorrect_plan",
+            "correct": false,
+            "plan_id": "090d964b9fb94a3803e6",
+            "status": "satisfiable",
+            "witnesses": [
+              "07a6773b6185c97c2900",
+              "004c05afb1f5827ae3be"
+            ]
+          },
+          "4": {
+            "category": "incorrect_plan",
+            "correct": false,
+            "plan_id": "090d964b9fb94a3803e6",
+            "status": "satisfiable",
+            "witnesses": [
+              "07a6773b6185c97c2900",
+              "004c05afb1f5827ae3be"
+            ]
+          }
+        },
+        "E": {
+          "0": {
+            "category": "incorrect_plan",
+            "correct": false,
+            "plan_id": "090d964b9fb94a3803e6",
+            "status": "satisfiable",
+            "witnesses": []
+          },
+          "1": {
+            "category": "incorrect_plan",
+            "correct": false,
+            "plan_id": "090d964b9fb94a3803e6",
+            "status": "satisfiable",
+            "witnesses": [
+              "07a6773b6185c97c2900"
+            ]
+          },
+          "2": {
+            "category": "incorrect_plan",
+            "correct": false,
+            "plan_id": "090d964b9fb94a3803e6",
+            "status": "satisfiable",
+            "witnesses": [
+              "07a6773b6185c97c2900",
+              "004c05afb1f5827ae3be"
+            ]
+          },
+          "4": {
+            "category": "incorrect_plan",
+            "correct": false,
+            "plan_id": "090d964b9fb94a3803e6",
+            "status": "satisfiable",
+            "witnesses": [
+              "07a6773b6185c97c2900",
+              "004c05afb1f5827ae3be"
+            ]
+          }
+        }
+      },
+      "oracle_outputs": {
+        "D": {
+          "0": {
+            "category": "incorrect_plan",
+            "correct": false,
+            "plan_id": "090d964b9fb94a3803e6",
+            "status": "satisfiable",
+            "witnesses": []
+          },
+          "1": {
+            "category": "incorrect_plan",
+            "correct": false,
+            "plan_id": "090d964b9fb94a3803e6",
+            "status": "satisfiable",
+            "witnesses": [
+              "07a6773b6185c97c2900"
+            ]
+          },
+          "2": {
+            "category": "correct_feasible_plan",
+            "correct": true,
+            "plan_id": "07a6773b6185c97c2900",
+            "status": "satisfiable",
+            "witnesses": [
+              "07a6773b6185c97c2900",
+              "004c05afb1f5827ae3be"
+            ]
+          },
+          "4": {
+            "category": "correct_feasible_plan",
+            "correct": true,
+            "plan_id": "07a6773b6185c97c2900",
+            "status": "satisfiable",
+            "witnesses": [
+              "07a6773b6185c97c2900",
+              "004c05afb1f5827ae3be"
+            ]
+          }
+        },
+        "E": {
+          "0": {
+            "category": "incorrect_plan",
+            "correct": false,
+            "plan_id": "090d964b9fb94a3803e6",
+            "status": "satisfiable",
+            "witnesses": []
+          },
+          "1": {
+            "category": "incorrect_plan",
+            "correct": false,
+            "plan_id": "090d964b9fb94a3803e6",
+            "status": "satisfiable",
+            "witnesses": [
+              "07a6773b6185c97c2900"
+            ]
+          },
+          "2": {
+            "category": "correct_feasible_plan",
+            "correct": true,
+            "plan_id": "07a6773b6185c97c2900",
+            "status": "satisfiable",
+            "witnesses": [
+              "07a6773b6185c97c2900",
+              "004c05afb1f5827ae3be"
+            ]
+          },
+          "4": {
+            "category": "correct_feasible_plan",
+            "correct": true,
+            "plan_id": "07a6773b6185c97c2900",
+            "status": "satisfiable",
+            "witnesses": [
+              "07a6773b6185c97c2900",
+              "004c05afb1f5827ae3be"
+            ]
+          }
+        }
+      },
+      "pool_hash": "43ddca1c62675a17b51bbdb3db1bea38dd32a0d9f96cc10800c6b0fff21d888f",
+      "replicate": 0,
+      "request": "On 2026-09-14, plan the outbound journey from SW 6th & W Burnside [stop_id=7751] to Rose Quarter Transit Center [stop_id=1097]. Make at most 1 transfers. Do not depart before 08:42:07.",
+      "scenario_id": "pilot-34",
+      "steps": {
+        "D": [
+          {
+            "active_after": [
+              "c0",
+              "c3"
+            ],
+            "active_before": [
+              "c0",
+              "c1",
+              "c2",
+              "c3"
+            ],
+            "call_key": "0aea36928b386e76a6074ddecc0faec3c3dfdde82d0959edfa8446bb37d9b7d8",
+            "chosen_plan_after": "090d964b9fb94a3803e6",
+            "chosen_plan_before": "090d964b9fb94a3803e6",
+            "cited_request_text": [
+              "On 20"
+            ],
+            "correct": true,
+            "journey_id": "07a6773b6185c97c2900",
+            "judgment_correct": true,
+            "prompt_hash": "79af3a66606f617b88d29f56d5bc17a0e8e74e42f6a2044a2257dcd02282bcd5",
+            "query_index": 1,
+            "reason": "The journey meets all specified requirements including the start time, destination, number of transfers, and route.",
+            "reference_equivalent_candidates_removed": [],
+            "reference_label": true,
+            "removed_candidates": [
+              "c1",
+              "c2"
+            ],
+            "replicate": 0,
+            "scenario_id": "pilot-34",
+            "selected_score": 4.0,
+            "separated_pairs": [
+              [
+                "c0",
+                "c1",
+                1
+              ],
+              [
+                "c0",
+                "c2",
+                1
+              ],
+              [
+                "c1",
+                "c3",
+                1
+              ],
+              [
+                "c2",
+                "c3",
+                1
+              ]
+            ],
+            "spans": [
+              {
+                "end": 5,
+                "start": 0
+              }
+            ],
+            "supporting_spans": [
+              {
+                "end": 5,
+                "start": 0
+              }
+            ],
+            "verdict": "satisfied"
+          },
+          {
+            "active_after": [
+              "c0"
+            ],
+            "active_before": [
+              "c0",
+              "c3"
+            ],
+            "call_key": "a2bed0f49f305ff70470b0d2d501f11ba0be310e1b37a47b58b09cff32b7a980",
+            "chosen_plan_after": "090d964b9fb94a3803e6",
+            "chosen_plan_before": "090d964b9fb94a3803e6",
+            "cited_request_text": [
+              "On 20"
+            ],
+            "correct": false,
+            "journey_id": "004c05afb1f5827ae3be",
+            "judgment_correct": false,
+            "prompt_hash": "c52089e92766e576574e9ec587993e128404e18f5881272d0ccd64e5b6c913cf",
+            "query_index": 2,
+            "reason": "The journey meets all specified requirements including the correct number of transfers, destination, and departure time.",
+            "reference_equivalent_candidates_removed": [
+              "c3"
+            ],
+            "reference_label": false,
+            "removed_candidates": [
+              "c3"
+            ],
+            "replicate": 0,
+            "scenario_id": "pilot-34",
+            "selected_score": 1.0,
+            "separated_pairs": [
+              [
+                "c0",
+                "c3",
+                1
+              ]
+            ],
+            "spans": [
+              {
+                "end": 5,
+                "start": 0
+              }
+            ],
+            "supporting_spans": [
+              {
+                "end": 5,
+                "start": 0
+              }
+            ],
+            "verdict": "satisfied"
+          }
+        ],
+        "E": [
+          {
+            "active_after": [
+              "c0",
+              "c3"
+            ],
+            "active_before": [
+              "c0",
+              "c1",
+              "c2",
+              "c3"
+            ],
+            "call_key": "0aea36928b386e76a6074ddecc0faec3c3dfdde82d0959edfa8446bb37d9b7d8",
+            "chosen_plan_after": "090d964b9fb94a3803e6",
+            "chosen_plan_before": "090d964b9fb94a3803e6",
+            "cited_request_text": [
+              "On 20"
+            ],
+            "correct": true,
+            "journey_id": "07a6773b6185c97c2900",
+            "judgment_correct": true,
+            "prompt_hash": "79af3a66606f617b88d29f56d5bc17a0e8e74e42f6a2044a2257dcd02282bcd5",
+            "query_index": 1,
+            "reason": "The journey meets all specified requirements including the start time, destination, number of transfers, and route.",
+            "reference_equivalent_candidates_removed": [],
+            "reference_label": true,
+            "removed_candidates": [
+              "c1",
+              "c2"
+            ],
+            "replicate": 0,
+            "scenario_id": "pilot-34",
+            "selected_score": 8.0,
+            "separated_pairs": [
+              [
+                "c0",
+                "c1",
+                1
+              ],
+              [
+                "c0",
+                "c2",
+                1
+              ],
+              [
+                "c1",
+                "c3",
+                1
+              ],
+              [
+                "c2",
+                "c3",
+                1
+              ]
+            ],
+            "spans": [
+              {
+                "end": 5,
+                "start": 0
+              }
+            ],
+            "supporting_spans": [
+              {
+                "end": 5,
+                "start": 0
+              }
+            ],
+            "verdict": "satisfied"
+          },
+          {
+            "active_after": [
+              "c0"
+            ],
+            "active_before": [
+              "c0",
+              "c3"
+            ],
+            "call_key": "a2bed0f49f305ff70470b0d2d501f11ba0be310e1b37a47b58b09cff32b7a980",
+            "chosen_plan_after": "090d964b9fb94a3803e6",
+            "chosen_plan_before": "090d964b9fb94a3803e6",
+            "cited_request_text": [
+              "On 20"
+            ],
+            "correct": false,
+            "journey_id": "004c05afb1f5827ae3be",
+            "judgment_correct": false,
+            "prompt_hash": "c52089e92766e576574e9ec587993e128404e18f5881272d0ccd64e5b6c913cf",
+            "query_index": 2,
+            "reason": "The journey meets all specified requirements including the correct number of transfers, destination, and departure time.",
+            "reference_equivalent_candidates_removed": [
+              "c3"
+            ],
+            "reference_label": false,
+            "removed_candidates": [
+              "c3"
+            ],
+            "replicate": 0,
+            "scenario_id": "pilot-34",
+            "selected_score": 2.0,
+            "separated_pairs": [
+              [
+                "c0",
+                "c3",
+                1
+              ]
+            ],
+            "spans": [
+              {
+                "end": 5,
+                "start": 0
+              }
+            ],
+            "supporting_spans": [
+              {
+                "end": 5,
+                "start": 0
+              }
+            ],
+            "verdict": "satisfied"
+          }
+        ]
+      }
+    },
+    {
+      "bundle_path": "bundles/pilot-37-r0.json",
+      "candidates": [
+        {
+          "aliases": [
+            "c0"
+          ],
+          "candidate_id": "c0",
+          "formula": {
+            "children": [
+              {
+                "kind": "atom",
+                "op": "depart_le",
+                "scope": "outbound",
+                "source": null,
+                "unit": "seconds",
+                "value": 31499
+              },
+              {
+                "kind": "atom",
+                "op": "max_transfers",
+                "scope": "outbound",
+                "source": null,
+                "unit": "count",
+                "value": 1
+              },
+              {
+                "kind": "atom",
+                "op": "exclude_modes",
+                "scope": "outbound",
+                "source": null,
+                "unit": "mode",
+                "value": [
+                  "rail",
+                  "tram"
+                ]
+              }
+            ],
+            "kind": "all",
+            "source": null
+          },
+          "plan": {
+            "plan_id": "4e0b535d27d1f3fa24fe",
+            "reason": null,
+            "solver_seconds": 0.008982642088085413,
+            "status": "satisfiable"
+          }
+        },
+        {
+          "aliases": [
+            "c1"
+          ],
+          "candidate_id": "c1",
+          "formula": {
+            "children": [
+              {
+                "kind": "atom",
+                "op": "depart_le",
+                "scope": "outbound",
+                "source": null,
+                "unit": "seconds",
+                "value": 32279
+              },
+              {
+                "kind": "atom",
+                "op": "max_transfers",
+                "scope": "outbound",
+                "source": null,
+                "unit": "count",
+                "value": 1
+              },
+              {
+                "kind": "atom",
+                "op": "exclude_modes",
+                "scope": "outbound",
+                "source": null,
+                "unit": "mode",
+                "value": [
+                  "rail",
+                  "tram"
+                ]
+              }
+            ],
+            "kind": "all",
+            "source": null
+          },
+          "plan": {
+            "plan_id": "4e0b535d27d1f3fa24fe",
+            "reason": null,
+            "solver_seconds": 0.008450777968391776,
+            "status": "satisfiable"
+          }
+        },
+        {
+          "aliases": [
+            "c2"
+          ],
+          "candidate_id": "c2",
+          "formula": {
+            "children": [
+              {
+                "kind": "atom",
+                "op": "depart_ge",
+                "scope": "outbound",
+                "source": null,
+                "unit": "seconds",
+                "value": 31729
+              },
+              {
+                "kind": "atom",
+                "op": "max_transfers",
+                "scope": "outbound",
+                "source": null,
+                "unit": "count",
+                "value": 1
+              },
+              {
+                "kind": "atom",
+                "op": "exclude_modes",
+                "scope": "outbound",
+                "source": null,
+                "unit": "mode",
+                "value": [
+                  "rail",
+                  "tram"
+                ]
+              }
+            ],
+            "kind": "all",
+            "source": null
+          },
+          "plan": {
+            "plan_id": "4a89a06ba5058ef4ccea",
+            "reason": null,
+            "solver_seconds": 0.006448531989008188,
+            "status": "satisfiable"
+          }
+        },
+        {
+          "aliases": [
+            "c3"
+          ],
+          "candidate_id": "c3",
+          "formula": {
+            "children": [
+              {
+                "kind": "atom",
+                "op": "depart_le",
+                "scope": "outbound",
+                "source": null,
+                "unit": "seconds",
+                "value": 32249
+              },
+              {
+                "kind": "atom",
+                "op": "max_transfers",
+                "scope": "outbound",
+                "source": null,
+                "unit": "count",
+                "value": 1
+              },
+              {
+                "kind": "atom",
+                "op": "exclude_modes",
+                "scope": "outbound",
+                "source": null,
+                "unit": "mode",
+                "value": [
+                  "rail",
+                  "tram"
+                ]
+              }
+            ],
+            "kind": "all",
+            "source": null
+          },
+          "plan": {
+            "plan_id": "4e0b535d27d1f3fa24fe",
+            "reason": null,
+            "solver_seconds": 0.008107604924589396,
+            "status": "satisfiable"
+          }
+        }
+      ],
+      "diagnostic_reference_equivalent_ids": [
+        "c1"
+      ],
+      "model_outputs": {
+        "D": {
+          "0": {
+            "category": "correct_feasible_plan",
+            "correct": true,
+            "plan_id": "4e0b535d27d1f3fa24fe",
+            "status": "satisfiable",
+            "witnesses": []
+          },
+          "1": {
+            "category": "correct_feasible_plan",
+            "correct": true,
+            "plan_id": "4e0b535d27d1f3fa24fe",
+            "status": "satisfiable",
+            "witnesses": [
+              "3ec28069888f5177b261"
+            ]
+          },
+          "2": {
+            "category": "correct_feasible_plan",
+            "correct": true,
+            "plan_id": "4e0b535d27d1f3fa24fe",
+            "status": "satisfiable",
+            "witnesses": [
+              "3ec28069888f5177b261",
+              "4a89a06ba5058ef4ccea"
+            ]
+          },
+          "4": {
+            "category": "correct_feasible_plan",
+            "correct": true,
+            "plan_id": "4e0b535d27d1f3fa24fe",
+            "status": "satisfiable",
+            "witnesses": [
+              "3ec28069888f5177b261",
+              "4a89a06ba5058ef4ccea"
+            ]
+          }
+        },
+        "E": {
+          "0": {
+            "category": "correct_feasible_plan",
+            "correct": true,
+            "plan_id": "4e0b535d27d1f3fa24fe",
+            "status": "satisfiable",
+            "witnesses": []
+          },
+          "1": {
+            "category": "correct_feasible_plan",
+            "correct": true,
+            "plan_id": "4a89a06ba5058ef4ccea",
+            "status": "satisfiable",
+            "witnesses": [
+              "022c2a4af86602d54884"
+            ]
+          },
+          "2": {
+            "category": "correct_feasible_plan",
+            "correct": true,
+            "plan_id": "4a89a06ba5058ef4ccea",
+            "status": "satisfiable",
+            "witnesses": [
+              "022c2a4af86602d54884"
+            ]
+          },
+          "4": {
+            "category": "correct_feasible_plan",
+            "correct": true,
+            "plan_id": "4a89a06ba5058ef4ccea",
+            "status": "satisfiable",
+            "witnesses": [
+              "022c2a4af86602d54884"
+            ]
+          }
+        }
+      },
+      "oracle_outputs": {
+        "D": {
+          "0": {
+            "category": "correct_feasible_plan",
+            "correct": true,
+            "plan_id": "4e0b535d27d1f3fa24fe",
+            "status": "satisfiable",
+            "witnesses": []
+          },
+          "1": {
+            "category": "correct_feasible_plan",
+            "correct": true,
+            "plan_id": "4e0b535d27d1f3fa24fe",
+            "status": "satisfiable",
+            "witnesses": [
+              "3ec28069888f5177b261"
+            ]
+          },
+          "2": {
+            "category": "correct_feasible_plan",
+            "correct": true,
+            "plan_id": "4e0b535d27d1f3fa24fe",
+            "status": "satisfiable",
+            "witnesses": [
+              "3ec28069888f5177b261",
+              "4a89a06ba5058ef4ccea"
+            ]
+          },
+          "4": {
+            "category": "correct_feasible_plan",
+            "correct": true,
+            "plan_id": "4e0b535d27d1f3fa24fe",
+            "status": "satisfiable",
+            "witnesses": [
+              "3ec28069888f5177b261",
+              "4a89a06ba5058ef4ccea"
+            ]
+          }
+        },
+        "E": {
+          "0": {
+            "category": "correct_feasible_plan",
+            "correct": true,
+            "plan_id": "4e0b535d27d1f3fa24fe",
+            "status": "satisfiable",
+            "witnesses": []
+          },
+          "1": {
+            "category": "correct_feasible_plan",
+            "correct": true,
+            "plan_id": "4e0b535d27d1f3fa24fe",
+            "status": "satisfiable",
+            "witnesses": [
+              "022c2a4af86602d54884"
+            ]
+          },
+          "2": {
+            "category": "correct_feasible_plan",
+            "correct": true,
+            "plan_id": "4e0b535d27d1f3fa24fe",
+            "status": "satisfiable",
+            "witnesses": [
+              "022c2a4af86602d54884",
+              "3ec28069888f5177b261"
+            ]
+          },
+          "4": {
+            "category": "correct_feasible_plan",
+            "correct": true,
+            "plan_id": "4e0b535d27d1f3fa24fe",
+            "status": "satisfiable",
+            "witnesses": [
+              "022c2a4af86602d54884",
+              "3ec28069888f5177b261",
+              "4a89a06ba5058ef4ccea"
+            ]
+          }
+        }
+      },
+      "pool_hash": "9bc2d140571e1567a81df8b646e656362dad210b8d6fab151e4a919d7a531c4e",
+      "replicate": 0,
+      "request": "On 2026-09-14, plan the outbound journey from NW Everett & 5th [stop_id=8886] to N Williams & NE Weidler [stop_id=11480]. Do not use rail or tram. Depart no later than 08:57:49, inclusive. Make at most 1 transfers.",
+      "scenario_id": "pilot-37",
+      "steps": {
+        "D": [
+          {
+            "active_after": [
+              "c1",
+              "c3"
+            ],
+            "active_before": [
+              "c0",
+              "c1",
+              "c2",
+              "c3"
+            ],
+            "call_key": "b1ed1c0dc312da1a81f1d94e411ad42447ddbf60909d957c9e02a8b879c62053",
+            "chosen_plan_after": "4e0b535d27d1f3fa24fe",
+            "chosen_plan_before": "4e0b535d27d1f3fa24fe",
+            "cited_request_text": [
+              "On 20",
+              "-14, ",
+              "the o",
+              "nd jo",
+              " from"
+            ],
+            "correct": true,
+            "journey_id": "3ec28069888f5177b261",
+            "judgment_correct": true,
+            "prompt_hash": "6491a155d4f9de11db8979c20734c3ddd06c665b3bb13b815944d558c891b074",
+            "query_index": 1,
+            "reason": "The journey meets all specified requirements including the correct stops, number of transfers, and departure time.",
+            "reference_equivalent_candidates_removed": [],
+            "reference_label": true,
+            "removed_candidates": [
+              "c0",
+              "c2"
+            ],
+            "replicate": 0,
+            "scenario_id": "pilot-37",
+            "selected_score": 4.0,
+            "separated_pairs": [
+              [
+                "c0",
+                "c1",
+                0
+              ],
+              [
+                "c0",
+                "c3",
+                0
+              ],
+              [
+                "c1",
+                "c2",
+                1
+              ],
+              [
+                "c2",
+                "c3",
+                2
+              ]
+            ],
+            "spans": [
+              {
+                "end": 5,
+                "start": 0
+              },
+              {
+                "end": 15,
+                "start": 10
+              },
+              {
+                "end": 25,
+                "start": 20
+              },
+              {
+                "end": 35,
+                "start": 30
+              },
+              {
+                "end": 45,
+                "start": 40
+              }
+            ],
+            "supporting_spans": [
+              {
+                "end": 5,
+                "start": 0
+              },
+              {
+                "end": 15,
+                "start": 10
+              },
+              {
+                "end": 25,
+                "start": 20
+              },
+              {
+                "end": 35,
+                "start": 30
+              },
+              {
+                "end": 45,
+                "start": 40
+              }
+            ],
+            "verdict": "satisfied"
+          },
+          {
+            "active_after": [
+              "c1"
+            ],
+            "active_before": [
+              "c1",
+              "c3"
+            ],
+            "call_key": "7e8ca9dc09f3d496975d32fe2691245193f08b16275672bc6370bafded5984c3",
+            "chosen_plan_after": "4e0b535d27d1f3fa24fe",
+            "chosen_plan_before": "4e0b535d27d1f3fa24fe",
+            "cited_request_text": [
+              "On 20"
+            ],
+            "correct": true,
+            "journey_id": "4a89a06ba5058ef4ccea",
+            "judgment_correct": true,
+            "prompt_hash": "40d436a4a64312e11c76423a6f41c7b0378204c9e4394d606361dc663689d52e",
+            "query_index": 2,
+            "reason": "The journey meets all specified requirements including the departure time, destination, and number of transfers.",
+            "reference_equivalent_candidates_removed": [],
+            "reference_label": true,
+            "removed_candidates": [
+              "c3"
+            ],
+            "replicate": 0,
+            "scenario_id": "pilot-37",
+            "selected_score": 1.0,
+            "separated_pairs": [
+              [
+                "c1",
+                "c3",
+                0
+              ]
+            ],
+            "spans": [
+              {
+                "end": 5,
+                "start": 0
+              }
+            ],
+            "supporting_spans": [
+              {
+                "end": 5,
+                "start": 0
+              }
+            ],
+            "verdict": "satisfied"
+          }
+        ],
+        "E": [
+          {
+            "active_after": [
+              "c2"
+            ],
+            "active_before": [
+              "c0",
+              "c1",
+              "c2",
+              "c3"
+            ],
+            "call_key": "efb1f4511c8639da2d18be95235755b4287add1af8ad24ae15be639cedb8fd2f",
+            "chosen_plan_after": "4a89a06ba5058ef4ccea",
+            "chosen_plan_before": "4e0b535d27d1f3fa24fe",
+            "cited_request_text": [
+              "On 20",
+              " [stop_"
+            ],
+            "correct": false,
+            "journey_id": "022c2a4af86602d54884",
+            "judgment_correct": false,
+            "prompt_hash": "a76f948ca73ef007e3abfb664a0b534ed66a81bdabd18452eb4c7f5f5f4b30c2",
+            "query_index": 1,
+            "reason": "The journey departs earlier than the requested time (07:18:49 vs 08:57:49) and exceeds the allowed 1 transfer limit (2 transfers).",
+            "reference_equivalent_candidates_removed": [
+              "c1"
+            ],
+            "reference_label": true,
+            "removed_candidates": [
+              "c0",
+              "c1",
+              "c3"
+            ],
+            "replicate": 0,
+            "scenario_id": "pilot-37",
+            "selected_score": 8.0,
+            "separated_pairs": [
+              [
+                "c0",
+                "c2",
+                2
+              ],
+              [
+                "c1",
+                "c2",
+                1
+              ],
+              [
+                "c2",
+                "c3",
+                2
+              ]
+            ],
+            "spans": [
+              {
+                "end": 5,
+                "start": 0
+              },
+              {
+                "end": 111,
+                "start": 104
+              }
+            ],
+            "supporting_spans": [
+              {
+                "end": 5,
+                "start": 0
+              },
+              {
+                "end": 111,
+                "start": 104
+              }
+            ],
+            "verdict": "violated"
+          }
+        ]
+      }
+    },
+    {
+      "bundle_path": "bundles/pilot-40-r0.json",
+      "candidates": [
+        {
+          "aliases": [
+            "c0"
+          ],
+          "candidate_id": "c0",
+          "formula": {
+            "children": [
+              {
+                "kind": "atom",
+                "op": "depart_ge",
+                "scope": "outbound",
+                "source": null,
+                "unit": "seconds",
+                "value": 32400
+              },
+              {
+                "kind": "atom",
+                "op": "max_transfers",
+                "scope": "return",
+                "source": null,
+                "unit": "count",
+                "value": 1
+              },
+              {
+                "kind": "atom",
+                "op": "depart_ge",
+                "scope": "return",
+                "source": null,
+                "unit": "seconds",
+                "value": 32760
+              }
+            ],
+            "kind": "all",
+            "source": null
+          },
+          "plan": {
+            "plan_id": null,
+            "reason": null,
+            "solver_seconds": 0.014172164024785161,
+            "status": "infeasible_in_pool"
+          }
+        },
+        {
+          "aliases": [
+            "c1",
+            "c2",
+            "c3"
+          ],
+          "candidate_id": "c1",
+          "formula": {
+            "children": [
+              {
+                "kind": "atom",
+                "op": "depart_ge",
+                "scope": "outbound",
+                "source": null,
+                "unit": "seconds",
+                "value": 3432
+              },
+              {
+                "kind": "atom",
+                "op": "max_transfers",
+                "scope": "return",
+                "source": null,
+                "unit": "count",
+                "value": 1
+              },
+              {
+                "kind": "atom",
+                "op": "depart_ge",
+                "scope": "return",
+                "source": null,
+                "unit": "seconds",
+                "value": 3240
+              }
+            ],
+            "kind": "all",
+            "source": null
+          },
+          "plan": {
+            "plan_id": "2e9a70b24d38013ed435",
+            "reason": null,
+            "solver_seconds": 0.029393424978479743,
+            "status": "satisfiable"
+          }
+        }
+      ],
+      "diagnostic_reference_equivalent_ids": [
+        "c1"
+      ],
+      "model_outputs": {
+        "D": {
+          "0": {
+            "category": "false_infeasibility",
+            "correct": false,
+            "plan_id": null,
+            "status": "infeasible_in_pool",
+            "witnesses": []
+          },
+          "1": {
+            "category": "false_infeasibility",
+            "correct": false,
+            "plan_id": null,
+            "status": "infeasible_in_pool",
+            "witnesses": [
+              "008b1d441a8449cba7fe"
+            ]
+          },
+          "2": {
+            "category": "false_infeasibility",
+            "correct": false,
+            "plan_id": null,
+            "status": "infeasible_in_pool",
+            "witnesses": [
+              "008b1d441a8449cba7fe"
+            ]
+          },
+          "4": {
+            "category": "false_infeasibility",
+            "correct": false,
+            "plan_id": null,
+            "status": "infeasible_in_pool",
+            "witnesses": [
+              "008b1d441a8449cba7fe"
+            ]
+          }
+        },
+        "E": {
+          "0": {
+            "category": "false_infeasibility",
+            "correct": false,
+            "plan_id": null,
+            "status": "infeasible_in_pool",
+            "witnesses": []
+          },
+          "1": {
+            "category": "false_infeasibility",
+            "correct": false,
+            "plan_id": null,
+            "status": "infeasible_in_pool",
+            "witnesses": [
+              "008b1d441a8449cba7fe"
+            ]
+          },
+          "2": {
+            "category": "false_infeasibility",
+            "correct": false,
+            "plan_id": null,
+            "status": "infeasible_in_pool",
+            "witnesses": [
+              "008b1d441a8449cba7fe"
+            ]
+          },
+          "4": {
+            "category": "false_infeasibility",
+            "correct": false,
+            "plan_id": null,
+            "status": "infeasible_in_pool",
+            "witnesses": [
+              "008b1d441a8449cba7fe"
+            ]
+          }
+        }
+      },
+      "oracle_outputs": {
+        "D": {
+          "0": {
+            "category": "false_infeasibility",
+            "correct": false,
+            "plan_id": null,
+            "status": "infeasible_in_pool",
+            "witnesses": []
+          },
+          "1": {
+            "category": "correct_feasible_plan",
+            "correct": true,
+            "plan_id": "2e9a70b24d38013ed435",
+            "status": "satisfiable",
+            "witnesses": [
+              "008b1d441a8449cba7fe"
+            ]
+          },
+          "2": {
+            "category": "correct_feasible_plan",
+            "correct": true,
+            "plan_id": "2e9a70b24d38013ed435",
+            "status": "satisfiable",
+            "witnesses": [
+              "008b1d441a8449cba7fe"
+            ]
+          },
+          "4": {
+            "category": "correct_feasible_plan",
+            "correct": true,
+            "plan_id": "2e9a70b24d38013ed435",
+            "status": "satisfiable",
+            "witnesses": [
+              "008b1d441a8449cba7fe"
+            ]
+          }
+        },
+        "E": {
+          "0": {
+            "category": "false_infeasibility",
+            "correct": false,
+            "plan_id": null,
+            "status": "infeasible_in_pool",
+            "witnesses": []
+          },
+          "1": {
+            "category": "correct_feasible_plan",
+            "correct": true,
+            "plan_id": "2e9a70b24d38013ed435",
+            "status": "satisfiable",
+            "witnesses": [
+              "008b1d441a8449cba7fe"
+            ]
+          },
+          "2": {
+            "category": "correct_feasible_plan",
+            "correct": true,
+            "plan_id": "2e9a70b24d38013ed435",
+            "status": "satisfiable",
+            "witnesses": [
+              "008b1d441a8449cba7fe"
+            ]
+          },
+          "4": {
+            "category": "correct_feasible_plan",
+            "correct": true,
+            "plan_id": "2e9a70b24d38013ed435",
+            "status": "satisfiable",
+            "witnesses": [
+              "008b1d441a8449cba7fe"
+            ]
+          }
+        }
+      },
+      "pool_hash": "6781b4cd02bb68212b00465fddf009b726a594fb0d197a9269d62ebca28bea6d",
+      "replicate": 0,
+      "request": "On 2026-09-14, plan the outbound journey from NW 5th & Davis [stop_id=9301] to SW 5th & Salmon [stop_id=7634]. Also plan a return segment from SW 6th & Salmon [stop_id=7789] to NW Everett & 5th [stop_id=8886] within 09:00:00–10:00:00. I handle movement between the outbound destination and return origin myself outside these journeys. On the return segment only, make at most 1 transfers. On the return segment only, depart no earlier than 09:12:00.",
+      "scenario_id": "pilot-40",
+      "steps": {
+        "D": [
+          {
+            "active_after": [
+              "c0"
+            ],
+            "active_before": [
+              "c0",
+              "c1"
+            ],
+            "call_key": "5536f365545c078aeedb3f195e64f447ff75c5a55fc01601ff7c6d614de477ad",
+            "chosen_plan_after": null,
+            "chosen_plan_before": null,
+            "cited_request_text": [
+              "lso plan a"
+            ],
+            "correct": false,
+            "journey_id": "008b1d441a8449cba7fe",
+            "judgment_correct": false,
+            "prompt_hash": "57cbd0e2b2b845cbb098a91ad179cff412140cdc9c278104b0c244564c8f3630",
+            "query_index": 1,
+            "reason": "The return segment departs at 09:42:00, which is earlier than the allowed minimum departure time of 09:12:00.",
+            "reference_equivalent_candidates_removed": [
+              "c1"
+            ],
+            "reference_label": true,
+            "removed_candidates": [
+              "c1"
+            ],
+            "replicate": 0,
+            "scenario_id": "pilot-40",
+            "selected_score": 1.0,
+            "separated_pairs": [
+              [
+                "c0",
+                "c1",
+                1
+              ]
+            ],
+            "spans": [
+              {
+                "end": 122,
+                "start": 112
+              }
+            ],
+            "supporting_spans": [
+              {
+                "end": 122,
+                "start": 112
+              }
+            ],
+            "verdict": "violated"
+          }
+        ],
+        "E": [
+          {
+            "active_after": [
+              "c0"
+            ],
+            "active_before": [
+              "c0",
+              "c1"
+            ],
+            "call_key": "5536f365545c078aeedb3f195e64f447ff75c5a55fc01601ff7c6d614de477ad",
+            "chosen_plan_after": null,
+            "chosen_plan_before": null,
+            "cited_request_text": [
+              "lso plan a"
+            ],
+            "correct": false,
+            "journey_id": "008b1d441a8449cba7fe",
+            "judgment_correct": false,
+            "prompt_hash": "57cbd0e2b2b845cbb098a91ad179cff412140cdc9c278104b0c244564c8f3630",
+            "query_index": 1,
+            "reason": "The return segment departs at 09:42:00, which is earlier than the allowed minimum departure time of 09:12:00.",
+            "reference_equivalent_candidates_removed": [
+              "c1"
+            ],
+            "reference_label": true,
+            "removed_candidates": [
+              "c1"
+            ],
+            "replicate": 0,
+            "scenario_id": "pilot-40",
+            "selected_score": 2.0,
+            "separated_pairs": [
+              [
+                "c0",
+                "c1",
+                1
+              ]
+            ],
+            "spans": [
+              {
+                "end": 122,
+                "start": 112
+              }
+            ],
+            "supporting_spans": [
+              {
+                "end": 122,
+                "start": 112
+              }
+            ],
+            "verdict": "violated"
+          }
+        ]
+      }
+    }
+  ]
+}

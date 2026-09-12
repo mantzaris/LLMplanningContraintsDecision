@@ -1,0 +1,13 @@
+{
+  "status": "verified",
+  "verified_at_utc": "2026-09-12T18:48:44.880332+00:00",
+  "storage": "existing RunPod persistent /workspace volume",
+  "local_archive": "runs/stage2-offline-analysis-v1.tar.gz",
+  "remote_archive": "/workspace/LLMplanningConstraintsStage2/preservation/stage2-offline-analysis-v1.tar.gz",
+  "sha256": "2359a710ce51874d1a1510bd328a72b953011d5ea901327fbcf8dd033d1dbb66",
+  "bytes": 1489498,
+  "files": 267,
+  "contents": "offline analysis, oracle outputs, exact replay, diagnostic outputs, logs, and committed analysis utility sources",
+  "verification": "every local archive member matched its file checksum; remote archive SHA-256 matches local",
+  "inventory": "offline-artifact-manifest.json"
+}

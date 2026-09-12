@@ -1,0 +1,83 @@
+{
+  "DE_semantic_statuses_logical": {
+    "resolved_by_model": 50,
+    "unverified": 10,
+    "unverified_no_semantic_evidence": 36
+  },
+  "actual_generations_by_purpose": {
+    "critique": {
+      "attempts": 48,
+      "input_tokens": 117675,
+      "latency_seconds": 105.3707001672592,
+      "output_tokens": 7371,
+      "successes": 48,
+      "truncated": 0
+    },
+    "judgment": {
+      "attempts": 96,
+      "input_tokens": 60920,
+      "latency_seconds": 84.55667923670262,
+      "output_tokens": 6446,
+      "successes": 96,
+      "truncated": 0
+    },
+    "repair": {
+      "attempts": 22,
+      "input_tokens": 72316,
+      "latency_seconds": 57.235362116014585,
+      "output_tokens": 3867,
+      "successes": 22,
+      "truncated": 0
+    },
+    "translation": {
+      "attempts": 192,
+      "input_tokens": 436856,
+      "latency_seconds": 412.61406198260374,
+      "output_tokens": 28407,
+      "successes": 192,
+      "truncated": 0
+    }
+  },
+  "cited_request_text_frequency_unique_calls": {
+    " 20th Ave [s": 1,
+    " [stop_": 1,
+    " from": 1,
+    " plan the o": 1,
+    "& 15th [sto": 1,
+    "-14, ": 1,
+    "14, plan the": 1,
+    "14, plan the ou": 1,
+    "4, plan the out": 1,
+    "On 20": 26,
+    "id=11486]. Do n": 1,
+    "lso plan a": 1,
+    "nd jo": 1,
+    "op_id=7756]. Do not use r": 1,
+    "the o": 1,
+    "utbou": 2
+  },
+  "every_success_output_device_cuda": true,
+  "secondary_repair_attempts": {
+    "A": {
+      "repair_attempts": 0
+    },
+    "B": {
+      "repair_attempts": 48
+    },
+    "C": {
+      "repair_attempts": 22
+    }
+  },
+  "source_evidence_limit": "Offsets are valid syntactically; relevance is not established. Repeated On 20 cites copy the prompt's example offsets.",
+  "translation_interpretation_errors": {
+    "entity_resolution_failure": 7,
+    "malformed": 5,
+    "unsupported": 20
+  },
+  "unique_DE_judgment_calls": 31,
+  "unique_DE_verdicts": {
+    "satisfied": 21,
+    "violated": 10
+  },
+  "unique_DE_wrong_judgments": 7
+}

@@ -1,0 +1,16 @@
+{
+  "amendments": [],
+  "completed_base_requests": 48,
+  "completed_pairs": 48,
+  "exclusions": [],
+  "fresh_gpu_pilot_ran": true,
+  "next_gpu_stage_launched": false,
+  "original_target_base_requests": 48,
+  "original_target_pairs": 96,
+  "reduction_rule": "frozen timing-only forecast; all 48 bases retained in original order",
+  "replicate_pairs_removed_before_judging": 48,
+  "selected_replicates": 1,
+  "selected_scope_pairs": 48,
+  "status": "complete_under_frozen_throughput_rule",
+  "unexpected_incomplete_pairs": 0
+}

@@ -1,0 +1,11 @@
+{
+  "status": "verified",
+  "verified_at_utc": "2026-09-12T18:29:53.067458+00:00",
+  "storage": "existing RunPod persistent /workspace volume",
+  "remote_archive": "/workspace/LLMplanningConstraintsStage2/stage2-pilot-v1-results.tar.gz",
+  "local_archive": "runs/stage2-pilot-v1-results.tar.gz",
+  "sha256": "1f8b63fb3e863ec9564910bfdaf8e7304b878089cb2ff7da54d964a966383871",
+  "bytes": 954381,
+  "file_count": 156,
+  "verification": "remote SHA-256 matched downloaded bytes; every local extracted file byte-matched; stage ledger extended only after exact prefix check"
+}

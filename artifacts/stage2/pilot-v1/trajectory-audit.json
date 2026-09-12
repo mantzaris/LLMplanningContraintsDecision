@@ -1,0 +1,3529 @@
+[
+  {
+    "equivalent_candidate_eliminations": 0,
+    "final_remaining_ids": [
+      "c0"
+    ],
+    "method": "D",
+    "replicate": 0,
+    "scenario_id": "pilot-00",
+    "steps": [
+      {
+        "active_after": [
+          "c0"
+        ],
+        "active_before": [
+          "c0",
+          "c1",
+          "c2"
+        ],
+        "chosen_plan_after": "0e81a91bb035a1d8574d",
+        "chosen_plan_before": "0e81a91bb035a1d8574d",
+        "journey_id": "002ee67351572c9abe93",
+        "judgment_correct": true,
+        "prompt_hash": "b76494b2e747e8f7b29e3602c2359dabdb34e7b3e8c3ec557e7d670c34417ec3",
+        "query_index": 1,
+        "reference_equivalent_candidates_removed": [],
+        "reference_label": true,
+        "removed_candidates": [
+          "c1",
+          "c2"
+        ],
+        "selected_score": 2.0,
+        "separated_pairs": [
+          [
+            "c0",
+            "c1",
+            1
+          ],
+          [
+            "c0",
+            "c2",
+            0
+          ]
+        ],
+        "supporting_spans": [
+          {
+            "end": 5,
+            "start": 0
+          }
+        ],
+        "verdict": "satisfied"
+      }
+    ],
+    "uncertain_judgments": 0,
+    "witnesses_recomputed_exactly": true,
+    "wrong_judgments": 0
+  },
+  {
+    "equivalent_candidate_eliminations": 0,
+    "final_remaining_ids": [
+      "c0"
+    ],
+    "method": "E",
+    "replicate": 0,
+    "scenario_id": "pilot-00",
+    "steps": [
+      {
+        "active_after": [
+          "c0",
+          "c2"
+        ],
+        "active_before": [
+          "c0",
+          "c1",
+          "c2"
+        ],
+        "chosen_plan_after": "0e81a91bb035a1d8574d",
+        "chosen_plan_before": "0e81a91bb035a1d8574d",
+        "journey_id": "00b30b64cd73de674651",
+        "judgment_correct": true,
+        "prompt_hash": "6e6f699ad5288c950ec2203a8f676f8b1cdb037ae5e175c363ecf9f5e4b0cb2d",
+        "query_index": 1,
+        "reference_equivalent_candidates_removed": [],
+        "reference_label": true,
+        "removed_candidates": [
+          "c1"
+        ],
+        "selected_score": 4.0,
+        "separated_pairs": [
+          [
+            "c0",
+            "c1",
+            1
+          ],
+          [
+            "c1",
+            "c2",
+            1
+          ]
+        ],
+        "supporting_spans": [
+          {
+            "end": 5,
+            "start": 0
+          }
+        ],
+        "verdict": "satisfied"
+      },
+      {
+        "active_after": [
+          "c0"
+        ],
+        "active_before": [
+          "c0",
+          "c2"
+        ],
+        "chosen_plan_after": "0e81a91bb035a1d8574d",
+        "chosen_plan_before": "0e81a91bb035a1d8574d",
+        "journey_id": "002ee67351572c9abe93",
+        "judgment_correct": true,
+        "prompt_hash": "b76494b2e747e8f7b29e3602c2359dabdb34e7b3e8c3ec557e7d670c34417ec3",
+        "query_index": 2,
+        "reference_equivalent_candidates_removed": [],
+        "reference_label": true,
+        "removed_candidates": [
+          "c2"
+        ],
+        "selected_score": 1.0,
+        "separated_pairs": [
+          [
+            "c0",
+            "c2",
+            0
+          ]
+        ],
+        "supporting_spans": [
+          {
+            "end": 5,
+            "start": 0
+          }
+        ],
+        "verdict": "satisfied"
+      }
+    ],
+    "uncertain_judgments": 0,
+    "witnesses_recomputed_exactly": true,
+    "wrong_judgments": 0
+  },
+  {
+    "equivalent_candidate_eliminations": 0,
+    "final_remaining_ids": [
+      "c0"
+    ],
+    "method": "D",
+    "replicate": 0,
+    "scenario_id": "pilot-01",
+    "steps": [
+      {
+        "active_after": [
+          "c0"
+        ],
+        "active_before": [
+          "c0",
+          "c1"
+        ],
+        "chosen_plan_after": "4f068e23d6f9f80811f2",
+        "chosen_plan_before": "4f068e23d6f9f80811f2",
+        "journey_id": "4f068e23d6f9f80811f2",
+        "judgment_correct": false,
+        "prompt_hash": "0f73590a233555ff071940000e449029e804fff4f5a1f19968966cf087f9af2f",
+        "query_index": 1,
+        "reference_equivalent_candidates_removed": [],
+        "reference_label": false,
+        "removed_candidates": [
+          "c1"
+        ],
+        "selected_score": 1.0,
+        "separated_pairs": [
+          [
+            "c0",
+            "c1",
+            1
+          ]
+        ],
+        "supporting_spans": [
+          {
+            "end": 5,
+            "start": 0
+          }
+        ],
+        "verdict": "satisfied"
+      }
+    ],
+    "uncertain_judgments": 0,
+    "witnesses_recomputed_exactly": true,
+    "wrong_judgments": 1
+  },
+  {
+    "equivalent_candidate_eliminations": 0,
+    "final_remaining_ids": [
+      "c0"
+    ],
+    "method": "E",
+    "replicate": 0,
+    "scenario_id": "pilot-01",
+    "steps": [
+      {
+        "active_after": [
+          "c0"
+        ],
+        "active_before": [
+          "c0",
+          "c1"
+        ],
+        "chosen_plan_after": "4f068e23d6f9f80811f2",
+        "chosen_plan_before": "4f068e23d6f9f80811f2",
+        "journey_id": "4f068e23d6f9f80811f2",
+        "judgment_correct": false,
+        "prompt_hash": "0f73590a233555ff071940000e449029e804fff4f5a1f19968966cf087f9af2f",
+        "query_index": 1,
+        "reference_equivalent_candidates_removed": [],
+        "reference_label": false,
+        "removed_candidates": [
+          "c1"
+        ],
+        "selected_score": 2.0,
+        "separated_pairs": [
+          [
+            "c0",
+            "c1",
+            1
+          ]
+        ],
+        "supporting_spans": [
+          {
+            "end": 5,
+            "start": 0
+          }
+        ],
+        "verdict": "satisfied"
+      }
+    ],
+    "uncertain_judgments": 0,
+    "witnesses_recomputed_exactly": true,
+    "wrong_judgments": 1
+  },
+  {
+    "equivalent_candidate_eliminations": 0,
+    "final_remaining_ids": [
+      "c0"
+    ],
+    "method": "D",
+    "replicate": 0,
+    "scenario_id": "pilot-02",
+    "steps": [],
+    "uncertain_judgments": 0,
+    "witnesses_recomputed_exactly": true,
+    "wrong_judgments": 0
+  },
+  {
+    "equivalent_candidate_eliminations": 0,
+    "final_remaining_ids": [
+      "c0"
+    ],
+    "method": "E",
+    "replicate": 0,
+    "scenario_id": "pilot-02",
+    "steps": [],
+    "uncertain_judgments": 0,
+    "witnesses_recomputed_exactly": true,
+    "wrong_judgments": 0
+  },
+  {
+    "equivalent_candidate_eliminations": 0,
+    "final_remaining_ids": [
+      "c0"
+    ],
+    "method": "D",
+    "replicate": 0,
+    "scenario_id": "pilot-03",
+    "steps": [],
+    "uncertain_judgments": 0,
+    "witnesses_recomputed_exactly": true,
+    "wrong_judgments": 0
+  },
+  {
+    "equivalent_candidate_eliminations": 0,
+    "final_remaining_ids": [
+      "c0"
+    ],
+    "method": "E",
+    "replicate": 0,
+    "scenario_id": "pilot-03",
+    "steps": [],
+    "uncertain_judgments": 0,
+    "witnesses_recomputed_exactly": true,
+    "wrong_judgments": 0
+  },
+  {
+    "equivalent_candidate_eliminations": 0,
+    "final_remaining_ids": [
+      "c0"
+    ],
+    "method": "D",
+    "replicate": 0,
+    "scenario_id": "pilot-04",
+    "steps": [
+      {
+        "active_after": [
+          "c0"
+        ],
+        "active_before": [
+          "c0",
+          "c3"
+        ],
+        "chosen_plan_after": "44325a1d6f986fbdec4c",
+        "chosen_plan_before": "44325a1d6f986fbdec4c",
+        "journey_id": "05d66e26d29815d08eac",
+        "judgment_correct": true,
+        "prompt_hash": "d7d8ca0ac7db5beb46334e61ee00041be1fe38de621f7b21810bab1820518caa",
+        "query_index": 1,
+        "reference_equivalent_candidates_removed": [],
+        "reference_label": true,
+        "removed_candidates": [
+          "c3"
+        ],
+        "selected_score": 1.0,
+        "separated_pairs": [
+          [
+            "c0",
+            "c3",
+            1
+          ]
+        ],
+        "supporting_spans": [
+          {
+            "end": 5,
+            "start": 0
+          }
+        ],
+        "verdict": "satisfied"
+      }
+    ],
+    "uncertain_judgments": 0,
+    "witnesses_recomputed_exactly": true,
+    "wrong_judgments": 0
+  },
+  {
+    "equivalent_candidate_eliminations": 0,
+    "final_remaining_ids": [
+      "c0"
+    ],
+    "method": "E",
+    "replicate": 0,
+    "scenario_id": "pilot-04",
+    "steps": [
+      {
+        "active_after": [
+          "c0"
+        ],
+        "active_before": [
+          "c0",
+          "c3"
+        ],
+        "chosen_plan_after": "44325a1d6f986fbdec4c",
+        "chosen_plan_before": "44325a1d6f986fbdec4c",
+        "journey_id": "05d66e26d29815d08eac",
+        "judgment_correct": true,
+        "prompt_hash": "d7d8ca0ac7db5beb46334e61ee00041be1fe38de621f7b21810bab1820518caa",
+        "query_index": 1,
+        "reference_equivalent_candidates_removed": [],
+        "reference_label": true,
+        "removed_candidates": [
+          "c3"
+        ],
+        "selected_score": 2.0,
+        "separated_pairs": [
+          [
+            "c0",
+            "c3",
+            1
+          ]
+        ],
+        "supporting_spans": [
+          {
+            "end": 5,
+            "start": 0
+          }
+        ],
+        "verdict": "satisfied"
+      }
+    ],
+    "uncertain_judgments": 0,
+    "witnesses_recomputed_exactly": true,
+    "wrong_judgments": 0
+  },
+  {
+    "equivalent_candidate_eliminations": 0,
+    "final_remaining_ids": [],
+    "method": "D",
+    "replicate": 0,
+    "scenario_id": "pilot-05",
+    "steps": [],
+    "uncertain_judgments": 0,
+    "witnesses_recomputed_exactly": true,
+    "wrong_judgments": 0
+  },
+  {
+    "equivalent_candidate_eliminations": 0,
+    "final_remaining_ids": [],
+    "method": "E",
+    "replicate": 0,
+    "scenario_id": "pilot-05",
+    "steps": [],
+    "uncertain_judgments": 0,
+    "witnesses_recomputed_exactly": true,
+    "wrong_judgments": 0
+  },
+  {
+    "equivalent_candidate_eliminations": 0,
+    "final_remaining_ids": [
+      "c2"
+    ],
+    "method": "D",
+    "replicate": 0,
+    "scenario_id": "pilot-06",
+    "steps": [
+      {
+        "active_after": [
+          "c0",
+          "c2"
+        ],
+        "active_before": [
+          "c0",
+          "c2",
+          "c3"
+        ],
+        "chosen_plan_after": "06a8981f38212ea1c2e1",
+        "chosen_plan_before": "06a8981f38212ea1c2e1",
+        "journey_id": "01d5cd87319e366359a7",
+        "judgment_correct": false,
+        "prompt_hash": "c0131a8caac56fc31957e6fa006480360acbce43d05005cf17b7704745d50d0e",
+        "query_index": 1,
+        "reference_equivalent_candidates_removed": [],
+        "reference_label": false,
+        "removed_candidates": [
+          "c3"
+        ],
+        "selected_score": 2.0,
+        "separated_pairs": [
+          [
+            "c0",
+            "c3",
+            2
+          ],
+          [
+            "c2",
+            "c3",
+            2
+          ]
+        ],
+        "supporting_spans": [
+          {
+            "end": 5,
+            "start": 0
+          }
+        ],
+        "verdict": "satisfied"
+      },
+      {
+        "active_after": [
+          "c2"
+        ],
+        "active_before": [
+          "c0",
+          "c2"
+        ],
+        "chosen_plan_after": "06a8981f38212ea1c2e1",
+        "chosen_plan_before": "06a8981f38212ea1c2e1",
+        "journey_id": "06b5d39e855ca24bde86",
+        "judgment_correct": false,
+        "prompt_hash": "0a64bf993cc55aea8f576edd65c98e608ce8fa1b72abe04170b3709215362729",
+        "query_index": 2,
+        "reference_equivalent_candidates_removed": [],
+        "reference_label": true,
+        "removed_candidates": [
+          "c0"
+        ],
+        "selected_score": 1.0,
+        "separated_pairs": [
+          [
+            "c0",
+            "c2",
+            0
+          ]
+        ],
+        "supporting_spans": [
+          {
+            "end": 5,
+            "start": 0
+          },
+          {
+            "end": 30,
+            "start": 25
+          }
+        ],
+        "verdict": "violated"
+      }
+    ],
+    "uncertain_judgments": 0,
+    "witnesses_recomputed_exactly": true,
+    "wrong_judgments": 2
+  },
+  {
+    "equivalent_candidate_eliminations": 0,
+    "final_remaining_ids": [
+      "c2"
+    ],
+    "method": "E",
+    "replicate": 0,
+    "scenario_id": "pilot-06",
+    "steps": [
+      {
+        "active_after": [
+          "c0",
+          "c2"
+        ],
+        "active_before": [
+          "c0",
+          "c2",
+          "c3"
+        ],
+        "chosen_plan_after": "06a8981f38212ea1c2e1",
+        "chosen_plan_before": "06a8981f38212ea1c2e1",
+        "journey_id": "01d5cd87319e366359a7",
+        "judgment_correct": false,
+        "prompt_hash": "c0131a8caac56fc31957e6fa006480360acbce43d05005cf17b7704745d50d0e",
+        "query_index": 1,
+        "reference_equivalent_candidates_removed": [],
+        "reference_label": false,
+        "removed_candidates": [
+          "c3"
+        ],
+        "selected_score": 6.0,
+        "separated_pairs": [
+          [
+            "c0",
+            "c3",
+            2
+          ],
+          [
+            "c2",
+            "c3",
+            2
+          ]
+        ],
+        "supporting_spans": [
+          {
+            "end": 5,
+            "start": 0
+          }
+        ],
+        "verdict": "satisfied"
+      },
+      {
+        "active_after": [
+          "c2"
+        ],
+        "active_before": [
+          "c0",
+          "c2"
+        ],
+        "chosen_plan_after": "06a8981f38212ea1c2e1",
+        "chosen_plan_before": "06a8981f38212ea1c2e1",
+        "journey_id": "06b5d39e855ca24bde86",
+        "judgment_correct": false,
+        "prompt_hash": "0a64bf993cc55aea8f576edd65c98e608ce8fa1b72abe04170b3709215362729",
+        "query_index": 2,
+        "reference_equivalent_candidates_removed": [],
+        "reference_label": true,
+        "removed_candidates": [
+          "c0"
+        ],
+        "selected_score": 1.0,
+        "separated_pairs": [
+          [
+            "c0",
+            "c2",
+            0
+          ]
+        ],
+        "supporting_spans": [
+          {
+            "end": 5,
+            "start": 0
+          },
+          {
+            "end": 30,
+            "start": 25
+          }
+        ],
+        "verdict": "violated"
+      }
+    ],
+    "uncertain_judgments": 0,
+    "witnesses_recomputed_exactly": true,
+    "wrong_judgments": 2
+  },
+  {
+    "equivalent_candidate_eliminations": 0,
+    "final_remaining_ids": [
+      "c0"
+    ],
+    "method": "D",
+    "replicate": 0,
+    "scenario_id": "pilot-07",
+    "steps": [],
+    "uncertain_judgments": 0,
+    "witnesses_recomputed_exactly": true,
+    "wrong_judgments": 0
+  },
+  {
+    "equivalent_candidate_eliminations": 0,
+    "final_remaining_ids": [
+      "c0"
+    ],
+    "method": "E",
+    "replicate": 0,
+    "scenario_id": "pilot-07",
+    "steps": [],
+    "uncertain_judgments": 0,
+    "witnesses_recomputed_exactly": true,
+    "wrong_judgments": 0
+  },
+  {
+    "equivalent_candidate_eliminations": 0,
+    "final_remaining_ids": [
+      "c2"
+    ],
+    "method": "D",
+    "replicate": 0,
+    "scenario_id": "pilot-08",
+    "steps": [
+      {
+        "active_after": [
+          "c2"
+        ],
+        "active_before": [
+          "c0",
+          "c2"
+        ],
+        "chosen_plan_after": "1bd242b68e4b940009a7",
+        "chosen_plan_before": "1bd242b68e4b940009a7",
+        "journey_id": "0ff2f593b0f54de686df",
+        "judgment_correct": true,
+        "prompt_hash": "445428ff3b9eb2d4f5797e5cb99f1289d397571ca6a9192cacefcd8f6e189474",
+        "query_index": 1,
+        "reference_equivalent_candidates_removed": [],
+        "reference_label": false,
+        "removed_candidates": [
+          "c0"
+        ],
+        "selected_score": 1.0,
+        "separated_pairs": [
+          [
+            "c0",
+            "c2",
+            0
+          ]
+        ],
+        "supporting_spans": [
+          {
+            "end": 5,
+            "start": 0
+          }
+        ],
+        "verdict": "violated"
+      }
+    ],
+    "uncertain_judgments": 0,
+    "witnesses_recomputed_exactly": true,
+    "wrong_judgments": 0
+  },
+  {
+    "equivalent_candidate_eliminations": 0,
+    "final_remaining_ids": [
+      "c2"
+    ],
+    "method": "E",
+    "replicate": 0,
+    "scenario_id": "pilot-08",
+    "steps": [
+      {
+        "active_after": [
+          "c2"
+        ],
+        "active_before": [
+          "c0",
+          "c2"
+        ],
+        "chosen_plan_after": "1bd242b68e4b940009a7",
+        "chosen_plan_before": "1bd242b68e4b940009a7",
+        "journey_id": "0ff2f593b0f54de686df",
+        "judgment_correct": true,
+        "prompt_hash": "445428ff3b9eb2d4f5797e5cb99f1289d397571ca6a9192cacefcd8f6e189474",
+        "query_index": 1,
+        "reference_equivalent_candidates_removed": [],
+        "reference_label": false,
+        "removed_candidates": [
+          "c0"
+        ],
+        "selected_score": 1.0,
+        "separated_pairs": [
+          [
+            "c0",
+            "c2",
+            0
+          ]
+        ],
+        "supporting_spans": [
+          {
+            "end": 5,
+            "start": 0
+          }
+        ],
+        "verdict": "violated"
+      }
+    ],
+    "uncertain_judgments": 0,
+    "witnesses_recomputed_exactly": true,
+    "wrong_judgments": 0
+  },
+  {
+    "equivalent_candidate_eliminations": 0,
+    "final_remaining_ids": [
+      "c0"
+    ],
+    "method": "D",
+    "replicate": 0,
+    "scenario_id": "pilot-09",
+    "steps": [],
+    "uncertain_judgments": 0,
+    "witnesses_recomputed_exactly": true,
+    "wrong_judgments": 0
+  },
+  {
+    "equivalent_candidate_eliminations": 0,
+    "final_remaining_ids": [
+      "c0"
+    ],
+    "method": "E",
+    "replicate": 0,
+    "scenario_id": "pilot-09",
+    "steps": [],
+    "uncertain_judgments": 0,
+    "witnesses_recomputed_exactly": true,
+    "wrong_judgments": 0
+  },
+  {
+    "equivalent_candidate_eliminations": 0,
+    "final_remaining_ids": [
+      "c0"
+    ],
+    "method": "D",
+    "replicate": 0,
+    "scenario_id": "pilot-10",
+    "steps": [],
+    "uncertain_judgments": 0,
+    "witnesses_recomputed_exactly": true,
+    "wrong_judgments": 0
+  },
+  {
+    "equivalent_candidate_eliminations": 0,
+    "final_remaining_ids": [
+      "c0"
+    ],
+    "method": "E",
+    "replicate": 0,
+    "scenario_id": "pilot-10",
+    "steps": [],
+    "uncertain_judgments": 0,
+    "witnesses_recomputed_exactly": true,
+    "wrong_judgments": 0
+  },
+  {
+    "equivalent_candidate_eliminations": 0,
+    "final_remaining_ids": [
+      "c0"
+    ],
+    "method": "D",
+    "replicate": 0,
+    "scenario_id": "pilot-11",
+    "steps": [],
+    "uncertain_judgments": 0,
+    "witnesses_recomputed_exactly": true,
+    "wrong_judgments": 0
+  },
+  {
+    "equivalent_candidate_eliminations": 0,
+    "final_remaining_ids": [
+      "c0"
+    ],
+    "method": "E",
+    "replicate": 0,
+    "scenario_id": "pilot-11",
+    "steps": [],
+    "uncertain_judgments": 0,
+    "witnesses_recomputed_exactly": true,
+    "wrong_judgments": 0
+  },
+  {
+    "equivalent_candidate_eliminations": 0,
+    "final_remaining_ids": [
+      "c1"
+    ],
+    "method": "D",
+    "replicate": 0,
+    "scenario_id": "pilot-12",
+    "steps": [
+      {
+        "active_after": [
+          "c1"
+        ],
+        "active_before": [
+          "c0",
+          "c1"
+        ],
+        "chosen_plan_after": "071622abdc3532fc0b1e",
+        "chosen_plan_before": null,
+        "journey_id": "00569e99bfadb44b56e3",
+        "judgment_correct": true,
+        "prompt_hash": "2888161994c4564a7f66879db8e2a31b2eaaf14cdb0b334de764c19e88c5ad1e",
+        "query_index": 1,
+        "reference_equivalent_candidates_removed": [],
+        "reference_label": true,
+        "removed_candidates": [
+          "c0"
+        ],
+        "selected_score": 1.0,
+        "separated_pairs": [
+          [
+            "c0",
+            "c1",
+            1
+          ]
+        ],
+        "supporting_spans": [
+          {
+            "end": 5,
+            "start": 0
+          }
+        ],
+        "verdict": "satisfied"
+      }
+    ],
+    "uncertain_judgments": 0,
+    "witnesses_recomputed_exactly": true,
+    "wrong_judgments": 0
+  },
+  {
+    "equivalent_candidate_eliminations": 0,
+    "final_remaining_ids": [
+      "c1"
+    ],
+    "method": "E",
+    "replicate": 0,
+    "scenario_id": "pilot-12",
+    "steps": [
+      {
+        "active_after": [
+          "c1"
+        ],
+        "active_before": [
+          "c0",
+          "c1"
+        ],
+        "chosen_plan_after": "071622abdc3532fc0b1e",
+        "chosen_plan_before": null,
+        "journey_id": "00569e99bfadb44b56e3",
+        "judgment_correct": true,
+        "prompt_hash": "2888161994c4564a7f66879db8e2a31b2eaaf14cdb0b334de764c19e88c5ad1e",
+        "query_index": 1,
+        "reference_equivalent_candidates_removed": [],
+        "reference_label": true,
+        "removed_candidates": [
+          "c0"
+        ],
+        "selected_score": 2.0,
+        "separated_pairs": [
+          [
+            "c0",
+            "c1",
+            1
+          ]
+        ],
+        "supporting_spans": [
+          {
+            "end": 5,
+            "start": 0
+          }
+        ],
+        "verdict": "satisfied"
+      }
+    ],
+    "uncertain_judgments": 0,
+    "witnesses_recomputed_exactly": true,
+    "wrong_judgments": 0
+  },
+  {
+    "equivalent_candidate_eliminations": 0,
+    "final_remaining_ids": [
+      "c0"
+    ],
+    "method": "D",
+    "replicate": 0,
+    "scenario_id": "pilot-13",
+    "steps": [
+      {
+        "active_after": [
+          "c0"
+        ],
+        "active_before": [
+          "c0",
+          "c2"
+        ],
+        "chosen_plan_after": "08e2cb13d652b47d6a32",
+        "chosen_plan_before": "08e2cb13d652b47d6a32",
+        "journey_id": "1abad49a2e8391dfd86e",
+        "judgment_correct": true,
+        "prompt_hash": "a2c94a51ae5be6526919136064d0848415049fdb75dd434236f6bf9988c7b5d3",
+        "query_index": 1,
+        "reference_equivalent_candidates_removed": [],
+        "reference_label": true,
+        "removed_candidates": [
+          "c2"
+        ],
+        "selected_score": 1.0,
+        "separated_pairs": [
+          [
+            "c0",
+            "c2",
+            0
+          ]
+        ],
+        "supporting_spans": [
+          {
+            "end": 5,
+            "start": 0
+          }
+        ],
+        "verdict": "satisfied"
+      }
+    ],
+    "uncertain_judgments": 0,
+    "witnesses_recomputed_exactly": true,
+    "wrong_judgments": 0
+  },
+  {
+    "equivalent_candidate_eliminations": 0,
+    "final_remaining_ids": [
+      "c0"
+    ],
+    "method": "E",
+    "replicate": 0,
+    "scenario_id": "pilot-13",
+    "steps": [
+      {
+        "active_after": [
+          "c0"
+        ],
+        "active_before": [
+          "c0",
+          "c2"
+        ],
+        "chosen_plan_after": "08e2cb13d652b47d6a32",
+        "chosen_plan_before": "08e2cb13d652b47d6a32",
+        "journey_id": "1abad49a2e8391dfd86e",
+        "judgment_correct": true,
+        "prompt_hash": "a2c94a51ae5be6526919136064d0848415049fdb75dd434236f6bf9988c7b5d3",
+        "query_index": 1,
+        "reference_equivalent_candidates_removed": [],
+        "reference_label": true,
+        "removed_candidates": [
+          "c2"
+        ],
+        "selected_score": 1.0,
+        "separated_pairs": [
+          [
+            "c0",
+            "c2",
+            0
+          ]
+        ],
+        "supporting_spans": [
+          {
+            "end": 5,
+            "start": 0
+          }
+        ],
+        "verdict": "satisfied"
+      }
+    ],
+    "uncertain_judgments": 0,
+    "witnesses_recomputed_exactly": true,
+    "wrong_judgments": 0
+  },
+  {
+    "equivalent_candidate_eliminations": 0,
+    "final_remaining_ids": [
+      "c2"
+    ],
+    "method": "D",
+    "replicate": 0,
+    "scenario_id": "pilot-14",
+    "steps": [
+      {
+        "active_after": [
+          "c2"
+        ],
+        "active_before": [
+          "c0",
+          "c1",
+          "c2"
+        ],
+        "chosen_plan_after": null,
+        "chosen_plan_before": "061bb2461d52e2b76732",
+        "journey_id": "00313f83f4fcde9dd706",
+        "judgment_correct": true,
+        "prompt_hash": "790a68948dabaffbcddf7b941ae4215c42b5f258820e60113b5aa519d71439b5",
+        "query_index": 1,
+        "reference_equivalent_candidates_removed": [],
+        "reference_label": false,
+        "removed_candidates": [
+          "c0",
+          "c1"
+        ],
+        "selected_score": 2.0,
+        "separated_pairs": [
+          [
+            "c0",
+            "c2",
+            1
+          ],
+          [
+            "c1",
+            "c2",
+            1
+          ]
+        ],
+        "supporting_spans": [
+          {
+            "end": 26,
+            "start": 11
+          },
+          {
+            "end": 128,
+            "start": 103
+          }
+        ],
+        "verdict": "violated"
+      }
+    ],
+    "uncertain_judgments": 0,
+    "witnesses_recomputed_exactly": true,
+    "wrong_judgments": 0
+  },
+  {
+    "equivalent_candidate_eliminations": 0,
+    "final_remaining_ids": [
+      "c2"
+    ],
+    "method": "E",
+    "replicate": 0,
+    "scenario_id": "pilot-14",
+    "steps": [
+      {
+        "active_after": [
+          "c2"
+        ],
+        "active_before": [
+          "c0",
+          "c1",
+          "c2"
+        ],
+        "chosen_plan_after": null,
+        "chosen_plan_before": "061bb2461d52e2b76732",
+        "journey_id": "00313f83f4fcde9dd706",
+        "judgment_correct": true,
+        "prompt_hash": "790a68948dabaffbcddf7b941ae4215c42b5f258820e60113b5aa519d71439b5",
+        "query_index": 1,
+        "reference_equivalent_candidates_removed": [],
+        "reference_label": false,
+        "removed_candidates": [
+          "c0",
+          "c1"
+        ],
+        "selected_score": 4.0,
+        "separated_pairs": [
+          [
+            "c0",
+            "c2",
+            1
+          ],
+          [
+            "c1",
+            "c2",
+            1
+          ]
+        ],
+        "supporting_spans": [
+          {
+            "end": 26,
+            "start": 11
+          },
+          {
+            "end": 128,
+            "start": 103
+          }
+        ],
+        "verdict": "violated"
+      }
+    ],
+    "uncertain_judgments": 0,
+    "witnesses_recomputed_exactly": true,
+    "wrong_judgments": 0
+  },
+  {
+    "equivalent_candidate_eliminations": 0,
+    "final_remaining_ids": [],
+    "method": "D",
+    "replicate": 0,
+    "scenario_id": "pilot-15",
+    "steps": [],
+    "uncertain_judgments": 0,
+    "witnesses_recomputed_exactly": true,
+    "wrong_judgments": 0
+  },
+  {
+    "equivalent_candidate_eliminations": 0,
+    "final_remaining_ids": [],
+    "method": "E",
+    "replicate": 0,
+    "scenario_id": "pilot-15",
+    "steps": [],
+    "uncertain_judgments": 0,
+    "witnesses_recomputed_exactly": true,
+    "wrong_judgments": 0
+  },
+  {
+    "equivalent_candidate_eliminations": 0,
+    "final_remaining_ids": [
+      "c0"
+    ],
+    "method": "D",
+    "replicate": 0,
+    "scenario_id": "pilot-16",
+    "steps": [],
+    "uncertain_judgments": 0,
+    "witnesses_recomputed_exactly": true,
+    "wrong_judgments": 0
+  },
+  {
+    "equivalent_candidate_eliminations": 0,
+    "final_remaining_ids": [
+      "c0"
+    ],
+    "method": "E",
+    "replicate": 0,
+    "scenario_id": "pilot-16",
+    "steps": [],
+    "uncertain_judgments": 0,
+    "witnesses_recomputed_exactly": true,
+    "wrong_judgments": 0
+  },
+  {
+    "equivalent_candidate_eliminations": 0,
+    "final_remaining_ids": [
+      "c0"
+    ],
+    "method": "D",
+    "replicate": 0,
+    "scenario_id": "pilot-17",
+    "steps": [],
+    "uncertain_judgments": 0,
+    "witnesses_recomputed_exactly": true,
+    "wrong_judgments": 0
+  },
+  {
+    "equivalent_candidate_eliminations": 0,
+    "final_remaining_ids": [
+      "c0"
+    ],
+    "method": "E",
+    "replicate": 0,
+    "scenario_id": "pilot-17",
+    "steps": [],
+    "uncertain_judgments": 0,
+    "witnesses_recomputed_exactly": true,
+    "wrong_judgments": 0
+  },
+  {
+    "equivalent_candidate_eliminations": 0,
+    "final_remaining_ids": [
+      "c0"
+    ],
+    "method": "D",
+    "replicate": 0,
+    "scenario_id": "pilot-18",
+    "steps": [
+      {
+        "active_after": [
+          "c0"
+        ],
+        "active_before": [
+          "c0",
+          "c3"
+        ],
+        "chosen_plan_after": "12b051372ba2bb22cd12",
+        "chosen_plan_before": "12b051372ba2bb22cd12",
+        "journey_id": "032d9ad4720daf263c0c",
+        "judgment_correct": true,
+        "prompt_hash": "e38b3bc592d44f7ac5d41a3b5edafc3eaef66708684d54deb3323a6642207471",
+        "query_index": 1,
+        "reference_equivalent_candidates_removed": [],
+        "reference_label": false,
+        "removed_candidates": [
+          "c3"
+        ],
+        "selected_score": 1.0,
+        "separated_pairs": [
+          [
+            "c0",
+            "c3",
+            0
+          ]
+        ],
+        "supporting_spans": [
+          {
+            "end": 5,
+            "start": 0
+          }
+        ],
+        "verdict": "violated"
+      }
+    ],
+    "uncertain_judgments": 0,
+    "witnesses_recomputed_exactly": true,
+    "wrong_judgments": 0
+  },
+  {
+    "equivalent_candidate_eliminations": 0,
+    "final_remaining_ids": [
+      "c0"
+    ],
+    "method": "E",
+    "replicate": 0,
+    "scenario_id": "pilot-18",
+    "steps": [
+      {
+        "active_after": [
+          "c0"
+        ],
+        "active_before": [
+          "c0",
+          "c3"
+        ],
+        "chosen_plan_after": "12b051372ba2bb22cd12",
+        "chosen_plan_before": "12b051372ba2bb22cd12",
+        "journey_id": "032d9ad4720daf263c0c",
+        "judgment_correct": true,
+        "prompt_hash": "e38b3bc592d44f7ac5d41a3b5edafc3eaef66708684d54deb3323a6642207471",
+        "query_index": 1,
+        "reference_equivalent_candidates_removed": [],
+        "reference_label": false,
+        "removed_candidates": [
+          "c3"
+        ],
+        "selected_score": 1.0,
+        "separated_pairs": [
+          [
+            "c0",
+            "c3",
+            0
+          ]
+        ],
+        "supporting_spans": [
+          {
+            "end": 5,
+            "start": 0
+          }
+        ],
+        "verdict": "violated"
+      }
+    ],
+    "uncertain_judgments": 0,
+    "witnesses_recomputed_exactly": true,
+    "wrong_judgments": 0
+  },
+  {
+    "equivalent_candidate_eliminations": 0,
+    "final_remaining_ids": [
+      "c0"
+    ],
+    "method": "D",
+    "replicate": 0,
+    "scenario_id": "pilot-19",
+    "steps": [],
+    "uncertain_judgments": 0,
+    "witnesses_recomputed_exactly": true,
+    "wrong_judgments": 0
+  },
+  {
+    "equivalent_candidate_eliminations": 0,
+    "final_remaining_ids": [
+      "c0"
+    ],
+    "method": "E",
+    "replicate": 0,
+    "scenario_id": "pilot-19",
+    "steps": [],
+    "uncertain_judgments": 0,
+    "witnesses_recomputed_exactly": true,
+    "wrong_judgments": 0
+  },
+  {
+    "equivalent_candidate_eliminations": 0,
+    "final_remaining_ids": [
+      "c0"
+    ],
+    "method": "D",
+    "replicate": 0,
+    "scenario_id": "pilot-20",
+    "steps": [
+      {
+        "active_after": [
+          "c0",
+          "c1"
+        ],
+        "active_before": [
+          "c0",
+          "c1",
+          "c2"
+        ],
+        "chosen_plan_after": "232acddf37f42b365aee",
+        "chosen_plan_before": "232acddf37f42b365aee",
+        "journey_id": "005a6f33a79fe270e093",
+        "judgment_correct": true,
+        "prompt_hash": "978f29e4c6b763a7bf65ec4ef2ee83264a76a5b24f3f3a45940d65e3c4643bd3",
+        "query_index": 1,
+        "reference_equivalent_candidates_removed": [],
+        "reference_label": true,
+        "removed_candidates": [
+          "c2"
+        ],
+        "selected_score": 2.0,
+        "separated_pairs": [
+          [
+            "c0",
+            "c2",
+            1
+          ],
+          [
+            "c1",
+            "c2",
+            1
+          ]
+        ],
+        "supporting_spans": [
+          {
+            "end": 5,
+            "start": 0
+          }
+        ],
+        "verdict": "satisfied"
+      },
+      {
+        "active_after": [
+          "c0"
+        ],
+        "active_before": [
+          "c0",
+          "c1"
+        ],
+        "chosen_plan_after": "232acddf37f42b365aee",
+        "chosen_plan_before": "232acddf37f42b365aee",
+        "journey_id": "0293438db40a6621ecbc",
+        "judgment_correct": true,
+        "prompt_hash": "7d808aa277a09fa44a0da2da66e29828a4c117c6b89d5cbbfbf498a7d0222860",
+        "query_index": 2,
+        "reference_equivalent_candidates_removed": [],
+        "reference_label": true,
+        "removed_candidates": [
+          "c1"
+        ],
+        "selected_score": 1.0,
+        "separated_pairs": [
+          [
+            "c0",
+            "c1",
+            1
+          ]
+        ],
+        "supporting_spans": [
+          {
+            "end": 5,
+            "start": 0
+          }
+        ],
+        "verdict": "satisfied"
+      }
+    ],
+    "uncertain_judgments": 0,
+    "witnesses_recomputed_exactly": true,
+    "wrong_judgments": 0
+  },
+  {
+    "equivalent_candidate_eliminations": 0,
+    "final_remaining_ids": [
+      "c0"
+    ],
+    "method": "E",
+    "replicate": 0,
+    "scenario_id": "pilot-20",
+    "steps": [
+      {
+        "active_after": [
+          "c0",
+          "c1"
+        ],
+        "active_before": [
+          "c0",
+          "c1",
+          "c2"
+        ],
+        "chosen_plan_after": "232acddf37f42b365aee",
+        "chosen_plan_before": "232acddf37f42b365aee",
+        "journey_id": "005a6f33a79fe270e093",
+        "judgment_correct": true,
+        "prompt_hash": "978f29e4c6b763a7bf65ec4ef2ee83264a76a5b24f3f3a45940d65e3c4643bd3",
+        "query_index": 1,
+        "reference_equivalent_candidates_removed": [],
+        "reference_label": true,
+        "removed_candidates": [
+          "c2"
+        ],
+        "selected_score": 4.0,
+        "separated_pairs": [
+          [
+            "c0",
+            "c2",
+            1
+          ],
+          [
+            "c1",
+            "c2",
+            1
+          ]
+        ],
+        "supporting_spans": [
+          {
+            "end": 5,
+            "start": 0
+          }
+        ],
+        "verdict": "satisfied"
+      },
+      {
+        "active_after": [
+          "c0"
+        ],
+        "active_before": [
+          "c0",
+          "c1"
+        ],
+        "chosen_plan_after": "232acddf37f42b365aee",
+        "chosen_plan_before": "232acddf37f42b365aee",
+        "journey_id": "0293438db40a6621ecbc",
+        "judgment_correct": true,
+        "prompt_hash": "7d808aa277a09fa44a0da2da66e29828a4c117c6b89d5cbbfbf498a7d0222860",
+        "query_index": 2,
+        "reference_equivalent_candidates_removed": [],
+        "reference_label": true,
+        "removed_candidates": [
+          "c1"
+        ],
+        "selected_score": 2.0,
+        "separated_pairs": [
+          [
+            "c0",
+            "c1",
+            1
+          ]
+        ],
+        "supporting_spans": [
+          {
+            "end": 5,
+            "start": 0
+          }
+        ],
+        "verdict": "satisfied"
+      }
+    ],
+    "uncertain_judgments": 0,
+    "witnesses_recomputed_exactly": true,
+    "wrong_judgments": 0
+  },
+  {
+    "equivalent_candidate_eliminations": 0,
+    "final_remaining_ids": [
+      "c1"
+    ],
+    "method": "D",
+    "replicate": 0,
+    "scenario_id": "pilot-21",
+    "steps": [
+      {
+        "active_after": [
+          "c1"
+        ],
+        "active_before": [
+          "c0",
+          "c1"
+        ],
+        "chosen_plan_after": "a74f125439a90f15569c",
+        "chosen_plan_before": "a74f125439a90f15569c",
+        "journey_id": "40039d4292139b8ad663",
+        "judgment_correct": true,
+        "prompt_hash": "7137aa19b527e01be4ae50af8dac1a18598929c34f95d858121946d0799b9fb8",
+        "query_index": 1,
+        "reference_equivalent_candidates_removed": [],
+        "reference_label": true,
+        "removed_candidates": [
+          "c0"
+        ],
+        "selected_score": 1.0,
+        "separated_pairs": [
+          [
+            "c0",
+            "c1",
+            0
+          ]
+        ],
+        "supporting_spans": [
+          {
+            "end": 5,
+            "start": 0
+          }
+        ],
+        "verdict": "satisfied"
+      }
+    ],
+    "uncertain_judgments": 0,
+    "witnesses_recomputed_exactly": true,
+    "wrong_judgments": 0
+  },
+  {
+    "equivalent_candidate_eliminations": 0,
+    "final_remaining_ids": [
+      "c1"
+    ],
+    "method": "E",
+    "replicate": 0,
+    "scenario_id": "pilot-21",
+    "steps": [
+      {
+        "active_after": [
+          "c1"
+        ],
+        "active_before": [
+          "c0",
+          "c1"
+        ],
+        "chosen_plan_after": "a74f125439a90f15569c",
+        "chosen_plan_before": "a74f125439a90f15569c",
+        "journey_id": "40039d4292139b8ad663",
+        "judgment_correct": true,
+        "prompt_hash": "7137aa19b527e01be4ae50af8dac1a18598929c34f95d858121946d0799b9fb8",
+        "query_index": 1,
+        "reference_equivalent_candidates_removed": [],
+        "reference_label": true,
+        "removed_candidates": [
+          "c0"
+        ],
+        "selected_score": 1.0,
+        "separated_pairs": [
+          [
+            "c0",
+            "c1",
+            0
+          ]
+        ],
+        "supporting_spans": [
+          {
+            "end": 5,
+            "start": 0
+          }
+        ],
+        "verdict": "satisfied"
+      }
+    ],
+    "uncertain_judgments": 0,
+    "witnesses_recomputed_exactly": true,
+    "wrong_judgments": 0
+  },
+  {
+    "equivalent_candidate_eliminations": 0,
+    "final_remaining_ids": [
+      "c0"
+    ],
+    "method": "D",
+    "replicate": 0,
+    "scenario_id": "pilot-22",
+    "steps": [],
+    "uncertain_judgments": 0,
+    "witnesses_recomputed_exactly": true,
+    "wrong_judgments": 0
+  },
+  {
+    "equivalent_candidate_eliminations": 0,
+    "final_remaining_ids": [
+      "c0"
+    ],
+    "method": "E",
+    "replicate": 0,
+    "scenario_id": "pilot-22",
+    "steps": [],
+    "uncertain_judgments": 0,
+    "witnesses_recomputed_exactly": true,
+    "wrong_judgments": 0
+  },
+  {
+    "equivalent_candidate_eliminations": 0,
+    "final_remaining_ids": [],
+    "method": "D",
+    "replicate": 0,
+    "scenario_id": "pilot-23",
+    "steps": [],
+    "uncertain_judgments": 0,
+    "witnesses_recomputed_exactly": true,
+    "wrong_judgments": 0
+  },
+  {
+    "equivalent_candidate_eliminations": 0,
+    "final_remaining_ids": [],
+    "method": "E",
+    "replicate": 0,
+    "scenario_id": "pilot-23",
+    "steps": [],
+    "uncertain_judgments": 0,
+    "witnesses_recomputed_exactly": true,
+    "wrong_judgments": 0
+  },
+  {
+    "equivalent_candidate_eliminations": 0,
+    "final_remaining_ids": [
+      "c3"
+    ],
+    "method": "D",
+    "replicate": 0,
+    "scenario_id": "pilot-24",
+    "steps": [
+      {
+        "active_after": [
+          "c3"
+        ],
+        "active_before": [
+          "c0",
+          "c2",
+          "c3"
+        ],
+        "chosen_plan_after": "05199a5a66b044a97367",
+        "chosen_plan_before": "27be9fd50f3748ae5bd3",
+        "journey_id": "008999a081cb95dcc0f3",
+        "judgment_correct": true,
+        "prompt_hash": "18c5b2c841fcd28efd4450e8dca8edda9a57fee91ce48e84479f5116c80bfd49",
+        "query_index": 1,
+        "reference_equivalent_candidates_removed": [],
+        "reference_label": false,
+        "removed_candidates": [
+          "c0",
+          "c2"
+        ],
+        "selected_score": 2.0,
+        "separated_pairs": [
+          [
+            "c0",
+            "c3",
+            2
+          ],
+          [
+            "c2",
+            "c3",
+            2
+          ]
+        ],
+        "supporting_spans": [
+          {
+            "end": 23,
+            "start": 11
+          },
+          {
+            "end": 115,
+            "start": 103
+          }
+        ],
+        "verdict": "violated"
+      }
+    ],
+    "uncertain_judgments": 0,
+    "witnesses_recomputed_exactly": true,
+    "wrong_judgments": 0
+  },
+  {
+    "equivalent_candidate_eliminations": 0,
+    "final_remaining_ids": [
+      "c3"
+    ],
+    "method": "E",
+    "replicate": 0,
+    "scenario_id": "pilot-24",
+    "steps": [
+      {
+        "active_after": [
+          "c3"
+        ],
+        "active_before": [
+          "c0",
+          "c2",
+          "c3"
+        ],
+        "chosen_plan_after": "05199a5a66b044a97367",
+        "chosen_plan_before": "27be9fd50f3748ae5bd3",
+        "journey_id": "008999a081cb95dcc0f3",
+        "judgment_correct": true,
+        "prompt_hash": "18c5b2c841fcd28efd4450e8dca8edda9a57fee91ce48e84479f5116c80bfd49",
+        "query_index": 1,
+        "reference_equivalent_candidates_removed": [],
+        "reference_label": false,
+        "removed_candidates": [
+          "c0",
+          "c2"
+        ],
+        "selected_score": 6.0,
+        "separated_pairs": [
+          [
+            "c0",
+            "c3",
+            2
+          ],
+          [
+            "c2",
+            "c3",
+            2
+          ]
+        ],
+        "supporting_spans": [
+          {
+            "end": 23,
+            "start": 11
+          },
+          {
+            "end": 115,
+            "start": 103
+          }
+        ],
+        "verdict": "violated"
+      }
+    ],
+    "uncertain_judgments": 0,
+    "witnesses_recomputed_exactly": true,
+    "wrong_judgments": 0
+  },
+  {
+    "equivalent_candidate_eliminations": 0,
+    "final_remaining_ids": [
+      "c1"
+    ],
+    "method": "D",
+    "replicate": 0,
+    "scenario_id": "pilot-25",
+    "steps": [
+      {
+        "active_after": [
+          "c1"
+        ],
+        "active_before": [
+          "c0",
+          "c1"
+        ],
+        "chosen_plan_after": "2bce97fc17163394687f",
+        "chosen_plan_before": null,
+        "journey_id": "0082a5ab37cfe189384b",
+        "judgment_correct": true,
+        "prompt_hash": "9942b4ab32a7618e7cc3ad2353f9e8131660b70f56506bc04a573e005ab77dc3",
+        "query_index": 1,
+        "reference_equivalent_candidates_removed": [],
+        "reference_label": true,
+        "removed_candidates": [
+          "c0"
+        ],
+        "selected_score": 1.0,
+        "separated_pairs": [
+          [
+            "c0",
+            "c1",
+            1
+          ]
+        ],
+        "supporting_spans": [
+          {
+            "end": 5,
+            "start": 0
+          }
+        ],
+        "verdict": "satisfied"
+      }
+    ],
+    "uncertain_judgments": 0,
+    "witnesses_recomputed_exactly": true,
+    "wrong_judgments": 0
+  },
+  {
+    "equivalent_candidate_eliminations": 0,
+    "final_remaining_ids": [
+      "c1"
+    ],
+    "method": "E",
+    "replicate": 0,
+    "scenario_id": "pilot-25",
+    "steps": [
+      {
+        "active_after": [
+          "c1"
+        ],
+        "active_before": [
+          "c0",
+          "c1"
+        ],
+        "chosen_plan_after": "2bce97fc17163394687f",
+        "chosen_plan_before": null,
+        "journey_id": "0082a5ab37cfe189384b",
+        "judgment_correct": true,
+        "prompt_hash": "9942b4ab32a7618e7cc3ad2353f9e8131660b70f56506bc04a573e005ab77dc3",
+        "query_index": 1,
+        "reference_equivalent_candidates_removed": [],
+        "reference_label": true,
+        "removed_candidates": [
+          "c0"
+        ],
+        "selected_score": 2.0,
+        "separated_pairs": [
+          [
+            "c0",
+            "c1",
+            1
+          ]
+        ],
+        "supporting_spans": [
+          {
+            "end": 5,
+            "start": 0
+          }
+        ],
+        "verdict": "satisfied"
+      }
+    ],
+    "uncertain_judgments": 0,
+    "witnesses_recomputed_exactly": true,
+    "wrong_judgments": 0
+  },
+  {
+    "equivalent_candidate_eliminations": 0,
+    "final_remaining_ids": [
+      "c1"
+    ],
+    "method": "D",
+    "replicate": 0,
+    "scenario_id": "pilot-26",
+    "steps": [
+      {
+        "active_after": [
+          "c1"
+        ],
+        "active_before": [
+          "c0",
+          "c1"
+        ],
+        "chosen_plan_after": "9c48be15db2147416e55",
+        "chosen_plan_before": "4d149284ebebab02f59b",
+        "journey_id": "25ceff8491091d0ea763",
+        "judgment_correct": true,
+        "prompt_hash": "23351e50f6da428cd0828b32e43d27d8f7abf16914c8647be5ffe6c40ca492f0",
+        "query_index": 1,
+        "reference_equivalent_candidates_removed": [],
+        "reference_label": true,
+        "removed_candidates": [
+          "c0"
+        ],
+        "selected_score": 1.0,
+        "separated_pairs": [
+          [
+            "c0",
+            "c1",
+            1
+          ]
+        ],
+        "supporting_spans": [
+          {
+            "end": 5,
+            "start": 0
+          }
+        ],
+        "verdict": "satisfied"
+      }
+    ],
+    "uncertain_judgments": 0,
+    "witnesses_recomputed_exactly": true,
+    "wrong_judgments": 0
+  },
+  {
+    "equivalent_candidate_eliminations": 0,
+    "final_remaining_ids": [
+      "c1"
+    ],
+    "method": "E",
+    "replicate": 0,
+    "scenario_id": "pilot-26",
+    "steps": [
+      {
+        "active_after": [
+          "c1"
+        ],
+        "active_before": [
+          "c0",
+          "c1"
+        ],
+        "chosen_plan_after": "9c48be15db2147416e55",
+        "chosen_plan_before": "4d149284ebebab02f59b",
+        "journey_id": "25ceff8491091d0ea763",
+        "judgment_correct": true,
+        "prompt_hash": "23351e50f6da428cd0828b32e43d27d8f7abf16914c8647be5ffe6c40ca492f0",
+        "query_index": 1,
+        "reference_equivalent_candidates_removed": [],
+        "reference_label": true,
+        "removed_candidates": [
+          "c0"
+        ],
+        "selected_score": 2.0,
+        "separated_pairs": [
+          [
+            "c0",
+            "c1",
+            1
+          ]
+        ],
+        "supporting_spans": [
+          {
+            "end": 5,
+            "start": 0
+          }
+        ],
+        "verdict": "satisfied"
+      }
+    ],
+    "uncertain_judgments": 0,
+    "witnesses_recomputed_exactly": true,
+    "wrong_judgments": 0
+  },
+  {
+    "equivalent_candidate_eliminations": 0,
+    "final_remaining_ids": [
+      "c2"
+    ],
+    "method": "D",
+    "replicate": 0,
+    "scenario_id": "pilot-27",
+    "steps": [
+      {
+        "active_after": [
+          "c2"
+        ],
+        "active_before": [
+          "c0",
+          "c2"
+        ],
+        "chosen_plan_after": "0ccdf17de23687ac121f",
+        "chosen_plan_before": null,
+        "journey_id": "001aadd047bd2fdc8a79",
+        "judgment_correct": false,
+        "prompt_hash": "13c3696d264f4749c7da766704772173bbc11468c0133adfe8ef73161dcc7502",
+        "query_index": 1,
+        "reference_equivalent_candidates_removed": [],
+        "reference_label": false,
+        "removed_candidates": [
+          "c0"
+        ],
+        "selected_score": 1.0,
+        "separated_pairs": [
+          [
+            "c0",
+            "c2",
+            1
+          ]
+        ],
+        "supporting_spans": [
+          {
+            "end": 5,
+            "start": 0
+          }
+        ],
+        "verdict": "satisfied"
+      }
+    ],
+    "uncertain_judgments": 0,
+    "witnesses_recomputed_exactly": true,
+    "wrong_judgments": 1
+  },
+  {
+    "equivalent_candidate_eliminations": 0,
+    "final_remaining_ids": [
+      "c2"
+    ],
+    "method": "E",
+    "replicate": 0,
+    "scenario_id": "pilot-27",
+    "steps": [
+      {
+        "active_after": [
+          "c2"
+        ],
+        "active_before": [
+          "c0",
+          "c2"
+        ],
+        "chosen_plan_after": "0ccdf17de23687ac121f",
+        "chosen_plan_before": null,
+        "journey_id": "001aadd047bd2fdc8a79",
+        "judgment_correct": false,
+        "prompt_hash": "13c3696d264f4749c7da766704772173bbc11468c0133adfe8ef73161dcc7502",
+        "query_index": 1,
+        "reference_equivalent_candidates_removed": [],
+        "reference_label": false,
+        "removed_candidates": [
+          "c0"
+        ],
+        "selected_score": 2.0,
+        "separated_pairs": [
+          [
+            "c0",
+            "c2",
+            1
+          ]
+        ],
+        "supporting_spans": [
+          {
+            "end": 5,
+            "start": 0
+          }
+        ],
+        "verdict": "satisfied"
+      }
+    ],
+    "uncertain_judgments": 0,
+    "witnesses_recomputed_exactly": true,
+    "wrong_judgments": 1
+  },
+  {
+    "equivalent_candidate_eliminations": 0,
+    "final_remaining_ids": [
+      "c0"
+    ],
+    "method": "D",
+    "replicate": 0,
+    "scenario_id": "pilot-28",
+    "steps": [],
+    "uncertain_judgments": 0,
+    "witnesses_recomputed_exactly": true,
+    "wrong_judgments": 0
+  },
+  {
+    "equivalent_candidate_eliminations": 0,
+    "final_remaining_ids": [
+      "c0"
+    ],
+    "method": "E",
+    "replicate": 0,
+    "scenario_id": "pilot-28",
+    "steps": [],
+    "uncertain_judgments": 0,
+    "witnesses_recomputed_exactly": true,
+    "wrong_judgments": 0
+  },
+  {
+    "equivalent_candidate_eliminations": 0,
+    "final_remaining_ids": [
+      "c0"
+    ],
+    "method": "D",
+    "replicate": 0,
+    "scenario_id": "pilot-29",
+    "steps": [],
+    "uncertain_judgments": 0,
+    "witnesses_recomputed_exactly": true,
+    "wrong_judgments": 0
+  },
+  {
+    "equivalent_candidate_eliminations": 0,
+    "final_remaining_ids": [
+      "c0"
+    ],
+    "method": "E",
+    "replicate": 0,
+    "scenario_id": "pilot-29",
+    "steps": [],
+    "uncertain_judgments": 0,
+    "witnesses_recomputed_exactly": true,
+    "wrong_judgments": 0
+  },
+  {
+    "equivalent_candidate_eliminations": 0,
+    "final_remaining_ids": [
+      "c0"
+    ],
+    "method": "D",
+    "replicate": 0,
+    "scenario_id": "pilot-30",
+    "steps": [
+      {
+        "active_after": [
+          "c0"
+        ],
+        "active_before": [
+          "c0",
+          "c1"
+        ],
+        "chosen_plan_after": "010472eee2cf6c81e0c3",
+        "chosen_plan_before": "010472eee2cf6c81e0c3",
+        "journey_id": "03dc0f6026feef064175",
+        "judgment_correct": true,
+        "prompt_hash": "c11be1400819785ce365566c3e63d55e48f2c4064edab750c6b11ff5ea1fa59b",
+        "query_index": 1,
+        "reference_equivalent_candidates_removed": [],
+        "reference_label": true,
+        "removed_candidates": [
+          "c1"
+        ],
+        "selected_score": 1.0,
+        "separated_pairs": [
+          [
+            "c0",
+            "c1",
+            0
+          ]
+        ],
+        "supporting_spans": [
+          {
+            "end": 5,
+            "start": 0
+          }
+        ],
+        "verdict": "satisfied"
+      }
+    ],
+    "uncertain_judgments": 0,
+    "witnesses_recomputed_exactly": true,
+    "wrong_judgments": 0
+  },
+  {
+    "equivalent_candidate_eliminations": 0,
+    "final_remaining_ids": [
+      "c0"
+    ],
+    "method": "E",
+    "replicate": 0,
+    "scenario_id": "pilot-30",
+    "steps": [
+      {
+        "active_after": [
+          "c0"
+        ],
+        "active_before": [
+          "c0",
+          "c1"
+        ],
+        "chosen_plan_after": "010472eee2cf6c81e0c3",
+        "chosen_plan_before": "010472eee2cf6c81e0c3",
+        "journey_id": "03dc0f6026feef064175",
+        "judgment_correct": true,
+        "prompt_hash": "c11be1400819785ce365566c3e63d55e48f2c4064edab750c6b11ff5ea1fa59b",
+        "query_index": 1,
+        "reference_equivalent_candidates_removed": [],
+        "reference_label": true,
+        "removed_candidates": [
+          "c1"
+        ],
+        "selected_score": 1.0,
+        "separated_pairs": [
+          [
+            "c0",
+            "c1",
+            0
+          ]
+        ],
+        "supporting_spans": [
+          {
+            "end": 5,
+            "start": 0
+          }
+        ],
+        "verdict": "satisfied"
+      }
+    ],
+    "uncertain_judgments": 0,
+    "witnesses_recomputed_exactly": true,
+    "wrong_judgments": 0
+  },
+  {
+    "equivalent_candidate_eliminations": 0,
+    "final_remaining_ids": [
+      "c0"
+    ],
+    "method": "D",
+    "replicate": 0,
+    "scenario_id": "pilot-31",
+    "steps": [],
+    "uncertain_judgments": 0,
+    "witnesses_recomputed_exactly": true,
+    "wrong_judgments": 0
+  },
+  {
+    "equivalent_candidate_eliminations": 0,
+    "final_remaining_ids": [
+      "c0"
+    ],
+    "method": "E",
+    "replicate": 0,
+    "scenario_id": "pilot-31",
+    "steps": [],
+    "uncertain_judgments": 0,
+    "witnesses_recomputed_exactly": true,
+    "wrong_judgments": 0
+  },
+  {
+    "equivalent_candidate_eliminations": 0,
+    "final_remaining_ids": [
+      "c3"
+    ],
+    "method": "D",
+    "replicate": 0,
+    "scenario_id": "pilot-32",
+    "steps": [
+      {
+        "active_after": [
+          "c3"
+        ],
+        "active_before": [
+          "c0",
+          "c3"
+        ],
+        "chosen_plan_after": "dd6cd859e42b9fcf6ac5",
+        "chosen_plan_before": "8b422de494543afacba4",
+        "journey_id": "01853825538745663bb8",
+        "judgment_correct": true,
+        "prompt_hash": "60ccad93db4fe0564ec91f79ebdea1e10f6ace1b6f2f6d498a2b20a0245be8a2",
+        "query_index": 1,
+        "reference_equivalent_candidates_removed": [],
+        "reference_label": false,
+        "removed_candidates": [
+          "c0"
+        ],
+        "selected_score": 1.0,
+        "separated_pairs": [
+          [
+            "c0",
+            "c3",
+            1
+          ]
+        ],
+        "supporting_spans": [
+          {
+            "end": 25,
+            "start": 14
+          },
+          {
+            "end": 115,
+            "start": 104
+          }
+        ],
+        "verdict": "violated"
+      }
+    ],
+    "uncertain_judgments": 0,
+    "witnesses_recomputed_exactly": true,
+    "wrong_judgments": 0
+  },
+  {
+    "equivalent_candidate_eliminations": 0,
+    "final_remaining_ids": [
+      "c3"
+    ],
+    "method": "E",
+    "replicate": 0,
+    "scenario_id": "pilot-32",
+    "steps": [
+      {
+        "active_after": [
+          "c3"
+        ],
+        "active_before": [
+          "c0",
+          "c3"
+        ],
+        "chosen_plan_after": "dd6cd859e42b9fcf6ac5",
+        "chosen_plan_before": "8b422de494543afacba4",
+        "journey_id": "01853825538745663bb8",
+        "judgment_correct": true,
+        "prompt_hash": "60ccad93db4fe0564ec91f79ebdea1e10f6ace1b6f2f6d498a2b20a0245be8a2",
+        "query_index": 1,
+        "reference_equivalent_candidates_removed": [],
+        "reference_label": false,
+        "removed_candidates": [
+          "c0"
+        ],
+        "selected_score": 2.0,
+        "separated_pairs": [
+          [
+            "c0",
+            "c3",
+            1
+          ]
+        ],
+        "supporting_spans": [
+          {
+            "end": 25,
+            "start": 14
+          },
+          {
+            "end": 115,
+            "start": 104
+          }
+        ],
+        "verdict": "violated"
+      }
+    ],
+    "uncertain_judgments": 0,
+    "witnesses_recomputed_exactly": true,
+    "wrong_judgments": 0
+  },
+  {
+    "equivalent_candidate_eliminations": 0,
+    "final_remaining_ids": [],
+    "method": "D",
+    "replicate": 0,
+    "scenario_id": "pilot-33",
+    "steps": [],
+    "uncertain_judgments": 0,
+    "witnesses_recomputed_exactly": true,
+    "wrong_judgments": 0
+  },
+  {
+    "equivalent_candidate_eliminations": 0,
+    "final_remaining_ids": [],
+    "method": "E",
+    "replicate": 0,
+    "scenario_id": "pilot-33",
+    "steps": [],
+    "uncertain_judgments": 0,
+    "witnesses_recomputed_exactly": true,
+    "wrong_judgments": 0
+  },
+  {
+    "equivalent_candidate_eliminations": 1,
+    "final_remaining_ids": [
+      "c0"
+    ],
+    "method": "D",
+    "replicate": 0,
+    "scenario_id": "pilot-34",
+    "steps": [
+      {
+        "active_after": [
+          "c0",
+          "c3"
+        ],
+        "active_before": [
+          "c0",
+          "c1",
+          "c2",
+          "c3"
+        ],
+        "chosen_plan_after": "090d964b9fb94a3803e6",
+        "chosen_plan_before": "090d964b9fb94a3803e6",
+        "journey_id": "07a6773b6185c97c2900",
+        "judgment_correct": true,
+        "prompt_hash": "79af3a66606f617b88d29f56d5bc17a0e8e74e42f6a2044a2257dcd02282bcd5",
+        "query_index": 1,
+        "reference_equivalent_candidates_removed": [],
+        "reference_label": true,
+        "removed_candidates": [
+          "c1",
+          "c2"
+        ],
+        "selected_score": 4.0,
+        "separated_pairs": [
+          [
+            "c0",
+            "c1",
+            1
+          ],
+          [
+            "c0",
+            "c2",
+            1
+          ],
+          [
+            "c1",
+            "c3",
+            1
+          ],
+          [
+            "c2",
+            "c3",
+            1
+          ]
+        ],
+        "supporting_spans": [
+          {
+            "end": 5,
+            "start": 0
+          }
+        ],
+        "verdict": "satisfied"
+      },
+      {
+        "active_after": [
+          "c0"
+        ],
+        "active_before": [
+          "c0",
+          "c3"
+        ],
+        "chosen_plan_after": "090d964b9fb94a3803e6",
+        "chosen_plan_before": "090d964b9fb94a3803e6",
+        "journey_id": "004c05afb1f5827ae3be",
+        "judgment_correct": false,
+        "prompt_hash": "c52089e92766e576574e9ec587993e128404e18f5881272d0ccd64e5b6c913cf",
+        "query_index": 2,
+        "reference_equivalent_candidates_removed": [
+          "c3"
+        ],
+        "reference_label": false,
+        "removed_candidates": [
+          "c3"
+        ],
+        "selected_score": 1.0,
+        "separated_pairs": [
+          [
+            "c0",
+            "c3",
+            1
+          ]
+        ],
+        "supporting_spans": [
+          {
+            "end": 5,
+            "start": 0
+          }
+        ],
+        "verdict": "satisfied"
+      }
+    ],
+    "uncertain_judgments": 0,
+    "witnesses_recomputed_exactly": true,
+    "wrong_judgments": 1
+  },
+  {
+    "equivalent_candidate_eliminations": 1,
+    "final_remaining_ids": [
+      "c0"
+    ],
+    "method": "E",
+    "replicate": 0,
+    "scenario_id": "pilot-34",
+    "steps": [
+      {
+        "active_after": [
+          "c0",
+          "c3"
+        ],
+        "active_before": [
+          "c0",
+          "c1",
+          "c2",
+          "c3"
+        ],
+        "chosen_plan_after": "090d964b9fb94a3803e6",
+        "chosen_plan_before": "090d964b9fb94a3803e6",
+        "journey_id": "07a6773b6185c97c2900",
+        "judgment_correct": true,
+        "prompt_hash": "79af3a66606f617b88d29f56d5bc17a0e8e74e42f6a2044a2257dcd02282bcd5",
+        "query_index": 1,
+        "reference_equivalent_candidates_removed": [],
+        "reference_label": true,
+        "removed_candidates": [
+          "c1",
+          "c2"
+        ],
+        "selected_score": 8.0,
+        "separated_pairs": [
+          [
+            "c0",
+            "c1",
+            1
+          ],
+          [
+            "c0",
+            "c2",
+            1
+          ],
+          [
+            "c1",
+            "c3",
+            1
+          ],
+          [
+            "c2",
+            "c3",
+            1
+          ]
+        ],
+        "supporting_spans": [
+          {
+            "end": 5,
+            "start": 0
+          }
+        ],
+        "verdict": "satisfied"
+      },
+      {
+        "active_after": [
+          "c0"
+        ],
+        "active_before": [
+          "c0",
+          "c3"
+        ],
+        "chosen_plan_after": "090d964b9fb94a3803e6",
+        "chosen_plan_before": "090d964b9fb94a3803e6",
+        "journey_id": "004c05afb1f5827ae3be",
+        "judgment_correct": false,
+        "prompt_hash": "c52089e92766e576574e9ec587993e128404e18f5881272d0ccd64e5b6c913cf",
+        "query_index": 2,
+        "reference_equivalent_candidates_removed": [
+          "c3"
+        ],
+        "reference_label": false,
+        "removed_candidates": [
+          "c3"
+        ],
+        "selected_score": 2.0,
+        "separated_pairs": [
+          [
+            "c0",
+            "c3",
+            1
+          ]
+        ],
+        "supporting_spans": [
+          {
+            "end": 5,
+            "start": 0
+          }
+        ],
+        "verdict": "satisfied"
+      }
+    ],
+    "uncertain_judgments": 0,
+    "witnesses_recomputed_exactly": true,
+    "wrong_judgments": 1
+  },
+  {
+    "equivalent_candidate_eliminations": 0,
+    "final_remaining_ids": [
+      "c0"
+    ],
+    "method": "D",
+    "replicate": 0,
+    "scenario_id": "pilot-35",
+    "steps": [],
+    "uncertain_judgments": 0,
+    "witnesses_recomputed_exactly": true,
+    "wrong_judgments": 0
+  },
+  {
+    "equivalent_candidate_eliminations": 0,
+    "final_remaining_ids": [
+      "c0"
+    ],
+    "method": "E",
+    "replicate": 0,
+    "scenario_id": "pilot-35",
+    "steps": [],
+    "uncertain_judgments": 0,
+    "witnesses_recomputed_exactly": true,
+    "wrong_judgments": 0
+  },
+  {
+    "equivalent_candidate_eliminations": 0,
+    "final_remaining_ids": [
+      "c3"
+    ],
+    "method": "D",
+    "replicate": 0,
+    "scenario_id": "pilot-36",
+    "steps": [
+      {
+        "active_after": [
+          "c3"
+        ],
+        "active_before": [
+          "c0",
+          "c3"
+        ],
+        "chosen_plan_after": "410d090731a809d0d7d1",
+        "chosen_plan_before": "410d090731a809d0d7d1",
+        "journey_id": "032b33a769adb812d572",
+        "judgment_correct": true,
+        "prompt_hash": "6f431f7174404a0b23cff5422b1290ca9ca2179d3cc1f16a2920604554947ba9",
+        "query_index": 1,
+        "reference_equivalent_candidates_removed": [],
+        "reference_label": false,
+        "removed_candidates": [
+          "c0"
+        ],
+        "selected_score": 1.0,
+        "separated_pairs": [
+          [
+            "c0",
+            "c3",
+            0
+          ]
+        ],
+        "supporting_spans": [
+          {
+            "end": 5,
+            "start": 0
+          },
+          {
+            "end": 30,
+            "start": 25
+          }
+        ],
+        "verdict": "violated"
+      }
+    ],
+    "uncertain_judgments": 0,
+    "witnesses_recomputed_exactly": true,
+    "wrong_judgments": 0
+  },
+  {
+    "equivalent_candidate_eliminations": 0,
+    "final_remaining_ids": [
+      "c3"
+    ],
+    "method": "E",
+    "replicate": 0,
+    "scenario_id": "pilot-36",
+    "steps": [
+      {
+        "active_after": [
+          "c3"
+        ],
+        "active_before": [
+          "c0",
+          "c3"
+        ],
+        "chosen_plan_after": "410d090731a809d0d7d1",
+        "chosen_plan_before": "410d090731a809d0d7d1",
+        "journey_id": "032b33a769adb812d572",
+        "judgment_correct": true,
+        "prompt_hash": "6f431f7174404a0b23cff5422b1290ca9ca2179d3cc1f16a2920604554947ba9",
+        "query_index": 1,
+        "reference_equivalent_candidates_removed": [],
+        "reference_label": false,
+        "removed_candidates": [
+          "c0"
+        ],
+        "selected_score": 1.0,
+        "separated_pairs": [
+          [
+            "c0",
+            "c3",
+            0
+          ]
+        ],
+        "supporting_spans": [
+          {
+            "end": 5,
+            "start": 0
+          },
+          {
+            "end": 30,
+            "start": 25
+          }
+        ],
+        "verdict": "violated"
+      }
+    ],
+    "uncertain_judgments": 0,
+    "witnesses_recomputed_exactly": true,
+    "wrong_judgments": 0
+  },
+  {
+    "equivalent_candidate_eliminations": 0,
+    "final_remaining_ids": [
+      "c1"
+    ],
+    "method": "D",
+    "replicate": 0,
+    "scenario_id": "pilot-37",
+    "steps": [
+      {
+        "active_after": [
+          "c1",
+          "c3"
+        ],
+        "active_before": [
+          "c0",
+          "c1",
+          "c2",
+          "c3"
+        ],
+        "chosen_plan_after": "4e0b535d27d1f3fa24fe",
+        "chosen_plan_before": "4e0b535d27d1f3fa24fe",
+        "journey_id": "3ec28069888f5177b261",
+        "judgment_correct": true,
+        "prompt_hash": "6491a155d4f9de11db8979c20734c3ddd06c665b3bb13b815944d558c891b074",
+        "query_index": 1,
+        "reference_equivalent_candidates_removed": [],
+        "reference_label": true,
+        "removed_candidates": [
+          "c0",
+          "c2"
+        ],
+        "selected_score": 4.0,
+        "separated_pairs": [
+          [
+            "c0",
+            "c1",
+            0
+          ],
+          [
+            "c0",
+            "c3",
+            0
+          ],
+          [
+            "c1",
+            "c2",
+            1
+          ],
+          [
+            "c2",
+            "c3",
+            2
+          ]
+        ],
+        "supporting_spans": [
+          {
+            "end": 5,
+            "start": 0
+          },
+          {
+            "end": 15,
+            "start": 10
+          },
+          {
+            "end": 25,
+            "start": 20
+          },
+          {
+            "end": 35,
+            "start": 30
+          },
+          {
+            "end": 45,
+            "start": 40
+          }
+        ],
+        "verdict": "satisfied"
+      },
+      {
+        "active_after": [
+          "c1"
+        ],
+        "active_before": [
+          "c1",
+          "c3"
+        ],
+        "chosen_plan_after": "4e0b535d27d1f3fa24fe",
+        "chosen_plan_before": "4e0b535d27d1f3fa24fe",
+        "journey_id": "4a89a06ba5058ef4ccea",
+        "judgment_correct": true,
+        "prompt_hash": "40d436a4a64312e11c76423a6f41c7b0378204c9e4394d606361dc663689d52e",
+        "query_index": 2,
+        "reference_equivalent_candidates_removed": [],
+        "reference_label": true,
+        "removed_candidates": [
+          "c3"
+        ],
+        "selected_score": 1.0,
+        "separated_pairs": [
+          [
+            "c1",
+            "c3",
+            0
+          ]
+        ],
+        "supporting_spans": [
+          {
+            "end": 5,
+            "start": 0
+          }
+        ],
+        "verdict": "satisfied"
+      }
+    ],
+    "uncertain_judgments": 0,
+    "witnesses_recomputed_exactly": true,
+    "wrong_judgments": 0
+  },
+  {
+    "equivalent_candidate_eliminations": 1,
+    "final_remaining_ids": [
+      "c2"
+    ],
+    "method": "E",
+    "replicate": 0,
+    "scenario_id": "pilot-37",
+    "steps": [
+      {
+        "active_after": [
+          "c2"
+        ],
+        "active_before": [
+          "c0",
+          "c1",
+          "c2",
+          "c3"
+        ],
+        "chosen_plan_after": "4a89a06ba5058ef4ccea",
+        "chosen_plan_before": "4e0b535d27d1f3fa24fe",
+        "journey_id": "022c2a4af86602d54884",
+        "judgment_correct": false,
+        "prompt_hash": "a76f948ca73ef007e3abfb664a0b534ed66a81bdabd18452eb4c7f5f5f4b30c2",
+        "query_index": 1,
+        "reference_equivalent_candidates_removed": [
+          "c1"
+        ],
+        "reference_label": true,
+        "removed_candidates": [
+          "c0",
+          "c1",
+          "c3"
+        ],
+        "selected_score": 8.0,
+        "separated_pairs": [
+          [
+            "c0",
+            "c2",
+            2
+          ],
+          [
+            "c1",
+            "c2",
+            1
+          ],
+          [
+            "c2",
+            "c3",
+            2
+          ]
+        ],
+        "supporting_spans": [
+          {
+            "end": 5,
+            "start": 0
+          },
+          {
+            "end": 111,
+            "start": 104
+          }
+        ],
+        "verdict": "violated"
+      }
+    ],
+    "uncertain_judgments": 0,
+    "witnesses_recomputed_exactly": true,
+    "wrong_judgments": 1
+  },
+  {
+    "equivalent_candidate_eliminations": 0,
+    "final_remaining_ids": [
+      "c0"
+    ],
+    "method": "D",
+    "replicate": 0,
+    "scenario_id": "pilot-38",
+    "steps": [
+      {
+        "active_after": [
+          "c0"
+        ],
+        "active_before": [
+          "c0",
+          "c1"
+        ],
+        "chosen_plan_after": "23907dde75ed497713e9",
+        "chosen_plan_before": "23907dde75ed497713e9",
+        "journey_id": "09c37697428421bd92de",
+        "judgment_correct": true,
+        "prompt_hash": "ae9fe521227bde65fb749c1042df2ececff7885d25c4427ac41bdeb0db216070",
+        "query_index": 1,
+        "reference_equivalent_candidates_removed": [],
+        "reference_label": true,
+        "removed_candidates": [
+          "c1"
+        ],
+        "selected_score": 1.0,
+        "separated_pairs": [
+          [
+            "c0",
+            "c1",
+            1
+          ]
+        ],
+        "supporting_spans": [
+          {
+            "end": 5,
+            "start": 0
+          }
+        ],
+        "verdict": "satisfied"
+      }
+    ],
+    "uncertain_judgments": 0,
+    "witnesses_recomputed_exactly": true,
+    "wrong_judgments": 0
+  },
+  {
+    "equivalent_candidate_eliminations": 0,
+    "final_remaining_ids": [
+      "c0"
+    ],
+    "method": "E",
+    "replicate": 0,
+    "scenario_id": "pilot-38",
+    "steps": [
+      {
+        "active_after": [
+          "c0"
+        ],
+        "active_before": [
+          "c0",
+          "c1"
+        ],
+        "chosen_plan_after": "23907dde75ed497713e9",
+        "chosen_plan_before": "23907dde75ed497713e9",
+        "journey_id": "09c37697428421bd92de",
+        "judgment_correct": true,
+        "prompt_hash": "ae9fe521227bde65fb749c1042df2ececff7885d25c4427ac41bdeb0db216070",
+        "query_index": 1,
+        "reference_equivalent_candidates_removed": [],
+        "reference_label": true,
+        "removed_candidates": [
+          "c1"
+        ],
+        "selected_score": 2.0,
+        "separated_pairs": [
+          [
+            "c0",
+            "c1",
+            1
+          ]
+        ],
+        "supporting_spans": [
+          {
+            "end": 5,
+            "start": 0
+          }
+        ],
+        "verdict": "satisfied"
+      }
+    ],
+    "uncertain_judgments": 0,
+    "witnesses_recomputed_exactly": true,
+    "wrong_judgments": 0
+  },
+  {
+    "equivalent_candidate_eliminations": 0,
+    "final_remaining_ids": [
+      "c0"
+    ],
+    "method": "D",
+    "replicate": 0,
+    "scenario_id": "pilot-39",
+    "steps": [],
+    "uncertain_judgments": 0,
+    "witnesses_recomputed_exactly": true,
+    "wrong_judgments": 0
+  },
+  {
+    "equivalent_candidate_eliminations": 0,
+    "final_remaining_ids": [
+      "c0"
+    ],
+    "method": "E",
+    "replicate": 0,
+    "scenario_id": "pilot-39",
+    "steps": [],
+    "uncertain_judgments": 0,
+    "witnesses_recomputed_exactly": true,
+    "wrong_judgments": 0
+  },
+  {
+    "equivalent_candidate_eliminations": 1,
+    "final_remaining_ids": [
+      "c0"
+    ],
+    "method": "D",
+    "replicate": 0,
+    "scenario_id": "pilot-40",
+    "steps": [
+      {
+        "active_after": [
+          "c0"
+        ],
+        "active_before": [
+          "c0",
+          "c1"
+        ],
+        "chosen_plan_after": null,
+        "chosen_plan_before": null,
+        "journey_id": "008b1d441a8449cba7fe",
+        "judgment_correct": false,
+        "prompt_hash": "57cbd0e2b2b845cbb098a91ad179cff412140cdc9c278104b0c244564c8f3630",
+        "query_index": 1,
+        "reference_equivalent_candidates_removed": [
+          "c1"
+        ],
+        "reference_label": true,
+        "removed_candidates": [
+          "c1"
+        ],
+        "selected_score": 1.0,
+        "separated_pairs": [
+          [
+            "c0",
+            "c1",
+            1
+          ]
+        ],
+        "supporting_spans": [
+          {
+            "end": 122,
+            "start": 112
+          }
+        ],
+        "verdict": "violated"
+      }
+    ],
+    "uncertain_judgments": 0,
+    "witnesses_recomputed_exactly": true,
+    "wrong_judgments": 1
+  },
+  {
+    "equivalent_candidate_eliminations": 1,
+    "final_remaining_ids": [
+      "c0"
+    ],
+    "method": "E",
+    "replicate": 0,
+    "scenario_id": "pilot-40",
+    "steps": [
+      {
+        "active_after": [
+          "c0"
+        ],
+        "active_before": [
+          "c0",
+          "c1"
+        ],
+        "chosen_plan_after": null,
+        "chosen_plan_before": null,
+        "journey_id": "008b1d441a8449cba7fe",
+        "judgment_correct": false,
+        "prompt_hash": "57cbd0e2b2b845cbb098a91ad179cff412140cdc9c278104b0c244564c8f3630",
+        "query_index": 1,
+        "reference_equivalent_candidates_removed": [
+          "c1"
+        ],
+        "reference_label": true,
+        "removed_candidates": [
+          "c1"
+        ],
+        "selected_score": 2.0,
+        "separated_pairs": [
+          [
+            "c0",
+            "c1",
+            1
+          ]
+        ],
+        "supporting_spans": [
+          {
+            "end": 122,
+            "start": 112
+          }
+        ],
+        "verdict": "violated"
+      }
+    ],
+    "uncertain_judgments": 0,
+    "witnesses_recomputed_exactly": true,
+    "wrong_judgments": 1
+  },
+  {
+    "equivalent_candidate_eliminations": 0,
+    "final_remaining_ids": [],
+    "method": "D",
+    "replicate": 0,
+    "scenario_id": "pilot-41",
+    "steps": [],
+    "uncertain_judgments": 0,
+    "witnesses_recomputed_exactly": true,
+    "wrong_judgments": 0
+  },
+  {
+    "equivalent_candidate_eliminations": 0,
+    "final_remaining_ids": [],
+    "method": "E",
+    "replicate": 0,
+    "scenario_id": "pilot-41",
+    "steps": [],
+    "uncertain_judgments": 0,
+    "witnesses_recomputed_exactly": true,
+    "wrong_judgments": 0
+  },
+  {
+    "equivalent_candidate_eliminations": 0,
+    "final_remaining_ids": [
+      "c0"
+    ],
+    "method": "D",
+    "replicate": 0,
+    "scenario_id": "pilot-42",
+    "steps": [
+      {
+        "active_after": [
+          "c0"
+        ],
+        "active_before": [
+          "c0",
+          "c2"
+        ],
+        "chosen_plan_after": "056694a7849798a5ed53",
+        "chosen_plan_before": "056694a7849798a5ed53",
+        "journey_id": "02b8e234c9d442a0e68f",
+        "judgment_correct": true,
+        "prompt_hash": "66e42195c67debb3310e12237aca2354bad84e2bd1f3fde2654611c4835d57f8",
+        "query_index": 1,
+        "reference_equivalent_candidates_removed": [],
+        "reference_label": false,
+        "removed_candidates": [
+          "c2"
+        ],
+        "selected_score": 1.0,
+        "separated_pairs": [
+          [
+            "c0",
+            "c2",
+            2
+          ]
+        ],
+        "supporting_spans": [
+          {
+            "end": 27,
+            "start": 12
+          },
+          {
+            "end": 118,
+            "start": 103
+          }
+        ],
+        "verdict": "violated"
+      }
+    ],
+    "uncertain_judgments": 0,
+    "witnesses_recomputed_exactly": true,
+    "wrong_judgments": 0
+  },
+  {
+    "equivalent_candidate_eliminations": 0,
+    "final_remaining_ids": [
+      "c0"
+    ],
+    "method": "E",
+    "replicate": 0,
+    "scenario_id": "pilot-42",
+    "steps": [
+      {
+        "active_after": [
+          "c0"
+        ],
+        "active_before": [
+          "c0",
+          "c2"
+        ],
+        "chosen_plan_after": "056694a7849798a5ed53",
+        "chosen_plan_before": "056694a7849798a5ed53",
+        "journey_id": "02b8e234c9d442a0e68f",
+        "judgment_correct": true,
+        "prompt_hash": "66e42195c67debb3310e12237aca2354bad84e2bd1f3fde2654611c4835d57f8",
+        "query_index": 1,
+        "reference_equivalent_candidates_removed": [],
+        "reference_label": false,
+        "removed_candidates": [
+          "c2"
+        ],
+        "selected_score": 3.0,
+        "separated_pairs": [
+          [
+            "c0",
+            "c2",
+            2
+          ]
+        ],
+        "supporting_spans": [
+          {
+            "end": 27,
+            "start": 12
+          },
+          {
+            "end": 118,
+            "start": 103
+          }
+        ],
+        "verdict": "violated"
+      }
+    ],
+    "uncertain_judgments": 0,
+    "witnesses_recomputed_exactly": true,
+    "wrong_judgments": 0
+  },
+  {
+    "equivalent_candidate_eliminations": 0,
+    "final_remaining_ids": [
+      "c0"
+    ],
+    "method": "D",
+    "replicate": 0,
+    "scenario_id": "pilot-43",
+    "steps": [],
+    "uncertain_judgments": 0,
+    "witnesses_recomputed_exactly": true,
+    "wrong_judgments": 0
+  },
+  {
+    "equivalent_candidate_eliminations": 0,
+    "final_remaining_ids": [
+      "c0"
+    ],
+    "method": "E",
+    "replicate": 0,
+    "scenario_id": "pilot-43",
+    "steps": [],
+    "uncertain_judgments": 0,
+    "witnesses_recomputed_exactly": true,
+    "wrong_judgments": 0
+  },
+  {
+    "equivalent_candidate_eliminations": 0,
+    "final_remaining_ids": [
+      "c0"
+    ],
+    "method": "D",
+    "replicate": 0,
+    "scenario_id": "pilot-44",
+    "steps": [
+      {
+        "active_after": [
+          "c0"
+        ],
+        "active_before": [
+          "c0",
+          "c3"
+        ],
+        "chosen_plan_after": "fe66fe1966b248b6f9a8",
+        "chosen_plan_before": "fe66fe1966b248b6f9a8",
+        "journey_id": "081218a73701ce807b72",
+        "judgment_correct": true,
+        "prompt_hash": "3d91ea3a009c3c1b94e7748a138c8aab42f8d0bb05cb39cd3aa9e37a2c649cc0",
+        "query_index": 1,
+        "reference_equivalent_candidates_removed": [],
+        "reference_label": true,
+        "removed_candidates": [
+          "c3"
+        ],
+        "selected_score": 1.0,
+        "separated_pairs": [
+          [
+            "c0",
+            "c3",
+            0
+          ]
+        ],
+        "supporting_spans": [
+          {
+            "end": 5,
+            "start": 0
+          }
+        ],
+        "verdict": "satisfied"
+      }
+    ],
+    "uncertain_judgments": 0,
+    "witnesses_recomputed_exactly": true,
+    "wrong_judgments": 0
+  },
+  {
+    "equivalent_candidate_eliminations": 0,
+    "final_remaining_ids": [
+      "c0"
+    ],
+    "method": "E",
+    "replicate": 0,
+    "scenario_id": "pilot-44",
+    "steps": [
+      {
+        "active_after": [
+          "c0"
+        ],
+        "active_before": [
+          "c0",
+          "c3"
+        ],
+        "chosen_plan_after": "fe66fe1966b248b6f9a8",
+        "chosen_plan_before": "fe66fe1966b248b6f9a8",
+        "journey_id": "081218a73701ce807b72",
+        "judgment_correct": true,
+        "prompt_hash": "3d91ea3a009c3c1b94e7748a138c8aab42f8d0bb05cb39cd3aa9e37a2c649cc0",
+        "query_index": 1,
+        "reference_equivalent_candidates_removed": [],
+        "reference_label": true,
+        "removed_candidates": [
+          "c3"
+        ],
+        "selected_score": 1.0,
+        "separated_pairs": [
+          [
+            "c0",
+            "c3",
+            0
+          ]
+        ],
+        "supporting_spans": [
+          {
+            "end": 5,
+            "start": 0
+          }
+        ],
+        "verdict": "satisfied"
+      }
+    ],
+    "uncertain_judgments": 0,
+    "witnesses_recomputed_exactly": true,
+    "wrong_judgments": 0
+  },
+  {
+    "equivalent_candidate_eliminations": 0,
+    "final_remaining_ids": [
+      "c0"
+    ],
+    "method": "D",
+    "replicate": 0,
+    "scenario_id": "pilot-45",
+    "steps": [],
+    "uncertain_judgments": 0,
+    "witnesses_recomputed_exactly": true,
+    "wrong_judgments": 0
+  },
+  {
+    "equivalent_candidate_eliminations": 0,
+    "final_remaining_ids": [
+      "c0"
+    ],
+    "method": "E",
+    "replicate": 0,
+    "scenario_id": "pilot-45",
+    "steps": [],
+    "uncertain_judgments": 0,
+    "witnesses_recomputed_exactly": true,
+    "wrong_judgments": 0
+  },
+  {
+    "equivalent_candidate_eliminations": 0,
+    "final_remaining_ids": [
+      "c0"
+    ],
+    "method": "D",
+    "replicate": 0,
+    "scenario_id": "pilot-46",
+    "steps": [],
+    "uncertain_judgments": 0,
+    "witnesses_recomputed_exactly": true,
+    "wrong_judgments": 0
+  },
+  {
+    "equivalent_candidate_eliminations": 0,
+    "final_remaining_ids": [
+      "c0"
+    ],
+    "method": "E",
+    "replicate": 0,
+    "scenario_id": "pilot-46",
+    "steps": [],
+    "uncertain_judgments": 0,
+    "witnesses_recomputed_exactly": true,
+    "wrong_judgments": 0
+  },
+  {
+    "equivalent_candidate_eliminations": 0,
+    "final_remaining_ids": [
+      "c1"
+    ],
+    "method": "D",
+    "replicate": 0,
+    "scenario_id": "pilot-47",
+    "steps": [
+      {
+        "active_after": [
+          "c1"
+        ],
+        "active_before": [
+          "c0",
+          "c1"
+        ],
+        "chosen_plan_after": "3308798f8236675e079f",
+        "chosen_plan_before": "f7eccaa8180760187d13",
+        "journey_id": "00e4b6b8ab7e5a7d0d65",
+        "judgment_correct": true,
+        "prompt_hash": "92379f39106428cddcf67389df8f466a169c3a2beeffff8b05773cc3537d230a",
+        "query_index": 1,
+        "reference_equivalent_candidates_removed": [],
+        "reference_label": true,
+        "removed_candidates": [
+          "c0"
+        ],
+        "selected_score": 1.0,
+        "separated_pairs": [
+          [
+            "c0",
+            "c1",
+            1
+          ]
+        ],
+        "supporting_spans": [
+          {
+            "end": 5,
+            "start": 0
+          }
+        ],
+        "verdict": "satisfied"
+      }
+    ],
+    "uncertain_judgments": 0,
+    "witnesses_recomputed_exactly": true,
+    "wrong_judgments": 0
+  },
+  {
+    "equivalent_candidate_eliminations": 0,
+    "final_remaining_ids": [
+      "c1"
+    ],
+    "method": "E",
+    "replicate": 0,
+    "scenario_id": "pilot-47",
+    "steps": [
+      {
+        "active_after": [
+          "c1"
+        ],
+        "active_before": [
+          "c0",
+          "c1"
+        ],
+        "chosen_plan_after": "3308798f8236675e079f",
+        "chosen_plan_before": "f7eccaa8180760187d13",
+        "journey_id": "00e4b6b8ab7e5a7d0d65",
+        "judgment_correct": true,
+        "prompt_hash": "92379f39106428cddcf67389df8f466a169c3a2beeffff8b05773cc3537d230a",
+        "query_index": 1,
+        "reference_equivalent_candidates_removed": [],
+        "reference_label": true,
+        "removed_candidates": [
+          "c0"
+        ],
+        "selected_score": 2.0,
+        "separated_pairs": [
+          [
+            "c0",
+            "c1",
+            1
+          ]
+        ],
+        "supporting_spans": [
+          {
+            "end": 5,
+            "start": 0
+          }
+        ],
+        "verdict": "satisfied"
+      }
+    ],
+    "uncertain_judgments": 0,
+    "witnesses_recomputed_exactly": true,
+    "wrong_judgments": 0
+  }
+]

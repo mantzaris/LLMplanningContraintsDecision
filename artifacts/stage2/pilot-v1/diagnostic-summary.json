@@ -1,0 +1,122 @@
+{
+  "additional_representatives": {
+    "cases": {
+      "correct_plan_without_equivalent": {
+        "replicate": 0,
+        "scenario_id": "pilot-00"
+      },
+      "divergent_selection": {
+        "replicate": 0,
+        "scenario_id": "pilot-00"
+      },
+      "harmful_validation": {
+        "replicate": 0,
+        "scenario_id": "pilot-14"
+      },
+      "useful_validation": {
+        "replicate": 0,
+        "scenario_id": "pilot-12"
+      },
+      "wrong_without_alternatives": {
+        "replicate": 0,
+        "scenario_id": "pilot-02"
+      }
+    },
+    "rule": "first lexicographic scenario/replicate satisfying each named diagnostic condition; no choice by effect magnitude"
+  },
+  "base_requests": 48,
+  "baseline_summary": {
+    "A": {
+      "costs": {
+        "input_tokens": 109214,
+        "latency_seconds": 104.95924010500312,
+        "logical_calls": 48,
+        "output_tokens": 7213
+      },
+      "outcomes": {
+        "correct_feasible_plan": 28,
+        "correct_infeasibility": 3,
+        "false_infeasibility": 6,
+        "incorrect_plan": 5,
+        "invalid_model_output": 6
+      },
+      "outputs": 48
+    },
+    "B": {
+      "costs": {
+        "input_tokens": 226889,
+        "latency_seconds": 210.32994027226232,
+        "logical_calls": 96,
+        "output_tokens": 14584
+      },
+      "outcomes": {
+        "correct_feasible_plan": 29,
+        "correct_infeasibility": 3,
+        "false_infeasibility": 6,
+        "incorrect_plan": 4,
+        "invalid_model_output": 5,
+        "unresolved": 1
+      },
+      "outputs": 48
+    },
+    "C": {
+      "costs": {
+        "input_tokens": 224079,
+        "latency_seconds": 219.94631628505886,
+        "logical_calls": 137,
+        "output_tokens": 15479
+      },
+      "outcomes": {
+        "correct_feasible_plan": 16,
+        "correct_infeasibility": 3,
+        "incorrect_plan": 2,
+        "invalid_model_output": 6,
+        "unresolved": 21
+      },
+      "outputs": 48
+    }
+  },
+  "bundles": 48,
+  "counts": {
+    "alternatives_but_same_trajectory": 23,
+    "consequence_weight_variation": 4,
+    "correct_selected_plan_without_equivalent": 13,
+    "correcting_selected_plan_available": 5,
+    "decision_relevant_alternatives": 18,
+    "different_trajectory_same_correctness": 2,
+    "distinguishable_alternatives": 25,
+    "final_correctness_differs": 0,
+    "final_output_differs": 1,
+    "first_witness_differs": 2,
+    "ordinary_correct_plan_without_equivalent": 12,
+    "reference_equivalent_present": 23,
+    "trajectory_differs": 2,
+    "witness_ranking_differs": 4
+  },
+  "definitions": {
+    "correcting_selected_plan_available": "initial resolution incorrect, at least one candidate-selected plan satisfies reference",
+    "decision_relevant_alternatives": "at least one pair with positive cross-plan rejection score",
+    "distinguishable_alternatives": "at least two acceptance vectors in the frozen pool",
+    "pool_equivalence_limit": "Different syntax with equal vectors need not be inequivalent outside the pool; no external-domain completeness claim."
+  },
+  "equivalent_candidate_eliminations_logical_DE": 5,
+  "ordinary_judgment_prompt_checks": 58,
+  "semantic_class_histogram": {
+    "0": 5,
+    "1": 18,
+    "2": 18,
+    "3": 5,
+    "4": 2
+  },
+  "totals": {
+    "canonical_formula_duplicates": 43,
+    "exact_text_duplicates": 8,
+    "parsed_interpretations": 160,
+    "requested_interpretations": 192,
+    "returned_interpretations": 192,
+    "syntactic_variants_lost_to_pool_equivalence": 40
+  },
+  "uncertain_judgments_logical_DE": 0,
+  "witness_and_bundle_integrity": "every saved D/E witness score and candidate bundle checked exactly",
+  "wrong_judgments_logical_DE": 13
+}

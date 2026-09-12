@@ -1,0 +1,32 @@
+{
+  "annotation_amendments": [],
+  "annotation_status": "provisional; automated review, not human audited",
+  "checks": [
+    {
+      "command": ".venv/bin/pytest -q",
+      "result": "32 passed in 7.13s"
+    },
+    {
+      "command": ".venv/bin/ruff check src tests scripts",
+      "result": "passed"
+    },
+    {
+      "command": "scripts/replay_revision.py --run runs/stage2-pilot-v1 --output runs/stage2-pilot-replay-v1",
+      "result": "48 matching pairs; zero GPU calls"
+    },
+    {
+      "command": "scripts/stage2_fresh_diagnostics.py (report arguments)",
+      "result": "identical candidate bundles, every witness/score replayed, all 58 D/E judgment prompt checks passed"
+    },
+    {
+      "command": "scripts/stage2_execution_accounting.py (report arguments)",
+      "result": "358 attempts match journal; one closed session; immutable cumulative accounting"
+    }
+  ],
+  "execution_revision": "a544f31862ff34b359ba25b9439615b5c29abcc3",
+  "frozen_source_unchanged": true,
+  "preflight_sha256": "b2ef1c25cbf7eb47a83456deddf15017fee365ab1496d81ac179336e87a1ad03",
+  "reference_and_public_preflight": "artifacts/stage2/execution-attempt-20260912/preflight.json",
+  "replayed_pairs": 48,
+  "source_hash": "a0e4acc5145a0103d3e8d837f39e7a5898ff2ad6923afebedf4df71ba326b7c3"
+}

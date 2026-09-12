@@ -2,8 +2,9 @@
 
 Use Python 3.11 or 3.12 and the committed `uv.lock`. The local verified environment
 uses Python 3.11.13; the earlier GPU environment used Python 3.12.3. Run these commands
-from the repository root. The Stage 2 report distinguishes the unrun fresh pilot from
-the completed historical CPU reanalysis.
+from the repository root. The fresh pilot is complete: 48 bases, one replicate under the frozen timing rule.
+The GPU execution report separates it from historical CPU reanalysis. Reproduction
+requires no further GPU inference; do not relaunch the completed allocation.
 
 ## CPU environment and fresh data
 
@@ -36,35 +37,47 @@ Its parent revision and source hash are historical records, so rerunning that co
 from a later commit intentionally refuses to overwrite the immutable protocol. Data
 and wording checks can be repeated without refreezing the research protocol.
 
-## Authorized GPU execution after connectivity is restored
+## Recorded GPU execution and transport
 
-No new GPU run was possible in this stage. Keep connection settings local and reuse
-the user's normal SSH authentication. The provided gateway accepts an interactive
-PTY; command arguments after the SSH target may be ignored. Inspect hardware, memory,
-storage, process names and model cache after an actual remote shell prompt. Do not
-use a different pod or invent a direct TCP endpoint. The prior verified isolated paths
-were `/workspace/LLMplanningConstraintsStage1/.venv` for the environment and
-`/workspace/AgentRobustComms/stage2/model` for the read-only model cache. Recheck them;
-the Stage 2 connection attempts could not verify their current availability.
+The user-provided direct SSH connection resolved the gateway routing failure. Its
+provider pod ID and historical ledger were checked before execution. The separate
+pod used by the related `OverseeingManyLLMs` repository is not this project's pod.
+Keep the supplied host/port and credentials in local settings; do not infer an endpoint
+from another project. Use finite timeouts and strict known-host verification. The
+verified environment is `/workspace/LLMplanningConstraintsStage1/.venv`, model cache
+`/workspace/AgentRobustComms/stage2/model`, and new Stage 2 clone
+`/workspace/LLMplanningConstraintsStage2/project`. The existing environment is reused
+with `PYTHONPATH`; other projects' environments and workloads are not modified.
 
-For code and public-data transfer, make an archive/bundle locally and use the existing
-stdin/base64 helper. Set `RUNPOD_TARGET` privately to the supplied SSH target; it is
-not a committed setting. The data archive contains only public inference inputs.
-The code bundle also contains committed annotation exports; the ordinary runtime
-does not read those files:
+The following commands document the setup/launch already completed at `a544f318`.
+They are not instructions to rerun GPU inference on the completed sample. A future
+resume must preserve the existing clone, run identity and cumulative stage ledger.
+
+Code and public-data archives were transferred with verified SSH command execution
+and binary stdin. This works without SCP/SFTP. With `RUNPOD_TARGET` and `RUNPOD_PORT`
+set privately to this project's authorized direct connection, the equivalent transfer
+pattern is below. `test ! -e` prevents replacing an existing artifact; compare the
+printed local and remote hashes before extraction. No credentials enter the archive.
 
 ```bash
 git bundle create /tmp/plancheck-stage2.bundle main
 tar -czf /tmp/plancheck-stage2-public.tar.gz -C data/prepared/stage2 public
-python3 scripts/ssh_transfer.py --identity ~/.ssh/id_rsa --target "$RUNPOD_TARGET" \
-  --local /tmp/plancheck-stage2.bundle \
-  --remote-root /workspace/LLMplanningConstraintsStage2 --remote-name project.bundle
-python3 scripts/ssh_transfer.py --identity ~/.ssh/id_rsa --target "$RUNPOD_TARGET" \
-  --local /tmp/plancheck-stage2-public.tar.gz \
-  --remote-root /workspace/LLMplanningConstraintsStage2 --remote-name public.tar.gz
+ssh -i ~/.ssh/id_rsa -p "$RUNPOD_PORT" -o BatchMode=yes \
+  -o ConnectTimeout=15 -o StrictHostKeyChecking=yes "$RUNPOD_TARGET" \
+  'test ! -e /workspace/LLMplanningConstraintsStage2/project.bundle && cat > /workspace/LLMplanningConstraintsStage2/project.bundle' \
+  < /tmp/plancheck-stage2.bundle
+sha256sum /tmp/plancheck-stage2.bundle
+ssh -i ~/.ssh/id_rsa -p "$RUNPOD_PORT" -o BatchMode=yes \
+  -o ConnectTimeout=15 -o StrictHostKeyChecking=yes "$RUNPOD_TARGET" \
+  'sha256sum /workspace/LLMplanningConstraintsStage2/project.bundle'
 ```
 
-After obtaining the remote interactive shell, use a fresh isolated Stage 2 directory.
+Use the same pattern for `public.tar.gz`. The historical gateway's PTY/base64 helper
+`scripts/ssh_transfer.py` is retained, but was unnecessary on the working direct route.
+The public archive contains no reference constraints. The Git bundle includes committed
+annotations, which ordinary inference does not read.
+
+The original launch used a fresh isolated Stage 2 directory.
 A bundle clone is a transport copy on `main`, not a feature branch or Git worktree.
 On subsequent resumes, reuse the same clone and the same `runs/stage2-gpu-budget.jsonl`:
 
@@ -134,8 +147,8 @@ code changes refuses a mismatch. Do not delete unsuccessful v1 records. The `v2`
 results and four-pair replay verification are retained locally; compact results can
 regenerate the four comparison plots without the full schedule snapshots.
 
-After an eventual fresh pilot, copy its full run directory to the established durable
-experiment storage and local analysis area through the verified stdin mechanism.
+The completed fresh run is replicated on persistent pod storage and locally; see the
+GPU execution report and compact verification records for exact paths/checksums.
 Pass reference files only to the separate offline analysis command; they are never
 ordinary runtime inputs. Then run:
 
@@ -158,17 +171,70 @@ judgments, repairs, backend/settings and logical costs; the stage journal separa
 accounts actual GPU time and attempts. Do not add reused budget-prefix costs together
 as though they were separately executed experiments.
 
-Current Stage 2 raw artifacts have not been copied to the unreachable pod. They remain
-locally under ignored `runs/` and `data/prepared/stage2/`; committed hash manifests and
-compact results document their identities. This storage limitation remains explicit
-until remote replication is verified.
+## Compact export, diagnostic audit and accounting
 
-## Completion-attempt diagnostics and preservation
+The ordinary runtime has finished. These commands inspect saved outputs only:
 
-The [GPU execution report](../reports/STAGE2_GPU_EXECUTION.md) documents the bounded
-layered access check and remaining blocker. Gateway authentication succeeds, but the
-upstream pod connection times out; a zero gateway exit status does not prove shell access.
-The new offline `scripts/stage2_preflight.py` checks frozen hashes, annotation wording
-and public journey consistency. `scripts/preserve_stage2.py` creates a local archive
-with per-member checksum verification; it does not claim remote replication. Use the
-report's exact commands and inspect any pod-side ledger before resuming the allocation.
+```bash
+uv run --frozen python scripts/stage2_fresh_diagnostics.py \
+  --run runs/stage2-pilot-v1 --analysis runs/stage2-pilot-analysis-v1 \
+  --public data/prepared/stage2/public --references data/pilot/references.json \
+  --output runs/stage2-pilot-diagnostics-v1
+uv run --frozen python scripts/stage2_execution_accounting.py \
+  --run runs/stage2-pilot-v1 --ledger runs/stage2-gpu-budget.jsonl \
+  --previous artifacts/stage2/gpu-accounting.json \
+  --output artifacts/stage2/pilot-v1/gpu-accounting.json
+uv run --frozen python scripts/export_stage2.py --run runs/stage2-pilot-v1 \
+  --analysis runs/stage2-pilot-analysis-v1 --output artifacts/stage2/pilot-v1 \
+  --replication-record artifacts/stage2/pilot-v1/replication.json
+```
+
+A replication record is evidence from a completed checksum-verified transfer; do not
+supply one speculatively. The exporter otherwise records unverified storage. The
+supplementary diagnostic files can be copied from `runs/stage2-pilot-diagnostics-v1`
+to the compact result directory after checking immutable identities. They contain
+no full schedules/prompts. The accounting command reads the historical pre-execution
+snapshot and full current Stage 2 ledger, avoiding double-counting that allocation.
+
+Plots can be regenerated using just committed compact summaries:
+
+```bash
+uv run --frozen --extra analysis plancheck pilot-figures \
+  --analysis artifacts/stage2/pilot-v1 --output /tmp/stage2-pilot-figures \
+  --label 'Fresh development pilot: 48 bases, 1 replicate; provisional references'
+```
+
+## Restore retained raw inputs without replacing records
+
+`/workspace/LLMplanningConstraintsStage2/stage2-pilot-v1-results.tar.gz` contains the
+fresh run, ledger and launch diagnostics. The earlier 154-file archive under its
+`preservation/` directory contains frozen prepared inputs and historical CPU records.
+Offline oracle/analysis/replay records have another archive documented by
+`artifacts/stage2/pilot-v1/offline-replication.json`. All transfers were checksum-verified.
+They are on the authorized persistent volume; this is not an independent provider backup.
+
+Download with a verified direct SSH `cat` into a new local file, then compare SHA-256
+against the committed replication record. For example, with private connection variables:
+
+```bash
+ssh -i ~/.ssh/id_rsa -p "$RUNPOD_PORT" -o BatchMode=yes \
+  -o ConnectTimeout=15 -o StrictHostKeyChecking=yes "$RUNPOD_TARGET" \
+  'cat /workspace/LLMplanningConstraintsStage2/stage2-pilot-v1-results.tar.gz' \
+  > /tmp/stage2-pilot-v1-results.tar.gz
+sha256sum /tmp/stage2-pilot-v1-results.tar.gz
+```
+
+Its expected hash is `1f8b63fb3e863ec9564910bfdaf8e7304b878089cb2ff7da54d964a966383871`.
+After verifying both archives, extract into **new** directories for inspection. Do not
+overwrite a local allocation journal with an older archive. In a separate restored
+analysis area, pass the restored `runs/stage2-pilot-v1` as `--run` and the historical
+archive's `data/prepared/stage2/public` as `--public` to the CPU commands above; keep
+reference inputs pointed at the committed `data/pilot/references.json`. Run
+`replay_revision.py` from this Git repository so it can export the recorded source.
+Use new output paths if analysis code changes; original results remain immutable.
+
+The [fresh GPU execution report](../reports/STAGE2_GPU_EXECUTION.md) provides final
+usage, limitations and the bounded follow-up recommendation. The earlier gateway
+blocker and preflight remain in the [archived access report](../reports/STAGE2_GPU_ACCESS_ATTEMPT_20260912.md).
+No configuration refreeze, second replicate or further GPU stage was authorized by
+completion of this run.

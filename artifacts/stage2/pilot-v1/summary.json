@@ -1,0 +1,1769 @@
+{
+  "actual_new_compute": {
+    "failed_token_counts": "Unknown unless recorded; not assumed zero.",
+    "generation_attempts": 358,
+    "generation_failures": 0,
+    "generation_latency_seconds": 659.7768035025802,
+    "gpu_accounting": "Use the separate stage allocation ledger for loading, idle and teardown time.",
+    "input_tokens": 687767,
+    "output_tokens": 46091
+  },
+  "conditional_divergence_analysis": {
+    "expected_base_ids": [
+      "pilot-00",
+      "pilot-37"
+    ],
+    "incomplete_sample": "Missing outputs are disclosed; never fabricate their outcomes.",
+    "missing_ids": [],
+    "observed_ids": [
+      "pilot-00",
+      "pilot-37"
+    ],
+    "summaries": [
+      {
+        "base_groups": 2,
+        "budget": 0,
+        "methods": {
+          "D": {
+            "correct_rate": 1.0,
+            "correct_rate_95pct_base_bootstrap": [
+              1.0,
+              1.0
+            ],
+            "feasible": {
+              "correct": 2,
+              "outcomes": {
+                "correct_feasible_plan": 2
+              },
+              "outputs": 2
+            },
+            "infeasible": {
+              "correct": 0,
+              "outcomes": {},
+              "outputs": 0
+            },
+            "outcomes": {
+              "correct_feasible_plan": 2
+            },
+            "outputs": 2,
+            "totals": {
+              "judgments": 0,
+              "logical_calls": 8,
+              "logical_input_tokens": 18072,
+              "logical_latency_seconds": 18.01173601183109,
+              "logical_output_tokens": 1208,
+              "logical_solver_seconds": 0.15299577498808503,
+              "repair_damaged": 0,
+              "repair_improved": 0,
+              "validation_damaged": 0,
+              "validation_improved": 0
+            }
+          },
+          "E": {
+            "correct_rate": 1.0,
+            "correct_rate_95pct_base_bootstrap": [
+              1.0,
+              1.0
+            ],
+            "feasible": {
+              "correct": 2,
+              "outcomes": {
+                "correct_feasible_plan": 2
+              },
+              "outputs": 2
+            },
+            "infeasible": {
+              "correct": 0,
+              "outcomes": {},
+              "outputs": 0
+            },
+            "outcomes": {
+              "correct_feasible_plan": 2
+            },
+            "outputs": 2,
+            "totals": {
+              "judgments": 0,
+              "logical_calls": 8,
+              "logical_input_tokens": 18072,
+              "logical_latency_seconds": 18.01173601183109,
+              "logical_output_tokens": 1208,
+              "logical_solver_seconds": 0.15299577498808503,
+              "repair_damaged": 0,
+              "repair_improved": 0,
+              "validation_damaged": 0,
+              "validation_improved": 0
+            }
+          }
+        },
+        "mode": "model_judged",
+        "paired_E_losses": 0,
+        "paired_E_wins": 0,
+        "paired_difference": 0.0,
+        "paired_difference_95pct_base_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "paired_ties": 2
+      },
+      {
+        "base_groups": 2,
+        "budget": 1,
+        "methods": {
+          "D": {
+            "correct_rate": 1.0,
+            "correct_rate_95pct_base_bootstrap": [
+              1.0,
+              1.0
+            ],
+            "feasible": {
+              "correct": 2,
+              "outcomes": {
+                "correct_feasible_plan": 2
+              },
+              "outputs": 2
+            },
+            "infeasible": {
+              "correct": 0,
+              "outcomes": {},
+              "outputs": 0
+            },
+            "outcomes": {
+              "correct_feasible_plan": 2
+            },
+            "outputs": 2,
+            "totals": {
+              "judgments": 2,
+              "logical_calls": 10,
+              "logical_input_tokens": 19186,
+              "logical_latency_seconds": 20.38597397506237,
+              "logical_output_tokens": 1390,
+              "logical_solver_seconds": 0.15299577498808503,
+              "repair_damaged": 0,
+              "repair_improved": 0,
+              "validation_damaged": 0,
+              "validation_improved": 0
+            }
+          },
+          "E": {
+            "correct_rate": 1.0,
+            "correct_rate_95pct_base_bootstrap": [
+              1.0,
+              1.0
+            ],
+            "feasible": {
+              "correct": 2,
+              "outcomes": {
+                "correct_feasible_plan": 2
+              },
+              "outputs": 2
+            },
+            "infeasible": {
+              "correct": 0,
+              "outcomes": {},
+              "outputs": 0
+            },
+            "outcomes": {
+              "correct_feasible_plan": 2
+            },
+            "outputs": 2,
+            "totals": {
+              "judgments": 2,
+              "logical_calls": 10,
+              "logical_input_tokens": 19186,
+              "logical_latency_seconds": 20.07308913883753,
+              "logical_output_tokens": 1367,
+              "logical_solver_seconds": 0.15299577498808503,
+              "repair_damaged": 0,
+              "repair_improved": 0,
+              "validation_damaged": 0,
+              "validation_improved": 0
+            }
+          }
+        },
+        "mode": "model_judged",
+        "paired_E_losses": 0,
+        "paired_E_wins": 0,
+        "paired_difference": 0.0,
+        "paired_difference_95pct_base_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "paired_ties": 2
+      },
+      {
+        "base_groups": 2,
+        "budget": 2,
+        "methods": {
+          "D": {
+            "correct_rate": 1.0,
+            "correct_rate_95pct_base_bootstrap": [
+              1.0,
+              1.0
+            ],
+            "feasible": {
+              "correct": 2,
+              "outcomes": {
+                "correct_feasible_plan": 2
+              },
+              "outputs": 2
+            },
+            "infeasible": {
+              "correct": 0,
+              "outcomes": {},
+              "outputs": 0
+            },
+            "outcomes": {
+              "correct_feasible_plan": 2
+            },
+            "outputs": 2,
+            "totals": {
+              "judgments": 3,
+              "logical_calls": 11,
+              "logical_input_tokens": 19745,
+              "logical_latency_seconds": 21.168857865035534,
+              "logical_output_tokens": 1450,
+              "logical_solver_seconds": 0.15299577498808503,
+              "repair_damaged": 0,
+              "repair_improved": 0,
+              "validation_damaged": 0,
+              "validation_improved": 0
+            }
+          },
+          "E": {
+            "correct_rate": 1.0,
+            "correct_rate_95pct_base_bootstrap": [
+              1.0,
+              1.0
+            ],
+            "feasible": {
+              "correct": 2,
+              "outcomes": {
+                "correct_feasible_plan": 2
+              },
+              "outputs": 2
+            },
+            "infeasible": {
+              "correct": 0,
+              "outcomes": {},
+              "outputs": 0
+            },
+            "outcomes": {
+              "correct_feasible_plan": 2
+            },
+            "outputs": 2,
+            "totals": {
+              "judgments": 3,
+              "logical_calls": 11,
+              "logical_input_tokens": 19744,
+              "logical_latency_seconds": 20.88779623294249,
+              "logical_output_tokens": 1428,
+              "logical_solver_seconds": 0.15299577498808503,
+              "repair_damaged": 0,
+              "repair_improved": 0,
+              "validation_damaged": 0,
+              "validation_improved": 0
+            }
+          }
+        },
+        "mode": "model_judged",
+        "paired_E_losses": 0,
+        "paired_E_wins": 0,
+        "paired_difference": 0.0,
+        "paired_difference_95pct_base_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "paired_ties": 2
+      },
+      {
+        "base_groups": 2,
+        "budget": 4,
+        "methods": {
+          "D": {
+            "correct_rate": 1.0,
+            "correct_rate_95pct_base_bootstrap": [
+              1.0,
+              1.0
+            ],
+            "feasible": {
+              "correct": 2,
+              "outcomes": {
+                "correct_feasible_plan": 2
+              },
+              "outputs": 2
+            },
+            "infeasible": {
+              "correct": 0,
+              "outcomes": {},
+              "outputs": 0
+            },
+            "outcomes": {
+              "correct_feasible_plan": 2
+            },
+            "outputs": 2,
+            "totals": {
+              "judgments": 3,
+              "logical_calls": 11,
+              "logical_input_tokens": 19745,
+              "logical_latency_seconds": 21.168857865035534,
+              "logical_output_tokens": 1450,
+              "logical_solver_seconds": 0.15299577498808503,
+              "repair_damaged": 0,
+              "repair_improved": 0,
+              "validation_damaged": 0,
+              "validation_improved": 0
+            }
+          },
+          "E": {
+            "correct_rate": 1.0,
+            "correct_rate_95pct_base_bootstrap": [
+              1.0,
+              1.0
+            ],
+            "feasible": {
+              "correct": 2,
+              "outcomes": {
+                "correct_feasible_plan": 2
+              },
+              "outputs": 2
+            },
+            "infeasible": {
+              "correct": 0,
+              "outcomes": {},
+              "outputs": 0
+            },
+            "outcomes": {
+              "correct_feasible_plan": 2
+            },
+            "outputs": 2,
+            "totals": {
+              "judgments": 3,
+              "logical_calls": 11,
+              "logical_input_tokens": 19744,
+              "logical_latency_seconds": 20.88779623294249,
+              "logical_output_tokens": 1428,
+              "logical_solver_seconds": 0.15299577498808503,
+              "repair_damaged": 0,
+              "repair_improved": 0,
+              "validation_damaged": 0,
+              "validation_improved": 0
+            }
+          }
+        },
+        "mode": "model_judged",
+        "paired_E_losses": 0,
+        "paired_E_wins": 0,
+        "paired_difference": 0.0,
+        "paired_difference_95pct_base_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "paired_ties": 2
+      },
+      {
+        "base_groups": 2,
+        "budget": 0,
+        "methods": {
+          "D": {
+            "correct_rate": 1.0,
+            "correct_rate_95pct_base_bootstrap": [
+              1.0,
+              1.0
+            ],
+            "feasible": {
+              "correct": 2,
+              "outcomes": {
+                "correct_feasible_plan": 2
+              },
+              "outputs": 2
+            },
+            "infeasible": {
+              "correct": 0,
+              "outcomes": {},
+              "outputs": 0
+            },
+            "outcomes": {
+              "correct_feasible_plan": 2
+            },
+            "outputs": 2,
+            "totals": {
+              "judgments": 0,
+              "logical_calls": 8,
+              "logical_input_tokens": 18072,
+              "logical_latency_seconds": 18.01173601183109,
+              "logical_output_tokens": 1208,
+              "logical_solver_seconds": 0.15299577498808503,
+              "repair_damaged": 0,
+              "repair_improved": 0,
+              "validation_damaged": 0,
+              "validation_improved": 0
+            }
+          },
+          "E": {
+            "correct_rate": 1.0,
+            "correct_rate_95pct_base_bootstrap": [
+              1.0,
+              1.0
+            ],
+            "feasible": {
+              "correct": 2,
+              "outcomes": {
+                "correct_feasible_plan": 2
+              },
+              "outputs": 2
+            },
+            "infeasible": {
+              "correct": 0,
+              "outcomes": {},
+              "outputs": 0
+            },
+            "outcomes": {
+              "correct_feasible_plan": 2
+            },
+            "outputs": 2,
+            "totals": {
+              "judgments": 0,
+              "logical_calls": 8,
+              "logical_input_tokens": 18072,
+              "logical_latency_seconds": 18.01173601183109,
+              "logical_output_tokens": 1208,
+              "logical_solver_seconds": 0.15299577498808503,
+              "repair_damaged": 0,
+              "repair_improved": 0,
+              "validation_damaged": 0,
+              "validation_improved": 0
+            }
+          }
+        },
+        "mode": "oracle_diagnostic",
+        "paired_E_losses": 0,
+        "paired_E_wins": 0,
+        "paired_difference": 0.0,
+        "paired_difference_95pct_base_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "paired_ties": 2
+      },
+      {
+        "base_groups": 2,
+        "budget": 1,
+        "methods": {
+          "D": {
+            "correct_rate": 1.0,
+            "correct_rate_95pct_base_bootstrap": [
+              1.0,
+              1.0
+            ],
+            "feasible": {
+              "correct": 2,
+              "outcomes": {
+                "correct_feasible_plan": 2
+              },
+              "outputs": 2
+            },
+            "infeasible": {
+              "correct": 0,
+              "outcomes": {},
+              "outputs": 0
+            },
+            "outcomes": {
+              "correct_feasible_plan": 2
+            },
+            "outputs": 2,
+            "totals": {
+              "judgments": 2,
+              "logical_calls": 8,
+              "logical_input_tokens": 18072,
+              "logical_latency_seconds": 18.01173601183109,
+              "logical_output_tokens": 1208,
+              "logical_solver_seconds": 0.15299577498808503,
+              "repair_damaged": 0,
+              "repair_improved": 0,
+              "validation_damaged": 0,
+              "validation_improved": 0
+            }
+          },
+          "E": {
+            "correct_rate": 1.0,
+            "correct_rate_95pct_base_bootstrap": [
+              1.0,
+              1.0
+            ],
+            "feasible": {
+              "correct": 2,
+              "outcomes": {
+                "correct_feasible_plan": 2
+              },
+              "outputs": 2
+            },
+            "infeasible": {
+              "correct": 0,
+              "outcomes": {},
+              "outputs": 0
+            },
+            "outcomes": {
+              "correct_feasible_plan": 2
+            },
+            "outputs": 2,
+            "totals": {
+              "judgments": 2,
+              "logical_calls": 8,
+              "logical_input_tokens": 18072,
+              "logical_latency_seconds": 18.01173601183109,
+              "logical_output_tokens": 1208,
+              "logical_solver_seconds": 0.15299577498808503,
+              "repair_damaged": 0,
+              "repair_improved": 0,
+              "validation_damaged": 0,
+              "validation_improved": 0
+            }
+          }
+        },
+        "mode": "oracle_diagnostic",
+        "paired_E_losses": 0,
+        "paired_E_wins": 0,
+        "paired_difference": 0.0,
+        "paired_difference_95pct_base_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "paired_ties": 2
+      },
+      {
+        "base_groups": 2,
+        "budget": 2,
+        "methods": {
+          "D": {
+            "correct_rate": 1.0,
+            "correct_rate_95pct_base_bootstrap": [
+              1.0,
+              1.0
+            ],
+            "feasible": {
+              "correct": 2,
+              "outcomes": {
+                "correct_feasible_plan": 2
+              },
+              "outputs": 2
+            },
+            "infeasible": {
+              "correct": 0,
+              "outcomes": {},
+              "outputs": 0
+            },
+            "outcomes": {
+              "correct_feasible_plan": 2
+            },
+            "outputs": 2,
+            "totals": {
+              "judgments": 3,
+              "logical_calls": 8,
+              "logical_input_tokens": 18072,
+              "logical_latency_seconds": 18.01173601183109,
+              "logical_output_tokens": 1208,
+              "logical_solver_seconds": 0.15299577498808503,
+              "repair_damaged": 0,
+              "repair_improved": 0,
+              "validation_damaged": 0,
+              "validation_improved": 0
+            }
+          },
+          "E": {
+            "correct_rate": 1.0,
+            "correct_rate_95pct_base_bootstrap": [
+              1.0,
+              1.0
+            ],
+            "feasible": {
+              "correct": 2,
+              "outcomes": {
+                "correct_feasible_plan": 2
+              },
+              "outputs": 2
+            },
+            "infeasible": {
+              "correct": 0,
+              "outcomes": {},
+              "outputs": 0
+            },
+            "outcomes": {
+              "correct_feasible_plan": 2
+            },
+            "outputs": 2,
+            "totals": {
+              "judgments": 4,
+              "logical_calls": 8,
+              "logical_input_tokens": 18072,
+              "logical_latency_seconds": 18.01173601183109,
+              "logical_output_tokens": 1208,
+              "logical_solver_seconds": 0.15299577498808503,
+              "repair_damaged": 0,
+              "repair_improved": 0,
+              "validation_damaged": 0,
+              "validation_improved": 0
+            }
+          }
+        },
+        "mode": "oracle_diagnostic",
+        "paired_E_losses": 0,
+        "paired_E_wins": 0,
+        "paired_difference": 0.0,
+        "paired_difference_95pct_base_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "paired_ties": 2
+      },
+      {
+        "base_groups": 2,
+        "budget": 4,
+        "methods": {
+          "D": {
+            "correct_rate": 1.0,
+            "correct_rate_95pct_base_bootstrap": [
+              1.0,
+              1.0
+            ],
+            "feasible": {
+              "correct": 2,
+              "outcomes": {
+                "correct_feasible_plan": 2
+              },
+              "outputs": 2
+            },
+            "infeasible": {
+              "correct": 0,
+              "outcomes": {},
+              "outputs": 0
+            },
+            "outcomes": {
+              "correct_feasible_plan": 2
+            },
+            "outputs": 2,
+            "totals": {
+              "judgments": 3,
+              "logical_calls": 8,
+              "logical_input_tokens": 18072,
+              "logical_latency_seconds": 18.01173601183109,
+              "logical_output_tokens": 1208,
+              "logical_solver_seconds": 0.15299577498808503,
+              "repair_damaged": 0,
+              "repair_improved": 0,
+              "validation_damaged": 0,
+              "validation_improved": 0
+            }
+          },
+          "E": {
+            "correct_rate": 1.0,
+            "correct_rate_95pct_base_bootstrap": [
+              1.0,
+              1.0
+            ],
+            "feasible": {
+              "correct": 2,
+              "outcomes": {
+                "correct_feasible_plan": 2
+              },
+              "outputs": 2
+            },
+            "infeasible": {
+              "correct": 0,
+              "outcomes": {},
+              "outputs": 0
+            },
+            "outcomes": {
+              "correct_feasible_plan": 2
+            },
+            "outputs": 2,
+            "totals": {
+              "judgments": 5,
+              "logical_calls": 8,
+              "logical_input_tokens": 18072,
+              "logical_latency_seconds": 18.01173601183109,
+              "logical_output_tokens": 1208,
+              "logical_solver_seconds": 0.15299577498808503,
+              "repair_damaged": 0,
+              "repair_improved": 0,
+              "validation_damaged": 0,
+              "validation_improved": 0
+            }
+          }
+        },
+        "mode": "oracle_diagnostic",
+        "paired_E_losses": 0,
+        "paired_E_wins": 0,
+        "paired_difference": 0.0,
+        "paired_difference_95pct_base_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "paired_ties": 2
+      }
+    ],
+    "uncertainty": "exploratory percentile bootstrap over base groups; null with <2 groups"
+  },
+  "diagnostic_counts": {
+    "candidate_bundles": 48,
+    "different_initial_choices": 2,
+    "diverged_trajectories": 2,
+    "reference_equivalent_bundles": 23,
+    "variable_weight_bundles": 4
+  },
+  "expected_base_ids": [
+    "pilot-00",
+    "pilot-01",
+    "pilot-02",
+    "pilot-03",
+    "pilot-04",
+    "pilot-05",
+    "pilot-06",
+    "pilot-07",
+    "pilot-08",
+    "pilot-09",
+    "pilot-10",
+    "pilot-11",
+    "pilot-12",
+    "pilot-13",
+    "pilot-14",
+    "pilot-15",
+    "pilot-16",
+    "pilot-17",
+    "pilot-18",
+    "pilot-19",
+    "pilot-20",
+    "pilot-21",
+    "pilot-22",
+    "pilot-23",
+    "pilot-24",
+    "pilot-25",
+    "pilot-26",
+    "pilot-27",
+    "pilot-28",
+    "pilot-29",
+    "pilot-30",
+    "pilot-31",
+    "pilot-32",
+    "pilot-33",
+    "pilot-34",
+    "pilot-35",
+    "pilot-36",
+    "pilot-37",
+    "pilot-38",
+    "pilot-39",
+    "pilot-40",
+    "pilot-41",
+    "pilot-42",
+    "pilot-43",
+    "pilot-44",
+    "pilot-45",
+    "pilot-46",
+    "pilot-47"
+  ],
+  "expected_pairs": 48,
+  "frozen_scope": {
+    "base_count": 48,
+    "basis": "translation diagnostic timing only; no comparative outcomes",
+    "forecast_seconds": 4644.4694455862045,
+    "generation_p95_seconds": 3.844157504849136,
+    "generation_upper_bound": 768,
+    "replicates": 1,
+    "reserved_seconds_per_call": 5.766236257273704
+  },
+  "full_sample_correct_rate_bounds": [
+    {
+      "budget": 0,
+      "lower": 0.6458333333333334,
+      "method": "D",
+      "mode": "model_judged",
+      "upper": 0.6458333333333334
+    },
+    {
+      "budget": 0,
+      "lower": 0.6458333333333334,
+      "method": "E",
+      "mode": "model_judged",
+      "upper": 0.6458333333333334
+    },
+    {
+      "budget": 1,
+      "lower": 0.6875,
+      "method": "D",
+      "mode": "model_judged",
+      "upper": 0.6875
+    },
+    {
+      "budget": 1,
+      "lower": 0.6875,
+      "method": "E",
+      "mode": "model_judged",
+      "upper": 0.6875
+    },
+    {
+      "budget": 2,
+      "lower": 0.6875,
+      "method": "D",
+      "mode": "model_judged",
+      "upper": 0.6875
+    },
+    {
+      "budget": 2,
+      "lower": 0.6875,
+      "method": "E",
+      "mode": "model_judged",
+      "upper": 0.6875
+    },
+    {
+      "budget": 4,
+      "lower": 0.6875,
+      "method": "D",
+      "mode": "model_judged",
+      "upper": 0.6875
+    },
+    {
+      "budget": 4,
+      "lower": 0.6875,
+      "method": "E",
+      "mode": "model_judged",
+      "upper": 0.6875
+    },
+    {
+      "budget": 0,
+      "lower": 0.6458333333333334,
+      "method": "D",
+      "mode": "oracle_diagnostic",
+      "upper": 0.6458333333333334
+    },
+    {
+      "budget": 0,
+      "lower": 0.6458333333333334,
+      "method": "E",
+      "mode": "oracle_diagnostic",
+      "upper": 0.6458333333333334
+    },
+    {
+      "budget": 1,
+      "lower": 0.7083333333333334,
+      "method": "D",
+      "mode": "oracle_diagnostic",
+      "upper": 0.7083333333333334
+    },
+    {
+      "budget": 1,
+      "lower": 0.7083333333333334,
+      "method": "E",
+      "mode": "oracle_diagnostic",
+      "upper": 0.7083333333333334
+    },
+    {
+      "budget": 2,
+      "lower": 0.7291666666666666,
+      "method": "D",
+      "mode": "oracle_diagnostic",
+      "upper": 0.7291666666666666
+    },
+    {
+      "budget": 2,
+      "lower": 0.7291666666666666,
+      "method": "E",
+      "mode": "oracle_diagnostic",
+      "upper": 0.7291666666666666
+    },
+    {
+      "budget": 4,
+      "lower": 0.7291666666666666,
+      "method": "D",
+      "mode": "oracle_diagnostic",
+      "upper": 0.7291666666666666
+    },
+    {
+      "budget": 4,
+      "lower": 0.7291666666666666,
+      "method": "E",
+      "mode": "oracle_diagnostic",
+      "upper": 0.7291666666666666
+    }
+  ],
+  "incomplete_sample": "Missing outputs are disclosed; never fabricate their outcomes.",
+  "missing_ids": [],
+  "missing_pairs": [],
+  "observed_ids": [
+    "pilot-00",
+    "pilot-01",
+    "pilot-02",
+    "pilot-03",
+    "pilot-04",
+    "pilot-05",
+    "pilot-06",
+    "pilot-07",
+    "pilot-08",
+    "pilot-09",
+    "pilot-10",
+    "pilot-11",
+    "pilot-12",
+    "pilot-13",
+    "pilot-14",
+    "pilot-15",
+    "pilot-16",
+    "pilot-17",
+    "pilot-18",
+    "pilot-19",
+    "pilot-20",
+    "pilot-21",
+    "pilot-22",
+    "pilot-23",
+    "pilot-24",
+    "pilot-25",
+    "pilot-26",
+    "pilot-27",
+    "pilot-28",
+    "pilot-29",
+    "pilot-30",
+    "pilot-31",
+    "pilot-32",
+    "pilot-33",
+    "pilot-34",
+    "pilot-35",
+    "pilot-36",
+    "pilot-37",
+    "pilot-38",
+    "pilot-39",
+    "pilot-40",
+    "pilot-41",
+    "pilot-42",
+    "pilot-43",
+    "pilot-44",
+    "pilot-45",
+    "pilot-46",
+    "pilot-47"
+  ],
+  "observed_pairs": 48,
+  "primary_sample_complete": true,
+  "summaries": [
+    {
+      "base_groups": 48,
+      "budget": 0,
+      "methods": {
+        "D": {
+          "correct_rate": 0.6458333333333334,
+          "correct_rate_95pct_base_bootstrap": [
+            0.5,
+            0.7708333333333334
+          ],
+          "feasible": {
+            "correct": 28,
+            "outcomes": {
+              "correct_feasible_plan": 28,
+              "false_infeasibility": 7,
+              "incorrect_plan": 5
+            },
+            "outputs": 40
+          },
+          "infeasible": {
+            "correct": 3,
+            "outcomes": {
+              "correct_infeasibility": 3,
+              "invalid_model_output": 5
+            },
+            "outputs": 8
+          },
+          "outcomes": {
+            "correct_feasible_plan": 28,
+            "correct_infeasibility": 3,
+            "false_infeasibility": 7,
+            "incorrect_plan": 5,
+            "invalid_model_output": 5
+          },
+          "outputs": 48,
+          "totals": {
+            "judgments": 0,
+            "logical_calls": 192,
+            "logical_input_tokens": 436856,
+            "logical_latency_seconds": 412.61406198260374,
+            "logical_output_tokens": 28407,
+            "logical_solver_seconds": 0.7258075792342424,
+            "repair_damaged": 0,
+            "repair_improved": 0,
+            "validation_damaged": 0,
+            "validation_improved": 0
+          }
+        },
+        "E": {
+          "correct_rate": 0.6458333333333334,
+          "correct_rate_95pct_base_bootstrap": [
+            0.5,
+            0.7708333333333334
+          ],
+          "feasible": {
+            "correct": 28,
+            "outcomes": {
+              "correct_feasible_plan": 28,
+              "false_infeasibility": 7,
+              "incorrect_plan": 5
+            },
+            "outputs": 40
+          },
+          "infeasible": {
+            "correct": 3,
+            "outcomes": {
+              "correct_infeasibility": 3,
+              "invalid_model_output": 5
+            },
+            "outputs": 8
+          },
+          "outcomes": {
+            "correct_feasible_plan": 28,
+            "correct_infeasibility": 3,
+            "false_infeasibility": 7,
+            "incorrect_plan": 5,
+            "invalid_model_output": 5
+          },
+          "outputs": 48,
+          "totals": {
+            "judgments": 0,
+            "logical_calls": 192,
+            "logical_input_tokens": 436856,
+            "logical_latency_seconds": 412.61406198260374,
+            "logical_output_tokens": 28407,
+            "logical_solver_seconds": 0.7258075792342424,
+            "repair_damaged": 0,
+            "repair_improved": 0,
+            "validation_damaged": 0,
+            "validation_improved": 0
+          }
+        }
+      },
+      "mode": "model_judged",
+      "paired_E_losses": 0,
+      "paired_E_wins": 0,
+      "paired_difference": 0.0,
+      "paired_difference_95pct_base_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "paired_ties": 48
+    },
+    {
+      "base_groups": 48,
+      "budget": 1,
+      "methods": {
+        "D": {
+          "correct_rate": 0.6875,
+          "correct_rate_95pct_base_bootstrap": [
+            0.5625,
+            0.8125
+          ],
+          "feasible": {
+            "correct": 30,
+            "outcomes": {
+              "correct_feasible_plan": 30,
+              "false_infeasibility": 5,
+              "incorrect_plan": 5
+            },
+            "outputs": 40
+          },
+          "infeasible": {
+            "correct": 3,
+            "outcomes": {
+              "correct_infeasibility": 3,
+              "invalid_model_output": 5
+            },
+            "outputs": 8
+          },
+          "outcomes": {
+            "correct_feasible_plan": 30,
+            "correct_infeasibility": 3,
+            "false_infeasibility": 5,
+            "incorrect_plan": 5,
+            "invalid_model_output": 5
+          },
+          "outputs": 48,
+          "totals": {
+            "judgments": 25,
+            "logical_calls": 217,
+            "logical_input_tokens": 452919,
+            "logical_latency_seconds": 435.1935792674776,
+            "logical_output_tokens": 30128,
+            "logical_solver_seconds": 0.7258075792342424,
+            "repair_damaged": 0,
+            "repair_improved": 0,
+            "validation_damaged": 1,
+            "validation_improved": 3
+          }
+        },
+        "E": {
+          "correct_rate": 0.6875,
+          "correct_rate_95pct_base_bootstrap": [
+            0.5625,
+            0.8125
+          ],
+          "feasible": {
+            "correct": 30,
+            "outcomes": {
+              "correct_feasible_plan": 30,
+              "false_infeasibility": 5,
+              "incorrect_plan": 5
+            },
+            "outputs": 40
+          },
+          "infeasible": {
+            "correct": 3,
+            "outcomes": {
+              "correct_infeasibility": 3,
+              "invalid_model_output": 5
+            },
+            "outputs": 8
+          },
+          "outcomes": {
+            "correct_feasible_plan": 30,
+            "correct_infeasibility": 3,
+            "false_infeasibility": 5,
+            "incorrect_plan": 5,
+            "invalid_model_output": 5
+          },
+          "outputs": 48,
+          "totals": {
+            "judgments": 25,
+            "logical_calls": 217,
+            "logical_input_tokens": 452919,
+            "logical_latency_seconds": 434.8806944312528,
+            "logical_output_tokens": 30105,
+            "logical_solver_seconds": 0.7258075792342424,
+            "repair_damaged": 0,
+            "repair_improved": 0,
+            "validation_damaged": 1,
+            "validation_improved": 3
+          }
+        }
+      },
+      "mode": "model_judged",
+      "paired_E_losses": 0,
+      "paired_E_wins": 0,
+      "paired_difference": 0.0,
+      "paired_difference_95pct_base_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "paired_ties": 48
+    },
+    {
+      "base_groups": 48,
+      "budget": 2,
+      "methods": {
+        "D": {
+          "correct_rate": 0.6875,
+          "correct_rate_95pct_base_bootstrap": [
+            0.5625,
+            0.8125
+          ],
+          "feasible": {
+            "correct": 30,
+            "outcomes": {
+              "correct_feasible_plan": 30,
+              "false_infeasibility": 5,
+              "incorrect_plan": 5
+            },
+            "outputs": 40
+          },
+          "infeasible": {
+            "correct": 3,
+            "outcomes": {
+              "correct_infeasibility": 3,
+              "invalid_model_output": 5
+            },
+            "outputs": 8
+          },
+          "outcomes": {
+            "correct_feasible_plan": 30,
+            "correct_infeasibility": 3,
+            "false_infeasibility": 5,
+            "incorrect_plan": 5,
+            "invalid_model_output": 5
+          },
+          "outputs": 48,
+          "totals": {
+            "judgments": 29,
+            "logical_calls": 221,
+            "logical_input_tokens": 455381,
+            "logical_latency_seconds": 439.01806818530895,
+            "logical_output_tokens": 30421,
+            "logical_solver_seconds": 0.7258075792342424,
+            "repair_damaged": 0,
+            "repair_improved": 0,
+            "validation_damaged": 1,
+            "validation_improved": 3
+          }
+        },
+        "E": {
+          "correct_rate": 0.6875,
+          "correct_rate_95pct_base_bootstrap": [
+            0.5625,
+            0.8125
+          ],
+          "feasible": {
+            "correct": 30,
+            "outcomes": {
+              "correct_feasible_plan": 30,
+              "false_infeasibility": 5,
+              "incorrect_plan": 5
+            },
+            "outputs": 40
+          },
+          "infeasible": {
+            "correct": 3,
+            "outcomes": {
+              "correct_infeasibility": 3,
+              "invalid_model_output": 5
+            },
+            "outputs": 8
+          },
+          "outcomes": {
+            "correct_feasible_plan": 30,
+            "correct_infeasibility": 3,
+            "false_infeasibility": 5,
+            "incorrect_plan": 5,
+            "invalid_model_output": 5
+          },
+          "outputs": 48,
+          "totals": {
+            "judgments": 29,
+            "logical_calls": 221,
+            "logical_input_tokens": 455380,
+            "logical_latency_seconds": 438.7370065532159,
+            "logical_output_tokens": 30399,
+            "logical_solver_seconds": 0.7258075792342424,
+            "repair_damaged": 0,
+            "repair_improved": 0,
+            "validation_damaged": 1,
+            "validation_improved": 3
+          }
+        }
+      },
+      "mode": "model_judged",
+      "paired_E_losses": 0,
+      "paired_E_wins": 0,
+      "paired_difference": 0.0,
+      "paired_difference_95pct_base_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "paired_ties": 48
+    },
+    {
+      "base_groups": 48,
+      "budget": 4,
+      "methods": {
+        "D": {
+          "correct_rate": 0.6875,
+          "correct_rate_95pct_base_bootstrap": [
+            0.5625,
+            0.8125
+          ],
+          "feasible": {
+            "correct": 30,
+            "outcomes": {
+              "correct_feasible_plan": 30,
+              "false_infeasibility": 5,
+              "incorrect_plan": 5
+            },
+            "outputs": 40
+          },
+          "infeasible": {
+            "correct": 3,
+            "outcomes": {
+              "correct_infeasibility": 3,
+              "invalid_model_output": 5
+            },
+            "outputs": 8
+          },
+          "outcomes": {
+            "correct_feasible_plan": 30,
+            "correct_infeasibility": 3,
+            "false_infeasibility": 5,
+            "incorrect_plan": 5,
+            "invalid_model_output": 5
+          },
+          "outputs": 48,
+          "totals": {
+            "judgments": 29,
+            "logical_calls": 221,
+            "logical_input_tokens": 455381,
+            "logical_latency_seconds": 439.01806818530895,
+            "logical_output_tokens": 30421,
+            "logical_solver_seconds": 0.7258075792342424,
+            "repair_damaged": 0,
+            "repair_improved": 0,
+            "validation_damaged": 1,
+            "validation_improved": 3
+          }
+        },
+        "E": {
+          "correct_rate": 0.6875,
+          "correct_rate_95pct_base_bootstrap": [
+            0.5625,
+            0.8125
+          ],
+          "feasible": {
+            "correct": 30,
+            "outcomes": {
+              "correct_feasible_plan": 30,
+              "false_infeasibility": 5,
+              "incorrect_plan": 5
+            },
+            "outputs": 40
+          },
+          "infeasible": {
+            "correct": 3,
+            "outcomes": {
+              "correct_infeasibility": 3,
+              "invalid_model_output": 5
+            },
+            "outputs": 8
+          },
+          "outcomes": {
+            "correct_feasible_plan": 30,
+            "correct_infeasibility": 3,
+            "false_infeasibility": 5,
+            "incorrect_plan": 5,
+            "invalid_model_output": 5
+          },
+          "outputs": 48,
+          "totals": {
+            "judgments": 29,
+            "logical_calls": 221,
+            "logical_input_tokens": 455380,
+            "logical_latency_seconds": 438.7370065532159,
+            "logical_output_tokens": 30399,
+            "logical_solver_seconds": 0.7258075792342424,
+            "repair_damaged": 0,
+            "repair_improved": 0,
+            "validation_damaged": 1,
+            "validation_improved": 3
+          }
+        }
+      },
+      "mode": "model_judged",
+      "paired_E_losses": 0,
+      "paired_E_wins": 0,
+      "paired_difference": 0.0,
+      "paired_difference_95pct_base_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "paired_ties": 48
+    },
+    {
+      "base_groups": 48,
+      "budget": 0,
+      "methods": {
+        "D": {
+          "correct_rate": 0.6458333333333334,
+          "correct_rate_95pct_base_bootstrap": [
+            0.5,
+            0.7708333333333334
+          ],
+          "feasible": {
+            "correct": 28,
+            "outcomes": {
+              "correct_feasible_plan": 28,
+              "false_infeasibility": 7,
+              "incorrect_plan": 5
+            },
+            "outputs": 40
+          },
+          "infeasible": {
+            "correct": 3,
+            "outcomes": {
+              "correct_infeasibility": 3,
+              "invalid_model_output": 5
+            },
+            "outputs": 8
+          },
+          "outcomes": {
+            "correct_feasible_plan": 28,
+            "correct_infeasibility": 3,
+            "false_infeasibility": 7,
+            "incorrect_plan": 5,
+            "invalid_model_output": 5
+          },
+          "outputs": 48,
+          "totals": {
+            "judgments": 0,
+            "logical_calls": 192,
+            "logical_input_tokens": 436856,
+            "logical_latency_seconds": 412.61406198260374,
+            "logical_output_tokens": 28407,
+            "logical_solver_seconds": 0.7258075792342424,
+            "repair_damaged": 0,
+            "repair_improved": 0,
+            "validation_damaged": 0,
+            "validation_improved": 0
+          }
+        },
+        "E": {
+          "correct_rate": 0.6458333333333334,
+          "correct_rate_95pct_base_bootstrap": [
+            0.5,
+            0.7708333333333334
+          ],
+          "feasible": {
+            "correct": 28,
+            "outcomes": {
+              "correct_feasible_plan": 28,
+              "false_infeasibility": 7,
+              "incorrect_plan": 5
+            },
+            "outputs": 40
+          },
+          "infeasible": {
+            "correct": 3,
+            "outcomes": {
+              "correct_infeasibility": 3,
+              "invalid_model_output": 5
+            },
+            "outputs": 8
+          },
+          "outcomes": {
+            "correct_feasible_plan": 28,
+            "correct_infeasibility": 3,
+            "false_infeasibility": 7,
+            "incorrect_plan": 5,
+            "invalid_model_output": 5
+          },
+          "outputs": 48,
+          "totals": {
+            "judgments": 0,
+            "logical_calls": 192,
+            "logical_input_tokens": 436856,
+            "logical_latency_seconds": 412.61406198260374,
+            "logical_output_tokens": 28407,
+            "logical_solver_seconds": 0.7258075792342424,
+            "repair_damaged": 0,
+            "repair_improved": 0,
+            "validation_damaged": 0,
+            "validation_improved": 0
+          }
+        }
+      },
+      "mode": "oracle_diagnostic",
+      "paired_E_losses": 0,
+      "paired_E_wins": 0,
+      "paired_difference": 0.0,
+      "paired_difference_95pct_base_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "paired_ties": 48
+    },
+    {
+      "base_groups": 48,
+      "budget": 1,
+      "methods": {
+        "D": {
+          "correct_rate": 0.7083333333333334,
+          "correct_rate_95pct_base_bootstrap": [
+            0.5833333333333334,
+            0.8333333333333334
+          ],
+          "feasible": {
+            "correct": 31,
+            "outcomes": {
+              "correct_feasible_plan": 31,
+              "false_infeasibility": 6,
+              "incorrect_plan": 3
+            },
+            "outputs": 40
+          },
+          "infeasible": {
+            "correct": 3,
+            "outcomes": {
+              "correct_infeasibility": 3,
+              "invalid_model_output": 5
+            },
+            "outputs": 8
+          },
+          "outcomes": {
+            "correct_feasible_plan": 31,
+            "correct_infeasibility": 3,
+            "false_infeasibility": 6,
+            "incorrect_plan": 3,
+            "invalid_model_output": 5
+          },
+          "outputs": 48,
+          "totals": {
+            "judgments": 25,
+            "logical_calls": 192,
+            "logical_input_tokens": 436856,
+            "logical_latency_seconds": 412.61406198260374,
+            "logical_output_tokens": 28407,
+            "logical_solver_seconds": 0.7258075792342424,
+            "repair_damaged": 0,
+            "repair_improved": 0,
+            "validation_damaged": 1,
+            "validation_improved": 4
+          }
+        },
+        "E": {
+          "correct_rate": 0.7083333333333334,
+          "correct_rate_95pct_base_bootstrap": [
+            0.5833333333333334,
+            0.8333333333333334
+          ],
+          "feasible": {
+            "correct": 31,
+            "outcomes": {
+              "correct_feasible_plan": 31,
+              "false_infeasibility": 6,
+              "incorrect_plan": 3
+            },
+            "outputs": 40
+          },
+          "infeasible": {
+            "correct": 3,
+            "outcomes": {
+              "correct_infeasibility": 3,
+              "invalid_model_output": 5
+            },
+            "outputs": 8
+          },
+          "outcomes": {
+            "correct_feasible_plan": 31,
+            "correct_infeasibility": 3,
+            "false_infeasibility": 6,
+            "incorrect_plan": 3,
+            "invalid_model_output": 5
+          },
+          "outputs": 48,
+          "totals": {
+            "judgments": 25,
+            "logical_calls": 192,
+            "logical_input_tokens": 436856,
+            "logical_latency_seconds": 412.61406198260374,
+            "logical_output_tokens": 28407,
+            "logical_solver_seconds": 0.7258075792342424,
+            "repair_damaged": 0,
+            "repair_improved": 0,
+            "validation_damaged": 1,
+            "validation_improved": 4
+          }
+        }
+      },
+      "mode": "oracle_diagnostic",
+      "paired_E_losses": 0,
+      "paired_E_wins": 0,
+      "paired_difference": 0.0,
+      "paired_difference_95pct_base_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "paired_ties": 48
+    },
+    {
+      "base_groups": 48,
+      "budget": 2,
+      "methods": {
+        "D": {
+          "correct_rate": 0.7291666666666666,
+          "correct_rate_95pct_base_bootstrap": [
+            0.6041666666666666,
+            0.8541666666666666
+          ],
+          "feasible": {
+            "correct": 32,
+            "outcomes": {
+              "correct_feasible_plan": 32,
+              "false_infeasibility": 6,
+              "incorrect_plan": 2
+            },
+            "outputs": 40
+          },
+          "infeasible": {
+            "correct": 3,
+            "outcomes": {
+              "correct_infeasibility": 3,
+              "invalid_model_output": 5
+            },
+            "outputs": 8
+          },
+          "outcomes": {
+            "correct_feasible_plan": 32,
+            "correct_infeasibility": 3,
+            "false_infeasibility": 6,
+            "incorrect_plan": 2,
+            "invalid_model_output": 5
+          },
+          "outputs": 48,
+          "totals": {
+            "judgments": 28,
+            "logical_calls": 192,
+            "logical_input_tokens": 436856,
+            "logical_latency_seconds": 412.61406198260374,
+            "logical_output_tokens": 28407,
+            "logical_solver_seconds": 0.7258075792342424,
+            "repair_damaged": 0,
+            "repair_improved": 0,
+            "validation_damaged": 1,
+            "validation_improved": 5
+          }
+        },
+        "E": {
+          "correct_rate": 0.7291666666666666,
+          "correct_rate_95pct_base_bootstrap": [
+            0.6041666666666666,
+            0.8541666666666666
+          ],
+          "feasible": {
+            "correct": 32,
+            "outcomes": {
+              "correct_feasible_plan": 32,
+              "false_infeasibility": 6,
+              "incorrect_plan": 2
+            },
+            "outputs": 40
+          },
+          "infeasible": {
+            "correct": 3,
+            "outcomes": {
+              "correct_infeasibility": 3,
+              "invalid_model_output": 5
+            },
+            "outputs": 8
+          },
+          "outcomes": {
+            "correct_feasible_plan": 32,
+            "correct_infeasibility": 3,
+            "false_infeasibility": 6,
+            "incorrect_plan": 2,
+            "invalid_model_output": 5
+          },
+          "outputs": 48,
+          "totals": {
+            "judgments": 29,
+            "logical_calls": 192,
+            "logical_input_tokens": 436856,
+            "logical_latency_seconds": 412.61406198260374,
+            "logical_output_tokens": 28407,
+            "logical_solver_seconds": 0.7258075792342424,
+            "repair_damaged": 0,
+            "repair_improved": 0,
+            "validation_damaged": 1,
+            "validation_improved": 5
+          }
+        }
+      },
+      "mode": "oracle_diagnostic",
+      "paired_E_losses": 0,
+      "paired_E_wins": 0,
+      "paired_difference": 0.0,
+      "paired_difference_95pct_base_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "paired_ties": 48
+    },
+    {
+      "base_groups": 48,
+      "budget": 4,
+      "methods": {
+        "D": {
+          "correct_rate": 0.7291666666666666,
+          "correct_rate_95pct_base_bootstrap": [
+            0.6041666666666666,
+            0.8541666666666666
+          ],
+          "feasible": {
+            "correct": 32,
+            "outcomes": {
+              "correct_feasible_plan": 32,
+              "false_infeasibility": 6,
+              "incorrect_plan": 2
+            },
+            "outputs": 40
+          },
+          "infeasible": {
+            "correct": 3,
+            "outcomes": {
+              "correct_infeasibility": 3,
+              "invalid_model_output": 5
+            },
+            "outputs": 8
+          },
+          "outcomes": {
+            "correct_feasible_plan": 32,
+            "correct_infeasibility": 3,
+            "false_infeasibility": 6,
+            "incorrect_plan": 2,
+            "invalid_model_output": 5
+          },
+          "outputs": 48,
+          "totals": {
+            "judgments": 28,
+            "logical_calls": 192,
+            "logical_input_tokens": 436856,
+            "logical_latency_seconds": 412.61406198260374,
+            "logical_output_tokens": 28407,
+            "logical_solver_seconds": 0.7258075792342424,
+            "repair_damaged": 0,
+            "repair_improved": 0,
+            "validation_damaged": 1,
+            "validation_improved": 5
+          }
+        },
+        "E": {
+          "correct_rate": 0.7291666666666666,
+          "correct_rate_95pct_base_bootstrap": [
+            0.6041666666666666,
+            0.8541666666666666
+          ],
+          "feasible": {
+            "correct": 32,
+            "outcomes": {
+              "correct_feasible_plan": 32,
+              "false_infeasibility": 6,
+              "incorrect_plan": 2
+            },
+            "outputs": 40
+          },
+          "infeasible": {
+            "correct": 3,
+            "outcomes": {
+              "correct_infeasibility": 3,
+              "invalid_model_output": 5
+            },
+            "outputs": 8
+          },
+          "outcomes": {
+            "correct_feasible_plan": 32,
+            "correct_infeasibility": 3,
+            "false_infeasibility": 6,
+            "incorrect_plan": 2,
+            "invalid_model_output": 5
+          },
+          "outputs": 48,
+          "totals": {
+            "judgments": 30,
+            "logical_calls": 192,
+            "logical_input_tokens": 436856,
+            "logical_latency_seconds": 412.61406198260374,
+            "logical_output_tokens": 28407,
+            "logical_solver_seconds": 0.7258075792342424,
+            "repair_damaged": 0,
+            "repair_improved": 0,
+            "validation_damaged": 1,
+            "validation_improved": 5
+          }
+        }
+      },
+      "mode": "oracle_diagnostic",
+      "paired_E_losses": 0,
+      "paired_E_wins": 0,
+      "paired_difference": 0.0,
+      "paired_difference_95pct_base_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "paired_ties": 48
+    }
+  ],
+  "uncertainty": "exploratory percentile bootstrap over base groups; null with <2 groups"
+}

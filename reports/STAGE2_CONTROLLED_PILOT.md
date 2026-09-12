@@ -316,3 +316,10 @@ The subsequent [GPU execution report](STAGE2_GPU_EXECUTION.md) preserves this hi
 CPU-only report and records the renewed layered connectivity diagnosis, unchanged
 protocol, annotation/universe checks, local artifact preservation, and actual fresh
 execution status. This report's four-case reanalysis is not a fresh GPU pilot result.
+
+## Subsequent execution (historical report preserved)
+
+The [fresh GPU execution report](STAGE2_GPU_EXECUTION.md) now records 48 completed
+base requests with one replicate under the frozen throughput rule. D and E both
+resolve 33/48 correctly; oracle replay reaches 35/48 for both. These fresh results
+are separate from this report's historical four-case reanalysis.

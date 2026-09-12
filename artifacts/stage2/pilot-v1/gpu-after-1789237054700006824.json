@@ -1,0 +1,17 @@
+{
+  "architecture_support": [
+    "sm_70",
+    "sm_75",
+    "sm_80",
+    "sm_86",
+    "sm_90",
+    "sm_100",
+    "sm_120"
+  ],
+  "cuda_available": true,
+  "cuda_runtime": "12.8",
+  "device": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+  "gpu_processes": "318879, /workspace/LLMplanningConstraintsStage1/.venv/bin/python, 706 MiB",
+  "gpu_status": "NVIDIA RTX PRO 6000 Blackwell Server Edition, 97887 MiB, 715 MiB, 0 %, 595.91.07",
+  "torch": "2.8.0+cu128"
+}

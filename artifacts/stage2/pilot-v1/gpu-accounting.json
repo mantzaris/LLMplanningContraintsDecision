@@ -1,0 +1,2207 @@
+{
+  "accounting_definition": "One GPU; wall time immediately before model loading until model disposal, including inference, waits and retries. CPU file checksum verification before loading is excluded. Conservatively add the frozen 30-second device-context teardown margin.",
+  "authorized_ceiling": {
+    "aggregate_gpu_seconds": 7200,
+    "generation_attempts": 1500
+  },
+  "cumulative_additional_uncertainty_upper_bound_seconds": 60,
+  "cumulative_generation_attempts": 404,
+  "cumulative_model_resident_seconds": 919.0111139551736,
+  "events": [
+    {
+      "event": "allocation",
+      "request_limit": 1500,
+      "seconds_limit": 7170,
+      "stage": "stage2"
+    },
+    {
+      "event": "session_start",
+      "reserved_seconds": 7169.99999065022,
+      "session": "1789237054700006824",
+      "wall_time": 1789237063.0701616
+    },
+    {
+      "event": "request_start",
+      "number": 1,
+      "session": "1789237054700006824",
+      "wall_time": 1789237067.657579
+    },
+    {
+      "event": "request_start",
+      "number": 2,
+      "session": "1789237054700006824",
+      "wall_time": 1789237069.9120083
+    },
+    {
+      "event": "request_start",
+      "number": 3,
+      "session": "1789237054700006824",
+      "wall_time": 1789237072.044659
+    },
+    {
+      "event": "request_start",
+      "number": 4,
+      "session": "1789237054700006824",
+      "wall_time": 1789237073.969124
+    },
+    {
+      "event": "request_start",
+      "number": 5,
+      "session": "1789237054700006824",
+      "wall_time": 1789237076.0316274
+    },
+    {
+      "event": "request_start",
+      "number": 6,
+      "session": "1789237054700006824",
+      "wall_time": 1789237078.5310333
+    },
+    {
+      "event": "request_start",
+      "number": 7,
+      "session": "1789237054700006824",
+      "wall_time": 1789237081.2826421
+    },
+    {
+      "event": "request_start",
+      "number": 8,
+      "session": "1789237054700006824",
+      "wall_time": 1789237083.7495768
+    },
+    {
+      "event": "request_start",
+      "number": 9,
+      "session": "1789237054700006824",
+      "wall_time": 1789237086.2253864
+    },
+    {
+      "event": "request_start",
+      "number": 10,
+      "session": "1789237054700006824",
+      "wall_time": 1789237090.0938725
+    },
+    {
+      "event": "request_start",
+      "number": 11,
+      "session": "1789237054700006824",
+      "wall_time": 1789237093.3715174
+    },
+    {
+      "event": "request_start",
+      "number": 12,
+      "session": "1789237054700006824",
+      "wall_time": 1789237095.9142127
+    },
+    {
+      "event": "request_start",
+      "number": 13,
+      "session": "1789237054700006824",
+      "wall_time": 1789237099.1095183
+    },
+    {
+      "event": "request_start",
+      "number": 14,
+      "session": "1789237054700006824",
+      "wall_time": 1789237101.1089725
+    },
+    {
+      "event": "request_start",
+      "number": 15,
+      "session": "1789237054700006824",
+      "wall_time": 1789237103.0998776
+    },
+    {
+      "event": "request_start",
+      "number": 16,
+      "session": "1789237054700006824",
+      "wall_time": 1789237104.9335694
+    },
+    {
+      "event": "request_start",
+      "number": 17,
+      "session": "1789237054700006824",
+      "wall_time": 1789237106.988083
+    },
+    {
+      "event": "request_start",
+      "number": 18,
+      "session": "1789237054700006824",
+      "wall_time": 1789237107.8479135
+    },
+    {
+      "event": "request_start",
+      "number": 19,
+      "session": "1789237054700006824",
+      "wall_time": 1789237108.658393
+    },
+    {
+      "event": "request_start",
+      "number": 20,
+      "session": "1789237054700006824",
+      "wall_time": 1789237110.5412052
+    },
+    {
+      "event": "request_start",
+      "number": 21,
+      "session": "1789237054700006824",
+      "wall_time": 1789237111.2151272
+    },
+    {
+      "event": "request_start",
+      "number": 22,
+      "session": "1789237054700006824",
+      "wall_time": 1789237112.4278362
+    },
+    {
+      "event": "request_start",
+      "number": 23,
+      "session": "1789237054700006824",
+      "wall_time": 1789237113.380197
+    },
+    {
+      "event": "request_start",
+      "number": 24,
+      "session": "1789237054700006824",
+      "wall_time": 1789237115.7967188
+    },
+    {
+      "event": "request_start",
+      "number": 25,
+      "session": "1789237054700006824",
+      "wall_time": 1789237116.8250217
+    },
+    {
+      "event": "request_start",
+      "number": 26,
+      "session": "1789237054700006824",
+      "wall_time": 1789237120.6674905
+    },
+    {
+      "event": "request_start",
+      "number": 27,
+      "session": "1789237054700006824",
+      "wall_time": 1789237121.3963084
+    },
+    {
+      "event": "request_start",
+      "number": 28,
+      "session": "1789237054700006824",
+      "wall_time": 1789237125.8953428
+    },
+    {
+      "event": "request_start",
+      "number": 29,
+      "session": "1789237054700006824",
+      "wall_time": 1789237127.8707683
+    },
+    {
+      "event": "request_start",
+      "number": 30,
+      "session": "1789237054700006824",
+      "wall_time": 1789237128.6588795
+    },
+    {
+      "event": "request_start",
+      "number": 31,
+      "session": "1789237054700006824",
+      "wall_time": 1789237129.6090724
+    },
+    {
+      "event": "request_start",
+      "number": 32,
+      "session": "1789237054700006824",
+      "wall_time": 1789237132.0692904
+    },
+    {
+      "event": "request_start",
+      "number": 33,
+      "session": "1789237054700006824",
+      "wall_time": 1789237134.7624881
+    },
+    {
+      "event": "request_start",
+      "number": 34,
+      "session": "1789237054700006824",
+      "wall_time": 1789237137.4538329
+    },
+    {
+      "event": "request_start",
+      "number": 35,
+      "session": "1789237054700006824",
+      "wall_time": 1789237139.9514782
+    },
+    {
+      "event": "request_start",
+      "number": 36,
+      "session": "1789237054700006824",
+      "wall_time": 1789237140.7953234
+    },
+    {
+      "event": "request_start",
+      "number": 37,
+      "session": "1789237054700006824",
+      "wall_time": 1789237143.2935417
+    },
+    {
+      "event": "request_start",
+      "number": 38,
+      "session": "1789237054700006824",
+      "wall_time": 1789237144.1537359
+    },
+    {
+      "event": "request_start",
+      "number": 39,
+      "session": "1789237054700006824",
+      "wall_time": 1789237144.845343
+    },
+    {
+      "event": "request_start",
+      "number": 40,
+      "session": "1789237054700006824",
+      "wall_time": 1789237147.7740061
+    },
+    {
+      "event": "request_start",
+      "number": 41,
+      "session": "1789237054700006824",
+      "wall_time": 1789237148.5222445
+    },
+    {
+      "event": "request_start",
+      "number": 42,
+      "session": "1789237054700006824",
+      "wall_time": 1789237149.0679557
+    },
+    {
+      "event": "request_start",
+      "number": 43,
+      "session": "1789237054700006824",
+      "wall_time": 1789237149.7262378
+    },
+    {
+      "event": "request_start",
+      "number": 44,
+      "session": "1789237054700006824",
+      "wall_time": 1789237150.5578818
+    },
+    {
+      "event": "request_start",
+      "number": 45,
+      "session": "1789237054700006824",
+      "wall_time": 1789237151.443414
+    },
+    {
+      "event": "request_start",
+      "number": 46,
+      "session": "1789237054700006824",
+      "wall_time": 1789237153.8709235
+    },
+    {
+      "event": "request_start",
+      "number": 47,
+      "session": "1789237054700006824",
+      "wall_time": 1789237156.5490305
+    },
+    {
+      "event": "request_start",
+      "number": 48,
+      "session": "1789237054700006824",
+      "wall_time": 1789237158.9808607
+    },
+    {
+      "event": "request_start",
+      "number": 49,
+      "session": "1789237054700006824",
+      "wall_time": 1789237161.4826002
+    },
+    {
+      "event": "request_start",
+      "number": 50,
+      "session": "1789237054700006824",
+      "wall_time": 1789237162.344957
+    },
+    {
+      "event": "request_start",
+      "number": 51,
+      "session": "1789237054700006824",
+      "wall_time": 1789237163.460933
+    },
+    {
+      "event": "request_start",
+      "number": 52,
+      "session": "1789237054700006824",
+      "wall_time": 1789237165.8840585
+    },
+    {
+      "event": "request_start",
+      "number": 53,
+      "session": "1789237054700006824",
+      "wall_time": 1789237166.6933825
+    },
+    {
+      "event": "request_start",
+      "number": 54,
+      "session": "1789237054700006824",
+      "wall_time": 1789237167.499989
+    },
+    {
+      "event": "request_start",
+      "number": 55,
+      "session": "1789237054700006824",
+      "wall_time": 1789237170.387478
+    },
+    {
+      "event": "request_start",
+      "number": 56,
+      "session": "1789237054700006824",
+      "wall_time": 1789237173.541334
+    },
+    {
+      "event": "request_start",
+      "number": 57,
+      "session": "1789237054700006824",
+      "wall_time": 1789237177.0289073
+    },
+    {
+      "event": "request_start",
+      "number": 58,
+      "session": "1789237054700006824",
+      "wall_time": 1789237180.1856518
+    },
+    {
+      "event": "request_start",
+      "number": 59,
+      "session": "1789237054700006824",
+      "wall_time": 1789237183.6662314
+    },
+    {
+      "event": "request_start",
+      "number": 60,
+      "session": "1789237054700006824",
+      "wall_time": 1789237186.8137002
+    },
+    {
+      "event": "request_start",
+      "number": 61,
+      "session": "1789237054700006824",
+      "wall_time": 1789237187.6281233
+    },
+    {
+      "event": "request_start",
+      "number": 62,
+      "session": "1789237054700006824",
+      "wall_time": 1789237189.513632
+    },
+    {
+      "event": "request_start",
+      "number": 63,
+      "session": "1789237054700006824",
+      "wall_time": 1789237191.5593557
+    },
+    {
+      "event": "request_start",
+      "number": 64,
+      "session": "1789237054700006824",
+      "wall_time": 1789237193.4360845
+    },
+    {
+      "event": "request_start",
+      "number": 65,
+      "session": "1789237054700006824",
+      "wall_time": 1789237195.359784
+    },
+    {
+      "event": "request_start",
+      "number": 66,
+      "session": "1789237054700006824",
+      "wall_time": 1789237196.3097117
+    },
+    {
+      "event": "request_start",
+      "number": 67,
+      "session": "1789237054700006824",
+      "wall_time": 1789237198.1763842
+    },
+    {
+      "event": "request_start",
+      "number": 68,
+      "session": "1789237054700006824",
+      "wall_time": 1789237198.9139602
+    },
+    {
+      "event": "request_start",
+      "number": 69,
+      "session": "1789237054700006824",
+      "wall_time": 1789237199.8483043
+    },
+    {
+      "event": "request_start",
+      "number": 70,
+      "session": "1789237054700006824",
+      "wall_time": 1789237201.8589172
+    },
+    {
+      "event": "request_start",
+      "number": 71,
+      "session": "1789237054700006824",
+      "wall_time": 1789237203.8415387
+    },
+    {
+      "event": "request_start",
+      "number": 72,
+      "session": "1789237054700006824",
+      "wall_time": 1789237205.6711314
+    },
+    {
+      "event": "request_start",
+      "number": 73,
+      "session": "1789237054700006824",
+      "wall_time": 1789237207.5717113
+    },
+    {
+      "event": "request_start",
+      "number": 74,
+      "session": "1789237054700006824",
+      "wall_time": 1789237209.384502
+    },
+    {
+      "event": "request_start",
+      "number": 75,
+      "session": "1789237054700006824",
+      "wall_time": 1789237211.8273914
+    },
+    {
+      "event": "request_start",
+      "number": 76,
+      "session": "1789237054700006824",
+      "wall_time": 1789237214.2691615
+    },
+    {
+      "event": "request_start",
+      "number": 77,
+      "session": "1789237054700006824",
+      "wall_time": 1789237216.7245758
+    },
+    {
+      "event": "request_start",
+      "number": 78,
+      "session": "1789237054700006824",
+      "wall_time": 1789237219.2489223
+    },
+    {
+      "event": "request_start",
+      "number": 79,
+      "session": "1789237054700006824",
+      "wall_time": 1789237221.6847913
+    },
+    {
+      "event": "request_start",
+      "number": 80,
+      "session": "1789237054700006824",
+      "wall_time": 1789237222.4967015
+    },
+    {
+      "event": "request_start",
+      "number": 81,
+      "session": "1789237054700006824",
+      "wall_time": 1789237224.4977686
+    },
+    {
+      "event": "request_start",
+      "number": 82,
+      "session": "1789237054700006824",
+      "wall_time": 1789237226.500096
+    },
+    {
+      "event": "request_start",
+      "number": 83,
+      "session": "1789237054700006824",
+      "wall_time": 1789237228.3345354
+    },
+    {
+      "event": "request_start",
+      "number": 84,
+      "session": "1789237054700006824",
+      "wall_time": 1789237230.413525
+    },
+    {
+      "event": "request_start",
+      "number": 85,
+      "session": "1789237054700006824",
+      "wall_time": 1789237233.1153152
+    },
+    {
+      "event": "request_start",
+      "number": 86,
+      "session": "1789237054700006824",
+      "wall_time": 1789237233.933633
+    },
+    {
+      "event": "request_start",
+      "number": 87,
+      "session": "1789237054700006824",
+      "wall_time": 1789237236.8243623
+    },
+    {
+      "event": "request_start",
+      "number": 88,
+      "session": "1789237054700006824",
+      "wall_time": 1789237239.7170885
+    },
+    {
+      "event": "request_start",
+      "number": 89,
+      "session": "1789237054700006824",
+      "wall_time": 1789237243.2359633
+    },
+    {
+      "event": "request_start",
+      "number": 90,
+      "session": "1789237054700006824",
+      "wall_time": 1789237246.445597
+    },
+    {
+      "event": "request_start",
+      "number": 91,
+      "session": "1789237054700006824",
+      "wall_time": 1789237247.32127
+    },
+    {
+      "event": "request_start",
+      "number": 92,
+      "session": "1789237054700006824",
+      "wall_time": 1789237250.1846478
+    },
+    {
+      "event": "request_start",
+      "number": 93,
+      "session": "1789237054700006824",
+      "wall_time": 1789237250.9989197
+    },
+    {
+      "event": "request_start",
+      "number": 94,
+      "session": "1789237054700006824",
+      "wall_time": 1789237254.0344183
+    },
+    {
+      "event": "request_start",
+      "number": 95,
+      "session": "1789237054700006824",
+      "wall_time": 1789237256.0781014
+    },
+    {
+      "event": "request_start",
+      "number": 96,
+      "session": "1789237054700006824",
+      "wall_time": 1789237258.1245863
+    },
+    {
+      "event": "request_start",
+      "number": 97,
+      "session": "1789237054700006824",
+      "wall_time": 1789237260.014011
+    },
+    {
+      "event": "request_start",
+      "number": 98,
+      "session": "1789237054700006824",
+      "wall_time": 1789237261.9441364
+    },
+    {
+      "event": "request_start",
+      "number": 99,
+      "session": "1789237054700006824",
+      "wall_time": 1789237262.7865572
+    },
+    {
+      "event": "request_start",
+      "number": 100,
+      "session": "1789237054700006824",
+      "wall_time": 1789237264.8222933
+    },
+    {
+      "event": "request_start",
+      "number": 101,
+      "session": "1789237054700006824",
+      "wall_time": 1789237265.5938408
+    },
+    {
+      "event": "request_start",
+      "number": 102,
+      "session": "1789237054700006824",
+      "wall_time": 1789237266.5152302
+    },
+    {
+      "event": "request_start",
+      "number": 103,
+      "session": "1789237054700006824",
+      "wall_time": 1789237268.9452522
+    },
+    {
+      "event": "request_start",
+      "number": 104,
+      "session": "1789237054700006824",
+      "wall_time": 1789237271.629551
+    },
+    {
+      "event": "request_start",
+      "number": 105,
+      "session": "1789237054700006824",
+      "wall_time": 1789237274.3238676
+    },
+    {
+      "event": "request_start",
+      "number": 106,
+      "session": "1789237054700006824",
+      "wall_time": 1789237276.833148
+    },
+    {
+      "event": "request_start",
+      "number": 107,
+      "session": "1789237054700006824",
+      "wall_time": 1789237278.1560326
+    },
+    {
+      "event": "request_start",
+      "number": 108,
+      "session": "1789237054700006824",
+      "wall_time": 1789237280.5760336
+    },
+    {
+      "event": "request_start",
+      "number": 109,
+      "session": "1789237054700006824",
+      "wall_time": 1789237281.5815988
+    },
+    {
+      "event": "request_start",
+      "number": 110,
+      "session": "1789237054700006824",
+      "wall_time": 1789237282.446743
+    },
+    {
+      "event": "request_start",
+      "number": 111,
+      "session": "1789237054700006824",
+      "wall_time": 1789237285.3372974
+    },
+    {
+      "event": "request_start",
+      "number": 112,
+      "session": "1789237054700006824",
+      "wall_time": 1789237286.0795639
+    },
+    {
+      "event": "request_start",
+      "number": 113,
+      "session": "1789237054700006824",
+      "wall_time": 1789237287.1800315
+    },
+    {
+      "event": "request_start",
+      "number": 114,
+      "session": "1789237054700006824",
+      "wall_time": 1789237287.8367019
+    },
+    {
+      "event": "request_start",
+      "number": 115,
+      "session": "1789237054700006824",
+      "wall_time": 1789237288.6144564
+    },
+    {
+      "event": "request_start",
+      "number": 116,
+      "session": "1789237054700006824",
+      "wall_time": 1789237289.5333
+    },
+    {
+      "event": "request_start",
+      "number": 117,
+      "session": "1789237054700006824",
+      "wall_time": 1789237291.5247705
+    },
+    {
+      "event": "request_start",
+      "number": 118,
+      "session": "1789237054700006824",
+      "wall_time": 1789237293.5224965
+    },
+    {
+      "event": "request_start",
+      "number": 119,
+      "session": "1789237054700006824",
+      "wall_time": 1789237295.3452554
+    },
+    {
+      "event": "request_start",
+      "number": 120,
+      "session": "1789237054700006824",
+      "wall_time": 1789237297.4285553
+    },
+    {
+      "event": "request_start",
+      "number": 121,
+      "session": "1789237054700006824",
+      "wall_time": 1789237299.414987
+    },
+    {
+      "event": "request_start",
+      "number": 122,
+      "session": "1789237054700006824",
+      "wall_time": 1789237300.2712026
+    },
+    {
+      "event": "request_start",
+      "number": 123,
+      "session": "1789237054700006824",
+      "wall_time": 1789237301.0949519
+    },
+    {
+      "event": "request_start",
+      "number": 124,
+      "session": "1789237054700006824",
+      "wall_time": 1789237303.224813
+    },
+    {
+      "event": "request_start",
+      "number": 125,
+      "session": "1789237054700006824",
+      "wall_time": 1789237305.0312035
+    },
+    {
+      "event": "request_start",
+      "number": 126,
+      "session": "1789237054700006824",
+      "wall_time": 1789237306.9992883
+    },
+    {
+      "event": "request_start",
+      "number": 127,
+      "session": "1789237054700006824",
+      "wall_time": 1789237308.824393
+    },
+    {
+      "event": "request_start",
+      "number": 128,
+      "session": "1789237054700006824",
+      "wall_time": 1789237310.7437851
+    },
+    {
+      "event": "request_start",
+      "number": 129,
+      "session": "1789237054700006824",
+      "wall_time": 1789237312.5672493
+    },
+    {
+      "event": "request_start",
+      "number": 130,
+      "session": "1789237054700006824",
+      "wall_time": 1789237313.78249
+    },
+    {
+      "event": "request_start",
+      "number": 131,
+      "session": "1789237054700006824",
+      "wall_time": 1789237315.3338103
+    },
+    {
+      "event": "request_start",
+      "number": 132,
+      "session": "1789237054700006824",
+      "wall_time": 1789237317.2202635
+    },
+    {
+      "event": "request_start",
+      "number": 133,
+      "session": "1789237054700006824",
+      "wall_time": 1789237319.262052
+    },
+    {
+      "event": "request_start",
+      "number": 134,
+      "session": "1789237054700006824",
+      "wall_time": 1789237321.136167
+    },
+    {
+      "event": "request_start",
+      "number": 135,
+      "session": "1789237054700006824",
+      "wall_time": 1789237323.072371
+    },
+    {
+      "event": "request_start",
+      "number": 136,
+      "session": "1789237054700006824",
+      "wall_time": 1789237323.8364196
+    },
+    {
+      "event": "request_start",
+      "number": 137,
+      "session": "1789237054700006824",
+      "wall_time": 1789237325.7091901
+    },
+    {
+      "event": "request_start",
+      "number": 138,
+      "session": "1789237054700006824",
+      "wall_time": 1789237326.3776398
+    },
+    {
+      "event": "request_start",
+      "number": 139,
+      "session": "1789237054700006824",
+      "wall_time": 1789237327.316312
+    },
+    {
+      "event": "request_start",
+      "number": 140,
+      "session": "1789237054700006824",
+      "wall_time": 1789237329.9965465
+    },
+    {
+      "event": "request_start",
+      "number": 141,
+      "session": "1789237054700006824",
+      "wall_time": 1789237332.688195
+    },
+    {
+      "event": "request_start",
+      "number": 142,
+      "session": "1789237054700006824",
+      "wall_time": 1789237335.1252544
+    },
+    {
+      "event": "request_start",
+      "number": 143,
+      "session": "1789237054700006824",
+      "wall_time": 1789237337.6508868
+    },
+    {
+      "event": "request_start",
+      "number": 144,
+      "session": "1789237054700006824",
+      "wall_time": 1789237340.326253
+    },
+    {
+      "event": "request_start",
+      "number": 145,
+      "session": "1789237054700006824",
+      "wall_time": 1789237341.231185
+    },
+    {
+      "event": "request_start",
+      "number": 146,
+      "session": "1789237054700006824",
+      "wall_time": 1789237342.1241777
+    },
+    {
+      "event": "request_start",
+      "number": 147,
+      "session": "1789237054700006824",
+      "wall_time": 1789237345.0676782
+    },
+    {
+      "event": "request_start",
+      "number": 148,
+      "session": "1789237054700006824",
+      "wall_time": 1789237347.8295572
+    },
+    {
+      "event": "request_start",
+      "number": 149,
+      "session": "1789237054700006824",
+      "wall_time": 1789237350.5901952
+    },
+    {
+      "event": "request_start",
+      "number": 150,
+      "session": "1789237054700006824",
+      "wall_time": 1789237353.1131227
+    },
+    {
+      "event": "request_start",
+      "number": 151,
+      "session": "1789237054700006824",
+      "wall_time": 1789237356.4695897
+    },
+    {
+      "event": "request_start",
+      "number": 152,
+      "session": "1789237054700006824",
+      "wall_time": 1789237357.221174
+    },
+    {
+      "event": "request_start",
+      "number": 153,
+      "session": "1789237054700006824",
+      "wall_time": 1789237358.5134141
+    },
+    {
+      "event": "request_start",
+      "number": 154,
+      "session": "1789237054700006824",
+      "wall_time": 1789237361.271264
+    },
+    {
+      "event": "request_start",
+      "number": 155,
+      "session": "1789237054700006824",
+      "wall_time": 1789237362.1400318
+    },
+    {
+      "event": "request_start",
+      "number": 156,
+      "session": "1789237054700006824",
+      "wall_time": 1789237363.0159178
+    },
+    {
+      "event": "request_start",
+      "number": 157,
+      "session": "1789237054700006824",
+      "wall_time": 1789237366.0161538
+    },
+    {
+      "event": "request_start",
+      "number": 158,
+      "session": "1789237054700006824",
+      "wall_time": 1789237368.017547
+    },
+    {
+      "event": "request_start",
+      "number": 159,
+      "session": "1789237054700006824",
+      "wall_time": 1789237370.0197697
+    },
+    {
+      "event": "request_start",
+      "number": 160,
+      "session": "1789237054700006824",
+      "wall_time": 1789237371.8430812
+    },
+    {
+      "event": "request_start",
+      "number": 161,
+      "session": "1789237054700006824",
+      "wall_time": 1789237373.6959603
+    },
+    {
+      "event": "request_start",
+      "number": 162,
+      "session": "1789237054700006824",
+      "wall_time": 1789237374.556726
+    },
+    {
+      "event": "request_start",
+      "number": 163,
+      "session": "1789237054700006824",
+      "wall_time": 1789237377.2344427
+    },
+    {
+      "event": "request_start",
+      "number": 164,
+      "session": "1789237054700006824",
+      "wall_time": 1789237378.49411
+    },
+    {
+      "event": "request_start",
+      "number": 165,
+      "session": "1789237054700006824",
+      "wall_time": 1789237380.6990147
+    },
+    {
+      "event": "request_start",
+      "number": 166,
+      "session": "1789237054700006824",
+      "wall_time": 1789237383.1349661
+    },
+    {
+      "event": "request_start",
+      "number": 167,
+      "session": "1789237054700006824",
+      "wall_time": 1789237385.8189614
+    },
+    {
+      "event": "request_start",
+      "number": 168,
+      "session": "1789237054700006824",
+      "wall_time": 1789237388.2930868
+    },
+    {
+      "event": "request_start",
+      "number": 169,
+      "session": "1789237054700006824",
+      "wall_time": 1789237390.83801
+    },
+    {
+      "event": "request_start",
+      "number": 170,
+      "session": "1789237054700006824",
+      "wall_time": 1789237393.2744853
+    },
+    {
+      "event": "request_start",
+      "number": 171,
+      "session": "1789237054700006824",
+      "wall_time": 1789237394.0324912
+    },
+    {
+      "event": "request_start",
+      "number": 172,
+      "session": "1789237054700006824",
+      "wall_time": 1789237396.8836024
+    },
+    {
+      "event": "request_start",
+      "number": 173,
+      "session": "1789237054700006824",
+      "wall_time": 1789237397.6234975
+    },
+    {
+      "event": "request_start",
+      "number": 174,
+      "session": "1789237054700006824",
+      "wall_time": 1789237398.2771819
+    },
+    {
+      "event": "request_start",
+      "number": 175,
+      "session": "1789237054700006824",
+      "wall_time": 1789237399.0693371
+    },
+    {
+      "event": "request_start",
+      "number": 176,
+      "session": "1789237054700006824",
+      "wall_time": 1789237399.820389
+    },
+    {
+      "event": "request_start",
+      "number": 177,
+      "session": "1789237054700006824",
+      "wall_time": 1789237400.7335927
+    },
+    {
+      "event": "request_start",
+      "number": 178,
+      "session": "1789237054700006824",
+      "wall_time": 1789237403.421246
+    },
+    {
+      "event": "request_start",
+      "number": 179,
+      "session": "1789237054700006824",
+      "wall_time": 1789237406.10946
+    },
+    {
+      "event": "request_start",
+      "number": 180,
+      "session": "1789237054700006824",
+      "wall_time": 1789237408.5495772
+    },
+    {
+      "event": "request_start",
+      "number": 181,
+      "session": "1789237054700006824",
+      "wall_time": 1789237411.0422964
+    },
+    {
+      "event": "request_start",
+      "number": 182,
+      "session": "1789237054700006824",
+      "wall_time": 1789237412.2631843
+    },
+    {
+      "event": "request_start",
+      "number": 183,
+      "session": "1789237054700006824",
+      "wall_time": 1789237414.9433467
+    },
+    {
+      "event": "request_start",
+      "number": 184,
+      "session": "1789237054700006824",
+      "wall_time": 1789237415.8108385
+    },
+    {
+      "event": "request_start",
+      "number": 185,
+      "session": "1789237054700006824",
+      "wall_time": 1789237416.6719353
+    },
+    {
+      "event": "request_start",
+      "number": 186,
+      "session": "1789237054700006824",
+      "wall_time": 1789237419.5168118
+    },
+    {
+      "event": "request_start",
+      "number": 187,
+      "session": "1789237054700006824",
+      "wall_time": 1789237423.3553505
+    },
+    {
+      "event": "request_start",
+      "number": 188,
+      "session": "1789237054700006824",
+      "wall_time": 1789237426.860034
+    },
+    {
+      "event": "request_start",
+      "number": 189,
+      "session": "1789237054700006824",
+      "wall_time": 1789237429.391943
+    },
+    {
+      "event": "request_start",
+      "number": 190,
+      "session": "1789237054700006824",
+      "wall_time": 1789237432.686176
+    },
+    {
+      "event": "request_start",
+      "number": 191,
+      "session": "1789237054700006824",
+      "wall_time": 1789237433.4884024
+    },
+    {
+      "event": "request_start",
+      "number": 192,
+      "session": "1789237054700006824",
+      "wall_time": 1789237437.2996745
+    },
+    {
+      "event": "request_start",
+      "number": 193,
+      "session": "1789237054700006824",
+      "wall_time": 1789237438.1335487
+    },
+    {
+      "event": "request_start",
+      "number": 194,
+      "session": "1789237054700006824",
+      "wall_time": 1789237442.493186
+    },
+    {
+      "event": "request_start",
+      "number": 195,
+      "session": "1789237054700006824",
+      "wall_time": 1789237444.379126
+    },
+    {
+      "event": "request_start",
+      "number": 196,
+      "session": "1789237054700006824",
+      "wall_time": 1789237446.4275498
+    },
+    {
+      "event": "request_start",
+      "number": 197,
+      "session": "1789237054700006824",
+      "wall_time": 1789237448.3146849
+    },
+    {
+      "event": "request_start",
+      "number": 198,
+      "session": "1789237054700006824",
+      "wall_time": 1789237450.2538207
+    },
+    {
+      "event": "request_start",
+      "number": 199,
+      "session": "1789237054700006824",
+      "wall_time": 1789237451.1414454
+    },
+    {
+      "event": "request_start",
+      "number": 200,
+      "session": "1789237054700006824",
+      "wall_time": 1789237453.0152888
+    },
+    {
+      "event": "request_start",
+      "number": 201,
+      "session": "1789237054700006824",
+      "wall_time": 1789237453.8220012
+    },
+    {
+      "event": "request_start",
+      "number": 202,
+      "session": "1789237054700006824",
+      "wall_time": 1789237454.6005435
+    },
+    {
+      "event": "request_start",
+      "number": 203,
+      "session": "1789237054700006824",
+      "wall_time": 1789237456.7902133
+    },
+    {
+      "event": "request_start",
+      "number": 204,
+      "session": "1789237054700006824",
+      "wall_time": 1789237458.6264176
+    },
+    {
+      "event": "request_start",
+      "number": 205,
+      "session": "1789237054700006824",
+      "wall_time": 1789237460.6194108
+    },
+    {
+      "event": "request_start",
+      "number": 206,
+      "session": "1789237054700006824",
+      "wall_time": 1789237462.4249368
+    },
+    {
+      "event": "request_start",
+      "number": 207,
+      "session": "1789237054700006824",
+      "wall_time": 1789237464.3150764
+    },
+    {
+      "event": "request_start",
+      "number": 208,
+      "session": "1789237054700006824",
+      "wall_time": 1789237465.2145357
+    },
+    {
+      "event": "request_start",
+      "number": 209,
+      "session": "1789237054700006824",
+      "wall_time": 1789237467.031154
+    },
+    {
+      "event": "request_start",
+      "number": 210,
+      "session": "1789237054700006824",
+      "wall_time": 1789237467.9765844
+    },
+    {
+      "event": "request_start",
+      "number": 211,
+      "session": "1789237054700006824",
+      "wall_time": 1789237470.111332
+    },
+    {
+      "event": "request_start",
+      "number": 212,
+      "session": "1789237054700006824",
+      "wall_time": 1789237472.5562675
+    },
+    {
+      "event": "request_start",
+      "number": 213,
+      "session": "1789237054700006824",
+      "wall_time": 1789237475.2494156
+    },
+    {
+      "event": "request_start",
+      "number": 214,
+      "session": "1789237054700006824",
+      "wall_time": 1789237477.6917717
+    },
+    {
+      "event": "request_start",
+      "number": 215,
+      "session": "1789237054700006824",
+      "wall_time": 1789237480.2610347
+    },
+    {
+      "event": "request_start",
+      "number": 216,
+      "session": "1789237054700006824",
+      "wall_time": 1789237482.6839833
+    },
+    {
+      "event": "request_start",
+      "number": 217,
+      "session": "1789237054700006824",
+      "wall_time": 1789237483.5448735
+    },
+    {
+      "event": "request_start",
+      "number": 218,
+      "session": "1789237054700006824",
+      "wall_time": 1789237485.6701748
+    },
+    {
+      "event": "request_start",
+      "number": 219,
+      "session": "1789237054700006824",
+      "wall_time": 1789237487.6663978
+    },
+    {
+      "event": "request_start",
+      "number": 220,
+      "session": "1789237054700006824",
+      "wall_time": 1789237489.6533976
+    },
+    {
+      "event": "request_start",
+      "number": 221,
+      "session": "1789237054700006824",
+      "wall_time": 1789237491.7225647
+    },
+    {
+      "event": "request_start",
+      "number": 222,
+      "session": "1789237054700006824",
+      "wall_time": 1789237493.696254
+    },
+    {
+      "event": "request_start",
+      "number": 223,
+      "session": "1789237054700006824",
+      "wall_time": 1789237494.7326171
+    },
+    {
+      "event": "request_start",
+      "number": 224,
+      "session": "1789237054700006824",
+      "wall_time": 1789237495.8512435
+    },
+    {
+      "event": "request_start",
+      "number": 225,
+      "session": "1789237054700006824",
+      "wall_time": 1789237499.5901353
+    },
+    {
+      "event": "request_start",
+      "number": 226,
+      "session": "1789237054700006824",
+      "wall_time": 1789237503.0732725
+    },
+    {
+      "event": "request_start",
+      "number": 227,
+      "session": "1789237054700006824",
+      "wall_time": 1789237506.3201385
+    },
+    {
+      "event": "request_start",
+      "number": 228,
+      "session": "1789237054700006824",
+      "wall_time": 1789237509.654041
+    },
+    {
+      "event": "request_start",
+      "number": 229,
+      "session": "1789237054700006824",
+      "wall_time": 1789237510.5866463
+    },
+    {
+      "event": "request_start",
+      "number": 230,
+      "session": "1789237054700006824",
+      "wall_time": 1789237514.313135
+    },
+    {
+      "event": "request_start",
+      "number": 231,
+      "session": "1789237054700006824",
+      "wall_time": 1789237515.2339108
+    },
+    {
+      "event": "request_start",
+      "number": 232,
+      "session": "1789237054700006824",
+      "wall_time": 1789237516.054445
+    },
+    {
+      "event": "request_start",
+      "number": 233,
+      "session": "1789237054700006824",
+      "wall_time": 1789237520.4522417
+    },
+    {
+      "event": "request_start",
+      "number": 234,
+      "session": "1789237054700006824",
+      "wall_time": 1789237522.4961267
+    },
+    {
+      "event": "request_start",
+      "number": 235,
+      "session": "1789237054700006824",
+      "wall_time": 1789237524.5512502
+    },
+    {
+      "event": "request_start",
+      "number": 236,
+      "session": "1789237054700006824",
+      "wall_time": 1789237526.4310906
+    },
+    {
+      "event": "request_start",
+      "number": 237,
+      "session": "1789237054700006824",
+      "wall_time": 1789237528.3896635
+    },
+    {
+      "event": "request_start",
+      "number": 238,
+      "session": "1789237054700006824",
+      "wall_time": 1789237530.4364183
+    },
+    {
+      "event": "request_start",
+      "number": 239,
+      "session": "1789237054700006824",
+      "wall_time": 1789237531.253335
+    },
+    {
+      "event": "request_start",
+      "number": 240,
+      "session": "1789237054700006824",
+      "wall_time": 1789237532.344614
+    },
+    {
+      "event": "request_start",
+      "number": 241,
+      "session": "1789237054700006824",
+      "wall_time": 1789237534.7761981
+    },
+    {
+      "event": "request_start",
+      "number": 242,
+      "session": "1789237054700006824",
+      "wall_time": 1789237537.4601386
+    },
+    {
+      "event": "request_start",
+      "number": 243,
+      "session": "1789237054700006824",
+      "wall_time": 1789237539.8931792
+    },
+    {
+      "event": "request_start",
+      "number": 244,
+      "session": "1789237054700006824",
+      "wall_time": 1789237542.3826237
+    },
+    {
+      "event": "request_start",
+      "number": 245,
+      "session": "1789237054700006824",
+      "wall_time": 1789237543.4642437
+    },
+    {
+      "event": "request_start",
+      "number": 246,
+      "session": "1789237054700006824",
+      "wall_time": 1789237545.8811831
+    },
+    {
+      "event": "request_start",
+      "number": 247,
+      "session": "1789237054700006824",
+      "wall_time": 1789237546.77673
+    },
+    {
+      "event": "request_start",
+      "number": 248,
+      "session": "1789237054700006824",
+      "wall_time": 1789237547.6138108
+    },
+    {
+      "event": "request_start",
+      "number": 249,
+      "session": "1789237054700006824",
+      "wall_time": 1789237550.4563143
+    },
+    {
+      "event": "request_start",
+      "number": 250,
+      "session": "1789237054700006824",
+      "wall_time": 1789237551.1951327
+    },
+    {
+      "event": "request_start",
+      "number": 251,
+      "session": "1789237054700006824",
+      "wall_time": 1789237551.9095466
+    },
+    {
+      "event": "request_start",
+      "number": 252,
+      "session": "1789237054700006824",
+      "wall_time": 1789237552.7173805
+    },
+    {
+      "event": "request_start",
+      "number": 253,
+      "session": "1789237054700006824",
+      "wall_time": 1789237553.3763986
+    },
+    {
+      "event": "request_start",
+      "number": 254,
+      "session": "1789237054700006824",
+      "wall_time": 1789237554.2566662
+    },
+    {
+      "event": "request_start",
+      "number": 255,
+      "session": "1789237054700006824",
+      "wall_time": 1789237556.0595539
+    },
+    {
+      "event": "request_start",
+      "number": 256,
+      "session": "1789237054700006824",
+      "wall_time": 1789237558.044401
+    },
+    {
+      "event": "request_start",
+      "number": 257,
+      "session": "1789237054700006824",
+      "wall_time": 1789237559.863437
+    },
+    {
+      "event": "request_start",
+      "number": 258,
+      "session": "1789237054700006824",
+      "wall_time": 1789237561.924057
+    },
+    {
+      "event": "request_start",
+      "number": 259,
+      "session": "1789237054700006824",
+      "wall_time": 1789237562.7569168
+    },
+    {
+      "event": "request_start",
+      "number": 260,
+      "session": "1789237054700006824",
+      "wall_time": 1789237563.6377254
+    },
+    {
+      "event": "request_start",
+      "number": 261,
+      "session": "1789237054700006824",
+      "wall_time": 1789237565.4486554
+    },
+    {
+      "event": "request_start",
+      "number": 262,
+      "session": "1789237054700006824",
+      "wall_time": 1789237566.354707
+    },
+    {
+      "event": "request_start",
+      "number": 263,
+      "session": "1789237054700006824",
+      "wall_time": 1789237567.1167743
+    },
+    {
+      "event": "request_start",
+      "number": 264,
+      "session": "1789237054700006824",
+      "wall_time": 1789237568.9286292
+    },
+    {
+      "event": "request_start",
+      "number": 265,
+      "session": "1789237054700006824",
+      "wall_time": 1789237570.9092398
+    },
+    {
+      "event": "request_start",
+      "number": 266,
+      "session": "1789237054700006824",
+      "wall_time": 1789237572.7234874
+    },
+    {
+      "event": "request_start",
+      "number": 267,
+      "session": "1789237054700006824",
+      "wall_time": 1789237574.663934
+    },
+    {
+      "event": "request_start",
+      "number": 268,
+      "session": "1789237054700006824",
+      "wall_time": 1789237576.6876535
+    },
+    {
+      "event": "request_start",
+      "number": 269,
+      "session": "1789237054700006824",
+      "wall_time": 1789237577.7271514
+    },
+    {
+      "event": "request_start",
+      "number": 270,
+      "session": "1789237054700006824",
+      "wall_time": 1789237579.7708967
+    },
+    {
+      "event": "request_start",
+      "number": 271,
+      "session": "1789237054700006824",
+      "wall_time": 1789237581.8654885
+    },
+    {
+      "event": "request_start",
+      "number": 272,
+      "session": "1789237054700006824",
+      "wall_time": 1789237583.7440274
+    },
+    {
+      "event": "request_start",
+      "number": 273,
+      "session": "1789237054700006824",
+      "wall_time": 1789237585.6672492
+    },
+    {
+      "event": "request_start",
+      "number": 274,
+      "session": "1789237054700006824",
+      "wall_time": 1789237586.9497154
+    },
+    {
+      "event": "request_start",
+      "number": 275,
+      "session": "1789237054700006824",
+      "wall_time": 1789237588.98277
+    },
+    {
+      "event": "request_start",
+      "number": 276,
+      "session": "1789237054700006824",
+      "wall_time": 1789237589.80022
+    },
+    {
+      "event": "request_start",
+      "number": 277,
+      "session": "1789237054700006824",
+      "wall_time": 1789237590.8738356
+    },
+    {
+      "event": "request_start",
+      "number": 278,
+      "session": "1789237054700006824",
+      "wall_time": 1789237593.3139365
+    },
+    {
+      "event": "request_start",
+      "number": 279,
+      "session": "1789237054700006824",
+      "wall_time": 1789237595.998109
+    },
+    {
+      "event": "request_start",
+      "number": 280,
+      "session": "1789237054700006824",
+      "wall_time": 1789237598.440875
+    },
+    {
+      "event": "request_start",
+      "number": 281,
+      "session": "1789237054700006824",
+      "wall_time": 1789237600.943497
+    },
+    {
+      "event": "request_start",
+      "number": 282,
+      "session": "1789237054700006824",
+      "wall_time": 1789237602.5263002
+    },
+    {
+      "event": "request_start",
+      "number": 283,
+      "session": "1789237054700006824",
+      "wall_time": 1789237603.3543704
+    },
+    {
+      "event": "request_start",
+      "number": 284,
+      "session": "1789237054700006824",
+      "wall_time": 1789237604.7152612
+    },
+    {
+      "event": "request_start",
+      "number": 285,
+      "session": "1789237054700006824",
+      "wall_time": 1789237607.150008
+    },
+    {
+      "event": "request_start",
+      "number": 286,
+      "session": "1789237054700006824",
+      "wall_time": 1789237608.3777575
+    },
+    {
+      "event": "request_start",
+      "number": 287,
+      "session": "1789237054700006824",
+      "wall_time": 1789237609.1393235
+    },
+    {
+      "event": "request_start",
+      "number": 288,
+      "session": "1789237054700006824",
+      "wall_time": 1789237612.6415036
+    },
+    {
+      "event": "request_start",
+      "number": 289,
+      "session": "1789237054700006824",
+      "wall_time": 1789237615.4377234
+    },
+    {
+      "event": "request_start",
+      "number": 290,
+      "session": "1789237054700006824",
+      "wall_time": 1789237617.972836
+    },
+    {
+      "event": "request_start",
+      "number": 291,
+      "session": "1789237054700006824",
+      "wall_time": 1789237621.234286
+    },
+    {
+      "event": "request_start",
+      "number": 292,
+      "session": "1789237054700006824",
+      "wall_time": 1789237622.0414338
+    },
+    {
+      "event": "request_start",
+      "number": 293,
+      "session": "1789237054700006824",
+      "wall_time": 1789237625.5234752
+    },
+    {
+      "event": "request_start",
+      "number": 294,
+      "session": "1789237054700006824",
+      "wall_time": 1789237626.252375
+    },
+    {
+      "event": "request_start",
+      "number": 295,
+      "session": "1789237054700006824",
+      "wall_time": 1789237628.2338798
+    },
+    {
+      "event": "request_start",
+      "number": 296,
+      "session": "1789237054700006824",
+      "wall_time": 1789237630.2244358
+    },
+    {
+      "event": "request_start",
+      "number": 297,
+      "session": "1789237054700006824",
+      "wall_time": 1789237632.2244065
+    },
+    {
+      "event": "request_start",
+      "number": 298,
+      "session": "1789237054700006824",
+      "wall_time": 1789237634.2912567
+    },
+    {
+      "event": "request_start",
+      "number": 299,
+      "session": "1789237054700006824",
+      "wall_time": 1789237636.2722485
+    },
+    {
+      "event": "request_start",
+      "number": 300,
+      "session": "1789237054700006824",
+      "wall_time": 1789237637.326241
+    },
+    {
+      "event": "request_start",
+      "number": 301,
+      "session": "1789237054700006824",
+      "wall_time": 1789237638.2643015
+    },
+    {
+      "event": "request_start",
+      "number": 302,
+      "session": "1789237054700006824",
+      "wall_time": 1789237640.6994069
+    },
+    {
+      "event": "request_start",
+      "number": 303,
+      "session": "1789237054700006824",
+      "wall_time": 1789237643.3643131
+    },
+    {
+      "event": "request_start",
+      "number": 304,
+      "session": "1789237054700006824",
+      "wall_time": 1789237646.0450933
+    },
+    {
+      "event": "request_start",
+      "number": 305,
+      "session": "1789237054700006824",
+      "wall_time": 1789237648.114534
+    },
+    {
+      "event": "request_start",
+      "number": 306,
+      "session": "1789237054700006824",
+      "wall_time": 1789237649.3620925
+    },
+    {
+      "event": "request_start",
+      "number": 307,
+      "session": "1789237054700006824",
+      "wall_time": 1789237651.8164241
+    },
+    {
+      "event": "request_start",
+      "number": 308,
+      "session": "1789237054700006824",
+      "wall_time": 1789237652.6623886
+    },
+    {
+      "event": "request_start",
+      "number": 309,
+      "session": "1789237054700006824",
+      "wall_time": 1789237655.4865746
+    },
+    {
+      "event": "request_start",
+      "number": 310,
+      "session": "1789237054700006824",
+      "wall_time": 1789237656.1239934
+    },
+    {
+      "event": "request_start",
+      "number": 311,
+      "session": "1789237054700006824",
+      "wall_time": 1789237657.0558414
+    },
+    {
+      "event": "request_start",
+      "number": 312,
+      "session": "1789237054700006824",
+      "wall_time": 1789237657.7946806
+    },
+    {
+      "event": "request_start",
+      "number": 313,
+      "session": "1789237054700006824",
+      "wall_time": 1789237658.6493402
+    },
+    {
+      "event": "request_start",
+      "number": 314,
+      "session": "1789237054700006824",
+      "wall_time": 1789237659.3911066
+    },
+    {
+      "event": "request_start",
+      "number": 315,
+      "session": "1789237054700006824",
+      "wall_time": 1789237662.0696466
+    },
+    {
+      "event": "request_start",
+      "number": 316,
+      "session": "1789237054700006824",
+      "wall_time": 1789237664.752767
+    },
+    {
+      "event": "request_start",
+      "number": 317,
+      "session": "1789237054700006824",
+      "wall_time": 1789237667.1836274
+    },
+    {
+      "event": "request_start",
+      "number": 318,
+      "session": "1789237054700006824",
+      "wall_time": 1789237669.691187
+    },
+    {
+      "event": "request_start",
+      "number": 319,
+      "session": "1789237054700006824",
+      "wall_time": 1789237670.8784132
+    },
+    {
+      "event": "request_start",
+      "number": 320,
+      "session": "1789237054700006824",
+      "wall_time": 1789237673.5471845
+    },
+    {
+      "event": "request_start",
+      "number": 321,
+      "session": "1789237054700006824",
+      "wall_time": 1789237674.3510725
+    },
+    {
+      "event": "request_start",
+      "number": 322,
+      "session": "1789237054700006824",
+      "wall_time": 1789237675.2246025
+    },
+    {
+      "event": "request_start",
+      "number": 323,
+      "session": "1789237054700006824",
+      "wall_time": 1789237678.0901392
+    },
+    {
+      "event": "request_start",
+      "number": 324,
+      "session": "1789237054700006824",
+      "wall_time": 1789237681.5743377
+    },
+    {
+      "event": "request_start",
+      "number": 325,
+      "session": "1789237054700006824",
+      "wall_time": 1789237685.0589836
+    },
+    {
+      "event": "request_start",
+      "number": 326,
+      "session": "1789237054700006824",
+      "wall_time": 1789237687.5692742
+    },
+    {
+      "event": "request_start",
+      "number": 327,
+      "session": "1789237054700006824",
+      "wall_time": 1789237690.8441243
+    },
+    {
+      "event": "request_start",
+      "number": 328,
+      "session": "1789237054700006824",
+      "wall_time": 1789237694.3276844
+    },
+    {
+      "event": "request_start",
+      "number": 329,
+      "session": "1789237054700006824",
+      "wall_time": 1789237695.066949
+    },
+    {
+      "event": "request_start",
+      "number": 330,
+      "session": "1789237054700006824",
+      "wall_time": 1789237697.1160576
+    },
+    {
+      "event": "request_start",
+      "number": 331,
+      "session": "1789237054700006824",
+      "wall_time": 1789237699.15718
+    },
+    {
+      "event": "request_start",
+      "number": 332,
+      "session": "1789237054700006824",
+      "wall_time": 1789237701.0353959
+    },
+    {
+      "event": "request_start",
+      "number": 333,
+      "session": "1789237054700006824",
+      "wall_time": 1789237702.9739912
+    },
+    {
+      "event": "request_start",
+      "number": 334,
+      "session": "1789237054700006824",
+      "wall_time": 1789237703.7901511
+    },
+    {
+      "event": "request_start",
+      "number": 335,
+      "session": "1789237054700006824",
+      "wall_time": 1789237705.8199656
+    },
+    {
+      "event": "request_start",
+      "number": 336,
+      "session": "1789237054700006824",
+      "wall_time": 1789237706.5966828
+    },
+    {
+      "event": "request_start",
+      "number": 337,
+      "session": "1789237054700006824",
+      "wall_time": 1789237707.3746886
+    },
+    {
+      "event": "request_start",
+      "number": 338,
+      "session": "1789237054700006824",
+      "wall_time": 1789237709.17447
+    },
+    {
+      "event": "request_start",
+      "number": 339,
+      "session": "1789237054700006824",
+      "wall_time": 1789237711.1427345
+    },
+    {
+      "event": "request_start",
+      "number": 340,
+      "session": "1789237054700006824",
+      "wall_time": 1789237712.9502544
+    },
+    {
+      "event": "request_start",
+      "number": 341,
+      "session": "1789237054700006824",
+      "wall_time": 1789237714.9133406
+    },
+    {
+      "event": "request_start",
+      "number": 342,
+      "session": "1789237054700006824",
+      "wall_time": 1789237716.7492213
+    },
+    {
+      "event": "request_start",
+      "number": 343,
+      "session": "1789237054700006824",
+      "wall_time": 1789237717.7478924
+    },
+    {
+      "event": "request_start",
+      "number": 344,
+      "session": "1789237054700006824",
+      "wall_time": 1789237718.5673223
+    },
+    {
+      "event": "request_start",
+      "number": 345,
+      "session": "1789237054700006824",
+      "wall_time": 1789237720.5421023
+    },
+    {
+      "event": "request_start",
+      "number": 346,
+      "session": "1789237054700006824",
+      "wall_time": 1789237722.5234113
+    },
+    {
+      "event": "request_start",
+      "number": 347,
+      "session": "1789237054700006824",
+      "wall_time": 1789237724.9660873
+    },
+    {
+      "event": "request_start",
+      "number": 348,
+      "session": "1789237054700006824",
+      "wall_time": 1789237727.4788125
+    },
+    {
+      "event": "request_start",
+      "number": 349,
+      "session": "1789237054700006824",
+      "wall_time": 1789237729.4294696
+    },
+    {
+      "event": "request_start",
+      "number": 350,
+      "session": "1789237054700006824",
+      "wall_time": 1789237730.2918239
+    },
+    {
+      "event": "request_start",
+      "number": 351,
+      "session": "1789237054700006824",
+      "wall_time": 1789237732.1191816
+    },
+    {
+      "event": "request_start",
+      "number": 352,
+      "session": "1789237054700006824",
+      "wall_time": 1789237734.1153889
+    },
+    {
+      "event": "request_start",
+      "number": 353,
+      "session": "1789237054700006824",
+      "wall_time": 1789237735.9360437
+    },
+    {
+      "event": "request_start",
+      "number": 354,
+      "session": "1789237054700006824",
+      "wall_time": 1789237737.9609232
+    },
+    {
+      "event": "request_start",
+      "number": 355,
+      "session": "1789237054700006824",
+      "wall_time": 1789237738.8223913
+    },
+    {
+      "event": "request_start",
+      "number": 356,
+      "session": "1789237054700006824",
+      "wall_time": 1789237740.636402
+    },
+    {
+      "event": "request_start",
+      "number": 357,
+      "session": "1789237054700006824",
+      "wall_time": 1789237741.4880087
+    },
+    {
+      "event": "request_start",
+      "number": 358,
+      "session": "1789237054700006824",
+      "wall_time": 1789237742.3384542
+    },
+    {
+      "elapsed_seconds": 681.6208989289589,
+      "event": "session_end",
+      "requests_total": 358,
+      "session": "1789237054700006824",
+      "wall_time": 1789237744.6910474
+    }
+  ],
+  "generation_attempts": 358,
+  "generation_failures": 0,
+  "generation_latency_seconds": 659.7768035025802,
+  "generation_requests_by_purpose": {
+    "critique": 48,
+    "judgment": 96,
+    "repair": 22,
+    "translation": 192
+  },
+  "input_tokens": 687767,
+  "ledger_sha256": "87e13933af847422ec777cd996f6916ea565d8a2aed218165cb51ac2d632783d",
+  "model_resident_seconds": 681.6208989289589,
+  "output_tokens": 46091,
+  "previous_snapshot_sha256": "e4d1a034ae0222deedc85b72b7074766a8cf0a4d57c54a82ea620cd332039529",
+  "programmatic_guard": {
+    "event": "allocation",
+    "request_limit": 1500,
+    "seconds_limit": 7170,
+    "stage": "stage2"
+  },
+  "run_identity": "stage2-pilot-v1",
+  "sessions": [
+    "1789237054700006824"
+  ],
+  "stage": "stage2",
+  "stage2_additional_uncertainty_seconds": 30,
+  "stage2_conservative_seconds": 711.6208989289589,
+  "status": "complete"
+}

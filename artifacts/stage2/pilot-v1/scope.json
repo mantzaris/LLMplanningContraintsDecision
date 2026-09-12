@@ -1,0 +1,9 @@
+{
+  "base_count": 48,
+  "basis": "translation diagnostic timing only; no comparative outcomes",
+  "forecast_seconds": 4644.4694455862045,
+  "generation_p95_seconds": 3.844157504849136,
+  "generation_upper_bound": 768,
+  "replicates": 1,
+  "reserved_seconds_per_call": 5.766236257273704
+}
