@@ -32,7 +32,13 @@ def expression_for_mask(mask, pool):
             exact = {
                 "kind": "all",
                 "children": [
-                    {"kind": "atom", "op": op, "scope": "outbound", "value": bound, "unit": "seconds"}
+                    {
+                        "kind": "atom",
+                        "op": op,
+                        "scope": "outbound",
+                        "value": bound,
+                        "unit": "seconds",
+                    }
                     for op in ("depart_ge", "depart_le")
                 ],
             }
@@ -240,3 +246,32 @@ def test_checkpoint_and_full_saved_replay(scenario, pool, tmp_path):
     assert run_pilot(cfg, public, run, replay_from=prior)["complete_pairs"] == 1
     assert (run / "calls.jsonl").stat().st_size == size
     assert replay_pilot(run, tmp_path / "again")["matching_pairs"] == 1
+
+
+def test_historical_storage_order_replays_in_declared_order(scenario, pool, tmp_path):
+    from plancheck.pilot_history import reanalyze_history
+
+    second = scenario.model_copy(update={"scenario_id": "second", "base_id": "second"})
+    prior = tmp_path / "old"
+    calls = injected_calls(scenario, pool, prior)
+    cfg = {
+        **CONFIG,
+        "scenario_ids": ["second", "unit"],
+        "model_id": "Qwen/Qwen2.5-7B-Instruct",
+        "model_revision": "test-only",
+        "record_prefixes": False,
+    }
+    calls.metadata = model_metadata(cfg)
+    for item in (scenario, second):
+        for method in "ABCDE":
+            run_method(method, item, pool, calls, {**cfg, "judgment_limit": 2, "repair_limit": 1})
+    immutable_json(prior / "manifest.json", {"config": cfg, "model": model_metadata(cfg)})
+    immutable_json(
+        prior / "public-scenarios.json", [s.model_dump(mode="json") for s in (scenario, second)]
+    )
+    immutable_json(
+        prior / "pools" / f"{scenario.pool_hash}.json", [j.model_dump(mode="json") for j in pool]
+    )
+    history = tmp_path / "history"
+    reanalyze_history(prior, history)
+    assert replay_pilot(history, tmp_path / "replayed")["matching_pairs"] == 2

@@ -27,6 +27,10 @@ def reanalyze_history(prior: Path, destination: Path) -> dict:
     for path in (prior / "pools").glob("*.json"):
         immutable_json(public / "pools" / path.name, read_json(path))
     scenarios, pools = load_public(public)
+    by_id = {scenario.scenario_id: scenario for scenario in scenarios}
+    # Stage 1 public storage order differed from the declared execution order.
+    # Hash and snapshot the pilot's declared order, as run_pilot does on replay.
+    scenarios = [by_id[identifier] for identifier in config["scenario_ids"]]
     journal = Journal(destination / "calls.jsonl")
     if not journal.read():
         for event in Journal(prior / "calls.jsonl").read():
@@ -53,7 +57,9 @@ def reanalyze_history(prior: Path, destination: Path) -> dict:
             "basis": "all four prior Stage 1 sampled requests; no new sampling",
         },
     )
-    immutable_json(destination / "public-scenarios.json", read_json(public / "scenarios.json"))
+    immutable_json(
+        destination / "public-scenarios.json", [s.model_dump(mode="json") for s in scenarios]
+    )
     for path in (public / "pools").glob("*.json"):
         immutable_json(destination / "pools" / path.name, read_json(path))
     calls = ModelCalls(journal, previous["model"])
