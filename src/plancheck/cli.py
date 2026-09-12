@@ -39,8 +39,73 @@ def main():
     export = commands.add_parser("export-audit")
     export.add_argument("--run", type=Path, required=True)
     export.add_argument("--output", type=Path, required=True)
+    for name in (
+        "pilot-prepare",
+        "pilot-review",
+        "pilot-freeze",
+        "pilot-run",
+        "pilot-replay",
+        "pilot-analyze",
+        "pilot-history",
+        "pilot-figures",
+    ):
+        command = commands.add_parser(name)
+        if name in {"pilot-prepare", "pilot-freeze", "pilot-run"}:
+            command.add_argument("--config", type=Path, required=True)
+        if name == "pilot-prepare":
+            command.add_argument("--feed", type=Path, required=True)
+            command.add_argument("--prior-public", type=Path, required=True)
+        if name == "pilot-freeze":
+            command.add_argument("--prepared", type=Path, required=True)
+        if name in {"pilot-review", "pilot-run", "pilot-analyze"}:
+            command.add_argument("--public", type=Path, required=True)
+        if name in {"pilot-review", "pilot-analyze"}:
+            command.add_argument("--references", type=Path, required=True)
+        if name in {"pilot-run", "pilot-replay", "pilot-analyze", "pilot-history"}:
+            command.add_argument("--run", type=Path, required=True)
+        if name == "pilot-run":
+            command.add_argument("--model-path", required=True)
+        else:
+            command.add_argument("--output", type=Path, required=True)
+        if name == "pilot-figures":
+            command.add_argument("--analysis", type=Path, required=True)
+            command.add_argument("--label", required=True)
     args = parser.parse_args()
-    if args.command == "acquire":
+    if args.command == "pilot-prepare":
+        from .pilot_data import prepare_pilot
+
+        result = prepare_pilot(args.feed, read_json(args.config), args.prior_public, args.output)
+    elif args.command == "pilot-review":
+        from .pilot_review import review_collection
+
+        result = review_collection(args.public, args.references, args.output)
+    elif args.command == "pilot-freeze":
+        from .pilot_protocol import freeze
+
+        result = freeze(read_json(args.config), args.prepared, args.output)
+    elif args.command == "pilot-run":
+        from .pilot import run_pilot
+
+        result = run_pilot(
+            read_json(args.config), args.public, args.run, model_path=args.model_path
+        )
+    elif args.command == "pilot-replay":
+        from .pilot import replay_pilot
+
+        result = replay_pilot(args.run, args.output)
+    elif args.command == "pilot-analyze":
+        from .pilot_analysis import analyze_pairs
+
+        result = analyze_pairs(args.run, args.public, args.references, args.output)
+    elif args.command == "pilot-history":
+        from .pilot_history import reanalyze_history
+
+        result = reanalyze_history(args.run, args.output)
+    elif args.command == "pilot-figures":
+        from .pilot_figures import figures
+
+        result = figures(args.analysis, args.output, args.label)
+    elif args.command == "acquire":
         from .gtfs import acquire
 
         result = str(

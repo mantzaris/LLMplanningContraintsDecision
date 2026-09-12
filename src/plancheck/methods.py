@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 from dataclasses import asdict
+from copy import deepcopy
 from .budget import BudgetExceeded
 from .compiler import predicate
 from .constraints import InterpretationError, parse_interpretation, response_json
@@ -10,12 +11,18 @@ from .judgment import labels_from_judgments, parse_judgment
 from .model import ModelCalls
 from .prompts import critique_prompt, judgment_prompt, repair_prompt, translation_prompt
 from .render import render_journey
-from .selection import candidates, select_witness
+from .selection import candidates, select_witness, restore_candidates
 from .util import digest
 
 
 def run_method(
-    method: str, scenario: PublicScenario, pool: list[Journey], calls: ModelCalls, config: dict
+    method: str,
+    scenario: PublicScenario,
+    pool: list[Journey],
+    calls: ModelCalls,
+    config: dict,
+    *,
+    bundle: dict | None = None,
 ) -> dict:
     if method not in "ABCDE" or len(method) != 1:
         raise ValueError(method)
@@ -57,6 +64,15 @@ def run_method(
     expressions = []
     initial = None
     active = []
+    prefixes = {}
+
+    def snapshot():
+        if config.get("record_prefixes"):
+            saved = deepcopy(output)
+            finalize_output(saved, active, initial)
+            saved["logical_calls"] = deepcopy(calls.logical[logical_start:])
+            prefixes[str(len(output["judgments"]))] = saved
+
     try:
         count = config["candidate_count"] if method in "DE" else 1
         for index in range(count):
@@ -74,11 +90,17 @@ def run_method(
                         "detail": str(error),
                     }
                 )
-        active = candidates(expressions, pool, config["solver_timeout_ms"])
+        if bundle is not None:
+            if output["translations"] != bundle["translations"]:
+                raise ValueError("Shared candidate bundle translation mismatch")
+            active = restore_candidates(bundle["candidates"])
+        else:
+            active = candidates(expressions, pool, config["solver_timeout_ms"])
         output["candidates"] = [c.record() for c in active]
         if active:
             initial = active[0]
             output["initial_plan_id"] = initial.plan.plan_id
+        snapshot()
         if method == "B":
             draft = output["translations"][0]
             for _ in range(config["repair_limit"]):
@@ -138,6 +160,7 @@ def run_method(
                 if contradictions:
                     output["events"].append("contradictory_judgments")
                     active = []
+                    snapshot()
                     break
                 active = [
                     c
@@ -148,6 +171,7 @@ def run_method(
                         if j.journey_id in labels
                     )
                 ]
+                snapshot()
                 if not active:
                     output["events"].append("all_candidates_eliminated")
                     break
@@ -181,27 +205,7 @@ def run_method(
                         active = candidates([expr], pool, config["solver_timeout_ms"])
                         break
                     output["events"].append("repair_contradicts_judgments")
-        if active:
-            chosen = active[0]  # Stable generation order, not hidden-label best-of-k.
-            output.update(
-                status=chosen.plan.status,
-                plan_id=chosen.plan.plan_id,
-                final_formula=chosen.expression.model_dump(mode="json"),
-                final_solver=asdict(chosen.plan),
-                remaining_candidates=len(active),
-            )
-            definite = any(j["judgment"]["verdict"] != "uncertain" for j in output["judgments"])
-            if len(active) == 1 and definite:
-                output["semantic_status"] = "resolved_by_model"
-            elif len(active) > 1:
-                output["semantic_status"] = "unresolved_multiple_candidates"
-            else:
-                output["semantic_status"] = "unverified_no_semantic_evidence"
-        elif initial:
-            output["diagnostic_fallback_plan_id"] = initial.plan.plan_id
-            output["semantic_status"] = "unresolved_candidate_exhaustion"
-        elif output["errors"]:
-            output["status"] = output["errors"][0]["status"]
+        finalize_output(output, active, initial)
     except (
         BudgetExceeded,
         TimeoutError,
@@ -221,4 +225,32 @@ def run_method(
         if initial:
             output["diagnostic_fallback_plan_id"] = initial.plan.plan_id
     output["logical_calls"] = calls.logical[logical_start:]
+    if config.get("record_prefixes"):
+        # Terminal events/errors and optional repairs belong to the reached prefix.
+        prefixes[str(len(output["judgments"]))] = deepcopy(output)
+        output["validation_prefixes"] = prefixes
     return output
+
+
+def finalize_output(output: dict, active: list, initial) -> None:
+    if active:
+        chosen = active[0]  # Stable generation order, not hidden-label best-of-k.
+        output.update(
+            status=chosen.plan.status,
+            plan_id=chosen.plan.plan_id,
+            final_formula=chosen.expression.model_dump(mode="json"),
+            final_solver=asdict(chosen.plan),
+            remaining_candidates=len(active),
+        )
+        definite = any(j["judgment"]["verdict"] != "uncertain" for j in output["judgments"])
+        if len(active) == 1 and definite:
+            output["semantic_status"] = "resolved_by_model"
+        elif len(active) > 1:
+            output["semantic_status"] = "unresolved_multiple_candidates"
+        else:
+            output["semantic_status"] = "unverified_no_semantic_evidence"
+    elif initial:
+        output["diagnostic_fallback_plan_id"] = initial.plan.plan_id
+        output["semantic_status"] = "unresolved_candidate_exhaustion"
+    elif output["errors"]:
+        output["status"] = output["errors"][0]["status"]

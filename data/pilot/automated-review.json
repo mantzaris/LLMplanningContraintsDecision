@@ -1,0 +1,391 @@
+{
+  "all_wording_matches": true,
+  "human_audited": false,
+  "review": "independent narrow grammar plus independent reference evaluation",
+  "rows": [
+    {
+      "human_audited": false,
+      "reference_feasible_count": 11,
+      "reference_hash": "50bd1b16f223ef8fae4c5aca95f96fdace606309a5886b8bebbf6c5fae1f4405",
+      "scenario_id": "pilot-00",
+      "uncertain": false,
+      "wording_matches": true
+    },
+    {
+      "human_audited": false,
+      "reference_feasible_count": 4,
+      "reference_hash": "6bbbd41176128717aee308d88d10f8d8e0151121f8740c79e727024c1bb807cf",
+      "scenario_id": "pilot-01",
+      "uncertain": false,
+      "wording_matches": true
+    },
+    {
+      "human_audited": false,
+      "reference_feasible_count": 64,
+      "reference_hash": "1ed41ca12d589191d6c6410fce4395c5ed0b05c605f86323cd7a3cbb8537a25d",
+      "scenario_id": "pilot-02",
+      "uncertain": false,
+      "wording_matches": true
+    },
+    {
+      "human_audited": false,
+      "reference_feasible_count": 1,
+      "reference_hash": "9db1a2a877c0ebf722f0c7f4e19cf614a6cf2f407be18e7ce562dfbac170acf0",
+      "scenario_id": "pilot-03",
+      "uncertain": false,
+      "wording_matches": true
+    },
+    {
+      "human_audited": false,
+      "reference_feasible_count": 141,
+      "reference_hash": "97a6bc696e749004af2d60d2ab3cddbf67ee48c3f6244700d2cee2c318515f3c",
+      "scenario_id": "pilot-04",
+      "uncertain": false,
+      "wording_matches": true
+    },
+    {
+      "human_audited": false,
+      "reference_feasible_count": 0,
+      "reference_hash": "7b80cc58ff6308d4559867f09c160dd5abe1d2b02b725de4b7bb88c822cede72",
+      "scenario_id": "pilot-05",
+      "uncertain": false,
+      "wording_matches": true
+    },
+    {
+      "human_audited": false,
+      "reference_feasible_count": 35,
+      "reference_hash": "729cea83d43d3e6be9864213c48f797884f382db761a92b73fd51185b9b63360",
+      "scenario_id": "pilot-06",
+      "uncertain": false,
+      "wording_matches": true
+    },
+    {
+      "human_audited": false,
+      "reference_feasible_count": 64,
+      "reference_hash": "e26d2eb94936a5de675a3a7649c172dcb9698bfa66d76661ac7e184c5fc15128",
+      "scenario_id": "pilot-07",
+      "uncertain": false,
+      "wording_matches": true
+    },
+    {
+      "human_audited": false,
+      "reference_feasible_count": 18,
+      "reference_hash": "d93616f4d492a813115bde02b5133653b7438666c5f4bab70a42f46afe7a264d",
+      "scenario_id": "pilot-08",
+      "uncertain": false,
+      "wording_matches": true
+    },
+    {
+      "human_audited": false,
+      "reference_feasible_count": 18,
+      "reference_hash": "31fc389e7ce24863359b913ec197e0b0a734cc5da0ddbe9acfd185ee0c6d206c",
+      "scenario_id": "pilot-09",
+      "uncertain": false,
+      "wording_matches": true
+    },
+    {
+      "human_audited": false,
+      "reference_feasible_count": 0,
+      "reference_hash": "4e7dde615d83ab48915572020c809f54afae2ab330b35b6ccceecc3be7be7795",
+      "scenario_id": "pilot-10",
+      "uncertain": false,
+      "wording_matches": true
+    },
+    {
+      "human_audited": false,
+      "reference_feasible_count": 64,
+      "reference_hash": "cb5cbc831e6ec20559303b8ae48ab5269edde77cd095093961049bdb18366afd",
+      "scenario_id": "pilot-11",
+      "uncertain": false,
+      "wording_matches": true
+    },
+    {
+      "human_audited": false,
+      "reference_feasible_count": 64,
+      "reference_hash": "369a4176aa4903538b0af23b023e96f24de334934f1e6b31e7ed533a0e842aea",
+      "scenario_id": "pilot-12",
+      "uncertain": false,
+      "wording_matches": true
+    },
+    {
+      "human_audited": false,
+      "reference_feasible_count": 5,
+      "reference_hash": "90447b7d9080d9e3a27185a53e74a07c85c3d34e25e294055956d552e1d2c1a9",
+      "scenario_id": "pilot-13",
+      "uncertain": false,
+      "wording_matches": true
+    },
+    {
+      "human_audited": false,
+      "reference_feasible_count": 22,
+      "reference_hash": "d0aca6840f532c1fe0525f5f35405ce47075ad87392e28fcacb436b720b304ea",
+      "scenario_id": "pilot-14",
+      "uncertain": false,
+      "wording_matches": true
+    },
+    {
+      "human_audited": false,
+      "reference_feasible_count": 0,
+      "reference_hash": "7b80cc58ff6308d4559867f09c160dd5abe1d2b02b725de4b7bb88c822cede72",
+      "scenario_id": "pilot-15",
+      "uncertain": false,
+      "wording_matches": true
+    },
+    {
+      "human_audited": false,
+      "reference_feasible_count": 6,
+      "reference_hash": "0c72332e1a3ddde4b964a94526c6101f599f665f8b6fb8eb329cb1ddb4afc849",
+      "scenario_id": "pilot-16",
+      "uncertain": false,
+      "wording_matches": true
+    },
+    {
+      "human_audited": false,
+      "reference_feasible_count": 31,
+      "reference_hash": "87965bba4ab25d6c90bb1391f4854a8306d9cc1725ad41f7940bdbdf52937cac",
+      "scenario_id": "pilot-17",
+      "uncertain": false,
+      "wording_matches": true
+    },
+    {
+      "human_audited": false,
+      "reference_feasible_count": 17,
+      "reference_hash": "ffc7348e0419629d3cd1e42aa9bd06b61781bb2b06ae6e904d39a890606cef49",
+      "scenario_id": "pilot-18",
+      "uncertain": false,
+      "wording_matches": true
+    },
+    {
+      "human_audited": false,
+      "reference_feasible_count": 45,
+      "reference_hash": "35bab6767c42b302726cc3e1aa2c5affa8269e03292a0008529a11ff050fff27",
+      "scenario_id": "pilot-19",
+      "uncertain": false,
+      "wording_matches": true
+    },
+    {
+      "human_audited": false,
+      "reference_feasible_count": 64,
+      "reference_hash": "ef33728b4b1240d2cba80cc1f8fc1caa8019a9a7690bec05f654bc22e9378c2f",
+      "scenario_id": "pilot-20",
+      "uncertain": false,
+      "wording_matches": true
+    },
+    {
+      "human_audited": false,
+      "reference_feasible_count": 17,
+      "reference_hash": "0e35c7685c0926927da6ffe7e4d471bbc043464a81a1f262ec6c0afe802c10b7",
+      "scenario_id": "pilot-21",
+      "uncertain": false,
+      "wording_matches": true
+    },
+    {
+      "human_audited": false,
+      "reference_feasible_count": 256,
+      "reference_hash": "7950a2687d3a8711ba57bde5719ade86a6fee9cb122d2b10a5f309c966e91ee8",
+      "scenario_id": "pilot-22",
+      "uncertain": false,
+      "wording_matches": true
+    },
+    {
+      "human_audited": false,
+      "reference_feasible_count": 0,
+      "reference_hash": "7b80cc58ff6308d4559867f09c160dd5abe1d2b02b725de4b7bb88c822cede72",
+      "scenario_id": "pilot-23",
+      "uncertain": false,
+      "wording_matches": true
+    },
+    {
+      "human_audited": false,
+      "reference_feasible_count": 14,
+      "reference_hash": "2bc86a5e1151c40939de3aaa19be2372302992b16ff201539f9ce077ec0697fd",
+      "scenario_id": "pilot-24",
+      "uncertain": false,
+      "wording_matches": true
+    },
+    {
+      "human_audited": false,
+      "reference_feasible_count": 64,
+      "reference_hash": "1ed41ca12d589191d6c6410fce4395c5ed0b05c605f86323cd7a3cbb8537a25d",
+      "scenario_id": "pilot-25",
+      "uncertain": false,
+      "wording_matches": true
+    },
+    {
+      "human_audited": false,
+      "reference_feasible_count": 35,
+      "reference_hash": "eaecf5aded4e19342ab5e8e8588c1b0d57c458b7b9e7ece7963d82c585f0ff0b",
+      "scenario_id": "pilot-26",
+      "uncertain": false,
+      "wording_matches": true
+    },
+    {
+      "human_audited": false,
+      "reference_feasible_count": 35,
+      "reference_hash": "d01711d00772492f45b5dad9a71eedb674a21896de9ae1d6fe78dbd8e7dfef5d",
+      "scenario_id": "pilot-27",
+      "uncertain": false,
+      "wording_matches": true
+    },
+    {
+      "human_audited": false,
+      "reference_feasible_count": 0,
+      "reference_hash": "4e7dde615d83ab48915572020c809f54afae2ab330b35b6ccceecc3be7be7795",
+      "scenario_id": "pilot-28",
+      "uncertain": false,
+      "wording_matches": true
+    },
+    {
+      "human_audited": false,
+      "reference_feasible_count": 2,
+      "reference_hash": "76eab2584cd7e64a85091a2f2661c157464d2a9fc0de1ddfc6e9580a69d2569d",
+      "scenario_id": "pilot-29",
+      "uncertain": false,
+      "wording_matches": true
+    },
+    {
+      "human_audited": false,
+      "reference_feasible_count": 31,
+      "reference_hash": "45efb2bcc332286dd8e04a1b18afd94b6c7d4ae328be37bcee498ced9e3ed3a1",
+      "scenario_id": "pilot-30",
+      "uncertain": false,
+      "wording_matches": true
+    },
+    {
+      "human_audited": false,
+      "reference_feasible_count": 4,
+      "reference_hash": "a347c25afec05bd1fd432c6a14250913e48ff86a69d8ae1ee33cbce6adb4c880",
+      "scenario_id": "pilot-31",
+      "uncertain": false,
+      "wording_matches": true
+    },
+    {
+      "human_audited": false,
+      "reference_feasible_count": 30,
+      "reference_hash": "6f150c1f05808ccf2dbf3bee03ec64eac00abaf1aad569a09583977e1b336ecb",
+      "scenario_id": "pilot-32",
+      "uncertain": false,
+      "wording_matches": true
+    },
+    {
+      "human_audited": false,
+      "reference_feasible_count": 0,
+      "reference_hash": "7b80cc58ff6308d4559867f09c160dd5abe1d2b02b725de4b7bb88c822cede72",
+      "scenario_id": "pilot-33",
+      "uncertain": false,
+      "wording_matches": true
+    },
+    {
+      "human_audited": false,
+      "reference_feasible_count": 13,
+      "reference_hash": "d09233f5cac898d0c1674a522aff133d7d4726c399e48c619b5c6ea2d5a28c8d",
+      "scenario_id": "pilot-34",
+      "uncertain": false,
+      "wording_matches": true
+    },
+    {
+      "human_audited": false,
+      "reference_feasible_count": 168,
+      "reference_hash": "6e70986ebc19bfd8bcc862bd75aec6d1fb7842a0c177bc0949cf9055289d0124",
+      "scenario_id": "pilot-35",
+      "uncertain": false,
+      "wording_matches": true
+    },
+    {
+      "human_audited": false,
+      "reference_feasible_count": 18,
+      "reference_hash": "af0e0663d30d06f651d434851c005e65c23599b3d7df3800774b295479965517",
+      "scenario_id": "pilot-36",
+      "uncertain": false,
+      "wording_matches": true
+    },
+    {
+      "human_audited": false,
+      "reference_feasible_count": 59,
+      "reference_hash": "e35882a6ad282e72bfa56af20896c24f234ee8e54c309a1f8a84fa76af3b44c0",
+      "scenario_id": "pilot-37",
+      "uncertain": false,
+      "wording_matches": true
+    },
+    {
+      "human_audited": false,
+      "reference_feasible_count": 25,
+      "reference_hash": "1436d4467d43664c8236cd9e5917cab980bc6f7a32c519fa80ac3a7bca9e7cc4",
+      "scenario_id": "pilot-38",
+      "uncertain": false,
+      "wording_matches": true
+    },
+    {
+      "human_audited": false,
+      "reference_feasible_count": 2,
+      "reference_hash": "c850e56e96da971c79b6f68037eac83fc22ca07edf3f3a07c5f53ab7fde63204",
+      "scenario_id": "pilot-39",
+      "uncertain": false,
+      "wording_matches": true
+    },
+    {
+      "human_audited": false,
+      "reference_feasible_count": 256,
+      "reference_hash": "4536029d33a35a91b88e122457709247c0ec931dcffd37f160dd74f970a75529",
+      "scenario_id": "pilot-40",
+      "uncertain": false,
+      "wording_matches": true
+    },
+    {
+      "human_audited": false,
+      "reference_feasible_count": 0,
+      "reference_hash": "7b80cc58ff6308d4559867f09c160dd5abe1d2b02b725de4b7bb88c822cede72",
+      "scenario_id": "pilot-41",
+      "uncertain": false,
+      "wording_matches": true
+    },
+    {
+      "human_audited": false,
+      "reference_feasible_count": 28,
+      "reference_hash": "8dcb9597812d48ef4e2036ac7ea17a5948b05f0fbce2443746f21a974f7ea614",
+      "scenario_id": "pilot-42",
+      "uncertain": false,
+      "wording_matches": true
+    },
+    {
+      "human_audited": false,
+      "reference_feasible_count": 64,
+      "reference_hash": "a98a5a2eef117f9424e9fc72ae5a09581240938fd06ed543d07dd22de5d1b610",
+      "scenario_id": "pilot-43",
+      "uncertain": false,
+      "wording_matches": true
+    },
+    {
+      "human_audited": false,
+      "reference_feasible_count": 9,
+      "reference_hash": "959e609bbda4bedd3fee1d8cd2aa0eec4c8b53033b421038eee25b447ad20fdb",
+      "scenario_id": "pilot-44",
+      "uncertain": false,
+      "wording_matches": true
+    },
+    {
+      "human_audited": false,
+      "reference_feasible_count": 204,
+      "reference_hash": "43d0256a5a71a87edf45185e53b56f3f0c13051636ea4fa1275b56d6482349b7",
+      "scenario_id": "pilot-45",
+      "uncertain": false,
+      "wording_matches": true
+    },
+    {
+      "human_audited": false,
+      "reference_feasible_count": 0,
+      "reference_hash": "4e7dde615d83ab48915572020c809f54afae2ab330b35b6ccceecc3be7be7795",
+      "scenario_id": "pilot-46",
+      "uncertain": false,
+      "wording_matches": true
+    },
+    {
+      "human_audited": false,
+      "reference_feasible_count": 16,
+      "reference_hash": "afe08872594b66fefcdad4cfd89f9159ed9b2eefb3f8d3a1039417cea4b97602",
+      "scenario_id": "pilot-47",
+      "uncertain": false,
+      "wording_matches": true
+    }
+  ]
+}

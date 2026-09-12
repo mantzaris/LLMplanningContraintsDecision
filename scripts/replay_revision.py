@@ -54,7 +54,10 @@ def main():
                 sys.executable,
                 "-m",
                 "plancheck.cli",
-                "replay",
+                "pilot-replay"
+                if manifest.get("mode")
+                in {"stage2_gpu_pilot", "stage1_saved_output_reanalysis_not_fresh_pilot"}
+                else "replay",
                 "--run",
                 str(args.run.resolve()),
                 "--output",

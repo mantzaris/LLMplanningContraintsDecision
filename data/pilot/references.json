@@ -1,0 +1,1201 @@
+[
+  {
+    "anchor_id": "002ee67351572c9abe93",
+    "base_id": "pilot-00",
+    "error_injection": false,
+    "family": "timing",
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "earliest_departure",
+          "target": 30317
+        },
+        {
+          "direction": "outbound",
+          "requirement": "latest_arrival",
+          "target": 34225
+        }
+      ]
+    },
+    "reference_version": "stage2-provisional-v1",
+    "review_status": "provisional_automatically_checked_not_human_audited",
+    "scenario_id": "pilot-00"
+  },
+  {
+    "anchor_id": "2396743b245e1b557707",
+    "base_id": "pilot-01",
+    "error_injection": false,
+    "family": "mode_exclusion",
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "forbidden_modes",
+          "target": [
+            "rail",
+            "tram"
+          ]
+        },
+        {
+          "direction": "outbound",
+          "requirement": "latest_departure",
+          "target": 32880
+        },
+        {
+          "direction": "outbound",
+          "requirement": "transfer_limit",
+          "target": 0
+        }
+      ]
+    },
+    "reference_version": "stage2-provisional-v1",
+    "review_status": "provisional_automatically_checked_not_human_audited",
+    "scenario_id": "pilot-01"
+  },
+  {
+    "anchor_id": "0cefdcd4ef36506f4834",
+    "base_id": "pilot-02",
+    "error_injection": false,
+    "family": "ordered_visits",
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "ordered_calls",
+          "target": [
+            "3398",
+            "13780"
+          ]
+        },
+        {
+          "direction": "outbound",
+          "requirement": "allowed_modes",
+          "target": [
+            "bus"
+          ]
+        }
+      ]
+    },
+    "reference_version": "stage2-provisional-v1",
+    "review_status": "provisional_automatically_checked_not_human_audited",
+    "scenario_id": "pilot-02"
+  },
+  {
+    "anchor_id": "13c13af1900ce9e7a3fd",
+    "base_id": "pilot-03",
+    "error_injection": false,
+    "family": "transfers",
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "transfer_limit",
+          "target": 0
+        },
+        {
+          "direction": "outbound",
+          "requirement": "earliest_departure",
+          "target": 29880
+        }
+      ]
+    },
+    "reference_version": "stage2-provisional-v1",
+    "review_status": "provisional_automatically_checked_not_human_audited",
+    "scenario_id": "pilot-03"
+  },
+  {
+    "anchor_id": "03b9e42922d645341f6a",
+    "base_id": "pilot-04",
+    "error_injection": false,
+    "family": "scope",
+    "reference": {
+      "and": [
+        {
+          "direction": "return",
+          "requirement": "transfer_limit",
+          "target": 1
+        },
+        {
+          "direction": "return",
+          "requirement": "earliest_departure",
+          "target": 34014
+        }
+      ]
+    },
+    "reference_version": "stage2-provisional-v1",
+    "review_status": "provisional_automatically_checked_not_human_audited",
+    "scenario_id": "pilot-04"
+  },
+  {
+    "anchor_id": "0d97c72fcce00a096244",
+    "base_id": "pilot-05",
+    "error_injection": false,
+    "family": "infeasible",
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "earliest_departure",
+          "target": 30600
+        },
+        {
+          "direction": "outbound",
+          "requirement": "latest_arrival",
+          "target": 28800
+        }
+      ]
+    },
+    "reference_version": "stage2-provisional-v1",
+    "review_status": "provisional_automatically_checked_not_human_audited",
+    "scenario_id": "pilot-05"
+  },
+  {
+    "anchor_id": "0d267b790150c7cfcad5",
+    "base_id": "pilot-06",
+    "error_injection": false,
+    "family": "mode_exclusion",
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "forbidden_modes",
+          "target": [
+            "rail",
+            "tram"
+          ]
+        },
+        {
+          "direction": "outbound",
+          "requirement": "latest_departure",
+          "target": 28302
+        },
+        {
+          "direction": "outbound",
+          "requirement": "transfer_limit",
+          "target": 1
+        }
+      ]
+    },
+    "reference_version": "stage2-provisional-v1",
+    "review_status": "provisional_automatically_checked_not_human_audited",
+    "scenario_id": "pilot-06"
+  },
+  {
+    "anchor_id": "37cb6517cb833cd79ccf",
+    "base_id": "pilot-07",
+    "error_injection": false,
+    "family": "ordered_visits",
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "ordered_calls",
+          "target": [
+            "9311",
+            "9301"
+          ]
+        },
+        {
+          "direction": "outbound",
+          "requirement": "allowed_modes",
+          "target": [
+            "bus"
+          ]
+        }
+      ]
+    },
+    "reference_version": "stage2-provisional-v1",
+    "review_status": "provisional_automatically_checked_not_human_audited",
+    "scenario_id": "pilot-07"
+  },
+  {
+    "anchor_id": "1b99317f29071f54d3ae",
+    "base_id": "pilot-08",
+    "error_injection": false,
+    "family": "timing",
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "earliest_departure",
+          "target": 28260
+        },
+        {
+          "direction": "outbound",
+          "requirement": "latest_arrival",
+          "target": 32549
+        }
+      ]
+    },
+    "reference_version": "stage2-provisional-v1",
+    "review_status": "provisional_automatically_checked_not_human_audited",
+    "scenario_id": "pilot-08"
+  },
+  {
+    "anchor_id": "13c83281a33f06a471d2",
+    "base_id": "pilot-09",
+    "error_injection": false,
+    "family": "scope",
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "transfer_limit",
+          "target": 1
+        },
+        {
+          "direction": "return",
+          "requirement": "earliest_departure",
+          "target": 34787
+        }
+      ]
+    },
+    "reference_version": "stage2-provisional-v1",
+    "review_status": "provisional_automatically_checked_not_human_audited",
+    "scenario_id": "pilot-09"
+  },
+  {
+    "anchor_id": "1ce0bbd1cabd07361dc7",
+    "base_id": "pilot-10",
+    "error_injection": false,
+    "family": "infeasible",
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "forbidden_modes",
+          "target": [
+            "bus"
+          ]
+        }
+      ]
+    },
+    "reference_version": "stage2-provisional-v1",
+    "review_status": "provisional_automatically_checked_not_human_audited",
+    "scenario_id": "pilot-10"
+  },
+  {
+    "anchor_id": "197f53d82f0d1f50893e",
+    "base_id": "pilot-11",
+    "error_injection": false,
+    "family": "transfers",
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "transfer_limit",
+          "target": 1
+        },
+        {
+          "direction": "outbound",
+          "requirement": "earliest_departure",
+          "target": 26168
+        }
+      ]
+    },
+    "reference_version": "stage2-provisional-v1",
+    "review_status": "provisional_automatically_checked_not_human_audited",
+    "scenario_id": "pilot-11"
+  },
+  {
+    "anchor_id": "0664434935e4d05012f5",
+    "base_id": "pilot-12",
+    "error_injection": false,
+    "family": "ordered_visits",
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "ordered_calls",
+          "target": [
+            "13733",
+            "3398"
+          ]
+        },
+        {
+          "direction": "outbound",
+          "requirement": "allowed_modes",
+          "target": [
+            "bus"
+          ]
+        }
+      ]
+    },
+    "reference_version": "stage2-provisional-v1",
+    "review_status": "provisional_automatically_checked_not_human_audited",
+    "scenario_id": "pilot-12"
+  },
+  {
+    "anchor_id": "0e6f2c82aabd02dab985",
+    "base_id": "pilot-13",
+    "error_injection": false,
+    "family": "timing",
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "earliest_departure",
+          "target": 29520
+        },
+        {
+          "direction": "outbound",
+          "requirement": "latest_arrival",
+          "target": 32966
+        }
+      ]
+    },
+    "reference_version": "stage2-provisional-v1",
+    "review_status": "provisional_automatically_checked_not_human_audited",
+    "scenario_id": "pilot-13"
+  },
+  {
+    "anchor_id": "0bb308caf615d0a7ddcc",
+    "base_id": "pilot-14",
+    "error_injection": false,
+    "family": "mode_exclusion",
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "forbidden_modes",
+          "target": [
+            "rail",
+            "tram"
+          ]
+        },
+        {
+          "direction": "outbound",
+          "requirement": "latest_departure",
+          "target": 26894
+        },
+        {
+          "direction": "outbound",
+          "requirement": "transfer_limit",
+          "target": 1
+        }
+      ]
+    },
+    "reference_version": "stage2-provisional-v1",
+    "review_status": "provisional_automatically_checked_not_human_audited",
+    "scenario_id": "pilot-14"
+  },
+  {
+    "anchor_id": "01207d545a93a6e94172",
+    "base_id": "pilot-15",
+    "error_injection": false,
+    "family": "infeasible",
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "earliest_departure",
+          "target": 30600
+        },
+        {
+          "direction": "outbound",
+          "requirement": "latest_arrival",
+          "target": 28800
+        }
+      ]
+    },
+    "reference_version": "stage2-provisional-v1",
+    "review_status": "provisional_automatically_checked_not_human_audited",
+    "scenario_id": "pilot-15"
+  },
+  {
+    "anchor_id": "ac13f0a5c4c3e0401a80",
+    "base_id": "pilot-16",
+    "error_injection": false,
+    "family": "transfers",
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "transfer_limit",
+          "target": 0
+        },
+        {
+          "direction": "outbound",
+          "requirement": "earliest_departure",
+          "target": 25799
+        }
+      ]
+    },
+    "reference_version": "stage2-provisional-v1",
+    "review_status": "provisional_automatically_checked_not_human_audited",
+    "scenario_id": "pilot-16"
+  },
+  {
+    "anchor_id": "38e16a2f93fd16b6b682",
+    "base_id": "pilot-17",
+    "error_injection": false,
+    "family": "scope",
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "transfer_limit",
+          "target": 0
+        },
+        {
+          "direction": "return",
+          "requirement": "earliest_departure",
+          "target": 32645
+        }
+      ]
+    },
+    "reference_version": "stage2-provisional-v1",
+    "review_status": "provisional_automatically_checked_not_human_audited",
+    "scenario_id": "pilot-17"
+  },
+  {
+    "anchor_id": "16b6ecbb4acc39d2ceb2",
+    "base_id": "pilot-18",
+    "error_injection": false,
+    "family": "timing",
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "earliest_departure",
+          "target": 27360
+        },
+        {
+          "direction": "outbound",
+          "requirement": "latest_arrival",
+          "target": 32911
+        }
+      ]
+    },
+    "reference_version": "stage2-provisional-v1",
+    "review_status": "provisional_automatically_checked_not_human_audited",
+    "scenario_id": "pilot-18"
+  },
+  {
+    "anchor_id": "1bb3f5bebc63787a4ed4",
+    "base_id": "pilot-19",
+    "error_injection": false,
+    "family": "mode_exclusion",
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "forbidden_modes",
+          "target": [
+            "rail",
+            "tram"
+          ]
+        },
+        {
+          "direction": "outbound",
+          "requirement": "latest_departure",
+          "target": 28586
+        },
+        {
+          "direction": "outbound",
+          "requirement": "transfer_limit",
+          "target": 1
+        }
+      ]
+    },
+    "reference_version": "stage2-provisional-v1",
+    "review_status": "provisional_automatically_checked_not_human_audited",
+    "scenario_id": "pilot-19"
+  },
+  {
+    "anchor_id": "14069124b51daac0ca54",
+    "base_id": "pilot-20",
+    "error_injection": false,
+    "family": "ordered_visits",
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "ordered_calls",
+          "target": [
+            "7640",
+            "7594"
+          ]
+        },
+        {
+          "direction": "outbound",
+          "requirement": "allowed_modes",
+          "target": [
+            "bus"
+          ]
+        }
+      ]
+    },
+    "reference_version": "stage2-provisional-v1",
+    "review_status": "provisional_automatically_checked_not_human_audited",
+    "scenario_id": "pilot-20"
+  },
+  {
+    "anchor_id": "d05d8a93e9315d686771",
+    "base_id": "pilot-21",
+    "error_injection": false,
+    "family": "transfers",
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "transfer_limit",
+          "target": 1
+        },
+        {
+          "direction": "outbound",
+          "requirement": "earliest_departure",
+          "target": 25500
+        }
+      ]
+    },
+    "reference_version": "stage2-provisional-v1",
+    "review_status": "provisional_automatically_checked_not_human_audited",
+    "scenario_id": "pilot-21"
+  },
+  {
+    "anchor_id": "2e57c1126cf32c7ebb03",
+    "base_id": "pilot-22",
+    "error_injection": false,
+    "family": "scope",
+    "reference": {
+      "and": [
+        {
+          "direction": "return",
+          "requirement": "transfer_limit",
+          "target": 1
+        },
+        {
+          "direction": "return",
+          "requirement": "earliest_departure",
+          "target": 33900
+        }
+      ]
+    },
+    "reference_version": "stage2-provisional-v1",
+    "review_status": "provisional_automatically_checked_not_human_audited",
+    "scenario_id": "pilot-22"
+  },
+  {
+    "anchor_id": "229bb5ec45f342453ab2",
+    "base_id": "pilot-23",
+    "error_injection": false,
+    "family": "infeasible",
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "earliest_departure",
+          "target": 30600
+        },
+        {
+          "direction": "outbound",
+          "requirement": "latest_arrival",
+          "target": 28800
+        }
+      ]
+    },
+    "reference_version": "stage2-provisional-v1",
+    "review_status": "provisional_automatically_checked_not_human_audited",
+    "scenario_id": "pilot-23"
+  },
+  {
+    "anchor_id": "20cbbc8259444d4fe389",
+    "base_id": "pilot-24",
+    "error_injection": false,
+    "family": "mode_exclusion",
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "forbidden_modes",
+          "target": [
+            "rail",
+            "tram"
+          ]
+        },
+        {
+          "direction": "outbound",
+          "requirement": "latest_departure",
+          "target": 25958
+        },
+        {
+          "direction": "outbound",
+          "requirement": "transfer_limit",
+          "target": 1
+        }
+      ]
+    },
+    "reference_version": "stage2-provisional-v1",
+    "review_status": "provisional_automatically_checked_not_human_audited",
+    "scenario_id": "pilot-24"
+  },
+  {
+    "anchor_id": "267f3e5cfc8e3de6b507",
+    "base_id": "pilot-25",
+    "error_injection": false,
+    "family": "ordered_visits",
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "ordered_calls",
+          "target": [
+            "3398",
+            "13780"
+          ]
+        },
+        {
+          "direction": "outbound",
+          "requirement": "allowed_modes",
+          "target": [
+            "bus"
+          ]
+        }
+      ]
+    },
+    "reference_version": "stage2-provisional-v1",
+    "review_status": "provisional_automatically_checked_not_human_audited",
+    "scenario_id": "pilot-25"
+  },
+  {
+    "anchor_id": "7da8c1b9ab88f395d123",
+    "base_id": "pilot-26",
+    "error_injection": false,
+    "family": "timing",
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "earliest_departure",
+          "target": 25200
+        },
+        {
+          "direction": "outbound",
+          "requirement": "latest_arrival",
+          "target": 33574
+        }
+      ]
+    },
+    "reference_version": "stage2-provisional-v1",
+    "review_status": "provisional_automatically_checked_not_human_audited",
+    "scenario_id": "pilot-26"
+  },
+  {
+    "anchor_id": "2819ada50f48a9d17d36",
+    "base_id": "pilot-27",
+    "error_injection": false,
+    "family": "scope",
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "transfer_limit",
+          "target": 1
+        },
+        {
+          "direction": "return",
+          "requirement": "earliest_departure",
+          "target": 34800
+        }
+      ]
+    },
+    "reference_version": "stage2-provisional-v1",
+    "review_status": "provisional_automatically_checked_not_human_audited",
+    "scenario_id": "pilot-27"
+  },
+  {
+    "anchor_id": "57b7ceb70f1587d623c7",
+    "base_id": "pilot-28",
+    "error_injection": false,
+    "family": "infeasible",
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "forbidden_modes",
+          "target": [
+            "bus"
+          ]
+        }
+      ]
+    },
+    "reference_version": "stage2-provisional-v1",
+    "review_status": "provisional_automatically_checked_not_human_audited",
+    "scenario_id": "pilot-28"
+  },
+  {
+    "anchor_id": "2fe80c8666bd822f6dc0",
+    "base_id": "pilot-29",
+    "error_injection": false,
+    "family": "transfers",
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "transfer_limit",
+          "target": 0
+        },
+        {
+          "direction": "outbound",
+          "requirement": "earliest_departure",
+          "target": 28181
+        }
+      ]
+    },
+    "reference_version": "stage2-provisional-v1",
+    "review_status": "provisional_automatically_checked_not_human_audited",
+    "scenario_id": "pilot-29"
+  },
+  {
+    "anchor_id": "0d8c3033b0b216411d79",
+    "base_id": "pilot-30",
+    "error_injection": false,
+    "family": "ordered_visits",
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "ordered_calls",
+          "target": [
+            "7602",
+            "3397"
+          ]
+        },
+        {
+          "direction": "outbound",
+          "requirement": "allowed_modes",
+          "target": [
+            "bus"
+          ]
+        }
+      ]
+    },
+    "reference_version": "stage2-provisional-v1",
+    "review_status": "provisional_automatically_checked_not_human_audited",
+    "scenario_id": "pilot-30"
+  },
+  {
+    "anchor_id": "360be9eb46243fc3556c",
+    "base_id": "pilot-31",
+    "error_injection": false,
+    "family": "timing",
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "earliest_departure",
+          "target": 31662
+        },
+        {
+          "direction": "outbound",
+          "requirement": "latest_arrival",
+          "target": 33060
+        }
+      ]
+    },
+    "reference_version": "stage2-provisional-v1",
+    "review_status": "provisional_automatically_checked_not_human_audited",
+    "scenario_id": "pilot-31"
+  },
+  {
+    "anchor_id": "8d7906a4a816d745c676",
+    "base_id": "pilot-32",
+    "error_injection": false,
+    "family": "mode_exclusion",
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "forbidden_modes",
+          "target": [
+            "rail",
+            "tram"
+          ]
+        },
+        {
+          "direction": "outbound",
+          "requirement": "latest_departure",
+          "target": 28794
+        },
+        {
+          "direction": "outbound",
+          "requirement": "transfer_limit",
+          "target": 1
+        }
+      ]
+    },
+    "reference_version": "stage2-provisional-v1",
+    "review_status": "provisional_automatically_checked_not_human_audited",
+    "scenario_id": "pilot-32"
+  },
+  {
+    "anchor_id": "10a875aba779f7796ded",
+    "base_id": "pilot-33",
+    "error_injection": false,
+    "family": "infeasible",
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "earliest_departure",
+          "target": 30600
+        },
+        {
+          "direction": "outbound",
+          "requirement": "latest_arrival",
+          "target": 28800
+        }
+      ]
+    },
+    "reference_version": "stage2-provisional-v1",
+    "review_status": "provisional_automatically_checked_not_human_audited",
+    "scenario_id": "pilot-33"
+  },
+  {
+    "anchor_id": "2468db1a0dd5e454be7a",
+    "base_id": "pilot-34",
+    "error_injection": false,
+    "family": "transfers",
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "transfer_limit",
+          "target": 1
+        },
+        {
+          "direction": "outbound",
+          "requirement": "earliest_departure",
+          "target": 31327
+        }
+      ]
+    },
+    "reference_version": "stage2-provisional-v1",
+    "review_status": "provisional_automatically_checked_not_human_audited",
+    "scenario_id": "pilot-34"
+  },
+  {
+    "anchor_id": "38a27509fdf52442a814",
+    "base_id": "pilot-35",
+    "error_injection": false,
+    "family": "scope",
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "transfer_limit",
+          "target": 1
+        },
+        {
+          "direction": "return",
+          "requirement": "earliest_departure",
+          "target": 33360
+        }
+      ]
+    },
+    "reference_version": "stage2-provisional-v1",
+    "review_status": "provisional_automatically_checked_not_human_audited",
+    "scenario_id": "pilot-35"
+  },
+  {
+    "anchor_id": "344ecc5bb99402bb1e81",
+    "base_id": "pilot-36",
+    "error_injection": false,
+    "family": "timing",
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "earliest_departure",
+          "target": 27675
+        },
+        {
+          "direction": "outbound",
+          "requirement": "latest_arrival",
+          "target": 33743
+        }
+      ]
+    },
+    "reference_version": "stage2-provisional-v1",
+    "review_status": "provisional_automatically_checked_not_human_audited",
+    "scenario_id": "pilot-36"
+  },
+  {
+    "anchor_id": "4a89a06ba5058ef4ccea",
+    "base_id": "pilot-37",
+    "error_injection": false,
+    "family": "mode_exclusion",
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "forbidden_modes",
+          "target": [
+            "rail",
+            "tram"
+          ]
+        },
+        {
+          "direction": "outbound",
+          "requirement": "latest_departure",
+          "target": 32269
+        },
+        {
+          "direction": "outbound",
+          "requirement": "transfer_limit",
+          "target": 1
+        }
+      ]
+    },
+    "reference_version": "stage2-provisional-v1",
+    "review_status": "provisional_automatically_checked_not_human_audited",
+    "scenario_id": "pilot-37"
+  },
+  {
+    "anchor_id": "18f7e39ff17b93eee86a",
+    "base_id": "pilot-38",
+    "error_injection": false,
+    "family": "ordered_visits",
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "ordered_calls",
+          "target": [
+            "10425",
+            "6235"
+          ]
+        },
+        {
+          "direction": "outbound",
+          "requirement": "allowed_modes",
+          "target": [
+            "bus"
+          ]
+        }
+      ]
+    },
+    "reference_version": "stage2-provisional-v1",
+    "review_status": "provisional_automatically_checked_not_human_audited",
+    "scenario_id": "pilot-38"
+  },
+  {
+    "anchor_id": "0b466a2c0157fdd47cde",
+    "base_id": "pilot-39",
+    "error_injection": false,
+    "family": "transfers",
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "transfer_limit",
+          "target": 0
+        },
+        {
+          "direction": "outbound",
+          "requirement": "earliest_departure",
+          "target": 29722
+        }
+      ]
+    },
+    "reference_version": "stage2-provisional-v1",
+    "review_status": "provisional_automatically_checked_not_human_audited",
+    "scenario_id": "pilot-39"
+  },
+  {
+    "anchor_id": "1e70d649334a2c90f09e",
+    "base_id": "pilot-40",
+    "error_injection": false,
+    "family": "scope",
+    "reference": {
+      "and": [
+        {
+          "direction": "return",
+          "requirement": "transfer_limit",
+          "target": 1
+        },
+        {
+          "direction": "return",
+          "requirement": "earliest_departure",
+          "target": 33120
+        }
+      ]
+    },
+    "reference_version": "stage2-provisional-v1",
+    "review_status": "provisional_automatically_checked_not_human_audited",
+    "scenario_id": "pilot-40"
+  },
+  {
+    "anchor_id": "80d78a89cbb3c2e21637",
+    "base_id": "pilot-41",
+    "error_injection": false,
+    "family": "infeasible",
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "earliest_departure",
+          "target": 30600
+        },
+        {
+          "direction": "outbound",
+          "requirement": "latest_arrival",
+          "target": 28800
+        }
+      ]
+    },
+    "reference_version": "stage2-provisional-v1",
+    "review_status": "provisional_automatically_checked_not_human_audited",
+    "scenario_id": "pilot-41"
+  },
+  {
+    "anchor_id": "0b9d6915c76f6fdbb6f1",
+    "base_id": "pilot-42",
+    "error_injection": false,
+    "family": "mode_exclusion",
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "forbidden_modes",
+          "target": [
+            "rail",
+            "tram"
+          ]
+        },
+        {
+          "direction": "outbound",
+          "requirement": "latest_departure",
+          "target": 26967
+        },
+        {
+          "direction": "outbound",
+          "requirement": "transfer_limit",
+          "target": 1
+        }
+      ]
+    },
+    "reference_version": "stage2-provisional-v1",
+    "review_status": "provisional_automatically_checked_not_human_audited",
+    "scenario_id": "pilot-42"
+  },
+  {
+    "anchor_id": "00114a3aeb6084c9c9ed",
+    "base_id": "pilot-43",
+    "error_injection": false,
+    "family": "ordered_visits",
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "ordered_calls",
+          "target": [
+            "6008",
+            "6009"
+          ]
+        },
+        {
+          "direction": "outbound",
+          "requirement": "allowed_modes",
+          "target": [
+            "bus"
+          ]
+        }
+      ]
+    },
+    "reference_version": "stage2-provisional-v1",
+    "review_status": "provisional_automatically_checked_not_human_audited",
+    "scenario_id": "pilot-43"
+  },
+  {
+    "anchor_id": "b97ce61670d8218bf901",
+    "base_id": "pilot-44",
+    "error_injection": false,
+    "family": "timing",
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "earliest_departure",
+          "target": 29607
+        },
+        {
+          "direction": "outbound",
+          "requirement": "latest_arrival",
+          "target": 33483
+        }
+      ]
+    },
+    "reference_version": "stage2-provisional-v1",
+    "review_status": "provisional_automatically_checked_not_human_audited",
+    "scenario_id": "pilot-44"
+  },
+  {
+    "anchor_id": "12a8e543b9f69786bd7f",
+    "base_id": "pilot-45",
+    "error_injection": false,
+    "family": "scope",
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "transfer_limit",
+          "target": 1
+        },
+        {
+          "direction": "return",
+          "requirement": "earliest_departure",
+          "target": 32586
+        }
+      ]
+    },
+    "reference_version": "stage2-provisional-v1",
+    "review_status": "provisional_automatically_checked_not_human_audited",
+    "scenario_id": "pilot-45"
+  },
+  {
+    "anchor_id": "44959df2bffb7503da6b",
+    "base_id": "pilot-46",
+    "error_injection": false,
+    "family": "infeasible",
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "forbidden_modes",
+          "target": [
+            "bus"
+          ]
+        }
+      ]
+    },
+    "reference_version": "stage2-provisional-v1",
+    "review_status": "provisional_automatically_checked_not_human_audited",
+    "scenario_id": "pilot-46"
+  },
+  {
+    "anchor_id": "576f5dd69b37f6ee32e0",
+    "base_id": "pilot-47",
+    "error_injection": false,
+    "family": "transfers",
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "transfer_limit",
+          "target": 1
+        },
+        {
+          "direction": "outbound",
+          "requirement": "earliest_departure",
+          "target": 29479
+        }
+      ]
+    },
+    "reference_version": "stage2-provisional-v1",
+    "review_status": "provisional_automatically_checked_not_human_audited",
+    "scenario_id": "pilot-47"
+  }
+]

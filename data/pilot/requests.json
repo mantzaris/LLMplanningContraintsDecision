@@ -1,0 +1,1162 @@
+[
+  {
+    "authorship": "assistant-authored deterministic research request; not passenger data",
+    "base_id": "pilot-00",
+    "feed_hash": "82e6b822de008367b3d3d35bb52545807ea41b6f56623a9aa4b1162b3d54671b",
+    "max_rides_per_segment": 2,
+    "minimum_connection_s": 120,
+    "pool_complete": false,
+    "pool_hash": "c53b84e1e09cbb6bc1cd6908fc121b35d0bf86d927a738d40e141a493d3b400a",
+    "request": "On 2026-09-14, plan the outbound journey from NW 5th & Davis [stop_id=9301] to SW 5th & Columbia [stop_id=7594]. Depart no earlier than 08:25:17 and arrive by 09:30:25, both inclusive.",
+    "scenario_id": "pilot-00",
+    "segments": [
+      {
+        "destination": "7594",
+        "end_s": 36000,
+        "origin": "9301",
+        "scope": "outbound",
+        "start_s": 25200
+      }
+    ],
+    "service_date": "2026-09-14",
+    "split": "development",
+    "timezone": "America/Los_Angeles"
+  },
+  {
+    "authorship": "assistant-authored deterministic research request; not passenger data",
+    "base_id": "pilot-01",
+    "feed_hash": "82e6b822de008367b3d3d35bb52545807ea41b6f56623a9aa4b1162b3d54671b",
+    "max_rides_per_segment": 2,
+    "minimum_connection_s": 120,
+    "pool_complete": false,
+    "pool_hash": "68e502a6f85e77f6cf103dc241c1cc339a28f7231a63da608f008b96afda0fc8",
+    "request": "On 2026-09-14, plan the outbound journey from Rose Quarter Transit Center [stop_id=1097] to N Williams & NE Tillamook [stop_id=6370]. Do not use rail or tram. Depart no later than 09:08:00, inclusive. Make at most 0 transfers.",
+    "scenario_id": "pilot-01",
+    "segments": [
+      {
+        "destination": "6370",
+        "end_s": 36000,
+        "origin": "1097",
+        "scope": "outbound",
+        "start_s": 25200
+      }
+    ],
+    "service_date": "2026-09-14",
+    "split": "development",
+    "timezone": "America/Los_Angeles"
+  },
+  {
+    "authorship": "assistant-authored deterministic research request; not passenger data",
+    "base_id": "pilot-02",
+    "feed_hash": "82e6b822de008367b3d3d35bb52545807ea41b6f56623a9aa4b1162b3d54671b",
+    "max_rides_per_segment": 2,
+    "minimum_connection_s": 120,
+    "pool_complete": false,
+    "pool_hash": "f076776d1f465fb8ab317f6cfb920ea42e1c3b149acf790c068bdae559cd65ef",
+    "request": "On 2026-09-14, plan the outbound journey from South Waterfront/S Moody [stop_id=13733] to NW Everett & 5th [stop_id=8886]. Call at stop 3398 and then stop 13780, in that order; remaining aboard counts. Use only buses.",
+    "scenario_id": "pilot-02",
+    "segments": [
+      {
+        "destination": "8886",
+        "end_s": 36000,
+        "origin": "13733",
+        "scope": "outbound",
+        "start_s": 25200
+      }
+    ],
+    "service_date": "2026-09-14",
+    "split": "development",
+    "timezone": "America/Los_Angeles"
+  },
+  {
+    "authorship": "assistant-authored deterministic research request; not passenger data",
+    "base_id": "pilot-03",
+    "feed_hash": "82e6b822de008367b3d3d35bb52545807ea41b6f56623a9aa4b1162b3d54671b",
+    "max_rides_per_segment": 2,
+    "minimum_connection_s": 120,
+    "pool_complete": false,
+    "pool_hash": "5e3528e4cbf0d4a2b3c6a5ab13b893fd6b33aafeadcc3a41e51172672d82ae0e",
+    "request": "On 2026-09-14, plan the outbound journey from SW 5th & Salmon [stop_id=7634] to 300 Block SW Lincoln [stop_id=3397]. Make at most 0 transfers. Do not depart before 08:18:00.",
+    "scenario_id": "pilot-03",
+    "segments": [
+      {
+        "destination": "3397",
+        "end_s": 36000,
+        "origin": "7634",
+        "scope": "outbound",
+        "start_s": 25200
+      }
+    ],
+    "service_date": "2026-09-14",
+    "split": "development",
+    "timezone": "America/Los_Angeles"
+  },
+  {
+    "authorship": "assistant-authored deterministic research request; not passenger data",
+    "base_id": "pilot-04",
+    "feed_hash": "82e6b822de008367b3d3d35bb52545807ea41b6f56623a9aa4b1162b3d54671b",
+    "max_rides_per_segment": 2,
+    "minimum_connection_s": 120,
+    "pool_complete": false,
+    "pool_hash": "5efe829e1a0fcb5e15c8a7862dc7a3afe40a03612030bb8db9b63238a3f54f96",
+    "request": "On 2026-09-14, plan the outbound journey from NW Everett & 2nd [stop_id=1612] to N Williams & NE Broadway [stop_id=6357]. Also plan a return segment from N Vancouver & Weidler [stop_id=6009] to NW 5th & Davis [stop_id=9301] within 09:00:00–10:00:00. I handle movement between the outbound destination and return origin myself outside these journeys. On the return segment only, make at most 1 transfers. On the return segment only, depart no earlier than 09:26:54.",
+    "scenario_id": "pilot-04",
+    "segments": [
+      {
+        "destination": "6357",
+        "end_s": 36000,
+        "origin": "1612",
+        "scope": "outbound",
+        "start_s": 25200
+      },
+      {
+        "destination": "9301",
+        "end_s": 36000,
+        "origin": "6009",
+        "scope": "return",
+        "start_s": 32400
+      }
+    ],
+    "service_date": "2026-09-14",
+    "split": "development",
+    "timezone": "America/Los_Angeles"
+  },
+  {
+    "authorship": "assistant-authored deterministic research request; not passenger data",
+    "base_id": "pilot-05",
+    "feed_hash": "82e6b822de008367b3d3d35bb52545807ea41b6f56623a9aa4b1162b3d54671b",
+    "max_rides_per_segment": 2,
+    "minimum_connection_s": 120,
+    "pool_complete": false,
+    "pool_hash": "0f0b46ce69cc60dbd872478338fd36c1716673a73deba71a6f75c0eb4d2335bf",
+    "request": "On 2026-09-14, plan the outbound journey from SW Hall & 5th [stop_id=13780] to SW 6th & W Burnside [stop_id=7751]. Depart no earlier than 08:30:00 and arrive by 08:00:00, both inclusive.",
+    "scenario_id": "pilot-05",
+    "segments": [
+      {
+        "destination": "7751",
+        "end_s": 36000,
+        "origin": "13780",
+        "scope": "outbound",
+        "start_s": 25200
+      }
+    ],
+    "service_date": "2026-09-14",
+    "split": "development",
+    "timezone": "America/Los_Angeles"
+  },
+  {
+    "authorship": "assistant-authored deterministic research request; not passenger data",
+    "base_id": "pilot-06",
+    "feed_hash": "82e6b822de008367b3d3d35bb52545807ea41b6f56623a9aa4b1162b3d54671b",
+    "max_rides_per_segment": 2,
+    "minimum_connection_s": 120,
+    "pool_complete": false,
+    "pool_hash": "eedc29d1b9482f55cf82f9150c4b426686d8e154c4a9e5340ab040d3fb51ce41",
+    "request": "On 2026-09-14, plan the outbound journey from SW 5th & Washington [stop_id=7642] to South Waterfront/S Moody [stop_id=13732]. Do not use rail or tram. Depart no later than 07:51:42, inclusive. Make at most 1 transfers.",
+    "scenario_id": "pilot-06",
+    "segments": [
+      {
+        "destination": "13732",
+        "end_s": 36000,
+        "origin": "7642",
+        "scope": "outbound",
+        "start_s": 25200
+      }
+    ],
+    "service_date": "2026-09-14",
+    "split": "development",
+    "timezone": "America/Los_Angeles"
+  },
+  {
+    "authorship": "assistant-authored deterministic research request; not passenger data",
+    "base_id": "pilot-07",
+    "feed_hash": "82e6b822de008367b3d3d35bb52545807ea41b6f56623a9aa4b1162b3d54671b",
+    "max_rides_per_segment": 2,
+    "minimum_connection_s": 120,
+    "pool_complete": false,
+    "pool_hash": "d0c45e38f1c2ba1ae1604f669cf238758f9ba1baf2c142a2be7cffde453d1271",
+    "request": "On 2026-09-14, plan the outbound journey from Rose Quarter Transit Center [stop_id=2592] to SW 5th & Pine [stop_id=7631]. Call at stop 9311 and then stop 9301, in that order; remaining aboard counts. Use only buses.",
+    "scenario_id": "pilot-07",
+    "segments": [
+      {
+        "destination": "7631",
+        "end_s": 36000,
+        "origin": "2592",
+        "scope": "outbound",
+        "start_s": 25200
+      }
+    ],
+    "service_date": "2026-09-14",
+    "split": "development",
+    "timezone": "America/Los_Angeles"
+  },
+  {
+    "authorship": "assistant-authored deterministic research request; not passenger data",
+    "base_id": "pilot-08",
+    "feed_hash": "82e6b822de008367b3d3d35bb52545807ea41b6f56623a9aa4b1162b3d54671b",
+    "max_rides_per_segment": 2,
+    "minimum_connection_s": 120,
+    "pool_complete": false,
+    "pool_hash": "3452b124c36740f348c09d49f519011c98a864c48a921d13c46bb73e362c2171",
+    "request": "On 2026-09-14, plan the outbound journey from SE Powell & Milwaukie [stop_id=4538] to SW Lincoln & 1st [stop_id=3398]. Depart no earlier than 07:51:00 and arrive by 09:02:29, both inclusive.",
+    "scenario_id": "pilot-08",
+    "segments": [
+      {
+        "destination": "3398",
+        "end_s": 36000,
+        "origin": "4538",
+        "scope": "outbound",
+        "start_s": 25200
+      }
+    ],
+    "service_date": "2026-09-14",
+    "split": "development",
+    "timezone": "America/Los_Angeles"
+  },
+  {
+    "authorship": "assistant-authored deterministic research request; not passenger data",
+    "base_id": "pilot-09",
+    "feed_hash": "82e6b822de008367b3d3d35bb52545807ea41b6f56623a9aa4b1162b3d54671b",
+    "max_rides_per_segment": 2,
+    "minimum_connection_s": 120,
+    "pool_complete": false,
+    "pool_hash": "dc5b1710496dee573a10e30f44ec4ff34b61d9114c85f806b9ad01b28b2a9bc5",
+    "request": "On 2026-09-14, plan the outbound journey from SW 6th & Columbia [stop_id=11486] to NW 6th & Flanders [stop_id=9300]. Also plan a return segment from NW 5th & Davis [stop_id=9301] to SW 5th & Columbia [stop_id=7594] within 09:00:00–10:00:00. I handle movement between the outbound destination and return origin myself outside these journeys. On the outbound segment only, make at most 1 transfers. On the return segment only, depart no earlier than 09:39:47.",
+    "scenario_id": "pilot-09",
+    "segments": [
+      {
+        "destination": "9300",
+        "end_s": 36000,
+        "origin": "11486",
+        "scope": "outbound",
+        "start_s": 25200
+      },
+      {
+        "destination": "7594",
+        "end_s": 36000,
+        "origin": "9301",
+        "scope": "return",
+        "start_s": 32400
+      }
+    ],
+    "service_date": "2026-09-14",
+    "split": "development",
+    "timezone": "America/Los_Angeles"
+  },
+  {
+    "authorship": "assistant-authored deterministic research request; not passenger data",
+    "base_id": "pilot-10",
+    "feed_hash": "82e6b822de008367b3d3d35bb52545807ea41b6f56623a9aa4b1162b3d54671b",
+    "max_rides_per_segment": 2,
+    "minimum_connection_s": 120,
+    "pool_complete": false,
+    "pool_hash": "94f10993fc6b2282c881089106e749720a0e5eb34d270abd4f0ccdfec14d9e7c",
+    "request": "On 2026-09-14, plan the outbound journey from N Vancouver & Page [stop_id=6001] to NW Glisan & 3rd [stop_id=9311]. Do not use buses.",
+    "scenario_id": "pilot-10",
+    "segments": [
+      {
+        "destination": "9311",
+        "end_s": 36000,
+        "origin": "6001",
+        "scope": "outbound",
+        "start_s": 25200
+      }
+    ],
+    "service_date": "2026-09-14",
+    "split": "development",
+    "timezone": "America/Los_Angeles"
+  },
+  {
+    "authorship": "assistant-authored deterministic research request; not passenger data",
+    "base_id": "pilot-11",
+    "feed_hash": "82e6b822de008367b3d3d35bb52545807ea41b6f56623a9aa4b1162b3d54671b",
+    "max_rides_per_segment": 2,
+    "minimum_connection_s": 120,
+    "pool_complete": false,
+    "pool_hash": "cdfedee827022ade2887d435d405879cee1ce0664a2d545810be6b788709cc96",
+    "request": "On 2026-09-14, plan the outbound journey from SW 5th & Harrison [stop_id=7602] to OMSI/SE Water [stop_id=13772]. Make at most 1 transfers. Do not depart before 07:16:08.",
+    "scenario_id": "pilot-11",
+    "segments": [
+      {
+        "destination": "13772",
+        "end_s": 36000,
+        "origin": "7602",
+        "scope": "outbound",
+        "start_s": 25200
+      }
+    ],
+    "service_date": "2026-09-14",
+    "split": "development",
+    "timezone": "America/Los_Angeles"
+  },
+  {
+    "authorship": "assistant-authored deterministic research request; not passenger data",
+    "base_id": "pilot-12",
+    "feed_hash": "82e6b822de008367b3d3d35bb52545807ea41b6f56623a9aa4b1162b3d54671b",
+    "max_rides_per_segment": 2,
+    "minimum_connection_s": 120,
+    "pool_complete": false,
+    "pool_hash": "7a7eb1471fb83f96e022fb6b4977c72c3ed3f44e8c04e0d2fe15f2e404b26b14",
+    "request": "On 2026-09-14, plan the outbound journey from OMSI/SE Water [stop_id=13773] to SW 6th & Harvey Milk [stop_id=7797]. Call at stop 13733 and then stop 3398, in that order; remaining aboard counts. Use only buses.",
+    "scenario_id": "pilot-12",
+    "segments": [
+      {
+        "destination": "7797",
+        "end_s": 36000,
+        "origin": "13773",
+        "scope": "outbound",
+        "start_s": 25200
+      }
+    ],
+    "service_date": "2026-09-14",
+    "split": "development",
+    "timezone": "America/Los_Angeles"
+  },
+  {
+    "authorship": "assistant-authored deterministic research request; not passenger data",
+    "base_id": "pilot-13",
+    "feed_hash": "82e6b822de008367b3d3d35bb52545807ea41b6f56623a9aa4b1162b3d54671b",
+    "max_rides_per_segment": 2,
+    "minimum_connection_s": 120,
+    "pool_complete": false,
+    "pool_hash": "ce0aaccb52362fc39c7e8ad31a48011f59e7a9e730f0ed172cd092a0a2c31a5a",
+    "request": "On 2026-09-14, plan the outbound journey from SW 6th & Salmon [stop_id=7789] to N Williams & NE Weidler [stop_id=11480]. Depart no earlier than 08:12:00 and arrive by 09:09:26, both inclusive.",
+    "scenario_id": "pilot-13",
+    "segments": [
+      {
+        "destination": "11480",
+        "end_s": 36000,
+        "origin": "7789",
+        "scope": "outbound",
+        "start_s": 25200
+      }
+    ],
+    "service_date": "2026-09-14",
+    "split": "development",
+    "timezone": "America/Los_Angeles"
+  },
+  {
+    "authorship": "assistant-authored deterministic research request; not passenger data",
+    "base_id": "pilot-14",
+    "feed_hash": "82e6b822de008367b3d3d35bb52545807ea41b6f56623a9aa4b1162b3d54671b",
+    "max_rides_per_segment": 2,
+    "minimum_connection_s": 120,
+    "pool_complete": false,
+    "pool_hash": "ca642f07b3544474128606de9af97f028c551b927c2bc3c73ee62ca32e6bbcc2",
+    "request": "On 2026-09-14, plan the outbound journey from SE 7th & Tilikum Way [stop_id=13825] to SW 6th & Clay [stop_id=7756]. Do not use rail or tram. Depart no later than 07:28:14, inclusive. Make at most 1 transfers.",
+    "scenario_id": "pilot-14",
+    "segments": [
+      {
+        "destination": "7756",
+        "end_s": 36000,
+        "origin": "13825",
+        "scope": "outbound",
+        "start_s": 25200
+      }
+    ],
+    "service_date": "2026-09-14",
+    "split": "development",
+    "timezone": "America/Los_Angeles"
+  },
+  {
+    "authorship": "assistant-authored deterministic research request; not passenger data",
+    "base_id": "pilot-15",
+    "feed_hash": "82e6b822de008367b3d3d35bb52545807ea41b6f56623a9aa4b1162b3d54671b",
+    "max_rides_per_segment": 2,
+    "minimum_connection_s": 120,
+    "pool_complete": false,
+    "pool_hash": "7fad5c3e819159354dce96d341ccdfb7bdaa55109eb27a7fd10688bbb2820e32",
+    "request": "On 2026-09-14, plan the outbound journey from SE Division & 20th Ave [stop_id=14243] to SW 6th & Taylor [stop_id=7800]. Depart no earlier than 08:30:00 and arrive by 08:00:00, both inclusive.",
+    "scenario_id": "pilot-15",
+    "segments": [
+      {
+        "destination": "7800",
+        "end_s": 36000,
+        "origin": "14243",
+        "scope": "outbound",
+        "start_s": 25200
+      }
+    ],
+    "service_date": "2026-09-14",
+    "split": "development",
+    "timezone": "America/Los_Angeles"
+  },
+  {
+    "authorship": "assistant-authored deterministic research request; not passenger data",
+    "base_id": "pilot-16",
+    "feed_hash": "82e6b822de008367b3d3d35bb52545807ea41b6f56623a9aa4b1162b3d54671b",
+    "max_rides_per_segment": 2,
+    "minimum_connection_s": 120,
+    "pool_complete": true,
+    "pool_hash": "edb7df6b997340c102b6c17db92a9cfbf2508a775c4ae2588555a9b7393a0425",
+    "request": "On 2026-09-14, plan the outbound journey from SW 6th & Market [stop_id=7772] to SW 6th & Washington [stop_id=7803]. Make at most 0 transfers. Do not depart before 07:09:59.",
+    "scenario_id": "pilot-16",
+    "segments": [
+      {
+        "destination": "7803",
+        "end_s": 36000,
+        "origin": "7772",
+        "scope": "outbound",
+        "start_s": 25200
+      }
+    ],
+    "service_date": "2026-09-14",
+    "split": "development",
+    "timezone": "America/Los_Angeles"
+  },
+  {
+    "authorship": "assistant-authored deterministic research request; not passenger data",
+    "base_id": "pilot-17",
+    "feed_hash": "82e6b822de008367b3d3d35bb52545807ea41b6f56623a9aa4b1162b3d54671b",
+    "max_rides_per_segment": 2,
+    "minimum_connection_s": 120,
+    "pool_complete": false,
+    "pool_hash": "faa6bbde6bde178112eba8d30455ff80767929de1fb017a4a0511a57877f6708",
+    "request": "On 2026-09-14, plan the outbound journey from SW 6th & Mill [stop_id=7773] to SW 6th & Alder [stop_id=7747]. Also plan a return segment from SW 5th & Washington [stop_id=7642] to SW 5th & Harrison [stop_id=7602] within 09:00:00–10:00:00. I handle movement between the outbound destination and return origin myself outside these journeys. On the outbound segment only, make at most 0 transfers. On the return segment only, depart no earlier than 09:04:05.",
+    "scenario_id": "pilot-17",
+    "segments": [
+      {
+        "destination": "7747",
+        "end_s": 36000,
+        "origin": "7773",
+        "scope": "outbound",
+        "start_s": 25200
+      },
+      {
+        "destination": "7602",
+        "end_s": 36000,
+        "origin": "7642",
+        "scope": "return",
+        "start_s": 32400
+      }
+    ],
+    "service_date": "2026-09-14",
+    "split": "development",
+    "timezone": "America/Los_Angeles"
+  },
+  {
+    "authorship": "assistant-authored deterministic research request; not passenger data",
+    "base_id": "pilot-18",
+    "feed_hash": "82e6b822de008367b3d3d35bb52545807ea41b6f56623a9aa4b1162b3d54671b",
+    "max_rides_per_segment": 2,
+    "minimum_connection_s": 120,
+    "pool_complete": false,
+    "pool_hash": "df78377c67dddf4a4efa0f99daaad177cc91a3df248aa3cfa4713e76443931a0",
+    "request": "On 2026-09-14, plan the outbound journey from NW 5th & Hoyt [stop_id=9302] to SW 5th & Hall [stop_id=10491]. Depart no earlier than 07:36:00 and arrive by 09:08:31, both inclusive.",
+    "scenario_id": "pilot-18",
+    "segments": [
+      {
+        "destination": "10491",
+        "end_s": 36000,
+        "origin": "9302",
+        "scope": "outbound",
+        "start_s": 25200
+      }
+    ],
+    "service_date": "2026-09-14",
+    "split": "development",
+    "timezone": "America/Los_Angeles"
+  },
+  {
+    "authorship": "assistant-authored deterministic research request; not passenger data",
+    "base_id": "pilot-19",
+    "feed_hash": "82e6b822de008367b3d3d35bb52545807ea41b6f56623a9aa4b1162b3d54671b",
+    "max_rides_per_segment": 2,
+    "minimum_connection_s": 120,
+    "pool_complete": false,
+    "pool_hash": "31db2238db588ce84e573fac80013a4f52f2f1bd87ecb503378b11ed17a464c9",
+    "request": "On 2026-09-14, plan the outbound journey from N Vancouver & Tillamook [stop_id=6008] to SE Milwaukie & Powell [stop_id=10472]. Do not use rail or tram. Depart no later than 07:56:26, inclusive. Make at most 1 transfers.",
+    "scenario_id": "pilot-19",
+    "segments": [
+      {
+        "destination": "10472",
+        "end_s": 36000,
+        "origin": "6008",
+        "scope": "outbound",
+        "start_s": 25200
+      }
+    ],
+    "service_date": "2026-09-14",
+    "split": "development",
+    "timezone": "America/Los_Angeles"
+  },
+  {
+    "authorship": "assistant-authored deterministic research request; not passenger data",
+    "base_id": "pilot-20",
+    "feed_hash": "82e6b822de008367b3d3d35bb52545807ea41b6f56623a9aa4b1162b3d54671b",
+    "max_rides_per_segment": 2,
+    "minimum_connection_s": 120,
+    "pool_complete": false,
+    "pool_hash": "27b11e52f01ab3550fd3c0089c86751a42fb72b0832c626cbba45463b9f5ed05",
+    "request": "On 2026-09-14, plan the outbound journey from SW 5th & Harvey Milk [stop_id=7636] to SE Division Pl & 8th [stop_id=13778]. Call at stop 7640 and then stop 7594, in that order; remaining aboard counts. Use only buses.",
+    "scenario_id": "pilot-20",
+    "segments": [
+      {
+        "destination": "13778",
+        "end_s": 36000,
+        "origin": "7636",
+        "scope": "outbound",
+        "start_s": 25200
+      }
+    ],
+    "service_date": "2026-09-14",
+    "split": "development",
+    "timezone": "America/Los_Angeles"
+  },
+  {
+    "authorship": "assistant-authored deterministic research request; not passenger data",
+    "base_id": "pilot-21",
+    "feed_hash": "82e6b822de008367b3d3d35bb52545807ea41b6f56623a9aa4b1162b3d54671b",
+    "max_rides_per_segment": 2,
+    "minimum_connection_s": 120,
+    "pool_complete": true,
+    "pool_hash": "c3ed06f6f44fbfd3e7020e7f2d6ae328220fe5b0e79c28a03a0917ebad7e5f2a",
+    "request": "On 2026-09-14, plan the outbound journey from SE Division & 11th Ave [stop_id=14244] to NW Irving & 5th [stop_id=3007]. Make at most 1 transfers. Do not depart before 07:05:00.",
+    "scenario_id": "pilot-21",
+    "segments": [
+      {
+        "destination": "3007",
+        "end_s": 36000,
+        "origin": "14244",
+        "scope": "outbound",
+        "start_s": 25200
+      }
+    ],
+    "service_date": "2026-09-14",
+    "split": "development",
+    "timezone": "America/Los_Angeles"
+  },
+  {
+    "authorship": "assistant-authored deterministic research request; not passenger data",
+    "base_id": "pilot-22",
+    "feed_hash": "82e6b822de008367b3d3d35bb52545807ea41b6f56623a9aa4b1162b3d54671b",
+    "max_rides_per_segment": 2,
+    "minimum_connection_s": 120,
+    "pool_complete": false,
+    "pool_hash": "05bbda856d56a8c694d30f56b2d9bcfa9c0b38538aa888f0a186ec8b1c6ed087",
+    "request": "On 2026-09-14, plan the outbound journey from N Vancouver & Weidler [stop_id=6009] to SW Jefferson & 5th [stop_id=12791]. Also plan a return segment from SW Jefferson & 5th [stop_id=12791] to N Williams & NE Weidler [stop_id=11480] within 09:00:00–10:00:00. I handle movement between the outbound destination and return origin myself outside these journeys. On the return segment only, make at most 1 transfers. On the return segment only, depart no earlier than 09:25:00.",
+    "scenario_id": "pilot-22",
+    "segments": [
+      {
+        "destination": "12791",
+        "end_s": 36000,
+        "origin": "6009",
+        "scope": "outbound",
+        "start_s": 25200
+      },
+      {
+        "destination": "11480",
+        "end_s": 36000,
+        "origin": "12791",
+        "scope": "return",
+        "start_s": 32400
+      }
+    ],
+    "service_date": "2026-09-14",
+    "split": "development",
+    "timezone": "America/Los_Angeles"
+  },
+  {
+    "authorship": "assistant-authored deterministic research request; not passenger data",
+    "base_id": "pilot-23",
+    "feed_hash": "82e6b822de008367b3d3d35bb52545807ea41b6f56623a9aa4b1162b3d54671b",
+    "max_rides_per_segment": 2,
+    "minimum_connection_s": 120,
+    "pool_complete": false,
+    "pool_hash": "1ab1c2769f3126d826ca8e6cbd359e885315ba123a6ad65566feb7e35754eca2",
+    "request": "On 2026-09-14, plan the outbound journey from SW 5th & Taylor [stop_id=7640] to SE Milwaukie & Gideon [stop_id=13791]. Depart no earlier than 08:30:00 and arrive by 08:00:00, both inclusive.",
+    "scenario_id": "pilot-23",
+    "segments": [
+      {
+        "destination": "13791",
+        "end_s": 36000,
+        "origin": "7640",
+        "scope": "outbound",
+        "start_s": 25200
+      }
+    ],
+    "service_date": "2026-09-14",
+    "split": "development",
+    "timezone": "America/Los_Angeles"
+  },
+  {
+    "authorship": "assistant-authored deterministic research request; not passenger data",
+    "base_id": "pilot-24",
+    "feed_hash": "82e6b822de008367b3d3d35bb52545807ea41b6f56623a9aa4b1162b3d54671b",
+    "max_rides_per_segment": 2,
+    "minimum_connection_s": 120,
+    "pool_complete": false,
+    "pool_hash": "b0ffee53dac3c66bacab337b0805e553fda39b7db77e4933aae097ac65af3896",
+    "request": "On 2026-09-14, plan the outbound journey from South Waterfront/S Moody [stop_id=13732] to SE Division & 20th Ave [stop_id=1435]. Do not use rail or tram. Depart no later than 07:12:38, inclusive. Make at most 1 transfers.",
+    "scenario_id": "pilot-24",
+    "segments": [
+      {
+        "destination": "1435",
+        "end_s": 36000,
+        "origin": "13732",
+        "scope": "outbound",
+        "start_s": 25200
+      }
+    ],
+    "service_date": "2026-09-14",
+    "split": "development",
+    "timezone": "America/Los_Angeles"
+  },
+  {
+    "authorship": "assistant-authored deterministic research request; not passenger data",
+    "base_id": "pilot-25",
+    "feed_hash": "82e6b822de008367b3d3d35bb52545807ea41b6f56623a9aa4b1162b3d54671b",
+    "max_rides_per_segment": 2,
+    "minimum_connection_s": 120,
+    "pool_complete": false,
+    "pool_hash": "e30049e4772ea76432a9c63e691910c4f47578b5e25823566b51989d26d25e31",
+    "request": "On 2026-09-14, plan the outbound journey from South Waterfront/S Moody [stop_id=13733] to SW 6th & Jefferson [stop_id=7765]. Call at stop 3398 and then stop 13780, in that order; remaining aboard counts. Use only buses.",
+    "scenario_id": "pilot-25",
+    "segments": [
+      {
+        "destination": "7765",
+        "end_s": 36000,
+        "origin": "13733",
+        "scope": "outbound",
+        "start_s": 25200
+      }
+    ],
+    "service_date": "2026-09-14",
+    "split": "development",
+    "timezone": "America/Los_Angeles"
+  },
+  {
+    "authorship": "assistant-authored deterministic research request; not passenger data",
+    "base_id": "pilot-26",
+    "feed_hash": "82e6b822de008367b3d3d35bb52545807ea41b6f56623a9aa4b1162b3d54671b",
+    "max_rides_per_segment": 2,
+    "minimum_connection_s": 120,
+    "pool_complete": true,
+    "pool_hash": "244cacd5969555dd9a5fe74a414bce80616460c37b3387258c4c24842a158bbf",
+    "request": "On 2026-09-14, plan the outbound journey from NE Broadway & 12th [stop_id=629] to NE Multnomah & 3rd [stop_id=11492]. Depart no earlier than 07:00:00 and arrive by 09:19:34, both inclusive.",
+    "scenario_id": "pilot-26",
+    "segments": [
+      {
+        "destination": "11492",
+        "end_s": 36000,
+        "origin": "629",
+        "scope": "outbound",
+        "start_s": 25200
+      }
+    ],
+    "service_date": "2026-09-14",
+    "split": "development",
+    "timezone": "America/Los_Angeles"
+  },
+  {
+    "authorship": "assistant-authored deterministic research request; not passenger data",
+    "base_id": "pilot-27",
+    "feed_hash": "82e6b822de008367b3d3d35bb52545807ea41b6f56623a9aa4b1162b3d54671b",
+    "max_rides_per_segment": 2,
+    "minimum_connection_s": 120,
+    "pool_complete": false,
+    "pool_hash": "693c88319906a5f37360d9b5fdc829d4dec7c53cc3876dd04910f06a041c1bcb",
+    "request": "On 2026-09-14, plan the outbound journey from SW 5th & Hall [stop_id=10491] to SE Division & 12th Ave [stop_id=1375]. Also plan a return segment from SE Division & 11th Ave [stop_id=14244] to SW Hall & 5th [stop_id=13780] within 09:00:00–10:00:00. I handle movement between the outbound destination and return origin myself outside these journeys. On the outbound segment only, make at most 1 transfers. On the return segment only, depart no earlier than 09:40:00.",
+    "scenario_id": "pilot-27",
+    "segments": [
+      {
+        "destination": "1375",
+        "end_s": 36000,
+        "origin": "10491",
+        "scope": "outbound",
+        "start_s": 25200
+      },
+      {
+        "destination": "13780",
+        "end_s": 36000,
+        "origin": "14244",
+        "scope": "return",
+        "start_s": 32400
+      }
+    ],
+    "service_date": "2026-09-14",
+    "split": "development",
+    "timezone": "America/Los_Angeles"
+  },
+  {
+    "authorship": "assistant-authored deterministic research request; not passenger data",
+    "base_id": "pilot-28",
+    "feed_hash": "82e6b822de008367b3d3d35bb52545807ea41b6f56623a9aa4b1162b3d54671b",
+    "max_rides_per_segment": 2,
+    "minimum_connection_s": 120,
+    "pool_complete": false,
+    "pool_hash": "c544182eeb9610ac566ac014c9815b54d2694e0dca4755a4c9d892c92e312d9a",
+    "request": "On 2026-09-14, plan the outbound journey from Rose Quarter Transit Center [stop_id=2592] to SW Madison & 4th [stop_id=3639]. Do not use buses.",
+    "scenario_id": "pilot-28",
+    "segments": [
+      {
+        "destination": "3639",
+        "end_s": 36000,
+        "origin": "2592",
+        "scope": "outbound",
+        "start_s": 25200
+      }
+    ],
+    "service_date": "2026-09-14",
+    "split": "development",
+    "timezone": "America/Los_Angeles"
+  },
+  {
+    "authorship": "assistant-authored deterministic research request; not passenger data",
+    "base_id": "pilot-29",
+    "feed_hash": "82e6b822de008367b3d3d35bb52545807ea41b6f56623a9aa4b1162b3d54671b",
+    "max_rides_per_segment": 2,
+    "minimum_connection_s": 120,
+    "pool_complete": false,
+    "pool_hash": "e213b5ef67b0aba5cd4a7e2a55a6880c415c8e63b4f02c1406fa5f4c523d2483",
+    "request": "On 2026-09-14, plan the outbound journey from SW 6th & Main [stop_id=7767] to NE Grand & Wasco [stop_id=10953]. Make at most 0 transfers. Do not depart before 07:49:41.",
+    "scenario_id": "pilot-29",
+    "segments": [
+      {
+        "destination": "10953",
+        "end_s": 36000,
+        "origin": "7767",
+        "scope": "outbound",
+        "start_s": 25200
+      }
+    ],
+    "service_date": "2026-09-14",
+    "split": "development",
+    "timezone": "America/Los_Angeles"
+  },
+  {
+    "authorship": "assistant-authored deterministic research request; not passenger data",
+    "base_id": "pilot-30",
+    "feed_hash": "82e6b822de008367b3d3d35bb52545807ea41b6f56623a9aa4b1162b3d54671b",
+    "max_rides_per_segment": 2,
+    "minimum_connection_s": 120,
+    "pool_complete": false,
+    "pool_hash": "6bec8098fdea622152dd5892d9bd33fe88cc33e8ee95ecb11de4ce97efe6147b",
+    "request": "On 2026-09-14, plan the outbound journey from SW 5th & Columbia [stop_id=7594] to OMSI/SE Water [stop_id=13772]. Call at stop 7602 and then stop 3397, in that order; remaining aboard counts. Use only buses.",
+    "scenario_id": "pilot-30",
+    "segments": [
+      {
+        "destination": "13772",
+        "end_s": 36000,
+        "origin": "7594",
+        "scope": "outbound",
+        "start_s": 25200
+      }
+    ],
+    "service_date": "2026-09-14",
+    "split": "development",
+    "timezone": "America/Los_Angeles"
+  },
+  {
+    "authorship": "assistant-authored deterministic research request; not passenger data",
+    "base_id": "pilot-31",
+    "feed_hash": "82e6b822de008367b3d3d35bb52545807ea41b6f56623a9aa4b1162b3d54671b",
+    "max_rides_per_segment": 2,
+    "minimum_connection_s": 120,
+    "pool_complete": false,
+    "pool_hash": "3481cf81e49118dce0efa7acd0c722be4eb56cba04b04380ba7dac5f04484b35",
+    "request": "On 2026-09-14, plan the outbound journey from NW Everett & 2nd [stop_id=1612] to N Williams & NE Tillamook [stop_id=6370]. Depart no earlier than 08:47:42 and arrive by 09:11:00, both inclusive.",
+    "scenario_id": "pilot-31",
+    "segments": [
+      {
+        "destination": "6370",
+        "end_s": 36000,
+        "origin": "1612",
+        "scope": "outbound",
+        "start_s": 25200
+      }
+    ],
+    "service_date": "2026-09-14",
+    "split": "development",
+    "timezone": "America/Los_Angeles"
+  },
+  {
+    "authorship": "assistant-authored deterministic research request; not passenger data",
+    "base_id": "pilot-32",
+    "feed_hash": "82e6b822de008367b3d3d35bb52545807ea41b6f56623a9aa4b1162b3d54671b",
+    "max_rides_per_segment": 2,
+    "minimum_connection_s": 120,
+    "pool_complete": true,
+    "pool_hash": "e807446c70b1864850bcdd5d62a4ce777dccdcb09e8158bb13be6e93780ac3d8",
+    "request": "On 2026-09-14, plan the outbound journey from Rose Quarter Transit Center [stop_id=11817] to NE Weidler & 15th [stop_id=10425]. Do not use rail or tram. Depart no later than 07:59:54, inclusive. Make at most 1 transfers.",
+    "scenario_id": "pilot-32",
+    "segments": [
+      {
+        "destination": "10425",
+        "end_s": 36000,
+        "origin": "11817",
+        "scope": "outbound",
+        "start_s": 25200
+      }
+    ],
+    "service_date": "2026-09-14",
+    "split": "development",
+    "timezone": "America/Los_Angeles"
+  },
+  {
+    "authorship": "assistant-authored deterministic research request; not passenger data",
+    "base_id": "pilot-33",
+    "feed_hash": "82e6b822de008367b3d3d35bb52545807ea41b6f56623a9aa4b1162b3d54671b",
+    "max_rides_per_segment": 2,
+    "minimum_connection_s": 120,
+    "pool_complete": false,
+    "pool_hash": "7f6a07cc3fa4027f347289b3eb7a8e53480c79a9fe78e1ca2cbaa4f010ff3b91",
+    "request": "On 2026-09-14, plan the outbound journey from SW 5th & Washington [stop_id=7642] to 300 Block SW Lincoln [stop_id=3397]. Depart no earlier than 08:30:00 and arrive by 08:00:00, both inclusive.",
+    "scenario_id": "pilot-33",
+    "segments": [
+      {
+        "destination": "3397",
+        "end_s": 36000,
+        "origin": "7642",
+        "scope": "outbound",
+        "start_s": 25200
+      }
+    ],
+    "service_date": "2026-09-14",
+    "split": "development",
+    "timezone": "America/Los_Angeles"
+  },
+  {
+    "authorship": "assistant-authored deterministic research request; not passenger data",
+    "base_id": "pilot-34",
+    "feed_hash": "82e6b822de008367b3d3d35bb52545807ea41b6f56623a9aa4b1162b3d54671b",
+    "max_rides_per_segment": 2,
+    "minimum_connection_s": 120,
+    "pool_complete": false,
+    "pool_hash": "43ddca1c62675a17b51bbdb3db1bea38dd32a0d9f96cc10800c6b0fff21d888f",
+    "request": "On 2026-09-14, plan the outbound journey from SW 6th & W Burnside [stop_id=7751] to Rose Quarter Transit Center [stop_id=1097]. Make at most 1 transfers. Do not depart before 08:42:07.",
+    "scenario_id": "pilot-34",
+    "segments": [
+      {
+        "destination": "1097",
+        "end_s": 36000,
+        "origin": "7751",
+        "scope": "outbound",
+        "start_s": 25200
+      }
+    ],
+    "service_date": "2026-09-14",
+    "split": "development",
+    "timezone": "America/Los_Angeles"
+  },
+  {
+    "authorship": "assistant-authored deterministic research request; not passenger data",
+    "base_id": "pilot-35",
+    "feed_hash": "82e6b822de008367b3d3d35bb52545807ea41b6f56623a9aa4b1162b3d54671b",
+    "max_rides_per_segment": 2,
+    "minimum_connection_s": 120,
+    "pool_complete": false,
+    "pool_hash": "10b1bad83fc7749179fa2e90cced4af0c76b3c9df02c0297660fd2b3501a6643",
+    "request": "On 2026-09-14, plan the outbound journey from NE M L King & Wasco [stop_id=5958] to SE Powell & 12th [stop_id=13792]. Also plan a return segment from SE Powell & Milwaukie [stop_id=4538] to NE Grand & Wasco [stop_id=10953] within 09:00:00–10:00:00. I handle movement between the outbound destination and return origin myself outside these journeys. On the outbound segment only, make at most 1 transfers. On the return segment only, depart no earlier than 09:16:00.",
+    "scenario_id": "pilot-35",
+    "segments": [
+      {
+        "destination": "13792",
+        "end_s": 36000,
+        "origin": "5958",
+        "scope": "outbound",
+        "start_s": 25200
+      },
+      {
+        "destination": "10953",
+        "end_s": 36000,
+        "origin": "4538",
+        "scope": "return",
+        "start_s": 32400
+      }
+    ],
+    "service_date": "2026-09-14",
+    "split": "development",
+    "timezone": "America/Los_Angeles"
+  },
+  {
+    "authorship": "assistant-authored deterministic research request; not passenger data",
+    "base_id": "pilot-36",
+    "feed_hash": "82e6b822de008367b3d3d35bb52545807ea41b6f56623a9aa4b1162b3d54671b",
+    "max_rides_per_segment": 2,
+    "minimum_connection_s": 120,
+    "pool_complete": false,
+    "pool_hash": "2ce3c77020a81e017a90c403db42311b3f47d0c7066a19c0ba2796f3cf0e2a82",
+    "request": "On 2026-09-14, plan the outbound journey from SW Hall & 5th [stop_id=13780] to SW 6th & Harvey Milk [stop_id=7797]. Depart no earlier than 07:41:15 and arrive by 09:22:23, both inclusive.",
+    "scenario_id": "pilot-36",
+    "segments": [
+      {
+        "destination": "7797",
+        "end_s": 36000,
+        "origin": "13780",
+        "scope": "outbound",
+        "start_s": 25200
+      }
+    ],
+    "service_date": "2026-09-14",
+    "split": "development",
+    "timezone": "America/Los_Angeles"
+  },
+  {
+    "authorship": "assistant-authored deterministic research request; not passenger data",
+    "base_id": "pilot-37",
+    "feed_hash": "82e6b822de008367b3d3d35bb52545807ea41b6f56623a9aa4b1162b3d54671b",
+    "max_rides_per_segment": 2,
+    "minimum_connection_s": 120,
+    "pool_complete": false,
+    "pool_hash": "9bc2d140571e1567a81df8b646e656362dad210b8d6fab151e4a919d7a531c4e",
+    "request": "On 2026-09-14, plan the outbound journey from NW Everett & 5th [stop_id=8886] to N Williams & NE Weidler [stop_id=11480]. Do not use rail or tram. Depart no later than 08:57:49, inclusive. Make at most 1 transfers.",
+    "scenario_id": "pilot-37",
+    "segments": [
+      {
+        "destination": "11480",
+        "end_s": 36000,
+        "origin": "8886",
+        "scope": "outbound",
+        "start_s": 25200
+      }
+    ],
+    "service_date": "2026-09-14",
+    "split": "development",
+    "timezone": "America/Los_Angeles"
+  },
+  {
+    "authorship": "assistant-authored deterministic research request; not passenger data",
+    "base_id": "pilot-38",
+    "feed_hash": "82e6b822de008367b3d3d35bb52545807ea41b6f56623a9aa4b1162b3d54671b",
+    "max_rides_per_segment": 2,
+    "minimum_connection_s": 120,
+    "pool_complete": true,
+    "pool_hash": "e4fc19f1eddb65d94c004d4b08b54d9724c8f1647b795400254a38c2124a9b30",
+    "request": "On 2026-09-14, plan the outbound journey from NE Weidler & Lloyd Center [stop_id=6216] to 2200 Block NE Weidler [stop_id=14656]. Call at stop 10425 and then stop 6235, in that order; remaining aboard counts. Use only buses.",
+    "scenario_id": "pilot-38",
+    "segments": [
+      {
+        "destination": "14656",
+        "end_s": 36000,
+        "origin": "6216",
+        "scope": "outbound",
+        "start_s": 25200
+      }
+    ],
+    "service_date": "2026-09-14",
+    "split": "development",
+    "timezone": "America/Los_Angeles"
+  },
+  {
+    "authorship": "assistant-authored deterministic research request; not passenger data",
+    "base_id": "pilot-39",
+    "feed_hash": "82e6b822de008367b3d3d35bb52545807ea41b6f56623a9aa4b1162b3d54671b",
+    "max_rides_per_segment": 2,
+    "minimum_connection_s": 120,
+    "pool_complete": false,
+    "pool_hash": "a41bdc5d4293ea60700bee16a5defb83bc58f7b7c8ed0f7d7f63bd8894bd90e6",
+    "request": "On 2026-09-14, plan the outbound journey from SW Lincoln & 1st [stop_id=3398] to SW 6th & Taylor [stop_id=7800]. Make at most 0 transfers. Do not depart before 08:15:22.",
+    "scenario_id": "pilot-39",
+    "segments": [
+      {
+        "destination": "7800",
+        "end_s": 36000,
+        "origin": "3398",
+        "scope": "outbound",
+        "start_s": 25200
+      }
+    ],
+    "service_date": "2026-09-14",
+    "split": "development",
+    "timezone": "America/Los_Angeles"
+  },
+  {
+    "authorship": "assistant-authored deterministic research request; not passenger data",
+    "base_id": "pilot-40",
+    "feed_hash": "82e6b822de008367b3d3d35bb52545807ea41b6f56623a9aa4b1162b3d54671b",
+    "max_rides_per_segment": 2,
+    "minimum_connection_s": 120,
+    "pool_complete": false,
+    "pool_hash": "6781b4cd02bb68212b00465fddf009b726a594fb0d197a9269d62ebca28bea6d",
+    "request": "On 2026-09-14, plan the outbound journey from NW 5th & Davis [stop_id=9301] to SW 5th & Salmon [stop_id=7634]. Also plan a return segment from SW 6th & Salmon [stop_id=7789] to NW Everett & 5th [stop_id=8886] within 09:00:00–10:00:00. I handle movement between the outbound destination and return origin myself outside these journeys. On the return segment only, make at most 1 transfers. On the return segment only, depart no earlier than 09:12:00.",
+    "scenario_id": "pilot-40",
+    "segments": [
+      {
+        "destination": "7634",
+        "end_s": 36000,
+        "origin": "9301",
+        "scope": "outbound",
+        "start_s": 25200
+      },
+      {
+        "destination": "8886",
+        "end_s": 36000,
+        "origin": "7789",
+        "scope": "return",
+        "start_s": 32400
+      }
+    ],
+    "service_date": "2026-09-14",
+    "split": "development",
+    "timezone": "America/Los_Angeles"
+  },
+  {
+    "authorship": "assistant-authored deterministic research request; not passenger data",
+    "base_id": "pilot-41",
+    "feed_hash": "82e6b822de008367b3d3d35bb52545807ea41b6f56623a9aa4b1162b3d54671b",
+    "max_rides_per_segment": 2,
+    "minimum_connection_s": 120,
+    "pool_complete": true,
+    "pool_hash": "dafd49e8227784f22176803b1b2667ef694fd55c0cd143fa25a7e2079ab92b0f",
+    "request": "On 2026-09-14, plan the outbound journey from NE Weidler & 7th [stop_id=6240] to NE Weidler & 21st [stop_id=6235]. Depart no earlier than 08:30:00 and arrive by 08:00:00, both inclusive.",
+    "scenario_id": "pilot-41",
+    "segments": [
+      {
+        "destination": "6235",
+        "end_s": 36000,
+        "origin": "6240",
+        "scope": "outbound",
+        "start_s": 25200
+      }
+    ],
+    "service_date": "2026-09-14",
+    "split": "development",
+    "timezone": "America/Los_Angeles"
+  },
+  {
+    "authorship": "assistant-authored deterministic research request; not passenger data",
+    "base_id": "pilot-42",
+    "feed_hash": "82e6b822de008367b3d3d35bb52545807ea41b6f56623a9aa4b1162b3d54671b",
+    "max_rides_per_segment": 2,
+    "minimum_connection_s": 120,
+    "pool_complete": false,
+    "pool_hash": "faa9a9ded6f5fb55115ae22b9b5ba571e3db56f2bf6c44f289035014aa2a876e",
+    "request": "On 2026-09-14, plan the outbound journey from OMSI/SE Water [stop_id=13773] to SW 6th & Columbia [stop_id=11486]. Do not use rail or tram. Depart no later than 07:29:27, inclusive. Make at most 1 transfers.",
+    "scenario_id": "pilot-42",
+    "segments": [
+      {
+        "destination": "11486",
+        "end_s": 36000,
+        "origin": "13773",
+        "scope": "outbound",
+        "start_s": 25200
+      }
+    ],
+    "service_date": "2026-09-14",
+    "split": "development",
+    "timezone": "America/Los_Angeles"
+  },
+  {
+    "authorship": "assistant-authored deterministic research request; not passenger data",
+    "base_id": "pilot-43",
+    "feed_hash": "82e6b822de008367b3d3d35bb52545807ea41b6f56623a9aa4b1162b3d54671b",
+    "max_rides_per_segment": 2,
+    "minimum_connection_s": 120,
+    "pool_complete": false,
+    "pool_hash": "6d18a1d64f4cea3ea542ac419f27a719a9988b89a2a80d4be19453a696bc85db",
+    "request": "On 2026-09-14, plan the outbound journey from N Vancouver & Page [stop_id=6001] to SW 5th & Pine [stop_id=7631]. Call at stop 6008 and then stop 6009, in that order; remaining aboard counts. Use only buses.",
+    "scenario_id": "pilot-43",
+    "segments": [
+      {
+        "destination": "7631",
+        "end_s": 36000,
+        "origin": "6001",
+        "scope": "outbound",
+        "start_s": 25200
+      }
+    ],
+    "service_date": "2026-09-14",
+    "split": "development",
+    "timezone": "America/Los_Angeles"
+  },
+  {
+    "authorship": "assistant-authored deterministic research request; not passenger data",
+    "base_id": "pilot-44",
+    "feed_hash": "82e6b822de008367b3d3d35bb52545807ea41b6f56623a9aa4b1162b3d54671b",
+    "max_rides_per_segment": 2,
+    "minimum_connection_s": 120,
+    "pool_complete": true,
+    "pool_hash": "5862d8800f8c01ac5c472cc250470380d70dbd202d2e097878880e6b77d35a11",
+    "request": "On 2026-09-14, plan the outbound journey from NE Broadway & 16th [stop_id=631] to NE M L King & Weidler [stop_id=5960]. Depart no earlier than 08:13:27 and arrive by 09:18:03, both inclusive.",
+    "scenario_id": "pilot-44",
+    "segments": [
+      {
+        "destination": "5960",
+        "end_s": 36000,
+        "origin": "631",
+        "scope": "outbound",
+        "start_s": 25200
+      }
+    ],
+    "service_date": "2026-09-14",
+    "split": "development",
+    "timezone": "America/Los_Angeles"
+  },
+  {
+    "authorship": "assistant-authored deterministic research request; not passenger data",
+    "base_id": "pilot-45",
+    "feed_hash": "82e6b822de008367b3d3d35bb52545807ea41b6f56623a9aa4b1162b3d54671b",
+    "max_rides_per_segment": 2,
+    "minimum_connection_s": 120,
+    "pool_complete": false,
+    "pool_hash": "50254a50eb649b3290475a381d5882f0044dbd2fc97d3ceacba9090604e4d658",
+    "request": "On 2026-09-14, plan the outbound journey from SE Division & 20th Ave [stop_id=14243] to NW 6th & Flanders [stop_id=9300]. Also plan a return segment from NW 5th & Davis [stop_id=9301] to SE Division & 20th Ave [stop_id=1435] within 09:00:00–10:00:00. I handle movement between the outbound destination and return origin myself outside these journeys. On the outbound segment only, make at most 1 transfers. On the return segment only, depart no earlier than 09:03:06.",
+    "scenario_id": "pilot-45",
+    "segments": [
+      {
+        "destination": "9300",
+        "end_s": 36000,
+        "origin": "14243",
+        "scope": "outbound",
+        "start_s": 25200
+      },
+      {
+        "destination": "1435",
+        "end_s": 36000,
+        "origin": "9301",
+        "scope": "return",
+        "start_s": 32400
+      }
+    ],
+    "service_date": "2026-09-14",
+    "split": "development",
+    "timezone": "America/Los_Angeles"
+  },
+  {
+    "authorship": "assistant-authored deterministic research request; not passenger data",
+    "base_id": "pilot-46",
+    "feed_hash": "82e6b822de008367b3d3d35bb52545807ea41b6f56623a9aa4b1162b3d54671b",
+    "max_rides_per_segment": 2,
+    "minimum_connection_s": 120,
+    "pool_complete": false,
+    "pool_hash": "e8f147f88a692095b758e88fa34c81c43b838c00401f3f8630727502fdb09214",
+    "request": "On 2026-09-14, plan the outbound journey from N Vancouver & Tillamook [stop_id=6008] to NW Glisan & 3rd [stop_id=9311]. Do not use buses.",
+    "scenario_id": "pilot-46",
+    "segments": [
+      {
+        "destination": "9311",
+        "end_s": 36000,
+        "origin": "6008",
+        "scope": "outbound",
+        "start_s": 25200
+      }
+    ],
+    "service_date": "2026-09-14",
+    "split": "development",
+    "timezone": "America/Los_Angeles"
+  },
+  {
+    "authorship": "assistant-authored deterministic research request; not passenger data",
+    "base_id": "pilot-47",
+    "feed_hash": "82e6b822de008367b3d3d35bb52545807ea41b6f56623a9aa4b1162b3d54671b",
+    "max_rides_per_segment": 2,
+    "minimum_connection_s": 120,
+    "pool_complete": true,
+    "pool_hash": "54ce8448c4fc8c1495c0adc76a9be4f71fa0eeebde4b2d3db702bf052fc47429",
+    "request": "On 2026-09-14, plan the outbound journey from NE Broadway & 21st [stop_id=634] to NE Broadway & 7th [stop_id=655]. Make at most 1 transfers. Do not depart before 08:11:19.",
+    "scenario_id": "pilot-47",
+    "segments": [
+      {
+        "destination": "655",
+        "end_s": 36000,
+        "origin": "634",
+        "scope": "outbound",
+        "start_s": 25200
+      }
+    ],
+    "service_date": "2026-09-14",
+    "split": "development",
+    "timezone": "America/Los_Angeles"
+  }
+]

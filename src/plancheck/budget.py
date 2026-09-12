@@ -40,16 +40,42 @@ class GPUBudget:
     Every attempted generate call is charged, even if interrupted or failed.
     """
 
-    def __init__(self, path: Path, request_limit: int = 100, seconds_limit: float = 3600):
-        if not 0 < request_limit <= 100 or not 0 < seconds_limit <= 3600:
+    def __init__(
+        self,
+        path: Path,
+        request_limit: int = 100,
+        seconds_limit: float = 3600,
+        *,
+        stage: str = "stage1",
+    ):
+        ceilings = {"stage1": (100, 3600), "stage2": (1500, 7200)}
+        if stage not in ceilings:
+            raise ValueError("Unknown authorized GPU allocation")
+        requests, seconds = ceilings[stage]
+        if not 0 < request_limit <= requests or not 0 < seconds_limit <= seconds:
             raise ValueError(
-                "Stage 1 hard ceilings are 100 requests and 3600 aggregate GPU seconds"
+                f"{stage} hard ceilings are {requests} requests and {seconds} aggregate GPU seconds"
             )
         self.journal = Journal(path)
         self.request_limit, self.seconds_limit = request_limit, seconds_limit
         self.lock = path.with_suffix(".lock").open("a")
         fcntl.flock(self.lock, fcntl.LOCK_EX | fcntl.LOCK_NB)
         events = self.journal.read()
+        allocations = [e for e in events if e["event"] == "allocation"]
+        allocation = {
+            "event": "allocation",
+            "stage": stage,
+            "request_limit": request_limit,
+            "seconds_limit": seconds_limit,
+        }
+        if allocations and any(e != allocation for e in allocations):
+            self.lock.close()
+            raise ValueError("Cannot change a journal's frozen allocation")
+        if stage != "stage1" and events and not allocations:
+            self.lock.close()
+            raise ValueError("A new stage requires its own allocation journal")
+        if not allocations:
+            self.journal.append(allocation)
         self.requests = sum(e["event"] == "request_start" for e in events)
         starts = {e["session"]: e for e in events if e["event"] == "session_start"}
         ends = {e["session"]: e for e in events if e["event"] == "session_end"}

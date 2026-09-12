@@ -96,7 +96,7 @@ class TransformersGPU:
 
     @staticmethod
     def _expired(*args):
-        raise TimeoutError("Stage 1 GPU wall-time ceiling reached")
+        raise TimeoutError("Allocated GPU wall-time ceiling reached")
 
     def generate(self, prompt: str, seed: int, max_new_tokens: int, temperature: float) -> dict:
         import torch

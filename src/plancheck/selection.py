@@ -69,13 +69,13 @@ def consequence(left: Candidate, right: Candidate, indices: dict[str, int]) -> i
     return int(score)
 
 
-def select_witness(
+def rank_witnesses(
     active: list[Candidate],
     pool: list[Journey],
     used: set[str],
     policy: str,
     costs: dict[str, int] | None = None,
-) -> dict | None:
+) -> list[dict]:
     if policy not in {"balanced", "consequence"}:
         raise ValueError(policy)
     indices = {j.journey_id: i for i, j in enumerate(pool)}
@@ -114,6 +114,27 @@ def select_witness(
                 },
             )
         )
-    if not options:
-        return None
-    return sorted(options, key=lambda item: (-item[0], item[1]))[0][2]
+    return [item[2] for item in sorted(options, key=lambda item: (-item[0], item[1]))]
+
+
+def select_witness(active, pool, used, policy, costs=None) -> dict | None:
+    options = rank_witnesses(active, pool, used, policy, costs)
+    return options[0] if options else None
+
+
+def restore_candidates(records: list[dict]) -> list[Candidate]:
+    """Restore a trusted, hash-bound saved bundle without repeating solver work."""
+    from .constraints import ADAPTER
+    from .util import canonical
+
+    return [
+        Candidate(
+            row["candidate_id"],
+            ADAPTER.validate_json(canonical(row["formula"])),
+            tuple(row["signature"]),
+            tuple(row["pool_ids"]),
+            PlanResult(**row["plan"]),
+            list(row["aliases"]),
+        )
+        for row in records
+    ]
