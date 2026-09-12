@@ -132,7 +132,13 @@ def acquire(
         "redistribution": "raw feed and derived schedules not committed; see docs/data.md",
         **feed.metadata(),
     }
-    immutable_json(manifest_dir / f"trimet-{checksum}.json", manifest)
+    manifest_path = manifest_dir / f"trimet-{checksum}.json"
+    if manifest_path.exists():
+        # Preserve the first acquisition's provenance; subsequent successful
+        # retrieval receipts are separate and never rewrite that timestamp.
+        immutable_json(raw_dir / "receipts" / f"{checksum}-{digest(manifest)[:16]}.json", manifest)
+    else:
+        immutable_json(manifest_path, manifest)
     return frozen
 
 

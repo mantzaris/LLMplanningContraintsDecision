@@ -5,6 +5,7 @@ from __future__ import annotations
 import hashlib
 import json
 import os
+import re
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
@@ -32,6 +33,13 @@ def utc_now() -> str:
 
 def read_json(path: Path) -> Any:
     return json.loads(path.read_text())
+
+
+def json_response(raw: str) -> str:
+    """Accept bare JSON or one complete Markdown JSON fence; never extract prose/code."""
+    stripped = raw.strip()
+    match = re.fullmatch(r"```(?:json)?\s*\n([\s\S]*?)\n```", stripped)
+    return match.group(1).strip() if match else stripped
 
 
 def immutable_json(path: Path, value: Any) -> None:

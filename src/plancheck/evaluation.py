@@ -4,7 +4,9 @@ from __future__ import annotations
 import random
 from pathlib import Path
 from .domain import Journey
-from .reference import evaluate
+from .constraints import ADAPTER
+from .compiler import predicate
+from .reference import evaluate, check_reference
 from .util import digest, immutable_json, read_json, canonical
 
 
@@ -19,12 +21,34 @@ def evaluate_run(run_dir: Path, references_path: Path) -> dict:
             Journey.model_validate_json(canonical(j))
             for j in read_json(run_dir / "pools" / f"{scenario['pool_hash']}.json")
         ]
+        reference = references[output["scenario_id"]]["reference"]
+        gold_vector = [check_reference(reference, journey) for journey in pool]
+        initial_formula = output["candidates"][0]["formula"] if output["candidates"] else None
+        final_formula = output.get("final_formula")
+
+        def equivalent(formula):
+            if formula is None:
+                return None
+            expression = ADAPTER.validate_json(canonical(formula))
+            return [predicate(expression, journey) for journey in pool] == gold_vector
+
+        initial_equivalent = equivalent(initial_formula)
+        final_equivalent = equivalent(final_formula)
         results.append(
             {
                 "scenario_id": output["scenario_id"],
                 "base_id": output["base_id"],
                 "method": output["method"],
-                **evaluate(references[output["scenario_id"]]["reference"], pool, output),
+                **evaluate(reference, pool, output),
+                "initial_interpretation_pool_equivalent": initial_equivalent,
+                "final_interpretation_pool_equivalent": final_equivalent,
+                "repair_damaged_correct_interpretation": bool(output["repairs"])
+                and initial_equivalent is True
+                and final_equivalent is not True,
+                "candidate_pool_equivalence": [
+                    equivalent(c["formula"]) for c in output["candidates"]
+                ],
+                "constraint_review_flags": constraint_review_flags(reference, final_formula),
             }
         )
     artifact = {
@@ -35,6 +59,60 @@ def evaluate_run(run_dir: Path, references_path: Path) -> dict:
     }
     immutable_json(run_dir / "evaluation.json", artifact)
     return artifact
+
+
+def constraint_review_flags(reference: dict, formula: dict | None) -> list[str]:
+    """Structural triage only; equivalent reformulations may also trigger flags."""
+    if formula is None:
+        return ["no_final_interpretation"]
+    mapping = {
+        "latest_arrival": "arrive_by",
+        "earliest_departure": "depart_ge",
+        "latest_departure": "depart_le",
+        "transfer_limit": "max_transfers",
+        "allowed_modes": "permit_modes",
+        "forbidden_modes": "exclude_modes",
+        "ordered_calls": "visits",
+    }
+
+    def reference_atoms(node, negated=False):
+        if "and" in node:
+            return [a for child in node["and"] for a in reference_atoms(child, negated)]
+        if "negate" in node:
+            return reference_atoms(node["negate"], not negated)
+        return [
+            (mapping[node["requirement"]], node["direction"], canonical(node["target"]), negated)
+        ]
+
+    def predicted_atoms(node, negated=False):
+        if node["kind"] == "all":
+            return [a for child in node["children"] for a in predicted_atoms(child, negated)]
+        if node["kind"] == "not":
+            return predicted_atoms(node["child"], not negated)
+        return [(node["op"], node["scope"], canonical(node["value"]), negated)]
+
+    gold, predicted = set(reference_atoms(reference)), set(predicted_atoms(formula))
+    flags = set()
+    for op, scope, value, negated in gold ^ predicted:
+        same_op = [
+            a for a in (predicted if (op, scope, value, negated) in gold else gold) if a[0] == op
+        ]
+        if not same_op:
+            flags.add("omitted_or_added_requirement")
+        if any(a[1] != scope for a in same_op):
+            flags.add("scope")
+        if any(a[3] != negated for a in same_op):
+            flags.add("negation")
+        flags.add(
+            "timing"
+            if op in {"arrive_by", "depart_ge", "depart_le"}
+            else "transfers"
+            if op == "max_transfers"
+            else "visits"
+            if op == "visits"
+            else "mode"
+        )
+    return sorted(flags)
 
 
 def paired_interval(rows: list[dict], replicates: int = 2000, seed: int = 104):

@@ -43,6 +43,7 @@ def run(
     run_dir: Path,
     model_path: str | None = None,
     replay_from: Path | None = None,
+    cache_from: Path | None = None,
 ) -> dict:
     if config.get("judge_mode", "model") != "model":
         raise ValueError(
@@ -109,10 +110,18 @@ def run(
             [j.model_dump(mode="json") for j in pools[scenario.pool_hash]],
         )
     journal = Journal(run_dir / "calls.jsonl")
-    if replay_from and not journal.path.exists():
-        for event in Journal(replay_from / "calls.jsonl").read():
+    cache_source = replay_from or cache_from
+    if cache_source and not journal.path.exists():
+        cache_manifest = read_json(cache_source / "manifest.json")
+        if cache_manifest["model"] != model_metadata or cache_manifest["config_hash"] != digest(
+            config
+        ):
+            raise ValueError("Cache source model/config mismatch")
+        for event in Journal(cache_source / "calls.jsonl").read():
             if event["event"] in {"generation_start", "generation_success", "generation_error"}:
-                journal.append({**event, "copied_for_replay": True})
+                journal.append(
+                    {**event, "copied_for_replay": True, "cache_source_run": cache_source.name}
+                )
     backend = None
     budget = None
     pending = [

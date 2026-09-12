@@ -23,6 +23,7 @@ def main():
             command.add_argument("--public", type=Path, default=Path("data/prepared/public"))
             command.add_argument("--run", type=Path, required=True)
             command.add_argument("--model-path", required=True)
+            command.add_argument("--cache-from", type=Path)
     commands.add_parser("cpu-check")
     probe = commands.add_parser("gpu-diagnostic")
     probe.add_argument("--output", type=Path, required=True)
@@ -35,6 +36,9 @@ def main():
     report = commands.add_parser("report")
     report.add_argument("--run", type=Path, required=True)
     report.add_argument("--output", type=Path, required=True)
+    export = commands.add_parser("export-audit")
+    export.add_argument("--run", type=Path, required=True)
+    export.add_argument("--output", type=Path, required=True)
     args = parser.parse_args()
     if args.command == "acquire":
         from .gtfs import acquire
@@ -58,7 +62,13 @@ def main():
     elif args.command == "smoke":
         from .runner import run
 
-        result = run(read_json(args.config), args.public, args.run, args.model_path)
+        result = run(
+            read_json(args.config),
+            args.public,
+            args.run,
+            args.model_path,
+            cache_from=args.cache_from,
+        )
     elif args.command == "replay":
         from .runner import replay
 
@@ -72,6 +82,10 @@ def main():
 
         print(report(args.run, args.output))
         return
+    elif args.command == "export-audit":
+        from .audit import export_audit
+
+        result = export_audit(args.run, args.output)
     print(json.dumps(result, indent=2))
 
 

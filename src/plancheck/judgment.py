@@ -4,6 +4,7 @@ from __future__ import annotations
 from typing import Literal
 from .constraints import Span
 from .domain import StrictModel
+from .util import json_response
 
 
 class Judgment(StrictModel):
@@ -13,7 +14,7 @@ class Judgment(StrictModel):
 
 
 def parse_judgment(raw: str, request: str) -> Judgment:
-    judgment = Judgment.model_validate_json(raw)
+    judgment = Judgment.model_validate_json(json_response(raw))
     if any(not (s.start < s.end <= len(request)) for s in judgment.spans):
         raise ValueError("Judgment source span outside request")
     return judgment

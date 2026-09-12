@@ -6,7 +6,7 @@ import json
 from typing import Annotated, Literal, Union
 from pydantic import Field, TypeAdapter, ValidationError
 from .domain import Mode, PublicScenario, StrictModel
-from .util import canonical
+from .util import canonical, json_response
 
 
 class Span(StrictModel):
@@ -72,7 +72,7 @@ def nodes(expr: Expression):
 
 def parse_interpretation(raw: str, scenario: PublicScenario) -> Expression:
     try:
-        result = Interpretation.model_validate_json(raw)
+        result = Interpretation.model_validate_json(json_response(raw))
     except (ValidationError, ValueError) as error:
         raise InterpretationError("malformed", str(error)) from error
     if result.status == "unsupported":

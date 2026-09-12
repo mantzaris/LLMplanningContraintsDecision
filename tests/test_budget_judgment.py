@@ -46,6 +46,10 @@ def test_contradictory_and_uncertain_judgments():
     ]
     assert labels_from_judgments(rows)[1] == ["a"]
     assert labels_from_judgments(rows[:2]) == ({"a": True}, [])
+    wrapped = '```json\n{"verdict":"satisfied","spans":[],"reason":"source judgment"}\n```'
+    assert parse_judgment(wrapped, "request").verdict == "satisfied"
+    with pytest.raises(ValueError):
+        parse_judgment("some prose " + wrapped, "request")
     with pytest.raises(ValueError):
         parse_judgment(
             '{"verdict":"satisfied","spans":[{"start":0,"end":900}],"reason":"x"}', "short"
