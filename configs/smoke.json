@@ -1,0 +1,17 @@
+{
+  "model_id": "Qwen/Qwen2.5-7B-Instruct",
+  "model_revision": "a09a35458c702b33eeacc393d103063234e8bc28",
+  "scenario_ids": ["g00-timing-p0", "g00-negation-p0", "g00-scope-p0", "g00-infeasible-p0"],
+  "methods": ["A", "B", "C", "D", "E"],
+  "candidate_count": 4,
+  "judgment_limit": 2,
+  "repair_limit": 1,
+  "method_call_limit": 7,
+  "max_new_tokens": 768,
+  "temperature": 0.7,
+  "seed": 104,
+  "solver_timeout_ms": 5000,
+  "judge_mode": "model",
+  "gpu_request_limit": 100,
+  "gpu_seconds_limit": 3600
+}

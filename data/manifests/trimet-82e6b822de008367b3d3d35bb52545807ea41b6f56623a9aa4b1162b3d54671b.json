@@ -1,0 +1,68 @@
+{
+  "agencies": [
+    {
+      "agency_id": "PSC",
+      "agency_name": "Portland Streetcar",
+      "agency_timezone": "America/Los_Angeles"
+    },
+    {
+      "agency_id": "TRAM",
+      "agency_name": "Portland Aerial Tram",
+      "agency_timezone": "America/Los_Angeles"
+    },
+    {
+      "agency_id": "TRIMET",
+      "agency_name": "TriMet",
+      "agency_timezone": "America/Los_Angeles"
+    }
+  ],
+  "bytes": 29521107,
+  "calendar_end": "20261128",
+  "calendar_start": "20260823",
+  "download_completed_at": "2026-09-12T15:07:08.193086+00:00",
+  "exception_end": "20261127",
+  "exception_start": "20260831",
+  "feed_info": [
+    {
+      "default_lang": "en",
+      "feed_contact_email": "",
+      "feed_contact_url": "https://groups.google.com/u/1/g/transit-developers-pdx",
+      "feed_end_date": "20270227",
+      "feed_lang": "en",
+      "feed_publisher_name": "TriMet",
+      "feed_publisher_url": "https://trimet.org/",
+      "feed_start_date": "20260823",
+      "feed_version": "20260823-20260910-0900"
+    }
+  ],
+  "http_headers": {},
+  "members": [
+    "agency.txt",
+    "calendar.txt",
+    "calendar_dates.txt",
+    "fare_attributes.txt",
+    "fare_leg_rules.txt",
+    "fare_media.txt",
+    "fare_products.txt",
+    "fare_rules.txt",
+    "fare_transfer_rules.txt",
+    "feed_info.txt",
+    "linked_datasets.txt",
+    "rider_categories.txt",
+    "route_directions.txt",
+    "routes.txt",
+    "shapes.txt",
+    "stop_features.txt",
+    "stop_times.txt",
+    "stops.txt",
+    "transfers.txt",
+    "trips.txt"
+  ],
+  "redistribution": "raw feed and derived schedules not committed; see docs/data.md",
+  "retrieval_timestamp_definition": "acquisition start; existing import uses original file mtime as retrieval completion",
+  "retrieved_at": "2026-09-12T15:13:10.166431+00:00",
+  "reuse_terms": "https://developer.trimet.org/terms_of_use.shtml",
+  "sha256": "82e6b822de008367b3d3d35bb52545807ea41b6f56623a9aa4b1162b3d54671b",
+  "source": "https://developer.trimet.org/schedule/gtfs.zip",
+  "source_page": "https://developer.trimet.org/GTFS.shtml"
+}

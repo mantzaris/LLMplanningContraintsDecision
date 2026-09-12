@@ -1,0 +1,180 @@
+{
+  "annotation_status": "assistant-authored provisional; not human audited",
+  "config": {
+    "base_groups": 6,
+    "bbox": [
+      45.5,
+      -122.69,
+      45.54,
+      -122.64
+    ],
+    "end_s": 36000,
+    "feed_sha256": "82e6b822de008367b3d3d35bb52545807ea41b6f56623a9aa4b1162b3d54671b",
+    "joint_pool_limit": 256,
+    "max_rides_per_segment": 2,
+    "minimum_connection_s": 120,
+    "route_limit": 3,
+    "segment_pool_limit": 64,
+    "service_date": "2026-09-14",
+    "source": "https://developer.trimet.org/schedule/gtfs.zip",
+    "start_s": 25200
+  },
+  "config_hash": "988ddd89fc5f7cd94d20f6851ba5daa66909e217e677944563203b68edc4c500",
+  "exclusions": {},
+  "feed_hash": "82e6b822de008367b3d3d35bb52545807ea41b6f56623a9aa4b1162b3d54671b",
+  "pools": [
+    {
+      "base_id": "g00",
+      "complete": false,
+      "joint_before_cap": 64,
+      "pool_hash": "c4b975fa1f0958e0437f17fa47e72c92b22682ad769357cc541f1ee90d4c17f3",
+      "pool_size": 64,
+      "segment_enumerated": [
+        1017
+      ],
+      "two_segments": false
+    },
+    {
+      "base_id": "g00",
+      "complete": false,
+      "joint_before_cap": 287,
+      "pool_hash": "2850a636a225c1b1d214289fc5d86581603a6e380e49002562996a30f84e1e07",
+      "pool_size": 256,
+      "segment_enumerated": [
+        1017,
+        10
+      ],
+      "two_segments": true
+    },
+    {
+      "base_id": "g01",
+      "complete": false,
+      "joint_before_cap": 64,
+      "pool_hash": "d0591fae1c59cd94508bb962a048cd60d01a132dcfe2775c62c209e82ec002da",
+      "pool_size": 64,
+      "segment_enumerated": [
+        1394
+      ],
+      "two_segments": false
+    },
+    {
+      "base_id": "g01",
+      "complete": false,
+      "joint_before_cap": 387,
+      "pool_hash": "cfc608f3482376c42c303e3002c24be35f24ba5ece205864a9fc6e6937b8cd18",
+      "pool_size": 256,
+      "segment_enumerated": [
+        1394,
+        13
+      ],
+      "two_segments": true
+    },
+    {
+      "base_id": "g02",
+      "complete": false,
+      "joint_before_cap": 64,
+      "pool_hash": "eba572152f3b56eaadd8eedd78ab644d17e09adeeff3f69d24a4d998e3760857",
+      "pool_size": 64,
+      "segment_enumerated": [
+        627
+      ],
+      "two_segments": false
+    },
+    {
+      "base_id": "g02",
+      "complete": false,
+      "joint_before_cap": 486,
+      "pool_hash": "71c06b2b4148b341192e3b7a8fa0e03adfa8be5931b121f588cca573b2b289fc",
+      "pool_size": 256,
+      "segment_enumerated": [
+        627,
+        14
+      ],
+      "two_segments": true
+    },
+    {
+      "base_id": "g03",
+      "complete": false,
+      "joint_before_cap": 64,
+      "pool_hash": "729bc5e0fee8058f88d7f35b567c44ec81a7f27553dd1f7614f96b0dc52b761d",
+      "pool_size": 64,
+      "segment_enumerated": [
+        980
+      ],
+      "two_segments": false
+    },
+    {
+      "base_id": "g03",
+      "complete": false,
+      "joint_before_cap": 301,
+      "pool_hash": "d98388a6e109539878c239eaa1fad89df0bd51d378e29da7e44464b56c0da9a5",
+      "pool_size": 256,
+      "segment_enumerated": [
+        980,
+        8
+      ],
+      "two_segments": true
+    },
+    {
+      "base_id": "g04",
+      "complete": false,
+      "joint_before_cap": 64,
+      "pool_hash": "8a0e758684d083414824674e8f1e6b2ab84fcbf362f61d33ef949ef408d3373e",
+      "pool_size": 64,
+      "segment_enumerated": [
+        871
+      ],
+      "two_segments": false
+    },
+    {
+      "base_id": "g04",
+      "complete": false,
+      "joint_before_cap": 187,
+      "pool_hash": "99d08bac530886e82096303cf24613ee21f26231bda2990bf529251be65b0953",
+      "pool_size": 187,
+      "segment_enumerated": [
+        871,
+        6
+      ],
+      "two_segments": true
+    },
+    {
+      "base_id": "g05",
+      "complete": false,
+      "joint_before_cap": 64,
+      "pool_hash": "18badca162f1d80cc4ff702302f9c28de5147b04d9fe44b9ae1f139b2caef0d6",
+      "pool_size": 64,
+      "segment_enumerated": [
+        515
+      ],
+      "two_segments": false
+    },
+    {
+      "base_id": "g05",
+      "complete": false,
+      "joint_before_cap": 372,
+      "pool_hash": "76fa989e99eaba74cf0c4de3fc6a3ebf4a68c14efad85866628cadf3e4c4c60e",
+      "pool_size": 256,
+      "segment_enumerated": [
+        515,
+        13
+      ],
+      "two_segments": true
+    }
+  ],
+  "public_hash": "708a68b301418cb34a488a427d15ddbbf4e9ec2c582a5b7609215493726b8856",
+  "reference_hash": "b778bd14215e8f95efefe109d4e093a48b259fb0c6992459746f407dd7b47cc1",
+  "ride_edges": 6574,
+  "route_selection": [
+    "2",
+    "4",
+    "17"
+  ],
+  "scenario_count": 60,
+  "selected_route_modes": {
+    "17": "3",
+    "2": "3",
+    "4": "3"
+  },
+  "stop_count": 70
+}

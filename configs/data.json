@@ -1,0 +1,14 @@
+{
+  "source": "https://developer.trimet.org/schedule/gtfs.zip",
+  "feed_sha256": "82e6b822de008367b3d3d35bb52545807ea41b6f56623a9aa4b1162b3d54671b",
+  "service_date": "2026-09-14",
+  "bbox": [45.50, -122.69, 45.54, -122.64],
+  "start_s": 25200,
+  "end_s": 36000,
+  "route_limit": 3,
+  "minimum_connection_s": 120,
+  "max_rides_per_segment": 2,
+  "segment_pool_limit": 64,
+  "joint_pool_limit": 256,
+  "base_groups": 6
+}
