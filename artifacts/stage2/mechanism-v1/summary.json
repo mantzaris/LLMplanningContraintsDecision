@@ -1,0 +1,64 @@
+{
+  "always_wrong": [
+    "pilot-01",
+    "pilot-02",
+    "pilot-05",
+    "pilot-09",
+    "pilot-15",
+    "pilot-19",
+    "pilot-22",
+    "pilot-23",
+    "pilot-27",
+    "pilot-33",
+    "pilot-34",
+    "pilot-35",
+    "pilot-40",
+    "pilot-41"
+  ],
+  "damaged": [
+    "pilot-14"
+  ],
+  "exclusive_equivalence_causes": {
+    "different_first": 2,
+    "no_parsed_candidate": 5,
+    "one_class": 18,
+    "two_classes": 18,
+    "uniform_weights_3plus": 3,
+    "variable_weights_same_first": 2
+  },
+  "expanded_different_first_choices": [
+    "pilot-00",
+    "pilot-37"
+  ],
+  "expanded_pool_memberships": 77871,
+  "expanded_weight_variation": [
+    "pilot-00",
+    "pilot-06",
+    "pilot-24",
+    "pilot-34",
+    "pilot-37"
+  ],
+  "improved": [
+    "pilot-12",
+    "pilot-24",
+    "pilot-25"
+  ],
+  "new_gpu_generations": 0,
+  "new_gpu_seconds": 0,
+  "normalization": {
+    "A": {
+      "after": 34,
+      "before": 31
+    },
+    "DE_initial": {
+      "after": 35,
+      "before": 31
+    }
+  },
+  "normalization_oracle_final": {
+    "D": 38,
+    "E": 38
+  },
+  "pool_size_adds_classes": 0,
+  "pool_size_adds_partitions": 0
+}

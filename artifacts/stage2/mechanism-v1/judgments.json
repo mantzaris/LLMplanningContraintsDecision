@@ -1,0 +1,1136 @@
+[
+  {
+    "correct": true,
+    "journey_id": "002ee67351572c9abe93",
+    "judgment": {
+      "reason": "Journey meets all specified requirements including departure and arrival times, stops, and number of transfers.",
+      "spans": [
+        {
+          "end": 5,
+          "start": 0
+        }
+      ],
+      "verdict": "satisfied"
+    },
+    "reference_label": true,
+    "scenario_id": "pilot-00",
+    "uses": [
+      {
+        "method": "D",
+        "model_final": "correct_feasible_plan",
+        "oracle_final": "correct_feasible_plan",
+        "query": 1,
+        "removed_ids": [
+          "c1",
+          "c2"
+        ]
+      },
+      {
+        "method": "E",
+        "model_final": "correct_feasible_plan",
+        "oracle_final": "correct_feasible_plan",
+        "query": 2,
+        "removed_ids": [
+          "c2"
+        ]
+      }
+    ]
+  },
+  {
+    "correct": true,
+    "journey_id": "00b30b64cd73de674651",
+    "judgment": {
+      "reason": "Journey meets all specified requirements including departure time, arrival time, and stops.",
+      "spans": [
+        {
+          "end": 5,
+          "start": 0
+        }
+      ],
+      "verdict": "satisfied"
+    },
+    "reference_label": true,
+    "scenario_id": "pilot-00",
+    "uses": [
+      {
+        "method": "E",
+        "model_final": "correct_feasible_plan",
+        "oracle_final": "correct_feasible_plan",
+        "query": 1,
+        "removed_ids": [
+          "c1"
+        ]
+      }
+    ]
+  },
+  {
+    "correct": false,
+    "journey_id": "4f068e23d6f9f80811f2",
+    "judgment": {
+      "reason": "Journey meets all requirements: correct date, no rail/tram, single segment, no transfers, and departs on time.",
+      "spans": [
+        {
+          "end": 5,
+          "start": 0
+        }
+      ],
+      "verdict": "satisfied"
+    },
+    "reference_label": false,
+    "scenario_id": "pilot-01",
+    "uses": [
+      {
+        "method": "D",
+        "model_final": "incorrect_plan",
+        "oracle_final": "false_infeasibility",
+        "query": 1,
+        "removed_ids": [
+          "c1"
+        ]
+      },
+      {
+        "method": "E",
+        "model_final": "incorrect_plan",
+        "oracle_final": "false_infeasibility",
+        "query": 1,
+        "removed_ids": [
+          "c1"
+        ]
+      }
+    ]
+  },
+  {
+    "correct": true,
+    "journey_id": "05d66e26d29815d08eac",
+    "judgment": {
+      "reason": "The concrete journey meets all specified requirements for both segments.",
+      "spans": [
+        {
+          "end": 5,
+          "start": 0
+        }
+      ],
+      "verdict": "satisfied"
+    },
+    "reference_label": true,
+    "scenario_id": "pilot-04",
+    "uses": [
+      {
+        "method": "D",
+        "model_final": "correct_feasible_plan",
+        "oracle_final": "correct_feasible_plan",
+        "query": 1,
+        "removed_ids": [
+          "c3"
+        ]
+      },
+      {
+        "method": "E",
+        "model_final": "correct_feasible_plan",
+        "oracle_final": "correct_feasible_plan",
+        "query": 1,
+        "removed_ids": [
+          "c3"
+        ]
+      }
+    ]
+  },
+  {
+    "correct": false,
+    "journey_id": "01d5cd87319e366359a7",
+    "judgment": {
+      "reason": "The journey meets all specified requirements including the destination, mode of transport, number of transfers, and departure time.",
+      "spans": [
+        {
+          "end": 5,
+          "start": 0
+        }
+      ],
+      "verdict": "satisfied"
+    },
+    "reference_label": false,
+    "scenario_id": "pilot-06",
+    "uses": [
+      {
+        "method": "D",
+        "model_final": "correct_feasible_plan",
+        "oracle_final": "correct_feasible_plan",
+        "query": 1,
+        "removed_ids": [
+          "c3"
+        ]
+      },
+      {
+        "method": "E",
+        "model_final": "correct_feasible_plan",
+        "oracle_final": "correct_feasible_plan",
+        "query": 1,
+        "removed_ids": [
+          "c3"
+        ]
+      }
+    ]
+  },
+  {
+    "correct": false,
+    "journey_id": "06b5d39e855ca24bde86",
+    "judgment": {
+      "reason": "The journey exceeds the maximum of 1 transfer and departs more than 2 hours before the requested time.",
+      "spans": [
+        {
+          "end": 5,
+          "start": 0
+        },
+        {
+          "end": 30,
+          "start": 25
+        }
+      ],
+      "verdict": "violated"
+    },
+    "reference_label": true,
+    "scenario_id": "pilot-06",
+    "uses": [
+      {
+        "method": "D",
+        "model_final": "correct_feasible_plan",
+        "oracle_final": "correct_feasible_plan",
+        "query": 2,
+        "removed_ids": [
+          "c0"
+        ]
+      },
+      {
+        "method": "E",
+        "model_final": "correct_feasible_plan",
+        "oracle_final": "correct_feasible_plan",
+        "query": 2,
+        "removed_ids": [
+          "c0"
+        ]
+      }
+    ]
+  },
+  {
+    "correct": true,
+    "journey_id": "0ff2f593b0f54de686df",
+    "judgment": {
+      "reason": "The journey departs earlier than the requested time of 07:51:00.",
+      "spans": [
+        {
+          "end": 5,
+          "start": 0
+        }
+      ],
+      "verdict": "violated"
+    },
+    "reference_label": false,
+    "scenario_id": "pilot-08",
+    "uses": [
+      {
+        "method": "D",
+        "model_final": "correct_feasible_plan",
+        "oracle_final": "correct_feasible_plan",
+        "query": 1,
+        "removed_ids": [
+          "c0"
+        ]
+      },
+      {
+        "method": "E",
+        "model_final": "correct_feasible_plan",
+        "oracle_final": "correct_feasible_plan",
+        "query": 1,
+        "removed_ids": [
+          "c0"
+        ]
+      }
+    ]
+  },
+  {
+    "correct": true,
+    "journey_id": "00569e99bfadb44b56e3",
+    "judgment": {
+      "reason": "The concrete journey meets all specified requirements including the correct sequence of stops and the use of buses.",
+      "spans": [
+        {
+          "end": 5,
+          "start": 0
+        }
+      ],
+      "verdict": "satisfied"
+    },
+    "reference_label": true,
+    "scenario_id": "pilot-12",
+    "uses": [
+      {
+        "method": "D",
+        "model_final": "correct_feasible_plan",
+        "oracle_final": "correct_feasible_plan",
+        "query": 1,
+        "removed_ids": [
+          "c0"
+        ]
+      },
+      {
+        "method": "E",
+        "model_final": "correct_feasible_plan",
+        "oracle_final": "correct_feasible_plan",
+        "query": 1,
+        "removed_ids": [
+          "c0"
+        ]
+      }
+    ]
+  },
+  {
+    "correct": true,
+    "journey_id": "1abad49a2e8391dfd86e",
+    "judgment": {
+      "reason": "Journey meets all specified requirements including departure and arrival times, stops, and transfers.",
+      "spans": [
+        {
+          "end": 5,
+          "start": 0
+        }
+      ],
+      "verdict": "satisfied"
+    },
+    "reference_label": true,
+    "scenario_id": "pilot-13",
+    "uses": [
+      {
+        "method": "D",
+        "model_final": "correct_feasible_plan",
+        "oracle_final": "correct_feasible_plan",
+        "query": 1,
+        "removed_ids": [
+          "c2"
+        ]
+      },
+      {
+        "method": "E",
+        "model_final": "correct_feasible_plan",
+        "oracle_final": "correct_feasible_plan",
+        "query": 1,
+        "removed_ids": [
+          "c2"
+        ]
+      }
+    ]
+  },
+  {
+    "correct": true,
+    "journey_id": "00313f83f4fcde9dd706",
+    "judgment": {
+      "reason": "The journey exceeds the maximum of 1 transfer and departs more than 07:28:14.",
+      "spans": [
+        {
+          "end": 26,
+          "start": 11
+        },
+        {
+          "end": 128,
+          "start": 103
+        }
+      ],
+      "verdict": "violated"
+    },
+    "reference_label": false,
+    "scenario_id": "pilot-14",
+    "uses": [
+      {
+        "method": "D",
+        "model_final": "false_infeasibility",
+        "oracle_final": "false_infeasibility",
+        "query": 1,
+        "removed_ids": [
+          "c0",
+          "c1"
+        ]
+      },
+      {
+        "method": "E",
+        "model_final": "false_infeasibility",
+        "oracle_final": "false_infeasibility",
+        "query": 1,
+        "removed_ids": [
+          "c0",
+          "c1"
+        ]
+      }
+    ]
+  },
+  {
+    "correct": true,
+    "journey_id": "032d9ad4720daf263c0c",
+    "judgment": {
+      "reason": "The journey departs later than the requested time.",
+      "spans": [
+        {
+          "end": 5,
+          "start": 0
+        }
+      ],
+      "verdict": "violated"
+    },
+    "reference_label": false,
+    "scenario_id": "pilot-18",
+    "uses": [
+      {
+        "method": "D",
+        "model_final": "correct_feasible_plan",
+        "oracle_final": "correct_feasible_plan",
+        "query": 1,
+        "removed_ids": [
+          "c3"
+        ]
+      },
+      {
+        "method": "E",
+        "model_final": "correct_feasible_plan",
+        "oracle_final": "correct_feasible_plan",
+        "query": 1,
+        "removed_ids": [
+          "c3"
+        ]
+      }
+    ]
+  },
+  {
+    "correct": true,
+    "journey_id": "005a6f33a79fe270e093",
+    "judgment": {
+      "reason": "The concrete journey meets all the requirements specified in the original request.",
+      "spans": [
+        {
+          "end": 5,
+          "start": 0
+        }
+      ],
+      "verdict": "satisfied"
+    },
+    "reference_label": true,
+    "scenario_id": "pilot-20",
+    "uses": [
+      {
+        "method": "D",
+        "model_final": "correct_feasible_plan",
+        "oracle_final": "correct_feasible_plan",
+        "query": 1,
+        "removed_ids": [
+          "c2"
+        ]
+      },
+      {
+        "method": "E",
+        "model_final": "correct_feasible_plan",
+        "oracle_final": "correct_feasible_plan",
+        "query": 1,
+        "removed_ids": [
+          "c2"
+        ]
+      }
+    ]
+  },
+  {
+    "correct": true,
+    "journey_id": "0293438db40a6621ecbc",
+    "judgment": {
+      "reason": "The concrete journey matches the original request for the outbound journey from SW 5th & Harvey Milk to SE Division Pl & 8th, with stops at stop_id=7640 and stop_id=7594 in the specified order.",
+      "spans": [
+        {
+          "end": 5,
+          "start": 0
+        }
+      ],
+      "verdict": "satisfied"
+    },
+    "reference_label": true,
+    "scenario_id": "pilot-20",
+    "uses": [
+      {
+        "method": "D",
+        "model_final": "correct_feasible_plan",
+        "oracle_final": "correct_feasible_plan",
+        "query": 2,
+        "removed_ids": [
+          "c1"
+        ]
+      },
+      {
+        "method": "E",
+        "model_final": "correct_feasible_plan",
+        "oracle_final": "correct_feasible_plan",
+        "query": 2,
+        "removed_ids": [
+          "c1"
+        ]
+      }
+    ]
+  },
+  {
+    "correct": true,
+    "journey_id": "40039d4292139b8ad663",
+    "judgment": {
+      "reason": "The journey meets all specified requirements including the correct number of transfers and departure time.",
+      "spans": [
+        {
+          "end": 5,
+          "start": 0
+        }
+      ],
+      "verdict": "satisfied"
+    },
+    "reference_label": true,
+    "scenario_id": "pilot-21",
+    "uses": [
+      {
+        "method": "D",
+        "model_final": "correct_feasible_plan",
+        "oracle_final": "correct_feasible_plan",
+        "query": 1,
+        "removed_ids": [
+          "c0"
+        ]
+      },
+      {
+        "method": "E",
+        "model_final": "correct_feasible_plan",
+        "oracle_final": "correct_feasible_plan",
+        "query": 1,
+        "removed_ids": [
+          "c0"
+        ]
+      }
+    ]
+  },
+  {
+    "correct": true,
+    "journey_id": "008999a081cb95dcc0f3",
+    "judgment": {
+      "reason": "The journey exceeds the maximum of 1 transfer and departs after the specified time.",
+      "spans": [
+        {
+          "end": 23,
+          "start": 11
+        },
+        {
+          "end": 115,
+          "start": 103
+        }
+      ],
+      "verdict": "violated"
+    },
+    "reference_label": false,
+    "scenario_id": "pilot-24",
+    "uses": [
+      {
+        "method": "D",
+        "model_final": "correct_feasible_plan",
+        "oracle_final": "correct_feasible_plan",
+        "query": 1,
+        "removed_ids": [
+          "c0",
+          "c2"
+        ]
+      },
+      {
+        "method": "E",
+        "model_final": "correct_feasible_plan",
+        "oracle_final": "correct_feasible_plan",
+        "query": 1,
+        "removed_ids": [
+          "c0",
+          "c2"
+        ]
+      }
+    ]
+  },
+  {
+    "correct": true,
+    "journey_id": "0082a5ab37cfe189384b",
+    "judgment": {
+      "reason": "The concrete journey meets all the requirements specified in the original request.",
+      "spans": [
+        {
+          "end": 5,
+          "start": 0
+        }
+      ],
+      "verdict": "satisfied"
+    },
+    "reference_label": true,
+    "scenario_id": "pilot-25",
+    "uses": [
+      {
+        "method": "D",
+        "model_final": "correct_feasible_plan",
+        "oracle_final": "correct_feasible_plan",
+        "query": 1,
+        "removed_ids": [
+          "c0"
+        ]
+      },
+      {
+        "method": "E",
+        "model_final": "correct_feasible_plan",
+        "oracle_final": "correct_feasible_plan",
+        "query": 1,
+        "removed_ids": [
+          "c0"
+        ]
+      }
+    ]
+  },
+  {
+    "correct": true,
+    "journey_id": "25ceff8491091d0ea763",
+    "judgment": {
+      "reason": "The journey meets all the requirements including the departure and arrival times, stops, and number of transfers.",
+      "spans": [
+        {
+          "end": 5,
+          "start": 0
+        }
+      ],
+      "verdict": "satisfied"
+    },
+    "reference_label": true,
+    "scenario_id": "pilot-26",
+    "uses": [
+      {
+        "method": "D",
+        "model_final": "correct_feasible_plan",
+        "oracle_final": "correct_feasible_plan",
+        "query": 1,
+        "removed_ids": [
+          "c0"
+        ]
+      },
+      {
+        "method": "E",
+        "model_final": "correct_feasible_plan",
+        "oracle_final": "correct_feasible_plan",
+        "query": 1,
+        "removed_ids": [
+          "c0"
+        ]
+      }
+    ]
+  },
+  {
+    "correct": false,
+    "journey_id": "001aadd047bd2fdc8a79",
+    "judgment": {
+      "reason": "The journey meets all specified requirements including the number of transfers, timing, and destinations.",
+      "spans": [
+        {
+          "end": 5,
+          "start": 0
+        }
+      ],
+      "verdict": "satisfied"
+    },
+    "reference_label": false,
+    "scenario_id": "pilot-27",
+    "uses": [
+      {
+        "method": "D",
+        "model_final": "incorrect_plan",
+        "oracle_final": "false_infeasibility",
+        "query": 1,
+        "removed_ids": [
+          "c0"
+        ]
+      },
+      {
+        "method": "E",
+        "model_final": "incorrect_plan",
+        "oracle_final": "false_infeasibility",
+        "query": 1,
+        "removed_ids": [
+          "c0"
+        ]
+      }
+    ]
+  },
+  {
+    "correct": true,
+    "journey_id": "03dc0f6026feef064175",
+    "judgment": {
+      "reason": "The concrete journey matches all requirements of the original request, including the correct sequence of stops and the use of buses.",
+      "spans": [
+        {
+          "end": 5,
+          "start": 0
+        }
+      ],
+      "verdict": "satisfied"
+    },
+    "reference_label": true,
+    "scenario_id": "pilot-30",
+    "uses": [
+      {
+        "method": "D",
+        "model_final": "correct_feasible_plan",
+        "oracle_final": "correct_feasible_plan",
+        "query": 1,
+        "removed_ids": [
+          "c1"
+        ]
+      },
+      {
+        "method": "E",
+        "model_final": "correct_feasible_plan",
+        "oracle_final": "correct_feasible_plan",
+        "query": 1,
+        "removed_ids": [
+          "c1"
+        ]
+      }
+    ]
+  },
+  {
+    "correct": true,
+    "journey_id": "01853825538745663bb8",
+    "judgment": {
+      "reason": "The journey departed after the specified time and exceeded the maximum number of transfers.",
+      "spans": [
+        {
+          "end": 25,
+          "start": 14
+        },
+        {
+          "end": 115,
+          "start": 104
+        }
+      ],
+      "verdict": "violated"
+    },
+    "reference_label": false,
+    "scenario_id": "pilot-32",
+    "uses": [
+      {
+        "method": "D",
+        "model_final": "correct_feasible_plan",
+        "oracle_final": "correct_feasible_plan",
+        "query": 1,
+        "removed_ids": [
+          "c0"
+        ]
+      },
+      {
+        "method": "E",
+        "model_final": "correct_feasible_plan",
+        "oracle_final": "correct_feasible_plan",
+        "query": 1,
+        "removed_ids": [
+          "c0"
+        ]
+      }
+    ]
+  },
+  {
+    "correct": true,
+    "journey_id": "07a6773b6185c97c2900",
+    "judgment": {
+      "reason": "The journey meets all specified requirements including the start time, destination, number of transfers, and route.",
+      "spans": [
+        {
+          "end": 5,
+          "start": 0
+        }
+      ],
+      "verdict": "satisfied"
+    },
+    "reference_label": true,
+    "scenario_id": "pilot-34",
+    "uses": [
+      {
+        "method": "D",
+        "model_final": "incorrect_plan",
+        "oracle_final": "correct_feasible_plan",
+        "query": 1,
+        "removed_ids": [
+          "c1",
+          "c2"
+        ]
+      },
+      {
+        "method": "E",
+        "model_final": "incorrect_plan",
+        "oracle_final": "correct_feasible_plan",
+        "query": 1,
+        "removed_ids": [
+          "c1",
+          "c2"
+        ]
+      }
+    ]
+  },
+  {
+    "correct": false,
+    "journey_id": "004c05afb1f5827ae3be",
+    "judgment": {
+      "reason": "The journey meets all specified requirements including the correct number of transfers, destination, and departure time.",
+      "spans": [
+        {
+          "end": 5,
+          "start": 0
+        }
+      ],
+      "verdict": "satisfied"
+    },
+    "reference_label": false,
+    "scenario_id": "pilot-34",
+    "uses": [
+      {
+        "method": "D",
+        "model_final": "incorrect_plan",
+        "oracle_final": "correct_feasible_plan",
+        "query": 2,
+        "removed_ids": [
+          "c3"
+        ]
+      },
+      {
+        "method": "E",
+        "model_final": "incorrect_plan",
+        "oracle_final": "correct_feasible_plan",
+        "query": 2,
+        "removed_ids": [
+          "c3"
+        ]
+      }
+    ]
+  },
+  {
+    "correct": true,
+    "journey_id": "032b33a769adb812d572",
+    "judgment": {
+      "reason": "The journey departs too early (07:35:15) and arrives too late (09:34:23) compared to the original request.",
+      "spans": [
+        {
+          "end": 5,
+          "start": 0
+        },
+        {
+          "end": 30,
+          "start": 25
+        }
+      ],
+      "verdict": "violated"
+    },
+    "reference_label": false,
+    "scenario_id": "pilot-36",
+    "uses": [
+      {
+        "method": "D",
+        "model_final": "correct_feasible_plan",
+        "oracle_final": "correct_feasible_plan",
+        "query": 1,
+        "removed_ids": [
+          "c0"
+        ]
+      },
+      {
+        "method": "E",
+        "model_final": "correct_feasible_plan",
+        "oracle_final": "correct_feasible_plan",
+        "query": 1,
+        "removed_ids": [
+          "c0"
+        ]
+      }
+    ]
+  },
+  {
+    "correct": true,
+    "journey_id": "3ec28069888f5177b261",
+    "judgment": {
+      "reason": "The journey meets all specified requirements including the correct stops, number of transfers, and departure time.",
+      "spans": [
+        {
+          "end": 5,
+          "start": 0
+        },
+        {
+          "end": 15,
+          "start": 10
+        },
+        {
+          "end": 25,
+          "start": 20
+        },
+        {
+          "end": 35,
+          "start": 30
+        },
+        {
+          "end": 45,
+          "start": 40
+        }
+      ],
+      "verdict": "satisfied"
+    },
+    "reference_label": true,
+    "scenario_id": "pilot-37",
+    "uses": [
+      {
+        "method": "D",
+        "model_final": "correct_feasible_plan",
+        "oracle_final": "correct_feasible_plan",
+        "query": 1,
+        "removed_ids": [
+          "c0",
+          "c2"
+        ]
+      }
+    ]
+  },
+  {
+    "correct": true,
+    "journey_id": "4a89a06ba5058ef4ccea",
+    "judgment": {
+      "reason": "The journey meets all specified requirements including the departure time, destination, and number of transfers.",
+      "spans": [
+        {
+          "end": 5,
+          "start": 0
+        }
+      ],
+      "verdict": "satisfied"
+    },
+    "reference_label": true,
+    "scenario_id": "pilot-37",
+    "uses": [
+      {
+        "method": "D",
+        "model_final": "correct_feasible_plan",
+        "oracle_final": "correct_feasible_plan",
+        "query": 2,
+        "removed_ids": [
+          "c3"
+        ]
+      }
+    ]
+  },
+  {
+    "correct": false,
+    "journey_id": "022c2a4af86602d54884",
+    "judgment": {
+      "reason": "The journey departs earlier than the requested time (07:18:49 vs 08:57:49) and exceeds the allowed 1 transfer limit (2 transfers).",
+      "spans": [
+        {
+          "end": 5,
+          "start": 0
+        },
+        {
+          "end": 111,
+          "start": 104
+        }
+      ],
+      "verdict": "violated"
+    },
+    "reference_label": true,
+    "scenario_id": "pilot-37",
+    "uses": [
+      {
+        "method": "E",
+        "model_final": "correct_feasible_plan",
+        "oracle_final": "correct_feasible_plan",
+        "query": 1,
+        "removed_ids": [
+          "c0",
+          "c1",
+          "c3"
+        ]
+      }
+    ]
+  },
+  {
+    "correct": true,
+    "journey_id": "09c37697428421bd92de",
+    "judgment": {
+      "reason": "The concrete journey meets all the requirements specified in the original request.",
+      "spans": [
+        {
+          "end": 5,
+          "start": 0
+        }
+      ],
+      "verdict": "satisfied"
+    },
+    "reference_label": true,
+    "scenario_id": "pilot-38",
+    "uses": [
+      {
+        "method": "D",
+        "model_final": "correct_feasible_plan",
+        "oracle_final": "correct_feasible_plan",
+        "query": 1,
+        "removed_ids": [
+          "c1"
+        ]
+      },
+      {
+        "method": "E",
+        "model_final": "correct_feasible_plan",
+        "oracle_final": "correct_feasible_plan",
+        "query": 1,
+        "removed_ids": [
+          "c1"
+        ]
+      }
+    ]
+  },
+  {
+    "correct": false,
+    "journey_id": "008b1d441a8449cba7fe",
+    "judgment": {
+      "reason": "The return segment departs at 09:42:00, which is earlier than the allowed minimum departure time of 09:12:00.",
+      "spans": [
+        {
+          "end": 122,
+          "start": 112
+        }
+      ],
+      "verdict": "violated"
+    },
+    "reference_label": true,
+    "scenario_id": "pilot-40",
+    "uses": [
+      {
+        "method": "D",
+        "model_final": "false_infeasibility",
+        "oracle_final": "correct_feasible_plan",
+        "query": 1,
+        "removed_ids": [
+          "c1"
+        ]
+      },
+      {
+        "method": "E",
+        "model_final": "false_infeasibility",
+        "oracle_final": "correct_feasible_plan",
+        "query": 1,
+        "removed_ids": [
+          "c1"
+        ]
+      }
+    ]
+  },
+  {
+    "correct": true,
+    "journey_id": "02b8e234c9d442a0e68f",
+    "judgment": {
+      "reason": "The journey departs after the specified time and exceeds the maximum allowed transfers.",
+      "spans": [
+        {
+          "end": 27,
+          "start": 12
+        },
+        {
+          "end": 118,
+          "start": 103
+        }
+      ],
+      "verdict": "violated"
+    },
+    "reference_label": false,
+    "scenario_id": "pilot-42",
+    "uses": [
+      {
+        "method": "D",
+        "model_final": "correct_feasible_plan",
+        "oracle_final": "correct_feasible_plan",
+        "query": 1,
+        "removed_ids": [
+          "c2"
+        ]
+      },
+      {
+        "method": "E",
+        "model_final": "correct_feasible_plan",
+        "oracle_final": "correct_feasible_plan",
+        "query": 1,
+        "removed_ids": [
+          "c2"
+        ]
+      }
+    ]
+  },
+  {
+    "correct": true,
+    "journey_id": "081218a73701ce807b72",
+    "judgment": {
+      "reason": "Journey meets all specified requirements including departure time, arrival time, and route.",
+      "spans": [
+        {
+          "end": 5,
+          "start": 0
+        }
+      ],
+      "verdict": "satisfied"
+    },
+    "reference_label": true,
+    "scenario_id": "pilot-44",
+    "uses": [
+      {
+        "method": "D",
+        "model_final": "correct_feasible_plan",
+        "oracle_final": "correct_feasible_plan",
+        "query": 1,
+        "removed_ids": [
+          "c3"
+        ]
+      },
+      {
+        "method": "E",
+        "model_final": "correct_feasible_plan",
+        "oracle_final": "correct_feasible_plan",
+        "query": 1,
+        "removed_ids": [
+          "c3"
+        ]
+      }
+    ]
+  },
+  {
+    "correct": true,
+    "journey_id": "00e4b6b8ab7e5a7d0d65",
+    "judgment": {
+      "reason": "The journey meets all specified requirements including the correct stops, number of transfers, and departure time.",
+      "spans": [
+        {
+          "end": 5,
+          "start": 0
+        }
+      ],
+      "verdict": "satisfied"
+    },
+    "reference_label": true,
+    "scenario_id": "pilot-47",
+    "uses": [
+      {
+        "method": "D",
+        "model_final": "correct_feasible_plan",
+        "oracle_final": "correct_feasible_plan",
+        "query": 1,
+        "removed_ids": [
+          "c0"
+        ]
+      },
+      {
+        "method": "E",
+        "model_final": "correct_feasible_plan",
+        "oracle_final": "correct_feasible_plan",
+        "query": 1,
+        "removed_ids": [
+          "c0"
+        ]
+      }
+    ]
+  }
+]

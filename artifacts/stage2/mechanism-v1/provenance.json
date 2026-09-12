@@ -1,0 +1,33 @@
+{
+  "expanded_pool_config": {
+    "base_groups": 6,
+    "bbox": [
+      45.5,
+      -122.69,
+      45.54,
+      -122.64
+    ],
+    "end_s": 36000,
+    "feed_sha256": "82e6b822de008367b3d3d35bb52545807ea41b6f56623a9aa4b1162b3d54671b",
+    "joint_pool_limit": 100000,
+    "max_rides_per_segment": 2,
+    "minimum_connection_s": 120,
+    "route_limit": 3,
+    "segment_pool_limit": 2000,
+    "service_date": "2026-09-14",
+    "source": "https://developer.trimet.org/schedule/gtfs.zip",
+    "start_s": 25200
+  },
+  "expansion_scope": "CPU-only uncapped sensitivity on same feed, routes, dates and two-ride bound; primary pools and outputs unchanged",
+  "feed_sha256": "82e6b822de008367b3d3d35bb52545807ea41b6f56623a9aa4b1162b3d54671b",
+  "ledger_sha256_before_and_after": "87e13933af847422ec777cd996f6916ea565d8a2aed218165cb51ac2d632783d",
+  "new_gpu_generations": 0,
+  "new_gpu_seconds": 0,
+  "reference_sha256": "7c41c9b77ace6e82a2ef4713851752c88fb146d773fdb3b4d4e815ceb15910d6",
+  "script_sha256": "392356170405a8483c7b5c2532ab53a3e4fd076083031b3b67e9035bf0597a37",
+  "source_manifest_sha256": "29ad5bb469f3f64a4961da04cde274d7281fd246e975a6857293933a8bdcff2d",
+  "source_run": "runs/stage2-pilot-v1",
+  "starting_revision": "06cefbc0eacf28350b3a3683cc1944b9ae9589a7",
+  "time_sensitivity_scope": "posthoc source-only AST value substitution; no new extraction generations; oracle branch explicitly privileged",
+  "verified_raw_files": 152
+}

@@ -24,7 +24,10 @@ in 2/48 cases and no correctness wins or losses. CPU oracle replay reached 35/48
 both. The run used 358 generations and 681.62 measured GPU seconds; all 48 pairs
 replayed exactly. No consequence-selection advantage was demonstrated.
 
-Candidate coverage and judgment errors need a bounded follow-up before expansion.
+The [CPU mechanism diagnosis](reports/STAGE2_MECHANISM_DIAGNOSIS.md) compares budget 0
+with validation: 31/48 → 33/48, with three recoveries and one deterioration. It explains
+the rare selector divergence and recommends an annotation and data-coverage gate
+before further inference. No new GPU work was used for that diagnosis.
 See [compact fresh results](artifacts/stage2/pilot-v1),
 [figures](artifacts/stage2/pilot-figures), [frozen protocol](docs/stage2-protocol.md),
 [provisional annotation review](data/pilot/annotation-review.csv), and

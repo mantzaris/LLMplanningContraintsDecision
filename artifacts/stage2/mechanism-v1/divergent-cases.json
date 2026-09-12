@@ -1,0 +1,4889 @@
+[
+  {
+    "budgets": {
+      "D": [
+        {
+          "budget": 0,
+          "judgments": 0,
+          "plan_id": "0e81a91bb035a1d8574d",
+          "recorded_events": [],
+          "remaining_ids": [
+            "c0",
+            "c1",
+            "c2"
+          ],
+          "remaining_witnesses": 16,
+          "status": "satisfiable",
+          "stop": "judgment_budget_limit"
+        },
+        {
+          "budget": 1,
+          "judgments": 1,
+          "plan_id": "0e81a91bb035a1d8574d",
+          "recorded_events": [
+            "no_distinguishing_witness_in_completed_pool"
+          ],
+          "remaining_ids": [
+            "c0"
+          ],
+          "remaining_witnesses": 0,
+          "status": "satisfiable",
+          "stop": "one_class_no_witness"
+        },
+        {
+          "budget": 2,
+          "judgments": 1,
+          "plan_id": "0e81a91bb035a1d8574d",
+          "recorded_events": [
+            "no_distinguishing_witness_in_completed_pool"
+          ],
+          "remaining_ids": [
+            "c0"
+          ],
+          "remaining_witnesses": 0,
+          "status": "satisfiable",
+          "stop": "one_class_no_witness"
+        },
+        {
+          "budget": 4,
+          "judgments": 1,
+          "plan_id": "0e81a91bb035a1d8574d",
+          "recorded_events": [
+            "no_distinguishing_witness_in_completed_pool"
+          ],
+          "remaining_ids": [
+            "c0"
+          ],
+          "remaining_witnesses": 0,
+          "status": "satisfiable",
+          "stop": "one_class_no_witness"
+        }
+      ],
+      "E": [
+        {
+          "budget": 0,
+          "judgments": 0,
+          "plan_id": "0e81a91bb035a1d8574d",
+          "recorded_events": [],
+          "remaining_ids": [
+            "c0",
+            "c1",
+            "c2"
+          ],
+          "remaining_witnesses": 16,
+          "status": "satisfiable",
+          "stop": "judgment_budget_limit"
+        },
+        {
+          "budget": 1,
+          "judgments": 1,
+          "plan_id": "0e81a91bb035a1d8574d",
+          "recorded_events": [],
+          "remaining_ids": [
+            "c0",
+            "c2"
+          ],
+          "remaining_witnesses": 9,
+          "status": "satisfiable",
+          "stop": "judgment_budget_limit"
+        },
+        {
+          "budget": 2,
+          "judgments": 2,
+          "plan_id": "0e81a91bb035a1d8574d",
+          "recorded_events": [
+            "no_distinguishing_witness_in_completed_pool"
+          ],
+          "remaining_ids": [
+            "c0"
+          ],
+          "remaining_witnesses": 0,
+          "status": "satisfiable",
+          "stop": "one_class_no_witness"
+        },
+        {
+          "budget": 4,
+          "judgments": 2,
+          "plan_id": "0e81a91bb035a1d8574d",
+          "recorded_events": [
+            "no_distinguishing_witness_in_completed_pool"
+          ],
+          "remaining_ids": [
+            "c0"
+          ],
+          "remaining_witnesses": 0,
+          "status": "satisfiable",
+          "stop": "one_class_no_witness"
+        }
+      ]
+    },
+    "candidate_plans": [
+      {
+        "accepted": 16,
+        "aliases": [
+          "c0",
+          "c3"
+        ],
+        "formula": {
+          "children": [
+            {
+              "kind": "atom",
+              "op": "depart_ge",
+              "scope": "outbound",
+              "source": null,
+              "unit": "seconds",
+              "value": 30177
+            },
+            {
+              "kind": "atom",
+              "op": "arrive_by",
+              "scope": "outbound",
+              "source": null,
+              "unit": "seconds",
+              "value": 35425
+            }
+          ],
+          "kind": "all",
+          "source": null
+        },
+        "id": "c0",
+        "plan_id": "0e81a91bb035a1d8574d",
+        "reference_equivalent": false,
+        "selected_plan_reference_valid": true,
+        "status": "satisfiable"
+      },
+      {
+        "accepted": 0,
+        "aliases": [
+          "c1"
+        ],
+        "formula": {
+          "children": [
+            {
+              "kind": "atom",
+              "op": "depart_ge",
+              "scope": "outbound",
+              "source": null,
+              "unit": "seconds",
+              "value": 302517
+            },
+            {
+              "kind": "atom",
+              "op": "arrive_by",
+              "scope": "outbound",
+              "source": null,
+              "unit": "seconds",
+              "value": 354025
+            }
+          ],
+          "kind": "all",
+          "source": null
+        },
+        "id": "c1",
+        "plan_id": null,
+        "reference_equivalent": false,
+        "selected_plan_reference_valid": null,
+        "status": "infeasible_in_pool"
+      },
+      {
+        "accepted": 7,
+        "aliases": [
+          "c2"
+        ],
+        "formula": {
+          "children": [
+            {
+              "kind": "atom",
+              "op": "depart_ge",
+              "scope": "outbound",
+              "source": null,
+              "unit": "seconds",
+              "value": 30097
+            },
+            {
+              "kind": "atom",
+              "op": "arrive_by",
+              "scope": "outbound",
+              "source": null,
+              "unit": "seconds",
+              "value": 34202
+            }
+          ],
+          "kind": "all",
+          "source": null
+        },
+        "id": "c2",
+        "plan_id": "0e81a91bb035a1d8574d",
+        "reference_equivalent": false,
+        "selected_plan_reference_valid": true,
+        "status": "satisfiable"
+      }
+    ],
+    "canonical_duplicates": 0,
+    "divergent_outputs": {
+      "model": {
+        "D": {
+          "category": "correct_feasible_plan",
+          "events": [
+            "no_distinguishing_witness_in_completed_pool"
+          ],
+          "formula": {
+            "children": [
+              {
+                "kind": "atom",
+                "op": "depart_ge",
+                "scope": "outbound",
+                "source": null,
+                "unit": "seconds",
+                "value": 30177
+              },
+              {
+                "kind": "atom",
+                "op": "arrive_by",
+                "scope": "outbound",
+                "source": null,
+                "unit": "seconds",
+                "value": 35425
+              }
+            ],
+            "kind": "all",
+            "source": null
+          },
+          "judgments": [
+            {
+              "journey_id": "002ee67351572c9abe93",
+              "judgment": {
+                "reason": "Journey meets all specified requirements including departure and arrival times, stops, and number of transfers.",
+                "spans": [
+                  {
+                    "end": 5,
+                    "start": 0
+                  }
+                ],
+                "verdict": "satisfied"
+              },
+              "raw": "```json\n{\n  \"verdict\": \"satisfied\",\n  \"spans\": [\n    {\"start\": 0, \"end\": 5}\n  ],\n  \"reason\": \"Journey meets all specified requirements including departure and arrival times, stops, and number of transfers.\"\n}\n```"
+            }
+          ],
+          "plan_id": "0e81a91bb035a1d8574d",
+          "relative_arrival_vs_D_seconds": 0,
+          "repairs": [],
+          "witnesses": [
+            {
+              "cost": 1,
+              "journey_id": "002ee67351572c9abe93",
+              "policy": "balanced",
+              "score": 2.0,
+              "score_numerator": 2,
+              "separated_pairs": [
+                [
+                  "c0",
+                  "c1",
+                  1
+                ],
+                [
+                  "c0",
+                  "c2",
+                  0
+                ]
+              ]
+            }
+          ]
+        },
+        "E": {
+          "category": "correct_feasible_plan",
+          "events": [
+            "no_distinguishing_witness_in_completed_pool"
+          ],
+          "formula": {
+            "children": [
+              {
+                "kind": "atom",
+                "op": "depart_ge",
+                "scope": "outbound",
+                "source": null,
+                "unit": "seconds",
+                "value": 30177
+              },
+              {
+                "kind": "atom",
+                "op": "arrive_by",
+                "scope": "outbound",
+                "source": null,
+                "unit": "seconds",
+                "value": 35425
+              }
+            ],
+            "kind": "all",
+            "source": null
+          },
+          "judgments": [
+            {
+              "journey_id": "00b30b64cd73de674651",
+              "judgment": {
+                "reason": "Journey meets all specified requirements including departure time, arrival time, and stops.",
+                "spans": [
+                  {
+                    "end": 5,
+                    "start": 0
+                  }
+                ],
+                "verdict": "satisfied"
+              },
+              "raw": "```json\n{\n  \"verdict\": \"satisfied\",\n  \"spans\": [\n    {\"start\": 0, \"end\": 5}\n  ],\n  \"reason\": \"Journey meets all specified requirements including departure time, arrival time, and stops.\"\n}\n```"
+            },
+            {
+              "journey_id": "002ee67351572c9abe93",
+              "judgment": {
+                "reason": "Journey meets all specified requirements including departure and arrival times, stops, and number of transfers.",
+                "spans": [
+                  {
+                    "end": 5,
+                    "start": 0
+                  }
+                ],
+                "verdict": "satisfied"
+              },
+              "raw": "```json\n{\n  \"verdict\": \"satisfied\",\n  \"spans\": [\n    {\"start\": 0, \"end\": 5}\n  ],\n  \"reason\": \"Journey meets all specified requirements including departure and arrival times, stops, and number of transfers.\"\n}\n```"
+            }
+          ],
+          "plan_id": "0e81a91bb035a1d8574d",
+          "relative_arrival_vs_D_seconds": 0,
+          "repairs": [],
+          "witnesses": [
+            {
+              "cost": 1,
+              "journey_id": "00b30b64cd73de674651",
+              "policy": "consequence",
+              "score": 4.0,
+              "score_numerator": 4,
+              "separated_pairs": [
+                [
+                  "c0",
+                  "c1",
+                  1
+                ],
+                [
+                  "c1",
+                  "c2",
+                  1
+                ]
+              ]
+            },
+            {
+              "cost": 1,
+              "journey_id": "002ee67351572c9abe93",
+              "policy": "consequence",
+              "score": 1.0,
+              "score_numerator": 1,
+              "separated_pairs": [
+                [
+                  "c0",
+                  "c2",
+                  0
+                ]
+              ]
+            }
+          ]
+        }
+      },
+      "oracle": {
+        "D": {
+          "category": "correct_feasible_plan",
+          "events": [
+            "no_distinguishing_witness_in_completed_pool"
+          ],
+          "formula": {
+            "children": [
+              {
+                "kind": "atom",
+                "op": "depart_ge",
+                "scope": "outbound",
+                "source": null,
+                "unit": "seconds",
+                "value": 30177
+              },
+              {
+                "kind": "atom",
+                "op": "arrive_by",
+                "scope": "outbound",
+                "source": null,
+                "unit": "seconds",
+                "value": 35425
+              }
+            ],
+            "kind": "all",
+            "source": null
+          },
+          "judgments": [
+            {
+              "journey_id": "002ee67351572c9abe93",
+              "judgment": {
+                "reason": "privileged independent reference evaluator",
+                "spans": [],
+                "verdict": "satisfied"
+              }
+            }
+          ],
+          "plan_id": "0e81a91bb035a1d8574d",
+          "relative_arrival_vs_D_seconds": 0,
+          "repairs": [],
+          "witnesses": [
+            {
+              "cost": 1,
+              "journey_id": "002ee67351572c9abe93",
+              "policy": "balanced",
+              "score": 2.0,
+              "score_numerator": 2,
+              "separated_pairs": [
+                [
+                  "c0",
+                  "c1",
+                  1
+                ],
+                [
+                  "c0",
+                  "c2",
+                  0
+                ]
+              ]
+            }
+          ]
+        },
+        "E": {
+          "category": "correct_feasible_plan",
+          "events": [
+            "no_distinguishing_witness_in_completed_pool"
+          ],
+          "formula": {
+            "children": [
+              {
+                "kind": "atom",
+                "op": "depart_ge",
+                "scope": "outbound",
+                "source": null,
+                "unit": "seconds",
+                "value": 30177
+              },
+              {
+                "kind": "atom",
+                "op": "arrive_by",
+                "scope": "outbound",
+                "source": null,
+                "unit": "seconds",
+                "value": 35425
+              }
+            ],
+            "kind": "all",
+            "source": null
+          },
+          "judgments": [
+            {
+              "journey_id": "00b30b64cd73de674651",
+              "judgment": {
+                "reason": "privileged independent reference evaluator",
+                "spans": [],
+                "verdict": "satisfied"
+              }
+            },
+            {
+              "journey_id": "002ee67351572c9abe93",
+              "judgment": {
+                "reason": "privileged independent reference evaluator",
+                "spans": [],
+                "verdict": "satisfied"
+              }
+            }
+          ],
+          "plan_id": "0e81a91bb035a1d8574d",
+          "relative_arrival_vs_D_seconds": 0,
+          "repairs": [],
+          "witnesses": [
+            {
+              "cost": 1,
+              "journey_id": "00b30b64cd73de674651",
+              "policy": "consequence",
+              "score": 4.0,
+              "score_numerator": 4,
+              "separated_pairs": [
+                [
+                  "c0",
+                  "c1",
+                  1
+                ],
+                [
+                  "c1",
+                  "c2",
+                  1
+                ]
+              ]
+            },
+            {
+              "cost": 1,
+              "journey_id": "002ee67351572c9abe93",
+              "policy": "consequence",
+              "score": 1.0,
+              "score_numerator": 1,
+              "separated_pairs": [
+                [
+                  "c0",
+                  "c2",
+                  0
+                ]
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "exact_text_duplicates": 0,
+    "exclusive_equivalence_cause": "different_first",
+    "family": "timing",
+    "initial_state": {
+      "active_ids": [
+        "c0",
+        "c1",
+        "c2"
+      ],
+      "constant_weights": false,
+      "patterns": {
+        "000": 48,
+        "100": 9,
+        "101": 7
+      },
+      "ranks": {
+        "D": [
+          {
+            "cost": 1,
+            "journey_id": "002ee67351572c9abe93",
+            "score_numerator": 2
+          },
+          {
+            "cost": 1,
+            "journey_id": "00b30b64cd73de674651",
+            "score_numerator": 2
+          },
+          {
+            "cost": 1,
+            "journey_id": "02b417eb9717198b2829",
+            "score_numerator": 2
+          },
+          {
+            "cost": 1,
+            "journey_id": "0bd6f8987cbcbc5763d8",
+            "score_numerator": 2
+          },
+          {
+            "cost": 1,
+            "journey_id": "0d830fff356828b351e8",
+            "score_numerator": 2
+          },
+          {
+            "cost": 1,
+            "journey_id": "0e573b09afcf87ca0400",
+            "score_numerator": 2
+          },
+          {
+            "cost": 1,
+            "journey_id": "0e81a91bb035a1d8574d",
+            "score_numerator": 2
+          },
+          {
+            "cost": 1,
+            "journey_id": "0f6f3f1543bf2cbdef39",
+            "score_numerator": 2
+          },
+          {
+            "cost": 1,
+            "journey_id": "0fb76adb26b891655d35",
+            "score_numerator": 2
+          },
+          {
+            "cost": 1,
+            "journey_id": "1030f322f49cb4df195e",
+            "score_numerator": 2
+          },
+          {
+            "cost": 1,
+            "journey_id": "11cdd991dd1a84bf2f9e",
+            "score_numerator": 2
+          },
+          {
+            "cost": 1,
+            "journey_id": "134c82b1ad48dc8e9554",
+            "score_numerator": 2
+          },
+          {
+            "cost": 1,
+            "journey_id": "177a7a4a9dfef32701b4",
+            "score_numerator": 2
+          },
+          {
+            "cost": 1,
+            "journey_id": "18bd0a9267e0956d784b",
+            "score_numerator": 2
+          },
+          {
+            "cost": 1,
+            "journey_id": "18cbadb02cfa61e0139d",
+            "score_numerator": 2
+          },
+          {
+            "cost": 1,
+            "journey_id": "1af6fd2bd6937f00f605",
+            "score_numerator": 2
+          }
+        ],
+        "E": [
+          {
+            "cost": 1,
+            "journey_id": "00b30b64cd73de674651",
+            "score_numerator": 4
+          },
+          {
+            "cost": 1,
+            "journey_id": "0e81a91bb035a1d8574d",
+            "score_numerator": 4
+          },
+          {
+            "cost": 1,
+            "journey_id": "0f6f3f1543bf2cbdef39",
+            "score_numerator": 4
+          },
+          {
+            "cost": 1,
+            "journey_id": "0fb76adb26b891655d35",
+            "score_numerator": 4
+          },
+          {
+            "cost": 1,
+            "journey_id": "11cdd991dd1a84bf2f9e",
+            "score_numerator": 4
+          },
+          {
+            "cost": 1,
+            "journey_id": "134c82b1ad48dc8e9554",
+            "score_numerator": 4
+          },
+          {
+            "cost": 1,
+            "journey_id": "1af6fd2bd6937f00f605",
+            "score_numerator": 4
+          },
+          {
+            "cost": 1,
+            "journey_id": "002ee67351572c9abe93",
+            "score_numerator": 3
+          },
+          {
+            "cost": 1,
+            "journey_id": "02b417eb9717198b2829",
+            "score_numerator": 3
+          },
+          {
+            "cost": 1,
+            "journey_id": "0bd6f8987cbcbc5763d8",
+            "score_numerator": 3
+          },
+          {
+            "cost": 1,
+            "journey_id": "0d830fff356828b351e8",
+            "score_numerator": 3
+          },
+          {
+            "cost": 1,
+            "journey_id": "0e573b09afcf87ca0400",
+            "score_numerator": 3
+          },
+          {
+            "cost": 1,
+            "journey_id": "1030f322f49cb4df195e",
+            "score_numerator": 3
+          },
+          {
+            "cost": 1,
+            "journey_id": "177a7a4a9dfef32701b4",
+            "score_numerator": 3
+          },
+          {
+            "cost": 1,
+            "journey_id": "18bd0a9267e0956d784b",
+            "score_numerator": 3
+          },
+          {
+            "cost": 1,
+            "journey_id": "18cbadb02cfa61e0139d",
+            "score_numerator": 3
+          }
+        ]
+      },
+      "same_choice": false,
+      "same_ranking": false,
+      "shared_top_tiebreak": false,
+      "single_partition": false,
+      "top_ids": {
+        "D": [
+          "002ee67351572c9abe93",
+          "00b30b64cd73de674651",
+          "02b417eb9717198b2829",
+          "0bd6f8987cbcbc5763d8",
+          "0d830fff356828b351e8",
+          "0e573b09afcf87ca0400",
+          "0e81a91bb035a1d8574d",
+          "0f6f3f1543bf2cbdef39",
+          "0fb76adb26b891655d35",
+          "1030f322f49cb4df195e",
+          "11cdd991dd1a84bf2f9e",
+          "134c82b1ad48dc8e9554",
+          "177a7a4a9dfef32701b4",
+          "18bd0a9267e0956d784b",
+          "18cbadb02cfa61e0139d",
+          "1af6fd2bd6937f00f605"
+        ],
+        "E": [
+          "00b30b64cd73de674651",
+          "0e81a91bb035a1d8574d",
+          "0f6f3f1543bf2cbdef39",
+          "0fb76adb26b891655d35",
+          "11cdd991dd1a84bf2f9e",
+          "134c82b1ad48dc8e9554",
+          "1af6fd2bd6937f00f605"
+        ]
+      },
+      "weights": [
+        {
+          "I": 1,
+          "ids": [
+            "c0",
+            "c1"
+          ],
+          "weight": 2
+        },
+        {
+          "I": 0,
+          "ids": [
+            "c0",
+            "c2"
+          ],
+          "weight": 1
+        },
+        {
+          "I": 1,
+          "ids": [
+            "c1",
+            "c2"
+          ],
+          "weight": 2
+        }
+      ],
+      "witness_count": 16,
+      "witness_partitions": {
+        "010": 7,
+        "011": 9
+      }
+    },
+    "parsed": 4,
+    "pool_size": 64,
+    "query_states": {
+      "D": [
+        {
+          "active_ids": [
+            "c0",
+            "c1",
+            "c2"
+          ],
+          "after_ids": [
+            "c0"
+          ],
+          "after_plan_id": "0e81a91bb035a1d8574d",
+          "before_plan_id": "0e81a91bb035a1d8574d",
+          "constant_weights": false,
+          "judgment": {
+            "reason": "Journey meets all specified requirements including departure and arrival times, stops, and number of transfers.",
+            "spans": [
+              {
+                "end": 5,
+                "start": 0
+              }
+            ],
+            "verdict": "satisfied"
+          },
+          "patterns": {
+            "000": 48,
+            "100": 9,
+            "101": 7
+          },
+          "ranks": {
+            "D": [
+              {
+                "cost": 1,
+                "journey_id": "002ee67351572c9abe93",
+                "score_numerator": 2
+              },
+              {
+                "cost": 1,
+                "journey_id": "00b30b64cd73de674651",
+                "score_numerator": 2
+              },
+              {
+                "cost": 1,
+                "journey_id": "02b417eb9717198b2829",
+                "score_numerator": 2
+              },
+              {
+                "cost": 1,
+                "journey_id": "0bd6f8987cbcbc5763d8",
+                "score_numerator": 2
+              },
+              {
+                "cost": 1,
+                "journey_id": "0d830fff356828b351e8",
+                "score_numerator": 2
+              },
+              {
+                "cost": 1,
+                "journey_id": "0e573b09afcf87ca0400",
+                "score_numerator": 2
+              },
+              {
+                "cost": 1,
+                "journey_id": "0e81a91bb035a1d8574d",
+                "score_numerator": 2
+              },
+              {
+                "cost": 1,
+                "journey_id": "0f6f3f1543bf2cbdef39",
+                "score_numerator": 2
+              },
+              {
+                "cost": 1,
+                "journey_id": "0fb76adb26b891655d35",
+                "score_numerator": 2
+              },
+              {
+                "cost": 1,
+                "journey_id": "1030f322f49cb4df195e",
+                "score_numerator": 2
+              },
+              {
+                "cost": 1,
+                "journey_id": "11cdd991dd1a84bf2f9e",
+                "score_numerator": 2
+              },
+              {
+                "cost": 1,
+                "journey_id": "134c82b1ad48dc8e9554",
+                "score_numerator": 2
+              },
+              {
+                "cost": 1,
+                "journey_id": "177a7a4a9dfef32701b4",
+                "score_numerator": 2
+              },
+              {
+                "cost": 1,
+                "journey_id": "18bd0a9267e0956d784b",
+                "score_numerator": 2
+              },
+              {
+                "cost": 1,
+                "journey_id": "18cbadb02cfa61e0139d",
+                "score_numerator": 2
+              },
+              {
+                "cost": 1,
+                "journey_id": "1af6fd2bd6937f00f605",
+                "score_numerator": 2
+              }
+            ],
+            "E": [
+              {
+                "cost": 1,
+                "journey_id": "00b30b64cd73de674651",
+                "score_numerator": 4
+              },
+              {
+                "cost": 1,
+                "journey_id": "0e81a91bb035a1d8574d",
+                "score_numerator": 4
+              },
+              {
+                "cost": 1,
+                "journey_id": "0f6f3f1543bf2cbdef39",
+                "score_numerator": 4
+              },
+              {
+                "cost": 1,
+                "journey_id": "0fb76adb26b891655d35",
+                "score_numerator": 4
+              },
+              {
+                "cost": 1,
+                "journey_id": "11cdd991dd1a84bf2f9e",
+                "score_numerator": 4
+              },
+              {
+                "cost": 1,
+                "journey_id": "134c82b1ad48dc8e9554",
+                "score_numerator": 4
+              },
+              {
+                "cost": 1,
+                "journey_id": "1af6fd2bd6937f00f605",
+                "score_numerator": 4
+              },
+              {
+                "cost": 1,
+                "journey_id": "002ee67351572c9abe93",
+                "score_numerator": 3
+              },
+              {
+                "cost": 1,
+                "journey_id": "02b417eb9717198b2829",
+                "score_numerator": 3
+              },
+              {
+                "cost": 1,
+                "journey_id": "0bd6f8987cbcbc5763d8",
+                "score_numerator": 3
+              },
+              {
+                "cost": 1,
+                "journey_id": "0d830fff356828b351e8",
+                "score_numerator": 3
+              },
+              {
+                "cost": 1,
+                "journey_id": "0e573b09afcf87ca0400",
+                "score_numerator": 3
+              },
+              {
+                "cost": 1,
+                "journey_id": "1030f322f49cb4df195e",
+                "score_numerator": 3
+              },
+              {
+                "cost": 1,
+                "journey_id": "177a7a4a9dfef32701b4",
+                "score_numerator": 3
+              },
+              {
+                "cost": 1,
+                "journey_id": "18bd0a9267e0956d784b",
+                "score_numerator": 3
+              },
+              {
+                "cost": 1,
+                "journey_id": "18cbadb02cfa61e0139d",
+                "score_numerator": 3
+              }
+            ]
+          },
+          "same_choice": false,
+          "same_ranking": false,
+          "selected": {
+            "cost": 1,
+            "journey_id": "002ee67351572c9abe93",
+            "policy": "balanced",
+            "score": 2.0,
+            "score_numerator": 2,
+            "separated_pairs": [
+              [
+                "c0",
+                "c1",
+                1
+              ],
+              [
+                "c0",
+                "c2",
+                0
+              ]
+            ]
+          },
+          "shared_top_tiebreak": false,
+          "single_partition": false,
+          "top_ids": {
+            "D": [
+              "002ee67351572c9abe93",
+              "00b30b64cd73de674651",
+              "02b417eb9717198b2829",
+              "0bd6f8987cbcbc5763d8",
+              "0d830fff356828b351e8",
+              "0e573b09afcf87ca0400",
+              "0e81a91bb035a1d8574d",
+              "0f6f3f1543bf2cbdef39",
+              "0fb76adb26b891655d35",
+              "1030f322f49cb4df195e",
+              "11cdd991dd1a84bf2f9e",
+              "134c82b1ad48dc8e9554",
+              "177a7a4a9dfef32701b4",
+              "18bd0a9267e0956d784b",
+              "18cbadb02cfa61e0139d",
+              "1af6fd2bd6937f00f605"
+            ],
+            "E": [
+              "00b30b64cd73de674651",
+              "0e81a91bb035a1d8574d",
+              "0f6f3f1543bf2cbdef39",
+              "0fb76adb26b891655d35",
+              "11cdd991dd1a84bf2f9e",
+              "134c82b1ad48dc8e9554",
+              "1af6fd2bd6937f00f605"
+            ]
+          },
+          "weights": [
+            {
+              "I": 1,
+              "ids": [
+                "c0",
+                "c1"
+              ],
+              "weight": 2
+            },
+            {
+              "I": 0,
+              "ids": [
+                "c0",
+                "c2"
+              ],
+              "weight": 1
+            },
+            {
+              "I": 1,
+              "ids": [
+                "c1",
+                "c2"
+              ],
+              "weight": 2
+            }
+          ],
+          "witness_count": 16,
+          "witness_partitions": {
+            "010": 7,
+            "011": 9
+          }
+        }
+      ],
+      "E": [
+        {
+          "active_ids": [
+            "c0",
+            "c1",
+            "c2"
+          ],
+          "after_ids": [
+            "c0",
+            "c2"
+          ],
+          "after_plan_id": "0e81a91bb035a1d8574d",
+          "before_plan_id": "0e81a91bb035a1d8574d",
+          "constant_weights": false,
+          "judgment": {
+            "reason": "Journey meets all specified requirements including departure time, arrival time, and stops.",
+            "spans": [
+              {
+                "end": 5,
+                "start": 0
+              }
+            ],
+            "verdict": "satisfied"
+          },
+          "patterns": {
+            "000": 48,
+            "100": 9,
+            "101": 7
+          },
+          "ranks": {
+            "D": [
+              {
+                "cost": 1,
+                "journey_id": "002ee67351572c9abe93",
+                "score_numerator": 2
+              },
+              {
+                "cost": 1,
+                "journey_id": "00b30b64cd73de674651",
+                "score_numerator": 2
+              },
+              {
+                "cost": 1,
+                "journey_id": "02b417eb9717198b2829",
+                "score_numerator": 2
+              },
+              {
+                "cost": 1,
+                "journey_id": "0bd6f8987cbcbc5763d8",
+                "score_numerator": 2
+              },
+              {
+                "cost": 1,
+                "journey_id": "0d830fff356828b351e8",
+                "score_numerator": 2
+              },
+              {
+                "cost": 1,
+                "journey_id": "0e573b09afcf87ca0400",
+                "score_numerator": 2
+              },
+              {
+                "cost": 1,
+                "journey_id": "0e81a91bb035a1d8574d",
+                "score_numerator": 2
+              },
+              {
+                "cost": 1,
+                "journey_id": "0f6f3f1543bf2cbdef39",
+                "score_numerator": 2
+              },
+              {
+                "cost": 1,
+                "journey_id": "0fb76adb26b891655d35",
+                "score_numerator": 2
+              },
+              {
+                "cost": 1,
+                "journey_id": "1030f322f49cb4df195e",
+                "score_numerator": 2
+              },
+              {
+                "cost": 1,
+                "journey_id": "11cdd991dd1a84bf2f9e",
+                "score_numerator": 2
+              },
+              {
+                "cost": 1,
+                "journey_id": "134c82b1ad48dc8e9554",
+                "score_numerator": 2
+              },
+              {
+                "cost": 1,
+                "journey_id": "177a7a4a9dfef32701b4",
+                "score_numerator": 2
+              },
+              {
+                "cost": 1,
+                "journey_id": "18bd0a9267e0956d784b",
+                "score_numerator": 2
+              },
+              {
+                "cost": 1,
+                "journey_id": "18cbadb02cfa61e0139d",
+                "score_numerator": 2
+              },
+              {
+                "cost": 1,
+                "journey_id": "1af6fd2bd6937f00f605",
+                "score_numerator": 2
+              }
+            ],
+            "E": [
+              {
+                "cost": 1,
+                "journey_id": "00b30b64cd73de674651",
+                "score_numerator": 4
+              },
+              {
+                "cost": 1,
+                "journey_id": "0e81a91bb035a1d8574d",
+                "score_numerator": 4
+              },
+              {
+                "cost": 1,
+                "journey_id": "0f6f3f1543bf2cbdef39",
+                "score_numerator": 4
+              },
+              {
+                "cost": 1,
+                "journey_id": "0fb76adb26b891655d35",
+                "score_numerator": 4
+              },
+              {
+                "cost": 1,
+                "journey_id": "11cdd991dd1a84bf2f9e",
+                "score_numerator": 4
+              },
+              {
+                "cost": 1,
+                "journey_id": "134c82b1ad48dc8e9554",
+                "score_numerator": 4
+              },
+              {
+                "cost": 1,
+                "journey_id": "1af6fd2bd6937f00f605",
+                "score_numerator": 4
+              },
+              {
+                "cost": 1,
+                "journey_id": "002ee67351572c9abe93",
+                "score_numerator": 3
+              },
+              {
+                "cost": 1,
+                "journey_id": "02b417eb9717198b2829",
+                "score_numerator": 3
+              },
+              {
+                "cost": 1,
+                "journey_id": "0bd6f8987cbcbc5763d8",
+                "score_numerator": 3
+              },
+              {
+                "cost": 1,
+                "journey_id": "0d830fff356828b351e8",
+                "score_numerator": 3
+              },
+              {
+                "cost": 1,
+                "journey_id": "0e573b09afcf87ca0400",
+                "score_numerator": 3
+              },
+              {
+                "cost": 1,
+                "journey_id": "1030f322f49cb4df195e",
+                "score_numerator": 3
+              },
+              {
+                "cost": 1,
+                "journey_id": "177a7a4a9dfef32701b4",
+                "score_numerator": 3
+              },
+              {
+                "cost": 1,
+                "journey_id": "18bd0a9267e0956d784b",
+                "score_numerator": 3
+              },
+              {
+                "cost": 1,
+                "journey_id": "18cbadb02cfa61e0139d",
+                "score_numerator": 3
+              }
+            ]
+          },
+          "same_choice": false,
+          "same_ranking": false,
+          "selected": {
+            "cost": 1,
+            "journey_id": "00b30b64cd73de674651",
+            "policy": "consequence",
+            "score": 4.0,
+            "score_numerator": 4,
+            "separated_pairs": [
+              [
+                "c0",
+                "c1",
+                1
+              ],
+              [
+                "c1",
+                "c2",
+                1
+              ]
+            ]
+          },
+          "shared_top_tiebreak": false,
+          "single_partition": false,
+          "top_ids": {
+            "D": [
+              "002ee67351572c9abe93",
+              "00b30b64cd73de674651",
+              "02b417eb9717198b2829",
+              "0bd6f8987cbcbc5763d8",
+              "0d830fff356828b351e8",
+              "0e573b09afcf87ca0400",
+              "0e81a91bb035a1d8574d",
+              "0f6f3f1543bf2cbdef39",
+              "0fb76adb26b891655d35",
+              "1030f322f49cb4df195e",
+              "11cdd991dd1a84bf2f9e",
+              "134c82b1ad48dc8e9554",
+              "177a7a4a9dfef32701b4",
+              "18bd0a9267e0956d784b",
+              "18cbadb02cfa61e0139d",
+              "1af6fd2bd6937f00f605"
+            ],
+            "E": [
+              "00b30b64cd73de674651",
+              "0e81a91bb035a1d8574d",
+              "0f6f3f1543bf2cbdef39",
+              "0fb76adb26b891655d35",
+              "11cdd991dd1a84bf2f9e",
+              "134c82b1ad48dc8e9554",
+              "1af6fd2bd6937f00f605"
+            ]
+          },
+          "weights": [
+            {
+              "I": 1,
+              "ids": [
+                "c0",
+                "c1"
+              ],
+              "weight": 2
+            },
+            {
+              "I": 0,
+              "ids": [
+                "c0",
+                "c2"
+              ],
+              "weight": 1
+            },
+            {
+              "I": 1,
+              "ids": [
+                "c1",
+                "c2"
+              ],
+              "weight": 2
+            }
+          ],
+          "witness_count": 16,
+          "witness_partitions": {
+            "010": 7,
+            "011": 9
+          }
+        },
+        {
+          "active_ids": [
+            "c0",
+            "c2"
+          ],
+          "after_ids": [
+            "c0"
+          ],
+          "after_plan_id": "0e81a91bb035a1d8574d",
+          "before_plan_id": "0e81a91bb035a1d8574d",
+          "constant_weights": true,
+          "judgment": {
+            "reason": "Journey meets all specified requirements including departure and arrival times, stops, and number of transfers.",
+            "spans": [
+              {
+                "end": 5,
+                "start": 0
+              }
+            ],
+            "verdict": "satisfied"
+          },
+          "patterns": {
+            "00": 48,
+            "10": 9,
+            "11": 6
+          },
+          "ranks": {
+            "D": [
+              {
+                "cost": 1,
+                "journey_id": "002ee67351572c9abe93",
+                "score_numerator": 1
+              },
+              {
+                "cost": 1,
+                "journey_id": "02b417eb9717198b2829",
+                "score_numerator": 1
+              },
+              {
+                "cost": 1,
+                "journey_id": "0bd6f8987cbcbc5763d8",
+                "score_numerator": 1
+              },
+              {
+                "cost": 1,
+                "journey_id": "0d830fff356828b351e8",
+                "score_numerator": 1
+              },
+              {
+                "cost": 1,
+                "journey_id": "0e573b09afcf87ca0400",
+                "score_numerator": 1
+              },
+              {
+                "cost": 1,
+                "journey_id": "1030f322f49cb4df195e",
+                "score_numerator": 1
+              },
+              {
+                "cost": 1,
+                "journey_id": "177a7a4a9dfef32701b4",
+                "score_numerator": 1
+              },
+              {
+                "cost": 1,
+                "journey_id": "18bd0a9267e0956d784b",
+                "score_numerator": 1
+              },
+              {
+                "cost": 1,
+                "journey_id": "18cbadb02cfa61e0139d",
+                "score_numerator": 1
+              }
+            ],
+            "E": [
+              {
+                "cost": 1,
+                "journey_id": "002ee67351572c9abe93",
+                "score_numerator": 1
+              },
+              {
+                "cost": 1,
+                "journey_id": "02b417eb9717198b2829",
+                "score_numerator": 1
+              },
+              {
+                "cost": 1,
+                "journey_id": "0bd6f8987cbcbc5763d8",
+                "score_numerator": 1
+              },
+              {
+                "cost": 1,
+                "journey_id": "0d830fff356828b351e8",
+                "score_numerator": 1
+              },
+              {
+                "cost": 1,
+                "journey_id": "0e573b09afcf87ca0400",
+                "score_numerator": 1
+              },
+              {
+                "cost": 1,
+                "journey_id": "1030f322f49cb4df195e",
+                "score_numerator": 1
+              },
+              {
+                "cost": 1,
+                "journey_id": "177a7a4a9dfef32701b4",
+                "score_numerator": 1
+              },
+              {
+                "cost": 1,
+                "journey_id": "18bd0a9267e0956d784b",
+                "score_numerator": 1
+              },
+              {
+                "cost": 1,
+                "journey_id": "18cbadb02cfa61e0139d",
+                "score_numerator": 1
+              }
+            ]
+          },
+          "same_choice": true,
+          "same_ranking": true,
+          "selected": {
+            "cost": 1,
+            "journey_id": "002ee67351572c9abe93",
+            "policy": "consequence",
+            "score": 1.0,
+            "score_numerator": 1,
+            "separated_pairs": [
+              [
+                "c0",
+                "c2",
+                0
+              ]
+            ]
+          },
+          "shared_top_tiebreak": true,
+          "single_partition": true,
+          "top_ids": {
+            "D": [
+              "002ee67351572c9abe93",
+              "02b417eb9717198b2829",
+              "0bd6f8987cbcbc5763d8",
+              "0d830fff356828b351e8",
+              "0e573b09afcf87ca0400",
+              "1030f322f49cb4df195e",
+              "177a7a4a9dfef32701b4",
+              "18bd0a9267e0956d784b",
+              "18cbadb02cfa61e0139d"
+            ],
+            "E": [
+              "002ee67351572c9abe93",
+              "02b417eb9717198b2829",
+              "0bd6f8987cbcbc5763d8",
+              "0d830fff356828b351e8",
+              "0e573b09afcf87ca0400",
+              "1030f322f49cb4df195e",
+              "177a7a4a9dfef32701b4",
+              "18bd0a9267e0956d784b",
+              "18cbadb02cfa61e0139d"
+            ]
+          },
+          "weights": [
+            {
+              "I": 0,
+              "ids": [
+                "c0",
+                "c2"
+              ],
+              "weight": 1
+            }
+          ],
+          "witness_count": 9,
+          "witness_partitions": {
+            "01": 9
+          }
+        }
+      ]
+    },
+    "request": "On 2026-09-14, plan the outbound journey from NW 5th & Davis [stop_id=9301] to SW 5th & Columbia [stop_id=7594]. Depart no earlier than 08:25:17 and arrive by 09:30:25, both inclusive.",
+    "requested": 4,
+    "scenario_id": "pilot-00",
+    "semantic_classes": 3,
+    "sequences": {
+      "D": [
+        "002ee67351572c9abe93"
+      ],
+      "E": [
+        "00b30b64cd73de674651",
+        "002ee67351572c9abe93"
+      ]
+    },
+    "trajectory_differs": true
+  },
+  {
+    "budgets": {
+      "D": [
+        {
+          "budget": 0,
+          "judgments": 0,
+          "plan_id": "4e0b535d27d1f3fa24fe",
+          "recorded_events": [],
+          "remaining_ids": [
+            "c0",
+            "c1",
+            "c2",
+            "c3"
+          ],
+          "remaining_witnesses": 64,
+          "status": "satisfiable",
+          "stop": "judgment_budget_limit"
+        },
+        {
+          "budget": 1,
+          "judgments": 1,
+          "plan_id": "4e0b535d27d1f3fa24fe",
+          "recorded_events": [],
+          "remaining_ids": [
+            "c1",
+            "c3"
+          ],
+          "remaining_witnesses": 1,
+          "status": "satisfiable",
+          "stop": "judgment_budget_limit"
+        },
+        {
+          "budget": 2,
+          "judgments": 2,
+          "plan_id": "4e0b535d27d1f3fa24fe",
+          "recorded_events": [
+            "no_distinguishing_witness_in_completed_pool"
+          ],
+          "remaining_ids": [
+            "c1"
+          ],
+          "remaining_witnesses": 0,
+          "status": "satisfiable",
+          "stop": "one_class_no_witness"
+        },
+        {
+          "budget": 4,
+          "judgments": 2,
+          "plan_id": "4e0b535d27d1f3fa24fe",
+          "recorded_events": [
+            "no_distinguishing_witness_in_completed_pool"
+          ],
+          "remaining_ids": [
+            "c1"
+          ],
+          "remaining_witnesses": 0,
+          "status": "satisfiable",
+          "stop": "one_class_no_witness"
+        }
+      ],
+      "E": [
+        {
+          "budget": 0,
+          "judgments": 0,
+          "plan_id": "4e0b535d27d1f3fa24fe",
+          "recorded_events": [],
+          "remaining_ids": [
+            "c0",
+            "c1",
+            "c2",
+            "c3"
+          ],
+          "remaining_witnesses": 64,
+          "status": "satisfiable",
+          "stop": "judgment_budget_limit"
+        },
+        {
+          "budget": 1,
+          "judgments": 1,
+          "plan_id": "4a89a06ba5058ef4ccea",
+          "recorded_events": [
+            "no_distinguishing_witness_in_completed_pool"
+          ],
+          "remaining_ids": [
+            "c2"
+          ],
+          "remaining_witnesses": 0,
+          "status": "satisfiable",
+          "stop": "one_class_no_witness"
+        },
+        {
+          "budget": 2,
+          "judgments": 1,
+          "plan_id": "4a89a06ba5058ef4ccea",
+          "recorded_events": [
+            "no_distinguishing_witness_in_completed_pool"
+          ],
+          "remaining_ids": [
+            "c2"
+          ],
+          "remaining_witnesses": 0,
+          "status": "satisfiable",
+          "stop": "one_class_no_witness"
+        },
+        {
+          "budget": 4,
+          "judgments": 1,
+          "plan_id": "4a89a06ba5058ef4ccea",
+          "recorded_events": [
+            "no_distinguishing_witness_in_completed_pool"
+          ],
+          "remaining_ids": [
+            "c2"
+          ],
+          "remaining_witnesses": 0,
+          "status": "satisfiable",
+          "stop": "one_class_no_witness"
+        }
+      ]
+    },
+    "candidate_plans": [
+      {
+        "accepted": 52,
+        "aliases": [
+          "c0"
+        ],
+        "formula": {
+          "children": [
+            {
+              "kind": "atom",
+              "op": "depart_le",
+              "scope": "outbound",
+              "source": null,
+              "unit": "seconds",
+              "value": 31499
+            },
+            {
+              "kind": "atom",
+              "op": "max_transfers",
+              "scope": "outbound",
+              "source": null,
+              "unit": "count",
+              "value": 1
+            },
+            {
+              "kind": "atom",
+              "op": "exclude_modes",
+              "scope": "outbound",
+              "source": null,
+              "unit": "mode",
+              "value": [
+                "rail",
+                "tram"
+              ]
+            }
+          ],
+          "kind": "all",
+          "source": null
+        },
+        "id": "c0",
+        "plan_id": "4e0b535d27d1f3fa24fe",
+        "reference_equivalent": false,
+        "selected_plan_reference_valid": true,
+        "status": "satisfiable"
+      },
+      {
+        "accepted": 59,
+        "aliases": [
+          "c1"
+        ],
+        "formula": {
+          "children": [
+            {
+              "kind": "atom",
+              "op": "depart_le",
+              "scope": "outbound",
+              "source": null,
+              "unit": "seconds",
+              "value": 32279
+            },
+            {
+              "kind": "atom",
+              "op": "max_transfers",
+              "scope": "outbound",
+              "source": null,
+              "unit": "count",
+              "value": 1
+            },
+            {
+              "kind": "atom",
+              "op": "exclude_modes",
+              "scope": "outbound",
+              "source": null,
+              "unit": "mode",
+              "value": [
+                "rail",
+                "tram"
+              ]
+            }
+          ],
+          "kind": "all",
+          "source": null
+        },
+        "id": "c1",
+        "plan_id": "4e0b535d27d1f3fa24fe",
+        "reference_equivalent": true,
+        "selected_plan_reference_valid": true,
+        "status": "satisfiable"
+      },
+      {
+        "accepted": 6,
+        "aliases": [
+          "c2"
+        ],
+        "formula": {
+          "children": [
+            {
+              "kind": "atom",
+              "op": "depart_ge",
+              "scope": "outbound",
+              "source": null,
+              "unit": "seconds",
+              "value": 31729
+            },
+            {
+              "kind": "atom",
+              "op": "max_transfers",
+              "scope": "outbound",
+              "source": null,
+              "unit": "count",
+              "value": 1
+            },
+            {
+              "kind": "atom",
+              "op": "exclude_modes",
+              "scope": "outbound",
+              "source": null,
+              "unit": "mode",
+              "value": [
+                "rail",
+                "tram"
+              ]
+            }
+          ],
+          "kind": "all",
+          "source": null
+        },
+        "id": "c2",
+        "plan_id": "4a89a06ba5058ef4ccea",
+        "reference_equivalent": false,
+        "selected_plan_reference_valid": true,
+        "status": "satisfiable"
+      },
+      {
+        "accepted": 58,
+        "aliases": [
+          "c3"
+        ],
+        "formula": {
+          "children": [
+            {
+              "kind": "atom",
+              "op": "depart_le",
+              "scope": "outbound",
+              "source": null,
+              "unit": "seconds",
+              "value": 32249
+            },
+            {
+              "kind": "atom",
+              "op": "max_transfers",
+              "scope": "outbound",
+              "source": null,
+              "unit": "count",
+              "value": 1
+            },
+            {
+              "kind": "atom",
+              "op": "exclude_modes",
+              "scope": "outbound",
+              "source": null,
+              "unit": "mode",
+              "value": [
+                "rail",
+                "tram"
+              ]
+            }
+          ],
+          "kind": "all",
+          "source": null
+        },
+        "id": "c3",
+        "plan_id": "4e0b535d27d1f3fa24fe",
+        "reference_equivalent": false,
+        "selected_plan_reference_valid": true,
+        "status": "satisfiable"
+      }
+    ],
+    "canonical_duplicates": 0,
+    "divergent_outputs": {
+      "model": {
+        "D": {
+          "category": "correct_feasible_plan",
+          "events": [
+            "no_distinguishing_witness_in_completed_pool"
+          ],
+          "formula": {
+            "children": [
+              {
+                "kind": "atom",
+                "op": "depart_le",
+                "scope": "outbound",
+                "source": null,
+                "unit": "seconds",
+                "value": 32279
+              },
+              {
+                "kind": "atom",
+                "op": "max_transfers",
+                "scope": "outbound",
+                "source": null,
+                "unit": "count",
+                "value": 1
+              },
+              {
+                "kind": "atom",
+                "op": "exclude_modes",
+                "scope": "outbound",
+                "source": null,
+                "unit": "mode",
+                "value": [
+                  "rail",
+                  "tram"
+                ]
+              }
+            ],
+            "kind": "all",
+            "source": null
+          },
+          "judgments": [
+            {
+              "journey_id": "3ec28069888f5177b261",
+              "judgment": {
+                "reason": "The journey meets all specified requirements including the correct stops, number of transfers, and departure time.",
+                "spans": [
+                  {
+                    "end": 5,
+                    "start": 0
+                  },
+                  {
+                    "end": 15,
+                    "start": 10
+                  },
+                  {
+                    "end": 25,
+                    "start": 20
+                  },
+                  {
+                    "end": 35,
+                    "start": 30
+                  },
+                  {
+                    "end": 45,
+                    "start": 40
+                  }
+                ],
+                "verdict": "satisfied"
+              },
+              "raw": "```json\n{\n  \"verdict\": \"satisfied\",\n  \"spans\": [\n    {\"start\": 0, \"end\": 5},\n    {\"start\": 10, \"end\": 15},\n    {\"start\": 20, \"end\": 25},\n    {\"start\": 30, \"end\": 35},\n    {\"start\": 40, \"end\": 45}\n  ],\n  \"reason\": \"The journey meets all specified requirements including the correct stops, number of transfers, and departure time.\"\n}\n```"
+            },
+            {
+              "journey_id": "4a89a06ba5058ef4ccea",
+              "judgment": {
+                "reason": "The journey meets all specified requirements including the departure time, destination, and number of transfers.",
+                "spans": [
+                  {
+                    "end": 5,
+                    "start": 0
+                  }
+                ],
+                "verdict": "satisfied"
+              },
+              "raw": "```json\n{\n  \"verdict\": \"satisfied\",\n  \"spans\": [\n    {\"start\": 0, \"end\": 5}\n  ],\n  \"reason\": \"The journey meets all specified requirements including the departure time, destination, and number of transfers.\"\n}\n```"
+            }
+          ],
+          "plan_id": "4e0b535d27d1f3fa24fe",
+          "relative_arrival_vs_D_seconds": 0,
+          "repairs": [],
+          "witnesses": [
+            {
+              "cost": 1,
+              "journey_id": "3ec28069888f5177b261",
+              "policy": "balanced",
+              "score": 4.0,
+              "score_numerator": 4,
+              "separated_pairs": [
+                [
+                  "c0",
+                  "c1",
+                  0
+                ],
+                [
+                  "c0",
+                  "c3",
+                  0
+                ],
+                [
+                  "c1",
+                  "c2",
+                  1
+                ],
+                [
+                  "c2",
+                  "c3",
+                  2
+                ]
+              ]
+            },
+            {
+              "cost": 1,
+              "journey_id": "4a89a06ba5058ef4ccea",
+              "policy": "balanced",
+              "score": 1.0,
+              "score_numerator": 1,
+              "separated_pairs": [
+                [
+                  "c1",
+                  "c3",
+                  0
+                ]
+              ]
+            }
+          ]
+        },
+        "E": {
+          "category": "correct_feasible_plan",
+          "events": [
+            "no_distinguishing_witness_in_completed_pool"
+          ],
+          "formula": {
+            "children": [
+              {
+                "kind": "atom",
+                "op": "depart_ge",
+                "scope": "outbound",
+                "source": null,
+                "unit": "seconds",
+                "value": 31729
+              },
+              {
+                "kind": "atom",
+                "op": "max_transfers",
+                "scope": "outbound",
+                "source": null,
+                "unit": "count",
+                "value": 1
+              },
+              {
+                "kind": "atom",
+                "op": "exclude_modes",
+                "scope": "outbound",
+                "source": null,
+                "unit": "mode",
+                "value": [
+                  "rail",
+                  "tram"
+                ]
+              }
+            ],
+            "kind": "all",
+            "source": null
+          },
+          "judgments": [
+            {
+              "journey_id": "022c2a4af86602d54884",
+              "judgment": {
+                "reason": "The journey departs earlier than the requested time (07:18:49 vs 08:57:49) and exceeds the allowed 1 transfer limit (2 transfers).",
+                "spans": [
+                  {
+                    "end": 5,
+                    "start": 0
+                  },
+                  {
+                    "end": 111,
+                    "start": 104
+                  }
+                ],
+                "verdict": "violated"
+              },
+              "raw": "```json\n{\n  \"verdict\": \"violated\",\n  \"spans\": [\n    {\"start\": 0, \"end\": 5},\n    {\"start\": 104, \"end\": 111}\n  ],\n  \"reason\": \"The journey departs earlier than the requested time (07:18:49 vs 08:57:49) and exceeds the allowed 1 transfer limit (2 transfers).\"\n}\n```"
+            }
+          ],
+          "plan_id": "4a89a06ba5058ef4ccea",
+          "relative_arrival_vs_D_seconds": 6366,
+          "repairs": [],
+          "witnesses": [
+            {
+              "cost": 1,
+              "journey_id": "022c2a4af86602d54884",
+              "policy": "consequence",
+              "score": 8.0,
+              "score_numerator": 8,
+              "separated_pairs": [
+                [
+                  "c0",
+                  "c2",
+                  2
+                ],
+                [
+                  "c1",
+                  "c2",
+                  1
+                ],
+                [
+                  "c2",
+                  "c3",
+                  2
+                ]
+              ]
+            }
+          ]
+        }
+      },
+      "oracle": {
+        "D": {
+          "category": "correct_feasible_plan",
+          "events": [
+            "no_distinguishing_witness_in_completed_pool"
+          ],
+          "formula": {
+            "children": [
+              {
+                "kind": "atom",
+                "op": "depart_le",
+                "scope": "outbound",
+                "source": null,
+                "unit": "seconds",
+                "value": 32279
+              },
+              {
+                "kind": "atom",
+                "op": "max_transfers",
+                "scope": "outbound",
+                "source": null,
+                "unit": "count",
+                "value": 1
+              },
+              {
+                "kind": "atom",
+                "op": "exclude_modes",
+                "scope": "outbound",
+                "source": null,
+                "unit": "mode",
+                "value": [
+                  "rail",
+                  "tram"
+                ]
+              }
+            ],
+            "kind": "all",
+            "source": null
+          },
+          "judgments": [
+            {
+              "journey_id": "3ec28069888f5177b261",
+              "judgment": {
+                "reason": "privileged independent reference evaluator",
+                "spans": [],
+                "verdict": "satisfied"
+              }
+            },
+            {
+              "journey_id": "4a89a06ba5058ef4ccea",
+              "judgment": {
+                "reason": "privileged independent reference evaluator",
+                "spans": [],
+                "verdict": "satisfied"
+              }
+            }
+          ],
+          "plan_id": "4e0b535d27d1f3fa24fe",
+          "relative_arrival_vs_D_seconds": 0,
+          "repairs": [],
+          "witnesses": [
+            {
+              "cost": 1,
+              "journey_id": "3ec28069888f5177b261",
+              "policy": "balanced",
+              "score": 4.0,
+              "score_numerator": 4,
+              "separated_pairs": [
+                [
+                  "c0",
+                  "c1",
+                  0
+                ],
+                [
+                  "c0",
+                  "c3",
+                  0
+                ],
+                [
+                  "c1",
+                  "c2",
+                  1
+                ],
+                [
+                  "c2",
+                  "c3",
+                  2
+                ]
+              ]
+            },
+            {
+              "cost": 1,
+              "journey_id": "4a89a06ba5058ef4ccea",
+              "policy": "balanced",
+              "score": 1.0,
+              "score_numerator": 1,
+              "separated_pairs": [
+                [
+                  "c1",
+                  "c3",
+                  0
+                ]
+              ]
+            }
+          ]
+        },
+        "E": {
+          "category": "correct_feasible_plan",
+          "events": [
+            "no_distinguishing_witness_in_completed_pool"
+          ],
+          "formula": {
+            "children": [
+              {
+                "kind": "atom",
+                "op": "depart_le",
+                "scope": "outbound",
+                "source": null,
+                "unit": "seconds",
+                "value": 32279
+              },
+              {
+                "kind": "atom",
+                "op": "max_transfers",
+                "scope": "outbound",
+                "source": null,
+                "unit": "count",
+                "value": 1
+              },
+              {
+                "kind": "atom",
+                "op": "exclude_modes",
+                "scope": "outbound",
+                "source": null,
+                "unit": "mode",
+                "value": [
+                  "rail",
+                  "tram"
+                ]
+              }
+            ],
+            "kind": "all",
+            "source": null
+          },
+          "judgments": [
+            {
+              "journey_id": "022c2a4af86602d54884",
+              "judgment": {
+                "reason": "privileged independent reference evaluator",
+                "spans": [],
+                "verdict": "satisfied"
+              }
+            },
+            {
+              "journey_id": "3ec28069888f5177b261",
+              "judgment": {
+                "reason": "privileged independent reference evaluator",
+                "spans": [],
+                "verdict": "satisfied"
+              }
+            },
+            {
+              "journey_id": "4a89a06ba5058ef4ccea",
+              "judgment": {
+                "reason": "privileged independent reference evaluator",
+                "spans": [],
+                "verdict": "satisfied"
+              }
+            }
+          ],
+          "plan_id": "4e0b535d27d1f3fa24fe",
+          "relative_arrival_vs_D_seconds": 0,
+          "repairs": [],
+          "witnesses": [
+            {
+              "cost": 1,
+              "journey_id": "022c2a4af86602d54884",
+              "policy": "consequence",
+              "score": 8.0,
+              "score_numerator": 8,
+              "separated_pairs": [
+                [
+                  "c0",
+                  "c2",
+                  2
+                ],
+                [
+                  "c1",
+                  "c2",
+                  1
+                ],
+                [
+                  "c2",
+                  "c3",
+                  2
+                ]
+              ]
+            },
+            {
+              "cost": 1,
+              "journey_id": "3ec28069888f5177b261",
+              "policy": "consequence",
+              "score": 2.0,
+              "score_numerator": 2,
+              "separated_pairs": [
+                [
+                  "c0",
+                  "c1",
+                  0
+                ],
+                [
+                  "c0",
+                  "c3",
+                  0
+                ]
+              ]
+            },
+            {
+              "cost": 1,
+              "journey_id": "4a89a06ba5058ef4ccea",
+              "policy": "consequence",
+              "score": 1.0,
+              "score_numerator": 1,
+              "separated_pairs": [
+                [
+                  "c1",
+                  "c3",
+                  0
+                ]
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "exact_text_duplicates": 0,
+    "exclusive_equivalence_cause": "different_first",
+    "family": "mode_exclusion",
+    "initial_state": {
+      "active_ids": [
+        "c0",
+        "c1",
+        "c2",
+        "c3"
+      ],
+      "constant_weights": false,
+      "patterns": {
+        "0010": 5,
+        "0101": 6,
+        "0110": 1,
+        "1101": 52
+      },
+      "ranks": {
+        "D": [
+          {
+            "cost": 1,
+            "journey_id": "3ec28069888f5177b261",
+            "score_numerator": 4
+          },
+          {
+            "cost": 1,
+            "journey_id": "44450449eca5c1348190",
+            "score_numerator": 4
+          },
+          {
+            "cost": 1,
+            "journey_id": "4a89a06ba5058ef4ccea",
+            "score_numerator": 4
+          },
+          {
+            "cost": 1,
+            "journey_id": "4b8f1ab7574ca965af4d",
+            "score_numerator": 4
+          },
+          {
+            "cost": 1,
+            "journey_id": "53d52e6e90dbf1990691",
+            "score_numerator": 4
+          },
+          {
+            "cost": 1,
+            "journey_id": "5760c5cfad52aafb7db9",
+            "score_numerator": 4
+          },
+          {
+            "cost": 1,
+            "journey_id": "5f167bc58be02da93ad7",
+            "score_numerator": 4
+          },
+          {
+            "cost": 1,
+            "journey_id": "022c2a4af86602d54884",
+            "score_numerator": 3
+          },
+          {
+            "cost": 1,
+            "journey_id": "08f61ee20629348a366d",
+            "score_numerator": 3
+          },
+          {
+            "cost": 1,
+            "journey_id": "09826c00f2f3c170fbb0",
+            "score_numerator": 3
+          },
+          {
+            "cost": 1,
+            "journey_id": "0a7dda98abefc480f65a",
+            "score_numerator": 3
+          },
+          {
+            "cost": 1,
+            "journey_id": "0d8a662c278d6447c873",
+            "score_numerator": 3
+          },
+          {
+            "cost": 1,
+            "journey_id": "0debc2db93a65b59eb7b",
+            "score_numerator": 3
+          },
+          {
+            "cost": 1,
+            "journey_id": "0ee0ae9193762890f35c",
+            "score_numerator": 3
+          },
+          {
+            "cost": 1,
+            "journey_id": "119049f96a9ce268cda9",
+            "score_numerator": 3
+          },
+          {
+            "cost": 1,
+            "journey_id": "16fe2f0df9e885f0426b",
+            "score_numerator": 3
+          },
+          {
+            "cost": 1,
+            "journey_id": "1859c56c5fd4bb4f5024",
+            "score_numerator": 3
+          },
+          {
+            "cost": 1,
+            "journey_id": "18a329869a86dddd1f55",
+            "score_numerator": 3
+          },
+          {
+            "cost": 1,
+            "journey_id": "196ecb30183b42b8b25f",
+            "score_numerator": 3
+          },
+          {
+            "cost": 1,
+            "journey_id": "19ac2de6d519aabed4b1",
+            "score_numerator": 3
+          },
+          {
+            "cost": 1,
+            "journey_id": "1af31f31aab02452d275",
+            "score_numerator": 3
+          },
+          {
+            "cost": 1,
+            "journey_id": "1c1ac121fe7b1c1d1fad",
+            "score_numerator": 3
+          },
+          {
+            "cost": 1,
+            "journey_id": "1c56e36a778d74c984c4",
+            "score_numerator": 3
+          },
+          {
+            "cost": 1,
+            "journey_id": "1e344dce2069d143d257",
+            "score_numerator": 3
+          },
+          {
+            "cost": 1,
+            "journey_id": "210e8f51d1c4d346bd71",
+            "score_numerator": 3
+          },
+          {
+            "cost": 1,
+            "journey_id": "21a201a050d4fa994a1f",
+            "score_numerator": 3
+          },
+          {
+            "cost": 1,
+            "journey_id": "23814f98b49731be14f2",
+            "score_numerator": 3
+          },
+          {
+            "cost": 1,
+            "journey_id": "245152b82fd6bd31db00",
+            "score_numerator": 3
+          },
+          {
+            "cost": 1,
+            "journey_id": "25b4ba3d10344524fc84",
+            "score_numerator": 3
+          },
+          {
+            "cost": 1,
+            "journey_id": "25e92f55243d530145c6",
+            "score_numerator": 3
+          },
+          {
+            "cost": 1,
+            "journey_id": "291322516a024cba09c2",
+            "score_numerator": 3
+          },
+          {
+            "cost": 1,
+            "journey_id": "29a39d9abbfed3357221",
+            "score_numerator": 3
+          },
+          {
+            "cost": 1,
+            "journey_id": "2d5fbfe563af3769ea99",
+            "score_numerator": 3
+          },
+          {
+            "cost": 1,
+            "journey_id": "2de849965e8c7bc6124f",
+            "score_numerator": 3
+          },
+          {
+            "cost": 1,
+            "journey_id": "30b84505fef3c299dd4e",
+            "score_numerator": 3
+          },
+          {
+            "cost": 1,
+            "journey_id": "350267f2adcd2b1176fd",
+            "score_numerator": 3
+          },
+          {
+            "cost": 1,
+            "journey_id": "35636e30cfd874ada30f",
+            "score_numerator": 3
+          },
+          {
+            "cost": 1,
+            "journey_id": "35fd58e032cfeb125a11",
+            "score_numerator": 3
+          },
+          {
+            "cost": 1,
+            "journey_id": "3658e03988eebf878dd3",
+            "score_numerator": 3
+          },
+          {
+            "cost": 1,
+            "journey_id": "368f8ffe3aab1f700c90",
+            "score_numerator": 3
+          },
+          {
+            "cost": 1,
+            "journey_id": "3c7e39c32c9e3e1cfd15",
+            "score_numerator": 3
+          },
+          {
+            "cost": 1,
+            "journey_id": "3d63d51d73dd0279630a",
+            "score_numerator": 3
+          },
+          {
+            "cost": 1,
+            "journey_id": "3d6eeba76c541f10f814",
+            "score_numerator": 3
+          },
+          {
+            "cost": 1,
+            "journey_id": "3e3b10162531feee912f",
+            "score_numerator": 3
+          },
+          {
+            "cost": 1,
+            "journey_id": "3f8142fc0d27b5b1c8b7",
+            "score_numerator": 3
+          },
+          {
+            "cost": 1,
+            "journey_id": "3fc6af256387bb715cb0",
+            "score_numerator": 3
+          },
+          {
+            "cost": 1,
+            "journey_id": "43d915bdcd37d42898ac",
+            "score_numerator": 3
+          },
+          {
+            "cost": 1,
+            "journey_id": "46f0376f39f1709b3f5a",
+            "score_numerator": 3
+          },
+          {
+            "cost": 1,
+            "journey_id": "49fa43ee3738da3d8447",
+            "score_numerator": 3
+          },
+          {
+            "cost": 1,
+            "journey_id": "4a3ccf8aecd2c3a6ff69",
+            "score_numerator": 3
+          },
+          {
+            "cost": 1,
+            "journey_id": "4c1cab2fcbcfbe3714a7",
+            "score_numerator": 3
+          },
+          {
+            "cost": 1,
+            "journey_id": "4d74c135f411fc025d72",
+            "score_numerator": 3
+          },
+          {
+            "cost": 1,
+            "journey_id": "4e0b535d27d1f3fa24fe",
+            "score_numerator": 3
+          },
+          {
+            "cost": 1,
+            "journey_id": "4f853a50aad3f3e6c299",
+            "score_numerator": 3
+          },
+          {
+            "cost": 1,
+            "journey_id": "50a3588f9ce3c7580ba8",
+            "score_numerator": 3
+          },
+          {
+            "cost": 1,
+            "journey_id": "560e655bbdc7d71d6b57",
+            "score_numerator": 3
+          },
+          {
+            "cost": 1,
+            "journey_id": "59b2ac9b9b27f275ea0b",
+            "score_numerator": 3
+          },
+          {
+            "cost": 1,
+            "journey_id": "5c01fdf2de0d6ce16501",
+            "score_numerator": 3
+          },
+          {
+            "cost": 1,
+            "journey_id": "5f893ce5478ffcd9b96d",
+            "score_numerator": 3
+          },
+          {
+            "cost": 1,
+            "journey_id": "60a3830b0dcaebf72729",
+            "score_numerator": 3
+          },
+          {
+            "cost": 1,
+            "journey_id": "61df90876c71d68835ea",
+            "score_numerator": 3
+          },
+          {
+            "cost": 1,
+            "journey_id": "62b15fcc50f9efc27034",
+            "score_numerator": 3
+          },
+          {
+            "cost": 1,
+            "journey_id": "63dd7800ecbe075d79f1",
+            "score_numerator": 3
+          },
+          {
+            "cost": 1,
+            "journey_id": "65128127bfa9fc3c6e8a",
+            "score_numerator": 3
+          }
+        ],
+        "E": [
+          {
+            "cost": 1,
+            "journey_id": "022c2a4af86602d54884",
+            "score_numerator": 8
+          },
+          {
+            "cost": 1,
+            "journey_id": "08f61ee20629348a366d",
+            "score_numerator": 8
+          },
+          {
+            "cost": 1,
+            "journey_id": "09826c00f2f3c170fbb0",
+            "score_numerator": 8
+          },
+          {
+            "cost": 1,
+            "journey_id": "0a7dda98abefc480f65a",
+            "score_numerator": 8
+          },
+          {
+            "cost": 1,
+            "journey_id": "0d8a662c278d6447c873",
+            "score_numerator": 8
+          },
+          {
+            "cost": 1,
+            "journey_id": "0debc2db93a65b59eb7b",
+            "score_numerator": 8
+          },
+          {
+            "cost": 1,
+            "journey_id": "0ee0ae9193762890f35c",
+            "score_numerator": 8
+          },
+          {
+            "cost": 1,
+            "journey_id": "119049f96a9ce268cda9",
+            "score_numerator": 8
+          },
+          {
+            "cost": 1,
+            "journey_id": "16fe2f0df9e885f0426b",
+            "score_numerator": 8
+          },
+          {
+            "cost": 1,
+            "journey_id": "1859c56c5fd4bb4f5024",
+            "score_numerator": 8
+          },
+          {
+            "cost": 1,
+            "journey_id": "18a329869a86dddd1f55",
+            "score_numerator": 8
+          },
+          {
+            "cost": 1,
+            "journey_id": "196ecb30183b42b8b25f",
+            "score_numerator": 8
+          },
+          {
+            "cost": 1,
+            "journey_id": "19ac2de6d519aabed4b1",
+            "score_numerator": 8
+          },
+          {
+            "cost": 1,
+            "journey_id": "1af31f31aab02452d275",
+            "score_numerator": 8
+          },
+          {
+            "cost": 1,
+            "journey_id": "1c1ac121fe7b1c1d1fad",
+            "score_numerator": 8
+          },
+          {
+            "cost": 1,
+            "journey_id": "1c56e36a778d74c984c4",
+            "score_numerator": 8
+          },
+          {
+            "cost": 1,
+            "journey_id": "1e344dce2069d143d257",
+            "score_numerator": 8
+          },
+          {
+            "cost": 1,
+            "journey_id": "210e8f51d1c4d346bd71",
+            "score_numerator": 8
+          },
+          {
+            "cost": 1,
+            "journey_id": "21a201a050d4fa994a1f",
+            "score_numerator": 8
+          },
+          {
+            "cost": 1,
+            "journey_id": "23814f98b49731be14f2",
+            "score_numerator": 8
+          },
+          {
+            "cost": 1,
+            "journey_id": "245152b82fd6bd31db00",
+            "score_numerator": 8
+          },
+          {
+            "cost": 1,
+            "journey_id": "25b4ba3d10344524fc84",
+            "score_numerator": 8
+          },
+          {
+            "cost": 1,
+            "journey_id": "25e92f55243d530145c6",
+            "score_numerator": 8
+          },
+          {
+            "cost": 1,
+            "journey_id": "291322516a024cba09c2",
+            "score_numerator": 8
+          },
+          {
+            "cost": 1,
+            "journey_id": "29a39d9abbfed3357221",
+            "score_numerator": 8
+          },
+          {
+            "cost": 1,
+            "journey_id": "2d5fbfe563af3769ea99",
+            "score_numerator": 8
+          },
+          {
+            "cost": 1,
+            "journey_id": "2de849965e8c7bc6124f",
+            "score_numerator": 8
+          },
+          {
+            "cost": 1,
+            "journey_id": "30b84505fef3c299dd4e",
+            "score_numerator": 8
+          },
+          {
+            "cost": 1,
+            "journey_id": "350267f2adcd2b1176fd",
+            "score_numerator": 8
+          },
+          {
+            "cost": 1,
+            "journey_id": "35636e30cfd874ada30f",
+            "score_numerator": 8
+          },
+          {
+            "cost": 1,
+            "journey_id": "35fd58e032cfeb125a11",
+            "score_numerator": 8
+          },
+          {
+            "cost": 1,
+            "journey_id": "3658e03988eebf878dd3",
+            "score_numerator": 8
+          },
+          {
+            "cost": 1,
+            "journey_id": "368f8ffe3aab1f700c90",
+            "score_numerator": 8
+          },
+          {
+            "cost": 1,
+            "journey_id": "3c7e39c32c9e3e1cfd15",
+            "score_numerator": 8
+          },
+          {
+            "cost": 1,
+            "journey_id": "3d63d51d73dd0279630a",
+            "score_numerator": 8
+          },
+          {
+            "cost": 1,
+            "journey_id": "3d6eeba76c541f10f814",
+            "score_numerator": 8
+          },
+          {
+            "cost": 1,
+            "journey_id": "3e3b10162531feee912f",
+            "score_numerator": 8
+          },
+          {
+            "cost": 1,
+            "journey_id": "3f8142fc0d27b5b1c8b7",
+            "score_numerator": 8
+          },
+          {
+            "cost": 1,
+            "journey_id": "3fc6af256387bb715cb0",
+            "score_numerator": 8
+          },
+          {
+            "cost": 1,
+            "journey_id": "43d915bdcd37d42898ac",
+            "score_numerator": 8
+          },
+          {
+            "cost": 1,
+            "journey_id": "46f0376f39f1709b3f5a",
+            "score_numerator": 8
+          },
+          {
+            "cost": 1,
+            "journey_id": "49fa43ee3738da3d8447",
+            "score_numerator": 8
+          },
+          {
+            "cost": 1,
+            "journey_id": "4a3ccf8aecd2c3a6ff69",
+            "score_numerator": 8
+          },
+          {
+            "cost": 1,
+            "journey_id": "4a89a06ba5058ef4ccea",
+            "score_numerator": 8
+          },
+          {
+            "cost": 1,
+            "journey_id": "4c1cab2fcbcfbe3714a7",
+            "score_numerator": 8
+          },
+          {
+            "cost": 1,
+            "journey_id": "4d74c135f411fc025d72",
+            "score_numerator": 8
+          },
+          {
+            "cost": 1,
+            "journey_id": "4e0b535d27d1f3fa24fe",
+            "score_numerator": 8
+          },
+          {
+            "cost": 1,
+            "journey_id": "4f853a50aad3f3e6c299",
+            "score_numerator": 8
+          },
+          {
+            "cost": 1,
+            "journey_id": "50a3588f9ce3c7580ba8",
+            "score_numerator": 8
+          },
+          {
+            "cost": 1,
+            "journey_id": "560e655bbdc7d71d6b57",
+            "score_numerator": 8
+          },
+          {
+            "cost": 1,
+            "journey_id": "59b2ac9b9b27f275ea0b",
+            "score_numerator": 8
+          },
+          {
+            "cost": 1,
+            "journey_id": "5c01fdf2de0d6ce16501",
+            "score_numerator": 8
+          },
+          {
+            "cost": 1,
+            "journey_id": "5f893ce5478ffcd9b96d",
+            "score_numerator": 8
+          },
+          {
+            "cost": 1,
+            "journey_id": "60a3830b0dcaebf72729",
+            "score_numerator": 8
+          },
+          {
+            "cost": 1,
+            "journey_id": "61df90876c71d68835ea",
+            "score_numerator": 8
+          },
+          {
+            "cost": 1,
+            "journey_id": "62b15fcc50f9efc27034",
+            "score_numerator": 8
+          },
+          {
+            "cost": 1,
+            "journey_id": "63dd7800ecbe075d79f1",
+            "score_numerator": 8
+          },
+          {
+            "cost": 1,
+            "journey_id": "65128127bfa9fc3c6e8a",
+            "score_numerator": 8
+          },
+          {
+            "cost": 1,
+            "journey_id": "3ec28069888f5177b261",
+            "score_numerator": 7
+          },
+          {
+            "cost": 1,
+            "journey_id": "44450449eca5c1348190",
+            "score_numerator": 7
+          },
+          {
+            "cost": 1,
+            "journey_id": "4b8f1ab7574ca965af4d",
+            "score_numerator": 7
+          },
+          {
+            "cost": 1,
+            "journey_id": "53d52e6e90dbf1990691",
+            "score_numerator": 7
+          },
+          {
+            "cost": 1,
+            "journey_id": "5760c5cfad52aafb7db9",
+            "score_numerator": 7
+          },
+          {
+            "cost": 1,
+            "journey_id": "5f167bc58be02da93ad7",
+            "score_numerator": 7
+          }
+        ]
+      },
+      "same_choice": false,
+      "same_ranking": false,
+      "shared_top_tiebreak": false,
+      "single_partition": false,
+      "top_ids": {
+        "D": [
+          "3ec28069888f5177b261",
+          "44450449eca5c1348190",
+          "4a89a06ba5058ef4ccea",
+          "4b8f1ab7574ca965af4d",
+          "53d52e6e90dbf1990691",
+          "5760c5cfad52aafb7db9",
+          "5f167bc58be02da93ad7"
+        ],
+        "E": [
+          "022c2a4af86602d54884",
+          "08f61ee20629348a366d",
+          "09826c00f2f3c170fbb0",
+          "0a7dda98abefc480f65a",
+          "0d8a662c278d6447c873",
+          "0debc2db93a65b59eb7b",
+          "0ee0ae9193762890f35c",
+          "119049f96a9ce268cda9",
+          "16fe2f0df9e885f0426b",
+          "1859c56c5fd4bb4f5024",
+          "18a329869a86dddd1f55",
+          "196ecb30183b42b8b25f",
+          "19ac2de6d519aabed4b1",
+          "1af31f31aab02452d275",
+          "1c1ac121fe7b1c1d1fad",
+          "1c56e36a778d74c984c4",
+          "1e344dce2069d143d257",
+          "210e8f51d1c4d346bd71",
+          "21a201a050d4fa994a1f",
+          "23814f98b49731be14f2",
+          "245152b82fd6bd31db00",
+          "25b4ba3d10344524fc84",
+          "25e92f55243d530145c6",
+          "291322516a024cba09c2",
+          "29a39d9abbfed3357221",
+          "2d5fbfe563af3769ea99",
+          "2de849965e8c7bc6124f",
+          "30b84505fef3c299dd4e",
+          "350267f2adcd2b1176fd",
+          "35636e30cfd874ada30f",
+          "35fd58e032cfeb125a11",
+          "3658e03988eebf878dd3",
+          "368f8ffe3aab1f700c90",
+          "3c7e39c32c9e3e1cfd15",
+          "3d63d51d73dd0279630a",
+          "3d6eeba76c541f10f814",
+          "3e3b10162531feee912f",
+          "3f8142fc0d27b5b1c8b7",
+          "3fc6af256387bb715cb0",
+          "43d915bdcd37d42898ac",
+          "46f0376f39f1709b3f5a",
+          "49fa43ee3738da3d8447",
+          "4a3ccf8aecd2c3a6ff69",
+          "4a89a06ba5058ef4ccea",
+          "4c1cab2fcbcfbe3714a7",
+          "4d74c135f411fc025d72",
+          "4e0b535d27d1f3fa24fe",
+          "4f853a50aad3f3e6c299",
+          "50a3588f9ce3c7580ba8",
+          "560e655bbdc7d71d6b57",
+          "59b2ac9b9b27f275ea0b",
+          "5c01fdf2de0d6ce16501",
+          "5f893ce5478ffcd9b96d",
+          "60a3830b0dcaebf72729",
+          "61df90876c71d68835ea",
+          "62b15fcc50f9efc27034",
+          "63dd7800ecbe075d79f1",
+          "65128127bfa9fc3c6e8a"
+        ]
+      },
+      "weights": [
+        {
+          "I": 0,
+          "ids": [
+            "c0",
+            "c1"
+          ],
+          "weight": 1
+        },
+        {
+          "I": 2,
+          "ids": [
+            "c0",
+            "c2"
+          ],
+          "weight": 3
+        },
+        {
+          "I": 0,
+          "ids": [
+            "c0",
+            "c3"
+          ],
+          "weight": 1
+        },
+        {
+          "I": 1,
+          "ids": [
+            "c1",
+            "c2"
+          ],
+          "weight": 2
+        },
+        {
+          "I": 0,
+          "ids": [
+            "c1",
+            "c3"
+          ],
+          "weight": 1
+        },
+        {
+          "I": 2,
+          "ids": [
+            "c2",
+            "c3"
+          ],
+          "weight": 3
+        }
+      ],
+      "witness_count": 64,
+      "witness_partitions": {
+        "0010": 57,
+        "0101": 6,
+        "0110": 1
+      }
+    },
+    "parsed": 4,
+    "pool_size": 64,
+    "query_states": {
+      "D": [
+        {
+          "active_ids": [
+            "c0",
+            "c1",
+            "c2",
+            "c3"
+          ],
+          "after_ids": [
+            "c1",
+            "c3"
+          ],
+          "after_plan_id": "4e0b535d27d1f3fa24fe",
+          "before_plan_id": "4e0b535d27d1f3fa24fe",
+          "constant_weights": false,
+          "judgment": {
+            "reason": "The journey meets all specified requirements including the correct stops, number of transfers, and departure time.",
+            "spans": [
+              {
+                "end": 5,
+                "start": 0
+              },
+              {
+                "end": 15,
+                "start": 10
+              },
+              {
+                "end": 25,
+                "start": 20
+              },
+              {
+                "end": 35,
+                "start": 30
+              },
+              {
+                "end": 45,
+                "start": 40
+              }
+            ],
+            "verdict": "satisfied"
+          },
+          "patterns": {
+            "0010": 5,
+            "0101": 6,
+            "0110": 1,
+            "1101": 52
+          },
+          "ranks": {
+            "D": [
+              {
+                "cost": 1,
+                "journey_id": "3ec28069888f5177b261",
+                "score_numerator": 4
+              },
+              {
+                "cost": 1,
+                "journey_id": "44450449eca5c1348190",
+                "score_numerator": 4
+              },
+              {
+                "cost": 1,
+                "journey_id": "4a89a06ba5058ef4ccea",
+                "score_numerator": 4
+              },
+              {
+                "cost": 1,
+                "journey_id": "4b8f1ab7574ca965af4d",
+                "score_numerator": 4
+              },
+              {
+                "cost": 1,
+                "journey_id": "53d52e6e90dbf1990691",
+                "score_numerator": 4
+              },
+              {
+                "cost": 1,
+                "journey_id": "5760c5cfad52aafb7db9",
+                "score_numerator": 4
+              },
+              {
+                "cost": 1,
+                "journey_id": "5f167bc58be02da93ad7",
+                "score_numerator": 4
+              },
+              {
+                "cost": 1,
+                "journey_id": "022c2a4af86602d54884",
+                "score_numerator": 3
+              },
+              {
+                "cost": 1,
+                "journey_id": "08f61ee20629348a366d",
+                "score_numerator": 3
+              },
+              {
+                "cost": 1,
+                "journey_id": "09826c00f2f3c170fbb0",
+                "score_numerator": 3
+              },
+              {
+                "cost": 1,
+                "journey_id": "0a7dda98abefc480f65a",
+                "score_numerator": 3
+              },
+              {
+                "cost": 1,
+                "journey_id": "0d8a662c278d6447c873",
+                "score_numerator": 3
+              },
+              {
+                "cost": 1,
+                "journey_id": "0debc2db93a65b59eb7b",
+                "score_numerator": 3
+              },
+              {
+                "cost": 1,
+                "journey_id": "0ee0ae9193762890f35c",
+                "score_numerator": 3
+              },
+              {
+                "cost": 1,
+                "journey_id": "119049f96a9ce268cda9",
+                "score_numerator": 3
+              },
+              {
+                "cost": 1,
+                "journey_id": "16fe2f0df9e885f0426b",
+                "score_numerator": 3
+              },
+              {
+                "cost": 1,
+                "journey_id": "1859c56c5fd4bb4f5024",
+                "score_numerator": 3
+              },
+              {
+                "cost": 1,
+                "journey_id": "18a329869a86dddd1f55",
+                "score_numerator": 3
+              },
+              {
+                "cost": 1,
+                "journey_id": "196ecb30183b42b8b25f",
+                "score_numerator": 3
+              },
+              {
+                "cost": 1,
+                "journey_id": "19ac2de6d519aabed4b1",
+                "score_numerator": 3
+              },
+              {
+                "cost": 1,
+                "journey_id": "1af31f31aab02452d275",
+                "score_numerator": 3
+              },
+              {
+                "cost": 1,
+                "journey_id": "1c1ac121fe7b1c1d1fad",
+                "score_numerator": 3
+              },
+              {
+                "cost": 1,
+                "journey_id": "1c56e36a778d74c984c4",
+                "score_numerator": 3
+              },
+              {
+                "cost": 1,
+                "journey_id": "1e344dce2069d143d257",
+                "score_numerator": 3
+              },
+              {
+                "cost": 1,
+                "journey_id": "210e8f51d1c4d346bd71",
+                "score_numerator": 3
+              },
+              {
+                "cost": 1,
+                "journey_id": "21a201a050d4fa994a1f",
+                "score_numerator": 3
+              },
+              {
+                "cost": 1,
+                "journey_id": "23814f98b49731be14f2",
+                "score_numerator": 3
+              },
+              {
+                "cost": 1,
+                "journey_id": "245152b82fd6bd31db00",
+                "score_numerator": 3
+              },
+              {
+                "cost": 1,
+                "journey_id": "25b4ba3d10344524fc84",
+                "score_numerator": 3
+              },
+              {
+                "cost": 1,
+                "journey_id": "25e92f55243d530145c6",
+                "score_numerator": 3
+              },
+              {
+                "cost": 1,
+                "journey_id": "291322516a024cba09c2",
+                "score_numerator": 3
+              },
+              {
+                "cost": 1,
+                "journey_id": "29a39d9abbfed3357221",
+                "score_numerator": 3
+              },
+              {
+                "cost": 1,
+                "journey_id": "2d5fbfe563af3769ea99",
+                "score_numerator": 3
+              },
+              {
+                "cost": 1,
+                "journey_id": "2de849965e8c7bc6124f",
+                "score_numerator": 3
+              },
+              {
+                "cost": 1,
+                "journey_id": "30b84505fef3c299dd4e",
+                "score_numerator": 3
+              },
+              {
+                "cost": 1,
+                "journey_id": "350267f2adcd2b1176fd",
+                "score_numerator": 3
+              },
+              {
+                "cost": 1,
+                "journey_id": "35636e30cfd874ada30f",
+                "score_numerator": 3
+              },
+              {
+                "cost": 1,
+                "journey_id": "35fd58e032cfeb125a11",
+                "score_numerator": 3
+              },
+              {
+                "cost": 1,
+                "journey_id": "3658e03988eebf878dd3",
+                "score_numerator": 3
+              },
+              {
+                "cost": 1,
+                "journey_id": "368f8ffe3aab1f700c90",
+                "score_numerator": 3
+              },
+              {
+                "cost": 1,
+                "journey_id": "3c7e39c32c9e3e1cfd15",
+                "score_numerator": 3
+              },
+              {
+                "cost": 1,
+                "journey_id": "3d63d51d73dd0279630a",
+                "score_numerator": 3
+              },
+              {
+                "cost": 1,
+                "journey_id": "3d6eeba76c541f10f814",
+                "score_numerator": 3
+              },
+              {
+                "cost": 1,
+                "journey_id": "3e3b10162531feee912f",
+                "score_numerator": 3
+              },
+              {
+                "cost": 1,
+                "journey_id": "3f8142fc0d27b5b1c8b7",
+                "score_numerator": 3
+              },
+              {
+                "cost": 1,
+                "journey_id": "3fc6af256387bb715cb0",
+                "score_numerator": 3
+              },
+              {
+                "cost": 1,
+                "journey_id": "43d915bdcd37d42898ac",
+                "score_numerator": 3
+              },
+              {
+                "cost": 1,
+                "journey_id": "46f0376f39f1709b3f5a",
+                "score_numerator": 3
+              },
+              {
+                "cost": 1,
+                "journey_id": "49fa43ee3738da3d8447",
+                "score_numerator": 3
+              },
+              {
+                "cost": 1,
+                "journey_id": "4a3ccf8aecd2c3a6ff69",
+                "score_numerator": 3
+              },
+              {
+                "cost": 1,
+                "journey_id": "4c1cab2fcbcfbe3714a7",
+                "score_numerator": 3
+              },
+              {
+                "cost": 1,
+                "journey_id": "4d74c135f411fc025d72",
+                "score_numerator": 3
+              },
+              {
+                "cost": 1,
+                "journey_id": "4e0b535d27d1f3fa24fe",
+                "score_numerator": 3
+              },
+              {
+                "cost": 1,
+                "journey_id": "4f853a50aad3f3e6c299",
+                "score_numerator": 3
+              },
+              {
+                "cost": 1,
+                "journey_id": "50a3588f9ce3c7580ba8",
+                "score_numerator": 3
+              },
+              {
+                "cost": 1,
+                "journey_id": "560e655bbdc7d71d6b57",
+                "score_numerator": 3
+              },
+              {
+                "cost": 1,
+                "journey_id": "59b2ac9b9b27f275ea0b",
+                "score_numerator": 3
+              },
+              {
+                "cost": 1,
+                "journey_id": "5c01fdf2de0d6ce16501",
+                "score_numerator": 3
+              },
+              {
+                "cost": 1,
+                "journey_id": "5f893ce5478ffcd9b96d",
+                "score_numerator": 3
+              },
+              {
+                "cost": 1,
+                "journey_id": "60a3830b0dcaebf72729",
+                "score_numerator": 3
+              },
+              {
+                "cost": 1,
+                "journey_id": "61df90876c71d68835ea",
+                "score_numerator": 3
+              },
+              {
+                "cost": 1,
+                "journey_id": "62b15fcc50f9efc27034",
+                "score_numerator": 3
+              },
+              {
+                "cost": 1,
+                "journey_id": "63dd7800ecbe075d79f1",
+                "score_numerator": 3
+              },
+              {
+                "cost": 1,
+                "journey_id": "65128127bfa9fc3c6e8a",
+                "score_numerator": 3
+              }
+            ],
+            "E": [
+              {
+                "cost": 1,
+                "journey_id": "022c2a4af86602d54884",
+                "score_numerator": 8
+              },
+              {
+                "cost": 1,
+                "journey_id": "08f61ee20629348a366d",
+                "score_numerator": 8
+              },
+              {
+                "cost": 1,
+                "journey_id": "09826c00f2f3c170fbb0",
+                "score_numerator": 8
+              },
+              {
+                "cost": 1,
+                "journey_id": "0a7dda98abefc480f65a",
+                "score_numerator": 8
+              },
+              {
+                "cost": 1,
+                "journey_id": "0d8a662c278d6447c873",
+                "score_numerator": 8
+              },
+              {
+                "cost": 1,
+                "journey_id": "0debc2db93a65b59eb7b",
+                "score_numerator": 8
+              },
+              {
+                "cost": 1,
+                "journey_id": "0ee0ae9193762890f35c",
+                "score_numerator": 8
+              },
+              {
+                "cost": 1,
+                "journey_id": "119049f96a9ce268cda9",
+                "score_numerator": 8
+              },
+              {
+                "cost": 1,
+                "journey_id": "16fe2f0df9e885f0426b",
+                "score_numerator": 8
+              },
+              {
+                "cost": 1,
+                "journey_id": "1859c56c5fd4bb4f5024",
+                "score_numerator": 8
+              },
+              {
+                "cost": 1,
+                "journey_id": "18a329869a86dddd1f55",
+                "score_numerator": 8
+              },
+              {
+                "cost": 1,
+                "journey_id": "196ecb30183b42b8b25f",
+                "score_numerator": 8
+              },
+              {
+                "cost": 1,
+                "journey_id": "19ac2de6d519aabed4b1",
+                "score_numerator": 8
+              },
+              {
+                "cost": 1,
+                "journey_id": "1af31f31aab02452d275",
+                "score_numerator": 8
+              },
+              {
+                "cost": 1,
+                "journey_id": "1c1ac121fe7b1c1d1fad",
+                "score_numerator": 8
+              },
+              {
+                "cost": 1,
+                "journey_id": "1c56e36a778d74c984c4",
+                "score_numerator": 8
+              },
+              {
+                "cost": 1,
+                "journey_id": "1e344dce2069d143d257",
+                "score_numerator": 8
+              },
+              {
+                "cost": 1,
+                "journey_id": "210e8f51d1c4d346bd71",
+                "score_numerator": 8
+              },
+              {
+                "cost": 1,
+                "journey_id": "21a201a050d4fa994a1f",
+                "score_numerator": 8
+              },
+              {
+                "cost": 1,
+                "journey_id": "23814f98b49731be14f2",
+                "score_numerator": 8
+              },
+              {
+                "cost": 1,
+                "journey_id": "245152b82fd6bd31db00",
+                "score_numerator": 8
+              },
+              {
+                "cost": 1,
+                "journey_id": "25b4ba3d10344524fc84",
+                "score_numerator": 8
+              },
+              {
+                "cost": 1,
+                "journey_id": "25e92f55243d530145c6",
+                "score_numerator": 8
+              },
+              {
+                "cost": 1,
+                "journey_id": "291322516a024cba09c2",
+                "score_numerator": 8
+              },
+              {
+                "cost": 1,
+                "journey_id": "29a39d9abbfed3357221",
+                "score_numerator": 8
+              },
+              {
+                "cost": 1,
+                "journey_id": "2d5fbfe563af3769ea99",
+                "score_numerator": 8
+              },
+              {
+                "cost": 1,
+                "journey_id": "2de849965e8c7bc6124f",
+                "score_numerator": 8
+              },
+              {
+                "cost": 1,
+                "journey_id": "30b84505fef3c299dd4e",
+                "score_numerator": 8
+              },
+              {
+                "cost": 1,
+                "journey_id": "350267f2adcd2b1176fd",
+                "score_numerator": 8
+              },
+              {
+                "cost": 1,
+                "journey_id": "35636e30cfd874ada30f",
+                "score_numerator": 8
+              },
+              {
+                "cost": 1,
+                "journey_id": "35fd58e032cfeb125a11",
+                "score_numerator": 8
+              },
+              {
+                "cost": 1,
+                "journey_id": "3658e03988eebf878dd3",
+                "score_numerator": 8
+              },
+              {
+                "cost": 1,
+                "journey_id": "368f8ffe3aab1f700c90",
+                "score_numerator": 8
+              },
+              {
+                "cost": 1,
+                "journey_id": "3c7e39c32c9e3e1cfd15",
+                "score_numerator": 8
+              },
+              {
+                "cost": 1,
+                "journey_id": "3d63d51d73dd0279630a",
+                "score_numerator": 8
+              },
+              {
+                "cost": 1,
+                "journey_id": "3d6eeba76c541f10f814",
+                "score_numerator": 8
+              },
+              {
+                "cost": 1,
+                "journey_id": "3e3b10162531feee912f",
+                "score_numerator": 8
+              },
+              {
+                "cost": 1,
+                "journey_id": "3f8142fc0d27b5b1c8b7",
+                "score_numerator": 8
+              },
+              {
+                "cost": 1,
+                "journey_id": "3fc6af256387bb715cb0",
+                "score_numerator": 8
+              },
+              {
+                "cost": 1,
+                "journey_id": "43d915bdcd37d42898ac",
+                "score_numerator": 8
+              },
+              {
+                "cost": 1,
+                "journey_id": "46f0376f39f1709b3f5a",
+                "score_numerator": 8
+              },
+              {
+                "cost": 1,
+                "journey_id": "49fa43ee3738da3d8447",
+                "score_numerator": 8
+              },
+              {
+                "cost": 1,
+                "journey_id": "4a3ccf8aecd2c3a6ff69",
+                "score_numerator": 8
+              },
+              {
+                "cost": 1,
+                "journey_id": "4a89a06ba5058ef4ccea",
+                "score_numerator": 8
+              },
+              {
+                "cost": 1,
+                "journey_id": "4c1cab2fcbcfbe3714a7",
+                "score_numerator": 8
+              },
+              {
+                "cost": 1,
+                "journey_id": "4d74c135f411fc025d72",
+                "score_numerator": 8
+              },
+              {
+                "cost": 1,
+                "journey_id": "4e0b535d27d1f3fa24fe",
+                "score_numerator": 8
+              },
+              {
+                "cost": 1,
+                "journey_id": "4f853a50aad3f3e6c299",
+                "score_numerator": 8
+              },
+              {
+                "cost": 1,
+                "journey_id": "50a3588f9ce3c7580ba8",
+                "score_numerator": 8
+              },
+              {
+                "cost": 1,
+                "journey_id": "560e655bbdc7d71d6b57",
+                "score_numerator": 8
+              },
+              {
+                "cost": 1,
+                "journey_id": "59b2ac9b9b27f275ea0b",
+                "score_numerator": 8
+              },
+              {
+                "cost": 1,
+                "journey_id": "5c01fdf2de0d6ce16501",
+                "score_numerator": 8
+              },
+              {
+                "cost": 1,
+                "journey_id": "5f893ce5478ffcd9b96d",
+                "score_numerator": 8
+              },
+              {
+                "cost": 1,
+                "journey_id": "60a3830b0dcaebf72729",
+                "score_numerator": 8
+              },
+              {
+                "cost": 1,
+                "journey_id": "61df90876c71d68835ea",
+                "score_numerator": 8
+              },
+              {
+                "cost": 1,
+                "journey_id": "62b15fcc50f9efc27034",
+                "score_numerator": 8
+              },
+              {
+                "cost": 1,
+                "journey_id": "63dd7800ecbe075d79f1",
+                "score_numerator": 8
+              },
+              {
+                "cost": 1,
+                "journey_id": "65128127bfa9fc3c6e8a",
+                "score_numerator": 8
+              },
+              {
+                "cost": 1,
+                "journey_id": "3ec28069888f5177b261",
+                "score_numerator": 7
+              },
+              {
+                "cost": 1,
+                "journey_id": "44450449eca5c1348190",
+                "score_numerator": 7
+              },
+              {
+                "cost": 1,
+                "journey_id": "4b8f1ab7574ca965af4d",
+                "score_numerator": 7
+              },
+              {
+                "cost": 1,
+                "journey_id": "53d52e6e90dbf1990691",
+                "score_numerator": 7
+              },
+              {
+                "cost": 1,
+                "journey_id": "5760c5cfad52aafb7db9",
+                "score_numerator": 7
+              },
+              {
+                "cost": 1,
+                "journey_id": "5f167bc58be02da93ad7",
+                "score_numerator": 7
+              }
+            ]
+          },
+          "same_choice": false,
+          "same_ranking": false,
+          "selected": {
+            "cost": 1,
+            "journey_id": "3ec28069888f5177b261",
+            "policy": "balanced",
+            "score": 4.0,
+            "score_numerator": 4,
+            "separated_pairs": [
+              [
+                "c0",
+                "c1",
+                0
+              ],
+              [
+                "c0",
+                "c3",
+                0
+              ],
+              [
+                "c1",
+                "c2",
+                1
+              ],
+              [
+                "c2",
+                "c3",
+                2
+              ]
+            ]
+          },
+          "shared_top_tiebreak": false,
+          "single_partition": false,
+          "top_ids": {
+            "D": [
+              "3ec28069888f5177b261",
+              "44450449eca5c1348190",
+              "4a89a06ba5058ef4ccea",
+              "4b8f1ab7574ca965af4d",
+              "53d52e6e90dbf1990691",
+              "5760c5cfad52aafb7db9",
+              "5f167bc58be02da93ad7"
+            ],
+            "E": [
+              "022c2a4af86602d54884",
+              "08f61ee20629348a366d",
+              "09826c00f2f3c170fbb0",
+              "0a7dda98abefc480f65a",
+              "0d8a662c278d6447c873",
+              "0debc2db93a65b59eb7b",
+              "0ee0ae9193762890f35c",
+              "119049f96a9ce268cda9",
+              "16fe2f0df9e885f0426b",
+              "1859c56c5fd4bb4f5024",
+              "18a329869a86dddd1f55",
+              "196ecb30183b42b8b25f",
+              "19ac2de6d519aabed4b1",
+              "1af31f31aab02452d275",
+              "1c1ac121fe7b1c1d1fad",
+              "1c56e36a778d74c984c4",
+              "1e344dce2069d143d257",
+              "210e8f51d1c4d346bd71",
+              "21a201a050d4fa994a1f",
+              "23814f98b49731be14f2",
+              "245152b82fd6bd31db00",
+              "25b4ba3d10344524fc84",
+              "25e92f55243d530145c6",
+              "291322516a024cba09c2",
+              "29a39d9abbfed3357221",
+              "2d5fbfe563af3769ea99",
+              "2de849965e8c7bc6124f",
+              "30b84505fef3c299dd4e",
+              "350267f2adcd2b1176fd",
+              "35636e30cfd874ada30f",
+              "35fd58e032cfeb125a11",
+              "3658e03988eebf878dd3",
+              "368f8ffe3aab1f700c90",
+              "3c7e39c32c9e3e1cfd15",
+              "3d63d51d73dd0279630a",
+              "3d6eeba76c541f10f814",
+              "3e3b10162531feee912f",
+              "3f8142fc0d27b5b1c8b7",
+              "3fc6af256387bb715cb0",
+              "43d915bdcd37d42898ac",
+              "46f0376f39f1709b3f5a",
+              "49fa43ee3738da3d8447",
+              "4a3ccf8aecd2c3a6ff69",
+              "4a89a06ba5058ef4ccea",
+              "4c1cab2fcbcfbe3714a7",
+              "4d74c135f411fc025d72",
+              "4e0b535d27d1f3fa24fe",
+              "4f853a50aad3f3e6c299",
+              "50a3588f9ce3c7580ba8",
+              "560e655bbdc7d71d6b57",
+              "59b2ac9b9b27f275ea0b",
+              "5c01fdf2de0d6ce16501",
+              "5f893ce5478ffcd9b96d",
+              "60a3830b0dcaebf72729",
+              "61df90876c71d68835ea",
+              "62b15fcc50f9efc27034",
+              "63dd7800ecbe075d79f1",
+              "65128127bfa9fc3c6e8a"
+            ]
+          },
+          "weights": [
+            {
+              "I": 0,
+              "ids": [
+                "c0",
+                "c1"
+              ],
+              "weight": 1
+            },
+            {
+              "I": 2,
+              "ids": [
+                "c0",
+                "c2"
+              ],
+              "weight": 3
+            },
+            {
+              "I": 0,
+              "ids": [
+                "c0",
+                "c3"
+              ],
+              "weight": 1
+            },
+            {
+              "I": 1,
+              "ids": [
+                "c1",
+                "c2"
+              ],
+              "weight": 2
+            },
+            {
+              "I": 0,
+              "ids": [
+                "c1",
+                "c3"
+              ],
+              "weight": 1
+            },
+            {
+              "I": 2,
+              "ids": [
+                "c2",
+                "c3"
+              ],
+              "weight": 3
+            }
+          ],
+          "witness_count": 64,
+          "witness_partitions": {
+            "0010": 57,
+            "0101": 6,
+            "0110": 1
+          }
+        },
+        {
+          "active_ids": [
+            "c1",
+            "c3"
+          ],
+          "after_ids": [
+            "c1"
+          ],
+          "after_plan_id": "4e0b535d27d1f3fa24fe",
+          "before_plan_id": "4e0b535d27d1f3fa24fe",
+          "constant_weights": true,
+          "judgment": {
+            "reason": "The journey meets all specified requirements including the departure time, destination, and number of transfers.",
+            "spans": [
+              {
+                "end": 5,
+                "start": 0
+              }
+            ],
+            "verdict": "satisfied"
+          },
+          "patterns": {
+            "00": 5,
+            "10": 1,
+            "11": 57
+          },
+          "ranks": {
+            "D": [
+              {
+                "cost": 1,
+                "journey_id": "4a89a06ba5058ef4ccea",
+                "score_numerator": 1
+              }
+            ],
+            "E": [
+              {
+                "cost": 1,
+                "journey_id": "4a89a06ba5058ef4ccea",
+                "score_numerator": 1
+              }
+            ]
+          },
+          "same_choice": true,
+          "same_ranking": true,
+          "selected": {
+            "cost": 1,
+            "journey_id": "4a89a06ba5058ef4ccea",
+            "policy": "balanced",
+            "score": 1.0,
+            "score_numerator": 1,
+            "separated_pairs": [
+              [
+                "c1",
+                "c3",
+                0
+              ]
+            ]
+          },
+          "shared_top_tiebreak": false,
+          "single_partition": true,
+          "top_ids": {
+            "D": [
+              "4a89a06ba5058ef4ccea"
+            ],
+            "E": [
+              "4a89a06ba5058ef4ccea"
+            ]
+          },
+          "weights": [
+            {
+              "I": 0,
+              "ids": [
+                "c1",
+                "c3"
+              ],
+              "weight": 1
+            }
+          ],
+          "witness_count": 1,
+          "witness_partitions": {
+            "01": 1
+          }
+        }
+      ],
+      "E": [
+        {
+          "active_ids": [
+            "c0",
+            "c1",
+            "c2",
+            "c3"
+          ],
+          "after_ids": [
+            "c2"
+          ],
+          "after_plan_id": "4a89a06ba5058ef4ccea",
+          "before_plan_id": "4e0b535d27d1f3fa24fe",
+          "constant_weights": false,
+          "judgment": {
+            "reason": "The journey departs earlier than the requested time (07:18:49 vs 08:57:49) and exceeds the allowed 1 transfer limit (2 transfers).",
+            "spans": [
+              {
+                "end": 5,
+                "start": 0
+              },
+              {
+                "end": 111,
+                "start": 104
+              }
+            ],
+            "verdict": "violated"
+          },
+          "patterns": {
+            "0010": 5,
+            "0101": 6,
+            "0110": 1,
+            "1101": 52
+          },
+          "ranks": {
+            "D": [
+              {
+                "cost": 1,
+                "journey_id": "3ec28069888f5177b261",
+                "score_numerator": 4
+              },
+              {
+                "cost": 1,
+                "journey_id": "44450449eca5c1348190",
+                "score_numerator": 4
+              },
+              {
+                "cost": 1,
+                "journey_id": "4a89a06ba5058ef4ccea",
+                "score_numerator": 4
+              },
+              {
+                "cost": 1,
+                "journey_id": "4b8f1ab7574ca965af4d",
+                "score_numerator": 4
+              },
+              {
+                "cost": 1,
+                "journey_id": "53d52e6e90dbf1990691",
+                "score_numerator": 4
+              },
+              {
+                "cost": 1,
+                "journey_id": "5760c5cfad52aafb7db9",
+                "score_numerator": 4
+              },
+              {
+                "cost": 1,
+                "journey_id": "5f167bc58be02da93ad7",
+                "score_numerator": 4
+              },
+              {
+                "cost": 1,
+                "journey_id": "022c2a4af86602d54884",
+                "score_numerator": 3
+              },
+              {
+                "cost": 1,
+                "journey_id": "08f61ee20629348a366d",
+                "score_numerator": 3
+              },
+              {
+                "cost": 1,
+                "journey_id": "09826c00f2f3c170fbb0",
+                "score_numerator": 3
+              },
+              {
+                "cost": 1,
+                "journey_id": "0a7dda98abefc480f65a",
+                "score_numerator": 3
+              },
+              {
+                "cost": 1,
+                "journey_id": "0d8a662c278d6447c873",
+                "score_numerator": 3
+              },
+              {
+                "cost": 1,
+                "journey_id": "0debc2db93a65b59eb7b",
+                "score_numerator": 3
+              },
+              {
+                "cost": 1,
+                "journey_id": "0ee0ae9193762890f35c",
+                "score_numerator": 3
+              },
+              {
+                "cost": 1,
+                "journey_id": "119049f96a9ce268cda9",
+                "score_numerator": 3
+              },
+              {
+                "cost": 1,
+                "journey_id": "16fe2f0df9e885f0426b",
+                "score_numerator": 3
+              },
+              {
+                "cost": 1,
+                "journey_id": "1859c56c5fd4bb4f5024",
+                "score_numerator": 3
+              },
+              {
+                "cost": 1,
+                "journey_id": "18a329869a86dddd1f55",
+                "score_numerator": 3
+              },
+              {
+                "cost": 1,
+                "journey_id": "196ecb30183b42b8b25f",
+                "score_numerator": 3
+              },
+              {
+                "cost": 1,
+                "journey_id": "19ac2de6d519aabed4b1",
+                "score_numerator": 3
+              },
+              {
+                "cost": 1,
+                "journey_id": "1af31f31aab02452d275",
+                "score_numerator": 3
+              },
+              {
+                "cost": 1,
+                "journey_id": "1c1ac121fe7b1c1d1fad",
+                "score_numerator": 3
+              },
+              {
+                "cost": 1,
+                "journey_id": "1c56e36a778d74c984c4",
+                "score_numerator": 3
+              },
+              {
+                "cost": 1,
+                "journey_id": "1e344dce2069d143d257",
+                "score_numerator": 3
+              },
+              {
+                "cost": 1,
+                "journey_id": "210e8f51d1c4d346bd71",
+                "score_numerator": 3
+              },
+              {
+                "cost": 1,
+                "journey_id": "21a201a050d4fa994a1f",
+                "score_numerator": 3
+              },
+              {
+                "cost": 1,
+                "journey_id": "23814f98b49731be14f2",
+                "score_numerator": 3
+              },
+              {
+                "cost": 1,
+                "journey_id": "245152b82fd6bd31db00",
+                "score_numerator": 3
+              },
+              {
+                "cost": 1,
+                "journey_id": "25b4ba3d10344524fc84",
+                "score_numerator": 3
+              },
+              {
+                "cost": 1,
+                "journey_id": "25e92f55243d530145c6",
+                "score_numerator": 3
+              },
+              {
+                "cost": 1,
+                "journey_id": "291322516a024cba09c2",
+                "score_numerator": 3
+              },
+              {
+                "cost": 1,
+                "journey_id": "29a39d9abbfed3357221",
+                "score_numerator": 3
+              },
+              {
+                "cost": 1,
+                "journey_id": "2d5fbfe563af3769ea99",
+                "score_numerator": 3
+              },
+              {
+                "cost": 1,
+                "journey_id": "2de849965e8c7bc6124f",
+                "score_numerator": 3
+              },
+              {
+                "cost": 1,
+                "journey_id": "30b84505fef3c299dd4e",
+                "score_numerator": 3
+              },
+              {
+                "cost": 1,
+                "journey_id": "350267f2adcd2b1176fd",
+                "score_numerator": 3
+              },
+              {
+                "cost": 1,
+                "journey_id": "35636e30cfd874ada30f",
+                "score_numerator": 3
+              },
+              {
+                "cost": 1,
+                "journey_id": "35fd58e032cfeb125a11",
+                "score_numerator": 3
+              },
+              {
+                "cost": 1,
+                "journey_id": "3658e03988eebf878dd3",
+                "score_numerator": 3
+              },
+              {
+                "cost": 1,
+                "journey_id": "368f8ffe3aab1f700c90",
+                "score_numerator": 3
+              },
+              {
+                "cost": 1,
+                "journey_id": "3c7e39c32c9e3e1cfd15",
+                "score_numerator": 3
+              },
+              {
+                "cost": 1,
+                "journey_id": "3d63d51d73dd0279630a",
+                "score_numerator": 3
+              },
+              {
+                "cost": 1,
+                "journey_id": "3d6eeba76c541f10f814",
+                "score_numerator": 3
+              },
+              {
+                "cost": 1,
+                "journey_id": "3e3b10162531feee912f",
+                "score_numerator": 3
+              },
+              {
+                "cost": 1,
+                "journey_id": "3f8142fc0d27b5b1c8b7",
+                "score_numerator": 3
+              },
+              {
+                "cost": 1,
+                "journey_id": "3fc6af256387bb715cb0",
+                "score_numerator": 3
+              },
+              {
+                "cost": 1,
+                "journey_id": "43d915bdcd37d42898ac",
+                "score_numerator": 3
+              },
+              {
+                "cost": 1,
+                "journey_id": "46f0376f39f1709b3f5a",
+                "score_numerator": 3
+              },
+              {
+                "cost": 1,
+                "journey_id": "49fa43ee3738da3d8447",
+                "score_numerator": 3
+              },
+              {
+                "cost": 1,
+                "journey_id": "4a3ccf8aecd2c3a6ff69",
+                "score_numerator": 3
+              },
+              {
+                "cost": 1,
+                "journey_id": "4c1cab2fcbcfbe3714a7",
+                "score_numerator": 3
+              },
+              {
+                "cost": 1,
+                "journey_id": "4d74c135f411fc025d72",
+                "score_numerator": 3
+              },
+              {
+                "cost": 1,
+                "journey_id": "4e0b535d27d1f3fa24fe",
+                "score_numerator": 3
+              },
+              {
+                "cost": 1,
+                "journey_id": "4f853a50aad3f3e6c299",
+                "score_numerator": 3
+              },
+              {
+                "cost": 1,
+                "journey_id": "50a3588f9ce3c7580ba8",
+                "score_numerator": 3
+              },
+              {
+                "cost": 1,
+                "journey_id": "560e655bbdc7d71d6b57",
+                "score_numerator": 3
+              },
+              {
+                "cost": 1,
+                "journey_id": "59b2ac9b9b27f275ea0b",
+                "score_numerator": 3
+              },
+              {
+                "cost": 1,
+                "journey_id": "5c01fdf2de0d6ce16501",
+                "score_numerator": 3
+              },
+              {
+                "cost": 1,
+                "journey_id": "5f893ce5478ffcd9b96d",
+                "score_numerator": 3
+              },
+              {
+                "cost": 1,
+                "journey_id": "60a3830b0dcaebf72729",
+                "score_numerator": 3
+              },
+              {
+                "cost": 1,
+                "journey_id": "61df90876c71d68835ea",
+                "score_numerator": 3
+              },
+              {
+                "cost": 1,
+                "journey_id": "62b15fcc50f9efc27034",
+                "score_numerator": 3
+              },
+              {
+                "cost": 1,
+                "journey_id": "63dd7800ecbe075d79f1",
+                "score_numerator": 3
+              },
+              {
+                "cost": 1,
+                "journey_id": "65128127bfa9fc3c6e8a",
+                "score_numerator": 3
+              }
+            ],
+            "E": [
+              {
+                "cost": 1,
+                "journey_id": "022c2a4af86602d54884",
+                "score_numerator": 8
+              },
+              {
+                "cost": 1,
+                "journey_id": "08f61ee20629348a366d",
+                "score_numerator": 8
+              },
+              {
+                "cost": 1,
+                "journey_id": "09826c00f2f3c170fbb0",
+                "score_numerator": 8
+              },
+              {
+                "cost": 1,
+                "journey_id": "0a7dda98abefc480f65a",
+                "score_numerator": 8
+              },
+              {
+                "cost": 1,
+                "journey_id": "0d8a662c278d6447c873",
+                "score_numerator": 8
+              },
+              {
+                "cost": 1,
+                "journey_id": "0debc2db93a65b59eb7b",
+                "score_numerator": 8
+              },
+              {
+                "cost": 1,
+                "journey_id": "0ee0ae9193762890f35c",
+                "score_numerator": 8
+              },
+              {
+                "cost": 1,
+                "journey_id": "119049f96a9ce268cda9",
+                "score_numerator": 8
+              },
+              {
+                "cost": 1,
+                "journey_id": "16fe2f0df9e885f0426b",
+                "score_numerator": 8
+              },
+              {
+                "cost": 1,
+                "journey_id": "1859c56c5fd4bb4f5024",
+                "score_numerator": 8
+              },
+              {
+                "cost": 1,
+                "journey_id": "18a329869a86dddd1f55",
+                "score_numerator": 8
+              },
+              {
+                "cost": 1,
+                "journey_id": "196ecb30183b42b8b25f",
+                "score_numerator": 8
+              },
+              {
+                "cost": 1,
+                "journey_id": "19ac2de6d519aabed4b1",
+                "score_numerator": 8
+              },
+              {
+                "cost": 1,
+                "journey_id": "1af31f31aab02452d275",
+                "score_numerator": 8
+              },
+              {
+                "cost": 1,
+                "journey_id": "1c1ac121fe7b1c1d1fad",
+                "score_numerator": 8
+              },
+              {
+                "cost": 1,
+                "journey_id": "1c56e36a778d74c984c4",
+                "score_numerator": 8
+              },
+              {
+                "cost": 1,
+                "journey_id": "1e344dce2069d143d257",
+                "score_numerator": 8
+              },
+              {
+                "cost": 1,
+                "journey_id": "210e8f51d1c4d346bd71",
+                "score_numerator": 8
+              },
+              {
+                "cost": 1,
+                "journey_id": "21a201a050d4fa994a1f",
+                "score_numerator": 8
+              },
+              {
+                "cost": 1,
+                "journey_id": "23814f98b49731be14f2",
+                "score_numerator": 8
+              },
+              {
+                "cost": 1,
+                "journey_id": "245152b82fd6bd31db00",
+                "score_numerator": 8
+              },
+              {
+                "cost": 1,
+                "journey_id": "25b4ba3d10344524fc84",
+                "score_numerator": 8
+              },
+              {
+                "cost": 1,
+                "journey_id": "25e92f55243d530145c6",
+                "score_numerator": 8
+              },
+              {
+                "cost": 1,
+                "journey_id": "291322516a024cba09c2",
+                "score_numerator": 8
+              },
+              {
+                "cost": 1,
+                "journey_id": "29a39d9abbfed3357221",
+                "score_numerator": 8
+              },
+              {
+                "cost": 1,
+                "journey_id": "2d5fbfe563af3769ea99",
+                "score_numerator": 8
+              },
+              {
+                "cost": 1,
+                "journey_id": "2de849965e8c7bc6124f",
+                "score_numerator": 8
+              },
+              {
+                "cost": 1,
+                "journey_id": "30b84505fef3c299dd4e",
+                "score_numerator": 8
+              },
+              {
+                "cost": 1,
+                "journey_id": "350267f2adcd2b1176fd",
+                "score_numerator": 8
+              },
+              {
+                "cost": 1,
+                "journey_id": "35636e30cfd874ada30f",
+                "score_numerator": 8
+              },
+              {
+                "cost": 1,
+                "journey_id": "35fd58e032cfeb125a11",
+                "score_numerator": 8
+              },
+              {
+                "cost": 1,
+                "journey_id": "3658e03988eebf878dd3",
+                "score_numerator": 8
+              },
+              {
+                "cost": 1,
+                "journey_id": "368f8ffe3aab1f700c90",
+                "score_numerator": 8
+              },
+              {
+                "cost": 1,
+                "journey_id": "3c7e39c32c9e3e1cfd15",
+                "score_numerator": 8
+              },
+              {
+                "cost": 1,
+                "journey_id": "3d63d51d73dd0279630a",
+                "score_numerator": 8
+              },
+              {
+                "cost": 1,
+                "journey_id": "3d6eeba76c541f10f814",
+                "score_numerator": 8
+              },
+              {
+                "cost": 1,
+                "journey_id": "3e3b10162531feee912f",
+                "score_numerator": 8
+              },
+              {
+                "cost": 1,
+                "journey_id": "3f8142fc0d27b5b1c8b7",
+                "score_numerator": 8
+              },
+              {
+                "cost": 1,
+                "journey_id": "3fc6af256387bb715cb0",
+                "score_numerator": 8
+              },
+              {
+                "cost": 1,
+                "journey_id": "43d915bdcd37d42898ac",
+                "score_numerator": 8
+              },
+              {
+                "cost": 1,
+                "journey_id": "46f0376f39f1709b3f5a",
+                "score_numerator": 8
+              },
+              {
+                "cost": 1,
+                "journey_id": "49fa43ee3738da3d8447",
+                "score_numerator": 8
+              },
+              {
+                "cost": 1,
+                "journey_id": "4a3ccf8aecd2c3a6ff69",
+                "score_numerator": 8
+              },
+              {
+                "cost": 1,
+                "journey_id": "4a89a06ba5058ef4ccea",
+                "score_numerator": 8
+              },
+              {
+                "cost": 1,
+                "journey_id": "4c1cab2fcbcfbe3714a7",
+                "score_numerator": 8
+              },
+              {
+                "cost": 1,
+                "journey_id": "4d74c135f411fc025d72",
+                "score_numerator": 8
+              },
+              {
+                "cost": 1,
+                "journey_id": "4e0b535d27d1f3fa24fe",
+                "score_numerator": 8
+              },
+              {
+                "cost": 1,
+                "journey_id": "4f853a50aad3f3e6c299",
+                "score_numerator": 8
+              },
+              {
+                "cost": 1,
+                "journey_id": "50a3588f9ce3c7580ba8",
+                "score_numerator": 8
+              },
+              {
+                "cost": 1,
+                "journey_id": "560e655bbdc7d71d6b57",
+                "score_numerator": 8
+              },
+              {
+                "cost": 1,
+                "journey_id": "59b2ac9b9b27f275ea0b",
+                "score_numerator": 8
+              },
+              {
+                "cost": 1,
+                "journey_id": "5c01fdf2de0d6ce16501",
+                "score_numerator": 8
+              },
+              {
+                "cost": 1,
+                "journey_id": "5f893ce5478ffcd9b96d",
+                "score_numerator": 8
+              },
+              {
+                "cost": 1,
+                "journey_id": "60a3830b0dcaebf72729",
+                "score_numerator": 8
+              },
+              {
+                "cost": 1,
+                "journey_id": "61df90876c71d68835ea",
+                "score_numerator": 8
+              },
+              {
+                "cost": 1,
+                "journey_id": "62b15fcc50f9efc27034",
+                "score_numerator": 8
+              },
+              {
+                "cost": 1,
+                "journey_id": "63dd7800ecbe075d79f1",
+                "score_numerator": 8
+              },
+              {
+                "cost": 1,
+                "journey_id": "65128127bfa9fc3c6e8a",
+                "score_numerator": 8
+              },
+              {
+                "cost": 1,
+                "journey_id": "3ec28069888f5177b261",
+                "score_numerator": 7
+              },
+              {
+                "cost": 1,
+                "journey_id": "44450449eca5c1348190",
+                "score_numerator": 7
+              },
+              {
+                "cost": 1,
+                "journey_id": "4b8f1ab7574ca965af4d",
+                "score_numerator": 7
+              },
+              {
+                "cost": 1,
+                "journey_id": "53d52e6e90dbf1990691",
+                "score_numerator": 7
+              },
+              {
+                "cost": 1,
+                "journey_id": "5760c5cfad52aafb7db9",
+                "score_numerator": 7
+              },
+              {
+                "cost": 1,
+                "journey_id": "5f167bc58be02da93ad7",
+                "score_numerator": 7
+              }
+            ]
+          },
+          "same_choice": false,
+          "same_ranking": false,
+          "selected": {
+            "cost": 1,
+            "journey_id": "022c2a4af86602d54884",
+            "policy": "consequence",
+            "score": 8.0,
+            "score_numerator": 8,
+            "separated_pairs": [
+              [
+                "c0",
+                "c2",
+                2
+              ],
+              [
+                "c1",
+                "c2",
+                1
+              ],
+              [
+                "c2",
+                "c3",
+                2
+              ]
+            ]
+          },
+          "shared_top_tiebreak": false,
+          "single_partition": false,
+          "top_ids": {
+            "D": [
+              "3ec28069888f5177b261",
+              "44450449eca5c1348190",
+              "4a89a06ba5058ef4ccea",
+              "4b8f1ab7574ca965af4d",
+              "53d52e6e90dbf1990691",
+              "5760c5cfad52aafb7db9",
+              "5f167bc58be02da93ad7"
+            ],
+            "E": [
+              "022c2a4af86602d54884",
+              "08f61ee20629348a366d",
+              "09826c00f2f3c170fbb0",
+              "0a7dda98abefc480f65a",
+              "0d8a662c278d6447c873",
+              "0debc2db93a65b59eb7b",
+              "0ee0ae9193762890f35c",
+              "119049f96a9ce268cda9",
+              "16fe2f0df9e885f0426b",
+              "1859c56c5fd4bb4f5024",
+              "18a329869a86dddd1f55",
+              "196ecb30183b42b8b25f",
+              "19ac2de6d519aabed4b1",
+              "1af31f31aab02452d275",
+              "1c1ac121fe7b1c1d1fad",
+              "1c56e36a778d74c984c4",
+              "1e344dce2069d143d257",
+              "210e8f51d1c4d346bd71",
+              "21a201a050d4fa994a1f",
+              "23814f98b49731be14f2",
+              "245152b82fd6bd31db00",
+              "25b4ba3d10344524fc84",
+              "25e92f55243d530145c6",
+              "291322516a024cba09c2",
+              "29a39d9abbfed3357221",
+              "2d5fbfe563af3769ea99",
+              "2de849965e8c7bc6124f",
+              "30b84505fef3c299dd4e",
+              "350267f2adcd2b1176fd",
+              "35636e30cfd874ada30f",
+              "35fd58e032cfeb125a11",
+              "3658e03988eebf878dd3",
+              "368f8ffe3aab1f700c90",
+              "3c7e39c32c9e3e1cfd15",
+              "3d63d51d73dd0279630a",
+              "3d6eeba76c541f10f814",
+              "3e3b10162531feee912f",
+              "3f8142fc0d27b5b1c8b7",
+              "3fc6af256387bb715cb0",
+              "43d915bdcd37d42898ac",
+              "46f0376f39f1709b3f5a",
+              "49fa43ee3738da3d8447",
+              "4a3ccf8aecd2c3a6ff69",
+              "4a89a06ba5058ef4ccea",
+              "4c1cab2fcbcfbe3714a7",
+              "4d74c135f411fc025d72",
+              "4e0b535d27d1f3fa24fe",
+              "4f853a50aad3f3e6c299",
+              "50a3588f9ce3c7580ba8",
+              "560e655bbdc7d71d6b57",
+              "59b2ac9b9b27f275ea0b",
+              "5c01fdf2de0d6ce16501",
+              "5f893ce5478ffcd9b96d",
+              "60a3830b0dcaebf72729",
+              "61df90876c71d68835ea",
+              "62b15fcc50f9efc27034",
+              "63dd7800ecbe075d79f1",
+              "65128127bfa9fc3c6e8a"
+            ]
+          },
+          "weights": [
+            {
+              "I": 0,
+              "ids": [
+                "c0",
+                "c1"
+              ],
+              "weight": 1
+            },
+            {
+              "I": 2,
+              "ids": [
+                "c0",
+                "c2"
+              ],
+              "weight": 3
+            },
+            {
+              "I": 0,
+              "ids": [
+                "c0",
+                "c3"
+              ],
+              "weight": 1
+            },
+            {
+              "I": 1,
+              "ids": [
+                "c1",
+                "c2"
+              ],
+              "weight": 2
+            },
+            {
+              "I": 0,
+              "ids": [
+                "c1",
+                "c3"
+              ],
+              "weight": 1
+            },
+            {
+              "I": 2,
+              "ids": [
+                "c2",
+                "c3"
+              ],
+              "weight": 3
+            }
+          ],
+          "witness_count": 64,
+          "witness_partitions": {
+            "0010": 57,
+            "0101": 6,
+            "0110": 1
+          }
+        }
+      ]
+    },
+    "request": "On 2026-09-14, plan the outbound journey from NW Everett & 5th [stop_id=8886] to N Williams & NE Weidler [stop_id=11480]. Do not use rail or tram. Depart no later than 08:57:49, inclusive. Make at most 1 transfers.",
+    "requested": 4,
+    "scenario_id": "pilot-37",
+    "semantic_classes": 4,
+    "sequences": {
+      "D": [
+        "3ec28069888f5177b261",
+        "4a89a06ba5058ef4ccea"
+      ],
+      "E": [
+        "022c2a4af86602d54884"
+      ]
+    },
+    "trajectory_differs": true
+  }
+]

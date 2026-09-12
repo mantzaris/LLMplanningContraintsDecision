@@ -1,0 +1,3756 @@
+[
+  {
+    "all_raw_interpretations": [
+      {
+        "formula": {
+          "children": [
+            {
+              "kind": "atom",
+              "op": "depart_ge",
+              "scope": "outbound",
+              "source": null,
+              "unit": "seconds",
+              "value": 33480
+            },
+            {
+              "kind": "atom",
+              "op": "max_transfers",
+              "scope": "outbound",
+              "source": null,
+              "unit": "count",
+              "value": 0
+            },
+            {
+              "kind": "atom",
+              "op": "exclude_modes",
+              "scope": "outbound",
+              "source": null,
+              "unit": "mode",
+              "value": [
+                "rail",
+                "tram"
+              ]
+            }
+          ],
+          "kind": "all",
+          "source": null
+        },
+        "normalized_formula": {
+          "children": [
+            {
+              "kind": "atom",
+              "op": "depart_ge",
+              "scope": "outbound",
+              "source": null,
+              "unit": "seconds",
+              "value": 33480
+            },
+            {
+              "kind": "atom",
+              "op": "max_transfers",
+              "scope": "outbound",
+              "source": null,
+              "unit": "count",
+              "value": 0
+            },
+            {
+              "kind": "atom",
+              "op": "exclude_modes",
+              "scope": "outbound",
+              "source": null,
+              "unit": "mode",
+              "value": [
+                "rail",
+                "tram"
+              ]
+            }
+          ],
+          "kind": "all",
+          "source": null
+        },
+        "raw_index": 0,
+        "value_changes": []
+      },
+      {
+        "formula": {
+          "children": [
+            {
+              "kind": "atom",
+              "op": "depart_ge",
+              "scope": "outbound",
+              "source": null,
+              "unit": "seconds",
+              "value": 34080
+            },
+            {
+              "kind": "atom",
+              "op": "exclude_modes",
+              "scope": "outbound",
+              "source": null,
+              "unit": "mode",
+              "value": [
+                "rail",
+                "tram"
+              ]
+            },
+            {
+              "kind": "atom",
+              "op": "max_transfers",
+              "scope": "outbound",
+              "source": null,
+              "unit": "count",
+              "value": 0
+            }
+          ],
+          "kind": "all",
+          "source": null
+        },
+        "normalized_formula": {
+          "children": [
+            {
+              "kind": "atom",
+              "op": "depart_ge",
+              "scope": "outbound",
+              "source": null,
+              "unit": "seconds",
+              "value": 34080
+            },
+            {
+              "kind": "atom",
+              "op": "exclude_modes",
+              "scope": "outbound",
+              "source": null,
+              "unit": "mode",
+              "value": [
+                "rail",
+                "tram"
+              ]
+            },
+            {
+              "kind": "atom",
+              "op": "max_transfers",
+              "scope": "outbound",
+              "source": null,
+              "unit": "count",
+              "value": 0
+            }
+          ],
+          "kind": "all",
+          "source": null
+        },
+        "raw_index": 1,
+        "value_changes": []
+      },
+      {
+        "formula": {
+          "children": [
+            {
+              "kind": "atom",
+              "op": "depart_ge",
+              "scope": "outbound",
+              "source": null,
+              "unit": "seconds",
+              "value": 33680
+            },
+            {
+              "kind": "atom",
+              "op": "max_transfers",
+              "scope": "outbound",
+              "source": null,
+              "unit": "count",
+              "value": 0
+            },
+            {
+              "kind": "atom",
+              "op": "exclude_modes",
+              "scope": "outbound",
+              "source": null,
+              "unit": "mode",
+              "value": [
+                "rail",
+                "tram"
+              ]
+            }
+          ],
+          "kind": "all",
+          "source": null
+        },
+        "normalized_formula": {
+          "children": [
+            {
+              "kind": "atom",
+              "op": "depart_ge",
+              "scope": "outbound",
+              "source": null,
+              "unit": "seconds",
+              "value": 33680
+            },
+            {
+              "kind": "atom",
+              "op": "max_transfers",
+              "scope": "outbound",
+              "source": null,
+              "unit": "count",
+              "value": 0
+            },
+            {
+              "kind": "atom",
+              "op": "exclude_modes",
+              "scope": "outbound",
+              "source": null,
+              "unit": "mode",
+              "value": [
+                "rail",
+                "tram"
+              ]
+            }
+          ],
+          "kind": "all",
+          "source": null
+        },
+        "raw_index": 2,
+        "value_changes": []
+      },
+      {
+        "formula": {
+          "children": [
+            {
+              "kind": "atom",
+              "op": "depart_ge",
+              "scope": "outbound",
+              "source": null,
+              "unit": "seconds",
+              "value": 34080
+            },
+            {
+              "kind": "atom",
+              "op": "max_transfers",
+              "scope": "outbound",
+              "source": null,
+              "unit": "count",
+              "value": 0
+            },
+            {
+              "kind": "atom",
+              "op": "exclude_modes",
+              "scope": "outbound",
+              "source": null,
+              "unit": "mode",
+              "value": [
+                "rail",
+                "tram"
+              ]
+            }
+          ],
+          "kind": "all",
+          "source": null
+        },
+        "normalized_formula": {
+          "children": [
+            {
+              "kind": "atom",
+              "op": "depart_ge",
+              "scope": "outbound",
+              "source": null,
+              "unit": "seconds",
+              "value": 34080
+            },
+            {
+              "kind": "atom",
+              "op": "max_transfers",
+              "scope": "outbound",
+              "source": null,
+              "unit": "count",
+              "value": 0
+            },
+            {
+              "kind": "atom",
+              "op": "exclude_modes",
+              "scope": "outbound",
+              "source": null,
+              "unit": "mode",
+              "value": [
+                "rail",
+                "tram"
+              ]
+            }
+          ],
+          "kind": "all",
+          "source": null
+        },
+        "raw_index": 3,
+        "value_changes": []
+      }
+    ],
+    "annotation_check": "wording grammar agrees; provisional, no human audit",
+    "candidate_plan_correct_ids": [],
+    "family": "mode_exclusion",
+    "final_formula": {
+      "children": [
+        {
+          "kind": "atom",
+          "op": "depart_ge",
+          "scope": "outbound",
+          "source": null,
+          "unit": "seconds",
+          "value": 33480
+        },
+        {
+          "kind": "atom",
+          "op": "max_transfers",
+          "scope": "outbound",
+          "source": null,
+          "unit": "count",
+          "value": 0
+        },
+        {
+          "kind": "atom",
+          "op": "exclude_modes",
+          "scope": "outbound",
+          "source": null,
+          "unit": "mode",
+          "value": [
+            "rail",
+            "tram"
+          ]
+        }
+      ],
+      "kind": "all",
+      "source": null
+    },
+    "final_plan_id": "4f068e23d6f9f80811f2",
+    "model_category": "incorrect_plan",
+    "oracle_category": "false_infeasibility",
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "forbidden_modes",
+          "target": [
+            "rail",
+            "tram"
+          ]
+        },
+        {
+          "direction": "outbound",
+          "requirement": "latest_departure",
+          "target": 32880
+        },
+        {
+          "direction": "outbound",
+          "requirement": "transfer_limit",
+          "target": 0
+        }
+      ]
+    },
+    "reference_equivalent_ids": [],
+    "reference_feasible_count": 4,
+    "repairs": [],
+    "request": "On 2026-09-14, plan the outbound journey from Rose Quarter Transit Center [stop_id=1097] to N Williams & NE Tillamook [stop_id=6370]. Do not use rail or tram. Depart no later than 09:08:00, inclusive. Make at most 0 transfers.",
+    "scenario_id": "pilot-01",
+    "violated_reference_clauses": [
+      {
+        "direction": "outbound",
+        "requirement": "latest_departure",
+        "target": 32880
+      }
+    ]
+  },
+  {
+    "all_raw_interpretations": [
+      {
+        "formula": {
+          "children": [
+            {
+              "kind": "atom",
+              "op": "depart_ge",
+              "scope": "outbound",
+              "source": null,
+              "unit": "seconds",
+              "value": 25200
+            },
+            {
+              "kind": "atom",
+              "op": "arrive_by",
+              "scope": "outbound",
+              "source": null,
+              "unit": "seconds",
+              "value": 36000
+            },
+            {
+              "kind": "atom",
+              "op": "permit_modes",
+              "scope": "outbound",
+              "source": null,
+              "unit": "mode",
+              "value": [
+                "bus"
+              ]
+            },
+            {
+              "kind": "atom",
+              "op": "visits",
+              "scope": "outbound",
+              "source": null,
+              "unit": "stop_id",
+              "value": [
+                "10491",
+                "11492",
+                "13780"
+              ]
+            },
+            {
+              "kind": "atom",
+              "op": "max_transfers",
+              "scope": "outbound",
+              "source": null,
+              "unit": "count",
+              "value": 2
+            }
+          ],
+          "kind": "all",
+          "source": null
+        },
+        "normalized_formula": {
+          "children": [
+            {
+              "kind": "atom",
+              "op": "depart_ge",
+              "scope": "outbound",
+              "source": null,
+              "unit": "seconds",
+              "value": 25200
+            },
+            {
+              "kind": "atom",
+              "op": "arrive_by",
+              "scope": "outbound",
+              "source": null,
+              "unit": "seconds",
+              "value": 36000
+            },
+            {
+              "kind": "atom",
+              "op": "permit_modes",
+              "scope": "outbound",
+              "source": null,
+              "unit": "mode",
+              "value": [
+                "bus"
+              ]
+            },
+            {
+              "kind": "atom",
+              "op": "visits",
+              "scope": "outbound",
+              "source": null,
+              "unit": "stop_id",
+              "value": [
+                "10491",
+                "11492",
+                "13780"
+              ]
+            },
+            {
+              "kind": "atom",
+              "op": "max_transfers",
+              "scope": "outbound",
+              "source": null,
+              "unit": "count",
+              "value": 2
+            }
+          ],
+          "kind": "all",
+          "source": null
+        },
+        "raw_index": 0,
+        "value_changes": []
+      },
+      {
+        "formula": {
+          "children": [
+            {
+              "kind": "atom",
+              "op": "depart_ge",
+              "scope": "outbound",
+              "source": null,
+              "unit": "seconds",
+              "value": 25200
+            },
+            {
+              "kind": "atom",
+              "op": "arrive_by",
+              "scope": "outbound",
+              "source": null,
+              "unit": "seconds",
+              "value": 36000
+            },
+            {
+              "kind": "atom",
+              "op": "visits",
+              "scope": "outbound",
+              "source": null,
+              "unit": "stop_id",
+              "value": [
+                "10491",
+                "3398",
+                "13780"
+              ]
+            },
+            {
+              "kind": "atom",
+              "op": "permit_modes",
+              "scope": "outbound",
+              "source": null,
+              "unit": "mode",
+              "value": [
+                "bus"
+              ]
+            }
+          ],
+          "kind": "all",
+          "source": null
+        },
+        "normalized_formula": {
+          "children": [
+            {
+              "kind": "atom",
+              "op": "depart_ge",
+              "scope": "outbound",
+              "source": null,
+              "unit": "seconds",
+              "value": 25200
+            },
+            {
+              "kind": "atom",
+              "op": "arrive_by",
+              "scope": "outbound",
+              "source": null,
+              "unit": "seconds",
+              "value": 36000
+            },
+            {
+              "kind": "atom",
+              "op": "visits",
+              "scope": "outbound",
+              "source": null,
+              "unit": "stop_id",
+              "value": [
+                "10491",
+                "3398",
+                "13780"
+              ]
+            },
+            {
+              "kind": "atom",
+              "op": "permit_modes",
+              "scope": "outbound",
+              "source": null,
+              "unit": "mode",
+              "value": [
+                "bus"
+              ]
+            }
+          ],
+          "kind": "all",
+          "source": null
+        },
+        "raw_index": 1,
+        "value_changes": []
+      },
+      {
+        "formula": {
+          "children": [
+            {
+              "kind": "atom",
+              "op": "depart_ge",
+              "scope": "outbound",
+              "source": null,
+              "unit": "seconds",
+              "value": 25200
+            },
+            {
+              "kind": "atom",
+              "op": "visits",
+              "scope": "outbound",
+              "source": null,
+              "unit": "stop_id",
+              "value": [
+                "13780",
+                "3398"
+              ]
+            },
+            {
+              "kind": "atom",
+              "op": "permit_modes",
+              "scope": "outbound",
+              "source": null,
+              "unit": "mode",
+              "value": [
+                "bus"
+              ]
+            }
+          ],
+          "kind": "all",
+          "source": null
+        },
+        "normalized_formula": {
+          "children": [
+            {
+              "kind": "atom",
+              "op": "depart_ge",
+              "scope": "outbound",
+              "source": null,
+              "unit": "seconds",
+              "value": 25200
+            },
+            {
+              "kind": "atom",
+              "op": "visits",
+              "scope": "outbound",
+              "source": null,
+              "unit": "stop_id",
+              "value": [
+                "13780",
+                "3398"
+              ]
+            },
+            {
+              "kind": "atom",
+              "op": "permit_modes",
+              "scope": "outbound",
+              "source": null,
+              "unit": "mode",
+              "value": [
+                "bus"
+              ]
+            }
+          ],
+          "kind": "all",
+          "source": null
+        },
+        "raw_index": 2,
+        "value_changes": []
+      },
+      {
+        "formula": {
+          "children": [
+            {
+              "kind": "atom",
+              "op": "depart_ge",
+              "scope": "outbound",
+              "source": null,
+              "unit": "seconds",
+              "value": 25200
+            },
+            {
+              "kind": "atom",
+              "op": "arrive_by",
+              "scope": "outbound",
+              "source": null,
+              "unit": "seconds",
+              "value": 36000
+            },
+            {
+              "kind": "atom",
+              "op": "visits",
+              "scope": "outbound",
+              "source": null,
+              "unit": "stop_id",
+              "value": [
+                "13780",
+                "3398"
+              ]
+            },
+            {
+              "kind": "atom",
+              "op": "permit_modes",
+              "scope": "outbound",
+              "source": null,
+              "unit": "mode",
+              "value": [
+                "bus"
+              ]
+            }
+          ],
+          "kind": "all",
+          "source": null
+        },
+        "normalized_formula": {
+          "children": [
+            {
+              "kind": "atom",
+              "op": "depart_ge",
+              "scope": "outbound",
+              "source": null,
+              "unit": "seconds",
+              "value": 25200
+            },
+            {
+              "kind": "atom",
+              "op": "arrive_by",
+              "scope": "outbound",
+              "source": null,
+              "unit": "seconds",
+              "value": 36000
+            },
+            {
+              "kind": "atom",
+              "op": "visits",
+              "scope": "outbound",
+              "source": null,
+              "unit": "stop_id",
+              "value": [
+                "13780",
+                "3398"
+              ]
+            },
+            {
+              "kind": "atom",
+              "op": "permit_modes",
+              "scope": "outbound",
+              "source": null,
+              "unit": "mode",
+              "value": [
+                "bus"
+              ]
+            }
+          ],
+          "kind": "all",
+          "source": null
+        },
+        "raw_index": 3,
+        "value_changes": []
+      }
+    ],
+    "annotation_check": "wording grammar agrees; provisional, no human audit",
+    "candidate_plan_correct_ids": [],
+    "family": "ordered_visits",
+    "final_formula": {
+      "children": [
+        {
+          "kind": "atom",
+          "op": "depart_ge",
+          "scope": "outbound",
+          "source": null,
+          "unit": "seconds",
+          "value": 25200
+        },
+        {
+          "kind": "atom",
+          "op": "arrive_by",
+          "scope": "outbound",
+          "source": null,
+          "unit": "seconds",
+          "value": 36000
+        },
+        {
+          "kind": "atom",
+          "op": "permit_modes",
+          "scope": "outbound",
+          "source": null,
+          "unit": "mode",
+          "value": [
+            "bus"
+          ]
+        },
+        {
+          "kind": "atom",
+          "op": "visits",
+          "scope": "outbound",
+          "source": null,
+          "unit": "stop_id",
+          "value": [
+            "10491",
+            "11492",
+            "13780"
+          ]
+        },
+        {
+          "kind": "atom",
+          "op": "max_transfers",
+          "scope": "outbound",
+          "source": null,
+          "unit": "count",
+          "value": 2
+        }
+      ],
+      "kind": "all",
+      "source": null
+    },
+    "final_plan_id": null,
+    "model_category": "false_infeasibility",
+    "oracle_category": "false_infeasibility",
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "ordered_calls",
+          "target": [
+            "3398",
+            "13780"
+          ]
+        },
+        {
+          "direction": "outbound",
+          "requirement": "allowed_modes",
+          "target": [
+            "bus"
+          ]
+        }
+      ]
+    },
+    "reference_equivalent_ids": [],
+    "reference_feasible_count": 64,
+    "repairs": [],
+    "request": "On 2026-09-14, plan the outbound journey from South Waterfront/S Moody [stop_id=13733] to NW Everett & 5th [stop_id=8886]. Call at stop 3398 and then stop 13780, in that order; remaining aboard counts. Use only buses.",
+    "scenario_id": "pilot-02",
+    "violated_reference_clauses": []
+  },
+  {
+    "all_raw_interpretations": [
+      {
+        "detail": "Operations such as arrive_by and depart_ge are not supported. Only conjunction and negation are supported.",
+        "error": "unsupported",
+        "raw_index": 0
+      },
+      {
+        "detail": "Visits are not supported.",
+        "error": "unsupported",
+        "raw_index": 1
+      },
+      {
+        "detail": "visits; time bounds are not supported in this context",
+        "error": "unsupported",
+        "raw_index": 2
+      },
+      {
+        "detail": "visits; time bounds are exclusive; walk and arbitrary duration/dwell constraints are unsupported",
+        "error": "unsupported",
+        "raw_index": 3
+      }
+    ],
+    "annotation_check": "wording grammar agrees; provisional, no human audit",
+    "candidate_plan_correct_ids": [],
+    "family": "infeasible",
+    "final_formula": null,
+    "final_plan_id": null,
+    "model_category": "invalid_model_output",
+    "oracle_category": "invalid_model_output",
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "earliest_departure",
+          "target": 30600
+        },
+        {
+          "direction": "outbound",
+          "requirement": "latest_arrival",
+          "target": 28800
+        }
+      ]
+    },
+    "reference_equivalent_ids": [],
+    "reference_feasible_count": 0,
+    "repairs": [],
+    "request": "On 2026-09-14, plan the outbound journey from SW Hall & 5th [stop_id=13780] to SW 6th & W Burnside [stop_id=7751]. Depart no earlier than 08:30:00 and arrive by 08:00:00, both inclusive.",
+    "scenario_id": "pilot-05",
+    "violated_reference_clauses": []
+  },
+  {
+    "all_raw_interpretations": [
+      {
+        "detail": "1 validation error for Interpretation\n  Invalid JSON: key must be a string at line 17 column 34 [type=json_invalid, input_value='{\\n    \"status\": \"ok\",\\n...   \"unsupported\": []\\n}', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.11/v/json_invalid",
+        "error": "malformed",
+        "raw_index": 0
+      },
+      {
+        "formula": {
+          "children": [
+            {
+              "kind": "atom",
+              "op": "max_transfers",
+              "scope": "outbound",
+              "source": null,
+              "unit": "count",
+              "value": 1
+            },
+            {
+              "kind": "atom",
+              "op": "depart_ge",
+              "scope": "return",
+              "source": null,
+              "unit": "seconds",
+              "value": 35947
+            }
+          ],
+          "kind": "all",
+          "source": null
+        },
+        "normalized_formula": {
+          "children": [
+            {
+              "kind": "atom",
+              "op": "max_transfers",
+              "scope": "outbound",
+              "source": null,
+              "unit": "count",
+              "value": 1
+            },
+            {
+              "kind": "atom",
+              "op": "depart_ge",
+              "scope": "return",
+              "source": null,
+              "unit": "seconds",
+              "value": 34787
+            }
+          ],
+          "kind": "all",
+          "source": null
+        },
+        "raw_index": 1,
+        "value_changes": [
+          {
+            "predicted_atom": {
+              "kind": "atom",
+              "op": "depart_ge",
+              "scope": "return",
+              "source": null,
+              "unit": "seconds",
+              "value": 35947
+            },
+            "request_binding": {
+              "literal": "09:39:47",
+              "op": "depart_ge",
+              "scope": "return",
+              "seconds": 34787,
+              "source": {
+                "end": 456,
+                "start": 425
+              },
+              "text": "depart no earlier than 09:39:47"
+            }
+          }
+        ]
+      },
+      {
+        "formula": {
+          "children": [
+            {
+              "kind": "atom",
+              "op": "max_transfers",
+              "scope": "outbound",
+              "source": null,
+              "unit": "count",
+              "value": 1
+            },
+            {
+              "kind": "atom",
+              "op": "depart_ge",
+              "scope": "return",
+              "source": null,
+              "unit": "seconds",
+              "value": 35947
+            }
+          ],
+          "kind": "all",
+          "source": null
+        },
+        "normalized_formula": {
+          "children": [
+            {
+              "kind": "atom",
+              "op": "max_transfers",
+              "scope": "outbound",
+              "source": null,
+              "unit": "count",
+              "value": 1
+            },
+            {
+              "kind": "atom",
+              "op": "depart_ge",
+              "scope": "return",
+              "source": null,
+              "unit": "seconds",
+              "value": 34787
+            }
+          ],
+          "kind": "all",
+          "source": null
+        },
+        "raw_index": 2,
+        "value_changes": [
+          {
+            "predicted_atom": {
+              "kind": "atom",
+              "op": "depart_ge",
+              "scope": "return",
+              "source": null,
+              "unit": "seconds",
+              "value": 35947
+            },
+            "request_binding": {
+              "literal": "09:39:47",
+              "op": "depart_ge",
+              "scope": "return",
+              "seconds": 34787,
+              "source": {
+                "end": 456,
+                "start": 425
+              },
+              "text": "depart no earlier than 09:39:47"
+            }
+          }
+        ]
+      },
+      {
+        "formula": {
+          "children": [
+            {
+              "kind": "atom",
+              "op": "max_transfers",
+              "scope": "outbound",
+              "source": null,
+              "unit": "count",
+              "value": 1
+            },
+            {
+              "kind": "atom",
+              "op": "depart_ge",
+              "scope": "return",
+              "source": null,
+              "unit": "seconds",
+              "value": 35947
+            }
+          ],
+          "kind": "all",
+          "source": null
+        },
+        "normalized_formula": {
+          "children": [
+            {
+              "kind": "atom",
+              "op": "max_transfers",
+              "scope": "outbound",
+              "source": null,
+              "unit": "count",
+              "value": 1
+            },
+            {
+              "kind": "atom",
+              "op": "depart_ge",
+              "scope": "return",
+              "source": null,
+              "unit": "seconds",
+              "value": 34787
+            }
+          ],
+          "kind": "all",
+          "source": null
+        },
+        "raw_index": 3,
+        "value_changes": [
+          {
+            "predicted_atom": {
+              "kind": "atom",
+              "op": "depart_ge",
+              "scope": "return",
+              "source": null,
+              "unit": "seconds",
+              "value": 35947
+            },
+            "request_binding": {
+              "literal": "09:39:47",
+              "op": "depart_ge",
+              "scope": "return",
+              "seconds": 34787,
+              "source": {
+                "end": 456,
+                "start": 425
+              },
+              "text": "depart no earlier than 09:39:47"
+            }
+          }
+        ]
+      }
+    ],
+    "annotation_check": "wording grammar agrees; provisional, no human audit",
+    "candidate_plan_correct_ids": [],
+    "family": "scope",
+    "final_formula": {
+      "children": [
+        {
+          "kind": "atom",
+          "op": "max_transfers",
+          "scope": "outbound",
+          "source": null,
+          "unit": "count",
+          "value": 1
+        },
+        {
+          "kind": "atom",
+          "op": "depart_ge",
+          "scope": "return",
+          "source": null,
+          "unit": "seconds",
+          "value": 35947
+        }
+      ],
+      "kind": "all",
+      "source": null
+    },
+    "final_plan_id": null,
+    "model_category": "false_infeasibility",
+    "oracle_category": "false_infeasibility",
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "transfer_limit",
+          "target": 1
+        },
+        {
+          "direction": "return",
+          "requirement": "earliest_departure",
+          "target": 34787
+        }
+      ]
+    },
+    "reference_equivalent_ids": [],
+    "reference_feasible_count": 18,
+    "repairs": [],
+    "request": "On 2026-09-14, plan the outbound journey from SW 6th & Columbia [stop_id=11486] to NW 6th & Flanders [stop_id=9300]. Also plan a return segment from NW 5th & Davis [stop_id=9301] to SW 5th & Columbia [stop_id=7594] within 09:00:00–10:00:00. I handle movement between the outbound destination and return origin myself outside these journeys. On the outbound segment only, make at most 1 transfers. On the return segment only, depart no earlier than 09:39:47.",
+    "scenario_id": "pilot-09",
+    "violated_reference_clauses": []
+  },
+  {
+    "all_raw_interpretations": [
+      {
+        "formula": {
+          "children": [
+            {
+              "kind": "atom",
+              "op": "depart_ge",
+              "scope": "outbound",
+              "source": null,
+              "unit": "seconds",
+              "value": 26546
+            },
+            {
+              "kind": "atom",
+              "op": "max_transfers",
+              "scope": "outbound",
+              "source": null,
+              "unit": "count",
+              "value": 1
+            },
+            {
+              "kind": "atom",
+              "op": "exclude_modes",
+              "scope": "outbound",
+              "source": null,
+              "unit": "mode",
+              "value": [
+                "rail",
+                "tram"
+              ]
+            }
+          ],
+          "kind": "all",
+          "source": null
+        },
+        "normalized_formula": {
+          "children": [
+            {
+              "kind": "atom",
+              "op": "depart_ge",
+              "scope": "outbound",
+              "source": null,
+              "unit": "seconds",
+              "value": 26546
+            },
+            {
+              "kind": "atom",
+              "op": "max_transfers",
+              "scope": "outbound",
+              "source": null,
+              "unit": "count",
+              "value": 1
+            },
+            {
+              "kind": "atom",
+              "op": "exclude_modes",
+              "scope": "outbound",
+              "source": null,
+              "unit": "mode",
+              "value": [
+                "rail",
+                "tram"
+              ]
+            }
+          ],
+          "kind": "all",
+          "source": null
+        },
+        "raw_index": 0,
+        "value_changes": []
+      },
+      {
+        "formula": {
+          "children": [
+            {
+              "kind": "atom",
+              "op": "depart_ge",
+              "scope": "outbound",
+              "source": null,
+              "unit": "seconds",
+              "value": 26204
+            },
+            {
+              "kind": "atom",
+              "op": "max_transfers",
+              "scope": "outbound",
+              "source": null,
+              "unit": "count",
+              "value": 1
+            },
+            {
+              "kind": "atom",
+              "op": "exclude_modes",
+              "scope": "outbound",
+              "source": null,
+              "unit": "mode",
+              "value": [
+                "tram",
+                "rail"
+              ]
+            }
+          ],
+          "kind": "all",
+          "source": null
+        },
+        "normalized_formula": {
+          "children": [
+            {
+              "kind": "atom",
+              "op": "depart_ge",
+              "scope": "outbound",
+              "source": null,
+              "unit": "seconds",
+              "value": 26204
+            },
+            {
+              "kind": "atom",
+              "op": "max_transfers",
+              "scope": "outbound",
+              "source": null,
+              "unit": "count",
+              "value": 1
+            },
+            {
+              "kind": "atom",
+              "op": "exclude_modes",
+              "scope": "outbound",
+              "source": null,
+              "unit": "mode",
+              "value": [
+                "tram",
+                "rail"
+              ]
+            }
+          ],
+          "kind": "all",
+          "source": null
+        },
+        "raw_index": 1,
+        "value_changes": []
+      },
+      {
+        "formula": {
+          "children": [
+            {
+              "kind": "atom",
+              "op": "depart_ge",
+              "scope": "outbound",
+              "source": null,
+              "unit": "seconds",
+              "value": 262814
+            },
+            {
+              "kind": "atom",
+              "op": "max_transfers",
+              "scope": "outbound",
+              "source": null,
+              "unit": "count",
+              "value": 1
+            },
+            {
+              "kind": "atom",
+              "op": "exclude_modes",
+              "scope": "outbound",
+              "source": null,
+              "unit": "mode",
+              "value": [
+                "rail",
+                "tram"
+              ]
+            }
+          ],
+          "kind": "all",
+          "source": null
+        },
+        "normalized_formula": {
+          "children": [
+            {
+              "kind": "atom",
+              "op": "depart_ge",
+              "scope": "outbound",
+              "source": null,
+              "unit": "seconds",
+              "value": 262814
+            },
+            {
+              "kind": "atom",
+              "op": "max_transfers",
+              "scope": "outbound",
+              "source": null,
+              "unit": "count",
+              "value": 1
+            },
+            {
+              "kind": "atom",
+              "op": "exclude_modes",
+              "scope": "outbound",
+              "source": null,
+              "unit": "mode",
+              "value": [
+                "rail",
+                "tram"
+              ]
+            }
+          ],
+          "kind": "all",
+          "source": null
+        },
+        "raw_index": 2,
+        "value_changes": []
+      },
+      {
+        "formula": {
+          "children": [
+            {
+              "kind": "atom",
+              "op": "depart_ge",
+              "scope": "outbound",
+              "source": null,
+              "unit": "seconds",
+              "value": 26546
+            },
+            {
+              "kind": "atom",
+              "op": "max_transfers",
+              "scope": "outbound",
+              "source": null,
+              "unit": "count",
+              "value": 1
+            },
+            {
+              "kind": "atom",
+              "op": "exclude_modes",
+              "scope": "outbound",
+              "source": null,
+              "unit": "mode",
+              "value": [
+                "rail",
+                "tram"
+              ]
+            }
+          ],
+          "kind": "all",
+          "source": null
+        },
+        "normalized_formula": {
+          "children": [
+            {
+              "kind": "atom",
+              "op": "depart_ge",
+              "scope": "outbound",
+              "source": null,
+              "unit": "seconds",
+              "value": 26546
+            },
+            {
+              "kind": "atom",
+              "op": "max_transfers",
+              "scope": "outbound",
+              "source": null,
+              "unit": "count",
+              "value": 1
+            },
+            {
+              "kind": "atom",
+              "op": "exclude_modes",
+              "scope": "outbound",
+              "source": null,
+              "unit": "mode",
+              "value": [
+                "rail",
+                "tram"
+              ]
+            }
+          ],
+          "kind": "all",
+          "source": null
+        },
+        "raw_index": 3,
+        "value_changes": []
+      }
+    ],
+    "annotation_check": "wording grammar agrees; provisional, no human audit",
+    "candidate_plan_correct_ids": [
+      "c0",
+      "c1"
+    ],
+    "family": "mode_exclusion",
+    "final_formula": {
+      "children": [
+        {
+          "kind": "atom",
+          "op": "depart_ge",
+          "scope": "outbound",
+          "source": null,
+          "unit": "seconds",
+          "value": 262814
+        },
+        {
+          "kind": "atom",
+          "op": "max_transfers",
+          "scope": "outbound",
+          "source": null,
+          "unit": "count",
+          "value": 1
+        },
+        {
+          "kind": "atom",
+          "op": "exclude_modes",
+          "scope": "outbound",
+          "source": null,
+          "unit": "mode",
+          "value": [
+            "rail",
+            "tram"
+          ]
+        }
+      ],
+      "kind": "all",
+      "source": null
+    },
+    "final_plan_id": null,
+    "model_category": "false_infeasibility",
+    "oracle_category": "false_infeasibility",
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "forbidden_modes",
+          "target": [
+            "rail",
+            "tram"
+          ]
+        },
+        {
+          "direction": "outbound",
+          "requirement": "latest_departure",
+          "target": 26894
+        },
+        {
+          "direction": "outbound",
+          "requirement": "transfer_limit",
+          "target": 1
+        }
+      ]
+    },
+    "reference_equivalent_ids": [],
+    "reference_feasible_count": 22,
+    "repairs": [],
+    "request": "On 2026-09-14, plan the outbound journey from SE 7th & Tilikum Way [stop_id=13825] to SW 6th & Clay [stop_id=7756]. Do not use rail or tram. Depart no later than 07:28:14, inclusive. Make at most 1 transfers.",
+    "scenario_id": "pilot-14",
+    "violated_reference_clauses": []
+  },
+  {
+    "all_raw_interpretations": [
+      {
+        "detail": "Operations such as arrive_by and depart_ge are not supported. Only conjunction and negation are supported.",
+        "error": "unsupported",
+        "raw_index": 0
+      },
+      {
+        "detail": "visits; time bounds are exclusive; max_rides_per_segment; minimum_connection_s; scenario_id; segments; service_date; stops; timezone",
+        "error": "unsupported",
+        "raw_index": 1
+      },
+      {
+        "detail": "visits; time bounds are not supported in this context",
+        "error": "unsupported",
+        "raw_index": 2
+      },
+      {
+        "detail": "visits; all time bounds are exclusive; timezone offset is required",
+        "error": "unsupported",
+        "raw_index": 3
+      }
+    ],
+    "annotation_check": "wording grammar agrees; provisional, no human audit",
+    "candidate_plan_correct_ids": [],
+    "family": "infeasible",
+    "final_formula": null,
+    "final_plan_id": null,
+    "model_category": "invalid_model_output",
+    "oracle_category": "invalid_model_output",
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "earliest_departure",
+          "target": 30600
+        },
+        {
+          "direction": "outbound",
+          "requirement": "latest_arrival",
+          "target": 28800
+        }
+      ]
+    },
+    "reference_equivalent_ids": [],
+    "reference_feasible_count": 0,
+    "repairs": [],
+    "request": "On 2026-09-14, plan the outbound journey from SE Division & 20th Ave [stop_id=14243] to SW 6th & Taylor [stop_id=7800]. Depart no earlier than 08:30:00 and arrive by 08:00:00, both inclusive.",
+    "scenario_id": "pilot-15",
+    "violated_reference_clauses": []
+  },
+  {
+    "all_raw_interpretations": [
+      {
+        "formula": {
+          "children": [
+            {
+              "kind": "atom",
+              "op": "depart_ge",
+              "scope": "outbound",
+              "source": null,
+              "unit": "seconds",
+              "value": 28586
+            },
+            {
+              "kind": "atom",
+              "op": "max_transfers",
+              "scope": "outbound",
+              "source": null,
+              "unit": "count",
+              "value": 1
+            },
+            {
+              "kind": "atom",
+              "op": "exclude_modes",
+              "scope": "outbound",
+              "source": null,
+              "unit": "mode",
+              "value": [
+                "rail",
+                "tram"
+              ]
+            }
+          ],
+          "kind": "all",
+          "source": null
+        },
+        "normalized_formula": {
+          "children": [
+            {
+              "kind": "atom",
+              "op": "depart_ge",
+              "scope": "outbound",
+              "source": null,
+              "unit": "seconds",
+              "value": 28586
+            },
+            {
+              "kind": "atom",
+              "op": "max_transfers",
+              "scope": "outbound",
+              "source": null,
+              "unit": "count",
+              "value": 1
+            },
+            {
+              "kind": "atom",
+              "op": "exclude_modes",
+              "scope": "outbound",
+              "source": null,
+              "unit": "mode",
+              "value": [
+                "rail",
+                "tram"
+              ]
+            }
+          ],
+          "kind": "all",
+          "source": null
+        },
+        "raw_index": 0,
+        "value_changes": []
+      },
+      {
+        "formula": {
+          "children": [
+            {
+              "kind": "atom",
+              "op": "depart_ge",
+              "scope": "outbound",
+              "source": null,
+              "unit": "seconds",
+              "value": 28226
+            },
+            {
+              "kind": "atom",
+              "op": "max_transfers",
+              "scope": "outbound",
+              "source": null,
+              "unit": "count",
+              "value": 1
+            },
+            {
+              "kind": "atom",
+              "op": "exclude_modes",
+              "scope": "outbound",
+              "source": null,
+              "unit": "mode",
+              "value": [
+                "tram",
+                "rail"
+              ]
+            }
+          ],
+          "kind": "all",
+          "source": null
+        },
+        "normalized_formula": {
+          "children": [
+            {
+              "kind": "atom",
+              "op": "depart_ge",
+              "scope": "outbound",
+              "source": null,
+              "unit": "seconds",
+              "value": 28226
+            },
+            {
+              "kind": "atom",
+              "op": "max_transfers",
+              "scope": "outbound",
+              "source": null,
+              "unit": "count",
+              "value": 1
+            },
+            {
+              "kind": "atom",
+              "op": "exclude_modes",
+              "scope": "outbound",
+              "source": null,
+              "unit": "mode",
+              "value": [
+                "tram",
+                "rail"
+              ]
+            }
+          ],
+          "kind": "all",
+          "source": null
+        },
+        "raw_index": 1,
+        "value_changes": []
+      },
+      {
+        "formula": {
+          "children": [
+            {
+              "kind": "atom",
+              "op": "depart_ge",
+              "scope": "outbound",
+              "source": null,
+              "unit": "seconds",
+              "value": 28186
+            },
+            {
+              "kind": "atom",
+              "op": "max_transfers",
+              "scope": "outbound",
+              "source": null,
+              "unit": "count",
+              "value": 1
+            },
+            {
+              "kind": "atom",
+              "op": "exclude_modes",
+              "scope": "outbound",
+              "source": null,
+              "unit": "mode",
+              "value": [
+                "rail",
+                "tram"
+              ]
+            }
+          ],
+          "kind": "all",
+          "source": null
+        },
+        "normalized_formula": {
+          "children": [
+            {
+              "kind": "atom",
+              "op": "depart_ge",
+              "scope": "outbound",
+              "source": null,
+              "unit": "seconds",
+              "value": 28186
+            },
+            {
+              "kind": "atom",
+              "op": "max_transfers",
+              "scope": "outbound",
+              "source": null,
+              "unit": "count",
+              "value": 1
+            },
+            {
+              "kind": "atom",
+              "op": "exclude_modes",
+              "scope": "outbound",
+              "source": null,
+              "unit": "mode",
+              "value": [
+                "rail",
+                "tram"
+              ]
+            }
+          ],
+          "kind": "all",
+          "source": null
+        },
+        "raw_index": 2,
+        "value_changes": []
+      },
+      {
+        "formula": {
+          "children": [
+            {
+              "kind": "atom",
+              "op": "depart_ge",
+              "scope": "outbound",
+              "source": null,
+              "unit": "seconds",
+              "value": 27986
+            },
+            {
+              "kind": "atom",
+              "op": "max_transfers",
+              "scope": "outbound",
+              "source": null,
+              "unit": "count",
+              "value": 1
+            },
+            {
+              "kind": "atom",
+              "op": "exclude_modes",
+              "scope": "outbound",
+              "source": null,
+              "unit": "mode",
+              "value": [
+                "rail",
+                "tram"
+              ]
+            }
+          ],
+          "kind": "all",
+          "source": null
+        },
+        "normalized_formula": {
+          "children": [
+            {
+              "kind": "atom",
+              "op": "depart_ge",
+              "scope": "outbound",
+              "source": null,
+              "unit": "seconds",
+              "value": 27986
+            },
+            {
+              "kind": "atom",
+              "op": "max_transfers",
+              "scope": "outbound",
+              "source": null,
+              "unit": "count",
+              "value": 1
+            },
+            {
+              "kind": "atom",
+              "op": "exclude_modes",
+              "scope": "outbound",
+              "source": null,
+              "unit": "mode",
+              "value": [
+                "rail",
+                "tram"
+              ]
+            }
+          ],
+          "kind": "all",
+          "source": null
+        },
+        "raw_index": 3,
+        "value_changes": []
+      }
+    ],
+    "annotation_check": "wording grammar agrees; provisional, no human audit",
+    "candidate_plan_correct_ids": [],
+    "family": "mode_exclusion",
+    "final_formula": {
+      "children": [
+        {
+          "kind": "atom",
+          "op": "depart_ge",
+          "scope": "outbound",
+          "source": null,
+          "unit": "seconds",
+          "value": 28586
+        },
+        {
+          "kind": "atom",
+          "op": "max_transfers",
+          "scope": "outbound",
+          "source": null,
+          "unit": "count",
+          "value": 1
+        },
+        {
+          "kind": "atom",
+          "op": "exclude_modes",
+          "scope": "outbound",
+          "source": null,
+          "unit": "mode",
+          "value": [
+            "rail",
+            "tram"
+          ]
+        }
+      ],
+      "kind": "all",
+      "source": null
+    },
+    "final_plan_id": "2ecab41b2ff3eaf43736",
+    "model_category": "incorrect_plan",
+    "oracle_category": "incorrect_plan",
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "forbidden_modes",
+          "target": [
+            "rail",
+            "tram"
+          ]
+        },
+        {
+          "direction": "outbound",
+          "requirement": "latest_departure",
+          "target": 28586
+        },
+        {
+          "direction": "outbound",
+          "requirement": "transfer_limit",
+          "target": 1
+        }
+      ]
+    },
+    "reference_equivalent_ids": [],
+    "reference_feasible_count": 45,
+    "repairs": [],
+    "request": "On 2026-09-14, plan the outbound journey from N Vancouver & Tillamook [stop_id=6008] to SE Milwaukie & Powell [stop_id=10472]. Do not use rail or tram. Depart no later than 07:56:26, inclusive. Make at most 1 transfers.",
+    "scenario_id": "pilot-19",
+    "violated_reference_clauses": [
+      {
+        "direction": "outbound",
+        "requirement": "latest_departure",
+        "target": 28586
+      }
+    ]
+  },
+  {
+    "all_raw_interpretations": [
+      {
+        "formula": {
+          "children": [
+            {
+              "kind": "atom",
+              "op": "depart_ge",
+              "scope": "outbound",
+              "source": null,
+              "unit": "seconds",
+              "value": 34500
+            },
+            {
+              "kind": "atom",
+              "op": "max_transfers",
+              "scope": "return",
+              "source": null,
+              "unit": "count",
+              "value": 1
+            },
+            {
+              "kind": "atom",
+              "op": "depart_ge",
+              "scope": "return",
+              "source": null,
+              "unit": "seconds",
+              "value": 32500
+            }
+          ],
+          "kind": "all",
+          "source": null
+        },
+        "normalized_formula": {
+          "children": [
+            {
+              "kind": "atom",
+              "op": "depart_ge",
+              "scope": "outbound",
+              "source": null,
+              "unit": "seconds",
+              "value": 34500
+            },
+            {
+              "kind": "atom",
+              "op": "max_transfers",
+              "scope": "return",
+              "source": null,
+              "unit": "count",
+              "value": 1
+            },
+            {
+              "kind": "atom",
+              "op": "depart_ge",
+              "scope": "return",
+              "source": null,
+              "unit": "seconds",
+              "value": 33900
+            }
+          ],
+          "kind": "all",
+          "source": null
+        },
+        "raw_index": 0,
+        "value_changes": [
+          {
+            "predicted_atom": {
+              "kind": "atom",
+              "op": "depart_ge",
+              "scope": "return",
+              "source": null,
+              "unit": "seconds",
+              "value": 32500
+            },
+            "request_binding": {
+              "literal": "09:25:00",
+              "op": "depart_ge",
+              "scope": "return",
+              "seconds": 33900,
+              "source": {
+                "end": 471,
+                "start": 440
+              },
+              "text": "depart no earlier than 09:25:00"
+            }
+          }
+        ]
+      },
+      {
+        "formula": {
+          "children": [
+            {
+              "kind": "atom",
+              "op": "depart_ge",
+              "scope": "outbound",
+              "source": null,
+              "unit": "seconds",
+              "value": 34500
+            },
+            {
+              "kind": "atom",
+              "op": "max_transfers",
+              "scope": "return",
+              "source": null,
+              "unit": "count",
+              "value": 1
+            },
+            {
+              "kind": "atom",
+              "op": "depart_ge",
+              "scope": "return",
+              "source": null,
+              "unit": "seconds",
+              "value": 34500
+            }
+          ],
+          "kind": "all",
+          "source": null
+        },
+        "normalized_formula": {
+          "children": [
+            {
+              "kind": "atom",
+              "op": "depart_ge",
+              "scope": "outbound",
+              "source": null,
+              "unit": "seconds",
+              "value": 34500
+            },
+            {
+              "kind": "atom",
+              "op": "max_transfers",
+              "scope": "return",
+              "source": null,
+              "unit": "count",
+              "value": 1
+            },
+            {
+              "kind": "atom",
+              "op": "depart_ge",
+              "scope": "return",
+              "source": null,
+              "unit": "seconds",
+              "value": 33900
+            }
+          ],
+          "kind": "all",
+          "source": null
+        },
+        "raw_index": 1,
+        "value_changes": [
+          {
+            "predicted_atom": {
+              "kind": "atom",
+              "op": "depart_ge",
+              "scope": "return",
+              "source": null,
+              "unit": "seconds",
+              "value": 34500
+            },
+            "request_binding": {
+              "literal": "09:25:00",
+              "op": "depart_ge",
+              "scope": "return",
+              "seconds": 33900,
+              "source": {
+                "end": 471,
+                "start": 440
+              },
+              "text": "depart no earlier than 09:25:00"
+            }
+          }
+        ]
+      },
+      {
+        "detail": "incorrect units",
+        "error": "malformed",
+        "raw_index": 2
+      },
+      {
+        "formula": {
+          "children": [
+            {
+              "kind": "atom",
+              "op": "depart_ge",
+              "scope": "outbound",
+              "source": null,
+              "unit": "seconds",
+              "value": 34500
+            },
+            {
+              "kind": "atom",
+              "op": "max_transfers",
+              "scope": "return",
+              "source": null,
+              "unit": "count",
+              "value": 1
+            },
+            {
+              "kind": "atom",
+              "op": "depart_ge",
+              "scope": "return",
+              "source": null,
+              "unit": "seconds",
+              "value": 34500
+            }
+          ],
+          "kind": "all",
+          "source": null
+        },
+        "normalized_formula": {
+          "children": [
+            {
+              "kind": "atom",
+              "op": "depart_ge",
+              "scope": "outbound",
+              "source": null,
+              "unit": "seconds",
+              "value": 34500
+            },
+            {
+              "kind": "atom",
+              "op": "max_transfers",
+              "scope": "return",
+              "source": null,
+              "unit": "count",
+              "value": 1
+            },
+            {
+              "kind": "atom",
+              "op": "depart_ge",
+              "scope": "return",
+              "source": null,
+              "unit": "seconds",
+              "value": 33900
+            }
+          ],
+          "kind": "all",
+          "source": null
+        },
+        "raw_index": 3,
+        "value_changes": [
+          {
+            "predicted_atom": {
+              "kind": "atom",
+              "op": "depart_ge",
+              "scope": "return",
+              "source": null,
+              "unit": "seconds",
+              "value": 34500
+            },
+            "request_binding": {
+              "literal": "09:25:00",
+              "op": "depart_ge",
+              "scope": "return",
+              "seconds": 33900,
+              "source": {
+                "end": 471,
+                "start": 440
+              },
+              "text": "depart no earlier than 09:25:00"
+            }
+          }
+        ]
+      }
+    ],
+    "annotation_check": "wording grammar agrees; provisional, no human audit",
+    "candidate_plan_correct_ids": [],
+    "family": "scope",
+    "final_formula": {
+      "children": [
+        {
+          "kind": "atom",
+          "op": "depart_ge",
+          "scope": "outbound",
+          "source": null,
+          "unit": "seconds",
+          "value": 34500
+        },
+        {
+          "kind": "atom",
+          "op": "max_transfers",
+          "scope": "return",
+          "source": null,
+          "unit": "count",
+          "value": 1
+        },
+        {
+          "kind": "atom",
+          "op": "depart_ge",
+          "scope": "return",
+          "source": null,
+          "unit": "seconds",
+          "value": 32500
+        }
+      ],
+      "kind": "all",
+      "source": null
+    },
+    "final_plan_id": null,
+    "model_category": "false_infeasibility",
+    "oracle_category": "false_infeasibility",
+    "reference": {
+      "and": [
+        {
+          "direction": "return",
+          "requirement": "transfer_limit",
+          "target": 1
+        },
+        {
+          "direction": "return",
+          "requirement": "earliest_departure",
+          "target": 33900
+        }
+      ]
+    },
+    "reference_equivalent_ids": [],
+    "reference_feasible_count": 256,
+    "repairs": [],
+    "request": "On 2026-09-14, plan the outbound journey from N Vancouver & Weidler [stop_id=6009] to SW Jefferson & 5th [stop_id=12791]. Also plan a return segment from SW Jefferson & 5th [stop_id=12791] to N Williams & NE Weidler [stop_id=11480] within 09:00:00–10:00:00. I handle movement between the outbound destination and return origin myself outside these journeys. On the return segment only, make at most 1 transfers. On the return segment only, depart no earlier than 09:25:00.",
+    "scenario_id": "pilot-22",
+    "violated_reference_clauses": []
+  },
+  {
+    "all_raw_interpretations": [
+      {
+        "detail": "Operations such as arrive_by and depart_ge are not supported. Only conjunction and negation are supported.",
+        "error": "unsupported",
+        "raw_index": 0
+      },
+      {
+        "detail": "departure constraints are not supported; arrival constraints are not supported",
+        "error": "unsupported",
+        "raw_index": 1
+      },
+      {
+        "detail": "visits; time bounds are not supported in this context; arbitrary time constraints are not supported",
+        "error": "unsupported",
+        "raw_index": 2
+      },
+      {
+        "detail": "visits; time bounds are exclusive; walk duration constraints",
+        "error": "unsupported",
+        "raw_index": 3
+      }
+    ],
+    "annotation_check": "wording grammar agrees; provisional, no human audit",
+    "candidate_plan_correct_ids": [],
+    "family": "infeasible",
+    "final_formula": null,
+    "final_plan_id": null,
+    "model_category": "invalid_model_output",
+    "oracle_category": "invalid_model_output",
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "earliest_departure",
+          "target": 30600
+        },
+        {
+          "direction": "outbound",
+          "requirement": "latest_arrival",
+          "target": 28800
+        }
+      ]
+    },
+    "reference_equivalent_ids": [],
+    "reference_feasible_count": 0,
+    "repairs": [],
+    "request": "On 2026-09-14, plan the outbound journey from SW 5th & Taylor [stop_id=7640] to SE Milwaukie & Gideon [stop_id=13791]. Depart no earlier than 08:30:00 and arrive by 08:00:00, both inclusive.",
+    "scenario_id": "pilot-23",
+    "violated_reference_clauses": []
+  },
+  {
+    "all_raw_interpretations": [
+      {
+        "formula": {
+          "children": [
+            {
+              "kind": "atom",
+              "op": "max_transfers",
+              "scope": "outbound",
+              "source": null,
+              "unit": "count",
+              "value": 1
+            },
+            {
+              "kind": "atom",
+              "op": "depart_ge",
+              "scope": "return",
+              "source": null,
+              "unit": "seconds",
+              "value": 35400
+            }
+          ],
+          "kind": "all",
+          "source": null
+        },
+        "normalized_formula": {
+          "children": [
+            {
+              "kind": "atom",
+              "op": "max_transfers",
+              "scope": "outbound",
+              "source": null,
+              "unit": "count",
+              "value": 1
+            },
+            {
+              "kind": "atom",
+              "op": "depart_ge",
+              "scope": "return",
+              "source": null,
+              "unit": "seconds",
+              "value": 34800
+            }
+          ],
+          "kind": "all",
+          "source": null
+        },
+        "raw_index": 0,
+        "value_changes": [
+          {
+            "predicted_atom": {
+              "kind": "atom",
+              "op": "depart_ge",
+              "scope": "return",
+              "source": null,
+              "unit": "seconds",
+              "value": 35400
+            },
+            "request_binding": {
+              "literal": "09:40:00",
+              "op": "depart_ge",
+              "scope": "return",
+              "seconds": 34800,
+              "source": {
+                "end": 463,
+                "start": 432
+              },
+              "text": "depart no earlier than 09:40:00"
+            }
+          }
+        ]
+      },
+      {
+        "formula": {
+          "children": [
+            {
+              "kind": "atom",
+              "op": "max_transfers",
+              "scope": "outbound",
+              "source": null,
+              "unit": "count",
+              "value": 1
+            },
+            {
+              "kind": "atom",
+              "op": "depart_ge",
+              "scope": "return",
+              "source": null,
+              "unit": "seconds",
+              "value": 35400
+            }
+          ],
+          "kind": "all",
+          "source": null
+        },
+        "normalized_formula": {
+          "children": [
+            {
+              "kind": "atom",
+              "op": "max_transfers",
+              "scope": "outbound",
+              "source": null,
+              "unit": "count",
+              "value": 1
+            },
+            {
+              "kind": "atom",
+              "op": "depart_ge",
+              "scope": "return",
+              "source": null,
+              "unit": "seconds",
+              "value": 34800
+            }
+          ],
+          "kind": "all",
+          "source": null
+        },
+        "raw_index": 1,
+        "value_changes": [
+          {
+            "predicted_atom": {
+              "kind": "atom",
+              "op": "depart_ge",
+              "scope": "return",
+              "source": null,
+              "unit": "seconds",
+              "value": 35400
+            },
+            "request_binding": {
+              "literal": "09:40:00",
+              "op": "depart_ge",
+              "scope": "return",
+              "seconds": 34800,
+              "source": {
+                "end": 463,
+                "start": 432
+              },
+              "text": "depart no earlier than 09:40:00"
+            }
+          }
+        ]
+      },
+      {
+        "formula": {
+          "children": [
+            {
+              "kind": "atom",
+              "op": "max_transfers",
+              "scope": "outbound",
+              "source": null,
+              "unit": "count",
+              "value": 1
+            },
+            {
+              "kind": "atom",
+              "op": "depart_ge",
+              "scope": "return",
+              "source": null,
+              "unit": "seconds",
+              "value": 5840
+            }
+          ],
+          "kind": "all",
+          "source": null
+        },
+        "normalized_formula": {
+          "children": [
+            {
+              "kind": "atom",
+              "op": "max_transfers",
+              "scope": "outbound",
+              "source": null,
+              "unit": "count",
+              "value": 1
+            },
+            {
+              "kind": "atom",
+              "op": "depart_ge",
+              "scope": "return",
+              "source": null,
+              "unit": "seconds",
+              "value": 34800
+            }
+          ],
+          "kind": "all",
+          "source": null
+        },
+        "raw_index": 2,
+        "value_changes": [
+          {
+            "predicted_atom": {
+              "kind": "atom",
+              "op": "depart_ge",
+              "scope": "return",
+              "source": null,
+              "unit": "seconds",
+              "value": 5840
+            },
+            "request_binding": {
+              "literal": "09:40:00",
+              "op": "depart_ge",
+              "scope": "return",
+              "seconds": 34800,
+              "source": {
+                "end": 463,
+                "start": 432
+              },
+              "text": "depart no earlier than 09:40:00"
+            }
+          }
+        ]
+      },
+      {
+        "formula": {
+          "children": [
+            {
+              "kind": "atom",
+              "op": "max_transfers",
+              "scope": "outbound",
+              "source": null,
+              "unit": "count",
+              "value": 1
+            },
+            {
+              "kind": "atom",
+              "op": "depart_ge",
+              "scope": "return",
+              "source": null,
+              "unit": "seconds",
+              "value": 58800
+            }
+          ],
+          "kind": "all",
+          "source": null
+        },
+        "normalized_formula": {
+          "children": [
+            {
+              "kind": "atom",
+              "op": "max_transfers",
+              "scope": "outbound",
+              "source": null,
+              "unit": "count",
+              "value": 1
+            },
+            {
+              "kind": "atom",
+              "op": "depart_ge",
+              "scope": "return",
+              "source": null,
+              "unit": "seconds",
+              "value": 34800
+            }
+          ],
+          "kind": "all",
+          "source": null
+        },
+        "raw_index": 3,
+        "value_changes": [
+          {
+            "predicted_atom": {
+              "kind": "atom",
+              "op": "depart_ge",
+              "scope": "return",
+              "source": null,
+              "unit": "seconds",
+              "value": 58800
+            },
+            "request_binding": {
+              "literal": "09:40:00",
+              "op": "depart_ge",
+              "scope": "return",
+              "seconds": 34800,
+              "source": {
+                "end": 463,
+                "start": 432
+              },
+              "text": "depart no earlier than 09:40:00"
+            }
+          }
+        ]
+      }
+    ],
+    "annotation_check": "wording grammar agrees; provisional, no human audit",
+    "candidate_plan_correct_ids": [],
+    "family": "scope",
+    "final_formula": {
+      "children": [
+        {
+          "kind": "atom",
+          "op": "max_transfers",
+          "scope": "outbound",
+          "source": null,
+          "unit": "count",
+          "value": 1
+        },
+        {
+          "kind": "atom",
+          "op": "depart_ge",
+          "scope": "return",
+          "source": null,
+          "unit": "seconds",
+          "value": 5840
+        }
+      ],
+      "kind": "all",
+      "source": null
+    },
+    "final_plan_id": "0ccdf17de23687ac121f",
+    "model_category": "incorrect_plan",
+    "oracle_category": "false_infeasibility",
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "transfer_limit",
+          "target": 1
+        },
+        {
+          "direction": "return",
+          "requirement": "earliest_departure",
+          "target": 34800
+        }
+      ]
+    },
+    "reference_equivalent_ids": [],
+    "reference_feasible_count": 35,
+    "repairs": [],
+    "request": "On 2026-09-14, plan the outbound journey from SW 5th & Hall [stop_id=10491] to SE Division & 12th Ave [stop_id=1375]. Also plan a return segment from SE Division & 11th Ave [stop_id=14244] to SW Hall & 5th [stop_id=13780] within 09:00:00–10:00:00. I handle movement between the outbound destination and return origin myself outside these journeys. On the outbound segment only, make at most 1 transfers. On the return segment only, depart no earlier than 09:40:00.",
+    "scenario_id": "pilot-27",
+    "violated_reference_clauses": [
+      {
+        "direction": "return",
+        "requirement": "earliest_departure",
+        "target": 34800
+      }
+    ]
+  },
+  {
+    "all_raw_interpretations": [
+      {
+        "detail": "Operations such as arrive_by and depart_ge are not supported. Only conjunction and negation are supported.",
+        "error": "unsupported",
+        "raw_index": 0
+      },
+      {
+        "detail": "visits; time bounds are exclusive; arbitrary time constraints",
+        "error": "unsupported",
+        "raw_index": 1
+      },
+      {
+        "detail": "visits; time bounds are not supported in this context; arbitrary time constraints are not supported",
+        "error": "unsupported",
+        "raw_index": 2
+      },
+      {
+        "detail": "visits; time bounds are exclusive",
+        "error": "unsupported",
+        "raw_index": 3
+      }
+    ],
+    "annotation_check": "wording grammar agrees; provisional, no human audit",
+    "candidate_plan_correct_ids": [],
+    "family": "infeasible",
+    "final_formula": null,
+    "final_plan_id": null,
+    "model_category": "invalid_model_output",
+    "oracle_category": "invalid_model_output",
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "earliest_departure",
+          "target": 30600
+        },
+        {
+          "direction": "outbound",
+          "requirement": "latest_arrival",
+          "target": 28800
+        }
+      ]
+    },
+    "reference_equivalent_ids": [],
+    "reference_feasible_count": 0,
+    "repairs": [],
+    "request": "On 2026-09-14, plan the outbound journey from SW 5th & Washington [stop_id=7642] to 300 Block SW Lincoln [stop_id=3397]. Depart no earlier than 08:30:00 and arrive by 08:00:00, both inclusive.",
+    "scenario_id": "pilot-33",
+    "violated_reference_clauses": []
+  },
+  {
+    "all_raw_interpretations": [
+      {
+        "formula": {
+          "children": [
+            {
+              "kind": "atom",
+              "op": "max_transfers",
+              "scope": "outbound",
+              "source": null,
+              "unit": "count",
+              "value": 1
+            },
+            {
+              "kind": "atom",
+              "op": "depart_ge",
+              "scope": "outbound",
+              "source": null,
+              "unit": "seconds",
+              "value": 3207
+            }
+          ],
+          "kind": "all",
+          "source": null
+        },
+        "normalized_formula": {
+          "children": [
+            {
+              "kind": "atom",
+              "op": "max_transfers",
+              "scope": "outbound",
+              "source": null,
+              "unit": "count",
+              "value": 1
+            },
+            {
+              "kind": "atom",
+              "op": "depart_ge",
+              "scope": "outbound",
+              "source": null,
+              "unit": "seconds",
+              "value": 31327
+            }
+          ],
+          "kind": "all",
+          "source": null
+        },
+        "raw_index": 0,
+        "value_changes": [
+          {
+            "predicted_atom": {
+              "kind": "atom",
+              "op": "depart_ge",
+              "scope": "outbound",
+              "source": null,
+              "unit": "seconds",
+              "value": 3207
+            },
+            "request_binding": {
+              "literal": "08:42:07",
+              "op": "depart_ge",
+              "scope": "outbound",
+              "seconds": 31327,
+              "source": {
+                "end": 183,
+                "start": 154
+              },
+              "text": "Do not depart before 08:42:07"
+            }
+          }
+        ]
+      },
+      {
+        "formula": {
+          "children": [
+            {
+              "kind": "atom",
+              "op": "max_transfers",
+              "scope": "outbound",
+              "source": null,
+              "unit": "count",
+              "value": 1
+            },
+            {
+              "kind": "atom",
+              "op": "depart_ge",
+              "scope": "outbound",
+              "source": null,
+              "unit": "seconds",
+              "value": 32407
+            }
+          ],
+          "kind": "all",
+          "source": null
+        },
+        "normalized_formula": {
+          "children": [
+            {
+              "kind": "atom",
+              "op": "max_transfers",
+              "scope": "outbound",
+              "source": null,
+              "unit": "count",
+              "value": 1
+            },
+            {
+              "kind": "atom",
+              "op": "depart_ge",
+              "scope": "outbound",
+              "source": null,
+              "unit": "seconds",
+              "value": 31327
+            }
+          ],
+          "kind": "all",
+          "source": null
+        },
+        "raw_index": 1,
+        "value_changes": [
+          {
+            "predicted_atom": {
+              "kind": "atom",
+              "op": "depart_ge",
+              "scope": "outbound",
+              "source": null,
+              "unit": "seconds",
+              "value": 32407
+            },
+            "request_binding": {
+              "literal": "08:42:07",
+              "op": "depart_ge",
+              "scope": "outbound",
+              "seconds": 31327,
+              "source": {
+                "end": 183,
+                "start": 154
+              },
+              "text": "Do not depart before 08:42:07"
+            }
+          }
+        ]
+      },
+      {
+        "formula": {
+          "children": [
+            {
+              "kind": "atom",
+              "op": "max_transfers",
+              "scope": "outbound",
+              "source": null,
+              "unit": "count",
+              "value": 1
+            },
+            {
+              "kind": "atom",
+              "op": "depart_ge",
+              "scope": "outbound",
+              "source": null,
+              "unit": "seconds",
+              "value": 31647
+            }
+          ],
+          "kind": "all",
+          "source": null
+        },
+        "normalized_formula": {
+          "children": [
+            {
+              "kind": "atom",
+              "op": "max_transfers",
+              "scope": "outbound",
+              "source": null,
+              "unit": "count",
+              "value": 1
+            },
+            {
+              "kind": "atom",
+              "op": "depart_ge",
+              "scope": "outbound",
+              "source": null,
+              "unit": "seconds",
+              "value": 31327
+            }
+          ],
+          "kind": "all",
+          "source": null
+        },
+        "raw_index": 2,
+        "value_changes": [
+          {
+            "predicted_atom": {
+              "kind": "atom",
+              "op": "depart_ge",
+              "scope": "outbound",
+              "source": null,
+              "unit": "seconds",
+              "value": 31647
+            },
+            "request_binding": {
+              "literal": "08:42:07",
+              "op": "depart_ge",
+              "scope": "outbound",
+              "seconds": 31327,
+              "source": {
+                "end": 183,
+                "start": 154
+              },
+              "text": "Do not depart before 08:42:07"
+            }
+          }
+        ]
+      },
+      {
+        "formula": {
+          "children": [
+            {
+              "kind": "atom",
+              "op": "depart_ge",
+              "scope": "outbound",
+              "source": null,
+              "unit": "seconds",
+              "value": 31247
+            },
+            {
+              "kind": "atom",
+              "op": "max_transfers",
+              "scope": "outbound",
+              "source": null,
+              "unit": "count",
+              "value": 1
+            }
+          ],
+          "kind": "all",
+          "source": null
+        },
+        "normalized_formula": {
+          "children": [
+            {
+              "kind": "atom",
+              "op": "depart_ge",
+              "scope": "outbound",
+              "source": null,
+              "unit": "seconds",
+              "value": 31327
+            },
+            {
+              "kind": "atom",
+              "op": "max_transfers",
+              "scope": "outbound",
+              "source": null,
+              "unit": "count",
+              "value": 1
+            }
+          ],
+          "kind": "all",
+          "source": null
+        },
+        "raw_index": 3,
+        "value_changes": [
+          {
+            "predicted_atom": {
+              "kind": "atom",
+              "op": "depart_ge",
+              "scope": "outbound",
+              "source": null,
+              "unit": "seconds",
+              "value": 31247
+            },
+            "request_binding": {
+              "literal": "08:42:07",
+              "op": "depart_ge",
+              "scope": "outbound",
+              "seconds": 31327,
+              "source": {
+                "end": 183,
+                "start": 154
+              },
+              "text": "Do not depart before 08:42:07"
+            }
+          }
+        ]
+      }
+    ],
+    "annotation_check": "wording grammar agrees; provisional, no human audit",
+    "candidate_plan_correct_ids": [
+      "c1",
+      "c2",
+      "c3"
+    ],
+    "family": "transfers",
+    "final_formula": {
+      "children": [
+        {
+          "kind": "atom",
+          "op": "max_transfers",
+          "scope": "outbound",
+          "source": null,
+          "unit": "count",
+          "value": 1
+        },
+        {
+          "kind": "atom",
+          "op": "depart_ge",
+          "scope": "outbound",
+          "source": null,
+          "unit": "seconds",
+          "value": 3207
+        }
+      ],
+      "kind": "all",
+      "source": null
+    },
+    "final_plan_id": "090d964b9fb94a3803e6",
+    "model_category": "incorrect_plan",
+    "oracle_category": "correct_feasible_plan",
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "transfer_limit",
+          "target": 1
+        },
+        {
+          "direction": "outbound",
+          "requirement": "earliest_departure",
+          "target": 31327
+        }
+      ]
+    },
+    "reference_equivalent_ids": [
+      "c3"
+    ],
+    "reference_feasible_count": 13,
+    "repairs": [],
+    "request": "On 2026-09-14, plan the outbound journey from SW 6th & W Burnside [stop_id=7751] to Rose Quarter Transit Center [stop_id=1097]. Make at most 1 transfers. Do not depart before 08:42:07.",
+    "scenario_id": "pilot-34",
+    "violated_reference_clauses": [
+      {
+        "direction": "outbound",
+        "requirement": "earliest_departure",
+        "target": 31327
+      }
+    ]
+  },
+  {
+    "all_raw_interpretations": [
+      {
+        "formula": {
+          "children": [
+            {
+              "kind": "atom",
+              "op": "max_transfers",
+              "scope": "outbound",
+              "source": null,
+              "unit": "count",
+              "value": 1
+            },
+            {
+              "kind": "atom",
+              "op": "depart_ge",
+              "scope": "return",
+              "source": null,
+              "unit": "seconds",
+              "value": 3696
+            }
+          ],
+          "kind": "all",
+          "source": null
+        },
+        "normalized_formula": {
+          "children": [
+            {
+              "kind": "atom",
+              "op": "max_transfers",
+              "scope": "outbound",
+              "source": null,
+              "unit": "count",
+              "value": 1
+            },
+            {
+              "kind": "atom",
+              "op": "depart_ge",
+              "scope": "return",
+              "source": null,
+              "unit": "seconds",
+              "value": 33360
+            }
+          ],
+          "kind": "all",
+          "source": null
+        },
+        "raw_index": 0,
+        "value_changes": [
+          {
+            "predicted_atom": {
+              "kind": "atom",
+              "op": "depart_ge",
+              "scope": "return",
+              "source": null,
+              "unit": "seconds",
+              "value": 3696
+            },
+            "request_binding": {
+              "literal": "09:16:00",
+              "op": "depart_ge",
+              "scope": "return",
+              "seconds": 33360,
+              "source": {
+                "end": 464,
+                "start": 433
+              },
+              "text": "depart no earlier than 09:16:00"
+            }
+          }
+        ]
+      },
+      {
+        "formula": {
+          "children": [
+            {
+              "kind": "atom",
+              "op": "max_transfers",
+              "scope": "outbound",
+              "source": null,
+              "unit": "count",
+              "value": 1
+            },
+            {
+              "kind": "atom",
+              "op": "depart_ge",
+              "scope": "return",
+              "source": null,
+              "unit": "seconds",
+              "value": 3696
+            }
+          ],
+          "kind": "all",
+          "source": null
+        },
+        "normalized_formula": {
+          "children": [
+            {
+              "kind": "atom",
+              "op": "max_transfers",
+              "scope": "outbound",
+              "source": null,
+              "unit": "count",
+              "value": 1
+            },
+            {
+              "kind": "atom",
+              "op": "depart_ge",
+              "scope": "return",
+              "source": null,
+              "unit": "seconds",
+              "value": 33360
+            }
+          ],
+          "kind": "all",
+          "source": null
+        },
+        "raw_index": 1,
+        "value_changes": [
+          {
+            "predicted_atom": {
+              "kind": "atom",
+              "op": "depart_ge",
+              "scope": "return",
+              "source": null,
+              "unit": "seconds",
+              "value": 3696
+            },
+            "request_binding": {
+              "literal": "09:16:00",
+              "op": "depart_ge",
+              "scope": "return",
+              "seconds": 33360,
+              "source": {
+                "end": 464,
+                "start": 433
+              },
+              "text": "depart no earlier than 09:16:00"
+            }
+          }
+        ]
+      },
+      {
+        "formula": {
+          "children": [
+            {
+              "kind": "atom",
+              "op": "max_transfers",
+              "scope": "outbound",
+              "source": null,
+              "unit": "count",
+              "value": 1
+            },
+            {
+              "kind": "atom",
+              "op": "depart_ge",
+              "scope": "return",
+              "source": null,
+              "unit": "seconds",
+              "value": 5772
+            }
+          ],
+          "kind": "all",
+          "source": null
+        },
+        "normalized_formula": {
+          "children": [
+            {
+              "kind": "atom",
+              "op": "max_transfers",
+              "scope": "outbound",
+              "source": null,
+              "unit": "count",
+              "value": 1
+            },
+            {
+              "kind": "atom",
+              "op": "depart_ge",
+              "scope": "return",
+              "source": null,
+              "unit": "seconds",
+              "value": 33360
+            }
+          ],
+          "kind": "all",
+          "source": null
+        },
+        "raw_index": 2,
+        "value_changes": [
+          {
+            "predicted_atom": {
+              "kind": "atom",
+              "op": "depart_ge",
+              "scope": "return",
+              "source": null,
+              "unit": "seconds",
+              "value": 5772
+            },
+            "request_binding": {
+              "literal": "09:16:00",
+              "op": "depart_ge",
+              "scope": "return",
+              "seconds": 33360,
+              "source": {
+                "end": 464,
+                "start": 433
+              },
+              "text": "depart no earlier than 09:16:00"
+            }
+          }
+        ]
+      },
+      {
+        "formula": {
+          "children": [
+            {
+              "kind": "atom",
+              "op": "max_transfers",
+              "scope": "outbound",
+              "source": null,
+              "unit": "count",
+              "value": 1
+            },
+            {
+              "kind": "atom",
+              "op": "depart_ge",
+              "scope": "return",
+              "source": null,
+              "unit": "seconds",
+              "value": 5772
+            }
+          ],
+          "kind": "all",
+          "source": null
+        },
+        "normalized_formula": {
+          "children": [
+            {
+              "kind": "atom",
+              "op": "max_transfers",
+              "scope": "outbound",
+              "source": null,
+              "unit": "count",
+              "value": 1
+            },
+            {
+              "kind": "atom",
+              "op": "depart_ge",
+              "scope": "return",
+              "source": null,
+              "unit": "seconds",
+              "value": 33360
+            }
+          ],
+          "kind": "all",
+          "source": null
+        },
+        "raw_index": 3,
+        "value_changes": [
+          {
+            "predicted_atom": {
+              "kind": "atom",
+              "op": "depart_ge",
+              "scope": "return",
+              "source": null,
+              "unit": "seconds",
+              "value": 5772
+            },
+            "request_binding": {
+              "literal": "09:16:00",
+              "op": "depart_ge",
+              "scope": "return",
+              "seconds": 33360,
+              "source": {
+                "end": 464,
+                "start": 433
+              },
+              "text": "depart no earlier than 09:16:00"
+            }
+          }
+        ]
+      }
+    ],
+    "annotation_check": "wording grammar agrees; provisional, no human audit",
+    "candidate_plan_correct_ids": [],
+    "family": "scope",
+    "final_formula": {
+      "children": [
+        {
+          "kind": "atom",
+          "op": "max_transfers",
+          "scope": "outbound",
+          "source": null,
+          "unit": "count",
+          "value": 1
+        },
+        {
+          "kind": "atom",
+          "op": "depart_ge",
+          "scope": "return",
+          "source": null,
+          "unit": "seconds",
+          "value": 3696
+        }
+      ],
+      "kind": "all",
+      "source": null
+    },
+    "final_plan_id": "0e85dcd1705addd255ea",
+    "model_category": "incorrect_plan",
+    "oracle_category": "incorrect_plan",
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "transfer_limit",
+          "target": 1
+        },
+        {
+          "direction": "return",
+          "requirement": "earliest_departure",
+          "target": 33360
+        }
+      ]
+    },
+    "reference_equivalent_ids": [],
+    "reference_feasible_count": 168,
+    "repairs": [],
+    "request": "On 2026-09-14, plan the outbound journey from NE M L King & Wasco [stop_id=5958] to SE Powell & 12th [stop_id=13792]. Also plan a return segment from SE Powell & Milwaukie [stop_id=4538] to NE Grand & Wasco [stop_id=10953] within 09:00:00–10:00:00. I handle movement between the outbound destination and return origin myself outside these journeys. On the outbound segment only, make at most 1 transfers. On the return segment only, depart no earlier than 09:16:00.",
+    "scenario_id": "pilot-35",
+    "violated_reference_clauses": [
+      {
+        "direction": "return",
+        "requirement": "earliest_departure",
+        "target": 33360
+      }
+    ]
+  },
+  {
+    "all_raw_interpretations": [
+      {
+        "formula": {
+          "children": [
+            {
+              "kind": "atom",
+              "op": "depart_ge",
+              "scope": "outbound",
+              "source": null,
+              "unit": "seconds",
+              "value": 32400
+            },
+            {
+              "kind": "atom",
+              "op": "max_transfers",
+              "scope": "return",
+              "source": null,
+              "unit": "count",
+              "value": 1
+            },
+            {
+              "kind": "atom",
+              "op": "depart_ge",
+              "scope": "return",
+              "source": null,
+              "unit": "seconds",
+              "value": 32760
+            }
+          ],
+          "kind": "all",
+          "source": null
+        },
+        "normalized_formula": {
+          "children": [
+            {
+              "kind": "atom",
+              "op": "depart_ge",
+              "scope": "outbound",
+              "source": null,
+              "unit": "seconds",
+              "value": 32400
+            },
+            {
+              "kind": "atom",
+              "op": "max_transfers",
+              "scope": "return",
+              "source": null,
+              "unit": "count",
+              "value": 1
+            },
+            {
+              "kind": "atom",
+              "op": "depart_ge",
+              "scope": "return",
+              "source": null,
+              "unit": "seconds",
+              "value": 33120
+            }
+          ],
+          "kind": "all",
+          "source": null
+        },
+        "raw_index": 0,
+        "value_changes": [
+          {
+            "predicted_atom": {
+              "kind": "atom",
+              "op": "depart_ge",
+              "scope": "return",
+              "source": null,
+              "unit": "seconds",
+              "value": 32760
+            },
+            "request_binding": {
+              "literal": "09:12:00",
+              "op": "depart_ge",
+              "scope": "return",
+              "seconds": 33120,
+              "source": {
+                "end": 448,
+                "start": 417
+              },
+              "text": "depart no earlier than 09:12:00"
+            }
+          }
+        ]
+      },
+      {
+        "formula": {
+          "children": [
+            {
+              "kind": "atom",
+              "op": "depart_ge",
+              "scope": "outbound",
+              "source": null,
+              "unit": "seconds",
+              "value": 3432
+            },
+            {
+              "kind": "atom",
+              "op": "max_transfers",
+              "scope": "return",
+              "source": null,
+              "unit": "count",
+              "value": 1
+            },
+            {
+              "kind": "atom",
+              "op": "depart_ge",
+              "scope": "return",
+              "source": null,
+              "unit": "seconds",
+              "value": 3240
+            }
+          ],
+          "kind": "all",
+          "source": null
+        },
+        "normalized_formula": {
+          "children": [
+            {
+              "kind": "atom",
+              "op": "depart_ge",
+              "scope": "outbound",
+              "source": null,
+              "unit": "seconds",
+              "value": 3432
+            },
+            {
+              "kind": "atom",
+              "op": "max_transfers",
+              "scope": "return",
+              "source": null,
+              "unit": "count",
+              "value": 1
+            },
+            {
+              "kind": "atom",
+              "op": "depart_ge",
+              "scope": "return",
+              "source": null,
+              "unit": "seconds",
+              "value": 33120
+            }
+          ],
+          "kind": "all",
+          "source": null
+        },
+        "raw_index": 1,
+        "value_changes": [
+          {
+            "predicted_atom": {
+              "kind": "atom",
+              "op": "depart_ge",
+              "scope": "return",
+              "source": null,
+              "unit": "seconds",
+              "value": 3240
+            },
+            "request_binding": {
+              "literal": "09:12:00",
+              "op": "depart_ge",
+              "scope": "return",
+              "seconds": 33120,
+              "source": {
+                "end": 448,
+                "start": 417
+              },
+              "text": "depart no earlier than 09:12:00"
+            }
+          }
+        ]
+      },
+      {
+        "formula": {
+          "children": [
+            {
+              "kind": "atom",
+              "op": "arrive_by",
+              "scope": "outbound",
+              "source": null,
+              "unit": "seconds",
+              "value": 86400
+            },
+            {
+              "kind": "atom",
+              "op": "max_transfers",
+              "scope": "return",
+              "source": null,
+              "unit": "count",
+              "value": 1
+            },
+            {
+              "kind": "atom",
+              "op": "depart_ge",
+              "scope": "return",
+              "source": null,
+              "unit": "seconds",
+              "value": 3492
+            }
+          ],
+          "kind": "all",
+          "source": null
+        },
+        "normalized_formula": {
+          "children": [
+            {
+              "kind": "atom",
+              "op": "arrive_by",
+              "scope": "outbound",
+              "source": null,
+              "unit": "seconds",
+              "value": 86400
+            },
+            {
+              "kind": "atom",
+              "op": "max_transfers",
+              "scope": "return",
+              "source": null,
+              "unit": "count",
+              "value": 1
+            },
+            {
+              "kind": "atom",
+              "op": "depart_ge",
+              "scope": "return",
+              "source": null,
+              "unit": "seconds",
+              "value": 33120
+            }
+          ],
+          "kind": "all",
+          "source": null
+        },
+        "raw_index": 2,
+        "value_changes": [
+          {
+            "predicted_atom": {
+              "kind": "atom",
+              "op": "depart_ge",
+              "scope": "return",
+              "source": null,
+              "unit": "seconds",
+              "value": 3492
+            },
+            "request_binding": {
+              "literal": "09:12:00",
+              "op": "depart_ge",
+              "scope": "return",
+              "seconds": 33120,
+              "source": {
+                "end": 448,
+                "start": 417
+              },
+              "text": "depart no earlier than 09:12:00"
+            }
+          }
+        ]
+      },
+      {
+        "formula": {
+          "children": [
+            {
+              "kind": "atom",
+              "op": "depart_ge",
+              "scope": "outbound",
+              "source": null,
+              "unit": "seconds",
+              "value": 3432
+            },
+            {
+              "kind": "atom",
+              "op": "max_transfers",
+              "scope": "return",
+              "source": null,
+              "unit": "count",
+              "value": 1
+            }
+          ],
+          "kind": "all",
+          "source": null
+        },
+        "normalized_formula": {
+          "children": [
+            {
+              "kind": "atom",
+              "op": "depart_ge",
+              "scope": "outbound",
+              "source": null,
+              "unit": "seconds",
+              "value": 3432
+            },
+            {
+              "kind": "atom",
+              "op": "max_transfers",
+              "scope": "return",
+              "source": null,
+              "unit": "count",
+              "value": 1
+            }
+          ],
+          "kind": "all",
+          "source": null
+        },
+        "raw_index": 3,
+        "value_changes": []
+      }
+    ],
+    "annotation_check": "wording grammar agrees; provisional, no human audit",
+    "candidate_plan_correct_ids": [
+      "c1"
+    ],
+    "family": "scope",
+    "final_formula": {
+      "children": [
+        {
+          "kind": "atom",
+          "op": "depart_ge",
+          "scope": "outbound",
+          "source": null,
+          "unit": "seconds",
+          "value": 32400
+        },
+        {
+          "kind": "atom",
+          "op": "max_transfers",
+          "scope": "return",
+          "source": null,
+          "unit": "count",
+          "value": 1
+        },
+        {
+          "kind": "atom",
+          "op": "depart_ge",
+          "scope": "return",
+          "source": null,
+          "unit": "seconds",
+          "value": 32760
+        }
+      ],
+      "kind": "all",
+      "source": null
+    },
+    "final_plan_id": null,
+    "model_category": "false_infeasibility",
+    "oracle_category": "correct_feasible_plan",
+    "reference": {
+      "and": [
+        {
+          "direction": "return",
+          "requirement": "transfer_limit",
+          "target": 1
+        },
+        {
+          "direction": "return",
+          "requirement": "earliest_departure",
+          "target": 33120
+        }
+      ]
+    },
+    "reference_equivalent_ids": [
+      "c1"
+    ],
+    "reference_feasible_count": 256,
+    "repairs": [],
+    "request": "On 2026-09-14, plan the outbound journey from NW 5th & Davis [stop_id=9301] to SW 5th & Salmon [stop_id=7634]. Also plan a return segment from SW 6th & Salmon [stop_id=7789] to NW Everett & 5th [stop_id=8886] within 09:00:00–10:00:00. I handle movement between the outbound destination and return origin myself outside these journeys. On the return segment only, make at most 1 transfers. On the return segment only, depart no earlier than 09:12:00.",
+    "scenario_id": "pilot-40",
+    "violated_reference_clauses": []
+  },
+  {
+    "all_raw_interpretations": [
+      {
+        "detail": "Operations such as arrive_by and depart_ge are not supported.",
+        "error": "unsupported",
+        "raw_index": 0
+      },
+      {
+        "detail": "Formula nodes must be either 'all', 'atom', or 'not'. The original request includes unsupported operations such as 'arrive_by' and 'depart_ge'.",
+        "error": "unsupported",
+        "raw_index": 1
+      },
+      {
+        "detail": "Operations such as arrive_by and depart_ge are not supported. Only conjunction and negation are supported.",
+        "error": "unsupported",
+        "raw_index": 2
+      },
+      {
+        "detail": "visits; time bounds are exclusive; operations like arrive_by and depart_ge are not supported",
+        "error": "unsupported",
+        "raw_index": 3
+      }
+    ],
+    "annotation_check": "wording grammar agrees; provisional, no human audit",
+    "candidate_plan_correct_ids": [],
+    "family": "infeasible",
+    "final_formula": null,
+    "final_plan_id": null,
+    "model_category": "invalid_model_output",
+    "oracle_category": "invalid_model_output",
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "earliest_departure",
+          "target": 30600
+        },
+        {
+          "direction": "outbound",
+          "requirement": "latest_arrival",
+          "target": 28800
+        }
+      ]
+    },
+    "reference_equivalent_ids": [],
+    "reference_feasible_count": 0,
+    "repairs": [],
+    "request": "On 2026-09-14, plan the outbound journey from NE Weidler & 7th [stop_id=6240] to NE Weidler & 21st [stop_id=6235]. Depart no earlier than 08:30:00 and arrive by 08:00:00, both inclusive.",
+    "scenario_id": "pilot-41",
+    "violated_reference_clauses": []
+  }
+]

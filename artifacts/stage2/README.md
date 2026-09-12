@@ -8,6 +8,10 @@ outcomes differ. See the [execution report](../../reports/STAGE2_GPU_EXECUTION.m
 - `pilot-v1/`: compact fresh results, independent diagnostic traces, run/source hashes,
   verified replication records, replay checks and completed cumulative GPU accounting.
 - `pilot-figures/`: four fresh comparison figures, each PDF/SVG/PNG.
+- `mechanism-v1/`: CPU-only diagnosis of all 48 saved bundles, full selector rankings,
+  failures and judge errors, source-only time-value sensitivity, and an uncapped-pool
+  diagnostic. Counterfactual and oracle results are separate from the frozen pilot.
+  See the [mechanism report](../../reports/STAGE2_MECHANISM_DIAGNOSIS.md).
 - `prior-reanalysis/` and `figures/`: historical four-case Stage 1 reanalysis only.
 - `execution-attempt-20260912/`: immutable pre-GPU access diagnosis, annotation checks
   and local-preservation inventory from the earlier blocked attempt.

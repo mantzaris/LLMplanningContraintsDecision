@@ -1,0 +1,5892 @@
+[
+  {
+    "clauses_after": [
+      {
+        "accepted": 200,
+        "effect": "varies",
+        "marginal_exclusions": 391,
+        "pool_size": 709,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "earliest_departure",
+          "target": 30317
+        }
+      },
+      {
+        "accepted": 483,
+        "effect": "varies",
+        "marginal_exclusions": 108,
+        "pool_size": 709,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "latest_arrival",
+          "target": 34225
+        }
+      }
+    ],
+    "clauses_before": [
+      {
+        "accepted": 29,
+        "effect": "varies",
+        "marginal_exclusions": 25,
+        "pool_size": 64,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "earliest_departure",
+          "target": 30317
+        }
+      },
+      {
+        "accepted": 36,
+        "effect": "varies",
+        "marginal_exclusions": 18,
+        "pool_size": 64,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "latest_arrival",
+          "target": 34225
+        }
+      }
+    ],
+    "expanded_candidate_plans": [
+      {
+        "accepted": 145,
+        "candidate_id": "c0",
+        "correct_selected_plan": true,
+        "plan_id": "c5d84ad3fdcaa4bfa597",
+        "status": "satisfiable"
+      },
+      {
+        "accepted": 0,
+        "candidate_id": "c1",
+        "correct_selected_plan": false,
+        "plan_id": null,
+        "status": "infeasible_in_pool"
+      },
+      {
+        "accepted": 83,
+        "candidate_id": "c2",
+        "correct_selected_plan": true,
+        "plan_id": "c5d84ad3fdcaa4bfa597",
+        "status": "satisfiable"
+      }
+    ],
+    "expanded_initial_ranking": {
+      "different_first_choice": true,
+      "pattern_scores": {
+        "100": {
+          "D": 2,
+          "E": 3,
+          "count": 62,
+          "first_id": "002ee67351572c9abe93"
+        },
+        "101": {
+          "D": 2,
+          "E": 4,
+          "count": 83,
+          "first_id": "00b30b64cd73de674651"
+        }
+      },
+      "top": {
+        "D": {
+          "chosen_id": "002ee67351572c9abe93",
+          "score": 2,
+          "tie_count": 145
+        },
+        "E": {
+          "chosen_id": "00b30b64cd73de674651",
+          "score": 4,
+          "tie_count": 83
+        }
+      },
+      "weight_histogram": {
+        "1": 1,
+        "2": 2
+      }
+    },
+    "expanded_pool_hash": "582f924e71d1618d3e4b55fe3680648b4ccacaf840f35bf94b80f0a76dc8388a",
+    "expanded_pool_size": 709,
+    "expansion": {
+      "complete": true,
+      "joint_before_cap": 709,
+      "pool_size": 709,
+      "segment_enumerated": [
+        709
+      ]
+    },
+    "family": "timing",
+    "frozen_pool_size": 64,
+    "modes": [
+      "bus"
+    ],
+    "reference_equivalent_after": false,
+    "reference_equivalent_before": false,
+    "reference_feasible_after": 92,
+    "reference_feasible_before": 11,
+    "scenario_id": "pilot-00",
+    "semantic_classes_after": 3,
+    "semantic_classes_before": 3,
+    "transfer_values_by_scope": {
+      "outbound": [
+        0,
+        1
+      ]
+    },
+    "witness_partitions_after": 2,
+    "witness_partitions_before": 2
+  },
+  {
+    "clauses_after": [
+      {
+        "accepted": 144,
+        "effect": "always_true",
+        "marginal_exclusions": 0,
+        "pool_size": 144,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "forbidden_modes",
+          "target": [
+            "rail",
+            "tram"
+          ]
+        }
+      },
+      {
+        "accepted": 135,
+        "effect": "varies",
+        "marginal_exclusions": 3,
+        "pool_size": 144,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "latest_departure",
+          "target": 32880
+        }
+      },
+      {
+        "accepted": 12,
+        "effect": "varies",
+        "marginal_exclusions": 126,
+        "pool_size": 144,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "transfer_limit",
+          "target": 0
+        }
+      }
+    ],
+    "clauses_before": [
+      {
+        "accepted": 64,
+        "effect": "always_true",
+        "marginal_exclusions": 0,
+        "pool_size": 64,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "forbidden_modes",
+          "target": [
+            "rail",
+            "tram"
+          ]
+        }
+      },
+      {
+        "accepted": 60,
+        "effect": "varies",
+        "marginal_exclusions": 1,
+        "pool_size": 64,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "latest_departure",
+          "target": 32880
+        }
+      },
+      {
+        "accepted": 5,
+        "effect": "varies",
+        "marginal_exclusions": 56,
+        "pool_size": 64,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "transfer_limit",
+          "target": 0
+        }
+      }
+    ],
+    "expanded_candidate_plans": [
+      {
+        "accepted": 3,
+        "candidate_id": "c0",
+        "correct_selected_plan": false,
+        "plan_id": "4f068e23d6f9f80811f2",
+        "status": "satisfiable"
+      },
+      {
+        "accepted": 2,
+        "candidate_id": "c1",
+        "correct_selected_plan": false,
+        "plan_id": "97ee3eaea03b01261e22",
+        "status": "satisfiable"
+      }
+    ],
+    "expanded_initial_ranking": {
+      "different_first_choice": false,
+      "pattern_scores": {
+        "10": {
+          "D": 1,
+          "E": 2,
+          "count": 1,
+          "first_id": "4f068e23d6f9f80811f2"
+        }
+      },
+      "top": {
+        "D": {
+          "chosen_id": "4f068e23d6f9f80811f2",
+          "score": 1,
+          "tie_count": 1
+        },
+        "E": {
+          "chosen_id": "4f068e23d6f9f80811f2",
+          "score": 2,
+          "tie_count": 1
+        }
+      },
+      "weight_histogram": {
+        "2": 1
+      }
+    },
+    "expanded_pool_hash": "16f8cb979d42040426a621e54891ab4c56adeb70b370d9fad3f21ca660a32ba8",
+    "expanded_pool_size": 144,
+    "expansion": {
+      "complete": true,
+      "joint_before_cap": 144,
+      "pool_size": 144,
+      "segment_enumerated": [
+        144
+      ]
+    },
+    "family": "mode_exclusion",
+    "frozen_pool_size": 64,
+    "modes": [
+      "bus"
+    ],
+    "reference_equivalent_after": false,
+    "reference_equivalent_before": false,
+    "reference_feasible_after": 9,
+    "reference_feasible_before": 4,
+    "scenario_id": "pilot-01",
+    "semantic_classes_after": 2,
+    "semantic_classes_before": 2,
+    "transfer_values_by_scope": {
+      "outbound": [
+        0,
+        1
+      ]
+    },
+    "witness_partitions_after": 1,
+    "witness_partitions_before": 1
+  },
+  {
+    "clauses_after": [
+      {
+        "accepted": 1047,
+        "effect": "always_true",
+        "marginal_exclusions": 0,
+        "pool_size": 1047,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "ordered_calls",
+          "target": [
+            "3398",
+            "13780"
+          ]
+        }
+      },
+      {
+        "accepted": 1047,
+        "effect": "always_true",
+        "marginal_exclusions": 0,
+        "pool_size": 1047,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "allowed_modes",
+          "target": [
+            "bus"
+          ]
+        }
+      }
+    ],
+    "clauses_before": [
+      {
+        "accepted": 64,
+        "effect": "always_true",
+        "marginal_exclusions": 0,
+        "pool_size": 64,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "ordered_calls",
+          "target": [
+            "3398",
+            "13780"
+          ]
+        }
+      },
+      {
+        "accepted": 64,
+        "effect": "always_true",
+        "marginal_exclusions": 0,
+        "pool_size": 64,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "allowed_modes",
+          "target": [
+            "bus"
+          ]
+        }
+      }
+    ],
+    "expanded_candidate_plans": [
+      {
+        "accepted": 0,
+        "candidate_id": "c0",
+        "correct_selected_plan": false,
+        "plan_id": null,
+        "status": "infeasible_in_pool"
+      }
+    ],
+    "expanded_initial_ranking": {
+      "different_first_choice": false,
+      "pattern_scores": {},
+      "top": {
+        "D": {
+          "chosen_id": null,
+          "score": 0,
+          "tie_count": 0
+        },
+        "E": {
+          "chosen_id": null,
+          "score": 0,
+          "tie_count": 0
+        }
+      },
+      "weight_histogram": {}
+    },
+    "expanded_pool_hash": "3979ffdcde34c35bdf1849c526eb572bd48d25871607f0048107df65f0929785",
+    "expanded_pool_size": 1047,
+    "expansion": {
+      "complete": true,
+      "joint_before_cap": 1047,
+      "pool_size": 1047,
+      "segment_enumerated": [
+        1047
+      ]
+    },
+    "family": "ordered_visits",
+    "frozen_pool_size": 64,
+    "modes": [
+      "bus"
+    ],
+    "reference_equivalent_after": false,
+    "reference_equivalent_before": false,
+    "reference_feasible_after": 1047,
+    "reference_feasible_before": 64,
+    "scenario_id": "pilot-02",
+    "semantic_classes_after": 1,
+    "semantic_classes_before": 1,
+    "transfer_values_by_scope": {
+      "outbound": [
+        0,
+        1
+      ]
+    },
+    "witness_partitions_after": 0,
+    "witness_partitions_before": 0
+  },
+  {
+    "clauses_after": [
+      {
+        "accepted": 21,
+        "effect": "varies",
+        "marginal_exclusions": 169,
+        "pool_size": 485,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "transfer_limit",
+          "target": 0
+        }
+      },
+      {
+        "accepted": 182,
+        "effect": "varies",
+        "marginal_exclusions": 8,
+        "pool_size": 485,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "earliest_departure",
+          "target": 29880
+        }
+      }
+    ],
+    "clauses_before": [
+      {
+        "accepted": 2,
+        "effect": "varies",
+        "marginal_exclusions": 23,
+        "pool_size": 64,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "transfer_limit",
+          "target": 0
+        }
+      },
+      {
+        "accepted": 24,
+        "effect": "varies",
+        "marginal_exclusions": 1,
+        "pool_size": 64,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "earliest_departure",
+          "target": 29880
+        }
+      }
+    ],
+    "expanded_candidate_plans": [
+      {
+        "accepted": 13,
+        "candidate_id": "c0",
+        "correct_selected_plan": true,
+        "plan_id": "cc54de1cb7e0ab29bd3e",
+        "status": "satisfiable"
+      }
+    ],
+    "expanded_initial_ranking": {
+      "different_first_choice": false,
+      "pattern_scores": {},
+      "top": {
+        "D": {
+          "chosen_id": null,
+          "score": 0,
+          "tie_count": 0
+        },
+        "E": {
+          "chosen_id": null,
+          "score": 0,
+          "tie_count": 0
+        }
+      },
+      "weight_histogram": {}
+    },
+    "expanded_pool_hash": "69e321684d4f5f09a3a673f31f38cf6f0e6d46ce5bebfa0c09671d080ac14ad4",
+    "expanded_pool_size": 485,
+    "expansion": {
+      "complete": true,
+      "joint_before_cap": 485,
+      "pool_size": 485,
+      "segment_enumerated": [
+        485
+      ]
+    },
+    "family": "transfers",
+    "frozen_pool_size": 64,
+    "modes": [
+      "bus"
+    ],
+    "reference_equivalent_after": true,
+    "reference_equivalent_before": true,
+    "reference_feasible_after": 13,
+    "reference_feasible_before": 1,
+    "scenario_id": "pilot-03",
+    "semantic_classes_after": 1,
+    "semantic_classes_before": 1,
+    "transfer_values_by_scope": {
+      "outbound": [
+        0,
+        1
+      ]
+    },
+    "witness_partitions_after": 0,
+    "witness_partitions_before": 0
+  },
+  {
+    "clauses_after": [
+      {
+        "accepted": 1592,
+        "effect": "always_true",
+        "marginal_exclusions": 0,
+        "pool_size": 1592,
+        "rule": {
+          "direction": "return",
+          "requirement": "transfer_limit",
+          "target": 1
+        }
+      },
+      {
+        "accepted": 863,
+        "effect": "varies",
+        "marginal_exclusions": 729,
+        "pool_size": 1592,
+        "rule": {
+          "direction": "return",
+          "requirement": "earliest_departure",
+          "target": 34014
+        }
+      }
+    ],
+    "clauses_before": [
+      {
+        "accepted": 256,
+        "effect": "always_true",
+        "marginal_exclusions": 0,
+        "pool_size": 256,
+        "rule": {
+          "direction": "return",
+          "requirement": "transfer_limit",
+          "target": 1
+        }
+      },
+      {
+        "accepted": 141,
+        "effect": "varies",
+        "marginal_exclusions": 115,
+        "pool_size": 256,
+        "rule": {
+          "direction": "return",
+          "requirement": "earliest_departure",
+          "target": 34014
+        }
+      }
+    ],
+    "expanded_candidate_plans": [
+      {
+        "accepted": 363,
+        "candidate_id": "c0",
+        "correct_selected_plan": true,
+        "plan_id": "44325a1d6f986fbdec4c",
+        "status": "satisfiable"
+      },
+      {
+        "accepted": 0,
+        "candidate_id": "c3",
+        "correct_selected_plan": false,
+        "plan_id": null,
+        "status": "infeasible_in_pool"
+      }
+    ],
+    "expanded_initial_ranking": {
+      "different_first_choice": false,
+      "pattern_scores": {
+        "10": {
+          "D": 1,
+          "E": 2,
+          "count": 363,
+          "first_id": "003c688723eddaf4706b"
+        }
+      },
+      "top": {
+        "D": {
+          "chosen_id": "003c688723eddaf4706b",
+          "score": 1,
+          "tie_count": 363
+        },
+        "E": {
+          "chosen_id": "003c688723eddaf4706b",
+          "score": 2,
+          "tie_count": 363
+        }
+      },
+      "weight_histogram": {
+        "2": 1
+      }
+    },
+    "expanded_pool_hash": "55ef964668a909e12851f213f1f778e90bfe94dadd6f1fee6304f9cafc969a0b",
+    "expanded_pool_size": 1592,
+    "expansion": {
+      "complete": true,
+      "joint_before_cap": 1592,
+      "pool_size": 1592,
+      "segment_enumerated": [
+        144,
+        17
+      ]
+    },
+    "family": "scope",
+    "frozen_pool_size": 256,
+    "modes": [
+      "bus"
+    ],
+    "reference_equivalent_after": false,
+    "reference_equivalent_before": false,
+    "reference_feasible_after": 863,
+    "reference_feasible_before": 141,
+    "scenario_id": "pilot-04",
+    "semantic_classes_after": 2,
+    "semantic_classes_before": 2,
+    "transfer_values_by_scope": {
+      "outbound": [
+        0,
+        1
+      ],
+      "return": [
+        0,
+        1
+      ]
+    },
+    "witness_partitions_after": 1,
+    "witness_partitions_before": 1
+  },
+  {
+    "clauses_after": [
+      {
+        "accepted": 87,
+        "effect": "varies",
+        "marginal_exclusions": 23,
+        "pool_size": 327,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "earliest_departure",
+          "target": 30600
+        }
+      },
+      {
+        "accepted": 23,
+        "effect": "varies",
+        "marginal_exclusions": 87,
+        "pool_size": 327,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "latest_arrival",
+          "target": 28800
+        }
+      }
+    ],
+    "clauses_before": [
+      {
+        "accepted": 20,
+        "effect": "varies",
+        "marginal_exclusions": 5,
+        "pool_size": 64,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "earliest_departure",
+          "target": 30600
+        }
+      },
+      {
+        "accepted": 5,
+        "effect": "varies",
+        "marginal_exclusions": 20,
+        "pool_size": 64,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "latest_arrival",
+          "target": 28800
+        }
+      }
+    ],
+    "expanded_candidate_plans": [],
+    "expanded_initial_ranking": {
+      "different_first_choice": false,
+      "pattern_scores": {},
+      "top": {
+        "D": {
+          "chosen_id": null,
+          "score": 0,
+          "tie_count": 0
+        },
+        "E": {
+          "chosen_id": null,
+          "score": 0,
+          "tie_count": 0
+        }
+      },
+      "weight_histogram": {}
+    },
+    "expanded_pool_hash": "7041a0f901faf1ae5a06fc3f5760e5114d66164ad81e17ba2fd96c6ea5bf02f2",
+    "expanded_pool_size": 327,
+    "expansion": {
+      "complete": true,
+      "joint_before_cap": 327,
+      "pool_size": 327,
+      "segment_enumerated": [
+        327
+      ]
+    },
+    "family": "infeasible",
+    "frozen_pool_size": 64,
+    "modes": [
+      "bus"
+    ],
+    "reference_equivalent_after": false,
+    "reference_equivalent_before": false,
+    "reference_feasible_after": 0,
+    "reference_feasible_before": 0,
+    "scenario_id": "pilot-05",
+    "semantic_classes_after": 0,
+    "semantic_classes_before": 0,
+    "transfer_values_by_scope": {
+      "outbound": [
+        0,
+        1
+      ]
+    },
+    "witness_partitions_after": 0,
+    "witness_partitions_before": 0
+  },
+  {
+    "clauses_after": [
+      {
+        "accepted": 929,
+        "effect": "always_true",
+        "marginal_exclusions": 0,
+        "pool_size": 929,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "forbidden_modes",
+          "target": [
+            "rail",
+            "tram"
+          ]
+        }
+      },
+      {
+        "accepted": 493,
+        "effect": "varies",
+        "marginal_exclusions": 436,
+        "pool_size": 929,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "latest_departure",
+          "target": 28302
+        }
+      },
+      {
+        "accepted": 929,
+        "effect": "always_true",
+        "marginal_exclusions": 0,
+        "pool_size": 929,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "transfer_limit",
+          "target": 1
+        }
+      }
+    ],
+    "clauses_before": [
+      {
+        "accepted": 64,
+        "effect": "always_true",
+        "marginal_exclusions": 0,
+        "pool_size": 64,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "forbidden_modes",
+          "target": [
+            "rail",
+            "tram"
+          ]
+        }
+      },
+      {
+        "accepted": 35,
+        "effect": "varies",
+        "marginal_exclusions": 29,
+        "pool_size": 64,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "latest_departure",
+          "target": 28302
+        }
+      },
+      {
+        "accepted": 64,
+        "effect": "always_true",
+        "marginal_exclusions": 0,
+        "pool_size": 64,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "transfer_limit",
+          "target": 1
+        }
+      }
+    ],
+    "expanded_candidate_plans": [
+      {
+        "accepted": 586,
+        "candidate_id": "c0",
+        "correct_selected_plan": true,
+        "plan_id": "a9e7124eacbd13a4a2cc",
+        "status": "satisfiable"
+      },
+      {
+        "accepted": 500,
+        "candidate_id": "c2",
+        "correct_selected_plan": true,
+        "plan_id": "4c123446aa08b0d5fc3d",
+        "status": "satisfiable"
+      },
+      {
+        "accepted": 429,
+        "candidate_id": "c3",
+        "correct_selected_plan": true,
+        "plan_id": "42e9fc643e538c0b8a9f",
+        "status": "satisfiable"
+      }
+    ],
+    "expanded_initial_ranking": {
+      "different_first_choice": false,
+      "pattern_scores": {
+        "001": {
+          "D": 2,
+          "E": 5,
+          "count": 343,
+          "first_id": "023a99b475ae21d6b5b2"
+        },
+        "101": {
+          "D": 2,
+          "E": 5,
+          "count": 86,
+          "first_id": "06b5d39e855ca24bde86"
+        },
+        "110": {
+          "D": 2,
+          "E": 5,
+          "count": 500,
+          "first_id": "01d5cd87319e366359a7"
+        }
+      },
+      "top": {
+        "D": {
+          "chosen_id": "01d5cd87319e366359a7",
+          "score": 2,
+          "tie_count": 929
+        },
+        "E": {
+          "chosen_id": "01d5cd87319e366359a7",
+          "score": 5,
+          "tie_count": 929
+        }
+      },
+      "weight_histogram": {
+        "2": 2,
+        "3": 1
+      }
+    },
+    "expanded_pool_hash": "95d55d26a227f7033da23d63c14f8deeb1028e46b14586b283777397e5137a52",
+    "expanded_pool_size": 929,
+    "expansion": {
+      "complete": true,
+      "joint_before_cap": 929,
+      "pool_size": 929,
+      "segment_enumerated": [
+        929
+      ]
+    },
+    "family": "mode_exclusion",
+    "frozen_pool_size": 64,
+    "modes": [
+      "bus"
+    ],
+    "reference_equivalent_after": false,
+    "reference_equivalent_before": false,
+    "reference_feasible_after": 493,
+    "reference_feasible_before": 35,
+    "scenario_id": "pilot-06",
+    "semantic_classes_after": 3,
+    "semantic_classes_before": 3,
+    "transfer_values_by_scope": {
+      "outbound": [
+        0,
+        1
+      ]
+    },
+    "witness_partitions_after": 2,
+    "witness_partitions_before": 2
+  },
+  {
+    "clauses_after": [
+      {
+        "accepted": 206,
+        "effect": "always_true",
+        "marginal_exclusions": 0,
+        "pool_size": 206,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "ordered_calls",
+          "target": [
+            "9311",
+            "9301"
+          ]
+        }
+      },
+      {
+        "accepted": 206,
+        "effect": "always_true",
+        "marginal_exclusions": 0,
+        "pool_size": 206,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "allowed_modes",
+          "target": [
+            "bus"
+          ]
+        }
+      }
+    ],
+    "clauses_before": [
+      {
+        "accepted": 64,
+        "effect": "always_true",
+        "marginal_exclusions": 0,
+        "pool_size": 64,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "ordered_calls",
+          "target": [
+            "9311",
+            "9301"
+          ]
+        }
+      },
+      {
+        "accepted": 64,
+        "effect": "always_true",
+        "marginal_exclusions": 0,
+        "pool_size": 64,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "allowed_modes",
+          "target": [
+            "bus"
+          ]
+        }
+      }
+    ],
+    "expanded_candidate_plans": [
+      {
+        "accepted": 206,
+        "candidate_id": "c0",
+        "correct_selected_plan": true,
+        "plan_id": "19e9794bfbc0e5b01e46",
+        "status": "satisfiable"
+      }
+    ],
+    "expanded_initial_ranking": {
+      "different_first_choice": false,
+      "pattern_scores": {},
+      "top": {
+        "D": {
+          "chosen_id": null,
+          "score": 0,
+          "tie_count": 0
+        },
+        "E": {
+          "chosen_id": null,
+          "score": 0,
+          "tie_count": 0
+        }
+      },
+      "weight_histogram": {}
+    },
+    "expanded_pool_hash": "21c54d1a7a6853418a017076eaa426cfd4c9a829ca7f3d452e3cc9b081fe8e2e",
+    "expanded_pool_size": 206,
+    "expansion": {
+      "complete": true,
+      "joint_before_cap": 206,
+      "pool_size": 206,
+      "segment_enumerated": [
+        206
+      ]
+    },
+    "family": "ordered_visits",
+    "frozen_pool_size": 64,
+    "modes": [
+      "bus"
+    ],
+    "reference_equivalent_after": true,
+    "reference_equivalent_before": true,
+    "reference_feasible_after": 206,
+    "reference_feasible_before": 64,
+    "scenario_id": "pilot-07",
+    "semantic_classes_after": 1,
+    "semantic_classes_before": 1,
+    "transfer_values_by_scope": {
+      "outbound": [
+        0,
+        1
+      ]
+    },
+    "witness_partitions_after": 0,
+    "witness_partitions_before": 0
+  },
+  {
+    "clauses_after": [
+      {
+        "accepted": 371,
+        "effect": "varies",
+        "marginal_exclusions": 123,
+        "pool_size": 572,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "earliest_departure",
+          "target": 28260
+        }
+      },
+      {
+        "accepted": 237,
+        "effect": "varies",
+        "marginal_exclusions": 257,
+        "pool_size": 572,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "latest_arrival",
+          "target": 32549
+        }
+      }
+    ],
+    "clauses_before": [
+      {
+        "accepted": 41,
+        "effect": "varies",
+        "marginal_exclusions": 16,
+        "pool_size": 64,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "earliest_departure",
+          "target": 28260
+        }
+      },
+      {
+        "accepted": 34,
+        "effect": "varies",
+        "marginal_exclusions": 23,
+        "pool_size": 64,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "latest_arrival",
+          "target": 32549
+        }
+      }
+    ],
+    "expanded_candidate_plans": [
+      {
+        "accepted": 136,
+        "candidate_id": "c0",
+        "correct_selected_plan": false,
+        "plan_id": "c41dde14c30043deb8ce",
+        "status": "satisfiable"
+      },
+      {
+        "accepted": 102,
+        "candidate_id": "c2",
+        "correct_selected_plan": true,
+        "plan_id": "1bd242b68e4b940009a7",
+        "status": "satisfiable"
+      }
+    ],
+    "expanded_initial_ranking": {
+      "different_first_choice": false,
+      "pattern_scores": {
+        "10": {
+          "D": 1,
+          "E": 2,
+          "count": 34,
+          "first_id": "0ff2f593b0f54de686df"
+        }
+      },
+      "top": {
+        "D": {
+          "chosen_id": "0ff2f593b0f54de686df",
+          "score": 1,
+          "tie_count": 34
+        },
+        "E": {
+          "chosen_id": "0ff2f593b0f54de686df",
+          "score": 2,
+          "tie_count": 34
+        }
+      },
+      "weight_histogram": {
+        "2": 1
+      }
+    },
+    "expanded_pool_hash": "92d80f504ea83c4f0b793ffced42b6605e193acaf68f71b2ea243031e88de317",
+    "expanded_pool_size": 572,
+    "expansion": {
+      "complete": true,
+      "joint_before_cap": 572,
+      "pool_size": 572,
+      "segment_enumerated": [
+        572
+      ]
+    },
+    "family": "timing",
+    "frozen_pool_size": 64,
+    "modes": [
+      "bus"
+    ],
+    "reference_equivalent_after": false,
+    "reference_equivalent_before": false,
+    "reference_feasible_after": 114,
+    "reference_feasible_before": 18,
+    "scenario_id": "pilot-08",
+    "semantic_classes_after": 2,
+    "semantic_classes_before": 2,
+    "transfer_values_by_scope": {
+      "outbound": [
+        0,
+        1
+      ]
+    },
+    "witness_partitions_after": 1,
+    "witness_partitions_before": 1
+  },
+  {
+    "clauses_after": [
+      {
+        "accepted": 10426,
+        "effect": "always_true",
+        "marginal_exclusions": 0,
+        "pool_size": 10426,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "transfer_limit",
+          "target": 1
+        }
+      },
+      {
+        "accepted": 588,
+        "effect": "varies",
+        "marginal_exclusions": 9838,
+        "pool_size": 10426,
+        "rule": {
+          "direction": "return",
+          "requirement": "earliest_departure",
+          "target": 34787
+        }
+      }
+    ],
+    "clauses_before": [
+      {
+        "accepted": 256,
+        "effect": "always_true",
+        "marginal_exclusions": 0,
+        "pool_size": 256,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "transfer_limit",
+          "target": 1
+        }
+      },
+      {
+        "accepted": 18,
+        "effect": "varies",
+        "marginal_exclusions": 238,
+        "pool_size": 256,
+        "rule": {
+          "direction": "return",
+          "requirement": "earliest_departure",
+          "target": 34787
+        }
+      }
+    ],
+    "expanded_candidate_plans": [
+      {
+        "accepted": 0,
+        "candidate_id": "c0",
+        "correct_selected_plan": false,
+        "plan_id": null,
+        "status": "infeasible_in_pool"
+      }
+    ],
+    "expanded_initial_ranking": {
+      "different_first_choice": false,
+      "pattern_scores": {},
+      "top": {
+        "D": {
+          "chosen_id": null,
+          "score": 0,
+          "tie_count": 0
+        },
+        "E": {
+          "chosen_id": null,
+          "score": 0,
+          "tie_count": 0
+        }
+      },
+      "weight_histogram": {}
+    },
+    "expanded_pool_hash": "6a5d84632b08ca2797dc19cb0512dd09b81bdff7da7cc8b7e909b02a3ad56a17",
+    "expanded_pool_size": 10426,
+    "expansion": {
+      "complete": true,
+      "joint_before_cap": 10426,
+      "pool_size": 10426,
+      "segment_enumerated": [
+        225,
+        78
+      ]
+    },
+    "family": "scope",
+    "frozen_pool_size": 256,
+    "modes": [
+      "bus"
+    ],
+    "reference_equivalent_after": false,
+    "reference_equivalent_before": false,
+    "reference_feasible_after": 588,
+    "reference_feasible_before": 18,
+    "scenario_id": "pilot-09",
+    "semantic_classes_after": 1,
+    "semantic_classes_before": 1,
+    "transfer_values_by_scope": {
+      "outbound": [
+        0,
+        1
+      ],
+      "return": [
+        0,
+        1
+      ]
+    },
+    "witness_partitions_after": 0,
+    "witness_partitions_before": 0
+  },
+  {
+    "clauses_after": [
+      {
+        "accepted": 0,
+        "effect": "always_false",
+        "marginal_exclusions": 211,
+        "pool_size": 211,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "forbidden_modes",
+          "target": [
+            "bus"
+          ]
+        }
+      }
+    ],
+    "clauses_before": [
+      {
+        "accepted": 0,
+        "effect": "always_false",
+        "marginal_exclusions": 64,
+        "pool_size": 64,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "forbidden_modes",
+          "target": [
+            "bus"
+          ]
+        }
+      }
+    ],
+    "expanded_candidate_plans": [
+      {
+        "accepted": 0,
+        "candidate_id": "c0",
+        "correct_selected_plan": false,
+        "plan_id": null,
+        "status": "infeasible_in_pool"
+      }
+    ],
+    "expanded_initial_ranking": {
+      "different_first_choice": false,
+      "pattern_scores": {},
+      "top": {
+        "D": {
+          "chosen_id": null,
+          "score": 0,
+          "tie_count": 0
+        },
+        "E": {
+          "chosen_id": null,
+          "score": 0,
+          "tie_count": 0
+        }
+      },
+      "weight_histogram": {}
+    },
+    "expanded_pool_hash": "e59e419b87b0cb1c6e60a522827d6eceb87b584075427716da136df2872dad7e",
+    "expanded_pool_size": 211,
+    "expansion": {
+      "complete": true,
+      "joint_before_cap": 211,
+      "pool_size": 211,
+      "segment_enumerated": [
+        211
+      ]
+    },
+    "family": "infeasible",
+    "frozen_pool_size": 64,
+    "modes": [
+      "bus"
+    ],
+    "reference_equivalent_after": true,
+    "reference_equivalent_before": true,
+    "reference_feasible_after": 0,
+    "reference_feasible_before": 0,
+    "scenario_id": "pilot-10",
+    "semantic_classes_after": 1,
+    "semantic_classes_before": 1,
+    "transfer_values_by_scope": {
+      "outbound": [
+        0,
+        1
+      ]
+    },
+    "witness_partitions_after": 0,
+    "witness_partitions_before": 0
+  },
+  {
+    "clauses_after": [
+      {
+        "accepted": 411,
+        "effect": "always_true",
+        "marginal_exclusions": 0,
+        "pool_size": 411,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "transfer_limit",
+          "target": 1
+        }
+      },
+      {
+        "accepted": 411,
+        "effect": "always_true",
+        "marginal_exclusions": 0,
+        "pool_size": 411,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "earliest_departure",
+          "target": 26168
+        }
+      }
+    ],
+    "clauses_before": [
+      {
+        "accepted": 64,
+        "effect": "always_true",
+        "marginal_exclusions": 0,
+        "pool_size": 64,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "transfer_limit",
+          "target": 1
+        }
+      },
+      {
+        "accepted": 64,
+        "effect": "always_true",
+        "marginal_exclusions": 0,
+        "pool_size": 64,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "earliest_departure",
+          "target": 26168
+        }
+      }
+    ],
+    "expanded_candidate_plans": [
+      {
+        "accepted": 411,
+        "candidate_id": "c0",
+        "correct_selected_plan": true,
+        "plan_id": "1483b040dc8ba4f200f8",
+        "status": "satisfiable"
+      }
+    ],
+    "expanded_initial_ranking": {
+      "different_first_choice": false,
+      "pattern_scores": {},
+      "top": {
+        "D": {
+          "chosen_id": null,
+          "score": 0,
+          "tie_count": 0
+        },
+        "E": {
+          "chosen_id": null,
+          "score": 0,
+          "tie_count": 0
+        }
+      },
+      "weight_histogram": {}
+    },
+    "expanded_pool_hash": "81a7a848bab2bd6d9f9343932281e818426342d18a4412ae31e3f00dd89984af",
+    "expanded_pool_size": 411,
+    "expansion": {
+      "complete": true,
+      "joint_before_cap": 411,
+      "pool_size": 411,
+      "segment_enumerated": [
+        411
+      ]
+    },
+    "family": "transfers",
+    "frozen_pool_size": 64,
+    "modes": [
+      "bus"
+    ],
+    "reference_equivalent_after": true,
+    "reference_equivalent_before": true,
+    "reference_feasible_after": 411,
+    "reference_feasible_before": 64,
+    "scenario_id": "pilot-11",
+    "semantic_classes_after": 1,
+    "semantic_classes_before": 1,
+    "transfer_values_by_scope": {
+      "outbound": [
+        0,
+        1
+      ]
+    },
+    "witness_partitions_after": 0,
+    "witness_partitions_before": 0
+  },
+  {
+    "clauses_after": [
+      {
+        "accepted": 886,
+        "effect": "always_true",
+        "marginal_exclusions": 0,
+        "pool_size": 886,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "ordered_calls",
+          "target": [
+            "13733",
+            "3398"
+          ]
+        }
+      },
+      {
+        "accepted": 886,
+        "effect": "always_true",
+        "marginal_exclusions": 0,
+        "pool_size": 886,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "allowed_modes",
+          "target": [
+            "bus"
+          ]
+        }
+      }
+    ],
+    "clauses_before": [
+      {
+        "accepted": 64,
+        "effect": "always_true",
+        "marginal_exclusions": 0,
+        "pool_size": 64,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "ordered_calls",
+          "target": [
+            "13733",
+            "3398"
+          ]
+        }
+      },
+      {
+        "accepted": 64,
+        "effect": "always_true",
+        "marginal_exclusions": 0,
+        "pool_size": 64,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "allowed_modes",
+          "target": [
+            "bus"
+          ]
+        }
+      }
+    ],
+    "expanded_candidate_plans": [
+      {
+        "accepted": 0,
+        "candidate_id": "c0",
+        "correct_selected_plan": false,
+        "plan_id": null,
+        "status": "infeasible_in_pool"
+      },
+      {
+        "accepted": 886,
+        "candidate_id": "c1",
+        "correct_selected_plan": true,
+        "plan_id": "8a4c2b1a397e6e6d587b",
+        "status": "satisfiable"
+      }
+    ],
+    "expanded_initial_ranking": {
+      "different_first_choice": false,
+      "pattern_scores": {
+        "01": {
+          "D": 1,
+          "E": 2,
+          "count": 886,
+          "first_id": "00569e99bfadb44b56e3"
+        }
+      },
+      "top": {
+        "D": {
+          "chosen_id": "00569e99bfadb44b56e3",
+          "score": 1,
+          "tie_count": 886
+        },
+        "E": {
+          "chosen_id": "00569e99bfadb44b56e3",
+          "score": 2,
+          "tie_count": 886
+        }
+      },
+      "weight_histogram": {
+        "2": 1
+      }
+    },
+    "expanded_pool_hash": "9c87b81a068d85ddff9264b05d5a16a88268faf76f8b048004c587be0eb4e79d",
+    "expanded_pool_size": 886,
+    "expansion": {
+      "complete": true,
+      "joint_before_cap": 886,
+      "pool_size": 886,
+      "segment_enumerated": [
+        886
+      ]
+    },
+    "family": "ordered_visits",
+    "frozen_pool_size": 64,
+    "modes": [
+      "bus"
+    ],
+    "reference_equivalent_after": true,
+    "reference_equivalent_before": true,
+    "reference_feasible_after": 886,
+    "reference_feasible_before": 64,
+    "scenario_id": "pilot-12",
+    "semantic_classes_after": 2,
+    "semantic_classes_before": 2,
+    "transfer_values_by_scope": {
+      "outbound": [
+        0,
+        1
+      ]
+    },
+    "witness_partitions_after": 1,
+    "witness_partitions_before": 1
+  },
+  {
+    "clauses_after": [
+      {
+        "accepted": 112,
+        "effect": "varies",
+        "marginal_exclusions": 114,
+        "pool_size": 286,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "earliest_departure",
+          "target": 29520
+        }
+      },
+      {
+        "accepted": 148,
+        "effect": "varies",
+        "marginal_exclusions": 78,
+        "pool_size": 286,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "latest_arrival",
+          "target": 32966
+        }
+      }
+    ],
+    "clauses_before": [
+      {
+        "accepted": 20,
+        "effect": "varies",
+        "marginal_exclusions": 29,
+        "pool_size": 64,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "earliest_departure",
+          "target": 29520
+        }
+      },
+      {
+        "accepted": 34,
+        "effect": "varies",
+        "marginal_exclusions": 15,
+        "pool_size": 64,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "latest_arrival",
+          "target": 32966
+        }
+      }
+    ],
+    "expanded_candidate_plans": [
+      {
+        "accepted": 18,
+        "candidate_id": "c0",
+        "correct_selected_plan": true,
+        "plan_id": "80e09f6ff81f3f966a4b",
+        "status": "satisfiable"
+      },
+      {
+        "accepted": 7,
+        "candidate_id": "c2",
+        "correct_selected_plan": true,
+        "plan_id": "ec5f7ad3a5807ab7faf3",
+        "status": "satisfiable"
+      }
+    ],
+    "expanded_initial_ranking": {
+      "different_first_choice": false,
+      "pattern_scores": {
+        "10": {
+          "D": 1,
+          "E": 2,
+          "count": 11,
+          "first_id": "1abad49a2e8391dfd86e"
+        }
+      },
+      "top": {
+        "D": {
+          "chosen_id": "1abad49a2e8391dfd86e",
+          "score": 1,
+          "tie_count": 11
+        },
+        "E": {
+          "chosen_id": "1abad49a2e8391dfd86e",
+          "score": 2,
+          "tie_count": 11
+        }
+      },
+      "weight_histogram": {
+        "2": 1
+      }
+    },
+    "expanded_pool_hash": "43d4c7e9dd76ac9d8435af909c68e9c38ae993c97425ddb6ec25e375416679a9",
+    "expanded_pool_size": 286,
+    "expansion": {
+      "complete": true,
+      "joint_before_cap": 286,
+      "pool_size": 286,
+      "segment_enumerated": [
+        286
+      ]
+    },
+    "family": "timing",
+    "frozen_pool_size": 64,
+    "modes": [
+      "bus"
+    ],
+    "reference_equivalent_after": false,
+    "reference_equivalent_before": false,
+    "reference_feasible_after": 34,
+    "reference_feasible_before": 5,
+    "scenario_id": "pilot-13",
+    "semantic_classes_after": 2,
+    "semantic_classes_before": 2,
+    "transfer_values_by_scope": {
+      "outbound": [
+        0,
+        1
+      ]
+    },
+    "witness_partitions_after": 1,
+    "witness_partitions_before": 1
+  },
+  {
+    "clauses_after": [
+      {
+        "accepted": 462,
+        "effect": "always_true",
+        "marginal_exclusions": 0,
+        "pool_size": 462,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "forbidden_modes",
+          "target": [
+            "rail",
+            "tram"
+          ]
+        }
+      },
+      {
+        "accepted": 147,
+        "effect": "varies",
+        "marginal_exclusions": 315,
+        "pool_size": 462,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "latest_departure",
+          "target": 26894
+        }
+      },
+      {
+        "accepted": 462,
+        "effect": "always_true",
+        "marginal_exclusions": 0,
+        "pool_size": 462,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "transfer_limit",
+          "target": 1
+        }
+      }
+    ],
+    "clauses_before": [
+      {
+        "accepted": 64,
+        "effect": "always_true",
+        "marginal_exclusions": 0,
+        "pool_size": 64,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "forbidden_modes",
+          "target": [
+            "rail",
+            "tram"
+          ]
+        }
+      },
+      {
+        "accepted": 22,
+        "effect": "varies",
+        "marginal_exclusions": 42,
+        "pool_size": 64,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "latest_departure",
+          "target": 26894
+        }
+      },
+      {
+        "accepted": 64,
+        "effect": "always_true",
+        "marginal_exclusions": 0,
+        "pool_size": 64,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "transfer_limit",
+          "target": 1
+        }
+      }
+    ],
+    "expanded_candidate_plans": [
+      {
+        "accepted": 355,
+        "candidate_id": "c0",
+        "correct_selected_plan": false,
+        "plan_id": "286acebd683a1a74f097",
+        "status": "satisfiable"
+      },
+      {
+        "accepted": 406,
+        "candidate_id": "c1",
+        "correct_selected_plan": true,
+        "plan_id": "92e06b734d8136df0320",
+        "status": "satisfiable"
+      },
+      {
+        "accepted": 0,
+        "candidate_id": "c2",
+        "correct_selected_plan": false,
+        "plan_id": null,
+        "status": "infeasible_in_pool"
+      }
+    ],
+    "expanded_initial_ranking": {
+      "different_first_choice": false,
+      "pattern_scores": {
+        "010": {
+          "D": 2,
+          "E": 4,
+          "count": 51,
+          "first_id": "01587e9d3f71b485de6a"
+        },
+        "110": {
+          "D": 2,
+          "E": 4,
+          "count": 355,
+          "first_id": "00313f83f4fcde9dd706"
+        }
+      },
+      "top": {
+        "D": {
+          "chosen_id": "00313f83f4fcde9dd706",
+          "score": 2,
+          "tie_count": 406
+        },
+        "E": {
+          "chosen_id": "00313f83f4fcde9dd706",
+          "score": 4,
+          "tie_count": 406
+        }
+      },
+      "weight_histogram": {
+        "2": 3
+      }
+    },
+    "expanded_pool_hash": "375175721a139e52197b2e25730d71829492e805e4eb85f6952ef36506461d25",
+    "expanded_pool_size": 462,
+    "expansion": {
+      "complete": true,
+      "joint_before_cap": 462,
+      "pool_size": 462,
+      "segment_enumerated": [
+        462
+      ]
+    },
+    "family": "mode_exclusion",
+    "frozen_pool_size": 64,
+    "modes": [
+      "bus"
+    ],
+    "reference_equivalent_after": false,
+    "reference_equivalent_before": false,
+    "reference_feasible_after": 147,
+    "reference_feasible_before": 22,
+    "scenario_id": "pilot-14",
+    "semantic_classes_after": 3,
+    "semantic_classes_before": 3,
+    "transfer_values_by_scope": {
+      "outbound": [
+        0,
+        1
+      ]
+    },
+    "witness_partitions_after": 2,
+    "witness_partitions_before": 2
+  },
+  {
+    "clauses_after": [
+      {
+        "accepted": 96,
+        "effect": "varies",
+        "marginal_exclusions": 65,
+        "pool_size": 645,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "earliest_departure",
+          "target": 30600
+        }
+      },
+      {
+        "accepted": 65,
+        "effect": "varies",
+        "marginal_exclusions": 96,
+        "pool_size": 645,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "latest_arrival",
+          "target": 28800
+        }
+      }
+    ],
+    "clauses_before": [
+      {
+        "accepted": 9,
+        "effect": "varies",
+        "marginal_exclusions": 6,
+        "pool_size": 64,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "earliest_departure",
+          "target": 30600
+        }
+      },
+      {
+        "accepted": 6,
+        "effect": "varies",
+        "marginal_exclusions": 9,
+        "pool_size": 64,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "latest_arrival",
+          "target": 28800
+        }
+      }
+    ],
+    "expanded_candidate_plans": [],
+    "expanded_initial_ranking": {
+      "different_first_choice": false,
+      "pattern_scores": {},
+      "top": {
+        "D": {
+          "chosen_id": null,
+          "score": 0,
+          "tie_count": 0
+        },
+        "E": {
+          "chosen_id": null,
+          "score": 0,
+          "tie_count": 0
+        }
+      },
+      "weight_histogram": {}
+    },
+    "expanded_pool_hash": "1eb58f5631ff26f15463179b8e19dc483c56ec4956c8241c04a453601406113d",
+    "expanded_pool_size": 645,
+    "expansion": {
+      "complete": true,
+      "joint_before_cap": 645,
+      "pool_size": 645,
+      "segment_enumerated": [
+        645
+      ]
+    },
+    "family": "infeasible",
+    "frozen_pool_size": 64,
+    "modes": [
+      "bus"
+    ],
+    "reference_equivalent_after": false,
+    "reference_equivalent_before": false,
+    "reference_feasible_after": 0,
+    "reference_feasible_before": 0,
+    "scenario_id": "pilot-15",
+    "semantic_classes_after": 0,
+    "semantic_classes_before": 0,
+    "transfer_values_by_scope": {
+      "outbound": [
+        0,
+        1
+      ]
+    },
+    "witness_partitions_after": 0,
+    "witness_partitions_before": 0
+  },
+  {
+    "clauses_after": [
+      {
+        "accepted": 6,
+        "effect": "varies",
+        "marginal_exclusions": 51,
+        "pool_size": 57,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "transfer_limit",
+          "target": 0
+        }
+      },
+      {
+        "accepted": 57,
+        "effect": "always_true",
+        "marginal_exclusions": 0,
+        "pool_size": 57,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "earliest_departure",
+          "target": 25799
+        }
+      }
+    ],
+    "clauses_before": [
+      {
+        "accepted": 6,
+        "effect": "varies",
+        "marginal_exclusions": 51,
+        "pool_size": 57,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "transfer_limit",
+          "target": 0
+        }
+      },
+      {
+        "accepted": 57,
+        "effect": "always_true",
+        "marginal_exclusions": 0,
+        "pool_size": 57,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "earliest_departure",
+          "target": 25799
+        }
+      }
+    ],
+    "expanded_candidate_plans": [
+      {
+        "accepted": 5,
+        "candidate_id": "c0",
+        "correct_selected_plan": true,
+        "plan_id": "4d86024018420a6a0561",
+        "status": "satisfiable"
+      }
+    ],
+    "expanded_initial_ranking": {
+      "different_first_choice": false,
+      "pattern_scores": {},
+      "top": {
+        "D": {
+          "chosen_id": null,
+          "score": 0,
+          "tie_count": 0
+        },
+        "E": {
+          "chosen_id": null,
+          "score": 0,
+          "tie_count": 0
+        }
+      },
+      "weight_histogram": {}
+    },
+    "expanded_pool_hash": "2dd5e0275b6bfaa219bb2ced304f2a981900dd7bd6dc2cd6fffeed6897bc31e4",
+    "expanded_pool_size": 57,
+    "expansion": {
+      "complete": true,
+      "joint_before_cap": 57,
+      "pool_size": 57,
+      "segment_enumerated": [
+        57
+      ]
+    },
+    "family": "transfers",
+    "frozen_pool_size": 57,
+    "modes": [
+      "bus"
+    ],
+    "reference_equivalent_after": false,
+    "reference_equivalent_before": false,
+    "reference_feasible_after": 6,
+    "reference_feasible_before": 6,
+    "scenario_id": "pilot-16",
+    "semantic_classes_after": 1,
+    "semantic_classes_before": 1,
+    "transfer_values_by_scope": {
+      "outbound": [
+        0,
+        1
+      ]
+    },
+    "witness_partitions_after": 0,
+    "witness_partitions_before": 0
+  },
+  {
+    "clauses_after": [
+      {
+        "accepted": 229,
+        "effect": "varies",
+        "marginal_exclusions": 1680,
+        "pool_size": 1909,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "transfer_limit",
+          "target": 0
+        }
+      },
+      {
+        "accepted": 1909,
+        "effect": "always_true",
+        "marginal_exclusions": 0,
+        "pool_size": 1909,
+        "rule": {
+          "direction": "return",
+          "requirement": "earliest_departure",
+          "target": 32645
+        }
+      }
+    ],
+    "clauses_before": [
+      {
+        "accepted": 31,
+        "effect": "varies",
+        "marginal_exclusions": 225,
+        "pool_size": 256,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "transfer_limit",
+          "target": 0
+        }
+      },
+      {
+        "accepted": 256,
+        "effect": "always_true",
+        "marginal_exclusions": 0,
+        "pool_size": 256,
+        "rule": {
+          "direction": "return",
+          "requirement": "earliest_departure",
+          "target": 32645
+        }
+      }
+    ],
+    "expanded_candidate_plans": [
+      {
+        "accepted": 229,
+        "candidate_id": "c0",
+        "correct_selected_plan": true,
+        "plan_id": "3202db15cbf15a08e585",
+        "status": "satisfiable"
+      }
+    ],
+    "expanded_initial_ranking": {
+      "different_first_choice": false,
+      "pattern_scores": {},
+      "top": {
+        "D": {
+          "chosen_id": null,
+          "score": 0,
+          "tie_count": 0
+        },
+        "E": {
+          "chosen_id": null,
+          "score": 0,
+          "tie_count": 0
+        }
+      },
+      "weight_histogram": {}
+    },
+    "expanded_pool_hash": "1ff510c761a7a8324e9b802379a22180ad4807cfefe9fdce62841bcf6b053a5e",
+    "expanded_pool_size": 1909,
+    "expansion": {
+      "complete": true,
+      "joint_before_cap": 1909,
+      "pool_size": 1909,
+      "segment_enumerated": [
+        121,
+        28
+      ]
+    },
+    "family": "scope",
+    "frozen_pool_size": 256,
+    "modes": [
+      "bus"
+    ],
+    "reference_equivalent_after": true,
+    "reference_equivalent_before": true,
+    "reference_feasible_after": 229,
+    "reference_feasible_before": 31,
+    "scenario_id": "pilot-17",
+    "semantic_classes_after": 1,
+    "semantic_classes_before": 1,
+    "transfer_values_by_scope": {
+      "outbound": [
+        0,
+        1
+      ],
+      "return": [
+        0,
+        1
+      ]
+    },
+    "witness_partitions_after": 0,
+    "witness_partitions_before": 0
+  },
+  {
+    "clauses_after": [
+      {
+        "accepted": 276,
+        "effect": "varies",
+        "marginal_exclusions": 111,
+        "pool_size": 435,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "earliest_departure",
+          "target": 27360
+        }
+      },
+      {
+        "accepted": 231,
+        "effect": "varies",
+        "marginal_exclusions": 156,
+        "pool_size": 435,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "latest_arrival",
+          "target": 32911
+        }
+      }
+    ],
+    "clauses_before": [
+      {
+        "accepted": 41,
+        "effect": "varies",
+        "marginal_exclusions": 19,
+        "pool_size": 64,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "earliest_departure",
+          "target": 27360
+        }
+      },
+      {
+        "accepted": 36,
+        "effect": "varies",
+        "marginal_exclusions": 24,
+        "pool_size": 64,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "latest_arrival",
+          "target": 32911
+        }
+      }
+    ],
+    "expanded_candidate_plans": [
+      {
+        "accepted": 91,
+        "candidate_id": "c0",
+        "correct_selected_plan": true,
+        "plan_id": "8edc6b7926a55b0808fe",
+        "status": "satisfiable"
+      },
+      {
+        "accepted": 276,
+        "candidate_id": "c3",
+        "correct_selected_plan": true,
+        "plan_id": "8edc6b7926a55b0808fe",
+        "status": "satisfiable"
+      }
+    ],
+    "expanded_initial_ranking": {
+      "different_first_choice": false,
+      "pattern_scores": {
+        "01": {
+          "D": 1,
+          "E": 1,
+          "count": 185,
+          "first_id": "032d9ad4720daf263c0c"
+        }
+      },
+      "top": {
+        "D": {
+          "chosen_id": "032d9ad4720daf263c0c",
+          "score": 1,
+          "tie_count": 185
+        },
+        "E": {
+          "chosen_id": "032d9ad4720daf263c0c",
+          "score": 1,
+          "tie_count": 185
+        }
+      },
+      "weight_histogram": {
+        "1": 1
+      }
+    },
+    "expanded_pool_hash": "4889019ca26ca6a79af56c4b9cf79bbe06411aaa4f73eca564481104a3457d91",
+    "expanded_pool_size": 435,
+    "expansion": {
+      "complete": true,
+      "joint_before_cap": 435,
+      "pool_size": 435,
+      "segment_enumerated": [
+        435
+      ]
+    },
+    "family": "timing",
+    "frozen_pool_size": 64,
+    "modes": [
+      "bus"
+    ],
+    "reference_equivalent_after": false,
+    "reference_equivalent_before": false,
+    "reference_feasible_after": 120,
+    "reference_feasible_before": 17,
+    "scenario_id": "pilot-18",
+    "semantic_classes_after": 2,
+    "semantic_classes_before": 2,
+    "transfer_values_by_scope": {
+      "outbound": [
+        0,
+        1
+      ]
+    },
+    "witness_partitions_after": 1,
+    "witness_partitions_before": 1
+  },
+  {
+    "clauses_after": [
+      {
+        "accepted": 215,
+        "effect": "always_true",
+        "marginal_exclusions": 0,
+        "pool_size": 215,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "forbidden_modes",
+          "target": [
+            "rail",
+            "tram"
+          ]
+        }
+      },
+      {
+        "accepted": 149,
+        "effect": "varies",
+        "marginal_exclusions": 66,
+        "pool_size": 215,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "latest_departure",
+          "target": 28586
+        }
+      },
+      {
+        "accepted": 215,
+        "effect": "always_true",
+        "marginal_exclusions": 0,
+        "pool_size": 215,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "transfer_limit",
+          "target": 1
+        }
+      }
+    ],
+    "clauses_before": [
+      {
+        "accepted": 64,
+        "effect": "always_true",
+        "marginal_exclusions": 0,
+        "pool_size": 64,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "forbidden_modes",
+          "target": [
+            "rail",
+            "tram"
+          ]
+        }
+      },
+      {
+        "accepted": 45,
+        "effect": "varies",
+        "marginal_exclusions": 19,
+        "pool_size": 64,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "latest_departure",
+          "target": 28586
+        }
+      },
+      {
+        "accepted": 64,
+        "effect": "always_true",
+        "marginal_exclusions": 0,
+        "pool_size": 64,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "transfer_limit",
+          "target": 1
+        }
+      }
+    ],
+    "expanded_candidate_plans": [
+      {
+        "accepted": 87,
+        "candidate_id": "c0",
+        "correct_selected_plan": false,
+        "plan_id": "2ecab41b2ff3eaf43736",
+        "status": "satisfiable"
+      }
+    ],
+    "expanded_initial_ranking": {
+      "different_first_choice": false,
+      "pattern_scores": {},
+      "top": {
+        "D": {
+          "chosen_id": null,
+          "score": 0,
+          "tie_count": 0
+        },
+        "E": {
+          "chosen_id": null,
+          "score": 0,
+          "tie_count": 0
+        }
+      },
+      "weight_histogram": {}
+    },
+    "expanded_pool_hash": "5a01b3bd70adc35c2087f6813a6604d2d6ea1d5a6a1473a5a8eac5da5423039d",
+    "expanded_pool_size": 215,
+    "expansion": {
+      "complete": true,
+      "joint_before_cap": 215,
+      "pool_size": 215,
+      "segment_enumerated": [
+        215
+      ]
+    },
+    "family": "mode_exclusion",
+    "frozen_pool_size": 64,
+    "modes": [
+      "bus"
+    ],
+    "reference_equivalent_after": false,
+    "reference_equivalent_before": false,
+    "reference_feasible_after": 149,
+    "reference_feasible_before": 45,
+    "scenario_id": "pilot-19",
+    "semantic_classes_after": 1,
+    "semantic_classes_before": 1,
+    "transfer_values_by_scope": {
+      "outbound": [
+        0,
+        1
+      ]
+    },
+    "witness_partitions_after": 0,
+    "witness_partitions_before": 0
+  },
+  {
+    "clauses_after": [
+      {
+        "accepted": 385,
+        "effect": "always_true",
+        "marginal_exclusions": 0,
+        "pool_size": 385,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "ordered_calls",
+          "target": [
+            "7640",
+            "7594"
+          ]
+        }
+      },
+      {
+        "accepted": 385,
+        "effect": "always_true",
+        "marginal_exclusions": 0,
+        "pool_size": 385,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "allowed_modes",
+          "target": [
+            "bus"
+          ]
+        }
+      }
+    ],
+    "clauses_before": [
+      {
+        "accepted": 64,
+        "effect": "always_true",
+        "marginal_exclusions": 0,
+        "pool_size": 64,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "ordered_calls",
+          "target": [
+            "7640",
+            "7594"
+          ]
+        }
+      },
+      {
+        "accepted": 64,
+        "effect": "always_true",
+        "marginal_exclusions": 0,
+        "pool_size": 64,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "allowed_modes",
+          "target": [
+            "bus"
+          ]
+        }
+      }
+    ],
+    "expanded_candidate_plans": [
+      {
+        "accepted": 305,
+        "candidate_id": "c0",
+        "correct_selected_plan": true,
+        "plan_id": "535134b1bd2c6a174094",
+        "status": "satisfiable"
+      },
+      {
+        "accepted": 236,
+        "candidate_id": "c1",
+        "correct_selected_plan": true,
+        "plan_id": "28e21f1c8006877c2bbf",
+        "status": "satisfiable"
+      },
+      {
+        "accepted": 178,
+        "candidate_id": "c2",
+        "correct_selected_plan": true,
+        "plan_id": "c0d04b2bd3e1a4c4f32c",
+        "status": "satisfiable"
+      }
+    ],
+    "expanded_initial_ranking": {
+      "different_first_choice": false,
+      "pattern_scores": {
+        "100": {
+          "D": 2,
+          "E": 4,
+          "count": 69,
+          "first_id": "0293438db40a6621ecbc"
+        },
+        "110": {
+          "D": 2,
+          "E": 4,
+          "count": 58,
+          "first_id": "005a6f33a79fe270e093"
+        }
+      },
+      "top": {
+        "D": {
+          "chosen_id": "005a6f33a79fe270e093",
+          "score": 2,
+          "tie_count": 127
+        },
+        "E": {
+          "chosen_id": "005a6f33a79fe270e093",
+          "score": 4,
+          "tie_count": 127
+        }
+      },
+      "weight_histogram": {
+        "2": 3
+      }
+    },
+    "expanded_pool_hash": "4c00c0042da814bf937d44bbc45043a83b32cb496998f263bbcbd22074d05ece",
+    "expanded_pool_size": 385,
+    "expansion": {
+      "complete": true,
+      "joint_before_cap": 385,
+      "pool_size": 385,
+      "segment_enumerated": [
+        385
+      ]
+    },
+    "family": "ordered_visits",
+    "frozen_pool_size": 64,
+    "modes": [
+      "bus"
+    ],
+    "reference_equivalent_after": false,
+    "reference_equivalent_before": false,
+    "reference_feasible_after": 385,
+    "reference_feasible_before": 64,
+    "scenario_id": "pilot-20",
+    "semantic_classes_after": 3,
+    "semantic_classes_before": 3,
+    "transfer_values_by_scope": {
+      "outbound": [
+        0,
+        1
+      ]
+    },
+    "witness_partitions_after": 2,
+    "witness_partitions_before": 2
+  },
+  {
+    "clauses_after": [
+      {
+        "accepted": 17,
+        "effect": "always_true",
+        "marginal_exclusions": 0,
+        "pool_size": 17,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "transfer_limit",
+          "target": 1
+        }
+      },
+      {
+        "accepted": 17,
+        "effect": "always_true",
+        "marginal_exclusions": 0,
+        "pool_size": 17,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "earliest_departure",
+          "target": 25500
+        }
+      }
+    ],
+    "clauses_before": [
+      {
+        "accepted": 17,
+        "effect": "always_true",
+        "marginal_exclusions": 0,
+        "pool_size": 17,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "transfer_limit",
+          "target": 1
+        }
+      },
+      {
+        "accepted": 17,
+        "effect": "always_true",
+        "marginal_exclusions": 0,
+        "pool_size": 17,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "earliest_departure",
+          "target": 25500
+        }
+      }
+    ],
+    "expanded_candidate_plans": [
+      {
+        "accepted": 9,
+        "candidate_id": "c0",
+        "correct_selected_plan": true,
+        "plan_id": "a74f125439a90f15569c",
+        "status": "satisfiable"
+      },
+      {
+        "accepted": 17,
+        "candidate_id": "c1",
+        "correct_selected_plan": true,
+        "plan_id": "a74f125439a90f15569c",
+        "status": "satisfiable"
+      }
+    ],
+    "expanded_initial_ranking": {
+      "different_first_choice": false,
+      "pattern_scores": {
+        "01": {
+          "D": 1,
+          "E": 1,
+          "count": 8,
+          "first_id": "40039d4292139b8ad663"
+        }
+      },
+      "top": {
+        "D": {
+          "chosen_id": "40039d4292139b8ad663",
+          "score": 1,
+          "tie_count": 8
+        },
+        "E": {
+          "chosen_id": "40039d4292139b8ad663",
+          "score": 1,
+          "tie_count": 8
+        }
+      },
+      "weight_histogram": {
+        "1": 1
+      }
+    },
+    "expanded_pool_hash": "c5016c447e05d42465f8f0d0bf09b702c715d863f5d17d4927175134470971ae",
+    "expanded_pool_size": 17,
+    "expansion": {
+      "complete": true,
+      "joint_before_cap": 17,
+      "pool_size": 17,
+      "segment_enumerated": [
+        17
+      ]
+    },
+    "family": "transfers",
+    "frozen_pool_size": 17,
+    "modes": [
+      "bus"
+    ],
+    "reference_equivalent_after": true,
+    "reference_equivalent_before": true,
+    "reference_feasible_after": 17,
+    "reference_feasible_before": 17,
+    "scenario_id": "pilot-21",
+    "semantic_classes_after": 2,
+    "semantic_classes_before": 2,
+    "transfer_values_by_scope": {
+      "outbound": [
+        0,
+        1
+      ]
+    },
+    "witness_partitions_after": 1,
+    "witness_partitions_before": 1
+  },
+  {
+    "clauses_after": [
+      {
+        "accepted": 700,
+        "effect": "always_true",
+        "marginal_exclusions": 0,
+        "pool_size": 700,
+        "rule": {
+          "direction": "return",
+          "requirement": "transfer_limit",
+          "target": 1
+        }
+      },
+      {
+        "accepted": 700,
+        "effect": "always_true",
+        "marginal_exclusions": 0,
+        "pool_size": 700,
+        "rule": {
+          "direction": "return",
+          "requirement": "earliest_departure",
+          "target": 33900
+        }
+      }
+    ],
+    "clauses_before": [
+      {
+        "accepted": 256,
+        "effect": "always_true",
+        "marginal_exclusions": 0,
+        "pool_size": 256,
+        "rule": {
+          "direction": "return",
+          "requirement": "transfer_limit",
+          "target": 1
+        }
+      },
+      {
+        "accepted": 256,
+        "effect": "always_true",
+        "marginal_exclusions": 0,
+        "pool_size": 256,
+        "rule": {
+          "direction": "return",
+          "requirement": "earliest_departure",
+          "target": 33900
+        }
+      }
+    ],
+    "expanded_candidate_plans": [
+      {
+        "accepted": 0,
+        "candidate_id": "c0",
+        "correct_selected_plan": false,
+        "plan_id": null,
+        "status": "infeasible_in_pool"
+      }
+    ],
+    "expanded_initial_ranking": {
+      "different_first_choice": false,
+      "pattern_scores": {},
+      "top": {
+        "D": {
+          "chosen_id": null,
+          "score": 0,
+          "tie_count": 0
+        },
+        "E": {
+          "chosen_id": null,
+          "score": 0,
+          "tie_count": 0
+        }
+      },
+      "weight_histogram": {}
+    },
+    "expanded_pool_hash": "5f018fa9c2e2e3651194ba8bffd1abb4aa60a897798c4d8ef8a4106eeed1950c",
+    "expanded_pool_size": 700,
+    "expansion": {
+      "complete": true,
+      "joint_before_cap": 700,
+      "pool_size": 700,
+      "segment_enumerated": [
+        155,
+        7
+      ]
+    },
+    "family": "scope",
+    "frozen_pool_size": 256,
+    "modes": [
+      "bus"
+    ],
+    "reference_equivalent_after": false,
+    "reference_equivalent_before": false,
+    "reference_feasible_after": 700,
+    "reference_feasible_before": 256,
+    "scenario_id": "pilot-22",
+    "semantic_classes_after": 1,
+    "semantic_classes_before": 1,
+    "transfer_values_by_scope": {
+      "outbound": [
+        0,
+        1
+      ],
+      "return": [
+        0,
+        1
+      ]
+    },
+    "witness_partitions_after": 0,
+    "witness_partitions_before": 0
+  },
+  {
+    "clauses_after": [
+      {
+        "accepted": 89,
+        "effect": "varies",
+        "marginal_exclusions": 14,
+        "pool_size": 406,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "earliest_departure",
+          "target": 30600
+        }
+      },
+      {
+        "accepted": 14,
+        "effect": "varies",
+        "marginal_exclusions": 89,
+        "pool_size": 406,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "latest_arrival",
+          "target": 28800
+        }
+      }
+    ],
+    "clauses_before": [
+      {
+        "accepted": 10,
+        "effect": "varies",
+        "marginal_exclusions": 2,
+        "pool_size": 64,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "earliest_departure",
+          "target": 30600
+        }
+      },
+      {
+        "accepted": 2,
+        "effect": "varies",
+        "marginal_exclusions": 10,
+        "pool_size": 64,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "latest_arrival",
+          "target": 28800
+        }
+      }
+    ],
+    "expanded_candidate_plans": [],
+    "expanded_initial_ranking": {
+      "different_first_choice": false,
+      "pattern_scores": {},
+      "top": {
+        "D": {
+          "chosen_id": null,
+          "score": 0,
+          "tie_count": 0
+        },
+        "E": {
+          "chosen_id": null,
+          "score": 0,
+          "tie_count": 0
+        }
+      },
+      "weight_histogram": {}
+    },
+    "expanded_pool_hash": "4d0d354d4f5f780271eb918e49bccf34a6afbe34d869eab9b25f37a0a27514ca",
+    "expanded_pool_size": 406,
+    "expansion": {
+      "complete": true,
+      "joint_before_cap": 406,
+      "pool_size": 406,
+      "segment_enumerated": [
+        406
+      ]
+    },
+    "family": "infeasible",
+    "frozen_pool_size": 64,
+    "modes": [
+      "bus"
+    ],
+    "reference_equivalent_after": false,
+    "reference_equivalent_before": false,
+    "reference_feasible_after": 0,
+    "reference_feasible_before": 0,
+    "scenario_id": "pilot-23",
+    "semantic_classes_after": 0,
+    "semantic_classes_before": 0,
+    "transfer_values_by_scope": {
+      "outbound": [
+        0,
+        1
+      ]
+    },
+    "witness_partitions_after": 0,
+    "witness_partitions_before": 0
+  },
+  {
+    "clauses_after": [
+      {
+        "accepted": 332,
+        "effect": "always_true",
+        "marginal_exclusions": 0,
+        "pool_size": 332,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "forbidden_modes",
+          "target": [
+            "rail",
+            "tram"
+          ]
+        }
+      },
+      {
+        "accepted": 70,
+        "effect": "varies",
+        "marginal_exclusions": 262,
+        "pool_size": 332,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "latest_departure",
+          "target": 25958
+        }
+      },
+      {
+        "accepted": 332,
+        "effect": "always_true",
+        "marginal_exclusions": 0,
+        "pool_size": 332,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "transfer_limit",
+          "target": 1
+        }
+      }
+    ],
+    "clauses_before": [
+      {
+        "accepted": 64,
+        "effect": "always_true",
+        "marginal_exclusions": 0,
+        "pool_size": 64,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "forbidden_modes",
+          "target": [
+            "rail",
+            "tram"
+          ]
+        }
+      },
+      {
+        "accepted": 14,
+        "effect": "varies",
+        "marginal_exclusions": 50,
+        "pool_size": 64,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "latest_departure",
+          "target": 25958
+        }
+      },
+      {
+        "accepted": 64,
+        "effect": "always_true",
+        "marginal_exclusions": 0,
+        "pool_size": 64,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "transfer_limit",
+          "target": 1
+        }
+      }
+    ],
+    "expanded_candidate_plans": [
+      {
+        "accepted": 262,
+        "candidate_id": "c0",
+        "correct_selected_plan": false,
+        "plan_id": "de7ee013641a129ace4e",
+        "status": "satisfiable"
+      },
+      {
+        "accepted": 224,
+        "candidate_id": "c2",
+        "correct_selected_plan": false,
+        "plan_id": "a6711e4faadf15fd436a",
+        "status": "satisfiable"
+      },
+      {
+        "accepted": 70,
+        "candidate_id": "c3",
+        "correct_selected_plan": true,
+        "plan_id": "05199a5a66b044a97367",
+        "status": "satisfiable"
+      }
+    ],
+    "expanded_initial_ranking": {
+      "different_first_choice": false,
+      "pattern_scores": {
+        "001": {
+          "D": 2,
+          "E": 6,
+          "count": 70,
+          "first_id": "01b2b3bdeb3b1f264a09"
+        },
+        "100": {
+          "D": 2,
+          "E": 5,
+          "count": 38,
+          "first_id": "0e45ac5a40dbcaaec9d5"
+        },
+        "110": {
+          "D": 2,
+          "E": 6,
+          "count": 224,
+          "first_id": "008999a081cb95dcc0f3"
+        }
+      },
+      "top": {
+        "D": {
+          "chosen_id": "008999a081cb95dcc0f3",
+          "score": 2,
+          "tie_count": 332
+        },
+        "E": {
+          "chosen_id": "008999a081cb95dcc0f3",
+          "score": 6,
+          "tie_count": 294
+        }
+      },
+      "weight_histogram": {
+        "2": 1,
+        "3": 2
+      }
+    },
+    "expanded_pool_hash": "e1e0458313e2be132c30e8f32c39e1f9a92d4688c23e76a2d2c0ef41c6f16b3c",
+    "expanded_pool_size": 332,
+    "expansion": {
+      "complete": true,
+      "joint_before_cap": 332,
+      "pool_size": 332,
+      "segment_enumerated": [
+        332
+      ]
+    },
+    "family": "mode_exclusion",
+    "frozen_pool_size": 64,
+    "modes": [
+      "bus"
+    ],
+    "reference_equivalent_after": true,
+    "reference_equivalent_before": true,
+    "reference_feasible_after": 70,
+    "reference_feasible_before": 14,
+    "scenario_id": "pilot-24",
+    "semantic_classes_after": 3,
+    "semantic_classes_before": 3,
+    "transfer_values_by_scope": {
+      "outbound": [
+        0,
+        1
+      ]
+    },
+    "witness_partitions_after": 2,
+    "witness_partitions_before": 2
+  },
+  {
+    "clauses_after": [
+      {
+        "accepted": 205,
+        "effect": "always_true",
+        "marginal_exclusions": 0,
+        "pool_size": 205,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "ordered_calls",
+          "target": [
+            "3398",
+            "13780"
+          ]
+        }
+      },
+      {
+        "accepted": 205,
+        "effect": "always_true",
+        "marginal_exclusions": 0,
+        "pool_size": 205,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "allowed_modes",
+          "target": [
+            "bus"
+          ]
+        }
+      }
+    ],
+    "clauses_before": [
+      {
+        "accepted": 64,
+        "effect": "always_true",
+        "marginal_exclusions": 0,
+        "pool_size": 64,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "ordered_calls",
+          "target": [
+            "3398",
+            "13780"
+          ]
+        }
+      },
+      {
+        "accepted": 64,
+        "effect": "always_true",
+        "marginal_exclusions": 0,
+        "pool_size": 64,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "allowed_modes",
+          "target": [
+            "bus"
+          ]
+        }
+      }
+    ],
+    "expanded_candidate_plans": [
+      {
+        "accepted": 0,
+        "candidate_id": "c0",
+        "correct_selected_plan": false,
+        "plan_id": null,
+        "status": "infeasible_in_pool"
+      },
+      {
+        "accepted": 205,
+        "candidate_id": "c1",
+        "correct_selected_plan": true,
+        "plan_id": "2bce97fc17163394687f",
+        "status": "satisfiable"
+      }
+    ],
+    "expanded_initial_ranking": {
+      "different_first_choice": false,
+      "pattern_scores": {
+        "01": {
+          "D": 1,
+          "E": 2,
+          "count": 205,
+          "first_id": "0082a5ab37cfe189384b"
+        }
+      },
+      "top": {
+        "D": {
+          "chosen_id": "0082a5ab37cfe189384b",
+          "score": 1,
+          "tie_count": 205
+        },
+        "E": {
+          "chosen_id": "0082a5ab37cfe189384b",
+          "score": 2,
+          "tie_count": 205
+        }
+      },
+      "weight_histogram": {
+        "2": 1
+      }
+    },
+    "expanded_pool_hash": "013cc0d5120747bb135f89ff2882d920a32097a7fb1660e8bddff0536f6fac79",
+    "expanded_pool_size": 205,
+    "expansion": {
+      "complete": true,
+      "joint_before_cap": 205,
+      "pool_size": 205,
+      "segment_enumerated": [
+        205
+      ]
+    },
+    "family": "ordered_visits",
+    "frozen_pool_size": 64,
+    "modes": [
+      "bus"
+    ],
+    "reference_equivalent_after": true,
+    "reference_equivalent_before": true,
+    "reference_feasible_after": 205,
+    "reference_feasible_before": 64,
+    "scenario_id": "pilot-25",
+    "semantic_classes_after": 2,
+    "semantic_classes_before": 2,
+    "transfer_values_by_scope": {
+      "outbound": [
+        0,
+        1
+      ]
+    },
+    "witness_partitions_after": 1,
+    "witness_partitions_before": 1
+  },
+  {
+    "clauses_after": [
+      {
+        "accepted": 51,
+        "effect": "always_true",
+        "marginal_exclusions": 0,
+        "pool_size": 51,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "earliest_departure",
+          "target": 25200
+        }
+      },
+      {
+        "accepted": 35,
+        "effect": "varies",
+        "marginal_exclusions": 16,
+        "pool_size": 51,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "latest_arrival",
+          "target": 33574
+        }
+      }
+    ],
+    "clauses_before": [
+      {
+        "accepted": 51,
+        "effect": "always_true",
+        "marginal_exclusions": 0,
+        "pool_size": 51,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "earliest_departure",
+          "target": 25200
+        }
+      },
+      {
+        "accepted": 35,
+        "effect": "varies",
+        "marginal_exclusions": 16,
+        "pool_size": 51,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "latest_arrival",
+          "target": 33574
+        }
+      }
+    ],
+    "expanded_candidate_plans": [
+      {
+        "accepted": 22,
+        "candidate_id": "c0",
+        "correct_selected_plan": true,
+        "plan_id": "4d149284ebebab02f59b",
+        "status": "satisfiable"
+      },
+      {
+        "accepted": 35,
+        "candidate_id": "c1",
+        "correct_selected_plan": true,
+        "plan_id": "9c48be15db2147416e55",
+        "status": "satisfiable"
+      }
+    ],
+    "expanded_initial_ranking": {
+      "different_first_choice": false,
+      "pattern_scores": {
+        "01": {
+          "D": 1,
+          "E": 2,
+          "count": 13,
+          "first_id": "25ceff8491091d0ea763"
+        }
+      },
+      "top": {
+        "D": {
+          "chosen_id": "25ceff8491091d0ea763",
+          "score": 1,
+          "tie_count": 13
+        },
+        "E": {
+          "chosen_id": "25ceff8491091d0ea763",
+          "score": 2,
+          "tie_count": 13
+        }
+      },
+      "weight_histogram": {
+        "2": 1
+      }
+    },
+    "expanded_pool_hash": "023380f1cc48ea9d5cb5be6c6d5eb53c4377625c4773727c3850c84c93127c2c",
+    "expanded_pool_size": 51,
+    "expansion": {
+      "complete": true,
+      "joint_before_cap": 51,
+      "pool_size": 51,
+      "segment_enumerated": [
+        51
+      ]
+    },
+    "family": "timing",
+    "frozen_pool_size": 51,
+    "modes": [
+      "bus"
+    ],
+    "reference_equivalent_after": true,
+    "reference_equivalent_before": true,
+    "reference_feasible_after": 35,
+    "reference_feasible_before": 35,
+    "scenario_id": "pilot-26",
+    "semantic_classes_after": 2,
+    "semantic_classes_before": 2,
+    "transfer_values_by_scope": {
+      "outbound": [
+        0,
+        1
+      ]
+    },
+    "witness_partitions_after": 1,
+    "witness_partitions_before": 1
+  },
+  {
+    "clauses_after": [
+      {
+        "accepted": 7318,
+        "effect": "always_true",
+        "marginal_exclusions": 0,
+        "pool_size": 7318,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "transfer_limit",
+          "target": 1
+        }
+      },
+      {
+        "accepted": 840,
+        "effect": "varies",
+        "marginal_exclusions": 6478,
+        "pool_size": 7318,
+        "rule": {
+          "direction": "return",
+          "requirement": "earliest_departure",
+          "target": 34800
+        }
+      }
+    ],
+    "clauses_before": [
+      {
+        "accepted": 256,
+        "effect": "always_true",
+        "marginal_exclusions": 0,
+        "pool_size": 256,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "transfer_limit",
+          "target": 1
+        }
+      },
+      {
+        "accepted": 35,
+        "effect": "varies",
+        "marginal_exclusions": 221,
+        "pool_size": 256,
+        "rule": {
+          "direction": "return",
+          "requirement": "earliest_departure",
+          "target": 34800
+        }
+      }
+    ],
+    "expanded_candidate_plans": [
+      {
+        "accepted": 0,
+        "candidate_id": "c0",
+        "correct_selected_plan": false,
+        "plan_id": null,
+        "status": "infeasible_in_pool"
+      },
+      {
+        "accepted": 7318,
+        "candidate_id": "c2",
+        "correct_selected_plan": false,
+        "plan_id": "f4bae52d5e3dc7350841",
+        "status": "satisfiable"
+      }
+    ],
+    "expanded_initial_ranking": {
+      "different_first_choice": false,
+      "pattern_scores": {
+        "01": {
+          "D": 1,
+          "E": 2,
+          "count": 7318,
+          "first_id": "000ffdb9a6fa4ab20aca"
+        }
+      },
+      "top": {
+        "D": {
+          "chosen_id": "000ffdb9a6fa4ab20aca",
+          "score": 1,
+          "tie_count": 7318
+        },
+        "E": {
+          "chosen_id": "000ffdb9a6fa4ab20aca",
+          "score": 2,
+          "tie_count": 7318
+        }
+      },
+      "weight_histogram": {
+        "2": 1
+      }
+    },
+    "expanded_pool_hash": "c8d5f18bf817588459d51eae36052bc7f564caf46525e1f5f0a783bea6682638",
+    "expanded_pool_size": 7318,
+    "expansion": {
+      "complete": true,
+      "joint_before_cap": 7318,
+      "pool_size": 7318,
+      "segment_enumerated": [
+        287,
+        51
+      ]
+    },
+    "family": "scope",
+    "frozen_pool_size": 256,
+    "modes": [
+      "bus"
+    ],
+    "reference_equivalent_after": false,
+    "reference_equivalent_before": false,
+    "reference_feasible_after": 840,
+    "reference_feasible_before": 35,
+    "scenario_id": "pilot-27",
+    "semantic_classes_after": 2,
+    "semantic_classes_before": 2,
+    "transfer_values_by_scope": {
+      "outbound": [
+        0,
+        1
+      ],
+      "return": [
+        0,
+        1
+      ]
+    },
+    "witness_partitions_after": 1,
+    "witness_partitions_before": 1
+  },
+  {
+    "clauses_after": [
+      {
+        "accepted": 0,
+        "effect": "always_false",
+        "marginal_exclusions": 186,
+        "pool_size": 186,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "forbidden_modes",
+          "target": [
+            "bus"
+          ]
+        }
+      }
+    ],
+    "clauses_before": [
+      {
+        "accepted": 0,
+        "effect": "always_false",
+        "marginal_exclusions": 64,
+        "pool_size": 64,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "forbidden_modes",
+          "target": [
+            "bus"
+          ]
+        }
+      }
+    ],
+    "expanded_candidate_plans": [
+      {
+        "accepted": 0,
+        "candidate_id": "c0",
+        "correct_selected_plan": false,
+        "plan_id": null,
+        "status": "infeasible_in_pool"
+      }
+    ],
+    "expanded_initial_ranking": {
+      "different_first_choice": false,
+      "pattern_scores": {},
+      "top": {
+        "D": {
+          "chosen_id": null,
+          "score": 0,
+          "tie_count": 0
+        },
+        "E": {
+          "chosen_id": null,
+          "score": 0,
+          "tie_count": 0
+        }
+      },
+      "weight_histogram": {}
+    },
+    "expanded_pool_hash": "1ace776018ab3e9b730673879bac8572a3c265e90fc97b71170d4f0f539450a3",
+    "expanded_pool_size": 186,
+    "expansion": {
+      "complete": true,
+      "joint_before_cap": 186,
+      "pool_size": 186,
+      "segment_enumerated": [
+        186
+      ]
+    },
+    "family": "infeasible",
+    "frozen_pool_size": 64,
+    "modes": [
+      "bus"
+    ],
+    "reference_equivalent_after": true,
+    "reference_equivalent_before": true,
+    "reference_feasible_after": 0,
+    "reference_feasible_before": 0,
+    "scenario_id": "pilot-28",
+    "semantic_classes_after": 1,
+    "semantic_classes_before": 1,
+    "transfer_values_by_scope": {
+      "outbound": [
+        0,
+        1
+      ]
+    },
+    "witness_partitions_after": 0,
+    "witness_partitions_before": 0
+  },
+  {
+    "clauses_after": [
+      {
+        "accepted": 6,
+        "effect": "varies",
+        "marginal_exclusions": 90,
+        "pool_size": 141,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "transfer_limit",
+          "target": 0
+        }
+      },
+      {
+        "accepted": 95,
+        "effect": "varies",
+        "marginal_exclusions": 1,
+        "pool_size": 141,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "earliest_departure",
+          "target": 28181
+        }
+      }
+    ],
+    "clauses_before": [
+      {
+        "accepted": 3,
+        "effect": "varies",
+        "marginal_exclusions": 40,
+        "pool_size": 64,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "transfer_limit",
+          "target": 0
+        }
+      },
+      {
+        "accepted": 42,
+        "effect": "varies",
+        "marginal_exclusions": 1,
+        "pool_size": 64,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "earliest_departure",
+          "target": 28181
+        }
+      }
+    ],
+    "expanded_candidate_plans": [
+      {
+        "accepted": 5,
+        "candidate_id": "c0",
+        "correct_selected_plan": true,
+        "plan_id": "12b48372fefc1a7c9bd9",
+        "status": "satisfiable"
+      }
+    ],
+    "expanded_initial_ranking": {
+      "different_first_choice": false,
+      "pattern_scores": {},
+      "top": {
+        "D": {
+          "chosen_id": null,
+          "score": 0,
+          "tie_count": 0
+        },
+        "E": {
+          "chosen_id": null,
+          "score": 0,
+          "tie_count": 0
+        }
+      },
+      "weight_histogram": {}
+    },
+    "expanded_pool_hash": "32b5e85861df028fe1011e504dcff83cf902f04f7b2d3d5605607d7b22ed4b58",
+    "expanded_pool_size": 141,
+    "expansion": {
+      "complete": true,
+      "joint_before_cap": 141,
+      "pool_size": 141,
+      "segment_enumerated": [
+        141
+      ]
+    },
+    "family": "transfers",
+    "frozen_pool_size": 64,
+    "modes": [
+      "bus"
+    ],
+    "reference_equivalent_after": true,
+    "reference_equivalent_before": true,
+    "reference_feasible_after": 5,
+    "reference_feasible_before": 2,
+    "scenario_id": "pilot-29",
+    "semantic_classes_after": 1,
+    "semantic_classes_before": 1,
+    "transfer_values_by_scope": {
+      "outbound": [
+        0,
+        1
+      ]
+    },
+    "witness_partitions_after": 0,
+    "witness_partitions_before": 0
+  },
+  {
+    "clauses_after": [
+      {
+        "accepted": 516,
+        "effect": "varies",
+        "marginal_exclusions": 513,
+        "pool_size": 1029,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "ordered_calls",
+          "target": [
+            "7602",
+            "3397"
+          ]
+        }
+      },
+      {
+        "accepted": 1029,
+        "effect": "always_true",
+        "marginal_exclusions": 0,
+        "pool_size": 1029,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "allowed_modes",
+          "target": [
+            "bus"
+          ]
+        }
+      }
+    ],
+    "clauses_before": [
+      {
+        "accepted": 31,
+        "effect": "varies",
+        "marginal_exclusions": 33,
+        "pool_size": 64,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "ordered_calls",
+          "target": [
+            "7602",
+            "3397"
+          ]
+        }
+      },
+      {
+        "accepted": 64,
+        "effect": "always_true",
+        "marginal_exclusions": 0,
+        "pool_size": 64,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "allowed_modes",
+          "target": [
+            "bus"
+          ]
+        }
+      }
+    ],
+    "expanded_candidate_plans": [
+      {
+        "accepted": 516,
+        "candidate_id": "c0",
+        "correct_selected_plan": true,
+        "plan_id": "3d7390b656f5eccc1d67",
+        "status": "satisfiable"
+      },
+      {
+        "accepted": 383,
+        "candidate_id": "c1",
+        "correct_selected_plan": true,
+        "plan_id": "c96d00316a370c4cb99b",
+        "status": "satisfiable"
+      }
+    ],
+    "expanded_initial_ranking": {
+      "different_first_choice": false,
+      "pattern_scores": {
+        "10": {
+          "D": 1,
+          "E": 2,
+          "count": 133,
+          "first_id": "03dc0f6026feef064175"
+        }
+      },
+      "top": {
+        "D": {
+          "chosen_id": "03dc0f6026feef064175",
+          "score": 1,
+          "tie_count": 133
+        },
+        "E": {
+          "chosen_id": "03dc0f6026feef064175",
+          "score": 2,
+          "tie_count": 133
+        }
+      },
+      "weight_histogram": {
+        "2": 1
+      }
+    },
+    "expanded_pool_hash": "7797621bbfbd7de7e0f30849c93546cba86b4977de622054f0370f9037eb9516",
+    "expanded_pool_size": 1029,
+    "expansion": {
+      "complete": true,
+      "joint_before_cap": 1029,
+      "pool_size": 1029,
+      "segment_enumerated": [
+        1029
+      ]
+    },
+    "family": "ordered_visits",
+    "frozen_pool_size": 64,
+    "modes": [
+      "bus"
+    ],
+    "reference_equivalent_after": true,
+    "reference_equivalent_before": true,
+    "reference_feasible_after": 516,
+    "reference_feasible_before": 31,
+    "scenario_id": "pilot-30",
+    "semantic_classes_after": 2,
+    "semantic_classes_before": 2,
+    "transfer_values_by_scope": {
+      "outbound": [
+        0,
+        1
+      ]
+    },
+    "witness_partitions_after": 1,
+    "witness_partitions_before": 1
+  },
+  {
+    "clauses_after": [
+      {
+        "accepted": 35,
+        "effect": "varies",
+        "marginal_exclusions": 112,
+        "pool_size": 210,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "earliest_departure",
+          "target": 31662
+        }
+      },
+      {
+        "accepted": 117,
+        "effect": "varies",
+        "marginal_exclusions": 30,
+        "pool_size": 210,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "latest_arrival",
+          "target": 33060
+        }
+      }
+    ],
+    "clauses_before": [
+      {
+        "accepted": 15,
+        "effect": "varies",
+        "marginal_exclusions": 29,
+        "pool_size": 64,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "earliest_departure",
+          "target": 31662
+        }
+      },
+      {
+        "accepted": 33,
+        "effect": "varies",
+        "marginal_exclusions": 11,
+        "pool_size": 64,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "latest_arrival",
+          "target": 33060
+        }
+      }
+    ],
+    "expanded_candidate_plans": [
+      {
+        "accepted": 1,
+        "candidate_id": "c0",
+        "correct_selected_plan": true,
+        "plan_id": "4295f3ea23e2bc8a76cf",
+        "status": "satisfiable"
+      }
+    ],
+    "expanded_initial_ranking": {
+      "different_first_choice": false,
+      "pattern_scores": {},
+      "top": {
+        "D": {
+          "chosen_id": null,
+          "score": 0,
+          "tie_count": 0
+        },
+        "E": {
+          "chosen_id": null,
+          "score": 0,
+          "tie_count": 0
+        }
+      },
+      "weight_histogram": {}
+    },
+    "expanded_pool_hash": "8ad8fc708a62587abf981ed1707cf8689683695de765e28aa0705d6b8e398383",
+    "expanded_pool_size": 210,
+    "expansion": {
+      "complete": true,
+      "joint_before_cap": 210,
+      "pool_size": 210,
+      "segment_enumerated": [
+        210
+      ]
+    },
+    "family": "timing",
+    "frozen_pool_size": 64,
+    "modes": [
+      "bus"
+    ],
+    "reference_equivalent_after": false,
+    "reference_equivalent_before": false,
+    "reference_feasible_after": 5,
+    "reference_feasible_before": 4,
+    "scenario_id": "pilot-31",
+    "semantic_classes_after": 1,
+    "semantic_classes_before": 1,
+    "transfer_values_by_scope": {
+      "outbound": [
+        0,
+        1
+      ]
+    },
+    "witness_partitions_after": 0,
+    "witness_partitions_before": 0
+  },
+  {
+    "clauses_after": [
+      {
+        "accepted": 45,
+        "effect": "always_true",
+        "marginal_exclusions": 0,
+        "pool_size": 45,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "forbidden_modes",
+          "target": [
+            "rail",
+            "tram"
+          ]
+        }
+      },
+      {
+        "accepted": 30,
+        "effect": "varies",
+        "marginal_exclusions": 15,
+        "pool_size": 45,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "latest_departure",
+          "target": 28794
+        }
+      },
+      {
+        "accepted": 45,
+        "effect": "always_true",
+        "marginal_exclusions": 0,
+        "pool_size": 45,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "transfer_limit",
+          "target": 1
+        }
+      }
+    ],
+    "clauses_before": [
+      {
+        "accepted": 45,
+        "effect": "always_true",
+        "marginal_exclusions": 0,
+        "pool_size": 45,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "forbidden_modes",
+          "target": [
+            "rail",
+            "tram"
+          ]
+        }
+      },
+      {
+        "accepted": 30,
+        "effect": "varies",
+        "marginal_exclusions": 15,
+        "pool_size": 45,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "latest_departure",
+          "target": 28794
+        }
+      },
+      {
+        "accepted": 45,
+        "effect": "always_true",
+        "marginal_exclusions": 0,
+        "pool_size": 45,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "transfer_limit",
+          "target": 1
+        }
+      }
+    ],
+    "expanded_candidate_plans": [
+      {
+        "accepted": 28,
+        "candidate_id": "c0",
+        "correct_selected_plan": true,
+        "plan_id": "8b422de494543afacba4",
+        "status": "satisfiable"
+      },
+      {
+        "accepted": 30,
+        "candidate_id": "c3",
+        "correct_selected_plan": true,
+        "plan_id": "dd6cd859e42b9fcf6ac5",
+        "status": "satisfiable"
+      }
+    ],
+    "expanded_initial_ranking": {
+      "different_first_choice": false,
+      "pattern_scores": {
+        "01": {
+          "D": 1,
+          "E": 2,
+          "count": 17,
+          "first_id": "19225e996c7aa1e5a85a"
+        },
+        "10": {
+          "D": 1,
+          "E": 2,
+          "count": 15,
+          "first_id": "01853825538745663bb8"
+        }
+      },
+      "top": {
+        "D": {
+          "chosen_id": "01853825538745663bb8",
+          "score": 1,
+          "tie_count": 32
+        },
+        "E": {
+          "chosen_id": "01853825538745663bb8",
+          "score": 2,
+          "tie_count": 32
+        }
+      },
+      "weight_histogram": {
+        "2": 1
+      }
+    },
+    "expanded_pool_hash": "289c1a5376e46a72aad19c8deb36e384ea010ee92c23a4d163c29526bf921e65",
+    "expanded_pool_size": 45,
+    "expansion": {
+      "complete": true,
+      "joint_before_cap": 45,
+      "pool_size": 45,
+      "segment_enumerated": [
+        45
+      ]
+    },
+    "family": "mode_exclusion",
+    "frozen_pool_size": 45,
+    "modes": [
+      "bus"
+    ],
+    "reference_equivalent_after": true,
+    "reference_equivalent_before": true,
+    "reference_feasible_after": 30,
+    "reference_feasible_before": 30,
+    "scenario_id": "pilot-32",
+    "semantic_classes_after": 2,
+    "semantic_classes_before": 2,
+    "transfer_values_by_scope": {
+      "outbound": [
+        0,
+        1
+      ]
+    },
+    "witness_partitions_after": 1,
+    "witness_partitions_before": 1
+  },
+  {
+    "clauses_after": [
+      {
+        "accepted": 167,
+        "effect": "varies",
+        "marginal_exclusions": 74,
+        "pool_size": 761,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "earliest_departure",
+          "target": 30600
+        }
+      },
+      {
+        "accepted": 74,
+        "effect": "varies",
+        "marginal_exclusions": 167,
+        "pool_size": 761,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "latest_arrival",
+          "target": 28800
+        }
+      }
+    ],
+    "clauses_before": [
+      {
+        "accepted": 18,
+        "effect": "varies",
+        "marginal_exclusions": 10,
+        "pool_size": 64,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "earliest_departure",
+          "target": 30600
+        }
+      },
+      {
+        "accepted": 10,
+        "effect": "varies",
+        "marginal_exclusions": 18,
+        "pool_size": 64,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "latest_arrival",
+          "target": 28800
+        }
+      }
+    ],
+    "expanded_candidate_plans": [],
+    "expanded_initial_ranking": {
+      "different_first_choice": false,
+      "pattern_scores": {},
+      "top": {
+        "D": {
+          "chosen_id": null,
+          "score": 0,
+          "tie_count": 0
+        },
+        "E": {
+          "chosen_id": null,
+          "score": 0,
+          "tie_count": 0
+        }
+      },
+      "weight_histogram": {}
+    },
+    "expanded_pool_hash": "749cb87ded11b042925c166b07a687dd4f2b7834bc2487e09a4b0029a1c1dcab",
+    "expanded_pool_size": 761,
+    "expansion": {
+      "complete": true,
+      "joint_before_cap": 761,
+      "pool_size": 761,
+      "segment_enumerated": [
+        761
+      ]
+    },
+    "family": "infeasible",
+    "frozen_pool_size": 64,
+    "modes": [
+      "bus"
+    ],
+    "reference_equivalent_after": false,
+    "reference_equivalent_before": false,
+    "reference_feasible_after": 0,
+    "reference_feasible_before": 0,
+    "scenario_id": "pilot-33",
+    "semantic_classes_after": 0,
+    "semantic_classes_before": 0,
+    "transfer_values_by_scope": {
+      "outbound": [
+        0,
+        1
+      ]
+    },
+    "witness_partitions_after": 0,
+    "witness_partitions_before": 0
+  },
+  {
+    "clauses_after": [
+      {
+        "accepted": 229,
+        "effect": "always_true",
+        "marginal_exclusions": 0,
+        "pool_size": 229,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "transfer_limit",
+          "target": 1
+        }
+      },
+      {
+        "accepted": 46,
+        "effect": "varies",
+        "marginal_exclusions": 183,
+        "pool_size": 229,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "earliest_departure",
+          "target": 31327
+        }
+      }
+    ],
+    "clauses_before": [
+      {
+        "accepted": 64,
+        "effect": "always_true",
+        "marginal_exclusions": 0,
+        "pool_size": 64,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "transfer_limit",
+          "target": 1
+        }
+      },
+      {
+        "accepted": 13,
+        "effect": "varies",
+        "marginal_exclusions": 51,
+        "pool_size": 64,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "earliest_departure",
+          "target": 31327
+        }
+      }
+    ],
+    "expanded_candidate_plans": [
+      {
+        "accepted": 229,
+        "candidate_id": "c0",
+        "correct_selected_plan": false,
+        "plan_id": "090d964b9fb94a3803e6",
+        "status": "satisfiable"
+      },
+      {
+        "accepted": 24,
+        "candidate_id": "c1",
+        "correct_selected_plan": true,
+        "plan_id": "8c0d00ed04001bdb0c49",
+        "status": "satisfiable"
+      },
+      {
+        "accepted": 32,
+        "candidate_id": "c2",
+        "correct_selected_plan": true,
+        "plan_id": "8c0d00ed04001bdb0c49",
+        "status": "satisfiable"
+      },
+      {
+        "accepted": 46,
+        "candidate_id": "c3",
+        "correct_selected_plan": true,
+        "plan_id": "55634486613a74a4bfc0",
+        "status": "satisfiable"
+      }
+    ],
+    "expanded_initial_ranking": {
+      "different_first_choice": false,
+      "pattern_scores": {
+        "1000": {
+          "D": 3,
+          "E": 6,
+          "count": 183,
+          "first_id": "004c05afb1f5827ae3be"
+        },
+        "1001": {
+          "D": 4,
+          "E": 8,
+          "count": 14,
+          "first_id": "07a6773b6185c97c2900"
+        },
+        "1011": {
+          "D": 3,
+          "E": 5,
+          "count": 8,
+          "first_id": "0ab0e0364a5113b3e6a1"
+        }
+      },
+      "top": {
+        "D": {
+          "chosen_id": "07a6773b6185c97c2900",
+          "score": 4,
+          "tie_count": 14
+        },
+        "E": {
+          "chosen_id": "07a6773b6185c97c2900",
+          "score": 8,
+          "tie_count": 14
+        }
+      },
+      "weight_histogram": {
+        "1": 1,
+        "2": 5
+      }
+    },
+    "expanded_pool_hash": "3c3d4f681387170a07b480ac6e478f3c603b36e43fb6a2414f0feda832ccde43",
+    "expanded_pool_size": 229,
+    "expansion": {
+      "complete": true,
+      "joint_before_cap": 229,
+      "pool_size": 229,
+      "segment_enumerated": [
+        229
+      ]
+    },
+    "family": "transfers",
+    "frozen_pool_size": 64,
+    "modes": [
+      "bus"
+    ],
+    "reference_equivalent_after": true,
+    "reference_equivalent_before": true,
+    "reference_feasible_after": 46,
+    "reference_feasible_before": 13,
+    "scenario_id": "pilot-34",
+    "semantic_classes_after": 4,
+    "semantic_classes_before": 4,
+    "transfer_values_by_scope": {
+      "outbound": [
+        0,
+        1
+      ]
+    },
+    "witness_partitions_after": 3,
+    "witness_partitions_before": 3
+  },
+  {
+    "clauses_after": [
+      {
+        "accepted": 4410,
+        "effect": "always_true",
+        "marginal_exclusions": 0,
+        "pool_size": 4410,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "transfer_limit",
+          "target": 1
+        }
+      },
+      {
+        "accepted": 2880,
+        "effect": "varies",
+        "marginal_exclusions": 1530,
+        "pool_size": 4410,
+        "rule": {
+          "direction": "return",
+          "requirement": "earliest_departure",
+          "target": 33360
+        }
+      }
+    ],
+    "clauses_before": [
+      {
+        "accepted": 256,
+        "effect": "always_true",
+        "marginal_exclusions": 0,
+        "pool_size": 256,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "transfer_limit",
+          "target": 1
+        }
+      },
+      {
+        "accepted": 168,
+        "effect": "varies",
+        "marginal_exclusions": 88,
+        "pool_size": 256,
+        "rule": {
+          "direction": "return",
+          "requirement": "earliest_departure",
+          "target": 33360
+        }
+      }
+    ],
+    "expanded_candidate_plans": [
+      {
+        "accepted": 4410,
+        "candidate_id": "c0",
+        "correct_selected_plan": false,
+        "plan_id": "bd9fa59a9b63900d2d3a",
+        "status": "satisfiable"
+      }
+    ],
+    "expanded_initial_ranking": {
+      "different_first_choice": false,
+      "pattern_scores": {},
+      "top": {
+        "D": {
+          "chosen_id": null,
+          "score": 0,
+          "tie_count": 0
+        },
+        "E": {
+          "chosen_id": null,
+          "score": 0,
+          "tie_count": 0
+        }
+      },
+      "weight_histogram": {}
+    },
+    "expanded_pool_hash": "e497ee7639cea9540c644c185737ada5eccd276c88763646261db99238af3dae",
+    "expanded_pool_size": 4410,
+    "expansion": {
+      "complete": true,
+      "joint_before_cap": 4410,
+      "pool_size": 4410,
+      "segment_enumerated": [
+        285,
+        35
+      ]
+    },
+    "family": "scope",
+    "frozen_pool_size": 256,
+    "modes": [
+      "bus"
+    ],
+    "reference_equivalent_after": false,
+    "reference_equivalent_before": false,
+    "reference_feasible_after": 2880,
+    "reference_feasible_before": 168,
+    "scenario_id": "pilot-35",
+    "semantic_classes_after": 1,
+    "semantic_classes_before": 1,
+    "transfer_values_by_scope": {
+      "outbound": [
+        0,
+        1
+      ],
+      "return": [
+        0,
+        1
+      ]
+    },
+    "witness_partitions_after": 0,
+    "witness_partitions_before": 0
+  },
+  {
+    "clauses_after": [
+      {
+        "accepted": 144,
+        "effect": "varies",
+        "marginal_exclusions": 88,
+        "pool_size": 256,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "earliest_departure",
+          "target": 27675
+        }
+      },
+      {
+        "accepted": 169,
+        "effect": "varies",
+        "marginal_exclusions": 63,
+        "pool_size": 256,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "latest_arrival",
+          "target": 33743
+        }
+      }
+    ],
+    "clauses_before": [
+      {
+        "accepted": 41,
+        "effect": "varies",
+        "marginal_exclusions": 18,
+        "pool_size": 64,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "earliest_departure",
+          "target": 27675
+        }
+      },
+      {
+        "accepted": 36,
+        "effect": "varies",
+        "marginal_exclusions": 23,
+        "pool_size": 64,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "latest_arrival",
+          "target": 33743
+        }
+      }
+    ],
+    "expanded_candidate_plans": [
+      {
+        "accepted": 121,
+        "candidate_id": "c0",
+        "correct_selected_plan": false,
+        "plan_id": "f6c5faf841990b8d95f8",
+        "status": "satisfiable"
+      },
+      {
+        "accepted": 100,
+        "candidate_id": "c3",
+        "correct_selected_plan": false,
+        "plan_id": "f6c5faf841990b8d95f8",
+        "status": "satisfiable"
+      }
+    ],
+    "expanded_initial_ranking": {
+      "different_first_choice": false,
+      "pattern_scores": {
+        "10": {
+          "D": 1,
+          "E": 1,
+          "count": 21,
+          "first_id": "032b33a769adb812d572"
+        }
+      },
+      "top": {
+        "D": {
+          "chosen_id": "032b33a769adb812d572",
+          "score": 1,
+          "tie_count": 21
+        },
+        "E": {
+          "chosen_id": "032b33a769adb812d572",
+          "score": 1,
+          "tie_count": 21
+        }
+      },
+      "weight_histogram": {
+        "1": 1
+      }
+    },
+    "expanded_pool_hash": "44483cd88972550cd81c2939e0c3c6b0f408a5fb085331f490405a7cd205591b",
+    "expanded_pool_size": 256,
+    "expansion": {
+      "complete": true,
+      "joint_before_cap": 256,
+      "pool_size": 256,
+      "segment_enumerated": [
+        256
+      ]
+    },
+    "family": "timing",
+    "frozen_pool_size": 64,
+    "modes": [
+      "bus"
+    ],
+    "reference_equivalent_after": false,
+    "reference_equivalent_before": false,
+    "reference_feasible_after": 81,
+    "reference_feasible_before": 18,
+    "scenario_id": "pilot-36",
+    "semantic_classes_after": 2,
+    "semantic_classes_before": 2,
+    "transfer_values_by_scope": {
+      "outbound": [
+        0,
+        1
+      ]
+    },
+    "witness_partitions_after": 1,
+    "witness_partitions_before": 1
+  },
+  {
+    "clauses_after": [
+      {
+        "accepted": 174,
+        "effect": "always_true",
+        "marginal_exclusions": 0,
+        "pool_size": 174,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "forbidden_modes",
+          "target": [
+            "rail",
+            "tram"
+          ]
+        }
+      },
+      {
+        "accepted": 156,
+        "effect": "varies",
+        "marginal_exclusions": 18,
+        "pool_size": 174,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "latest_departure",
+          "target": 32269
+        }
+      },
+      {
+        "accepted": 174,
+        "effect": "always_true",
+        "marginal_exclusions": 0,
+        "pool_size": 174,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "transfer_limit",
+          "target": 1
+        }
+      }
+    ],
+    "clauses_before": [
+      {
+        "accepted": 64,
+        "effect": "always_true",
+        "marginal_exclusions": 0,
+        "pool_size": 64,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "forbidden_modes",
+          "target": [
+            "rail",
+            "tram"
+          ]
+        }
+      },
+      {
+        "accepted": 59,
+        "effect": "varies",
+        "marginal_exclusions": 5,
+        "pool_size": 64,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "latest_departure",
+          "target": 32269
+        }
+      },
+      {
+        "accepted": 64,
+        "effect": "always_true",
+        "marginal_exclusions": 0,
+        "pool_size": 64,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "transfer_limit",
+          "target": 1
+        }
+      }
+    ],
+    "expanded_candidate_plans": [
+      {
+        "accepted": 143,
+        "candidate_id": "c0",
+        "correct_selected_plan": true,
+        "plan_id": "eef546c393379dcebb33",
+        "status": "satisfiable"
+      },
+      {
+        "accepted": 156,
+        "candidate_id": "c1",
+        "correct_selected_plan": true,
+        "plan_id": "eef546c393379dcebb33",
+        "status": "satisfiable"
+      },
+      {
+        "accepted": 22,
+        "candidate_id": "c2",
+        "correct_selected_plan": false,
+        "plan_id": "c749f2562c6d3e28870e",
+        "status": "satisfiable"
+      },
+      {
+        "accepted": 152,
+        "candidate_id": "c3",
+        "correct_selected_plan": true,
+        "plan_id": "eef546c393379dcebb33",
+        "status": "satisfiable"
+      }
+    ],
+    "expanded_initial_ranking": {
+      "different_first_choice": true,
+      "pattern_scores": {
+        "0010": {
+          "D": 3,
+          "E": 9,
+          "count": 18,
+          "first_id": "1c1ac121fe7b1c1d1fad"
+        },
+        "0101": {
+          "D": 4,
+          "E": 8,
+          "count": 9,
+          "first_id": "3ec28069888f5177b261"
+        },
+        "0110": {
+          "D": 4,
+          "E": 8,
+          "count": 4,
+          "first_id": "4a89a06ba5058ef4ccea"
+        },
+        "1101": {
+          "D": 3,
+          "E": 9,
+          "count": 143,
+          "first_id": "022c2a4af86602d54884"
+        }
+      },
+      "top": {
+        "D": {
+          "chosen_id": "3ec28069888f5177b261",
+          "score": 4,
+          "tie_count": 13
+        },
+        "E": {
+          "chosen_id": "022c2a4af86602d54884",
+          "score": 9,
+          "tie_count": 161
+        }
+      },
+      "weight_histogram": {
+        "1": 3,
+        "3": 3
+      }
+    },
+    "expanded_pool_hash": "8d8dd858eb9ed1efa1fe12f454a47d97ee16f3f3718195d2ea298eb27dad01bf",
+    "expanded_pool_size": 174,
+    "expansion": {
+      "complete": true,
+      "joint_before_cap": 174,
+      "pool_size": 174,
+      "segment_enumerated": [
+        174
+      ]
+    },
+    "family": "mode_exclusion",
+    "frozen_pool_size": 64,
+    "modes": [
+      "bus"
+    ],
+    "reference_equivalent_after": true,
+    "reference_equivalent_before": true,
+    "reference_feasible_after": 156,
+    "reference_feasible_before": 59,
+    "scenario_id": "pilot-37",
+    "semantic_classes_after": 4,
+    "semantic_classes_before": 4,
+    "transfer_values_by_scope": {
+      "outbound": [
+        0,
+        1
+      ]
+    },
+    "witness_partitions_after": 3,
+    "witness_partitions_before": 3
+  },
+  {
+    "clauses_after": [
+      {
+        "accepted": 25,
+        "effect": "always_true",
+        "marginal_exclusions": 0,
+        "pool_size": 25,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "ordered_calls",
+          "target": [
+            "10425",
+            "6235"
+          ]
+        }
+      },
+      {
+        "accepted": 25,
+        "effect": "always_true",
+        "marginal_exclusions": 0,
+        "pool_size": 25,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "allowed_modes",
+          "target": [
+            "bus"
+          ]
+        }
+      }
+    ],
+    "clauses_before": [
+      {
+        "accepted": 25,
+        "effect": "always_true",
+        "marginal_exclusions": 0,
+        "pool_size": 25,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "ordered_calls",
+          "target": [
+            "10425",
+            "6235"
+          ]
+        }
+      },
+      {
+        "accepted": 25,
+        "effect": "always_true",
+        "marginal_exclusions": 0,
+        "pool_size": 25,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "allowed_modes",
+          "target": [
+            "bus"
+          ]
+        }
+      }
+    ],
+    "expanded_candidate_plans": [
+      {
+        "accepted": 25,
+        "candidate_id": "c0",
+        "correct_selected_plan": true,
+        "plan_id": "23907dde75ed497713e9",
+        "status": "satisfiable"
+      },
+      {
+        "accepted": 0,
+        "candidate_id": "c1",
+        "correct_selected_plan": false,
+        "plan_id": null,
+        "status": "infeasible_in_pool"
+      }
+    ],
+    "expanded_initial_ranking": {
+      "different_first_choice": false,
+      "pattern_scores": {
+        "10": {
+          "D": 1,
+          "E": 2,
+          "count": 25,
+          "first_id": "09c37697428421bd92de"
+        }
+      },
+      "top": {
+        "D": {
+          "chosen_id": "09c37697428421bd92de",
+          "score": 1,
+          "tie_count": 25
+        },
+        "E": {
+          "chosen_id": "09c37697428421bd92de",
+          "score": 2,
+          "tie_count": 25
+        }
+      },
+      "weight_histogram": {
+        "2": 1
+      }
+    },
+    "expanded_pool_hash": "a10e0a8d3b1eabb27cca1d198f25d4fe5de682b36d520b394ee338f425e792a9",
+    "expanded_pool_size": 25,
+    "expansion": {
+      "complete": true,
+      "joint_before_cap": 25,
+      "pool_size": 25,
+      "segment_enumerated": [
+        25
+      ]
+    },
+    "family": "ordered_visits",
+    "frozen_pool_size": 25,
+    "modes": [
+      "bus"
+    ],
+    "reference_equivalent_after": true,
+    "reference_equivalent_before": true,
+    "reference_feasible_after": 25,
+    "reference_feasible_before": 25,
+    "scenario_id": "pilot-38",
+    "semantic_classes_after": 2,
+    "semantic_classes_before": 2,
+    "transfer_values_by_scope": {
+      "outbound": [
+        0,
+        1
+      ]
+    },
+    "witness_partitions_after": 1,
+    "witness_partitions_before": 1
+  },
+  {
+    "clauses_after": [
+      {
+        "accepted": 16,
+        "effect": "varies",
+        "marginal_exclusions": 100,
+        "pool_size": 386,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "transfer_limit",
+          "target": 0
+        }
+      },
+      {
+        "accepted": 108,
+        "effect": "varies",
+        "marginal_exclusions": 8,
+        "pool_size": 386,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "earliest_departure",
+          "target": 29722
+        }
+      }
+    ],
+    "clauses_before": [
+      {
+        "accepted": 3,
+        "effect": "varies",
+        "marginal_exclusions": 15,
+        "pool_size": 64,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "transfer_limit",
+          "target": 0
+        }
+      },
+      {
+        "accepted": 17,
+        "effect": "varies",
+        "marginal_exclusions": 1,
+        "pool_size": 64,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "earliest_departure",
+          "target": 29722
+        }
+      }
+    ],
+    "expanded_candidate_plans": [
+      {
+        "accepted": 9,
+        "candidate_id": "c0",
+        "correct_selected_plan": false,
+        "plan_id": "497d681546f7ad76651f",
+        "status": "satisfiable"
+      }
+    ],
+    "expanded_initial_ranking": {
+      "different_first_choice": false,
+      "pattern_scores": {},
+      "top": {
+        "D": {
+          "chosen_id": null,
+          "score": 0,
+          "tie_count": 0
+        },
+        "E": {
+          "chosen_id": null,
+          "score": 0,
+          "tie_count": 0
+        }
+      },
+      "weight_histogram": {}
+    },
+    "expanded_pool_hash": "0b5ecad9c668ae4aaa2f53509acaeae01142f3bf70a89c6e37c39d20d153d57f",
+    "expanded_pool_size": 386,
+    "expansion": {
+      "complete": true,
+      "joint_before_cap": 386,
+      "pool_size": 386,
+      "segment_enumerated": [
+        386
+      ]
+    },
+    "family": "transfers",
+    "frozen_pool_size": 64,
+    "modes": [
+      "bus"
+    ],
+    "reference_equivalent_after": false,
+    "reference_equivalent_before": true,
+    "reference_feasible_after": 8,
+    "reference_feasible_before": 2,
+    "scenario_id": "pilot-39",
+    "semantic_classes_after": 1,
+    "semantic_classes_before": 1,
+    "transfer_values_by_scope": {
+      "outbound": [
+        0,
+        1
+      ]
+    },
+    "witness_partitions_after": 0,
+    "witness_partitions_before": 0
+  },
+  {
+    "clauses_after": [
+      {
+        "accepted": 4188,
+        "effect": "always_true",
+        "marginal_exclusions": 0,
+        "pool_size": 4188,
+        "rule": {
+          "direction": "return",
+          "requirement": "transfer_limit",
+          "target": 1
+        }
+      },
+      {
+        "accepted": 4188,
+        "effect": "always_true",
+        "marginal_exclusions": 0,
+        "pool_size": 4188,
+        "rule": {
+          "direction": "return",
+          "requirement": "earliest_departure",
+          "target": 33120
+        }
+      }
+    ],
+    "clauses_before": [
+      {
+        "accepted": 256,
+        "effect": "always_true",
+        "marginal_exclusions": 0,
+        "pool_size": 256,
+        "rule": {
+          "direction": "return",
+          "requirement": "transfer_limit",
+          "target": 1
+        }
+      },
+      {
+        "accepted": 256,
+        "effect": "always_true",
+        "marginal_exclusions": 0,
+        "pool_size": 256,
+        "rule": {
+          "direction": "return",
+          "requirement": "earliest_departure",
+          "target": 33120
+        }
+      }
+    ],
+    "expanded_candidate_plans": [
+      {
+        "accepted": 141,
+        "candidate_id": "c0",
+        "correct_selected_plan": true,
+        "plan_id": "ddd3c30b543108e9c638",
+        "status": "satisfiable"
+      },
+      {
+        "accepted": 4188,
+        "candidate_id": "c1",
+        "correct_selected_plan": true,
+        "plan_id": "1e069b03797e035bb48c",
+        "status": "satisfiable"
+      }
+    ],
+    "expanded_initial_ranking": {
+      "different_first_choice": false,
+      "pattern_scores": {
+        "01": {
+          "D": 1,
+          "E": 2,
+          "count": 4047,
+          "first_id": "000cc0bb10c1f2381bfb"
+        }
+      },
+      "top": {
+        "D": {
+          "chosen_id": "000cc0bb10c1f2381bfb",
+          "score": 1,
+          "tie_count": 4047
+        },
+        "E": {
+          "chosen_id": "000cc0bb10c1f2381bfb",
+          "score": 2,
+          "tie_count": 4047
+        }
+      },
+      "weight_histogram": {
+        "2": 1
+      }
+    },
+    "expanded_pool_hash": "9a6d1686d6833f45c854a394d07d2f4fdf2504e71f0c1078d78a894432829543",
+    "expanded_pool_size": 4188,
+    "expansion": {
+      "complete": true,
+      "joint_before_cap": 4188,
+      "pool_size": 4188,
+      "segment_enumerated": [
+        441,
+        15
+      ]
+    },
+    "family": "scope",
+    "frozen_pool_size": 256,
+    "modes": [
+      "bus"
+    ],
+    "reference_equivalent_after": true,
+    "reference_equivalent_before": true,
+    "reference_feasible_after": 4188,
+    "reference_feasible_before": 256,
+    "scenario_id": "pilot-40",
+    "semantic_classes_after": 2,
+    "semantic_classes_before": 2,
+    "transfer_values_by_scope": {
+      "outbound": [
+        0,
+        1
+      ],
+      "return": [
+        0,
+        1
+      ]
+    },
+    "witness_partitions_after": 1,
+    "witness_partitions_before": 1
+  },
+  {
+    "clauses_after": [
+      {
+        "accepted": 9,
+        "effect": "varies",
+        "marginal_exclusions": 1,
+        "pool_size": 25,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "earliest_departure",
+          "target": 30600
+        }
+      },
+      {
+        "accepted": 1,
+        "effect": "varies",
+        "marginal_exclusions": 9,
+        "pool_size": 25,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "latest_arrival",
+          "target": 28800
+        }
+      }
+    ],
+    "clauses_before": [
+      {
+        "accepted": 9,
+        "effect": "varies",
+        "marginal_exclusions": 1,
+        "pool_size": 25,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "earliest_departure",
+          "target": 30600
+        }
+      },
+      {
+        "accepted": 1,
+        "effect": "varies",
+        "marginal_exclusions": 9,
+        "pool_size": 25,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "latest_arrival",
+          "target": 28800
+        }
+      }
+    ],
+    "expanded_candidate_plans": [],
+    "expanded_initial_ranking": {
+      "different_first_choice": false,
+      "pattern_scores": {},
+      "top": {
+        "D": {
+          "chosen_id": null,
+          "score": 0,
+          "tie_count": 0
+        },
+        "E": {
+          "chosen_id": null,
+          "score": 0,
+          "tie_count": 0
+        }
+      },
+      "weight_histogram": {}
+    },
+    "expanded_pool_hash": "cd8bf6716f8275f15aea03e1b50edb154291b6262e9e674929cc84d31d89f2be",
+    "expanded_pool_size": 25,
+    "expansion": {
+      "complete": true,
+      "joint_before_cap": 25,
+      "pool_size": 25,
+      "segment_enumerated": [
+        25
+      ]
+    },
+    "family": "infeasible",
+    "frozen_pool_size": 25,
+    "modes": [
+      "bus"
+    ],
+    "reference_equivalent_after": false,
+    "reference_equivalent_before": false,
+    "reference_feasible_after": 0,
+    "reference_feasible_before": 0,
+    "scenario_id": "pilot-41",
+    "semantic_classes_after": 0,
+    "semantic_classes_before": 0,
+    "transfer_values_by_scope": {
+      "outbound": [
+        0,
+        1
+      ]
+    },
+    "witness_partitions_after": 0,
+    "witness_partitions_before": 0
+  },
+  {
+    "clauses_after": [
+      {
+        "accepted": 676,
+        "effect": "always_true",
+        "marginal_exclusions": 0,
+        "pool_size": 676,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "forbidden_modes",
+          "target": [
+            "rail",
+            "tram"
+          ]
+        }
+      },
+      {
+        "accepted": 242,
+        "effect": "varies",
+        "marginal_exclusions": 434,
+        "pool_size": 676,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "latest_departure",
+          "target": 26967
+        }
+      },
+      {
+        "accepted": 676,
+        "effect": "always_true",
+        "marginal_exclusions": 0,
+        "pool_size": 676,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "transfer_limit",
+          "target": 1
+        }
+      }
+    ],
+    "clauses_before": [
+      {
+        "accepted": 64,
+        "effect": "always_true",
+        "marginal_exclusions": 0,
+        "pool_size": 64,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "forbidden_modes",
+          "target": [
+            "rail",
+            "tram"
+          ]
+        }
+      },
+      {
+        "accepted": 28,
+        "effect": "varies",
+        "marginal_exclusions": 36,
+        "pool_size": 64,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "latest_departure",
+          "target": 26967
+        }
+      },
+      {
+        "accepted": 64,
+        "effect": "always_true",
+        "marginal_exclusions": 0,
+        "pool_size": 64,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "transfer_limit",
+          "target": 1
+        }
+      }
+    ],
+    "expanded_candidate_plans": [
+      {
+        "accepted": 88,
+        "candidate_id": "c0",
+        "correct_selected_plan": true,
+        "plan_id": "e5a8c85b5c4517da265c",
+        "status": "satisfiable"
+      },
+      {
+        "accepted": 470,
+        "candidate_id": "c2",
+        "correct_selected_plan": false,
+        "plan_id": "dde89094e78b21c88b57",
+        "status": "satisfiable"
+      }
+    ],
+    "expanded_initial_ranking": {
+      "different_first_choice": false,
+      "pattern_scores": {
+        "01": {
+          "D": 1,
+          "E": 3,
+          "count": 470,
+          "first_id": "02b8e234c9d442a0e68f"
+        },
+        "10": {
+          "D": 1,
+          "E": 3,
+          "count": 88,
+          "first_id": "056694a7849798a5ed53"
+        }
+      },
+      "top": {
+        "D": {
+          "chosen_id": "02b8e234c9d442a0e68f",
+          "score": 1,
+          "tie_count": 558
+        },
+        "E": {
+          "chosen_id": "02b8e234c9d442a0e68f",
+          "score": 3,
+          "tie_count": 558
+        }
+      },
+      "weight_histogram": {
+        "3": 1
+      }
+    },
+    "expanded_pool_hash": "5977d437439a2bebda6bfec083b7736bce8e7363aeb82fe099d5d2482a78947f",
+    "expanded_pool_size": 676,
+    "expansion": {
+      "complete": true,
+      "joint_before_cap": 676,
+      "pool_size": 676,
+      "segment_enumerated": [
+        676
+      ]
+    },
+    "family": "mode_exclusion",
+    "frozen_pool_size": 64,
+    "modes": [
+      "bus"
+    ],
+    "reference_equivalent_after": false,
+    "reference_equivalent_before": false,
+    "reference_feasible_after": 242,
+    "reference_feasible_before": 28,
+    "scenario_id": "pilot-42",
+    "semantic_classes_after": 2,
+    "semantic_classes_before": 2,
+    "transfer_values_by_scope": {
+      "outbound": [
+        0,
+        1
+      ]
+    },
+    "witness_partitions_after": 1,
+    "witness_partitions_before": 1
+  },
+  {
+    "clauses_after": [
+      {
+        "accepted": 286,
+        "effect": "always_true",
+        "marginal_exclusions": 0,
+        "pool_size": 286,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "ordered_calls",
+          "target": [
+            "6008",
+            "6009"
+          ]
+        }
+      },
+      {
+        "accepted": 286,
+        "effect": "always_true",
+        "marginal_exclusions": 0,
+        "pool_size": 286,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "allowed_modes",
+          "target": [
+            "bus"
+          ]
+        }
+      }
+    ],
+    "clauses_before": [
+      {
+        "accepted": 64,
+        "effect": "always_true",
+        "marginal_exclusions": 0,
+        "pool_size": 64,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "ordered_calls",
+          "target": [
+            "6008",
+            "6009"
+          ]
+        }
+      },
+      {
+        "accepted": 64,
+        "effect": "always_true",
+        "marginal_exclusions": 0,
+        "pool_size": 64,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "allowed_modes",
+          "target": [
+            "bus"
+          ]
+        }
+      }
+    ],
+    "expanded_candidate_plans": [
+      {
+        "accepted": 286,
+        "candidate_id": "c0",
+        "correct_selected_plan": true,
+        "plan_id": "f4f34926cc9928d9d774",
+        "status": "satisfiable"
+      }
+    ],
+    "expanded_initial_ranking": {
+      "different_first_choice": false,
+      "pattern_scores": {},
+      "top": {
+        "D": {
+          "chosen_id": null,
+          "score": 0,
+          "tie_count": 0
+        },
+        "E": {
+          "chosen_id": null,
+          "score": 0,
+          "tie_count": 0
+        }
+      },
+      "weight_histogram": {}
+    },
+    "expanded_pool_hash": "1b45493fdc6b526b3e37174884251d793cae7b2ec6367bffc40c87add6775551",
+    "expanded_pool_size": 286,
+    "expansion": {
+      "complete": true,
+      "joint_before_cap": 286,
+      "pool_size": 286,
+      "segment_enumerated": [
+        286
+      ]
+    },
+    "family": "ordered_visits",
+    "frozen_pool_size": 64,
+    "modes": [
+      "bus"
+    ],
+    "reference_equivalent_after": true,
+    "reference_equivalent_before": true,
+    "reference_feasible_after": 286,
+    "reference_feasible_before": 64,
+    "scenario_id": "pilot-43",
+    "semantic_classes_after": 1,
+    "semantic_classes_before": 1,
+    "transfer_values_by_scope": {
+      "outbound": [
+        0,
+        1
+      ]
+    },
+    "witness_partitions_after": 0,
+    "witness_partitions_before": 0
+  },
+  {
+    "clauses_after": [
+      {
+        "accepted": 16,
+        "effect": "varies",
+        "marginal_exclusions": 7,
+        "pool_size": 25,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "earliest_departure",
+          "target": 29607
+        }
+      },
+      {
+        "accepted": 16,
+        "effect": "varies",
+        "marginal_exclusions": 7,
+        "pool_size": 25,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "latest_arrival",
+          "target": 33483
+        }
+      }
+    ],
+    "clauses_before": [
+      {
+        "accepted": 16,
+        "effect": "varies",
+        "marginal_exclusions": 7,
+        "pool_size": 25,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "earliest_departure",
+          "target": 29607
+        }
+      },
+      {
+        "accepted": 16,
+        "effect": "varies",
+        "marginal_exclusions": 7,
+        "pool_size": 25,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "latest_arrival",
+          "target": 33483
+        }
+      }
+    ],
+    "expanded_candidate_plans": [
+      {
+        "accepted": 9,
+        "candidate_id": "c0",
+        "correct_selected_plan": true,
+        "plan_id": "fe66fe1966b248b6f9a8",
+        "status": "satisfiable"
+      },
+      {
+        "accepted": 4,
+        "candidate_id": "c3",
+        "correct_selected_plan": true,
+        "plan_id": "fe66fe1966b248b6f9a8",
+        "status": "satisfiable"
+      }
+    ],
+    "expanded_initial_ranking": {
+      "different_first_choice": false,
+      "pattern_scores": {
+        "10": {
+          "D": 1,
+          "E": 1,
+          "count": 5,
+          "first_id": "081218a73701ce807b72"
+        }
+      },
+      "top": {
+        "D": {
+          "chosen_id": "081218a73701ce807b72",
+          "score": 1,
+          "tie_count": 5
+        },
+        "E": {
+          "chosen_id": "081218a73701ce807b72",
+          "score": 1,
+          "tie_count": 5
+        }
+      },
+      "weight_histogram": {
+        "1": 1
+      }
+    },
+    "expanded_pool_hash": "75c8d400b2b26c67692533377a59c92b4924d9f7340ef0494e97d83721ae6b57",
+    "expanded_pool_size": 25,
+    "expansion": {
+      "complete": true,
+      "joint_before_cap": 25,
+      "pool_size": 25,
+      "segment_enumerated": [
+        25
+      ]
+    },
+    "family": "timing",
+    "frozen_pool_size": 25,
+    "modes": [
+      "bus"
+    ],
+    "reference_equivalent_after": true,
+    "reference_equivalent_before": true,
+    "reference_feasible_after": 9,
+    "reference_feasible_before": 9,
+    "scenario_id": "pilot-44",
+    "semantic_classes_after": 2,
+    "semantic_classes_before": 2,
+    "transfer_values_by_scope": {
+      "outbound": [
+        0,
+        1
+      ]
+    },
+    "witness_partitions_after": 1,
+    "witness_partitions_before": 1
+  },
+  {
+    "clauses_after": [
+      {
+        "accepted": 33270,
+        "effect": "always_true",
+        "marginal_exclusions": 0,
+        "pool_size": 33270,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "transfer_limit",
+          "target": 1
+        }
+      },
+      {
+        "accepted": 25845,
+        "effect": "varies",
+        "marginal_exclusions": 7425,
+        "pool_size": 33270,
+        "rule": {
+          "direction": "return",
+          "requirement": "earliest_departure",
+          "target": 32586
+        }
+      }
+    ],
+    "clauses_before": [
+      {
+        "accepted": 256,
+        "effect": "always_true",
+        "marginal_exclusions": 0,
+        "pool_size": 256,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "transfer_limit",
+          "target": 1
+        }
+      },
+      {
+        "accepted": 204,
+        "effect": "varies",
+        "marginal_exclusions": 52,
+        "pool_size": 256,
+        "rule": {
+          "direction": "return",
+          "requirement": "earliest_departure",
+          "target": 32586
+        }
+      }
+    ],
+    "expanded_candidate_plans": [
+      {
+        "accepted": 33270,
+        "candidate_id": "c0",
+        "correct_selected_plan": false,
+        "plan_id": "536fd6367f8809faad22",
+        "status": "satisfiable"
+      }
+    ],
+    "expanded_initial_ranking": {
+      "different_first_choice": false,
+      "pattern_scores": {},
+      "top": {
+        "D": {
+          "chosen_id": null,
+          "score": 0,
+          "tie_count": 0
+        },
+        "E": {
+          "chosen_id": null,
+          "score": 0,
+          "tie_count": 0
+        }
+      },
+      "weight_histogram": {}
+    },
+    "expanded_pool_hash": "85375bc075fe7131ea28f07b9d3b5d026a8c2c98e96098fb7767acc4d79a1705",
+    "expanded_pool_size": 33270,
+    "expansion": {
+      "complete": true,
+      "joint_before_cap": 33270,
+      "pool_size": 33270,
+      "segment_enumerated": [
+        742,
+        88
+      ]
+    },
+    "family": "scope",
+    "frozen_pool_size": 256,
+    "modes": [
+      "bus"
+    ],
+    "reference_equivalent_after": false,
+    "reference_equivalent_before": false,
+    "reference_feasible_after": 25845,
+    "reference_feasible_before": 204,
+    "scenario_id": "pilot-45",
+    "semantic_classes_after": 1,
+    "semantic_classes_before": 1,
+    "transfer_values_by_scope": {
+      "outbound": [
+        0,
+        1
+      ],
+      "return": [
+        0,
+        1
+      ]
+    },
+    "witness_partitions_after": 0,
+    "witness_partitions_before": 0
+  },
+  {
+    "clauses_after": [
+      {
+        "accepted": 0,
+        "effect": "always_false",
+        "marginal_exclusions": 156,
+        "pool_size": 156,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "forbidden_modes",
+          "target": [
+            "bus"
+          ]
+        }
+      }
+    ],
+    "clauses_before": [
+      {
+        "accepted": 0,
+        "effect": "always_false",
+        "marginal_exclusions": 64,
+        "pool_size": 64,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "forbidden_modes",
+          "target": [
+            "bus"
+          ]
+        }
+      }
+    ],
+    "expanded_candidate_plans": [
+      {
+        "accepted": 0,
+        "candidate_id": "c0",
+        "correct_selected_plan": false,
+        "plan_id": null,
+        "status": "infeasible_in_pool"
+      }
+    ],
+    "expanded_initial_ranking": {
+      "different_first_choice": false,
+      "pattern_scores": {},
+      "top": {
+        "D": {
+          "chosen_id": null,
+          "score": 0,
+          "tie_count": 0
+        },
+        "E": {
+          "chosen_id": null,
+          "score": 0,
+          "tie_count": 0
+        }
+      },
+      "weight_histogram": {}
+    },
+    "expanded_pool_hash": "6793acde96258fbb90a8f8fe2b2e83c9dac36d1b054fe3d8e59497c04db73e12",
+    "expanded_pool_size": 156,
+    "expansion": {
+      "complete": true,
+      "joint_before_cap": 156,
+      "pool_size": 156,
+      "segment_enumerated": [
+        156
+      ]
+    },
+    "family": "infeasible",
+    "frozen_pool_size": 64,
+    "modes": [
+      "bus"
+    ],
+    "reference_equivalent_after": true,
+    "reference_equivalent_before": true,
+    "reference_feasible_after": 0,
+    "reference_feasible_before": 0,
+    "scenario_id": "pilot-46",
+    "semantic_classes_after": 1,
+    "semantic_classes_before": 1,
+    "transfer_values_by_scope": {
+      "outbound": [
+        0,
+        1
+      ]
+    },
+    "witness_partitions_after": 0,
+    "witness_partitions_before": 0
+  },
+  {
+    "clauses_after": [
+      {
+        "accepted": 25,
+        "effect": "always_true",
+        "marginal_exclusions": 0,
+        "pool_size": 25,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "transfer_limit",
+          "target": 1
+        }
+      },
+      {
+        "accepted": 16,
+        "effect": "varies",
+        "marginal_exclusions": 9,
+        "pool_size": 25,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "earliest_departure",
+          "target": 29479
+        }
+      }
+    ],
+    "clauses_before": [
+      {
+        "accepted": 25,
+        "effect": "always_true",
+        "marginal_exclusions": 0,
+        "pool_size": 25,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "transfer_limit",
+          "target": 1
+        }
+      },
+      {
+        "accepted": 16,
+        "effect": "varies",
+        "marginal_exclusions": 9,
+        "pool_size": 25,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "earliest_departure",
+          "target": 29479
+        }
+      }
+    ],
+    "expanded_candidate_plans": [
+      {
+        "accepted": 9,
+        "candidate_id": "c0",
+        "correct_selected_plan": true,
+        "plan_id": "f7eccaa8180760187d13",
+        "status": "satisfiable"
+      },
+      {
+        "accepted": 16,
+        "candidate_id": "c1",
+        "correct_selected_plan": true,
+        "plan_id": "3308798f8236675e079f",
+        "status": "satisfiable"
+      }
+    ],
+    "expanded_initial_ranking": {
+      "different_first_choice": false,
+      "pattern_scores": {
+        "01": {
+          "D": 1,
+          "E": 2,
+          "count": 7,
+          "first_id": "00e4b6b8ab7e5a7d0d65"
+        }
+      },
+      "top": {
+        "D": {
+          "chosen_id": "00e4b6b8ab7e5a7d0d65",
+          "score": 1,
+          "tie_count": 7
+        },
+        "E": {
+          "chosen_id": "00e4b6b8ab7e5a7d0d65",
+          "score": 2,
+          "tie_count": 7
+        }
+      },
+      "weight_histogram": {
+        "2": 1
+      }
+    },
+    "expanded_pool_hash": "b4418368fba5feff9ec5c2647a81f6be6ef700b4cb7364639a6ab229c778f427",
+    "expanded_pool_size": 25,
+    "expansion": {
+      "complete": true,
+      "joint_before_cap": 25,
+      "pool_size": 25,
+      "segment_enumerated": [
+        25
+      ]
+    },
+    "family": "transfers",
+    "frozen_pool_size": 25,
+    "modes": [
+      "bus"
+    ],
+    "reference_equivalent_after": true,
+    "reference_equivalent_before": true,
+    "reference_feasible_after": 16,
+    "reference_feasible_before": 16,
+    "scenario_id": "pilot-47",
+    "semantic_classes_after": 2,
+    "semantic_classes_before": 2,
+    "transfer_values_by_scope": {
+      "outbound": [
+        0,
+        1
+      ]
+    },
+    "witness_partitions_after": 1,
+    "witness_partitions_before": 1
+  }
+]

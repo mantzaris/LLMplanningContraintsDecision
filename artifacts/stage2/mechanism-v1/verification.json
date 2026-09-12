@@ -1,0 +1,96 @@
+{
+  "exact_replay_matches": 48,
+  "exact_replay_pairs": 48,
+  "files": {
+    "artifacts/stage2/mechanism-v1/all-bundles.csv": {
+      "bytes": 284830,
+      "sha256": "f1b2c29c4674485fb5174fb5d8f4000eb74cdfd6df608c204e6afbacba9bc001"
+    },
+    "artifacts/stage2/mechanism-v1/budget-outcomes.csv": {
+      "bytes": 75084,
+      "sha256": "818c024926cfabe58334f221eef0dbce15e1639f1d08ab1f08d426a4bb229973"
+    },
+    "artifacts/stage2/mechanism-v1/budget-outcomes.json": {
+      "bytes": 292386,
+      "sha256": "5e505d337ffcafdd6ed916d47a4456945d365ca770b3fe6f15d0896907b87442"
+    },
+    "artifacts/stage2/mechanism-v1/bundles.json": {
+      "bytes": 1798197,
+      "sha256": "24ddde2a4f7497dc4109a6941cf1dc03c2dd9eef00b83bff966f9218da3d6a29"
+    },
+    "artifacts/stage2/mechanism-v1/divergent-cases.json": {
+      "bytes": 136455,
+      "sha256": "576467b29fbdcd7de902c300f94c7ab23a5ea4789da8bdb0c82ae414e621c78a"
+    },
+    "artifacts/stage2/mechanism-v1/failure-taxonomy.csv": {
+      "bytes": 5876,
+      "sha256": "d041a827631d2548fbbba387f1c034ecb5597228e1891d4f92bebd1bbb4f450b"
+    },
+    "artifacts/stage2/mechanism-v1/failures.json": {
+      "bytes": 99550,
+      "sha256": "c02826a2caf88de2db6ca320ee9988950b2ce4d95f21768dedfafa304c51cf97"
+    },
+    "artifacts/stage2/mechanism-v1/judgments.json": {
+      "bytes": 25690,
+      "sha256": "b9ef59b3bb43cb3377be507f0747d7c300bcf5de7920020ff90ce2341a76c080"
+    },
+    "artifacts/stage2/mechanism-v1/pool-sensitivity.json": {
+      "bytes": 137197,
+      "sha256": "18d0d19a2995caad95d051c74eb4018c69c7e371d457e05f185861ee7a4791f1"
+    },
+    "artifacts/stage2/mechanism-v1/provenance.json": {
+      "bytes": 1440,
+      "sha256": "4ba75659d8a4ac76d2b671c4733e750d189236de654fb464c5fbc0d6bc08f19e"
+    },
+    "artifacts/stage2/mechanism-v1/replay-verification.json": {
+      "bytes": 1347,
+      "sha256": "5c2df8d7edc142b509e4e59160e07a057f9822baf2154f37f31e842b717bc887"
+    },
+    "artifacts/stage2/mechanism-v1/report-reproduction.json": {
+      "bytes": 368,
+      "sha256": "5551fcd81d73d154579af23a34eac86259030579760e5e9bc4b12068c3ffbfd2"
+    },
+    "artifacts/stage2/mechanism-v1/summary.json": {
+      "bytes": 1122,
+      "sha256": "bc464fe64894a5fff9533723251d73d93ee7f24b08be2666856e9ac650dbf267"
+    },
+    "artifacts/stage2/mechanism-v1/time-value-sensitivity.json": {
+      "bytes": 407647,
+      "sha256": "73b6aa01e47ba0e6937e708f047bc94b98c57e76b566ca738dbd2b07020f828a"
+    },
+    "reports/STAGE2_MECHANISM_DIAGNOSIS.md": {
+      "bytes": 41132,
+      "sha256": "a114633f1cfd10a5b426ed74674994f095c91a75e7310eadc3dafe13248f6310"
+    },
+    "scripts/stage2_mechanism_diagnosis.py": {
+      "bytes": 29247,
+      "sha256": "392356170405a8483c7b5c2532ab53a3e4fd076083031b3b67e9035bf0597a37"
+    },
+    "scripts/stage2_mechanism_report.md": {
+      "bytes": 31557,
+      "sha256": "68aefd45b4e7ac1315c395a85497cb17dcf7a1f296bc9b226c7fe8d0c51a0518"
+    },
+    "scripts/stage2_mechanism_report.py": {
+      "bytes": 19335,
+      "sha256": "a67a13ef9c1d6239c69caa5fad9de763b551321ef4ee78474d645d9e51356144"
+    },
+    "tests/test_mechanism_diagnosis.py": {
+      "bytes": 5618,
+      "sha256": "e651e554982853e8e20f222e748a2ee952a221d31eb36b44637325b9207bd4b2"
+    }
+  },
+  "focused_tests": {
+    "command": ".venv/bin/pytest -q tests/test_mechanism_diagnosis.py",
+    "exhaustive_matrix_cost_systems": 324,
+    "grouped_expanded_ranking_checked_against_exact_scores": true,
+    "passed": 2
+  },
+  "historical_gpu_ledger_unchanged": true,
+  "new_gpu_generations": 0,
+  "new_gpu_seconds": 0,
+  "report_regenerated_byte_identically": true,
+  "ruff": {
+    "command": ".venv/bin/ruff check scripts/stage2_mechanism_diagnosis.py scripts/stage2_mechanism_report.py tests/test_mechanism_diagnosis.py",
+    "exit_code": 0
+  }
+}
