@@ -6,12 +6,19 @@ from .domain import Journey, PublicScenario
 from .render import render_journey
 from .util import canonical
 
-VERSION = "stage1-v1"
+VERSION = "stage1-v2-schema-clarification"
 LANGUAGE = """Translate the original request into the specified JSON constraint language, not Python.
 Return one JSON object only: status ok, formula, unsupported []; or status unsupported,
 formula null, unsupported [description]. Never omit an unsupported requirement silently.
 Formula nodes: {kind:all,children:[...]}, {kind:not,child:...}, or
 {kind:atom,op:...,scope:...,value:...,unit:...,source:null or {start:...,end:...}}.
+IMPORTANT: Every leaf must have "kind":"atom" AND a separate "op" key.
+An operation such as arrive_by or depart_ge is NEVER a kind.
+For example, a standalone requirement to leave at or after 01:02:00 is:
+{"status":"ok","formula":{"kind":"atom","op":"depart_ge","scope":"outbound",
+"value":3720,"unit":"seconds","source":null},"unsupported":[]}.
+Do not copy that example's time; translate the actual request. Convert HH:MM:SS
+using HH*3600 + MM*60 + SS, without a timezone offset or AM/PM conversion.
 Source offsets are zero-based half-open character offsets into the ORIGINAL request.
 Use source:null if unsure. Scope is all or an explicitly named public segment.
 Ops: arrive_by (arrival <= seconds), depart_ge (departure >= seconds),
@@ -45,6 +52,8 @@ def translation_prompt(scenario: PublicScenario) -> str:
     )
     return (
         LANGUAGE
+        + "\nExact JSON schema:\n"
+        + canonical(Interpretation.model_json_schema())
         + "\nPublic metadata:\n"
         + canonical(metadata)
         + "\nORIGINAL request:\n"
