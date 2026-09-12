@@ -1,0 +1,38 @@
+{
+  "alternate_route_search": {
+    "jupyter_connection_found": false,
+    "other_pod_connections_used": false,
+    "runpod_cli_api_key_configured": false,
+    "runpod_cli_configuration_exists": true,
+    "runpod_environment_credential_configured": false,
+    "same_pod_ssh_configuration_found": false
+  },
+  "attempt_identity": "stage2-execution-20260912",
+  "dns": {
+    "resolved": true
+  },
+  "elapsed_seconds": 136.33806662401184,
+  "new_ssh_authentication_attempts": 1,
+  "pod_or_billing_mutations": false,
+  "pod_state": "unknown; no pod shell/control-plane credential available",
+  "prior_recorded_gateway_attempts": 3,
+  "private_logs": "retained locally outside Git; not included in artifact archive",
+  "required_user_action": "Provide a current working Connect-panel connection for this same existing pod.",
+  "ssh": {
+    "authenticated": true,
+    "authentication_failed": false,
+    "connection_established": true,
+    "exit_code": 0,
+    "gateway_publickey_offered": true,
+    "gateway_upstream_timeout": true,
+    "host_key_verified": true,
+    "shell_ready_line": false
+  },
+  "starting_revision": "0e31373734c8b2077b6194fc65cf294b1f42cbf3",
+  "tcp_gateway": {
+    "connected": true,
+    "ssh_banner": "SSH-2.0-Go"
+  },
+  "troubleshooting_completed_utc": "2026-09-12T18:01:35Z",
+  "troubleshooting_started_utc": "2026-09-12T17:55:44Z"
+}

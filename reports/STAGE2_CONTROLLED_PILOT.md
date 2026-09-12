@@ -309,3 +309,10 @@ Exact commands and shell/stdin transfer instructions are in
 [Stage 2 reproduction](../docs/stage2-running.md). The protocol commit was pushed to
 `origin/main` before analysis; the final delivery commit records this report and actual
 artifacts, with remote equality verified in the delivery response.
+
+## Later completion attempt
+
+The subsequent [GPU execution report](STAGE2_GPU_EXECUTION.md) preserves this historical
+CPU-only report and records the renewed layered connectivity diagnosis, unchanged
+protocol, annotation/universe checks, local artifact preservation, and actual fresh
+execution status. This report's four-case reanalysis is not a fresh GPU pilot result.

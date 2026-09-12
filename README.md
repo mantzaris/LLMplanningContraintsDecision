@@ -26,3 +26,7 @@ with no distinguishing witnesses and no oracle improvement; it is not the fresh 
 See [protocol](docs/stage2-protocol.md), [annotation review](data/pilot/annotation-review.csv)
 and [exact reproduction/resume commands](docs/stage2-running.md). The research conclusion
 is inconclusive, with no demonstrated selection advantage.
+
+The subsequent [GPU completion attempt](reports/STAGE2_GPU_EXECUTION.md) isolated the
+blocker to the gateway's connection to the pod after successful key authentication.
+The fresh pilot remains unrun; the frozen inputs and all retained records are preserved.

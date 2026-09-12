@@ -1,0 +1,37 @@
+{
+  "annotation_issues": [],
+  "annotation_status": "provisional, automatically checked, not human audited",
+  "families": {
+    "infeasible": 8,
+    "mode_exclusion": 8,
+    "ordered_visits": 8,
+    "scope": 8,
+    "timing": 8,
+    "transfers": 8
+  },
+  "invariants": {
+    "config": true,
+    "data_manifest": true,
+    "feed": true,
+    "no_injected_errors": true,
+    "prompts": true,
+    "public": true,
+    "reference_ids": true,
+    "references": true,
+    "scenario_order": true,
+    "unique_base_requests": true
+  },
+  "journey_memberships_checked": 4366,
+  "model_calls": 0,
+  "protocol_amendments": [],
+  "protocol_hash": "4fafc990fa3d346b741dc2ad5993413036392044ab4869b77492abab2e1df6ca",
+  "public_pool_count": 48,
+  "reference_feasible_count": 40,
+  "reference_infeasible_count": 8,
+  "repository_revision": "0e31373734c8b2077b6194fc65cf294b1f42cbf3",
+  "review_export_sha256": "1c091c985d39e8b6c8ca4ed276b07a7d1d65edb3d20c04a24bbc34d90c80939d",
+  "scenario_count": 48,
+  "stage1_ledger_sha256": "d8a637e63849ca326d38260867cb7d42d9b3f1d2f58a36758b65d87bc318c824",
+  "stage2_ledger_sha256": "dc6d6454c33f46d994c8629f9c561f2b233c278d2a2cffd0394117db8dba4a99",
+  "universe_checks": "public request endpoints/date, scope/order, stop/trip identities, ride limits, chronological calls and connections, horizon, frozen routes/modes"
+}

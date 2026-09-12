@@ -162,3 +162,13 @@ Current Stage 2 raw artifacts have not been copied to the unreachable pod. They 
 locally under ignored `runs/` and `data/prepared/stage2/`; committed hash manifests and
 compact results document their identities. This storage limitation remains explicit
 until remote replication is verified.
+
+## Completion-attempt diagnostics and preservation
+
+The [GPU execution report](../reports/STAGE2_GPU_EXECUTION.md) documents the bounded
+layered access check and remaining blocker. Gateway authentication succeeds, but the
+upstream pod connection times out; a zero gateway exit status does not prove shell access.
+The new offline `scripts/stage2_preflight.py` checks frozen hashes, annotation wording
+and public journey consistency. `scripts/preserve_stage2.py` creates a local archive
+with per-member checksum verification; it does not claim remote replication. Use the
+report's exact commands and inspect any pod-side ledger before resuming the allocation.

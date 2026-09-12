@@ -1,0 +1,418 @@
+{
+  "E_minus_D_correct_resolution": null,
+  "completed_pairs": 0,
+  "cumulative_gpu_seconds": 237.39021502621472,
+  "fresh_base_requests_executed": 0,
+  "fresh_oracle_result": null,
+  "historical_uncertainty_upper_bound_seconds": 30,
+  "human_annotation_review": "provisional, not human audited",
+  "missing_pairs": [
+    {
+      "replicate": 0,
+      "scenario_id": "pilot-00"
+    },
+    {
+      "replicate": 0,
+      "scenario_id": "pilot-01"
+    },
+    {
+      "replicate": 0,
+      "scenario_id": "pilot-02"
+    },
+    {
+      "replicate": 0,
+      "scenario_id": "pilot-03"
+    },
+    {
+      "replicate": 0,
+      "scenario_id": "pilot-04"
+    },
+    {
+      "replicate": 0,
+      "scenario_id": "pilot-05"
+    },
+    {
+      "replicate": 0,
+      "scenario_id": "pilot-06"
+    },
+    {
+      "replicate": 0,
+      "scenario_id": "pilot-07"
+    },
+    {
+      "replicate": 0,
+      "scenario_id": "pilot-08"
+    },
+    {
+      "replicate": 0,
+      "scenario_id": "pilot-09"
+    },
+    {
+      "replicate": 0,
+      "scenario_id": "pilot-10"
+    },
+    {
+      "replicate": 0,
+      "scenario_id": "pilot-11"
+    },
+    {
+      "replicate": 0,
+      "scenario_id": "pilot-12"
+    },
+    {
+      "replicate": 0,
+      "scenario_id": "pilot-13"
+    },
+    {
+      "replicate": 0,
+      "scenario_id": "pilot-14"
+    },
+    {
+      "replicate": 0,
+      "scenario_id": "pilot-15"
+    },
+    {
+      "replicate": 0,
+      "scenario_id": "pilot-16"
+    },
+    {
+      "replicate": 0,
+      "scenario_id": "pilot-17"
+    },
+    {
+      "replicate": 0,
+      "scenario_id": "pilot-18"
+    },
+    {
+      "replicate": 0,
+      "scenario_id": "pilot-19"
+    },
+    {
+      "replicate": 0,
+      "scenario_id": "pilot-20"
+    },
+    {
+      "replicate": 0,
+      "scenario_id": "pilot-21"
+    },
+    {
+      "replicate": 0,
+      "scenario_id": "pilot-22"
+    },
+    {
+      "replicate": 0,
+      "scenario_id": "pilot-23"
+    },
+    {
+      "replicate": 0,
+      "scenario_id": "pilot-24"
+    },
+    {
+      "replicate": 0,
+      "scenario_id": "pilot-25"
+    },
+    {
+      "replicate": 0,
+      "scenario_id": "pilot-26"
+    },
+    {
+      "replicate": 0,
+      "scenario_id": "pilot-27"
+    },
+    {
+      "replicate": 0,
+      "scenario_id": "pilot-28"
+    },
+    {
+      "replicate": 0,
+      "scenario_id": "pilot-29"
+    },
+    {
+      "replicate": 0,
+      "scenario_id": "pilot-30"
+    },
+    {
+      "replicate": 0,
+      "scenario_id": "pilot-31"
+    },
+    {
+      "replicate": 0,
+      "scenario_id": "pilot-32"
+    },
+    {
+      "replicate": 0,
+      "scenario_id": "pilot-33"
+    },
+    {
+      "replicate": 0,
+      "scenario_id": "pilot-34"
+    },
+    {
+      "replicate": 0,
+      "scenario_id": "pilot-35"
+    },
+    {
+      "replicate": 0,
+      "scenario_id": "pilot-36"
+    },
+    {
+      "replicate": 0,
+      "scenario_id": "pilot-37"
+    },
+    {
+      "replicate": 0,
+      "scenario_id": "pilot-38"
+    },
+    {
+      "replicate": 0,
+      "scenario_id": "pilot-39"
+    },
+    {
+      "replicate": 0,
+      "scenario_id": "pilot-40"
+    },
+    {
+      "replicate": 0,
+      "scenario_id": "pilot-41"
+    },
+    {
+      "replicate": 0,
+      "scenario_id": "pilot-42"
+    },
+    {
+      "replicate": 0,
+      "scenario_id": "pilot-43"
+    },
+    {
+      "replicate": 0,
+      "scenario_id": "pilot-44"
+    },
+    {
+      "replicate": 0,
+      "scenario_id": "pilot-45"
+    },
+    {
+      "replicate": 0,
+      "scenario_id": "pilot-46"
+    },
+    {
+      "replicate": 0,
+      "scenario_id": "pilot-47"
+    },
+    {
+      "replicate": 1,
+      "scenario_id": "pilot-00"
+    },
+    {
+      "replicate": 1,
+      "scenario_id": "pilot-01"
+    },
+    {
+      "replicate": 1,
+      "scenario_id": "pilot-02"
+    },
+    {
+      "replicate": 1,
+      "scenario_id": "pilot-03"
+    },
+    {
+      "replicate": 1,
+      "scenario_id": "pilot-04"
+    },
+    {
+      "replicate": 1,
+      "scenario_id": "pilot-05"
+    },
+    {
+      "replicate": 1,
+      "scenario_id": "pilot-06"
+    },
+    {
+      "replicate": 1,
+      "scenario_id": "pilot-07"
+    },
+    {
+      "replicate": 1,
+      "scenario_id": "pilot-08"
+    },
+    {
+      "replicate": 1,
+      "scenario_id": "pilot-09"
+    },
+    {
+      "replicate": 1,
+      "scenario_id": "pilot-10"
+    },
+    {
+      "replicate": 1,
+      "scenario_id": "pilot-11"
+    },
+    {
+      "replicate": 1,
+      "scenario_id": "pilot-12"
+    },
+    {
+      "replicate": 1,
+      "scenario_id": "pilot-13"
+    },
+    {
+      "replicate": 1,
+      "scenario_id": "pilot-14"
+    },
+    {
+      "replicate": 1,
+      "scenario_id": "pilot-15"
+    },
+    {
+      "replicate": 1,
+      "scenario_id": "pilot-16"
+    },
+    {
+      "replicate": 1,
+      "scenario_id": "pilot-17"
+    },
+    {
+      "replicate": 1,
+      "scenario_id": "pilot-18"
+    },
+    {
+      "replicate": 1,
+      "scenario_id": "pilot-19"
+    },
+    {
+      "replicate": 1,
+      "scenario_id": "pilot-20"
+    },
+    {
+      "replicate": 1,
+      "scenario_id": "pilot-21"
+    },
+    {
+      "replicate": 1,
+      "scenario_id": "pilot-22"
+    },
+    {
+      "replicate": 1,
+      "scenario_id": "pilot-23"
+    },
+    {
+      "replicate": 1,
+      "scenario_id": "pilot-24"
+    },
+    {
+      "replicate": 1,
+      "scenario_id": "pilot-25"
+    },
+    {
+      "replicate": 1,
+      "scenario_id": "pilot-26"
+    },
+    {
+      "replicate": 1,
+      "scenario_id": "pilot-27"
+    },
+    {
+      "replicate": 1,
+      "scenario_id": "pilot-28"
+    },
+    {
+      "replicate": 1,
+      "scenario_id": "pilot-29"
+    },
+    {
+      "replicate": 1,
+      "scenario_id": "pilot-30"
+    },
+    {
+      "replicate": 1,
+      "scenario_id": "pilot-31"
+    },
+    {
+      "replicate": 1,
+      "scenario_id": "pilot-32"
+    },
+    {
+      "replicate": 1,
+      "scenario_id": "pilot-33"
+    },
+    {
+      "replicate": 1,
+      "scenario_id": "pilot-34"
+    },
+    {
+      "replicate": 1,
+      "scenario_id": "pilot-35"
+    },
+    {
+      "replicate": 1,
+      "scenario_id": "pilot-36"
+    },
+    {
+      "replicate": 1,
+      "scenario_id": "pilot-37"
+    },
+    {
+      "replicate": 1,
+      "scenario_id": "pilot-38"
+    },
+    {
+      "replicate": 1,
+      "scenario_id": "pilot-39"
+    },
+    {
+      "replicate": 1,
+      "scenario_id": "pilot-40"
+    },
+    {
+      "replicate": 1,
+      "scenario_id": "pilot-41"
+    },
+    {
+      "replicate": 1,
+      "scenario_id": "pilot-42"
+    },
+    {
+      "replicate": 1,
+      "scenario_id": "pilot-43"
+    },
+    {
+      "replicate": 1,
+      "scenario_id": "pilot-44"
+    },
+    {
+      "replicate": 1,
+      "scenario_id": "pilot-45"
+    },
+    {
+      "replicate": 1,
+      "scenario_id": "pilot-46"
+    },
+    {
+      "replicate": 1,
+      "scenario_id": "pilot-47"
+    }
+  ],
+  "new_gpu_generation_attempts": 0,
+  "planned_base_requests": 48,
+  "planned_pairs": 96,
+  "planned_replicates": 2,
+  "primary_data_or_method_changes": false,
+  "protocol_amendments": [],
+  "recorded_at": "2026-09-12T18:03:59.243340+00:00",
+  "selector_divergence": null,
+  "stage1_gpu_generation_attempts": 46,
+  "stage1_ledger_sha256": "d8a637e63849ca326d38260867cb7d42d9b3f1d2f58a36758b65d87bc318c824",
+  "stage2_allocation": [
+    {
+      "event": "allocation",
+      "request_limit": 1500,
+      "seconds_limit": 7170,
+      "stage": "stage2"
+    }
+  ],
+  "stage2_gpu_generation_attempts": 0,
+  "stage2_gpu_seconds": 0,
+  "stage2_ledger_sha256": "dc6d6454c33f46d994c8629f9c561f2b233c278d2a2cffd0394117db8dba4a99",
+  "status": "blocked_before_gpu_execution",
+  "useful_candidate_alternatives": null
+}

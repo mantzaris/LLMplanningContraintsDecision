@@ -1,0 +1,10 @@
+{
+  "kind": "historical verification, not fresh pilot",
+  "source_run": "stage2-history-v2",
+  "verification": {
+    "g00-infeasible-p0-r0.json": true,
+    "g00-negation-p0-r0.json": true,
+    "g00-scope-p0-r0.json": true,
+    "g00-timing-p0-r0.json": true
+  }
+}

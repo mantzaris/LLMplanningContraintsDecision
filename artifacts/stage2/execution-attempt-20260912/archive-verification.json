@@ -1,0 +1,11 @@
+{
+  "archive": "runs/stage2-preservation-20260912-execution/stage2-retained-artifacts.tar.gz",
+  "archive_bytes": 693342,
+  "archive_sha256": "f5cfac0529e88e971b1a384bf3383ed6113b43d2de25f0592c59f3459e2fc62a",
+  "intended_remote_root": "/workspace/LLMplanningConstraintsStage2/preservation",
+  "remote_replication_verified": false,
+  "source_manifest_sha256": "dc97265fa80fb7a1fb90bb7f9e9babc365996fd156b51c06123e547880cd4e9d",
+  "storage_status": "local archive verified; not independently or remotely replicated",
+  "uncompressed_bytes": 21305080,
+  "verified_members": 154
+}
