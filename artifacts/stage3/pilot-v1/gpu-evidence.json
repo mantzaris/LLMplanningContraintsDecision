@@ -1,0 +1,122 @@
+{
+  "runs/stage3-development/gpu-after-1789267643254427384.json": {
+    "architecture_support": [
+      "sm_70",
+      "sm_75",
+      "sm_80",
+      "sm_86",
+      "sm_90",
+      "sm_100",
+      "sm_120"
+    ],
+    "cuda_available": true,
+    "cuda_runtime": "12.8",
+    "device": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+    "gpu_processes": "451512, /workspace/LLMplanningConstraintsStage1/.venv/bin/python, 706 MiB",
+    "gpu_status": "NVIDIA RTX PRO 6000 Blackwell Server Edition, 97887 MiB, 715 MiB, 0 %, 595.91.07",
+    "torch": "2.8.0+cu128"
+  },
+  "runs/stage3-development/gpu-evidence-1789267643254427384.json": {
+    "before": {
+      "architecture_support": [
+        "sm_70",
+        "sm_75",
+        "sm_80",
+        "sm_86",
+        "sm_90",
+        "sm_100",
+        "sm_120"
+      ],
+      "cuda_available": true,
+      "cuda_runtime": "12.8",
+      "device": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "gpu_processes": "",
+      "gpu_status": "NVIDIA RTX PRO 6000 Blackwell Server Edition, 97887 MiB, 3 MiB, 0 %, 595.91.07",
+      "torch": "2.8.0+cu128"
+    },
+    "loaded": {
+      "loading_seconds": 3.9425478370394558,
+      "parameter_devices": [
+        "cuda:0"
+      ],
+      "pid": 451512,
+      "probe": {
+        "architecture_support": [
+          "sm_70",
+          "sm_75",
+          "sm_80",
+          "sm_86",
+          "sm_90",
+          "sm_100",
+          "sm_120"
+        ],
+        "cuda_available": true,
+        "cuda_runtime": "12.8",
+        "device": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+        "gpu_processes": "451512, /workspace/LLMplanningConstraintsStage1/.venv/bin/python, 15248 MiB",
+        "gpu_status": "NVIDIA RTX PRO 6000 Blackwell Server Edition, 97887 MiB, 15257 MiB, 28 %, 595.91.07",
+        "torch": "2.8.0+cu128"
+      }
+    }
+  },
+  "runs/stage3-fresh/gpu-after-1789268035653641410.json": {
+    "architecture_support": [
+      "sm_70",
+      "sm_75",
+      "sm_80",
+      "sm_86",
+      "sm_90",
+      "sm_100",
+      "sm_120"
+    ],
+    "cuda_available": true,
+    "cuda_runtime": "12.8",
+    "device": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+    "gpu_processes": "453639, /workspace/LLMplanningConstraintsStage1/.venv/bin/python, 706 MiB",
+    "gpu_status": "NVIDIA RTX PRO 6000 Blackwell Server Edition, 97887 MiB, 715 MiB, 2 %, 595.91.07",
+    "torch": "2.8.0+cu128"
+  },
+  "runs/stage3-fresh/gpu-evidence-1789268035653641410.json": {
+    "before": {
+      "architecture_support": [
+        "sm_70",
+        "sm_75",
+        "sm_80",
+        "sm_86",
+        "sm_90",
+        "sm_100",
+        "sm_120"
+      ],
+      "cuda_available": true,
+      "cuda_runtime": "12.8",
+      "device": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "gpu_processes": "",
+      "gpu_status": "NVIDIA RTX PRO 6000 Blackwell Server Edition, 97887 MiB, 3 MiB, 0 %, 595.91.07",
+      "torch": "2.8.0+cu128"
+    },
+    "loaded": {
+      "loading_seconds": 4.634366472018883,
+      "parameter_devices": [
+        "cuda:0"
+      ],
+      "pid": 453639,
+      "probe": {
+        "architecture_support": [
+          "sm_70",
+          "sm_75",
+          "sm_80",
+          "sm_86",
+          "sm_90",
+          "sm_100",
+          "sm_120"
+        ],
+        "cuda_available": true,
+        "cuda_runtime": "12.8",
+        "device": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+        "gpu_processes": "453639, /workspace/LLMplanningConstraintsStage1/.venv/bin/python, 15248 MiB",
+        "gpu_status": "NVIDIA RTX PRO 6000 Blackwell Server Edition, 97887 MiB, 15257 MiB, 20 %, 595.91.07",
+        "torch": "2.8.0+cu128"
+      }
+    }
+  }
+}

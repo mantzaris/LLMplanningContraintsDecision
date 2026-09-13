@@ -1,0 +1,32 @@
+{
+  "archives": [
+    {
+      "local_path": "runs/stage3-preserved/development-raw.tar.gz",
+      "name": "development-raw.tar.gz",
+      "remote_path": "/workspace/LLMplanningConstraintsStage3/transfers/development-raw.tar.gz",
+      "sha256": "34ef1d69d53eb8d31b230cd73612d85c6e5dd0c61ac4fe86ba3a324f8c440380",
+      "verified_replication": true
+    },
+    {
+      "local_path": "runs/stage3-preserved/fresh-execution-raw.tar.gz",
+      "name": "fresh-execution-raw.tar.gz",
+      "remote_path": "/workspace/LLMplanningConstraintsStage3/transfers/fresh-execution-raw.tar.gz",
+      "sha256": "fed00b905697e3344e9d14c6471e05d93222b23fed3e5240f6751a1d80487e86",
+      "verified_replication": true
+    },
+    {
+      "contains": "development and fresh raw generations/pools; separate oracle outputs; CPU replays; stage ledger; setup notes; prepared public inputs and provisional references",
+      "local_path": "runs/stage3-preserved/complete-raw.tar.gz",
+      "name": "complete-raw.tar.gz",
+      "remote_path": "/workspace/LLMplanningConstraintsStage3/transfers/complete-raw.tar.gz",
+      "sha256": "859bb53e3070243ac7c41308d4c2056233f312caf48c5c4bd8145ea6fe32794d",
+      "verified_replication": true
+    }
+  ],
+  "large_raw_feed_and_model_weights_in_git": false,
+  "repository_commits": {
+    "frozen_protocol": "e58c160d74b8b78e4338d8ff9f6e9d2e0887d674",
+    "implementation": "fd3c74095fe6f2a41bd6218f54669f1c2d3922fa"
+  },
+  "storage_class": "local repository ignored runs and existing persistent RunPod project volume; no external off-site permanence guarantee"
+}

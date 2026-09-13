@@ -47,3 +47,28 @@ See [compact fresh results](artifacts/stage2/pilot-v1),
 The [historical CPU-only report](reports/STAGE2_CONTROLLED_PILOT.md) and
 [earlier access failure](reports/STAGE2_GPU_ACCESS_ATTEMPT_20260912.md) are preserved;
 their four historical smoke cases are separate from the fresh pilot.
+
+
+## Semantic sampling pilot (Stage 3)
+
+The [completed exploratory study](reports/STAGE3_SEMANTIC_SAMPLING_PILOT.md) compared
+independent sampling A, generic prompt diversification B, and solver-guided feedback C
+on 32 fresh constructed requests, with common time normalization and balanced validation.
+At the common final allowance, bounded correct-candidate coverage was **27/32, 31/32,
+and 25/32**; ordinary final correctness was **28/32, 28/32, and 25/32**, respectively.
+C had zero correctness wins and three losses against each baseline, consumed about
+30% more tokens, and found no new correct behavior after the shared first two samples.
+The precommitted continuation thresholds were **not met**. Expansion of this feedback
+variant is paused; the original consequence-weighting result also remains unchanged.
+
+Oracle diagnostics reached 27/32, 31/32, and 25/32. Judge errors prevented B from
+converting all its coverage gains into correct plans. The new infrastructure includes
+full/clause signatures, bounded feedback, token admission, paired prefix evaluation,
+and exact offline replay. All 32 fresh outputs replayed and 40 tests passed. References
+remain provisional, and the bus-only, one-model, one-replicate scope limits generalization.
+
+Stage 3 used **683 actual generations and 1,260.68 measured GPU seconds**, plus ≤60 seconds
+uncertainty, including development. All project GPU processes stopped. No further inference
+is running or recommended on the evidence of this pilot. See the [frozen protocol](data/sampling/protocol.json),
+[method and commands](docs/stage3-semantic-sampling.md), [compact results and figures](artifacts/stage3/pilot-v1),
+and [verified raw-artifact storage](artifacts/stage3/pilot-v1/storage.json).

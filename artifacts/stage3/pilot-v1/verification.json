@@ -1,0 +1,20 @@
+{
+  "data_files_compared": 37,
+  "data_reproduced": true,
+  "development_replay_matches": 3,
+  "fresh_replay_matches": 32,
+  "gpu_idle_after_exit": true,
+  "historical_ledger_hashes": {
+    "runs/stage1-gpu-budget.jsonl": "d8a637e63849ca326d38260867cb7d42d9b3f1d2f58a36758b65d87bc318c824",
+    "runs/stage2-gpu-budget.jsonl": "87e13933af847422ec777cd996f6916ea565d8a2aed218165cb51ac2d632783d"
+  },
+  "historical_ledgers_unchanged": true,
+  "post_exit_probe": {
+    "compute_processes": [],
+    "gpu_utilization_percent": 0,
+    "memory_used_MiB": 0
+  },
+  "source_hash_still_matches_freeze": true,
+  "successful_generations_on_cuda": 659,
+  "tests_passed": 40
+}

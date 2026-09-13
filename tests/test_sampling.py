@@ -108,3 +108,45 @@ def test_source_only_normalization():
         "On the return segment only, depart no earlier than 10:30:00.", formula
     )
     assert unchanged == formula and not changes
+
+
+def test_prefix_validation_uses_only_current_bundle_and_charges_judge(pool, scenario):
+    from plancheck.semantic_sampling import validate_prefix
+
+    samples = [
+        {
+            **parse_sample(
+                canonical({"status": "ok", "formula": atom("depart_ge", v), "unsupported": []}),
+                scenario,
+                pool,
+            ),
+            "call": {"charged_tokens": 20},
+        }
+        for v in (100, 200)
+    ]
+    bundle = prefix_bundle(samples, 2, pool, 5000)
+
+    class Judge:
+        def __init__(self):
+            self.prompts = []
+
+        def invoke(self, prompt, *args):
+            self.prompts.append(prompt)
+            assert "Represented full behaviors" not in prompt
+            assert "signature_hash" not in prompt
+            return {
+                "raw": canonical(
+                    {"verdict": "violated", "spans": [], "reason": "diagnostic fixed judgment"}
+                ),
+                "failed": False,
+                "charged_tokens": 123,
+            }
+
+    judge = Judge()
+    cfg = {"seed": 31000, "max_new_tokens": 768, "validation_tokens_per_prefix": 4000}
+    result = validate_prefix(bundle, scenario, pool, judge, cfg, "unit")
+    assert len(judge.prompts) == 1
+    assert result["validation_tokens"] == 123
+    assert result["plan_id"] == "d"
+    assert result["repairs"] == []
+    assert "no_distinguishing_witness_in_completed_pool" in result["events"]

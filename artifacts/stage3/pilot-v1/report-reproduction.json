@@ -1,0 +1,16 @@
+{
+  "extra_diagnostics_identical": true,
+  "metric_json_files_identical": [
+    "summary.json",
+    "rows.json",
+    "discovery.json",
+    "judge-checks.json",
+    "heatmaps.json",
+    "input-checksums.json"
+  ],
+  "new_model_calls": 0,
+  "png_previews_identical": true,
+  "report_identical": true,
+  "report_script_sha256": "82374690dadcc3e6a7ffcf63bed9dbb12d6e4624862c70a4dd5c6a2d0fa1b90f",
+  "report_sha256": "66686b1509d94e98c1b4be2ab3c0bb1a60f485e93a38893e121e39b4b2433ffe"
+}

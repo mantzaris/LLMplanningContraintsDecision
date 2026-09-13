@@ -1,0 +1,135 @@
+{
+  "050c49e322809a768f680473629f07b949f8515218ce673dd0c22489b446a96b": {
+    "correct": true,
+    "journey_id": "0080fc18f33d4874c215",
+    "reference": true,
+    "scenario_id": "sampling-09",
+    "verdict": "satisfied"
+  },
+  "131240bf3ff7d2e10072e59a27e225cc979caed5870f5cb2e1f4453d244e360d": {
+    "correct": true,
+    "journey_id": "005abb37e930142b8b47",
+    "reference": true,
+    "scenario_id": "sampling-04",
+    "verdict": "satisfied"
+  },
+  "36e7370612273e671f4f2e9498828c841dc347522b5a0d64bfc06eed92af935b": {
+    "correct": true,
+    "journey_id": "03c572f19409b8bd2a6c",
+    "reference": true,
+    "scenario_id": "sampling-20",
+    "verdict": "satisfied"
+  },
+  "4156750e7668f5f78e0a8c84278612a369149fd6864aa87650c52ec12b670139": {
+    "correct": false,
+    "journey_id": "0046a48e25e956543682",
+    "reference": false,
+    "scenario_id": "sampling-20",
+    "verdict": "satisfied"
+  },
+  "44d531b2ce7f110c1563ede394c3a30fd7c1d3b5af3984d24c1b13e439983db0": {
+    "correct": true,
+    "journey_id": "1c76e1aac89c1bbb1b74",
+    "reference": false,
+    "scenario_id": "sampling-26",
+    "verdict": "violated"
+  },
+  "5595918d6f2519a8c469f5f4ea3d9f62f518d4d81942f7d940b0f9d9ebebc73e": {
+    "correct": false,
+    "journey_id": "058c88205f1210b612e1",
+    "reference": false,
+    "scenario_id": "sampling-09",
+    "verdict": "satisfied"
+  },
+  "5e67a6ebab02ab5a68a2dc9c4ab26dc4a100bc6d71e55f911c1ae31a872e98b0": {
+    "correct": false,
+    "journey_id": "1eee515033a9c13b605d",
+    "reference": false,
+    "scenario_id": "sampling-04",
+    "verdict": "satisfied"
+  },
+  "64a174db997ed06c87c8a35b13021bc1a71e74082198aac32fec0ab028bfa692": {
+    "correct": false,
+    "journey_id": "039f8c157f9afe674b88",
+    "reference": false,
+    "scenario_id": "sampling-28",
+    "verdict": "satisfied"
+  },
+  "86923feed333a619fa1220e8bdbd8895c5741532ab08a96436e2cc3bcd882a5f": {
+    "correct": true,
+    "journey_id": "00de85f0851f9bd12d64",
+    "reference": true,
+    "scenario_id": "sampling-12",
+    "verdict": "satisfied"
+  },
+  "8f4404a7d74b8876404a7d949e87c21b503c9fc1f0861cecef1cc4bd68b6144b": {
+    "correct": false,
+    "journey_id": "0620f2a29c40d1a3034e",
+    "reference": false,
+    "scenario_id": "sampling-04",
+    "verdict": "satisfied"
+  },
+  "9e31d6d40be8587f07db70f68b8aec040bebd5794a2a2aa6826556593a6c9961": {
+    "correct": true,
+    "journey_id": "00001508385ca9ebf5f1",
+    "reference": true,
+    "scenario_id": "sampling-17",
+    "verdict": "satisfied"
+  },
+  "a55b11e9fee83fa06fbdb0754612fa22d96b3ff7e698c51f70b80cf5707d5a46": {
+    "correct": false,
+    "journey_id": "00386296478d8e0c4e63",
+    "reference": false,
+    "scenario_id": "sampling-09",
+    "verdict": "satisfied"
+  },
+  "b980ee1d0c950e1852052737f96e845f008fbc313c57bd8fb9e6b7d912f69766": {
+    "correct": false,
+    "journey_id": "004977e99b44fd327c54",
+    "reference": false,
+    "scenario_id": "sampling-12",
+    "verdict": "satisfied"
+  },
+  "c61384b7847325a0b725bbc5c2335a782014a75e241ac1a1d36a4b3d4c8808c8": {
+    "correct": false,
+    "journey_id": "0041204cf5057025bb62",
+    "reference": true,
+    "scenario_id": "sampling-25",
+    "verdict": "violated"
+  },
+  "d022b945f5175e3bd50a18199556cce3cfc556facc7a4c127fe24d6bdf0be640": {
+    "correct": true,
+    "journey_id": "00b783dfaa8092dc3eae",
+    "reference": true,
+    "scenario_id": "sampling-01",
+    "verdict": "satisfied"
+  },
+  "ef2e5eaf42080be9b388594e9866f5fa52c07d80e10a62d72630dc1d27ce935e": {
+    "correct": false,
+    "journey_id": "0d82949e2afa37979f5e",
+    "reference": false,
+    "scenario_id": "sampling-28",
+    "verdict": "satisfied"
+  },
+  "f43be709082e6dc063a2c69c9f5d3ff8a75b906e71548bfc7848f75821d57e10": {
+    "correct": false,
+    "journey_id": "09dfe59fe33929832b3f",
+    "reference": false,
+    "scenario_id": "sampling-25",
+    "verdict": "satisfied"
+  },
+  "f793e7ad4cc5efa2dda9c5982e39a6fd1af6c723578515cef4ce2105ce712c11": {
+    "correct": true,
+    "journey_id": "0af9d8233251561476fc",
+    "reference": true,
+    "scenario_id": "sampling-04",
+    "verdict": "satisfied"
+  },
+  "fe30223170b8e020eafeb2768b457806d16cc6665a5a3d75109f8e6a9bb64dc8": {
+    "correct": false,
+    "journey_id": "093dbfd483e646066fdb",
+    "reference": false,
+    "scenario_id": "sampling-12",
+    "verdict": "satisfied"
+  }
+}
