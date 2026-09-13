@@ -1,0 +1,81 @@
+{
+  "annotations": "provisional developer/automated; no independent human review",
+  "assigned_bases": 32,
+  "config_hash": "8d3ad95916cc7c54f30e0f16ccc1fdddee20285afaabaaf409a7b562cc97022c",
+  "continuation": {
+    "C_minus_each_baseline_coverage": 0.1,
+    "C_minus_each_baseline_final_correctness": 0.05
+  },
+  "development": {
+    "actual_calls": 24,
+    "max_input_tokens": {
+      "judgment": 905,
+      "translation": 3509
+    },
+    "measured_gpu_seconds": 53.37405064096674,
+    "p95_call_seconds": 2.1522909130435437,
+    "run_manifest_hash": "04ac56508504c7870f75b8b74645ec0f02f2631666e9157541403947fe0e4169"
+  },
+  "forecast_seconds": {
+    "24": 3112.333969043568,
+    "32": 4109.778625391424
+  },
+  "generation": "A independent; B fixed perspectives; C same plus public behavior feedback; first 2 shared",
+  "illustrations": "first C-only coverage gain, first C failure, first three-arm tie; fallback first ID",
+  "inference_reference_access": false,
+  "metrics": [
+    "bounded_reference_signature_coverage",
+    "ordinary_final_plan_correctness"
+  ],
+  "parent_revision": "fd3c74095fe6f2a41bd6218f54669f1c2d3922fa",
+  "prompt_hash": "86cc8f54e0e7e784ff9d80ec38b71c3418c994f49b53dc8c5186b1eba1eb9df2",
+  "public_hash": "e1e806d6d3793ab1d0d11460e824900762a66014830f6dc99c45571bb7bfd34d",
+  "reference_file_hash": "1c86819f669cedadbb6cea881aace98ff6ff1593616e5b873ad9a98ba7597c7d",
+  "replicates": 1,
+  "scenario_ids": [
+    "sampling-00",
+    "sampling-01",
+    "sampling-02",
+    "sampling-03",
+    "sampling-04",
+    "sampling-05",
+    "sampling-06",
+    "sampling-07",
+    "sampling-08",
+    "sampling-09",
+    "sampling-10",
+    "sampling-11",
+    "sampling-12",
+    "sampling-13",
+    "sampling-14",
+    "sampling-15",
+    "sampling-16",
+    "sampling-17",
+    "sampling-18",
+    "sampling-19",
+    "sampling-20",
+    "sampling-21",
+    "sampling-22",
+    "sampling-23",
+    "sampling-24",
+    "sampling-25",
+    "sampling-26",
+    "sampling-27",
+    "sampling-28",
+    "sampling-29",
+    "sampling-30",
+    "sampling-31"
+  ],
+  "scope_choice_before_fresh_outputs": 32,
+  "selection": "balanced D, existing deterministic cost/tie rule, at most 2 judgments, no repairs",
+  "source_hash_at_freeze": "ee39441940e6b1a9575d2c67ef579dd488f090fc50c7e429cbccc6085deed065",
+  "stage_limits": {
+    "actual_calls": 1500,
+    "gpu_seconds": 7200,
+    "max_sessions": 4,
+    "measured_guard_seconds": 7080
+  },
+  "token_rule": "known input+output cap admission, actual I+O charge; failure reserves full; identical allocations",
+  "validation_allocation": "equal nontransferable allocation per prefix; total is three allocations",
+  "version": "stage3-provisional-v1"
+}

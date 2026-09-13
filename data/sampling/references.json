@@ -1,0 +1,634 @@
+[
+  {
+    "base_id": "sampling-00",
+    "family": "timing",
+    "human_audited": false,
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "earliest_departure",
+          "target": 39696
+        },
+        {
+          "direction": "outbound",
+          "requirement": "latest_arrival",
+          "target": 44054
+        }
+      ]
+    },
+    "reference_version": "stage3-provisional-v1",
+    "scenario_id": "sampling-00"
+  },
+  {
+    "base_id": "sampling-01",
+    "family": "latest",
+    "human_audited": false,
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "latest_departure",
+          "target": 39288
+        }
+      ]
+    },
+    "reference_version": "stage3-provisional-v1",
+    "scenario_id": "sampling-01"
+  },
+  {
+    "base_id": "sampling-02",
+    "family": "transfers",
+    "human_audited": false,
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "transfer_limit",
+          "target": 0
+        },
+        {
+          "direction": "outbound",
+          "requirement": "earliest_departure",
+          "target": 40073
+        }
+      ]
+    },
+    "reference_version": "stage3-provisional-v1",
+    "scenario_id": "sampling-02"
+  },
+  {
+    "base_id": "sampling-03",
+    "family": "timing",
+    "human_audited": false,
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "earliest_departure",
+          "target": 42686
+        },
+        {
+          "direction": "outbound",
+          "requirement": "latest_arrival",
+          "target": 43641
+        }
+      ]
+    },
+    "reference_version": "stage3-provisional-v1",
+    "scenario_id": "sampling-03"
+  },
+  {
+    "base_id": "sampling-04",
+    "family": "latest",
+    "human_audited": false,
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "latest_departure",
+          "target": 39630
+        }
+      ]
+    },
+    "reference_version": "stage3-provisional-v1",
+    "scenario_id": "sampling-04"
+  },
+  {
+    "base_id": "sampling-05",
+    "family": "transfers",
+    "human_audited": false,
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "transfer_limit",
+          "target": 0
+        },
+        {
+          "direction": "outbound",
+          "requirement": "earliest_departure",
+          "target": 41596
+        }
+      ]
+    },
+    "reference_version": "stage3-provisional-v1",
+    "scenario_id": "sampling-05"
+  },
+  {
+    "base_id": "sampling-06",
+    "family": "scope",
+    "human_audited": false,
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "transfer_limit",
+          "target": 0
+        },
+        {
+          "direction": "return",
+          "requirement": "earliest_departure",
+          "target": 45060
+        }
+      ]
+    },
+    "reference_version": "stage3-provisional-v1",
+    "scenario_id": "sampling-06"
+  },
+  {
+    "base_id": "sampling-07",
+    "family": "infeasible",
+    "human_audited": false,
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "earliest_departure",
+          "target": 43258
+        },
+        {
+          "direction": "outbound",
+          "requirement": "latest_arrival",
+          "target": 40140
+        }
+      ]
+    },
+    "reference_version": "stage3-provisional-v1",
+    "scenario_id": "sampling-07"
+  },
+  {
+    "base_id": "sampling-08",
+    "family": "timing",
+    "human_audited": false,
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "earliest_departure",
+          "target": 37197
+        },
+        {
+          "direction": "outbound",
+          "requirement": "latest_arrival",
+          "target": 44032
+        }
+      ]
+    },
+    "reference_version": "stage3-provisional-v1",
+    "scenario_id": "sampling-08"
+  },
+  {
+    "base_id": "sampling-09",
+    "family": "latest",
+    "human_audited": false,
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "latest_departure",
+          "target": 36149
+        }
+      ]
+    },
+    "reference_version": "stage3-provisional-v1",
+    "scenario_id": "sampling-09"
+  },
+  {
+    "base_id": "sampling-10",
+    "family": "transfers",
+    "human_audited": false,
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "transfer_limit",
+          "target": 0
+        },
+        {
+          "direction": "outbound",
+          "requirement": "earliest_departure",
+          "target": 41126
+        }
+      ]
+    },
+    "reference_version": "stage3-provisional-v1",
+    "scenario_id": "sampling-10"
+  },
+  {
+    "base_id": "sampling-11",
+    "family": "timing",
+    "human_audited": false,
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "earliest_departure",
+          "target": 41323
+        },
+        {
+          "direction": "outbound",
+          "requirement": "latest_arrival",
+          "target": 43080
+        }
+      ]
+    },
+    "reference_version": "stage3-provisional-v1",
+    "scenario_id": "sampling-11"
+  },
+  {
+    "base_id": "sampling-12",
+    "family": "latest",
+    "human_audited": false,
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "latest_departure",
+          "target": 36511
+        }
+      ]
+    },
+    "reference_version": "stage3-provisional-v1",
+    "scenario_id": "sampling-12"
+  },
+  {
+    "base_id": "sampling-13",
+    "family": "transfers",
+    "human_audited": false,
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "transfer_limit",
+          "target": 0
+        },
+        {
+          "direction": "outbound",
+          "requirement": "earliest_departure",
+          "target": 40320
+        }
+      ]
+    },
+    "reference_version": "stage3-provisional-v1",
+    "scenario_id": "sampling-13"
+  },
+  {
+    "base_id": "sampling-14",
+    "family": "scope",
+    "human_audited": false,
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "transfer_limit",
+          "target": 0
+        },
+        {
+          "direction": "return",
+          "requirement": "earliest_departure",
+          "target": 45473
+        }
+      ]
+    },
+    "reference_version": "stage3-provisional-v1",
+    "scenario_id": "sampling-14"
+  },
+  {
+    "base_id": "sampling-15",
+    "family": "infeasible",
+    "human_audited": false,
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "earliest_departure",
+          "target": 42720
+        },
+        {
+          "direction": "outbound",
+          "requirement": "latest_arrival",
+          "target": 39267
+        }
+      ]
+    },
+    "reference_version": "stage3-provisional-v1",
+    "scenario_id": "sampling-15"
+  },
+  {
+    "base_id": "sampling-16",
+    "family": "timing",
+    "human_audited": false,
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "earliest_departure",
+          "target": 38451
+        },
+        {
+          "direction": "outbound",
+          "requirement": "latest_arrival",
+          "target": 44296
+        }
+      ]
+    },
+    "reference_version": "stage3-provisional-v1",
+    "scenario_id": "sampling-16"
+  },
+  {
+    "base_id": "sampling-17",
+    "family": "latest",
+    "human_audited": false,
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "latest_departure",
+          "target": 41234
+        }
+      ]
+    },
+    "reference_version": "stage3-provisional-v1",
+    "scenario_id": "sampling-17"
+  },
+  {
+    "base_id": "sampling-18",
+    "family": "transfers",
+    "human_audited": false,
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "transfer_limit",
+          "target": 0
+        },
+        {
+          "direction": "outbound",
+          "requirement": "earliest_departure",
+          "target": 42960
+        }
+      ]
+    },
+    "reference_version": "stage3-provisional-v1",
+    "scenario_id": "sampling-18"
+  },
+  {
+    "base_id": "sampling-19",
+    "family": "timing",
+    "human_audited": false,
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "earliest_departure",
+          "target": 40187
+        },
+        {
+          "direction": "outbound",
+          "requirement": "latest_arrival",
+          "target": 43810
+        }
+      ]
+    },
+    "reference_version": "stage3-provisional-v1",
+    "scenario_id": "sampling-19"
+  },
+  {
+    "base_id": "sampling-20",
+    "family": "latest",
+    "human_audited": false,
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "latest_departure",
+          "target": 39300
+        }
+      ]
+    },
+    "reference_version": "stage3-provisional-v1",
+    "scenario_id": "sampling-20"
+  },
+  {
+    "base_id": "sampling-21",
+    "family": "transfers",
+    "human_audited": false,
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "transfer_limit",
+          "target": 0
+        },
+        {
+          "direction": "outbound",
+          "requirement": "earliest_departure",
+          "target": 38160
+        }
+      ]
+    },
+    "reference_version": "stage3-provisional-v1",
+    "scenario_id": "sampling-21"
+  },
+  {
+    "base_id": "sampling-22",
+    "family": "scope",
+    "human_audited": false,
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "transfer_limit",
+          "target": 0
+        },
+        {
+          "direction": "return",
+          "requirement": "earliest_departure",
+          "target": 44712
+        }
+      ]
+    },
+    "reference_version": "stage3-provisional-v1",
+    "scenario_id": "sampling-22"
+  },
+  {
+    "base_id": "sampling-23",
+    "family": "infeasible",
+    "human_audited": false,
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "earliest_departure",
+          "target": 44157
+        },
+        {
+          "direction": "outbound",
+          "requirement": "latest_arrival",
+          "target": 39412
+        }
+      ]
+    },
+    "reference_version": "stage3-provisional-v1",
+    "scenario_id": "sampling-23"
+  },
+  {
+    "base_id": "sampling-24",
+    "family": "timing",
+    "human_audited": false,
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "earliest_departure",
+          "target": 37589
+        },
+        {
+          "direction": "outbound",
+          "requirement": "latest_arrival",
+          "target": 43994
+        }
+      ]
+    },
+    "reference_version": "stage3-provisional-v1",
+    "scenario_id": "sampling-24"
+  },
+  {
+    "base_id": "sampling-25",
+    "family": "latest",
+    "human_audited": false,
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "latest_departure",
+          "target": 40254
+        }
+      ]
+    },
+    "reference_version": "stage3-provisional-v1",
+    "scenario_id": "sampling-25"
+  },
+  {
+    "base_id": "sampling-26",
+    "family": "transfers",
+    "human_audited": false,
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "transfer_limit",
+          "target": 0
+        },
+        {
+          "direction": "outbound",
+          "requirement": "earliest_departure",
+          "target": 41477
+        }
+      ]
+    },
+    "reference_version": "stage3-provisional-v1",
+    "scenario_id": "sampling-26"
+  },
+  {
+    "base_id": "sampling-27",
+    "family": "timing",
+    "human_audited": false,
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "earliest_departure",
+          "target": 40423
+        },
+        {
+          "direction": "outbound",
+          "requirement": "latest_arrival",
+          "target": 42960
+        }
+      ]
+    },
+    "reference_version": "stage3-provisional-v1",
+    "scenario_id": "sampling-27"
+  },
+  {
+    "base_id": "sampling-28",
+    "family": "latest",
+    "human_audited": false,
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "latest_departure",
+          "target": 37196
+        }
+      ]
+    },
+    "reference_version": "stage3-provisional-v1",
+    "scenario_id": "sampling-28"
+  },
+  {
+    "base_id": "sampling-29",
+    "family": "transfers",
+    "human_audited": false,
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "transfer_limit",
+          "target": 0
+        },
+        {
+          "direction": "outbound",
+          "requirement": "earliest_departure",
+          "target": 42060
+        }
+      ]
+    },
+    "reference_version": "stage3-provisional-v1",
+    "scenario_id": "sampling-29"
+  },
+  {
+    "base_id": "sampling-30",
+    "family": "scope",
+    "human_audited": false,
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "transfer_limit",
+          "target": 0
+        },
+        {
+          "direction": "return",
+          "requirement": "earliest_departure",
+          "target": 44397
+        }
+      ]
+    },
+    "reference_version": "stage3-provisional-v1",
+    "scenario_id": "sampling-30"
+  },
+  {
+    "base_id": "sampling-31",
+    "family": "infeasible",
+    "human_audited": false,
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "earliest_departure",
+          "target": 42639
+        },
+        {
+          "direction": "outbound",
+          "requirement": "latest_arrival",
+          "target": 39302
+        }
+      ]
+    },
+    "reference_version": "stage3-provisional-v1",
+    "scenario_id": "sampling-31"
+  }
+]

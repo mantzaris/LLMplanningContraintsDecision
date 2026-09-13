@@ -1,0 +1,1174 @@
+[
+  {
+    "clause_coverage": [
+      {
+        "accepted": 52,
+        "conditional_exclusions": 51,
+        "rejected": 76,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "earliest_departure",
+          "target": 39696
+        }
+      },
+      {
+        "accepted": 66,
+        "conditional_exclusions": 37,
+        "rejected": 62,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "latest_arrival",
+          "target": 44054
+        }
+      }
+    ],
+    "enumeration": {
+      "complete": false,
+      "joint_before_cap": 128,
+      "pool_size": 128,
+      "segment_enumerated": [
+        1686
+      ]
+    },
+    "family": "timing",
+    "feasible_journeys": 15,
+    "human_audited": false,
+    "pool_size": 128,
+    "primary_route": "2",
+    "scenario_id": "sampling-00",
+    "wording_matches": true
+  },
+  {
+    "clause_coverage": [
+      {
+        "accepted": 71,
+        "conditional_exclusions": 57,
+        "rejected": 57,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "latest_departure",
+          "target": 39288
+        }
+      }
+    ],
+    "enumeration": {
+      "complete": false,
+      "joint_before_cap": 128,
+      "pool_size": 128,
+      "segment_enumerated": [
+        144
+      ]
+    },
+    "family": "latest",
+    "feasible_journeys": 71,
+    "human_audited": false,
+    "pool_size": 128,
+    "primary_route": "4",
+    "scenario_id": "sampling-01",
+    "wording_matches": true
+  },
+  {
+    "clause_coverage": [
+      {
+        "accepted": 2,
+        "conditional_exclusions": 49,
+        "rejected": 126,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "transfer_limit",
+          "target": 0
+        }
+      },
+      {
+        "accepted": 50,
+        "conditional_exclusions": 1,
+        "rejected": 78,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "earliest_departure",
+          "target": 40073
+        }
+      }
+    ],
+    "enumeration": {
+      "complete": false,
+      "joint_before_cap": 128,
+      "pool_size": 128,
+      "segment_enumerated": [
+        503
+      ]
+    },
+    "family": "transfers",
+    "feasible_journeys": 1,
+    "human_audited": false,
+    "pool_size": 128,
+    "primary_route": "17",
+    "scenario_id": "sampling-02",
+    "wording_matches": true
+  },
+  {
+    "clause_coverage": [
+      {
+        "accepted": 20,
+        "conditional_exclusions": 59,
+        "rejected": 108,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "earliest_departure",
+          "target": 42686
+        }
+      },
+      {
+        "accepted": 62,
+        "conditional_exclusions": 17,
+        "rejected": 66,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "latest_arrival",
+          "target": 43641
+        }
+      }
+    ],
+    "enumeration": {
+      "complete": false,
+      "joint_before_cap": 128,
+      "pool_size": 128,
+      "segment_enumerated": [
+        1209
+      ]
+    },
+    "family": "timing",
+    "feasible_journeys": 3,
+    "human_audited": false,
+    "pool_size": 128,
+    "primary_route": "2",
+    "scenario_id": "sampling-03",
+    "wording_matches": true
+  },
+  {
+    "clause_coverage": [
+      {
+        "accepted": 80,
+        "conditional_exclusions": 48,
+        "rejected": 48,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "latest_departure",
+          "target": 39630
+        }
+      }
+    ],
+    "enumeration": {
+      "complete": false,
+      "joint_before_cap": 128,
+      "pool_size": 128,
+      "segment_enumerated": [
+        306
+      ]
+    },
+    "family": "latest",
+    "feasible_journeys": 80,
+    "human_audited": false,
+    "pool_size": 128,
+    "primary_route": "4",
+    "scenario_id": "sampling-04",
+    "wording_matches": true
+  },
+  {
+    "clause_coverage": [
+      {
+        "accepted": 6,
+        "conditional_exclusions": 28,
+        "rejected": 122,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "transfer_limit",
+          "target": 0
+        }
+      },
+      {
+        "accepted": 31,
+        "conditional_exclusions": 3,
+        "rejected": 97,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "earliest_departure",
+          "target": 41596
+        }
+      }
+    ],
+    "enumeration": {
+      "complete": false,
+      "joint_before_cap": 128,
+      "pool_size": 128,
+      "segment_enumerated": [
+        514
+      ]
+    },
+    "family": "transfers",
+    "feasible_journeys": 3,
+    "human_audited": false,
+    "pool_size": 128,
+    "primary_route": "17",
+    "scenario_id": "sampling-05",
+    "wording_matches": true
+  },
+  {
+    "clause_coverage": [
+      {
+        "accepted": 14,
+        "conditional_exclusions": 56,
+        "rejected": 242,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "transfer_limit",
+          "target": 0
+        }
+      },
+      {
+        "accepted": 59,
+        "conditional_exclusions": 11,
+        "rejected": 197,
+        "rule": {
+          "direction": "return",
+          "requirement": "earliest_departure",
+          "target": 45060
+        }
+      }
+    ],
+    "enumeration": {
+      "complete": false,
+      "joint_before_cap": 6272,
+      "pool_size": 256,
+      "segment_enumerated": [
+        150,
+        49
+      ]
+    },
+    "family": "scope",
+    "feasible_journeys": 3,
+    "human_audited": false,
+    "pool_size": 256,
+    "primary_route": "2",
+    "scenario_id": "sampling-06",
+    "wording_matches": true
+  },
+  {
+    "clause_coverage": [
+      {
+        "accepted": 13,
+        "conditional_exclusions": 21,
+        "rejected": 115,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "earliest_departure",
+          "target": 43258
+        }
+      },
+      {
+        "accepted": 21,
+        "conditional_exclusions": 13,
+        "rejected": 107,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "latest_arrival",
+          "target": 40140
+        }
+      }
+    ],
+    "enumeration": {
+      "complete": false,
+      "joint_before_cap": 128,
+      "pool_size": 128,
+      "segment_enumerated": [
+        452
+      ]
+    },
+    "family": "infeasible",
+    "feasible_journeys": 0,
+    "human_audited": false,
+    "pool_size": 128,
+    "primary_route": "4",
+    "scenario_id": "sampling-07",
+    "wording_matches": true
+  },
+  {
+    "clause_coverage": [
+      {
+        "accepted": 103,
+        "conditional_exclusions": 18,
+        "rejected": 25,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "earliest_departure",
+          "target": 37197
+        }
+      },
+      {
+        "accepted": 69,
+        "conditional_exclusions": 52,
+        "rejected": 59,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "latest_arrival",
+          "target": 44032
+        }
+      }
+    ],
+    "enumeration": {
+      "complete": false,
+      "joint_before_cap": 128,
+      "pool_size": 128,
+      "segment_enumerated": [
+        546
+      ]
+    },
+    "family": "timing",
+    "feasible_journeys": 51,
+    "human_audited": false,
+    "pool_size": 128,
+    "primary_route": "17",
+    "scenario_id": "sampling-08",
+    "wording_matches": true
+  },
+  {
+    "clause_coverage": [
+      {
+        "accepted": 20,
+        "conditional_exclusions": 108,
+        "rejected": 108,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "latest_departure",
+          "target": 36149
+        }
+      }
+    ],
+    "enumeration": {
+      "complete": false,
+      "joint_before_cap": 128,
+      "pool_size": 128,
+      "segment_enumerated": [
+        459
+      ]
+    },
+    "family": "latest",
+    "feasible_journeys": 20,
+    "human_audited": false,
+    "pool_size": 128,
+    "primary_route": "2",
+    "scenario_id": "sampling-09",
+    "wording_matches": true
+  },
+  {
+    "clause_coverage": [
+      {
+        "accepted": 4,
+        "conditional_exclusions": 36,
+        "rejected": 124,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "transfer_limit",
+          "target": 0
+        }
+      },
+      {
+        "accepted": 38,
+        "conditional_exclusions": 2,
+        "rejected": 90,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "earliest_departure",
+          "target": 41126
+        }
+      }
+    ],
+    "enumeration": {
+      "complete": false,
+      "joint_before_cap": 128,
+      "pool_size": 128,
+      "segment_enumerated": [
+        231
+      ]
+    },
+    "family": "transfers",
+    "feasible_journeys": 2,
+    "human_audited": false,
+    "pool_size": 128,
+    "primary_route": "4",
+    "scenario_id": "sampling-10",
+    "wording_matches": true
+  },
+  {
+    "clause_coverage": [
+      {
+        "accepted": 28,
+        "conditional_exclusions": 52,
+        "rejected": 100,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "earliest_departure",
+          "target": 41323
+        }
+      },
+      {
+        "accepted": 53,
+        "conditional_exclusions": 27,
+        "rejected": 75,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "latest_arrival",
+          "target": 43080
+        }
+      }
+    ],
+    "enumeration": {
+      "complete": false,
+      "joint_before_cap": 128,
+      "pool_size": 128,
+      "segment_enumerated": [
+        824
+      ]
+    },
+    "family": "timing",
+    "feasible_journeys": 1,
+    "human_audited": false,
+    "pool_size": 128,
+    "primary_route": "17",
+    "scenario_id": "sampling-11",
+    "wording_matches": true
+  },
+  {
+    "clause_coverage": [
+      {
+        "accepted": 19,
+        "conditional_exclusions": 109,
+        "rejected": 109,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "latest_departure",
+          "target": 36511
+        }
+      }
+    ],
+    "enumeration": {
+      "complete": false,
+      "joint_before_cap": 128,
+      "pool_size": 128,
+      "segment_enumerated": [
+        378
+      ]
+    },
+    "family": "latest",
+    "feasible_journeys": 19,
+    "human_audited": false,
+    "pool_size": 128,
+    "primary_route": "2",
+    "scenario_id": "sampling-12",
+    "wording_matches": true
+  },
+  {
+    "clause_coverage": [
+      {
+        "accepted": 8,
+        "conditional_exclusions": 44,
+        "rejected": 120,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "transfer_limit",
+          "target": 0
+        }
+      },
+      {
+        "accepted": 49,
+        "conditional_exclusions": 3,
+        "rejected": 79,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "earliest_departure",
+          "target": 40320
+        }
+      }
+    ],
+    "enumeration": {
+      "complete": false,
+      "joint_before_cap": 128,
+      "pool_size": 128,
+      "segment_enumerated": [
+        231
+      ]
+    },
+    "family": "transfers",
+    "feasible_journeys": 5,
+    "human_audited": false,
+    "pool_size": 128,
+    "primary_route": "4",
+    "scenario_id": "sampling-13",
+    "wording_matches": true
+  },
+  {
+    "clause_coverage": [
+      {
+        "accepted": 29,
+        "conditional_exclusions": 55,
+        "rejected": 227,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "transfer_limit",
+          "target": 0
+        }
+      },
+      {
+        "accepted": 61,
+        "conditional_exclusions": 23,
+        "rejected": 195,
+        "rule": {
+          "direction": "return",
+          "requirement": "earliest_departure",
+          "target": 45473
+        }
+      }
+    ],
+    "enumeration": {
+      "complete": false,
+      "joint_before_cap": 640,
+      "pool_size": 256,
+      "segment_enumerated": [
+        80,
+        8
+      ]
+    },
+    "family": "scope",
+    "feasible_journeys": 6,
+    "human_audited": false,
+    "pool_size": 256,
+    "primary_route": "17",
+    "scenario_id": "sampling-14",
+    "wording_matches": true
+  },
+  {
+    "clause_coverage": [
+      {
+        "accepted": 18,
+        "conditional_exclusions": 14,
+        "rejected": 110,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "earliest_departure",
+          "target": 42720
+        }
+      },
+      {
+        "accepted": 14,
+        "conditional_exclusions": 18,
+        "rejected": 114,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "latest_arrival",
+          "target": 39267
+        }
+      }
+    ],
+    "enumeration": {
+      "complete": false,
+      "joint_before_cap": 128,
+      "pool_size": 128,
+      "segment_enumerated": [
+        378
+      ]
+    },
+    "family": "infeasible",
+    "feasible_journeys": 0,
+    "human_audited": false,
+    "pool_size": 128,
+    "primary_route": "2",
+    "scenario_id": "sampling-15",
+    "wording_matches": true
+  },
+  {
+    "clause_coverage": [
+      {
+        "accepted": 91,
+        "conditional_exclusions": 28,
+        "rejected": 37,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "earliest_departure",
+          "target": 38451
+        }
+      },
+      {
+        "accepted": 78,
+        "conditional_exclusions": 41,
+        "rejected": 50,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "latest_arrival",
+          "target": 44296
+        }
+      }
+    ],
+    "enumeration": {
+      "complete": false,
+      "joint_before_cap": 128,
+      "pool_size": 128,
+      "segment_enumerated": [
+        168
+      ]
+    },
+    "family": "timing",
+    "feasible_journeys": 50,
+    "human_audited": false,
+    "pool_size": 128,
+    "primary_route": "4",
+    "scenario_id": "sampling-16",
+    "wording_matches": true
+  },
+  {
+    "clause_coverage": [
+      {
+        "accepted": 106,
+        "conditional_exclusions": 22,
+        "rejected": 22,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "latest_departure",
+          "target": 41234
+        }
+      }
+    ],
+    "enumeration": {
+      "complete": false,
+      "joint_before_cap": 128,
+      "pool_size": 128,
+      "segment_enumerated": [
+        496
+      ]
+    },
+    "family": "latest",
+    "feasible_journeys": 106,
+    "human_audited": false,
+    "pool_size": 128,
+    "primary_route": "17",
+    "scenario_id": "sampling-17",
+    "wording_matches": true
+  },
+  {
+    "clause_coverage": [
+      {
+        "accepted": 9,
+        "conditional_exclusions": 17,
+        "rejected": 119,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "transfer_limit",
+          "target": 0
+        }
+      },
+      {
+        "accepted": 22,
+        "conditional_exclusions": 4,
+        "rejected": 106,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "earliest_departure",
+          "target": 42960
+        }
+      }
+    ],
+    "enumeration": {
+      "complete": false,
+      "joint_before_cap": 128,
+      "pool_size": 128,
+      "segment_enumerated": [
+        159
+      ]
+    },
+    "family": "transfers",
+    "feasible_journeys": 5,
+    "human_audited": false,
+    "pool_size": 128,
+    "primary_route": "2",
+    "scenario_id": "sampling-18",
+    "wording_matches": true
+  },
+  {
+    "clause_coverage": [
+      {
+        "accepted": 48,
+        "conditional_exclusions": 53,
+        "rejected": 80,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "earliest_departure",
+          "target": 40187
+        }
+      },
+      {
+        "accepted": 68,
+        "conditional_exclusions": 33,
+        "rejected": 60,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "latest_arrival",
+          "target": 43810
+        }
+      }
+    ],
+    "enumeration": {
+      "complete": false,
+      "joint_before_cap": 128,
+      "pool_size": 128,
+      "segment_enumerated": [
+        231
+      ]
+    },
+    "family": "timing",
+    "feasible_journeys": 15,
+    "human_audited": false,
+    "pool_size": 128,
+    "primary_route": "4",
+    "scenario_id": "sampling-19",
+    "wording_matches": true
+  },
+  {
+    "clause_coverage": [
+      {
+        "accepted": 77,
+        "conditional_exclusions": 51,
+        "rejected": 51,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "latest_departure",
+          "target": 39300
+        }
+      }
+    ],
+    "enumeration": {
+      "complete": false,
+      "joint_before_cap": 128,
+      "pool_size": 128,
+      "segment_enumerated": [
+        466
+      ]
+    },
+    "family": "latest",
+    "feasible_journeys": 77,
+    "human_audited": false,
+    "pool_size": 128,
+    "primary_route": "17",
+    "scenario_id": "sampling-20",
+    "wording_matches": true
+  },
+  {
+    "clause_coverage": [
+      {
+        "accepted": 2,
+        "conditional_exclusions": 79,
+        "rejected": 126,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "transfer_limit",
+          "target": 0
+        }
+      },
+      {
+        "accepted": 80,
+        "conditional_exclusions": 1,
+        "rejected": 48,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "earliest_departure",
+          "target": 38160
+        }
+      }
+    ],
+    "enumeration": {
+      "complete": false,
+      "joint_before_cap": 128,
+      "pool_size": 128,
+      "segment_enumerated": [
+        888
+      ]
+    },
+    "family": "transfers",
+    "feasible_journeys": 1,
+    "human_audited": false,
+    "pool_size": 128,
+    "primary_route": "2",
+    "scenario_id": "sampling-21",
+    "wording_matches": true
+  },
+  {
+    "clause_coverage": [
+      {
+        "accepted": 9,
+        "conditional_exclusions": 30,
+        "rejected": 247,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "transfer_limit",
+          "target": 0
+        }
+      },
+      {
+        "accepted": 31,
+        "conditional_exclusions": 8,
+        "rejected": 225,
+        "rule": {
+          "direction": "return",
+          "requirement": "earliest_departure",
+          "target": 44712
+        }
+      }
+    ],
+    "enumeration": {
+      "complete": false,
+      "joint_before_cap": 600,
+      "pool_size": 256,
+      "segment_enumerated": [
+        75,
+        8
+      ]
+    },
+    "family": "scope",
+    "feasible_journeys": 1,
+    "human_audited": false,
+    "pool_size": 256,
+    "primary_route": "4",
+    "scenario_id": "sampling-22",
+    "wording_matches": true
+  },
+  {
+    "clause_coverage": [
+      {
+        "accepted": 8,
+        "conditional_exclusions": 8,
+        "rejected": 88,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "earliest_departure",
+          "target": 44157
+        }
+      },
+      {
+        "accepted": 8,
+        "conditional_exclusions": 8,
+        "rejected": 88,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "latest_arrival",
+          "target": 39412
+        }
+      }
+    ],
+    "enumeration": {
+      "complete": true,
+      "joint_before_cap": 96,
+      "pool_size": 96,
+      "segment_enumerated": [
+        96
+      ]
+    },
+    "family": "infeasible",
+    "feasible_journeys": 0,
+    "human_audited": false,
+    "pool_size": 96,
+    "primary_route": "17",
+    "scenario_id": "sampling-23",
+    "wording_matches": true
+  },
+  {
+    "clause_coverage": [
+      {
+        "accepted": 85,
+        "conditional_exclusions": 30,
+        "rejected": 43,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "earliest_departure",
+          "target": 37589
+        }
+      },
+      {
+        "accepted": 75,
+        "conditional_exclusions": 40,
+        "rejected": 53,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "latest_arrival",
+          "target": 43994
+        }
+      }
+    ],
+    "enumeration": {
+      "complete": false,
+      "joint_before_cap": 128,
+      "pool_size": 128,
+      "segment_enumerated": [
+        490
+      ]
+    },
+    "family": "timing",
+    "feasible_journeys": 45,
+    "human_audited": false,
+    "pool_size": 128,
+    "primary_route": "2",
+    "scenario_id": "sampling-24",
+    "wording_matches": true
+  },
+  {
+    "clause_coverage": [
+      {
+        "accepted": 102,
+        "conditional_exclusions": 26,
+        "rejected": 26,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "latest_departure",
+          "target": 40254
+        }
+      }
+    ],
+    "enumeration": {
+      "complete": false,
+      "joint_before_cap": 128,
+      "pool_size": 128,
+      "segment_enumerated": [
+        195
+      ]
+    },
+    "family": "latest",
+    "feasible_journeys": 102,
+    "human_audited": false,
+    "pool_size": 128,
+    "primary_route": "4",
+    "scenario_id": "sampling-25",
+    "wording_matches": true
+  },
+  {
+    "clause_coverage": [
+      {
+        "accepted": 6,
+        "conditional_exclusions": 9,
+        "rejected": 45,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "transfer_limit",
+          "target": 0
+        }
+      },
+      {
+        "accepted": 12,
+        "conditional_exclusions": 3,
+        "rejected": 39,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "earliest_departure",
+          "target": 41477
+        }
+      }
+    ],
+    "enumeration": {
+      "complete": true,
+      "joint_before_cap": 51,
+      "pool_size": 51,
+      "segment_enumerated": [
+        51
+      ]
+    },
+    "family": "transfers",
+    "feasible_journeys": 3,
+    "human_audited": false,
+    "pool_size": 51,
+    "primary_route": "17",
+    "scenario_id": "sampling-26",
+    "wording_matches": true
+  },
+  {
+    "clause_coverage": [
+      {
+        "accepted": 51,
+        "conditional_exclusions": 51,
+        "rejected": 77,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "earliest_departure",
+          "target": 40423
+        }
+      },
+      {
+        "accepted": 62,
+        "conditional_exclusions": 40,
+        "rejected": 66,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "latest_arrival",
+          "target": 42960
+        }
+      }
+    ],
+    "enumeration": {
+      "complete": false,
+      "joint_before_cap": 128,
+      "pool_size": 128,
+      "segment_enumerated": [
+        736
+      ]
+    },
+    "family": "timing",
+    "feasible_journeys": 11,
+    "human_audited": false,
+    "pool_size": 128,
+    "primary_route": "2",
+    "scenario_id": "sampling-27",
+    "wording_matches": true
+  },
+  {
+    "clause_coverage": [
+      {
+        "accepted": 21,
+        "conditional_exclusions": 45,
+        "rejected": 45,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "latest_departure",
+          "target": 37196
+        }
+      }
+    ],
+    "enumeration": {
+      "complete": true,
+      "joint_before_cap": 66,
+      "pool_size": 66,
+      "segment_enumerated": [
+        66
+      ]
+    },
+    "family": "latest",
+    "feasible_journeys": 21,
+    "human_audited": false,
+    "pool_size": 66,
+    "primary_route": "4",
+    "scenario_id": "sampling-28",
+    "wording_matches": true
+  },
+  {
+    "clause_coverage": [
+      {
+        "accepted": 6,
+        "conditional_exclusions": 6,
+        "rejected": 30,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "transfer_limit",
+          "target": 0
+        }
+      },
+      {
+        "accepted": 9,
+        "conditional_exclusions": 3,
+        "rejected": 27,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "earliest_departure",
+          "target": 42060
+        }
+      }
+    ],
+    "enumeration": {
+      "complete": true,
+      "joint_before_cap": 36,
+      "pool_size": 36,
+      "segment_enumerated": [
+        36
+      ]
+    },
+    "family": "transfers",
+    "feasible_journeys": 3,
+    "human_audited": false,
+    "pool_size": 36,
+    "primary_route": "17",
+    "scenario_id": "sampling-29",
+    "wording_matches": true
+  },
+  {
+    "clause_coverage": [
+      {
+        "accepted": 8,
+        "conditional_exclusions": 89,
+        "rejected": 248,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "transfer_limit",
+          "target": 0
+        }
+      },
+      {
+        "accepted": 93,
+        "conditional_exclusions": 4,
+        "rejected": 163,
+        "rule": {
+          "direction": "return",
+          "requirement": "earliest_departure",
+          "target": 44397
+        }
+      }
+    ],
+    "enumeration": {
+      "complete": false,
+      "joint_before_cap": 7296,
+      "pool_size": 256,
+      "segment_enumerated": [
+        830,
+        57
+      ]
+    },
+    "family": "scope",
+    "feasible_journeys": 4,
+    "human_audited": false,
+    "pool_size": 256,
+    "primary_route": "2",
+    "scenario_id": "sampling-30",
+    "wording_matches": true
+  },
+  {
+    "clause_coverage": [
+      {
+        "accepted": 12,
+        "conditional_exclusions": 13,
+        "rejected": 116,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "earliest_departure",
+          "target": 42639
+        }
+      },
+      {
+        "accepted": 13,
+        "conditional_exclusions": 12,
+        "rejected": 115,
+        "rule": {
+          "direction": "outbound",
+          "requirement": "latest_arrival",
+          "target": 39302
+        }
+      }
+    ],
+    "enumeration": {
+      "complete": false,
+      "joint_before_cap": 128,
+      "pool_size": 128,
+      "segment_enumerated": [
+        372
+      ]
+    },
+    "family": "infeasible",
+    "feasible_journeys": 0,
+    "human_audited": false,
+    "pool_size": 128,
+    "primary_route": "4",
+    "scenario_id": "sampling-31",
+    "wording_matches": true
+  }
+]
