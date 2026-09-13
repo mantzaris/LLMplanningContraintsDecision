@@ -1,0 +1,2753 @@
+[
+  {
+    "arm": "B",
+    "cause": "incorrect_judgment_eliminated_matching_candidate",
+    "checkpoint": 4,
+    "destructive_updates": [
+      {
+        "after": [
+          "c2",
+          "c3"
+        ],
+        "before": [
+          "c0",
+          "c1",
+          "c2",
+          "c3"
+        ],
+        "journey_id": "00386296478d8e0c4e63",
+        "judgment": {
+          "reason": "The journey starts on the correct date and follows the specified route and stops.",
+          "spans": [
+            {
+              "end": 5,
+              "start": 0
+            }
+          ],
+          "verdict": "satisfied"
+        },
+        "reference_accepts": false,
+        "reference_candidates_after": []
+      }
+    ],
+    "matching_candidate_ids": [
+      "c0"
+    ],
+    "oracle": {
+      "candidates": [
+        {
+          "acceptance_bits": "01000101000000100000000000000000000000000010000000000101000000000100000000100000000000011110001100100000100000100000001000100000",
+          "aliases": [
+            "c0"
+          ],
+          "candidate_id": "c0",
+          "formula": {
+            "children": [
+              {
+                "kind": "atom",
+                "op": "depart_le",
+                "scope": "outbound",
+                "source": null,
+                "unit": "seconds",
+                "value": 36149
+              }
+            ],
+            "kind": "all",
+            "source": null
+          },
+          "plan": {
+            "plan_id": "2a55a1f9b1448a6f5ed6",
+            "reason": null,
+            "solver_seconds": 0.0031394881661981344,
+            "status": "satisfiable"
+          },
+          "reference_equivalent": true
+        },
+        {
+          "acceptance_bits": "00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000",
+          "aliases": [
+            "c1"
+          ],
+          "candidate_id": "c1",
+          "formula": {
+            "children": [
+              {
+                "kind": "atom",
+                "op": "depart_ge",
+                "scope": "outbound",
+                "source": null,
+                "unit": "seconds",
+                "value": 3720
+              },
+              {
+                "kind": "atom",
+                "op": "arrive_by",
+                "scope": "outbound",
+                "source": null,
+                "unit": "seconds",
+                "value": 36749
+              }
+            ],
+            "kind": "all",
+            "source": null
+          },
+          "plan": {
+            "plan_id": "2a55a1f9b1448a6f5ed6",
+            "reason": null,
+            "solver_seconds": 0.004635481862351298,
+            "status": "satisfiable"
+          },
+          "reference_equivalent": false
+        },
+        {
+          "acceptance_bits": "10111010111111011111111110111111110111111101011111111010111110111010111111011111111111100001110011011111011111011111110111011111",
+          "aliases": [
+            "c2"
+          ],
+          "candidate_id": "c2",
+          "formula": {
+            "kind": "atom",
+            "op": "depart_ge",
+            "scope": "outbound",
+            "source": null,
+            "unit": "seconds",
+            "value": 36742
+          },
+          "plan": {
+            "plan_id": "1d8f417162ac3b41c7e3",
+            "reason": null,
+            "solver_seconds": 0.006964982021600008,
+            "status": "satisfiable"
+          },
+          "reference_equivalent": false
+        },
+        {
+          "acceptance_bits": "10111010101011011101111100111111110111111001011100111010111110101010001111011011011111100001110011011110011111011110110111011111",
+          "aliases": [
+            "c3"
+          ],
+          "candidate_id": "c3",
+          "formula": {
+            "kind": "atom",
+            "op": "depart_ge",
+            "scope": "outbound",
+            "source": null,
+            "unit": "seconds",
+            "value": 37229
+          },
+          "plan": {
+            "plan_id": "0bee4e6c60423c8ae036",
+            "reason": null,
+            "solver_seconds": 0.00605329405516386,
+            "status": "satisfiable"
+          },
+          "reference_equivalent": false
+        }
+      ],
+      "events": [],
+      "final_plan_id": "2a55a1f9b1448a6f5ed6",
+      "journeys": [
+        {
+          "journey_id": "00386296478d8e0c4e63",
+          "rides": [
+            {
+              "calls": [
+                {
+                  "arrival_s": 42629,
+                  "departure_s": 42629,
+                  "stop_id": "3398"
+                },
+                {
+                  "arrival_s": 42735,
+                  "departure_s": 42735,
+                  "stop_id": "13780"
+                }
+              ],
+              "route_id": "2",
+              "scope": "outbound"
+            },
+            {
+              "calls": [
+                {
+                  "arrival_s": 45615,
+                  "departure_s": 45615,
+                  "stop_id": "13780"
+                },
+                {
+                  "arrival_s": 45972,
+                  "departure_s": 45972,
+                  "stop_id": "7797"
+                }
+              ],
+              "route_id": "2",
+              "scope": "outbound"
+            }
+          ]
+        },
+        {
+          "journey_id": "0080fc18f33d4874c215",
+          "rides": [
+            {
+              "calls": [
+                {
+                  "arrival_s": 36149,
+                  "departure_s": 36149,
+                  "stop_id": "3398"
+                },
+                {
+                  "arrival_s": 36255,
+                  "departure_s": 36255,
+                  "stop_id": "13780"
+                }
+              ],
+              "route_id": "2",
+              "scope": "outbound"
+            },
+            {
+              "calls": [
+                {
+                  "arrival_s": 44895,
+                  "departure_s": 44895,
+                  "stop_id": "13780"
+                },
+                {
+                  "arrival_s": 45252,
+                  "departure_s": 45252,
+                  "stop_id": "7797"
+                }
+              ],
+              "route_id": "2",
+              "scope": "outbound"
+            }
+          ]
+        },
+        {
+          "journey_id": "0bee4e6c60423c8ae036",
+          "rides": [
+            {
+              "calls": [
+                {
+                  "arrival_s": 38309,
+                  "departure_s": 38309,
+                  "stop_id": "3398"
+                },
+                {
+                  "arrival_s": 38772,
+                  "departure_s": 38772,
+                  "stop_id": "7797"
+                }
+              ],
+              "route_id": "2",
+              "scope": "outbound"
+            }
+          ]
+        },
+        {
+          "journey_id": "1d8f417162ac3b41c7e3",
+          "rides": [
+            {
+              "calls": [
+                {
+                  "arrival_s": 36869,
+                  "departure_s": 36869,
+                  "stop_id": "3398"
+                },
+                {
+                  "arrival_s": 37343,
+                  "departure_s": 37343,
+                  "stop_id": "7797"
+                }
+              ],
+              "route_id": "2",
+              "scope": "outbound"
+            }
+          ]
+        },
+        {
+          "journey_id": "2a55a1f9b1448a6f5ed6",
+          "rides": [
+            {
+              "calls": [
+                {
+                  "arrival_s": 36149,
+                  "departure_s": 36149,
+                  "stop_id": "3398"
+                },
+                {
+                  "arrival_s": 36623,
+                  "departure_s": 36623,
+                  "stop_id": "7797"
+                }
+              ],
+              "route_id": "2",
+              "scope": "outbound"
+            }
+          ]
+        }
+      ],
+      "remaining_ids": [
+        "c0"
+      ],
+      "updates": [
+        {
+          "after": [
+            "c0",
+            "c1"
+          ],
+          "before": [
+            "c0",
+            "c1",
+            "c2",
+            "c3"
+          ],
+          "journey_id": "00386296478d8e0c4e63",
+          "judgment": {
+            "reason": "privileged independent reference evaluator",
+            "spans": [],
+            "verdict": "violated"
+          },
+          "reference_accepts": false,
+          "reference_candidates_after": [
+            "c0"
+          ]
+        },
+        {
+          "after": [
+            "c0"
+          ],
+          "before": [
+            "c0",
+            "c1"
+          ],
+          "journey_id": "0080fc18f33d4874c215",
+          "judgment": {
+            "reason": "privileged independent reference evaluator",
+            "spans": [],
+            "verdict": "satisfied"
+          },
+          "reference_accepts": true,
+          "reference_candidates_after": [
+            "c0"
+          ]
+        }
+      ],
+      "witnesses": [
+        {
+          "cost": 1,
+          "journey_id": "00386296478d8e0c4e63",
+          "policy": "balanced",
+          "score": 4.0,
+          "score_numerator": 4,
+          "separated_pairs": [
+            [
+              "c0",
+              "c2",
+              2
+            ],
+            [
+              "c0",
+              "c3",
+              2
+            ],
+            [
+              "c1",
+              "c2",
+              2
+            ],
+            [
+              "c1",
+              "c3",
+              2
+            ]
+          ]
+        },
+        {
+          "cost": 1,
+          "journey_id": "0080fc18f33d4874c215",
+          "policy": "balanced",
+          "score": 1.0,
+          "score_numerator": 1,
+          "separated_pairs": [
+            [
+              "c0",
+              "c1",
+              0
+            ]
+          ]
+        }
+      ]
+    },
+    "ordinary": {
+      "candidates": [
+        {
+          "acceptance_bits": "01000101000000100000000000000000000000000010000000000101000000000100000000100000000000011110001100100000100000100000001000100000",
+          "aliases": [
+            "c0"
+          ],
+          "candidate_id": "c0",
+          "formula": {
+            "children": [
+              {
+                "kind": "atom",
+                "op": "depart_le",
+                "scope": "outbound",
+                "source": null,
+                "unit": "seconds",
+                "value": 36149
+              }
+            ],
+            "kind": "all",
+            "source": null
+          },
+          "plan": {
+            "plan_id": "2a55a1f9b1448a6f5ed6",
+            "reason": null,
+            "solver_seconds": 0.0031394881661981344,
+            "status": "satisfiable"
+          },
+          "reference_equivalent": true
+        },
+        {
+          "acceptance_bits": "00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000",
+          "aliases": [
+            "c1"
+          ],
+          "candidate_id": "c1",
+          "formula": {
+            "children": [
+              {
+                "kind": "atom",
+                "op": "depart_ge",
+                "scope": "outbound",
+                "source": null,
+                "unit": "seconds",
+                "value": 3720
+              },
+              {
+                "kind": "atom",
+                "op": "arrive_by",
+                "scope": "outbound",
+                "source": null,
+                "unit": "seconds",
+                "value": 36749
+              }
+            ],
+            "kind": "all",
+            "source": null
+          },
+          "plan": {
+            "plan_id": "2a55a1f9b1448a6f5ed6",
+            "reason": null,
+            "solver_seconds": 0.004635481862351298,
+            "status": "satisfiable"
+          },
+          "reference_equivalent": false
+        },
+        {
+          "acceptance_bits": "10111010111111011111111110111111110111111101011111111010111110111010111111011111111111100001110011011111011111011111110111011111",
+          "aliases": [
+            "c2"
+          ],
+          "candidate_id": "c2",
+          "formula": {
+            "kind": "atom",
+            "op": "depart_ge",
+            "scope": "outbound",
+            "source": null,
+            "unit": "seconds",
+            "value": 36742
+          },
+          "plan": {
+            "plan_id": "1d8f417162ac3b41c7e3",
+            "reason": null,
+            "solver_seconds": 0.006964982021600008,
+            "status": "satisfiable"
+          },
+          "reference_equivalent": false
+        },
+        {
+          "acceptance_bits": "10111010101011011101111100111111110111111001011100111010111110101010001111011011011111100001110011011110011111011110110111011111",
+          "aliases": [
+            "c3"
+          ],
+          "candidate_id": "c3",
+          "formula": {
+            "kind": "atom",
+            "op": "depart_ge",
+            "scope": "outbound",
+            "source": null,
+            "unit": "seconds",
+            "value": 37229
+          },
+          "plan": {
+            "plan_id": "0bee4e6c60423c8ae036",
+            "reason": null,
+            "solver_seconds": 0.00605329405516386,
+            "status": "satisfiable"
+          },
+          "reference_equivalent": false
+        }
+      ],
+      "events": [],
+      "final_plan_id": "1d8f417162ac3b41c7e3",
+      "journeys": [
+        {
+          "journey_id": "00386296478d8e0c4e63",
+          "rides": [
+            {
+              "calls": [
+                {
+                  "arrival_s": 42629,
+                  "departure_s": 42629,
+                  "stop_id": "3398"
+                },
+                {
+                  "arrival_s": 42735,
+                  "departure_s": 42735,
+                  "stop_id": "13780"
+                }
+              ],
+              "route_id": "2",
+              "scope": "outbound"
+            },
+            {
+              "calls": [
+                {
+                  "arrival_s": 45615,
+                  "departure_s": 45615,
+                  "stop_id": "13780"
+                },
+                {
+                  "arrival_s": 45972,
+                  "departure_s": 45972,
+                  "stop_id": "7797"
+                }
+              ],
+              "route_id": "2",
+              "scope": "outbound"
+            }
+          ]
+        },
+        {
+          "journey_id": "058c88205f1210b612e1",
+          "rides": [
+            {
+              "calls": [
+                {
+                  "arrival_s": 36869,
+                  "departure_s": 36869,
+                  "stop_id": "3398"
+                },
+                {
+                  "arrival_s": 37200,
+                  "departure_s": 37200,
+                  "stop_id": "7800"
+                }
+              ],
+              "route_id": "2",
+              "scope": "outbound"
+            },
+            {
+              "calls": [
+                {
+                  "arrival_s": 42240,
+                  "departure_s": 42240,
+                  "stop_id": "7800"
+                },
+                {
+                  "arrival_s": 42383,
+                  "departure_s": 42383,
+                  "stop_id": "7797"
+                }
+              ],
+              "route_id": "2",
+              "scope": "outbound"
+            }
+          ]
+        },
+        {
+          "journey_id": "0bee4e6c60423c8ae036",
+          "rides": [
+            {
+              "calls": [
+                {
+                  "arrival_s": 38309,
+                  "departure_s": 38309,
+                  "stop_id": "3398"
+                },
+                {
+                  "arrival_s": 38772,
+                  "departure_s": 38772,
+                  "stop_id": "7797"
+                }
+              ],
+              "route_id": "2",
+              "scope": "outbound"
+            }
+          ]
+        },
+        {
+          "journey_id": "1d8f417162ac3b41c7e3",
+          "rides": [
+            {
+              "calls": [
+                {
+                  "arrival_s": 36869,
+                  "departure_s": 36869,
+                  "stop_id": "3398"
+                },
+                {
+                  "arrival_s": 37343,
+                  "departure_s": 37343,
+                  "stop_id": "7797"
+                }
+              ],
+              "route_id": "2",
+              "scope": "outbound"
+            }
+          ]
+        },
+        {
+          "journey_id": "2a55a1f9b1448a6f5ed6",
+          "rides": [
+            {
+              "calls": [
+                {
+                  "arrival_s": 36149,
+                  "departure_s": 36149,
+                  "stop_id": "3398"
+                },
+                {
+                  "arrival_s": 36623,
+                  "departure_s": 36623,
+                  "stop_id": "7797"
+                }
+              ],
+              "route_id": "2",
+              "scope": "outbound"
+            }
+          ]
+        }
+      ],
+      "remaining_ids": [
+        "c2"
+      ],
+      "updates": [
+        {
+          "after": [
+            "c2",
+            "c3"
+          ],
+          "before": [
+            "c0",
+            "c1",
+            "c2",
+            "c3"
+          ],
+          "journey_id": "00386296478d8e0c4e63",
+          "judgment": {
+            "reason": "The journey starts on the correct date and follows the specified route and stops.",
+            "spans": [
+              {
+                "end": 5,
+                "start": 0
+              }
+            ],
+            "verdict": "satisfied"
+          },
+          "reference_accepts": false,
+          "reference_candidates_after": []
+        },
+        {
+          "after": [
+            "c2"
+          ],
+          "before": [
+            "c2",
+            "c3"
+          ],
+          "journey_id": "058c88205f1210b612e1",
+          "judgment": {
+            "reason": "The journey starts on the correct date and follows the specified route with the correct number of transfers.",
+            "spans": [
+              {
+                "end": 5,
+                "start": 0
+              }
+            ],
+            "verdict": "satisfied"
+          },
+          "reference_accepts": false,
+          "reference_candidates_after": []
+        }
+      ],
+      "witnesses": [
+        {
+          "cost": 1,
+          "journey_id": "00386296478d8e0c4e63",
+          "policy": "balanced",
+          "score": 4.0,
+          "score_numerator": 4,
+          "separated_pairs": [
+            [
+              "c0",
+              "c2",
+              2
+            ],
+            [
+              "c0",
+              "c3",
+              2
+            ],
+            [
+              "c1",
+              "c2",
+              2
+            ],
+            [
+              "c1",
+              "c3",
+              2
+            ]
+          ]
+        },
+        {
+          "cost": 1,
+          "journey_id": "058c88205f1210b612e1",
+          "policy": "balanced",
+          "score": 1.0,
+          "score_numerator": 1,
+          "separated_pairs": [
+            [
+              "c2",
+              "c3",
+              1
+            ]
+          ]
+        }
+      ]
+    },
+    "scenario_id": "sampling-09"
+  },
+  {
+    "arm": "B",
+    "cause": "incorrect_judgment_eliminated_matching_candidate",
+    "checkpoint": 8,
+    "destructive_updates": [
+      {
+        "after": [
+          "c7"
+        ],
+        "before": [
+          "c5",
+          "c7"
+        ],
+        "journey_id": "004977e99b44fd327c54",
+        "judgment": {
+          "reason": "The concrete journey meets all the requirements of the original request, including the correct stops, the number of transfers, and the arrival at SE Division & 20th Ave on time.",
+          "spans": [
+            {
+              "end": 5,
+              "start": 0
+            }
+          ],
+          "verdict": "satisfied"
+        },
+        "reference_accepts": false,
+        "reference_candidates_after": []
+      }
+    ],
+    "matching_candidate_ids": [
+      "c5"
+    ],
+    "oracle": {
+      "candidates": [
+        {
+          "acceptance_bits": "10111111010010111100111111101010111111111111111111111011101111101100011110101111010010111011110110110111101011011001110010011101",
+          "aliases": [
+            "c0",
+            "c1",
+            "c2",
+            "c3",
+            "c4"
+          ],
+          "candidate_id": "c0",
+          "formula": {
+            "kind": "atom",
+            "op": "depart_ge",
+            "scope": "outbound",
+            "source": null,
+            "unit": "seconds",
+            "value": 37281
+          },
+          "plan": {
+            "plan_id": "3d2ac4bc9b683d64bff9",
+            "reason": null,
+            "solver_seconds": 0.0062574169132858515,
+            "status": "satisfiable"
+          },
+          "reference_equivalent": false
+        },
+        {
+          "acceptance_bits": "01000000100100000010000000000101000000000000000000000000010000010000100001010000101100000100000001000000000000100100000100000000",
+          "aliases": [
+            "c5"
+          ],
+          "candidate_id": "c5",
+          "formula": {
+            "children": [
+              {
+                "kind": "atom",
+                "op": "depart_le",
+                "scope": "outbound",
+                "source": null,
+                "unit": "seconds",
+                "value": 36511
+              }
+            ],
+            "kind": "all",
+            "source": null
+          },
+          "plan": {
+            "plan_id": "23dc77966eb67609fd49",
+            "reason": null,
+            "solver_seconds": 0.003102818038314581,
+            "status": "satisfiable"
+          },
+          "reference_equivalent": true
+        },
+        {
+          "acceptance_bits": "10101111010010111100111111101010110111110101111111111011101011101100010110101011000010111010110110100111101011011000010010011001",
+          "aliases": [
+            "c6"
+          ],
+          "candidate_id": "c6",
+          "formula": {
+            "children": [
+              {
+                "kind": "atom",
+                "op": "depart_ge",
+                "scope": "outbound",
+                "source": null,
+                "unit": "seconds",
+                "value": 38431
+              }
+            ],
+            "kind": "all",
+            "source": null
+          },
+          "plan": {
+            "plan_id": "369b184b9fad63c15d8b",
+            "reason": null,
+            "solver_seconds": 0.0058336020447313786,
+            "status": "satisfiable"
+          },
+          "reference_equivalent": false
+        },
+        {
+          "acceptance_bits": "11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111",
+          "aliases": [
+            "c7"
+          ],
+          "candidate_id": "c7",
+          "formula": {
+            "children": [
+              {
+                "kind": "atom",
+                "op": "depart_ge",
+                "scope": "outbound",
+                "source": null,
+                "unit": "seconds",
+                "value": 36491
+              }
+            ],
+            "kind": "all",
+            "source": null
+          },
+          "plan": {
+            "plan_id": "3d2ac4bc9b683d64bff9",
+            "reason": null,
+            "solver_seconds": 0.007996981963515282,
+            "status": "satisfiable"
+          },
+          "reference_equivalent": false
+        }
+      ],
+      "events": [],
+      "final_plan_id": "23dc77966eb67609fd49",
+      "journeys": [
+        {
+          "journey_id": "004977e99b44fd327c54",
+          "rides": [
+            {
+              "calls": [
+                {
+                  "arrival_s": 41562,
+                  "departure_s": 41562,
+                  "stop_id": "10491"
+                },
+                {
+                  "arrival_s": 42063,
+                  "departure_s": 42063,
+                  "stop_id": "13772"
+                }
+              ],
+              "route_id": "2",
+              "scope": "outbound"
+            },
+            {
+              "calls": [
+                {
+                  "arrival_s": 43503,
+                  "departure_s": 43503,
+                  "stop_id": "13772"
+                },
+                {
+                  "arrival_s": 43765,
+                  "departure_s": 43765,
+                  "stop_id": "1435"
+                }
+              ],
+              "route_id": "2",
+              "scope": "outbound"
+            }
+          ]
+        },
+        {
+          "journey_id": "00de85f0851f9bd12d64",
+          "rides": [
+            {
+              "calls": [
+                {
+                  "arrival_s": 36511,
+                  "departure_s": 36511,
+                  "stop_id": "10491"
+                },
+                {
+                  "arrival_s": 37140,
+                  "departure_s": 37140,
+                  "stop_id": "1375"
+                }
+              ],
+              "route_id": "2",
+              "scope": "outbound"
+            },
+            {
+              "calls": [
+                {
+                  "arrival_s": 39300,
+                  "departure_s": 39300,
+                  "stop_id": "1375"
+                },
+                {
+                  "arrival_s": 39385,
+                  "departure_s": 39385,
+                  "stop_id": "1435"
+                }
+              ],
+              "route_id": "2",
+              "scope": "outbound"
+            }
+          ]
+        },
+        {
+          "journey_id": "23dc77966eb67609fd49",
+          "rides": [
+            {
+              "calls": [
+                {
+                  "arrival_s": 36511,
+                  "departure_s": 36511,
+                  "stop_id": "10491"
+                },
+                {
+                  "arrival_s": 36975,
+                  "departure_s": 36975,
+                  "stop_id": "13772"
+                }
+              ],
+              "route_id": "2",
+              "scope": "outbound"
+            },
+            {
+              "calls": [
+                {
+                  "arrival_s": 38415,
+                  "departure_s": 38415,
+                  "stop_id": "13772"
+                },
+                {
+                  "arrival_s": 38665,
+                  "departure_s": 38665,
+                  "stop_id": "1435"
+                }
+              ],
+              "route_id": "2",
+              "scope": "outbound"
+            }
+          ]
+        },
+        {
+          "journey_id": "369b184b9fad63c15d8b",
+          "rides": [
+            {
+              "calls": [
+                {
+                  "arrival_s": 39391,
+                  "departure_s": 39391,
+                  "stop_id": "10491"
+                },
+                {
+                  "arrival_s": 40105,
+                  "departure_s": 40105,
+                  "stop_id": "1435"
+                }
+              ],
+              "route_id": "2",
+              "scope": "outbound"
+            }
+          ]
+        },
+        {
+          "journey_id": "3d2ac4bc9b683d64bff9",
+          "rides": [
+            {
+              "calls": [
+                {
+                  "arrival_s": 37951,
+                  "departure_s": 37951,
+                  "stop_id": "10491"
+                },
+                {
+                  "arrival_s": 38665,
+                  "departure_s": 38665,
+                  "stop_id": "1435"
+                }
+              ],
+              "route_id": "2",
+              "scope": "outbound"
+            }
+          ]
+        }
+      ],
+      "remaining_ids": [
+        "c5"
+      ],
+      "updates": [
+        {
+          "after": [
+            "c5",
+            "c7"
+          ],
+          "before": [
+            "c0",
+            "c5",
+            "c6",
+            "c7"
+          ],
+          "journey_id": "00de85f0851f9bd12d64",
+          "judgment": {
+            "reason": "privileged independent reference evaluator",
+            "spans": [],
+            "verdict": "satisfied"
+          },
+          "reference_accepts": true,
+          "reference_candidates_after": [
+            "c5"
+          ]
+        },
+        {
+          "after": [
+            "c5"
+          ],
+          "before": [
+            "c5",
+            "c7"
+          ],
+          "journey_id": "004977e99b44fd327c54",
+          "judgment": {
+            "reason": "privileged independent reference evaluator",
+            "spans": [],
+            "verdict": "violated"
+          },
+          "reference_accepts": false,
+          "reference_candidates_after": [
+            "c5"
+          ]
+        }
+      ],
+      "witnesses": [
+        {
+          "cost": 1,
+          "journey_id": "00de85f0851f9bd12d64",
+          "policy": "balanced",
+          "score": 4.0,
+          "score_numerator": 4,
+          "separated_pairs": [
+            [
+              "c0",
+              "c5",
+              2
+            ],
+            [
+              "c0",
+              "c7",
+              0
+            ],
+            [
+              "c5",
+              "c6",
+              2
+            ],
+            [
+              "c6",
+              "c7",
+              1
+            ]
+          ]
+        },
+        {
+          "cost": 1,
+          "journey_id": "004977e99b44fd327c54",
+          "policy": "balanced",
+          "score": 1.0,
+          "score_numerator": 1,
+          "separated_pairs": [
+            [
+              "c5",
+              "c7",
+              1
+            ]
+          ]
+        }
+      ]
+    },
+    "ordinary": {
+      "candidates": [
+        {
+          "acceptance_bits": "10111111010010111100111111101010111111111111111111111011101111101100011110101111010010111011110110110111101011011001110010011101",
+          "aliases": [
+            "c0",
+            "c1",
+            "c2",
+            "c3",
+            "c4"
+          ],
+          "candidate_id": "c0",
+          "formula": {
+            "kind": "atom",
+            "op": "depart_ge",
+            "scope": "outbound",
+            "source": null,
+            "unit": "seconds",
+            "value": 37281
+          },
+          "plan": {
+            "plan_id": "3d2ac4bc9b683d64bff9",
+            "reason": null,
+            "solver_seconds": 0.0062574169132858515,
+            "status": "satisfiable"
+          },
+          "reference_equivalent": false
+        },
+        {
+          "acceptance_bits": "01000000100100000010000000000101000000000000000000000000010000010000100001010000101100000100000001000000000000100100000100000000",
+          "aliases": [
+            "c5"
+          ],
+          "candidate_id": "c5",
+          "formula": {
+            "children": [
+              {
+                "kind": "atom",
+                "op": "depart_le",
+                "scope": "outbound",
+                "source": null,
+                "unit": "seconds",
+                "value": 36511
+              }
+            ],
+            "kind": "all",
+            "source": null
+          },
+          "plan": {
+            "plan_id": "23dc77966eb67609fd49",
+            "reason": null,
+            "solver_seconds": 0.003102818038314581,
+            "status": "satisfiable"
+          },
+          "reference_equivalent": true
+        },
+        {
+          "acceptance_bits": "10101111010010111100111111101010110111110101111111111011101011101100010110101011000010111010110110100111101011011000010010011001",
+          "aliases": [
+            "c6"
+          ],
+          "candidate_id": "c6",
+          "formula": {
+            "children": [
+              {
+                "kind": "atom",
+                "op": "depart_ge",
+                "scope": "outbound",
+                "source": null,
+                "unit": "seconds",
+                "value": 38431
+              }
+            ],
+            "kind": "all",
+            "source": null
+          },
+          "plan": {
+            "plan_id": "369b184b9fad63c15d8b",
+            "reason": null,
+            "solver_seconds": 0.0058336020447313786,
+            "status": "satisfiable"
+          },
+          "reference_equivalent": false
+        },
+        {
+          "acceptance_bits": "11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111",
+          "aliases": [
+            "c7"
+          ],
+          "candidate_id": "c7",
+          "formula": {
+            "children": [
+              {
+                "kind": "atom",
+                "op": "depart_ge",
+                "scope": "outbound",
+                "source": null,
+                "unit": "seconds",
+                "value": 36491
+              }
+            ],
+            "kind": "all",
+            "source": null
+          },
+          "plan": {
+            "plan_id": "3d2ac4bc9b683d64bff9",
+            "reason": null,
+            "solver_seconds": 0.007996981963515282,
+            "status": "satisfiable"
+          },
+          "reference_equivalent": false
+        }
+      ],
+      "events": [],
+      "final_plan_id": "3d2ac4bc9b683d64bff9",
+      "journeys": [
+        {
+          "journey_id": "004977e99b44fd327c54",
+          "rides": [
+            {
+              "calls": [
+                {
+                  "arrival_s": 41562,
+                  "departure_s": 41562,
+                  "stop_id": "10491"
+                },
+                {
+                  "arrival_s": 42063,
+                  "departure_s": 42063,
+                  "stop_id": "13772"
+                }
+              ],
+              "route_id": "2",
+              "scope": "outbound"
+            },
+            {
+              "calls": [
+                {
+                  "arrival_s": 43503,
+                  "departure_s": 43503,
+                  "stop_id": "13772"
+                },
+                {
+                  "arrival_s": 43765,
+                  "departure_s": 43765,
+                  "stop_id": "1435"
+                }
+              ],
+              "route_id": "2",
+              "scope": "outbound"
+            }
+          ]
+        },
+        {
+          "journey_id": "00de85f0851f9bd12d64",
+          "rides": [
+            {
+              "calls": [
+                {
+                  "arrival_s": 36511,
+                  "departure_s": 36511,
+                  "stop_id": "10491"
+                },
+                {
+                  "arrival_s": 37140,
+                  "departure_s": 37140,
+                  "stop_id": "1375"
+                }
+              ],
+              "route_id": "2",
+              "scope": "outbound"
+            },
+            {
+              "calls": [
+                {
+                  "arrival_s": 39300,
+                  "departure_s": 39300,
+                  "stop_id": "1375"
+                },
+                {
+                  "arrival_s": 39385,
+                  "departure_s": 39385,
+                  "stop_id": "1435"
+                }
+              ],
+              "route_id": "2",
+              "scope": "outbound"
+            }
+          ]
+        },
+        {
+          "journey_id": "23dc77966eb67609fd49",
+          "rides": [
+            {
+              "calls": [
+                {
+                  "arrival_s": 36511,
+                  "departure_s": 36511,
+                  "stop_id": "10491"
+                },
+                {
+                  "arrival_s": 36975,
+                  "departure_s": 36975,
+                  "stop_id": "13772"
+                }
+              ],
+              "route_id": "2",
+              "scope": "outbound"
+            },
+            {
+              "calls": [
+                {
+                  "arrival_s": 38415,
+                  "departure_s": 38415,
+                  "stop_id": "13772"
+                },
+                {
+                  "arrival_s": 38665,
+                  "departure_s": 38665,
+                  "stop_id": "1435"
+                }
+              ],
+              "route_id": "2",
+              "scope": "outbound"
+            }
+          ]
+        },
+        {
+          "journey_id": "369b184b9fad63c15d8b",
+          "rides": [
+            {
+              "calls": [
+                {
+                  "arrival_s": 39391,
+                  "departure_s": 39391,
+                  "stop_id": "10491"
+                },
+                {
+                  "arrival_s": 40105,
+                  "departure_s": 40105,
+                  "stop_id": "1435"
+                }
+              ],
+              "route_id": "2",
+              "scope": "outbound"
+            }
+          ]
+        },
+        {
+          "journey_id": "3d2ac4bc9b683d64bff9",
+          "rides": [
+            {
+              "calls": [
+                {
+                  "arrival_s": 37951,
+                  "departure_s": 37951,
+                  "stop_id": "10491"
+                },
+                {
+                  "arrival_s": 38665,
+                  "departure_s": 38665,
+                  "stop_id": "1435"
+                }
+              ],
+              "route_id": "2",
+              "scope": "outbound"
+            }
+          ]
+        }
+      ],
+      "remaining_ids": [
+        "c7"
+      ],
+      "updates": [
+        {
+          "after": [
+            "c5",
+            "c7"
+          ],
+          "before": [
+            "c0",
+            "c5",
+            "c6",
+            "c7"
+          ],
+          "journey_id": "00de85f0851f9bd12d64",
+          "judgment": {
+            "reason": "The journey starts exactly at the requested time and follows the correct route with the specified stops.",
+            "spans": [
+              {
+                "end": 5,
+                "start": 0
+              }
+            ],
+            "verdict": "satisfied"
+          },
+          "reference_accepts": true,
+          "reference_candidates_after": [
+            "c5"
+          ]
+        },
+        {
+          "after": [
+            "c7"
+          ],
+          "before": [
+            "c5",
+            "c7"
+          ],
+          "journey_id": "004977e99b44fd327c54",
+          "judgment": {
+            "reason": "The concrete journey meets all the requirements of the original request, including the correct stops, the number of transfers, and the arrival at SE Division & 20th Ave on time.",
+            "spans": [
+              {
+                "end": 5,
+                "start": 0
+              }
+            ],
+            "verdict": "satisfied"
+          },
+          "reference_accepts": false,
+          "reference_candidates_after": []
+        }
+      ],
+      "witnesses": [
+        {
+          "cost": 1,
+          "journey_id": "00de85f0851f9bd12d64",
+          "policy": "balanced",
+          "score": 4.0,
+          "score_numerator": 4,
+          "separated_pairs": [
+            [
+              "c0",
+              "c5",
+              2
+            ],
+            [
+              "c0",
+              "c7",
+              0
+            ],
+            [
+              "c5",
+              "c6",
+              2
+            ],
+            [
+              "c6",
+              "c7",
+              1
+            ]
+          ]
+        },
+        {
+          "cost": 1,
+          "journey_id": "004977e99b44fd327c54",
+          "policy": "balanced",
+          "score": 1.0,
+          "score_numerator": 1,
+          "separated_pairs": [
+            [
+              "c5",
+              "c7",
+              1
+            ]
+          ]
+        }
+      ]
+    },
+    "scenario_id": "sampling-12"
+  },
+  {
+    "arm": "B",
+    "cause": "incorrect_judgment_eliminated_matching_candidate",
+    "checkpoint": 8,
+    "destructive_updates": [
+      {
+        "after": [
+          "c0",
+          "c1"
+        ],
+        "before": [
+          "c0",
+          "c1",
+          "c5"
+        ],
+        "journey_id": "0041204cf5057025bb62",
+        "judgment": {
+          "reason": "The journey departs after the specified time of 11:10:54.",
+          "spans": [
+            {
+              "end": 5,
+              "start": 0
+            }
+          ],
+          "verdict": "violated"
+        },
+        "reference_accepts": true,
+        "reference_candidates_after": []
+      }
+    ],
+    "matching_candidate_ids": [
+      "c5"
+    ],
+    "oracle": {
+      "candidates": [
+        {
+          "acceptance_bits": "00000000100000111000100100000000000000000000010000000000000001000000000000100001000000100010100001000000010000000010000000000000",
+          "aliases": [
+            "c0",
+            "c3",
+            "c4",
+            "c6",
+            "c7"
+          ],
+          "candidate_id": "c0",
+          "formula": {
+            "kind": "atom",
+            "op": "depart_ge",
+            "scope": "outbound",
+            "source": null,
+            "unit": "seconds",
+            "value": 41454
+          },
+          "plan": {
+            "plan_id": "6ec57a760ec0de4a08a5",
+            "reason": null,
+            "solver_seconds": 0.002918906044214964,
+            "status": "satisfiable"
+          },
+          "reference_equivalent": false
+        },
+        {
+          "acceptance_bits": "00000001101100111100100100000000100000000000010000000000000001000110000000100011000000100010100001000000010000001010001000000000",
+          "aliases": [
+            "c1",
+            "c2"
+          ],
+          "candidate_id": "c1",
+          "formula": {
+            "kind": "atom",
+            "op": "depart_ge",
+            "scope": "outbound",
+            "source": null,
+            "unit": "seconds",
+            "value": 40954
+          },
+          "plan": {
+            "plan_id": "6ec57a760ec0de4a08a5",
+            "reason": null,
+            "solver_seconds": 0.0032665999606251717,
+            "status": "satisfiable"
+          },
+          "reference_equivalent": false
+        },
+        {
+          "acceptance_bits": "11111110010011000011011011111111011111111111101111111111111110111001111111011100111111011101011110111111101111110101110111111111",
+          "aliases": [
+            "c5"
+          ],
+          "candidate_id": "c5",
+          "formula": {
+            "children": [
+              {
+                "kind": "atom",
+                "op": "depart_le",
+                "scope": "outbound",
+                "source": null,
+                "unit": "seconds",
+                "value": 40254
+              }
+            ],
+            "kind": "all",
+            "source": null
+          },
+          "plan": {
+            "plan_id": "6b912d8419084d09a8ac",
+            "reason": null,
+            "solver_seconds": 0.006613119971007109,
+            "status": "satisfiable"
+          },
+          "reference_equivalent": true
+        }
+      ],
+      "events": [
+        "no_distinguishing_witness_in_completed_pool"
+      ],
+      "final_plan_id": "6b912d8419084d09a8ac",
+      "journeys": [
+        {
+          "journey_id": "0041204cf5057025bb62",
+          "rides": [
+            {
+              "calls": [
+                {
+                  "arrival_s": 38514,
+                  "departure_s": 38514,
+                  "stop_id": "6009"
+                },
+                {
+                  "arrival_s": 38996,
+                  "departure_s": 38996,
+                  "stop_id": "7631"
+                }
+              ],
+              "route_id": "4",
+              "scope": "outbound"
+            },
+            {
+              "calls": [
+                {
+                  "arrival_s": 44336,
+                  "departure_s": 44336,
+                  "stop_id": "7631"
+                },
+                {
+                  "arrival_s": 45480,
+                  "departure_s": 45480,
+                  "stop_id": "10472"
+                }
+              ],
+              "route_id": "4",
+              "scope": "outbound"
+            }
+          ]
+        },
+        {
+          "journey_id": "6b912d8419084d09a8ac",
+          "rides": [
+            {
+              "calls": [
+                {
+                  "arrival_s": 38514,
+                  "departure_s": 38514,
+                  "stop_id": "6009"
+                },
+                {
+                  "arrival_s": 40140,
+                  "departure_s": 40140,
+                  "stop_id": "10472"
+                }
+              ],
+              "route_id": "4",
+              "scope": "outbound"
+            }
+          ]
+        },
+        {
+          "journey_id": "6ec57a760ec0de4a08a5",
+          "rides": [
+            {
+              "calls": [
+                {
+                  "arrival_s": 42114,
+                  "departure_s": 42114,
+                  "stop_id": "6009"
+                },
+                {
+                  "arrival_s": 43740,
+                  "departure_s": 43740,
+                  "stop_id": "10472"
+                }
+              ],
+              "route_id": "4",
+              "scope": "outbound"
+            }
+          ]
+        }
+      ],
+      "remaining_ids": [
+        "c5"
+      ],
+      "updates": [
+        {
+          "after": [
+            "c5"
+          ],
+          "before": [
+            "c0",
+            "c1",
+            "c5"
+          ],
+          "journey_id": "0041204cf5057025bb62",
+          "judgment": {
+            "reason": "privileged independent reference evaluator",
+            "spans": [],
+            "verdict": "satisfied"
+          },
+          "reference_accepts": true,
+          "reference_candidates_after": [
+            "c5"
+          ]
+        }
+      ],
+      "witnesses": [
+        {
+          "cost": 1,
+          "journey_id": "0041204cf5057025bb62",
+          "policy": "balanced",
+          "score": 2.0,
+          "score_numerator": 2,
+          "separated_pairs": [
+            [
+              "c0",
+              "c5",
+              2
+            ],
+            [
+              "c1",
+              "c5",
+              2
+            ]
+          ]
+        }
+      ]
+    },
+    "ordinary": {
+      "candidates": [
+        {
+          "acceptance_bits": "00000000100000111000100100000000000000000000010000000000000001000000000000100001000000100010100001000000010000000010000000000000",
+          "aliases": [
+            "c0",
+            "c3",
+            "c4",
+            "c6",
+            "c7"
+          ],
+          "candidate_id": "c0",
+          "formula": {
+            "kind": "atom",
+            "op": "depart_ge",
+            "scope": "outbound",
+            "source": null,
+            "unit": "seconds",
+            "value": 41454
+          },
+          "plan": {
+            "plan_id": "6ec57a760ec0de4a08a5",
+            "reason": null,
+            "solver_seconds": 0.002918906044214964,
+            "status": "satisfiable"
+          },
+          "reference_equivalent": false
+        },
+        {
+          "acceptance_bits": "00000001101100111100100100000000100000000000010000000000000001000110000000100011000000100010100001000000010000001010001000000000",
+          "aliases": [
+            "c1",
+            "c2"
+          ],
+          "candidate_id": "c1",
+          "formula": {
+            "kind": "atom",
+            "op": "depart_ge",
+            "scope": "outbound",
+            "source": null,
+            "unit": "seconds",
+            "value": 40954
+          },
+          "plan": {
+            "plan_id": "6ec57a760ec0de4a08a5",
+            "reason": null,
+            "solver_seconds": 0.0032665999606251717,
+            "status": "satisfiable"
+          },
+          "reference_equivalent": false
+        },
+        {
+          "acceptance_bits": "11111110010011000011011011111111011111111111101111111111111110111001111111011100111111011101011110111111101111110101110111111111",
+          "aliases": [
+            "c5"
+          ],
+          "candidate_id": "c5",
+          "formula": {
+            "children": [
+              {
+                "kind": "atom",
+                "op": "depart_le",
+                "scope": "outbound",
+                "source": null,
+                "unit": "seconds",
+                "value": 40254
+              }
+            ],
+            "kind": "all",
+            "source": null
+          },
+          "plan": {
+            "plan_id": "6b912d8419084d09a8ac",
+            "reason": null,
+            "solver_seconds": 0.006613119971007109,
+            "status": "satisfiable"
+          },
+          "reference_equivalent": true
+        }
+      ],
+      "events": [],
+      "final_plan_id": "6ec57a760ec0de4a08a5",
+      "journeys": [
+        {
+          "journey_id": "0041204cf5057025bb62",
+          "rides": [
+            {
+              "calls": [
+                {
+                  "arrival_s": 38514,
+                  "departure_s": 38514,
+                  "stop_id": "6009"
+                },
+                {
+                  "arrival_s": 38996,
+                  "departure_s": 38996,
+                  "stop_id": "7631"
+                }
+              ],
+              "route_id": "4",
+              "scope": "outbound"
+            },
+            {
+              "calls": [
+                {
+                  "arrival_s": 44336,
+                  "departure_s": 44336,
+                  "stop_id": "7631"
+                },
+                {
+                  "arrival_s": 45480,
+                  "departure_s": 45480,
+                  "stop_id": "10472"
+                }
+              ],
+              "route_id": "4",
+              "scope": "outbound"
+            }
+          ]
+        },
+        {
+          "journey_id": "09dfe59fe33929832b3f",
+          "rides": [
+            {
+              "calls": [
+                {
+                  "arrival_s": 41214,
+                  "departure_s": 41214,
+                  "stop_id": "6009"
+                },
+                {
+                  "arrival_s": 41696,
+                  "departure_s": 41696,
+                  "stop_id": "7631"
+                }
+              ],
+              "route_id": "4",
+              "scope": "outbound"
+            },
+            {
+              "calls": [
+                {
+                  "arrival_s": 42596,
+                  "departure_s": 42596,
+                  "stop_id": "7631"
+                },
+                {
+                  "arrival_s": 43740,
+                  "departure_s": 43740,
+                  "stop_id": "10472"
+                }
+              ],
+              "route_id": "4",
+              "scope": "outbound"
+            }
+          ]
+        },
+        {
+          "journey_id": "6b912d8419084d09a8ac",
+          "rides": [
+            {
+              "calls": [
+                {
+                  "arrival_s": 38514,
+                  "departure_s": 38514,
+                  "stop_id": "6009"
+                },
+                {
+                  "arrival_s": 40140,
+                  "departure_s": 40140,
+                  "stop_id": "10472"
+                }
+              ],
+              "route_id": "4",
+              "scope": "outbound"
+            }
+          ]
+        },
+        {
+          "journey_id": "6ec57a760ec0de4a08a5",
+          "rides": [
+            {
+              "calls": [
+                {
+                  "arrival_s": 42114,
+                  "departure_s": 42114,
+                  "stop_id": "6009"
+                },
+                {
+                  "arrival_s": 43740,
+                  "departure_s": 43740,
+                  "stop_id": "10472"
+                }
+              ],
+              "route_id": "4",
+              "scope": "outbound"
+            }
+          ]
+        }
+      ],
+      "remaining_ids": [
+        "c1"
+      ],
+      "updates": [
+        {
+          "after": [
+            "c0",
+            "c1"
+          ],
+          "before": [
+            "c0",
+            "c1",
+            "c5"
+          ],
+          "journey_id": "0041204cf5057025bb62",
+          "judgment": {
+            "reason": "The journey departs after the specified time of 11:10:54.",
+            "spans": [
+              {
+                "end": 5,
+                "start": 0
+              }
+            ],
+            "verdict": "violated"
+          },
+          "reference_accepts": true,
+          "reference_candidates_after": []
+        },
+        {
+          "after": [
+            "c1"
+          ],
+          "before": [
+            "c0",
+            "c1"
+          ],
+          "journey_id": "09dfe59fe33929832b3f",
+          "judgment": {
+            "reason": "The journey starts on the correct date and follows the specified route from N Vancouver & Weidler to SE Milwaukie & Powell, with departures and arrivals matching the schedule.",
+            "spans": [
+              {
+                "end": 5,
+                "start": 0
+              }
+            ],
+            "verdict": "satisfied"
+          },
+          "reference_accepts": false,
+          "reference_candidates_after": []
+        }
+      ],
+      "witnesses": [
+        {
+          "cost": 1,
+          "journey_id": "0041204cf5057025bb62",
+          "policy": "balanced",
+          "score": 2.0,
+          "score_numerator": 2,
+          "separated_pairs": [
+            [
+              "c0",
+              "c5",
+              2
+            ],
+            [
+              "c1",
+              "c5",
+              2
+            ]
+          ]
+        },
+        {
+          "cost": 1,
+          "journey_id": "09dfe59fe33929832b3f",
+          "policy": "balanced",
+          "score": 1.0,
+          "score_numerator": 1,
+          "separated_pairs": [
+            [
+              "c0",
+              "c1",
+              0
+            ]
+          ]
+        }
+      ]
+    },
+    "scenario_id": "sampling-25"
+  },
+  {
+    "arm": "B",
+    "cause": "incorrect_judgment_eliminated_matching_candidate",
+    "checkpoint": 8,
+    "destructive_updates": [
+      {
+        "after": [
+          "c1",
+          "c2"
+        ],
+        "before": [
+          "c0",
+          "c1",
+          "c2",
+          "c4"
+        ],
+        "journey_id": "039f8c157f9afe674b88",
+        "judgment": {
+          "reason": "The journey starts on the correct date and follows the specified route and stops.",
+          "spans": [
+            {
+              "end": 5,
+              "start": 0
+            }
+          ],
+          "verdict": "satisfied"
+        },
+        "reference_accepts": false,
+        "reference_candidates_after": []
+      }
+    ],
+    "matching_candidate_ids": [
+      "c4"
+    ],
+    "oracle": {
+      "candidates": [
+        {
+          "acceptance_bits": "000000000000000000000000000000000000000000000000000000000000000000",
+          "aliases": [
+            "c0",
+            "c7"
+          ],
+          "candidate_id": "c0",
+          "formula": {
+            "children": [
+              {
+                "kind": "atom",
+                "op": "depart_ge",
+                "scope": "outbound",
+                "source": null,
+                "unit": "seconds",
+                "value": 371956
+              }
+            ],
+            "kind": "all",
+            "source": null
+          },
+          "plan": {
+            "plan_id": null,
+            "reason": null,
+            "solver_seconds": 0.00039362418465316296,
+            "status": "infeasible_in_pool"
+          },
+          "reference_equivalent": false
+        },
+        {
+          "acceptance_bits": "110110110011110001111111100111101000101111101110001101110111111110",
+          "aliases": [
+            "c1",
+            "c3"
+          ],
+          "candidate_id": "c1",
+          "formula": {
+            "kind": "atom",
+            "op": "depart_ge",
+            "scope": "outbound",
+            "source": null,
+            "unit": "seconds",
+            "value": 37956
+          },
+          "plan": {
+            "plan_id": "ddfac7f5684d4c2aa782",
+            "reason": null,
+            "solver_seconds": 0.004102127160876989,
+            "status": "satisfiable"
+          },
+          "reference_equivalent": false
+        },
+        {
+          "acceptance_bits": "110100100011110001111111100111101000101101001100001101100101110010",
+          "aliases": [
+            "c2",
+            "c6"
+          ],
+          "candidate_id": "c2",
+          "formula": {
+            "kind": "atom",
+            "op": "depart_ge",
+            "scope": "outbound",
+            "source": null,
+            "unit": "seconds",
+            "value": 38356
+          },
+          "plan": {
+            "plan_id": "66e814860a06219a211b",
+            "reason": null,
+            "solver_seconds": 0.0036002430133521557,
+            "status": "satisfiable"
+          },
+          "reference_equivalent": false
+        },
+        {
+          "acceptance_bits": "001001001100001110000000011000010111010000010001110010001000000001",
+          "aliases": [
+            "c4",
+            "c5"
+          ],
+          "candidate_id": "c4",
+          "formula": {
+            "children": [
+              {
+                "kind": "atom",
+                "op": "depart_le",
+                "scope": "outbound",
+                "source": null,
+                "unit": "seconds",
+                "value": 37196
+              }
+            ],
+            "kind": "all",
+            "source": null
+          },
+          "plan": {
+            "plan_id": "c60669581d686e245bc1",
+            "reason": null,
+            "solver_seconds": 0.0029799770563840866,
+            "status": "satisfiable"
+          },
+          "reference_equivalent": true
+        }
+      ],
+      "events": [],
+      "final_plan_id": "c60669581d686e245bc1",
+      "journeys": [
+        {
+          "journey_id": "039f8c157f9afe674b88",
+          "rides": [
+            {
+              "calls": [
+                {
+                  "arrival_s": 38996,
+                  "departure_s": 38996,
+                  "stop_id": "7631"
+                },
+                {
+                  "arrival_s": 39240,
+                  "departure_s": 39240,
+                  "stop_id": "7634"
+                }
+              ],
+              "route_id": "4",
+              "scope": "outbound"
+            },
+            {
+              "calls": [
+                {
+                  "arrival_s": 41940,
+                  "departure_s": 41940,
+                  "stop_id": "7634"
+                },
+                {
+                  "arrival_s": 42042,
+                  "departure_s": 42042,
+                  "stop_id": "3639"
+                }
+              ],
+              "route_id": "4",
+              "scope": "outbound"
+            }
+          ]
+        },
+        {
+          "journey_id": "041b47b5f3129973175d",
+          "rides": [
+            {
+              "calls": [
+                {
+                  "arrival_s": 36296,
+                  "departure_s": 36296,
+                  "stop_id": "7631"
+                },
+                {
+                  "arrival_s": 36540,
+                  "departure_s": 36540,
+                  "stop_id": "7634"
+                }
+              ],
+              "route_id": "4",
+              "scope": "outbound"
+            },
+            {
+              "calls": [
+                {
+                  "arrival_s": 41940,
+                  "departure_s": 41940,
+                  "stop_id": "7634"
+                },
+                {
+                  "arrival_s": 42042,
+                  "departure_s": 42042,
+                  "stop_id": "3639"
+                }
+              ],
+              "route_id": "4",
+              "scope": "outbound"
+            }
+          ]
+        },
+        {
+          "journey_id": "66e814860a06219a211b",
+          "rides": [
+            {
+              "calls": [
+                {
+                  "arrival_s": 39896,
+                  "departure_s": 39896,
+                  "stop_id": "7631"
+                },
+                {
+                  "arrival_s": 40242,
+                  "departure_s": 40242,
+                  "stop_id": "3639"
+                }
+              ],
+              "route_id": "4",
+              "scope": "outbound"
+            }
+          ]
+        },
+        {
+          "journey_id": "c60669581d686e245bc1",
+          "rides": [
+            {
+              "calls": [
+                {
+                  "arrival_s": 36296,
+                  "departure_s": 36296,
+                  "stop_id": "7631"
+                },
+                {
+                  "arrival_s": 36642,
+                  "departure_s": 36642,
+                  "stop_id": "3639"
+                }
+              ],
+              "route_id": "4",
+              "scope": "outbound"
+            }
+          ]
+        },
+        {
+          "journey_id": "ddfac7f5684d4c2aa782",
+          "rides": [
+            {
+              "calls": [
+                {
+                  "arrival_s": 38096,
+                  "departure_s": 38096,
+                  "stop_id": "7631"
+                },
+                {
+                  "arrival_s": 38442,
+                  "departure_s": 38442,
+                  "stop_id": "3639"
+                }
+              ],
+              "route_id": "4",
+              "scope": "outbound"
+            }
+          ]
+        }
+      ],
+      "remaining_ids": [
+        "c4"
+      ],
+      "updates": [
+        {
+          "after": [
+            "c0",
+            "c4"
+          ],
+          "before": [
+            "c0",
+            "c1",
+            "c2",
+            "c4"
+          ],
+          "journey_id": "039f8c157f9afe674b88",
+          "judgment": {
+            "reason": "privileged independent reference evaluator",
+            "spans": [],
+            "verdict": "violated"
+          },
+          "reference_accepts": false,
+          "reference_candidates_after": [
+            "c4"
+          ]
+        },
+        {
+          "after": [
+            "c4"
+          ],
+          "before": [
+            "c0",
+            "c4"
+          ],
+          "journey_id": "041b47b5f3129973175d",
+          "judgment": {
+            "reason": "privileged independent reference evaluator",
+            "spans": [],
+            "verdict": "satisfied"
+          },
+          "reference_accepts": true,
+          "reference_candidates_after": [
+            "c4"
+          ]
+        }
+      ],
+      "witnesses": [
+        {
+          "cost": 1,
+          "journey_id": "039f8c157f9afe674b88",
+          "policy": "balanced",
+          "score": 4.0,
+          "score_numerator": 4,
+          "separated_pairs": [
+            [
+              "c0",
+              "c1",
+              1
+            ],
+            [
+              "c0",
+              "c2",
+              1
+            ],
+            [
+              "c1",
+              "c4",
+              2
+            ],
+            [
+              "c2",
+              "c4",
+              2
+            ]
+          ]
+        },
+        {
+          "cost": 1,
+          "journey_id": "041b47b5f3129973175d",
+          "policy": "balanced",
+          "score": 1.0,
+          "score_numerator": 1,
+          "separated_pairs": [
+            [
+              "c0",
+              "c4",
+              1
+            ]
+          ]
+        }
+      ]
+    },
+    "ordinary": {
+      "candidates": [
+        {
+          "acceptance_bits": "000000000000000000000000000000000000000000000000000000000000000000",
+          "aliases": [
+            "c0",
+            "c7"
+          ],
+          "candidate_id": "c0",
+          "formula": {
+            "children": [
+              {
+                "kind": "atom",
+                "op": "depart_ge",
+                "scope": "outbound",
+                "source": null,
+                "unit": "seconds",
+                "value": 371956
+              }
+            ],
+            "kind": "all",
+            "source": null
+          },
+          "plan": {
+            "plan_id": null,
+            "reason": null,
+            "solver_seconds": 0.00039362418465316296,
+            "status": "infeasible_in_pool"
+          },
+          "reference_equivalent": false
+        },
+        {
+          "acceptance_bits": "110110110011110001111111100111101000101111101110001101110111111110",
+          "aliases": [
+            "c1",
+            "c3"
+          ],
+          "candidate_id": "c1",
+          "formula": {
+            "kind": "atom",
+            "op": "depart_ge",
+            "scope": "outbound",
+            "source": null,
+            "unit": "seconds",
+            "value": 37956
+          },
+          "plan": {
+            "plan_id": "ddfac7f5684d4c2aa782",
+            "reason": null,
+            "solver_seconds": 0.004102127160876989,
+            "status": "satisfiable"
+          },
+          "reference_equivalent": false
+        },
+        {
+          "acceptance_bits": "110100100011110001111111100111101000101101001100001101100101110010",
+          "aliases": [
+            "c2",
+            "c6"
+          ],
+          "candidate_id": "c2",
+          "formula": {
+            "kind": "atom",
+            "op": "depart_ge",
+            "scope": "outbound",
+            "source": null,
+            "unit": "seconds",
+            "value": 38356
+          },
+          "plan": {
+            "plan_id": "66e814860a06219a211b",
+            "reason": null,
+            "solver_seconds": 0.0036002430133521557,
+            "status": "satisfiable"
+          },
+          "reference_equivalent": false
+        },
+        {
+          "acceptance_bits": "001001001100001110000000011000010111010000010001110010001000000001",
+          "aliases": [
+            "c4",
+            "c5"
+          ],
+          "candidate_id": "c4",
+          "formula": {
+            "children": [
+              {
+                "kind": "atom",
+                "op": "depart_le",
+                "scope": "outbound",
+                "source": null,
+                "unit": "seconds",
+                "value": 37196
+              }
+            ],
+            "kind": "all",
+            "source": null
+          },
+          "plan": {
+            "plan_id": "c60669581d686e245bc1",
+            "reason": null,
+            "solver_seconds": 0.0029799770563840866,
+            "status": "satisfiable"
+          },
+          "reference_equivalent": true
+        }
+      ],
+      "events": [],
+      "final_plan_id": "ddfac7f5684d4c2aa782",
+      "journeys": [
+        {
+          "journey_id": "039f8c157f9afe674b88",
+          "rides": [
+            {
+              "calls": [
+                {
+                  "arrival_s": 38996,
+                  "departure_s": 38996,
+                  "stop_id": "7631"
+                },
+                {
+                  "arrival_s": 39240,
+                  "departure_s": 39240,
+                  "stop_id": "7634"
+                }
+              ],
+              "route_id": "4",
+              "scope": "outbound"
+            },
+            {
+              "calls": [
+                {
+                  "arrival_s": 41940,
+                  "departure_s": 41940,
+                  "stop_id": "7634"
+                },
+                {
+                  "arrival_s": 42042,
+                  "departure_s": 42042,
+                  "stop_id": "3639"
+                }
+              ],
+              "route_id": "4",
+              "scope": "outbound"
+            }
+          ]
+        },
+        {
+          "journey_id": "0d82949e2afa37979f5e",
+          "rides": [
+            {
+              "calls": [
+                {
+                  "arrival_s": 38096,
+                  "departure_s": 38096,
+                  "stop_id": "7631"
+                },
+                {
+                  "arrival_s": 38186,
+                  "departure_s": 38186,
+                  "stop_id": "7642"
+                }
+              ],
+              "route_id": "4",
+              "scope": "outbound"
+            },
+            {
+              "calls": [
+                {
+                  "arrival_s": 39986,
+                  "departure_s": 39986,
+                  "stop_id": "7642"
+                },
+                {
+                  "arrival_s": 40242,
+                  "departure_s": 40242,
+                  "stop_id": "3639"
+                }
+              ],
+              "route_id": "4",
+              "scope": "outbound"
+            }
+          ]
+        },
+        {
+          "journey_id": "66e814860a06219a211b",
+          "rides": [
+            {
+              "calls": [
+                {
+                  "arrival_s": 39896,
+                  "departure_s": 39896,
+                  "stop_id": "7631"
+                },
+                {
+                  "arrival_s": 40242,
+                  "departure_s": 40242,
+                  "stop_id": "3639"
+                }
+              ],
+              "route_id": "4",
+              "scope": "outbound"
+            }
+          ]
+        },
+        {
+          "journey_id": "c60669581d686e245bc1",
+          "rides": [
+            {
+              "calls": [
+                {
+                  "arrival_s": 36296,
+                  "departure_s": 36296,
+                  "stop_id": "7631"
+                },
+                {
+                  "arrival_s": 36642,
+                  "departure_s": 36642,
+                  "stop_id": "3639"
+                }
+              ],
+              "route_id": "4",
+              "scope": "outbound"
+            }
+          ]
+        },
+        {
+          "journey_id": "ddfac7f5684d4c2aa782",
+          "rides": [
+            {
+              "calls": [
+                {
+                  "arrival_s": 38096,
+                  "departure_s": 38096,
+                  "stop_id": "7631"
+                },
+                {
+                  "arrival_s": 38442,
+                  "departure_s": 38442,
+                  "stop_id": "3639"
+                }
+              ],
+              "route_id": "4",
+              "scope": "outbound"
+            }
+          ]
+        }
+      ],
+      "remaining_ids": [
+        "c1"
+      ],
+      "updates": [
+        {
+          "after": [
+            "c1",
+            "c2"
+          ],
+          "before": [
+            "c0",
+            "c1",
+            "c2",
+            "c4"
+          ],
+          "journey_id": "039f8c157f9afe674b88",
+          "judgment": {
+            "reason": "The journey starts on the correct date and follows the specified route and stops.",
+            "spans": [
+              {
+                "end": 5,
+                "start": 0
+              }
+            ],
+            "verdict": "satisfied"
+          },
+          "reference_accepts": false,
+          "reference_candidates_after": []
+        },
+        {
+          "after": [
+            "c1"
+          ],
+          "before": [
+            "c1",
+            "c2"
+          ],
+          "journey_id": "0d82949e2afa37979f5e",
+          "judgment": {
+            "reason": "The journey starts on the correct date and follows the specified route and stops.",
+            "spans": [
+              {
+                "end": 5,
+                "start": 0
+              }
+            ],
+            "verdict": "satisfied"
+          },
+          "reference_accepts": false,
+          "reference_candidates_after": []
+        }
+      ],
+      "witnesses": [
+        {
+          "cost": 1,
+          "journey_id": "039f8c157f9afe674b88",
+          "policy": "balanced",
+          "score": 4.0,
+          "score_numerator": 4,
+          "separated_pairs": [
+            [
+              "c0",
+              "c1",
+              1
+            ],
+            [
+              "c0",
+              "c2",
+              1
+            ],
+            [
+              "c1",
+              "c4",
+              2
+            ],
+            [
+              "c2",
+              "c4",
+              2
+            ]
+          ]
+        },
+        {
+          "cost": 1,
+          "journey_id": "0d82949e2afa37979f5e",
+          "policy": "balanced",
+          "score": 1.0,
+          "score_numerator": 1,
+          "separated_pairs": [
+            [
+              "c1",
+              "c2",
+              1
+            ]
+          ]
+        }
+      ]
+    },
+    "scenario_id": "sampling-28"
+  }
+]

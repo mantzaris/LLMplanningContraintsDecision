@@ -1,0 +1,12 @@
+{
+  "source": "https://www.scitepress.org/documents/SCITEPRESS_Conference_Latex.zip",
+  "retrieved": "2026-09-13",
+  "archive_sha256": "ec6cfaa11962e08d5c6a402124f21c3bca3591397521406ab6d1889398a3807a",
+  "files": {
+    "article.cls": "23e48b9a27539b6589503b6b5c5ff1451b58edfb245a0fa4c5847bb94392d32c",
+    "SCITEPRESS.sty": "d4a8482e5b2772a279b881012bedd813023f3c614287e02d5c648497ade3bf14",
+    "apalike.sty": "183bdccc3608e9db948dbd1cdffec3e2a476650dad223c7a3294325371fc0339",
+    "apalike.bst": "6977bea0847e4b850fd5bdc948beeaa50cd4d0c2a275e74a5fd68309a9628191"
+  },
+  "modifications": "none"
+}

@@ -1,0 +1,10 @@
+arm,method,checkpoint,n,G1S1,G1S0,G0S1,G0S0,G,S,oracle_witness_correct,any_candidate_selected_plan_correct,logical_tokens,generation_tokens,validation_tokens,logical_calls,judgments,outcomes
+A,Independent sampling,2,32,25,0,0,7,25,25,25,25,156464,152754,3710,69,5,"{""correct_feasible_plan"": 21, ""correct_infeasibility"": 4, ""incorrect_plan"": 7}"
+A,Independent sampling,4,32,27,0,0,5,27,27,27,27,310959,305400,5559,136,8,"{""correct_feasible_plan"": 23, ""correct_infeasibility"": 4, ""incorrect_plan"": 5}"
+A,Independent sampling,8,32,27,0,1,4,27,28,27,28,617643,610616,7027,266,10,"{""correct_feasible_plan"": 24, ""correct_infeasibility"": 4, ""incorrect_plan"": 4}"
+B,Diversified sampling,2,32,25,0,0,7,25,25,25,25,156464,152754,3710,69,5,"{""correct_feasible_plan"": 21, ""correct_infeasibility"": 4, ""incorrect_plan"": 7}"
+B,Diversified sampling,4,32,24,1,1,6,25,25,25,26,311881,306933,4948,135,7,"{""correct_feasible_plan"": 21, ""correct_infeasibility"": 4, ""incorrect_plan"": 7}"
+B,Diversified sampling,8,32,28,3,0,1,31,28,31,31,626497,617034,9463,269,13,"{""correct_feasible_plan"": 24, ""correct_infeasibility"": 4, ""incorrect_plan"": 4}"
+C,Solver-guided sampling,2,32,25,0,0,7,25,25,25,25,156464,152754,3710,69,5,"{""correct_feasible_plan"": 21, ""correct_infeasibility"": 4, ""incorrect_plan"": 7}"
+C,Solver-guided sampling,4,32,25,0,0,7,25,25,25,25,374526,370132,4394,134,6,"{""correct_feasible_plan"": 21, ""correct_infeasibility"": 4, ""incorrect_plan"": 7}"
+C,Solver-guided sampling,8,32,25,0,0,7,25,25,25,25,811760,807366,4394,262,6,"{""correct_feasible_plan"": 21, ""correct_infeasibility"": 4, ""incorrect_plan"": 7}"

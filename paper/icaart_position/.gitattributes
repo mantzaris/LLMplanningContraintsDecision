@@ -1,0 +1,5 @@
+# Preserve official template bytes, including upstream CRLF and whitespace.
+article.cls -text -whitespace
+SCITEPRESS.sty -text -whitespace
+apalike.sty -text -whitespace
+apalike.bst -text -whitespace

@@ -1,0 +1,146 @@
+{
+  "verified_on": "2026-09-13",
+  "sources": [
+    {
+      "key": "ssv",
+      "authors": [
+        "Mohammad Raza",
+        "Natasa Milic-Frayling"
+      ],
+      "title": "Instantiation-based Formalization of Logical Reasoning Tasks Using Language Models and Logical Solvers",
+      "year": 2025,
+      "status": "published conference paper",
+      "venue": "IJCAI-25",
+      "pages": "4633\u20134641",
+      "doi": "10.24963/ijcai.2025/516",
+      "primary": [
+        "https://www.ijcai.org/proceedings/2025/516",
+        "https://www.ijcai.org/proceedings/2025/0516.pdf"
+      ],
+      "verified_claim": "Concrete semantic instantiation checks and repair; general accuracy, verification precision and verification coverage (verified subset) are already reported.",
+      "paper_scope": "Candidate-set reference matching G is a different coverage definition; no claim to invent precision/coverage separation."
+    },
+    {
+      "key": "artemis",
+      "authors": [
+        "Daniel Mendoza",
+        "Anastasia Mavridou",
+        "Andreas Katis",
+        "Caroline Trippel"
+      ],
+      "title": "Automating Requirements Formalization: Using LLMs and Low-Complexity Distinguishing Traces for Semantic Validation",
+      "year": 2026,
+      "status": "published conference paper",
+      "venue": "48th IEEE/ACM International Conference on Software Engineering",
+      "doi": "10.1145/3744916.3787815",
+      "primary": [
+        "https://conf.researchr.org/details/icse-2026/icse-2026-research-track/287/Automating-Requirements-Formalization-Using-LLMs-and-Low-Complexity-Distinguishing-T",
+        "https://cs.stanford.edu/people/trippel/pubs/mendoza_ICSE26.pdf"
+      ],
+      "verified_claim": "Distinguishing traces, semantic validation, formalization accuracy and validation effort.",
+      "paper_scope": "Finite-pool automated judge is an adaptation, not reproduction of human-assisted validation."
+    },
+    {
+      "key": "amonkar",
+      "authors": [
+        "Rikhil Amonkar",
+        "Ceyhun Efe Kayan",
+        "Qimei Lai",
+        "Ronan Le Bras",
+        "Li Zhang"
+      ],
+      "title": "A Reality Check of Language Models as Formalizers on Constraint Satisfaction Problems",
+      "year": 2026,
+      "status": "preprint; original submission 2025",
+      "version": "2505.13252v6, 19 August 2026",
+      "primary": [
+        "https://arxiv.org/abs/2505.13252v6",
+        "https://arxiv.org/html/2505.13252v6"
+      ],
+      "verified_claim": "Compares language models as formalizers and solvers across constraint-satisfaction tasks; formalization bottlenecks.",
+      "paper_scope": "Prior diagnosis acknowledged; no blanket claim formalization is always worse."
+    },
+    {
+      "key": "diversity",
+      "authors": [
+        "Tianchun Wang",
+        "Zichuan Liu",
+        "Yuanzhou Chen",
+        "Jonathan Light",
+        "Weiyang Liu",
+        "Haifeng Chen",
+        "Xiang Zhang",
+        "Wei Cheng"
+      ],
+      "title": "On the Effect of Sampling Diversity in Scaling LLM Inference",
+      "year": 2026,
+      "status": "preprint; original submission 2025",
+      "version": "2502.11027v5, 10 August 2026",
+      "primary": [
+        "https://arxiv.org/abs/2502.11027v5",
+        "https://arxiv.org/html/2502.11027v5"
+      ],
+      "verified_claim": "Perturbation-based diversity, verifier dependence and majority-voting limitations; Section 5.2 explicitly distinguishes pass@k from selected outcomes.",
+      "paper_scope": "Coverage not implying selected correctness is a precedent, not an original observation here."
+    },
+    {
+      "key": "verge",
+      "authors": [
+        "Vikash Singh",
+        "Darion Cassel",
+        "Nathaniel Weir",
+        "Nick Feng",
+        "Sam Bayless"
+      ],
+      "title": "VERGE: Formal Refinement and Guidance Engine for Verifiable LLM Reasoning",
+      "year": 2026,
+      "status": "preprint",
+      "version": "2601.20055v2, 2 May 2026",
+      "primary": [
+        "https://arxiv.org/abs/2601.20055v2",
+        "https://arxiv.org/html/2601.20055v2"
+      ],
+      "verified_claim": "Equivalence consensus, semantic alignment, solver feedback, routing; Section 4.1 compute parity and Appendix E.4 formalization funnel/failure taxonomy.",
+      "paper_scope": "Explicit precedent for pipeline diagnostics and accounting; our narrower request-level joint G/S and benchmark-opportunity link is a position."
+    },
+    {
+      "key": "trimet",
+      "author": "TriMet",
+      "status": "official data documentation",
+      "primary": [
+        "https://developer.trimet.org/GTFS.shtml"
+      ],
+      "verified_claim": "Published GTFS schedule source; exact feed provenance separately verified locally."
+    },
+    {
+      "key": "gtfs",
+      "author": "GTFS",
+      "status": "official specification",
+      "primary": [
+        "https://gtfs.org/documentation/schedule/reference/"
+      ],
+      "verified_claim": "Schedule, service calendar/exception and time conventions; implementation claims supported by repository, not inferred from specification."
+    },
+    {
+      "key": "qwen",
+      "author": "Qwen Team",
+      "status": "official model card, not a cited research paper",
+      "year": 2024,
+      "primary": [
+        "https://huggingface.co/Qwen/Qwen2.5-7B-Instruct"
+      ],
+      "verified_claim": "Model identifier and official provenance. Execution revision/settings come from raw run manifests."
+    },
+    {
+      "key": "codex",
+      "author": "OpenAI",
+      "status": "official tool information; AI-assistance disclosure citation",
+      "year": 2026,
+      "primary": [
+        "https://openai.com/codex/"
+      ],
+      "verified_claim": "Tool identity; actual usage statement describes this preparation, not a model benchmark claim."
+    }
+  ],
+  "scope": "Focused primary-source verification; no exhaustive novelty claim. Unverified original proposal references were not reused."
+}

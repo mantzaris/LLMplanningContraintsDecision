@@ -72,3 +72,25 @@ uncertainty, including development. All project GPU processes stopped. No furthe
 is running or recommended on the evidence of this pilot. See the [frozen protocol](data/sampling/protocol.json),
 [method and commands](docs/stage3-semantic-sampling.md), [compact results and figures](artifacts/stage3/pilot-v1),
 and [verified raw-artifact storage](artifacts/stage3/pilot-v1/storage.json).
+
+
+## ICAART 2027 position-paper draft
+
+The [anonymous eight-page manuscript](paper/icaart_position/main.pdf),
+[complete TeX source](paper/icaart_position/main.tex), and
+[reproduction package](paper/icaart_position/README.md) connect benchmark coverage,
+candidate availability, validation, final decisions, and inference cost. The position
+is supported by exploratory negative findings; neither original intervention is
+claimed to outperform its baselines. Further inference remains paused.
+
+New offline joint analysis distinguishes failures despite matching candidates from
+correct plans without matching formalizations. Independent and diversified sampling
+have equal final accuracy but one request-level win and one loss. A separate
+[Stage 3 narrative correction](reports/STAGE3_ORACLE_NARRATIVE_CORRECTION.md) fixes
+one description of a judgment sequence; all historical numerical results remain
+unchanged. No new experimental model calls or GPU work were used.
+
+This is manuscript preparation, **not a submission**. Read the
+[author handoff](paper/icaart_position/AUTHOR_HANDOFF.md) for provisional annotations,
+anonymity/public-history considerations, AI-disclosure placement, and the verified
+22 October 2026 position-paper deadline.

@@ -1,0 +1,19 @@
+{
+  "data_sha256": {
+    "stage2-summary.json": "1fae5d9f7e5f54282d51ca82a9404d3d12671a7382342223d24bdf2f138894fb",
+    "stage3-summary.json": "b41473f3c36d4d29228d0b4900ebf4b22f0cc7d668a941b78b539be4a93ff640",
+    "worked-examples.json": "0b2ef1347c9f648ed4fcd412ed76eed4d685d366cac48b4d10fe30d2834f05a3"
+  },
+  "figures": {
+    "cost-outcomes.pdf": "8a37075bf9561c022e5b4a00c2397fa080a5e8fe097b96c7e4c90ba2ca214421",
+    "cost-outcomes.png": "8c31fbc811873a4d9bc30a3ffe57e06486f079ddcaeae928ccc67d5ea7705649",
+    "joint-outcomes.pdf": "49a51f80f8961f9cd6ad4d9c28922edcc67f459564744a9be3d01bf0f6d5dbdd",
+    "joint-outcomes.png": "27b9fdeb330adae8e12a83a2334dc8eec42ecb7cfdf00cc7c137a30c6fc874dc",
+    "selector-opportunity.pdf": "47659420e75a054d2bfd5fa960aeab2db2b672d8fa7c9b65c40ede666beaba88",
+    "selector-opportunity.png": "51381bf2a48fc84e2cfed8dfcf4b7ed715dbdedbfde173779861a7588b6a15e4",
+    "worked-transit.pdf": "6f74dadae643d136f24dcd2ff552edc3f699eb46e885c2fe2940e968814778ce",
+    "worked-transit.png": "d3c391bc22eb29d59318beeab36ecdd6a3ed0300405225230f12acaa66e90b3a"
+  },
+  "script_sha256": "757c7b78490bbbf630140dac63b2d50ec9ce0649aee508b894da7955a865c9e1",
+  "selection_rule": "Worked cases selected illustratively for the two off-diagonal G/S cells: first diversified G1S0 at final checkpoint (sampling-12), and the sole independent G0S1 at final checkpoint (sampling-20). Not prevalence estimates."
+}

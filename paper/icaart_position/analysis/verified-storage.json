@@ -1,0 +1,34 @@
+{
+  "ledgers": {
+    "runs/stage1-gpu-budget.jsonl": "d8a637e63849ca326d38260867cb7d42d9b3f1d2f58a36758b65d87bc318c824",
+    "runs/stage2-gpu-budget.jsonl": "87e13933af847422ec777cd996f6916ea565d8a2aed218165cb51ac2d632783d",
+    "runs/stage3-gpu-budget.jsonl": "1df62eba5db7b68087910f94612cd90603ebe6725a8f586148f488199d2b0558"
+  },
+  "local_frozen_feed_sha256": "82e6b822de008367b3d3d35bb52545807ea41b6f56623a9aa4b1162b3d54671b",
+  "stage2_raw_files": 152,
+  "stage3_archives": [
+    {
+      "local_path": "runs/stage3-preserved/development-raw.tar.gz",
+      "name": "development-raw.tar.gz",
+      "remote_path": "/workspace/LLMplanningConstraintsStage3/transfers/development-raw.tar.gz",
+      "sha256": "34ef1d69d53eb8d31b230cd73612d85c6e5dd0c61ac4fe86ba3a324f8c440380",
+      "verified_replication": true
+    },
+    {
+      "local_path": "runs/stage3-preserved/fresh-execution-raw.tar.gz",
+      "name": "fresh-execution-raw.tar.gz",
+      "remote_path": "/workspace/LLMplanningConstraintsStage3/transfers/fresh-execution-raw.tar.gz",
+      "sha256": "fed00b905697e3344e9d14c6471e05d93222b23fed3e5240f6751a1d80487e86",
+      "verified_replication": true
+    },
+    {
+      "contains": "development and fresh raw generations/pools; separate oracle outputs; CPU replays; stage ledger; setup notes; prepared public inputs and provisional references",
+      "local_path": "runs/stage3-preserved/complete-raw.tar.gz",
+      "name": "complete-raw.tar.gz",
+      "remote_path": "/workspace/LLMplanningConstraintsStage3/transfers/complete-raw.tar.gz",
+      "sha256": "859bb53e3070243ac7c41308d4c2056233f312caf48c5c4bd8145ea6fe32794d",
+      "verified_replication": true
+    }
+  ],
+  "stage3_raw_files": 1225
+}

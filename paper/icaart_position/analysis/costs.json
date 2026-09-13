@@ -1,0 +1,28 @@
+{
+  "actual_fresh_calls": 659,
+  "actual_fresh_tokens": 1743059,
+  "calls_saved_by_cache": 174,
+  "historical_uncertainty_seconds": {
+    "1": 30,
+    "2": 30,
+    "3": 60
+  },
+  "logical_all_prefix_calls": 833,
+  "logical_all_prefix_tokens": 2081931,
+  "new_experimental_inference_calls": 0,
+  "stage_ledgers": {
+    "1": {
+      "calls": 46,
+      "measured_seconds": 237.39021502621472
+    },
+    "2": {
+      "calls": 358,
+      "measured_seconds": 681.6208989289589
+    },
+    "3": {
+      "calls": 683,
+      "measured_seconds": 1260.680232732091
+    }
+  },
+  "tokens_saved_by_cache": 338872
+}

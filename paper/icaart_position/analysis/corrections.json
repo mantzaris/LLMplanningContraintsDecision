@@ -1,0 +1,21 @@
+{
+  "version": "icaart-offline-narrative-v1",
+  "scenario_id": "sampling-20",
+  "arm": "A",
+  "checkpoint": 8,
+  "original_report": "reports/STAGE3_SEMANTIC_SAMPLING_PILOT.md",
+  "issue": "Report describes both positive judgments as erroneous.",
+  "corrected_reference_truth": [
+    false,
+    true
+  ],
+  "ordinary_verdicts": [
+    "satisfied",
+    "satisfied"
+  ],
+  "numerical_results_changed": false,
+  "references_changed": false,
+  "raw_outputs_changed": false,
+  "evidence": "analysis/worked-examples.json",
+  "correction_report": "reports/STAGE3_ORACLE_NARRATIVE_CORRECTION.md"
+}

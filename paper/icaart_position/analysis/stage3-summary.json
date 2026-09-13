@@ -1,0 +1,690 @@
+{
+  "checkpoints": [
+    {
+      "G": 25,
+      "G0S0": 7,
+      "G0S1": 0,
+      "G1S0": 0,
+      "G1S1": 25,
+      "S": 25,
+      "any_candidate_selected_plan_correct": 25,
+      "arm": "A",
+      "checkpoint": 2,
+      "generation_tokens": 152754,
+      "judgments": 5,
+      "logical_calls": 69,
+      "logical_tokens": 156464,
+      "method": "Independent sampling",
+      "n": 32,
+      "oracle_witness_correct": 25,
+      "outcomes": {
+        "correct_feasible_plan": 21,
+        "correct_infeasibility": 4,
+        "incorrect_plan": 7
+      },
+      "validation_tokens": 3710
+    },
+    {
+      "G": 27,
+      "G0S0": 5,
+      "G0S1": 0,
+      "G1S0": 0,
+      "G1S1": 27,
+      "S": 27,
+      "any_candidate_selected_plan_correct": 27,
+      "arm": "A",
+      "checkpoint": 4,
+      "generation_tokens": 305400,
+      "judgments": 8,
+      "logical_calls": 136,
+      "logical_tokens": 310959,
+      "method": "Independent sampling",
+      "n": 32,
+      "oracle_witness_correct": 27,
+      "outcomes": {
+        "correct_feasible_plan": 23,
+        "correct_infeasibility": 4,
+        "incorrect_plan": 5
+      },
+      "validation_tokens": 5559
+    },
+    {
+      "G": 27,
+      "G0S0": 4,
+      "G0S1": 1,
+      "G1S0": 0,
+      "G1S1": 27,
+      "S": 28,
+      "any_candidate_selected_plan_correct": 28,
+      "arm": "A",
+      "checkpoint": 8,
+      "generation_tokens": 610616,
+      "judgments": 10,
+      "logical_calls": 266,
+      "logical_tokens": 617643,
+      "method": "Independent sampling",
+      "n": 32,
+      "oracle_witness_correct": 27,
+      "outcomes": {
+        "correct_feasible_plan": 24,
+        "correct_infeasibility": 4,
+        "incorrect_plan": 4
+      },
+      "validation_tokens": 7027
+    },
+    {
+      "G": 25,
+      "G0S0": 7,
+      "G0S1": 0,
+      "G1S0": 0,
+      "G1S1": 25,
+      "S": 25,
+      "any_candidate_selected_plan_correct": 25,
+      "arm": "B",
+      "checkpoint": 2,
+      "generation_tokens": 152754,
+      "judgments": 5,
+      "logical_calls": 69,
+      "logical_tokens": 156464,
+      "method": "Diversified sampling",
+      "n": 32,
+      "oracle_witness_correct": 25,
+      "outcomes": {
+        "correct_feasible_plan": 21,
+        "correct_infeasibility": 4,
+        "incorrect_plan": 7
+      },
+      "validation_tokens": 3710
+    },
+    {
+      "G": 25,
+      "G0S0": 6,
+      "G0S1": 1,
+      "G1S0": 1,
+      "G1S1": 24,
+      "S": 25,
+      "any_candidate_selected_plan_correct": 26,
+      "arm": "B",
+      "checkpoint": 4,
+      "generation_tokens": 306933,
+      "judgments": 7,
+      "logical_calls": 135,
+      "logical_tokens": 311881,
+      "method": "Diversified sampling",
+      "n": 32,
+      "oracle_witness_correct": 25,
+      "outcomes": {
+        "correct_feasible_plan": 21,
+        "correct_infeasibility": 4,
+        "incorrect_plan": 7
+      },
+      "validation_tokens": 4948
+    },
+    {
+      "G": 31,
+      "G0S0": 1,
+      "G0S1": 0,
+      "G1S0": 3,
+      "G1S1": 28,
+      "S": 28,
+      "any_candidate_selected_plan_correct": 31,
+      "arm": "B",
+      "checkpoint": 8,
+      "generation_tokens": 617034,
+      "judgments": 13,
+      "logical_calls": 269,
+      "logical_tokens": 626497,
+      "method": "Diversified sampling",
+      "n": 32,
+      "oracle_witness_correct": 31,
+      "outcomes": {
+        "correct_feasible_plan": 24,
+        "correct_infeasibility": 4,
+        "incorrect_plan": 4
+      },
+      "validation_tokens": 9463
+    },
+    {
+      "G": 25,
+      "G0S0": 7,
+      "G0S1": 0,
+      "G1S0": 0,
+      "G1S1": 25,
+      "S": 25,
+      "any_candidate_selected_plan_correct": 25,
+      "arm": "C",
+      "checkpoint": 2,
+      "generation_tokens": 152754,
+      "judgments": 5,
+      "logical_calls": 69,
+      "logical_tokens": 156464,
+      "method": "Solver-guided sampling",
+      "n": 32,
+      "oracle_witness_correct": 25,
+      "outcomes": {
+        "correct_feasible_plan": 21,
+        "correct_infeasibility": 4,
+        "incorrect_plan": 7
+      },
+      "validation_tokens": 3710
+    },
+    {
+      "G": 25,
+      "G0S0": 7,
+      "G0S1": 0,
+      "G1S0": 0,
+      "G1S1": 25,
+      "S": 25,
+      "any_candidate_selected_plan_correct": 25,
+      "arm": "C",
+      "checkpoint": 4,
+      "generation_tokens": 370132,
+      "judgments": 6,
+      "logical_calls": 134,
+      "logical_tokens": 374526,
+      "method": "Solver-guided sampling",
+      "n": 32,
+      "oracle_witness_correct": 25,
+      "outcomes": {
+        "correct_feasible_plan": 21,
+        "correct_infeasibility": 4,
+        "incorrect_plan": 7
+      },
+      "validation_tokens": 4394
+    },
+    {
+      "G": 25,
+      "G0S0": 7,
+      "G0S1": 0,
+      "G1S0": 0,
+      "G1S1": 25,
+      "S": 25,
+      "any_candidate_selected_plan_correct": 25,
+      "arm": "C",
+      "checkpoint": 8,
+      "generation_tokens": 807366,
+      "judgments": 6,
+      "logical_calls": 262,
+      "logical_tokens": 811760,
+      "method": "Solver-guided sampling",
+      "n": 32,
+      "oracle_witness_correct": 25,
+      "outcomes": {
+        "correct_feasible_plan": 21,
+        "correct_infeasibility": 4,
+        "incorrect_plan": 7
+      },
+      "validation_tokens": 4394
+    }
+  ],
+  "judgments": [
+    {
+      "journey_id": "00b783dfaa8092dc3eae",
+      "reference_accepts": true,
+      "scenario_id": "sampling-01",
+      "verdict": "satisfied",
+      "wrong": false
+    },
+    {
+      "journey_id": "1eee515033a9c13b605d",
+      "reference_accepts": false,
+      "scenario_id": "sampling-04",
+      "verdict": "satisfied",
+      "wrong": true
+    },
+    {
+      "journey_id": "0af9d8233251561476fc",
+      "reference_accepts": true,
+      "scenario_id": "sampling-04",
+      "verdict": "satisfied",
+      "wrong": false
+    },
+    {
+      "journey_id": "005abb37e930142b8b47",
+      "reference_accepts": true,
+      "scenario_id": "sampling-04",
+      "verdict": "satisfied",
+      "wrong": false
+    },
+    {
+      "journey_id": "0620f2a29c40d1a3034e",
+      "reference_accepts": false,
+      "scenario_id": "sampling-04",
+      "verdict": "satisfied",
+      "wrong": true
+    },
+    {
+      "journey_id": "0080fc18f33d4874c215",
+      "reference_accepts": true,
+      "scenario_id": "sampling-09",
+      "verdict": "satisfied",
+      "wrong": false
+    },
+    {
+      "journey_id": "00386296478d8e0c4e63",
+      "reference_accepts": false,
+      "scenario_id": "sampling-09",
+      "verdict": "satisfied",
+      "wrong": true
+    },
+    {
+      "journey_id": "058c88205f1210b612e1",
+      "reference_accepts": false,
+      "scenario_id": "sampling-09",
+      "verdict": "satisfied",
+      "wrong": true
+    },
+    {
+      "journey_id": "093dbfd483e646066fdb",
+      "reference_accepts": false,
+      "scenario_id": "sampling-12",
+      "verdict": "satisfied",
+      "wrong": true
+    },
+    {
+      "journey_id": "00de85f0851f9bd12d64",
+      "reference_accepts": true,
+      "scenario_id": "sampling-12",
+      "verdict": "satisfied",
+      "wrong": false
+    },
+    {
+      "journey_id": "004977e99b44fd327c54",
+      "reference_accepts": false,
+      "scenario_id": "sampling-12",
+      "verdict": "satisfied",
+      "wrong": true
+    },
+    {
+      "journey_id": "00001508385ca9ebf5f1",
+      "reference_accepts": true,
+      "scenario_id": "sampling-17",
+      "verdict": "satisfied",
+      "wrong": false
+    },
+    {
+      "journey_id": "0046a48e25e956543682",
+      "reference_accepts": false,
+      "scenario_id": "sampling-20",
+      "verdict": "satisfied",
+      "wrong": true
+    },
+    {
+      "journey_id": "03c572f19409b8bd2a6c",
+      "reference_accepts": true,
+      "scenario_id": "sampling-20",
+      "verdict": "satisfied",
+      "wrong": false
+    },
+    {
+      "journey_id": "09dfe59fe33929832b3f",
+      "reference_accepts": false,
+      "scenario_id": "sampling-25",
+      "verdict": "satisfied",
+      "wrong": true
+    },
+    {
+      "journey_id": "0041204cf5057025bb62",
+      "reference_accepts": true,
+      "scenario_id": "sampling-25",
+      "verdict": "violated",
+      "wrong": true
+    },
+    {
+      "journey_id": "1c76e1aac89c1bbb1b74",
+      "reference_accepts": false,
+      "scenario_id": "sampling-26",
+      "verdict": "violated",
+      "wrong": false
+    },
+    {
+      "journey_id": "039f8c157f9afe674b88",
+      "reference_accepts": false,
+      "scenario_id": "sampling-28",
+      "verdict": "satisfied",
+      "wrong": true
+    },
+    {
+      "journey_id": "0d82949e2afa37979f5e",
+      "reference_accepts": false,
+      "scenario_id": "sampling-28",
+      "verdict": "satisfied",
+      "wrong": true
+    }
+  ],
+  "paired": [
+    {
+      "base_bootstrap_95": [
+        0.0,
+        0.0
+      ],
+      "checkpoint": 2,
+      "difference": 0,
+      "left": "A",
+      "loss_ids": [],
+      "losses": 0,
+      "metric": "G",
+      "right": "B",
+      "ties": 32,
+      "win_ids": [],
+      "wins": 0
+    },
+    {
+      "base_bootstrap_95": [
+        0.0,
+        0.0
+      ],
+      "checkpoint": 2,
+      "difference": 0,
+      "left": "A",
+      "loss_ids": [],
+      "losses": 0,
+      "metric": "S",
+      "right": "B",
+      "ties": 32,
+      "win_ids": [],
+      "wins": 0
+    },
+    {
+      "base_bootstrap_95": [
+        0.0,
+        0.15625
+      ],
+      "checkpoint": 4,
+      "difference": 0.0625,
+      "left": "A",
+      "loss_ids": [],
+      "losses": 0,
+      "metric": "G",
+      "right": "B",
+      "ties": 30,
+      "win_ids": [
+        "sampling-01",
+        "sampling-04"
+      ],
+      "wins": 2
+    },
+    {
+      "base_bootstrap_95": [
+        0.0,
+        0.15625
+      ],
+      "checkpoint": 4,
+      "difference": 0.0625,
+      "left": "A",
+      "loss_ids": [],
+      "losses": 0,
+      "metric": "S",
+      "right": "B",
+      "ties": 30,
+      "win_ids": [
+        "sampling-01",
+        "sampling-09"
+      ],
+      "wins": 2
+    },
+    {
+      "base_bootstrap_95": [
+        -0.25,
+        -0.03125
+      ],
+      "checkpoint": 8,
+      "difference": -0.125,
+      "left": "A",
+      "loss_ids": [
+        "sampling-12",
+        "sampling-17",
+        "sampling-25",
+        "sampling-28"
+      ],
+      "losses": 4,
+      "metric": "G",
+      "right": "B",
+      "ties": 28,
+      "win_ids": [],
+      "wins": 0
+    },
+    {
+      "base_bootstrap_95": [
+        -0.09375,
+        0.09375
+      ],
+      "checkpoint": 8,
+      "difference": 0,
+      "left": "A",
+      "loss_ids": [
+        "sampling-17"
+      ],
+      "losses": 1,
+      "metric": "S",
+      "right": "B",
+      "ties": 30,
+      "win_ids": [
+        "sampling-20"
+      ],
+      "wins": 1
+    },
+    {
+      "base_bootstrap_95": [
+        0.0,
+        0.0
+      ],
+      "checkpoint": 2,
+      "difference": 0,
+      "left": "C",
+      "loss_ids": [],
+      "losses": 0,
+      "metric": "G",
+      "right": "A",
+      "ties": 32,
+      "win_ids": [],
+      "wins": 0
+    },
+    {
+      "base_bootstrap_95": [
+        0.0,
+        0.0
+      ],
+      "checkpoint": 2,
+      "difference": 0,
+      "left": "C",
+      "loss_ids": [],
+      "losses": 0,
+      "metric": "S",
+      "right": "A",
+      "ties": 32,
+      "win_ids": [],
+      "wins": 0
+    },
+    {
+      "base_bootstrap_95": [
+        -0.15625,
+        0.0
+      ],
+      "checkpoint": 4,
+      "difference": -0.0625,
+      "left": "C",
+      "loss_ids": [
+        "sampling-01",
+        "sampling-04"
+      ],
+      "losses": 2,
+      "metric": "G",
+      "right": "A",
+      "ties": 30,
+      "win_ids": [],
+      "wins": 0
+    },
+    {
+      "base_bootstrap_95": [
+        -0.15625,
+        0.0
+      ],
+      "checkpoint": 4,
+      "difference": -0.0625,
+      "left": "C",
+      "loss_ids": [
+        "sampling-01",
+        "sampling-04"
+      ],
+      "losses": 2,
+      "metric": "S",
+      "right": "A",
+      "ties": 30,
+      "win_ids": [],
+      "wins": 0
+    },
+    {
+      "base_bootstrap_95": [
+        -0.15625,
+        0.0
+      ],
+      "checkpoint": 8,
+      "difference": -0.0625,
+      "left": "C",
+      "loss_ids": [
+        "sampling-01",
+        "sampling-04"
+      ],
+      "losses": 2,
+      "metric": "G",
+      "right": "A",
+      "ties": 30,
+      "win_ids": [],
+      "wins": 0
+    },
+    {
+      "base_bootstrap_95": [
+        -0.21875,
+        0.0
+      ],
+      "checkpoint": 8,
+      "difference": -0.09375,
+      "left": "C",
+      "loss_ids": [
+        "sampling-01",
+        "sampling-04",
+        "sampling-20"
+      ],
+      "losses": 3,
+      "metric": "S",
+      "right": "A",
+      "ties": 29,
+      "win_ids": [],
+      "wins": 0
+    },
+    {
+      "base_bootstrap_95": [
+        0.0,
+        0.0
+      ],
+      "checkpoint": 2,
+      "difference": 0,
+      "left": "C",
+      "loss_ids": [],
+      "losses": 0,
+      "metric": "G",
+      "right": "B",
+      "ties": 32,
+      "win_ids": [],
+      "wins": 0
+    },
+    {
+      "base_bootstrap_95": [
+        0.0,
+        0.0
+      ],
+      "checkpoint": 2,
+      "difference": 0,
+      "left": "C",
+      "loss_ids": [],
+      "losses": 0,
+      "metric": "S",
+      "right": "B",
+      "ties": 32,
+      "win_ids": [],
+      "wins": 0
+    },
+    {
+      "base_bootstrap_95": [
+        0.0,
+        0.0
+      ],
+      "checkpoint": 4,
+      "difference": 0,
+      "left": "C",
+      "loss_ids": [],
+      "losses": 0,
+      "metric": "G",
+      "right": "B",
+      "ties": 32,
+      "win_ids": [],
+      "wins": 0
+    },
+    {
+      "base_bootstrap_95": [
+        -0.09375,
+        0.09375
+      ],
+      "checkpoint": 4,
+      "difference": 0,
+      "left": "C",
+      "loss_ids": [
+        "sampling-04"
+      ],
+      "losses": 1,
+      "metric": "S",
+      "right": "B",
+      "ties": 30,
+      "win_ids": [
+        "sampling-09"
+      ],
+      "wins": 1
+    },
+    {
+      "base_bootstrap_95": [
+        -0.34375,
+        -0.0625
+      ],
+      "checkpoint": 8,
+      "difference": -0.1875,
+      "left": "C",
+      "loss_ids": [
+        "sampling-01",
+        "sampling-04",
+        "sampling-12",
+        "sampling-17",
+        "sampling-25",
+        "sampling-28"
+      ],
+      "losses": 6,
+      "metric": "G",
+      "right": "B",
+      "ties": 26,
+      "win_ids": [],
+      "wins": 0
+    },
+    {
+      "base_bootstrap_95": [
+        -0.21875,
+        0.0
+      ],
+      "checkpoint": 8,
+      "difference": -0.09375,
+      "left": "C",
+      "loss_ids": [
+        "sampling-01",
+        "sampling-04",
+        "sampling-17"
+      ],
+      "losses": 3,
+      "metric": "S",
+      "right": "B",
+      "ties": 29,
+      "win_ids": [],
+      "wins": 0
+    }
+  ],
+  "token_overhead_final_C_over_A": 0.3142867319794769,
+  "token_overhead_final_C_over_B": 0.29571250939749105
+}
