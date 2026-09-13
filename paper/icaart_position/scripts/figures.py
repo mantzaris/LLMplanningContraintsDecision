@@ -50,7 +50,7 @@ def costs():
     data = read("stage3-summary.json")["checkpoints"]
     fig, axes = plt.subplots(1, 2, figsize=(6.15, 2.55), sharex=True, sharey=True)
     for ax, metric, title in zip(
-        axes, ["G", "S"], ["(a) Matching candidate available", "(b) Correct final outcome"]
+        axes, ["G", "S"], ["(a) Candidate acquisition", "(b) Final decision correctness"]
     ):
         for arm, color, marker, name in zip("ABC", COLORS, ["o", "s", "^"], NAMES):
             rows = [r for r in data if r["arm"] == arm]
@@ -135,7 +135,7 @@ def joint():
         frameon=False,
         columnspacing=0.7,
     )
-    ax.set_title("Final checkpoint: eight attempts", loc="left")
+    ax.set_title("Availability and outcomes", loc="left")
     save(fig, "joint-outcomes")
 
 
@@ -158,7 +158,7 @@ def opportunity():
     a.set_xlabel("Nested sets of base requests")
     for y, v in enumerate(values):
         a.text(v + 1, y, str(v), va="center", fontsize=8)
-    a.set_title("(a) Opportunity to change selection", loc="left")
+    a.set_title("(a) From disagreement to selection", loc="left")
     cov = x["clause_coverage"]
     groups = [
         ("Time", ["earliest_departure", "latest_departure", "latest_arrival"]),
@@ -201,7 +201,7 @@ def opportunity():
     b.set_xlim(0, 58)
     b.set_xticks([0, 20, 40])
     b.set_xlabel("Reference clauses (101 total)")
-    b.set_title("(b) Effective clause coverage", loc="left")
+    b.set_title("(b) Which requirements vary?", loc="left")
     b.legend(
         loc="upper center",
         bbox_to_anchor=(0.5, -0.32),
@@ -224,7 +224,7 @@ def worked():
     info = [
         (
             "sampling-12",
-            "(a) Matching candidate discarded",
+            "(a) Available match, selection loss",
             "SW 5th & Hall → SE Division & 20th Ave",
             "Depart no later than 10:08:31, inclusive.",
             "After first check: d ≤ 10:08:31 or d ≥ 10:08:11",
@@ -234,7 +234,7 @@ def worked():
         ),
         (
             "sampling-20",
-            "(b) Correct plan without a matching candidate",
+            "(b) Valid decision without a match",
             "SE Powell & Milwaukie → SW 6th & Clay",
             "Depart no later than 10:55:00, inclusive.",
             "No matching candidate; final candidate: d ≥ 10:55",

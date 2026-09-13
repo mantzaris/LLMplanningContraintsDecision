@@ -1,6 +1,6 @@
 # ICAART 2027 position-paper package
 
-The anonymous [eight-page PDF](main.pdf) argues for joint evaluation of benchmark coverage, candidate availability, consequential distinctions, final decisions, and inference cost. It reports the negative Stage 2/3 findings without claiming either proposed intervention beats its baselines. This is a prepared draft, **not a conference submission**. See [AUTHOR_HANDOFF.md](AUTHOR_HANDOFF.md) before any submission or artifact release.
+The anonymous [eight-page PDF](main.pdf), **“Linking Candidate Coverage to Decision Quality: A Framework for LLM Planning Evaluation,”** proposes a structured framework connecting benchmark coverage, candidate availability, validation behavior, final decisions, and inference cost. Two exploratory transit studies illustrate what its reproducible analyses reveal beyond aggregate accuracy. Experimental values and corrected interpretations are preserved, including the unfavorable weighting and solver-guided sampling comparisons. This is a prepared draft, **not a conference submission**. See [AUTHOR_HANDOFF.md](AUTHOR_HANDOFF.md) before any submission or artifact release.
 
 All prose and the bibliography are in [main.tex](main.tex). The four files `article.cls`, `SCITEPRESS.sty`, `apalike.sty`, and `apalike.bst` are byte-identical official template dependencies. Standard TeX Live packages are required; `algorithm2e` is required by the official style even though this paper contains no algorithm float. [Template provenance](template/provenance.json) records the download and checksums.
 

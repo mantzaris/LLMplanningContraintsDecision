@@ -1,48 +1,48 @@
 {
-  "main_pdf_sha256": "9e113f89ade590f5586fcb42bab80c754b672ebdbf5d24de0ef91fbdd3455691",
+  "main_pdf_sha256": "63b9880a3a08822ff22a14d580d35d15643c6723d7914380c2f4a12aa6d71d0e",
   "renderer": "pdftoppm -r 115 -png",
   "inspection": "assistant visual inspection; not human annotation review",
   "pages": [
     {
       "page": 1,
-      "render_sha256": "4028ae818c6448c5c1e2351123b9315db92ed12b0123fe64177f9d29ee550d1b",
+      "render_sha256": "4b687b07e817bdbdec59a88e600e4e73a3302dc19f8d9f0d3aaeaa452d86199e",
       "inspected": true
     },
     {
       "page": 2,
-      "render_sha256": "0a101b0cc918656c8c00feca413d430ee2a9bb05ad6117fa31755e8840427ec7",
+      "render_sha256": "89a17d061dc936dff3ed10a41fde337a22306b8559cde17eccdfef72f221a150",
       "inspected": true
     },
     {
       "page": 3,
-      "render_sha256": "edda50e71146b357eec43a168e11dfb7dac117f11c070afef5529cdfe54a204d",
+      "render_sha256": "fb9733ba9517a47d2037d934dd21ad0367aa5b94d4ba1310e7b5d5565e805f57",
       "inspected": true
     },
     {
       "page": 4,
-      "render_sha256": "8026bb7eb0bfac2902c260040a008871806538a1b5c616a3ce91b3619147bad4",
+      "render_sha256": "7b9c18605b592e9585e00a0989777694c2dd01cac0a295fb4e7c5b7ff1545007",
       "inspected": true
     },
     {
       "page": 5,
-      "render_sha256": "ea4bf95c607ef3de4664205864dfdcdf873e9cb96a416b0e65b4e28f83f82ea5",
+      "render_sha256": "023ed3acff60fc6cb327b104e2e002c42ca160661a48b501fe882e51d030c8e6",
       "inspected": true
     },
     {
       "page": 6,
-      "render_sha256": "b7e4eb5d3743426cc7b12786891d1854379df225e40f371aecac353f72f7e76c",
+      "render_sha256": "211a955606ca66222d1722d3f1aa710a5d12d949b0220c058680ca105a6c4968",
       "inspected": true
     },
     {
       "page": 7,
-      "render_sha256": "98ce875f37e8e51dc61bb9c4ea83a17db70d4d3b9a4ec9388261a801e510bca6",
+      "render_sha256": "e013225d528de40f47a827387542b5c4c716df70fbb1480ac28f8aba58dfbcad",
       "inspected": true
     },
     {
       "page": 8,
-      "render_sha256": "9ec143574e6efc14e0ee23f3d4b8a68811e3df3224f631317266725b06284236",
+      "render_sha256": "7d0674aa746d9077d24b0bc214e80692b17098f86481993af00575126f1eb4ce",
       "inspected": true
     }
   ],
-  "findings": "All eight pages inspected: no clipped text, equations or figures; citations resolved; no visible author identity. Figure labels, title/abstract, references and disclosure are legible. Pages 2, 6, 7 and 8 are pixel-identical to the earlier inspected rendering; changed pages 1, 3, 4 and 5 were inspected again."
+  "findings": "All eight revised pages inspected: title, abstract, equations, figures, captions, references and disclosure are legible; no clipped material or visible author identity. After shortening the joint-figure title for readability, pages 6\u20138 were rendered and inspected again. Official template formatting is unchanged."
 }
