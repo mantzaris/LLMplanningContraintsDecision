@@ -1,0 +1,14 @@
+{
+  "analysis_inputs": {
+    "annotations.json": "cd3c585162fa781324736be45caae560f6077d33261300a5b57d26ca04f4ca6b",
+    "corrections-v1.json": "261e7353ed35d8f4214b0b025cc0b806f846577830f451ebccf4ff8a4305b475",
+    "coverage.json": "ccd7c381fa584345176b939a2c0eab6e391154543619d3945343d5453066e7fa",
+    "provenance.json": "8b20445330f57da36a7388951d6b4767e42ddddfa4698dfd6769c36ca238b7a6",
+    "rescored-outputs.json": "4e4084676e3aeb02c7e0b55cdc0f8c2f1f445922dedbd30afaede81d019172c4",
+    "summary.json": "8ed54fb6aae55f9d3cfe45cb2036b9b1b55930aa6b0d23daf43c2424b12aafbe"
+  },
+  "renderer_sha256": "4608cc6c26bfbc27cf1ff378c3b5e748a9488f988fb43fd4c3f86167a2f0046e",
+  "report_sha256": "c2f72417b334f129ba02c4524cd5a282661ebc88549ec1a4b7f710228454aee5",
+  "tables_sha256": "00db1dea984603b73d28477b13e677b36be59f4ab3c97cf528fbfb1336032ecb",
+  "template_sha256": "070239662d8d3b2430c0492b165037a7f8a903eeab1086fc86e8762046721358"
+}

@@ -1,0 +1,3023 @@
+{
+  "clauses": [
+    {
+      "accepted": 29,
+      "direction_swap_changes_journeys": null,
+      "effect": "separates",
+      "exact_boundary_journeys": 2,
+      "index": 0,
+      "marginal_exclusions": 25,
+      "ordering_exclusions_beyond_stop_presence": null,
+      "pool_size": 64,
+      "rule": {
+        "direction": "outbound",
+        "requirement": "earliest_departure",
+        "target": 30317
+      },
+      "same_request_equivalent_clause_indices": [],
+      "scenario_id": "pilot-00",
+      "unsupported_or_unreliable": false
+    },
+    {
+      "accepted": 36,
+      "direction_swap_changes_journeys": null,
+      "effect": "separates",
+      "exact_boundary_journeys": 4,
+      "index": 1,
+      "marginal_exclusions": 18,
+      "ordering_exclusions_beyond_stop_presence": null,
+      "pool_size": 64,
+      "rule": {
+        "direction": "outbound",
+        "requirement": "latest_arrival",
+        "target": 34225
+      },
+      "same_request_equivalent_clause_indices": [],
+      "scenario_id": "pilot-00",
+      "unsupported_or_unreliable": false
+    },
+    {
+      "accepted": 64,
+      "direction_swap_changes_journeys": null,
+      "effect": "always_true",
+      "exact_boundary_journeys": null,
+      "index": 0,
+      "marginal_exclusions": 0,
+      "ordering_exclusions_beyond_stop_presence": null,
+      "pool_size": 64,
+      "rule": {
+        "direction": "outbound",
+        "requirement": "forbidden_modes",
+        "target": [
+          "rail",
+          "tram"
+        ]
+      },
+      "same_request_equivalent_clause_indices": [],
+      "scenario_id": "pilot-01",
+      "unsupported_or_unreliable": false
+    },
+    {
+      "accepted": 60,
+      "direction_swap_changes_journeys": null,
+      "effect": "separates",
+      "exact_boundary_journeys": 3,
+      "index": 1,
+      "marginal_exclusions": 1,
+      "ordering_exclusions_beyond_stop_presence": null,
+      "pool_size": 64,
+      "rule": {
+        "direction": "outbound",
+        "requirement": "latest_departure",
+        "target": 32880
+      },
+      "same_request_equivalent_clause_indices": [],
+      "scenario_id": "pilot-01",
+      "unsupported_or_unreliable": false
+    },
+    {
+      "accepted": 5,
+      "direction_swap_changes_journeys": null,
+      "effect": "separates",
+      "exact_boundary_journeys": null,
+      "index": 2,
+      "marginal_exclusions": 56,
+      "ordering_exclusions_beyond_stop_presence": null,
+      "pool_size": 64,
+      "rule": {
+        "direction": "outbound",
+        "requirement": "transfer_limit",
+        "target": 0
+      },
+      "same_request_equivalent_clause_indices": [],
+      "scenario_id": "pilot-01",
+      "unsupported_or_unreliable": false
+    },
+    {
+      "accepted": 64,
+      "direction_swap_changes_journeys": null,
+      "effect": "always_true",
+      "exact_boundary_journeys": null,
+      "index": 0,
+      "marginal_exclusions": 0,
+      "ordering_exclusions_beyond_stop_presence": 0,
+      "pool_size": 64,
+      "rule": {
+        "direction": "outbound",
+        "requirement": "ordered_calls",
+        "target": [
+          "3398",
+          "13780"
+        ]
+      },
+      "same_request_equivalent_clause_indices": [
+        1
+      ],
+      "scenario_id": "pilot-02",
+      "unsupported_or_unreliable": false
+    },
+    {
+      "accepted": 64,
+      "direction_swap_changes_journeys": null,
+      "effect": "always_true",
+      "exact_boundary_journeys": null,
+      "index": 1,
+      "marginal_exclusions": 0,
+      "ordering_exclusions_beyond_stop_presence": null,
+      "pool_size": 64,
+      "rule": {
+        "direction": "outbound",
+        "requirement": "allowed_modes",
+        "target": [
+          "bus"
+        ]
+      },
+      "same_request_equivalent_clause_indices": [
+        0
+      ],
+      "scenario_id": "pilot-02",
+      "unsupported_or_unreliable": false
+    },
+    {
+      "accepted": 2,
+      "direction_swap_changes_journeys": null,
+      "effect": "separates",
+      "exact_boundary_journeys": null,
+      "index": 0,
+      "marginal_exclusions": 23,
+      "ordering_exclusions_beyond_stop_presence": null,
+      "pool_size": 64,
+      "rule": {
+        "direction": "outbound",
+        "requirement": "transfer_limit",
+        "target": 0
+      },
+      "same_request_equivalent_clause_indices": [],
+      "scenario_id": "pilot-03",
+      "unsupported_or_unreliable": false
+    },
+    {
+      "accepted": 24,
+      "direction_swap_changes_journeys": null,
+      "effect": "separates",
+      "exact_boundary_journeys": 4,
+      "index": 1,
+      "marginal_exclusions": 1,
+      "ordering_exclusions_beyond_stop_presence": null,
+      "pool_size": 64,
+      "rule": {
+        "direction": "outbound",
+        "requirement": "earliest_departure",
+        "target": 29880
+      },
+      "same_request_equivalent_clause_indices": [],
+      "scenario_id": "pilot-03",
+      "unsupported_or_unreliable": false
+    },
+    {
+      "accepted": 256,
+      "direction_swap_changes_journeys": 0,
+      "effect": "always_true",
+      "exact_boundary_journeys": null,
+      "index": 0,
+      "marginal_exclusions": 0,
+      "ordering_exclusions_beyond_stop_presence": null,
+      "pool_size": 256,
+      "rule": {
+        "direction": "return",
+        "requirement": "transfer_limit",
+        "target": 1
+      },
+      "same_request_equivalent_clause_indices": [],
+      "scenario_id": "pilot-04",
+      "unsupported_or_unreliable": false
+    },
+    {
+      "accepted": 141,
+      "direction_swap_changes_journeys": 141,
+      "effect": "separates",
+      "exact_boundary_journeys": 84,
+      "index": 1,
+      "marginal_exclusions": 115,
+      "ordering_exclusions_beyond_stop_presence": null,
+      "pool_size": 256,
+      "rule": {
+        "direction": "return",
+        "requirement": "earliest_departure",
+        "target": 34014
+      },
+      "same_request_equivalent_clause_indices": [],
+      "scenario_id": "pilot-04",
+      "unsupported_or_unreliable": false
+    },
+    {
+      "accepted": 20,
+      "direction_swap_changes_journeys": null,
+      "effect": "separates",
+      "exact_boundary_journeys": 0,
+      "index": 0,
+      "marginal_exclusions": 5,
+      "ordering_exclusions_beyond_stop_presence": null,
+      "pool_size": 64,
+      "rule": {
+        "direction": "outbound",
+        "requirement": "earliest_departure",
+        "target": 30600
+      },
+      "same_request_equivalent_clause_indices": [],
+      "scenario_id": "pilot-05",
+      "unsupported_or_unreliable": false
+    },
+    {
+      "accepted": 5,
+      "direction_swap_changes_journeys": null,
+      "effect": "separates",
+      "exact_boundary_journeys": 0,
+      "index": 1,
+      "marginal_exclusions": 20,
+      "ordering_exclusions_beyond_stop_presence": null,
+      "pool_size": 64,
+      "rule": {
+        "direction": "outbound",
+        "requirement": "latest_arrival",
+        "target": 28800
+      },
+      "same_request_equivalent_clause_indices": [],
+      "scenario_id": "pilot-05",
+      "unsupported_or_unreliable": false
+    },
+    {
+      "accepted": 64,
+      "direction_swap_changes_journeys": null,
+      "effect": "always_true",
+      "exact_boundary_journeys": null,
+      "index": 0,
+      "marginal_exclusions": 0,
+      "ordering_exclusions_beyond_stop_presence": null,
+      "pool_size": 64,
+      "rule": {
+        "direction": "outbound",
+        "requirement": "forbidden_modes",
+        "target": [
+          "rail",
+          "tram"
+        ]
+      },
+      "same_request_equivalent_clause_indices": [
+        2
+      ],
+      "scenario_id": "pilot-06",
+      "unsupported_or_unreliable": false
+    },
+    {
+      "accepted": 35,
+      "direction_swap_changes_journeys": null,
+      "effect": "separates",
+      "exact_boundary_journeys": 6,
+      "index": 1,
+      "marginal_exclusions": 29,
+      "ordering_exclusions_beyond_stop_presence": null,
+      "pool_size": 64,
+      "rule": {
+        "direction": "outbound",
+        "requirement": "latest_departure",
+        "target": 28302
+      },
+      "same_request_equivalent_clause_indices": [],
+      "scenario_id": "pilot-06",
+      "unsupported_or_unreliable": false
+    },
+    {
+      "accepted": 64,
+      "direction_swap_changes_journeys": null,
+      "effect": "always_true",
+      "exact_boundary_journeys": null,
+      "index": 2,
+      "marginal_exclusions": 0,
+      "ordering_exclusions_beyond_stop_presence": null,
+      "pool_size": 64,
+      "rule": {
+        "direction": "outbound",
+        "requirement": "transfer_limit",
+        "target": 1
+      },
+      "same_request_equivalent_clause_indices": [
+        0
+      ],
+      "scenario_id": "pilot-06",
+      "unsupported_or_unreliable": false
+    },
+    {
+      "accepted": 64,
+      "direction_swap_changes_journeys": null,
+      "effect": "always_true",
+      "exact_boundary_journeys": null,
+      "index": 0,
+      "marginal_exclusions": 0,
+      "ordering_exclusions_beyond_stop_presence": 0,
+      "pool_size": 64,
+      "rule": {
+        "direction": "outbound",
+        "requirement": "ordered_calls",
+        "target": [
+          "9311",
+          "9301"
+        ]
+      },
+      "same_request_equivalent_clause_indices": [
+        1
+      ],
+      "scenario_id": "pilot-07",
+      "unsupported_or_unreliable": false
+    },
+    {
+      "accepted": 64,
+      "direction_swap_changes_journeys": null,
+      "effect": "always_true",
+      "exact_boundary_journeys": null,
+      "index": 1,
+      "marginal_exclusions": 0,
+      "ordering_exclusions_beyond_stop_presence": null,
+      "pool_size": 64,
+      "rule": {
+        "direction": "outbound",
+        "requirement": "allowed_modes",
+        "target": [
+          "bus"
+        ]
+      },
+      "same_request_equivalent_clause_indices": [
+        0
+      ],
+      "scenario_id": "pilot-07",
+      "unsupported_or_unreliable": false
+    },
+    {
+      "accepted": 41,
+      "direction_swap_changes_journeys": null,
+      "effect": "separates",
+      "exact_boundary_journeys": 9,
+      "index": 0,
+      "marginal_exclusions": 16,
+      "ordering_exclusions_beyond_stop_presence": null,
+      "pool_size": 64,
+      "rule": {
+        "direction": "outbound",
+        "requirement": "earliest_departure",
+        "target": 28260
+      },
+      "same_request_equivalent_clause_indices": [],
+      "scenario_id": "pilot-08",
+      "unsupported_or_unreliable": false
+    },
+    {
+      "accepted": 34,
+      "direction_swap_changes_journeys": null,
+      "effect": "separates",
+      "exact_boundary_journeys": 2,
+      "index": 1,
+      "marginal_exclusions": 23,
+      "ordering_exclusions_beyond_stop_presence": null,
+      "pool_size": 64,
+      "rule": {
+        "direction": "outbound",
+        "requirement": "latest_arrival",
+        "target": 32549
+      },
+      "same_request_equivalent_clause_indices": [],
+      "scenario_id": "pilot-08",
+      "unsupported_or_unreliable": false
+    },
+    {
+      "accepted": 256,
+      "direction_swap_changes_journeys": 0,
+      "effect": "always_true",
+      "exact_boundary_journeys": null,
+      "index": 0,
+      "marginal_exclusions": 0,
+      "ordering_exclusions_beyond_stop_presence": null,
+      "pool_size": 256,
+      "rule": {
+        "direction": "outbound",
+        "requirement": "transfer_limit",
+        "target": 1
+      },
+      "same_request_equivalent_clause_indices": [],
+      "scenario_id": "pilot-09",
+      "unsupported_or_unreliable": false
+    },
+    {
+      "accepted": 18,
+      "direction_swap_changes_journeys": 18,
+      "effect": "separates",
+      "exact_boundary_journeys": 11,
+      "index": 1,
+      "marginal_exclusions": 238,
+      "ordering_exclusions_beyond_stop_presence": null,
+      "pool_size": 256,
+      "rule": {
+        "direction": "return",
+        "requirement": "earliest_departure",
+        "target": 34787
+      },
+      "same_request_equivalent_clause_indices": [],
+      "scenario_id": "pilot-09",
+      "unsupported_or_unreliable": false
+    },
+    {
+      "accepted": 0,
+      "direction_swap_changes_journeys": null,
+      "effect": "always_false",
+      "exact_boundary_journeys": null,
+      "index": 0,
+      "marginal_exclusions": 64,
+      "ordering_exclusions_beyond_stop_presence": null,
+      "pool_size": 64,
+      "rule": {
+        "direction": "outbound",
+        "requirement": "forbidden_modes",
+        "target": [
+          "bus"
+        ]
+      },
+      "same_request_equivalent_clause_indices": [],
+      "scenario_id": "pilot-10",
+      "unsupported_or_unreliable": false
+    },
+    {
+      "accepted": 64,
+      "direction_swap_changes_journeys": null,
+      "effect": "always_true",
+      "exact_boundary_journeys": null,
+      "index": 0,
+      "marginal_exclusions": 0,
+      "ordering_exclusions_beyond_stop_presence": null,
+      "pool_size": 64,
+      "rule": {
+        "direction": "outbound",
+        "requirement": "transfer_limit",
+        "target": 1
+      },
+      "same_request_equivalent_clause_indices": [
+        1
+      ],
+      "scenario_id": "pilot-11",
+      "unsupported_or_unreliable": false
+    },
+    {
+      "accepted": 64,
+      "direction_swap_changes_journeys": null,
+      "effect": "always_true",
+      "exact_boundary_journeys": 9,
+      "index": 1,
+      "marginal_exclusions": 0,
+      "ordering_exclusions_beyond_stop_presence": null,
+      "pool_size": 64,
+      "rule": {
+        "direction": "outbound",
+        "requirement": "earliest_departure",
+        "target": 26168
+      },
+      "same_request_equivalent_clause_indices": [
+        0
+      ],
+      "scenario_id": "pilot-11",
+      "unsupported_or_unreliable": false
+    },
+    {
+      "accepted": 64,
+      "direction_swap_changes_journeys": null,
+      "effect": "always_true",
+      "exact_boundary_journeys": null,
+      "index": 0,
+      "marginal_exclusions": 0,
+      "ordering_exclusions_beyond_stop_presence": 0,
+      "pool_size": 64,
+      "rule": {
+        "direction": "outbound",
+        "requirement": "ordered_calls",
+        "target": [
+          "13733",
+          "3398"
+        ]
+      },
+      "same_request_equivalent_clause_indices": [
+        1
+      ],
+      "scenario_id": "pilot-12",
+      "unsupported_or_unreliable": false
+    },
+    {
+      "accepted": 64,
+      "direction_swap_changes_journeys": null,
+      "effect": "always_true",
+      "exact_boundary_journeys": null,
+      "index": 1,
+      "marginal_exclusions": 0,
+      "ordering_exclusions_beyond_stop_presence": null,
+      "pool_size": 64,
+      "rule": {
+        "direction": "outbound",
+        "requirement": "allowed_modes",
+        "target": [
+          "bus"
+        ]
+      },
+      "same_request_equivalent_clause_indices": [
+        0
+      ],
+      "scenario_id": "pilot-12",
+      "unsupported_or_unreliable": false
+    },
+    {
+      "accepted": 20,
+      "direction_swap_changes_journeys": null,
+      "effect": "separates",
+      "exact_boundary_journeys": 6,
+      "index": 0,
+      "marginal_exclusions": 29,
+      "ordering_exclusions_beyond_stop_presence": null,
+      "pool_size": 64,
+      "rule": {
+        "direction": "outbound",
+        "requirement": "earliest_departure",
+        "target": 29520
+      },
+      "same_request_equivalent_clause_indices": [],
+      "scenario_id": "pilot-13",
+      "unsupported_or_unreliable": false
+    },
+    {
+      "accepted": 34,
+      "direction_swap_changes_journeys": null,
+      "effect": "separates",
+      "exact_boundary_journeys": 7,
+      "index": 1,
+      "marginal_exclusions": 15,
+      "ordering_exclusions_beyond_stop_presence": null,
+      "pool_size": 64,
+      "rule": {
+        "direction": "outbound",
+        "requirement": "latest_arrival",
+        "target": 32966
+      },
+      "same_request_equivalent_clause_indices": [],
+      "scenario_id": "pilot-13",
+      "unsupported_or_unreliable": false
+    },
+    {
+      "accepted": 64,
+      "direction_swap_changes_journeys": null,
+      "effect": "always_true",
+      "exact_boundary_journeys": null,
+      "index": 0,
+      "marginal_exclusions": 0,
+      "ordering_exclusions_beyond_stop_presence": null,
+      "pool_size": 64,
+      "rule": {
+        "direction": "outbound",
+        "requirement": "forbidden_modes",
+        "target": [
+          "rail",
+          "tram"
+        ]
+      },
+      "same_request_equivalent_clause_indices": [
+        2
+      ],
+      "scenario_id": "pilot-14",
+      "unsupported_or_unreliable": false
+    },
+    {
+      "accepted": 22,
+      "direction_swap_changes_journeys": null,
+      "effect": "separates",
+      "exact_boundary_journeys": 6,
+      "index": 1,
+      "marginal_exclusions": 42,
+      "ordering_exclusions_beyond_stop_presence": null,
+      "pool_size": 64,
+      "rule": {
+        "direction": "outbound",
+        "requirement": "latest_departure",
+        "target": 26894
+      },
+      "same_request_equivalent_clause_indices": [],
+      "scenario_id": "pilot-14",
+      "unsupported_or_unreliable": false
+    },
+    {
+      "accepted": 64,
+      "direction_swap_changes_journeys": null,
+      "effect": "always_true",
+      "exact_boundary_journeys": null,
+      "index": 2,
+      "marginal_exclusions": 0,
+      "ordering_exclusions_beyond_stop_presence": null,
+      "pool_size": 64,
+      "rule": {
+        "direction": "outbound",
+        "requirement": "transfer_limit",
+        "target": 1
+      },
+      "same_request_equivalent_clause_indices": [
+        0
+      ],
+      "scenario_id": "pilot-14",
+      "unsupported_or_unreliable": false
+    },
+    {
+      "accepted": 9,
+      "direction_swap_changes_journeys": null,
+      "effect": "separates",
+      "exact_boundary_journeys": 0,
+      "index": 0,
+      "marginal_exclusions": 6,
+      "ordering_exclusions_beyond_stop_presence": null,
+      "pool_size": 64,
+      "rule": {
+        "direction": "outbound",
+        "requirement": "earliest_departure",
+        "target": 30600
+      },
+      "same_request_equivalent_clause_indices": [],
+      "scenario_id": "pilot-15",
+      "unsupported_or_unreliable": false
+    },
+    {
+      "accepted": 6,
+      "direction_swap_changes_journeys": null,
+      "effect": "separates",
+      "exact_boundary_journeys": 0,
+      "index": 1,
+      "marginal_exclusions": 9,
+      "ordering_exclusions_beyond_stop_presence": null,
+      "pool_size": 64,
+      "rule": {
+        "direction": "outbound",
+        "requirement": "latest_arrival",
+        "target": 28800
+      },
+      "same_request_equivalent_clause_indices": [],
+      "scenario_id": "pilot-15",
+      "unsupported_or_unreliable": false
+    },
+    {
+      "accepted": 6,
+      "direction_swap_changes_journeys": null,
+      "effect": "separates",
+      "exact_boundary_journeys": null,
+      "index": 0,
+      "marginal_exclusions": 51,
+      "ordering_exclusions_beyond_stop_presence": null,
+      "pool_size": 57,
+      "rule": {
+        "direction": "outbound",
+        "requirement": "transfer_limit",
+        "target": 0
+      },
+      "same_request_equivalent_clause_indices": [],
+      "scenario_id": "pilot-16",
+      "unsupported_or_unreliable": false
+    },
+    {
+      "accepted": 57,
+      "direction_swap_changes_journeys": null,
+      "effect": "always_true",
+      "exact_boundary_journeys": 17,
+      "index": 1,
+      "marginal_exclusions": 0,
+      "ordering_exclusions_beyond_stop_presence": null,
+      "pool_size": 57,
+      "rule": {
+        "direction": "outbound",
+        "requirement": "earliest_departure",
+        "target": 25799
+      },
+      "same_request_equivalent_clause_indices": [],
+      "scenario_id": "pilot-16",
+      "unsupported_or_unreliable": false
+    },
+    {
+      "accepted": 31,
+      "direction_swap_changes_journeys": 49,
+      "effect": "separates",
+      "exact_boundary_journeys": null,
+      "index": 0,
+      "marginal_exclusions": 225,
+      "ordering_exclusions_beyond_stop_presence": null,
+      "pool_size": 256,
+      "rule": {
+        "direction": "outbound",
+        "requirement": "transfer_limit",
+        "target": 0
+      },
+      "same_request_equivalent_clause_indices": [],
+      "scenario_id": "pilot-17",
+      "unsupported_or_unreliable": false
+    },
+    {
+      "accepted": 256,
+      "direction_swap_changes_journeys": 235,
+      "effect": "always_true",
+      "exact_boundary_journeys": 41,
+      "index": 1,
+      "marginal_exclusions": 0,
+      "ordering_exclusions_beyond_stop_presence": null,
+      "pool_size": 256,
+      "rule": {
+        "direction": "return",
+        "requirement": "earliest_departure",
+        "target": 32645
+      },
+      "same_request_equivalent_clause_indices": [],
+      "scenario_id": "pilot-17",
+      "unsupported_or_unreliable": false
+    },
+    {
+      "accepted": 41,
+      "direction_swap_changes_journeys": null,
+      "effect": "separates",
+      "exact_boundary_journeys": 7,
+      "index": 0,
+      "marginal_exclusions": 19,
+      "ordering_exclusions_beyond_stop_presence": null,
+      "pool_size": 64,
+      "rule": {
+        "direction": "outbound",
+        "requirement": "earliest_departure",
+        "target": 27360
+      },
+      "same_request_equivalent_clause_indices": [],
+      "scenario_id": "pilot-18",
+      "unsupported_or_unreliable": false
+    },
+    {
+      "accepted": 36,
+      "direction_swap_changes_journeys": null,
+      "effect": "separates",
+      "exact_boundary_journeys": 7,
+      "index": 1,
+      "marginal_exclusions": 24,
+      "ordering_exclusions_beyond_stop_presence": null,
+      "pool_size": 64,
+      "rule": {
+        "direction": "outbound",
+        "requirement": "latest_arrival",
+        "target": 32911
+      },
+      "same_request_equivalent_clause_indices": [],
+      "scenario_id": "pilot-18",
+      "unsupported_or_unreliable": false
+    },
+    {
+      "accepted": 64,
+      "direction_swap_changes_journeys": null,
+      "effect": "always_true",
+      "exact_boundary_journeys": null,
+      "index": 0,
+      "marginal_exclusions": 0,
+      "ordering_exclusions_beyond_stop_presence": null,
+      "pool_size": 64,
+      "rule": {
+        "direction": "outbound",
+        "requirement": "forbidden_modes",
+        "target": [
+          "rail",
+          "tram"
+        ]
+      },
+      "same_request_equivalent_clause_indices": [
+        2
+      ],
+      "scenario_id": "pilot-19",
+      "unsupported_or_unreliable": false
+    },
+    {
+      "accepted": 45,
+      "direction_swap_changes_journeys": null,
+      "effect": "separates",
+      "exact_boundary_journeys": 9,
+      "index": 1,
+      "marginal_exclusions": 19,
+      "ordering_exclusions_beyond_stop_presence": null,
+      "pool_size": 64,
+      "rule": {
+        "direction": "outbound",
+        "requirement": "latest_departure",
+        "target": 28586
+      },
+      "same_request_equivalent_clause_indices": [],
+      "scenario_id": "pilot-19",
+      "unsupported_or_unreliable": false
+    },
+    {
+      "accepted": 64,
+      "direction_swap_changes_journeys": null,
+      "effect": "always_true",
+      "exact_boundary_journeys": null,
+      "index": 2,
+      "marginal_exclusions": 0,
+      "ordering_exclusions_beyond_stop_presence": null,
+      "pool_size": 64,
+      "rule": {
+        "direction": "outbound",
+        "requirement": "transfer_limit",
+        "target": 1
+      },
+      "same_request_equivalent_clause_indices": [
+        0
+      ],
+      "scenario_id": "pilot-19",
+      "unsupported_or_unreliable": false
+    },
+    {
+      "accepted": 64,
+      "direction_swap_changes_journeys": null,
+      "effect": "always_true",
+      "exact_boundary_journeys": null,
+      "index": 0,
+      "marginal_exclusions": 0,
+      "ordering_exclusions_beyond_stop_presence": 0,
+      "pool_size": 64,
+      "rule": {
+        "direction": "outbound",
+        "requirement": "ordered_calls",
+        "target": [
+          "7640",
+          "7594"
+        ]
+      },
+      "same_request_equivalent_clause_indices": [
+        1
+      ],
+      "scenario_id": "pilot-20",
+      "unsupported_or_unreliable": false
+    },
+    {
+      "accepted": 64,
+      "direction_swap_changes_journeys": null,
+      "effect": "always_true",
+      "exact_boundary_journeys": null,
+      "index": 1,
+      "marginal_exclusions": 0,
+      "ordering_exclusions_beyond_stop_presence": null,
+      "pool_size": 64,
+      "rule": {
+        "direction": "outbound",
+        "requirement": "allowed_modes",
+        "target": [
+          "bus"
+        ]
+      },
+      "same_request_equivalent_clause_indices": [
+        0
+      ],
+      "scenario_id": "pilot-20",
+      "unsupported_or_unreliable": false
+    },
+    {
+      "accepted": 17,
+      "direction_swap_changes_journeys": null,
+      "effect": "always_true",
+      "exact_boundary_journeys": null,
+      "index": 0,
+      "marginal_exclusions": 0,
+      "ordering_exclusions_beyond_stop_presence": null,
+      "pool_size": 17,
+      "rule": {
+        "direction": "outbound",
+        "requirement": "transfer_limit",
+        "target": 1
+      },
+      "same_request_equivalent_clause_indices": [
+        1
+      ],
+      "scenario_id": "pilot-21",
+      "unsupported_or_unreliable": false
+    },
+    {
+      "accepted": 17,
+      "direction_swap_changes_journeys": null,
+      "effect": "always_true",
+      "exact_boundary_journeys": 8,
+      "index": 1,
+      "marginal_exclusions": 0,
+      "ordering_exclusions_beyond_stop_presence": null,
+      "pool_size": 17,
+      "rule": {
+        "direction": "outbound",
+        "requirement": "earliest_departure",
+        "target": 25500
+      },
+      "same_request_equivalent_clause_indices": [
+        0
+      ],
+      "scenario_id": "pilot-21",
+      "unsupported_or_unreliable": false
+    },
+    {
+      "accepted": 256,
+      "direction_swap_changes_journeys": 0,
+      "effect": "always_true",
+      "exact_boundary_journeys": null,
+      "index": 0,
+      "marginal_exclusions": 0,
+      "ordering_exclusions_beyond_stop_presence": null,
+      "pool_size": 256,
+      "rule": {
+        "direction": "return",
+        "requirement": "transfer_limit",
+        "target": 1
+      },
+      "same_request_equivalent_clause_indices": [
+        1
+      ],
+      "scenario_id": "pilot-22",
+      "unsupported_or_unreliable": false
+    },
+    {
+      "accepted": 256,
+      "direction_swap_changes_journeys": 256,
+      "effect": "always_true",
+      "exact_boundary_journeys": 256,
+      "index": 1,
+      "marginal_exclusions": 0,
+      "ordering_exclusions_beyond_stop_presence": null,
+      "pool_size": 256,
+      "rule": {
+        "direction": "return",
+        "requirement": "earliest_departure",
+        "target": 33900
+      },
+      "same_request_equivalent_clause_indices": [
+        0
+      ],
+      "scenario_id": "pilot-22",
+      "unsupported_or_unreliable": false
+    },
+    {
+      "accepted": 10,
+      "direction_swap_changes_journeys": null,
+      "effect": "separates",
+      "exact_boundary_journeys": 0,
+      "index": 0,
+      "marginal_exclusions": 2,
+      "ordering_exclusions_beyond_stop_presence": null,
+      "pool_size": 64,
+      "rule": {
+        "direction": "outbound",
+        "requirement": "earliest_departure",
+        "target": 30600
+      },
+      "same_request_equivalent_clause_indices": [],
+      "scenario_id": "pilot-23",
+      "unsupported_or_unreliable": false
+    },
+    {
+      "accepted": 2,
+      "direction_swap_changes_journeys": null,
+      "effect": "separates",
+      "exact_boundary_journeys": 0,
+      "index": 1,
+      "marginal_exclusions": 10,
+      "ordering_exclusions_beyond_stop_presence": null,
+      "pool_size": 64,
+      "rule": {
+        "direction": "outbound",
+        "requirement": "latest_arrival",
+        "target": 28800
+      },
+      "same_request_equivalent_clause_indices": [],
+      "scenario_id": "pilot-23",
+      "unsupported_or_unreliable": false
+    },
+    {
+      "accepted": 64,
+      "direction_swap_changes_journeys": null,
+      "effect": "always_true",
+      "exact_boundary_journeys": null,
+      "index": 0,
+      "marginal_exclusions": 0,
+      "ordering_exclusions_beyond_stop_presence": null,
+      "pool_size": 64,
+      "rule": {
+        "direction": "outbound",
+        "requirement": "forbidden_modes",
+        "target": [
+          "rail",
+          "tram"
+        ]
+      },
+      "same_request_equivalent_clause_indices": [
+        2
+      ],
+      "scenario_id": "pilot-24",
+      "unsupported_or_unreliable": false
+    },
+    {
+      "accepted": 14,
+      "direction_swap_changes_journeys": null,
+      "effect": "separates",
+      "exact_boundary_journeys": 6,
+      "index": 1,
+      "marginal_exclusions": 50,
+      "ordering_exclusions_beyond_stop_presence": null,
+      "pool_size": 64,
+      "rule": {
+        "direction": "outbound",
+        "requirement": "latest_departure",
+        "target": 25958
+      },
+      "same_request_equivalent_clause_indices": [],
+      "scenario_id": "pilot-24",
+      "unsupported_or_unreliable": false
+    },
+    {
+      "accepted": 64,
+      "direction_swap_changes_journeys": null,
+      "effect": "always_true",
+      "exact_boundary_journeys": null,
+      "index": 2,
+      "marginal_exclusions": 0,
+      "ordering_exclusions_beyond_stop_presence": null,
+      "pool_size": 64,
+      "rule": {
+        "direction": "outbound",
+        "requirement": "transfer_limit",
+        "target": 1
+      },
+      "same_request_equivalent_clause_indices": [
+        0
+      ],
+      "scenario_id": "pilot-24",
+      "unsupported_or_unreliable": false
+    },
+    {
+      "accepted": 64,
+      "direction_swap_changes_journeys": null,
+      "effect": "always_true",
+      "exact_boundary_journeys": null,
+      "index": 0,
+      "marginal_exclusions": 0,
+      "ordering_exclusions_beyond_stop_presence": 0,
+      "pool_size": 64,
+      "rule": {
+        "direction": "outbound",
+        "requirement": "ordered_calls",
+        "target": [
+          "3398",
+          "13780"
+        ]
+      },
+      "same_request_equivalent_clause_indices": [
+        1
+      ],
+      "scenario_id": "pilot-25",
+      "unsupported_or_unreliable": false
+    },
+    {
+      "accepted": 64,
+      "direction_swap_changes_journeys": null,
+      "effect": "always_true",
+      "exact_boundary_journeys": null,
+      "index": 1,
+      "marginal_exclusions": 0,
+      "ordering_exclusions_beyond_stop_presence": null,
+      "pool_size": 64,
+      "rule": {
+        "direction": "outbound",
+        "requirement": "allowed_modes",
+        "target": [
+          "bus"
+        ]
+      },
+      "same_request_equivalent_clause_indices": [
+        0
+      ],
+      "scenario_id": "pilot-25",
+      "unsupported_or_unreliable": false
+    },
+    {
+      "accepted": 51,
+      "direction_swap_changes_journeys": null,
+      "effect": "always_true",
+      "exact_boundary_journeys": 16,
+      "index": 0,
+      "marginal_exclusions": 0,
+      "ordering_exclusions_beyond_stop_presence": null,
+      "pool_size": 51,
+      "rule": {
+        "direction": "outbound",
+        "requirement": "earliest_departure",
+        "target": 25200
+      },
+      "same_request_equivalent_clause_indices": [],
+      "scenario_id": "pilot-26",
+      "unsupported_or_unreliable": false
+    },
+    {
+      "accepted": 35,
+      "direction_swap_changes_journeys": null,
+      "effect": "separates",
+      "exact_boundary_journeys": 13,
+      "index": 1,
+      "marginal_exclusions": 16,
+      "ordering_exclusions_beyond_stop_presence": null,
+      "pool_size": 51,
+      "rule": {
+        "direction": "outbound",
+        "requirement": "latest_arrival",
+        "target": 33574
+      },
+      "same_request_equivalent_clause_indices": [],
+      "scenario_id": "pilot-26",
+      "unsupported_or_unreliable": false
+    },
+    {
+      "accepted": 256,
+      "direction_swap_changes_journeys": 0,
+      "effect": "always_true",
+      "exact_boundary_journeys": null,
+      "index": 0,
+      "marginal_exclusions": 0,
+      "ordering_exclusions_beyond_stop_presence": null,
+      "pool_size": 256,
+      "rule": {
+        "direction": "outbound",
+        "requirement": "transfer_limit",
+        "target": 1
+      },
+      "same_request_equivalent_clause_indices": [],
+      "scenario_id": "pilot-27",
+      "unsupported_or_unreliable": false
+    },
+    {
+      "accepted": 35,
+      "direction_swap_changes_journeys": 35,
+      "effect": "separates",
+      "exact_boundary_journeys": 35,
+      "index": 1,
+      "marginal_exclusions": 221,
+      "ordering_exclusions_beyond_stop_presence": null,
+      "pool_size": 256,
+      "rule": {
+        "direction": "return",
+        "requirement": "earliest_departure",
+        "target": 34800
+      },
+      "same_request_equivalent_clause_indices": [],
+      "scenario_id": "pilot-27",
+      "unsupported_or_unreliable": false
+    },
+    {
+      "accepted": 0,
+      "direction_swap_changes_journeys": null,
+      "effect": "always_false",
+      "exact_boundary_journeys": null,
+      "index": 0,
+      "marginal_exclusions": 64,
+      "ordering_exclusions_beyond_stop_presence": null,
+      "pool_size": 64,
+      "rule": {
+        "direction": "outbound",
+        "requirement": "forbidden_modes",
+        "target": [
+          "bus"
+        ]
+      },
+      "same_request_equivalent_clause_indices": [],
+      "scenario_id": "pilot-28",
+      "unsupported_or_unreliable": false
+    },
+    {
+      "accepted": 3,
+      "direction_swap_changes_journeys": null,
+      "effect": "separates",
+      "exact_boundary_journeys": null,
+      "index": 0,
+      "marginal_exclusions": 40,
+      "ordering_exclusions_beyond_stop_presence": null,
+      "pool_size": 64,
+      "rule": {
+        "direction": "outbound",
+        "requirement": "transfer_limit",
+        "target": 0
+      },
+      "same_request_equivalent_clause_indices": [],
+      "scenario_id": "pilot-29",
+      "unsupported_or_unreliable": false
+    },
+    {
+      "accepted": 42,
+      "direction_swap_changes_journeys": null,
+      "effect": "separates",
+      "exact_boundary_journeys": 11,
+      "index": 1,
+      "marginal_exclusions": 1,
+      "ordering_exclusions_beyond_stop_presence": null,
+      "pool_size": 64,
+      "rule": {
+        "direction": "outbound",
+        "requirement": "earliest_departure",
+        "target": 28181
+      },
+      "same_request_equivalent_clause_indices": [],
+      "scenario_id": "pilot-29",
+      "unsupported_or_unreliable": false
+    },
+    {
+      "accepted": 31,
+      "direction_swap_changes_journeys": null,
+      "effect": "separates",
+      "exact_boundary_journeys": null,
+      "index": 0,
+      "marginal_exclusions": 33,
+      "ordering_exclusions_beyond_stop_presence": 0,
+      "pool_size": 64,
+      "rule": {
+        "direction": "outbound",
+        "requirement": "ordered_calls",
+        "target": [
+          "7602",
+          "3397"
+        ]
+      },
+      "same_request_equivalent_clause_indices": [],
+      "scenario_id": "pilot-30",
+      "unsupported_or_unreliable": false
+    },
+    {
+      "accepted": 64,
+      "direction_swap_changes_journeys": null,
+      "effect": "always_true",
+      "exact_boundary_journeys": null,
+      "index": 1,
+      "marginal_exclusions": 0,
+      "ordering_exclusions_beyond_stop_presence": null,
+      "pool_size": 64,
+      "rule": {
+        "direction": "outbound",
+        "requirement": "allowed_modes",
+        "target": [
+          "bus"
+        ]
+      },
+      "same_request_equivalent_clause_indices": [],
+      "scenario_id": "pilot-30",
+      "unsupported_or_unreliable": false
+    },
+    {
+      "accepted": 15,
+      "direction_swap_changes_journeys": null,
+      "effect": "separates",
+      "exact_boundary_journeys": 7,
+      "index": 0,
+      "marginal_exclusions": 29,
+      "ordering_exclusions_beyond_stop_presence": null,
+      "pool_size": 64,
+      "rule": {
+        "direction": "outbound",
+        "requirement": "earliest_departure",
+        "target": 31662
+      },
+      "same_request_equivalent_clause_indices": [],
+      "scenario_id": "pilot-31",
+      "unsupported_or_unreliable": false
+    },
+    {
+      "accepted": 33,
+      "direction_swap_changes_journeys": null,
+      "effect": "separates",
+      "exact_boundary_journeys": 11,
+      "index": 1,
+      "marginal_exclusions": 11,
+      "ordering_exclusions_beyond_stop_presence": null,
+      "pool_size": 64,
+      "rule": {
+        "direction": "outbound",
+        "requirement": "latest_arrival",
+        "target": 33060
+      },
+      "same_request_equivalent_clause_indices": [],
+      "scenario_id": "pilot-31",
+      "unsupported_or_unreliable": false
+    },
+    {
+      "accepted": 45,
+      "direction_swap_changes_journeys": null,
+      "effect": "always_true",
+      "exact_boundary_journeys": null,
+      "index": 0,
+      "marginal_exclusions": 0,
+      "ordering_exclusions_beyond_stop_presence": null,
+      "pool_size": 45,
+      "rule": {
+        "direction": "outbound",
+        "requirement": "forbidden_modes",
+        "target": [
+          "rail",
+          "tram"
+        ]
+      },
+      "same_request_equivalent_clause_indices": [
+        2
+      ],
+      "scenario_id": "pilot-32",
+      "unsupported_or_unreliable": false
+    },
+    {
+      "accepted": 30,
+      "direction_swap_changes_journeys": null,
+      "effect": "separates",
+      "exact_boundary_journeys": 13,
+      "index": 1,
+      "marginal_exclusions": 15,
+      "ordering_exclusions_beyond_stop_presence": null,
+      "pool_size": 45,
+      "rule": {
+        "direction": "outbound",
+        "requirement": "latest_departure",
+        "target": 28794
+      },
+      "same_request_equivalent_clause_indices": [],
+      "scenario_id": "pilot-32",
+      "unsupported_or_unreliable": false
+    },
+    {
+      "accepted": 45,
+      "direction_swap_changes_journeys": null,
+      "effect": "always_true",
+      "exact_boundary_journeys": null,
+      "index": 2,
+      "marginal_exclusions": 0,
+      "ordering_exclusions_beyond_stop_presence": null,
+      "pool_size": 45,
+      "rule": {
+        "direction": "outbound",
+        "requirement": "transfer_limit",
+        "target": 1
+      },
+      "same_request_equivalent_clause_indices": [
+        0
+      ],
+      "scenario_id": "pilot-32",
+      "unsupported_or_unreliable": false
+    },
+    {
+      "accepted": 18,
+      "direction_swap_changes_journeys": null,
+      "effect": "separates",
+      "exact_boundary_journeys": 0,
+      "index": 0,
+      "marginal_exclusions": 10,
+      "ordering_exclusions_beyond_stop_presence": null,
+      "pool_size": 64,
+      "rule": {
+        "direction": "outbound",
+        "requirement": "earliest_departure",
+        "target": 30600
+      },
+      "same_request_equivalent_clause_indices": [],
+      "scenario_id": "pilot-33",
+      "unsupported_or_unreliable": false
+    },
+    {
+      "accepted": 10,
+      "direction_swap_changes_journeys": null,
+      "effect": "separates",
+      "exact_boundary_journeys": 0,
+      "index": 1,
+      "marginal_exclusions": 18,
+      "ordering_exclusions_beyond_stop_presence": null,
+      "pool_size": 64,
+      "rule": {
+        "direction": "outbound",
+        "requirement": "latest_arrival",
+        "target": 28800
+      },
+      "same_request_equivalent_clause_indices": [],
+      "scenario_id": "pilot-33",
+      "unsupported_or_unreliable": false
+    },
+    {
+      "accepted": 64,
+      "direction_swap_changes_journeys": null,
+      "effect": "always_true",
+      "exact_boundary_journeys": null,
+      "index": 0,
+      "marginal_exclusions": 0,
+      "ordering_exclusions_beyond_stop_presence": null,
+      "pool_size": 64,
+      "rule": {
+        "direction": "outbound",
+        "requirement": "transfer_limit",
+        "target": 1
+      },
+      "same_request_equivalent_clause_indices": [],
+      "scenario_id": "pilot-34",
+      "unsupported_or_unreliable": false
+    },
+    {
+      "accepted": 13,
+      "direction_swap_changes_journeys": null,
+      "effect": "separates",
+      "exact_boundary_journeys": 3,
+      "index": 1,
+      "marginal_exclusions": 51,
+      "ordering_exclusions_beyond_stop_presence": null,
+      "pool_size": 64,
+      "rule": {
+        "direction": "outbound",
+        "requirement": "earliest_departure",
+        "target": 31327
+      },
+      "same_request_equivalent_clause_indices": [],
+      "scenario_id": "pilot-34",
+      "unsupported_or_unreliable": false
+    },
+    {
+      "accepted": 256,
+      "direction_swap_changes_journeys": 0,
+      "effect": "always_true",
+      "exact_boundary_journeys": null,
+      "index": 0,
+      "marginal_exclusions": 0,
+      "ordering_exclusions_beyond_stop_presence": null,
+      "pool_size": 256,
+      "rule": {
+        "direction": "outbound",
+        "requirement": "transfer_limit",
+        "target": 1
+      },
+      "same_request_equivalent_clause_indices": [],
+      "scenario_id": "pilot-35",
+      "unsupported_or_unreliable": false
+    },
+    {
+      "accepted": 168,
+      "direction_swap_changes_journeys": 168,
+      "effect": "separates",
+      "exact_boundary_journeys": 87,
+      "index": 1,
+      "marginal_exclusions": 88,
+      "ordering_exclusions_beyond_stop_presence": null,
+      "pool_size": 256,
+      "rule": {
+        "direction": "return",
+        "requirement": "earliest_departure",
+        "target": 33360
+      },
+      "same_request_equivalent_clause_indices": [],
+      "scenario_id": "pilot-35",
+      "unsupported_or_unreliable": false
+    },
+    {
+      "accepted": 41,
+      "direction_swap_changes_journeys": null,
+      "effect": "separates",
+      "exact_boundary_journeys": 5,
+      "index": 0,
+      "marginal_exclusions": 18,
+      "ordering_exclusions_beyond_stop_presence": null,
+      "pool_size": 64,
+      "rule": {
+        "direction": "outbound",
+        "requirement": "earliest_departure",
+        "target": 27675
+      },
+      "same_request_equivalent_clause_indices": [],
+      "scenario_id": "pilot-36",
+      "unsupported_or_unreliable": false
+    },
+    {
+      "accepted": 36,
+      "direction_swap_changes_journeys": null,
+      "effect": "separates",
+      "exact_boundary_journeys": 4,
+      "index": 1,
+      "marginal_exclusions": 23,
+      "ordering_exclusions_beyond_stop_presence": null,
+      "pool_size": 64,
+      "rule": {
+        "direction": "outbound",
+        "requirement": "latest_arrival",
+        "target": 33743
+      },
+      "same_request_equivalent_clause_indices": [],
+      "scenario_id": "pilot-36",
+      "unsupported_or_unreliable": false
+    },
+    {
+      "accepted": 64,
+      "direction_swap_changes_journeys": null,
+      "effect": "always_true",
+      "exact_boundary_journeys": null,
+      "index": 0,
+      "marginal_exclusions": 0,
+      "ordering_exclusions_beyond_stop_presence": null,
+      "pool_size": 64,
+      "rule": {
+        "direction": "outbound",
+        "requirement": "forbidden_modes",
+        "target": [
+          "rail",
+          "tram"
+        ]
+      },
+      "same_request_equivalent_clause_indices": [
+        2
+      ],
+      "scenario_id": "pilot-37",
+      "unsupported_or_unreliable": false
+    },
+    {
+      "accepted": 59,
+      "direction_swap_changes_journeys": null,
+      "effect": "separates",
+      "exact_boundary_journeys": 1,
+      "index": 1,
+      "marginal_exclusions": 5,
+      "ordering_exclusions_beyond_stop_presence": null,
+      "pool_size": 64,
+      "rule": {
+        "direction": "outbound",
+        "requirement": "latest_departure",
+        "target": 32269
+      },
+      "same_request_equivalent_clause_indices": [],
+      "scenario_id": "pilot-37",
+      "unsupported_or_unreliable": false
+    },
+    {
+      "accepted": 64,
+      "direction_swap_changes_journeys": null,
+      "effect": "always_true",
+      "exact_boundary_journeys": null,
+      "index": 2,
+      "marginal_exclusions": 0,
+      "ordering_exclusions_beyond_stop_presence": null,
+      "pool_size": 64,
+      "rule": {
+        "direction": "outbound",
+        "requirement": "transfer_limit",
+        "target": 1
+      },
+      "same_request_equivalent_clause_indices": [
+        0
+      ],
+      "scenario_id": "pilot-37",
+      "unsupported_or_unreliable": false
+    },
+    {
+      "accepted": 25,
+      "direction_swap_changes_journeys": null,
+      "effect": "always_true",
+      "exact_boundary_journeys": null,
+      "index": 0,
+      "marginal_exclusions": 0,
+      "ordering_exclusions_beyond_stop_presence": 0,
+      "pool_size": 25,
+      "rule": {
+        "direction": "outbound",
+        "requirement": "ordered_calls",
+        "target": [
+          "10425",
+          "6235"
+        ]
+      },
+      "same_request_equivalent_clause_indices": [
+        1
+      ],
+      "scenario_id": "pilot-38",
+      "unsupported_or_unreliable": false
+    },
+    {
+      "accepted": 25,
+      "direction_swap_changes_journeys": null,
+      "effect": "always_true",
+      "exact_boundary_journeys": null,
+      "index": 1,
+      "marginal_exclusions": 0,
+      "ordering_exclusions_beyond_stop_presence": null,
+      "pool_size": 25,
+      "rule": {
+        "direction": "outbound",
+        "requirement": "allowed_modes",
+        "target": [
+          "bus"
+        ]
+      },
+      "same_request_equivalent_clause_indices": [
+        0
+      ],
+      "scenario_id": "pilot-38",
+      "unsupported_or_unreliable": false
+    },
+    {
+      "accepted": 3,
+      "direction_swap_changes_journeys": null,
+      "effect": "separates",
+      "exact_boundary_journeys": null,
+      "index": 0,
+      "marginal_exclusions": 15,
+      "ordering_exclusions_beyond_stop_presence": null,
+      "pool_size": 64,
+      "rule": {
+        "direction": "outbound",
+        "requirement": "transfer_limit",
+        "target": 0
+      },
+      "same_request_equivalent_clause_indices": [],
+      "scenario_id": "pilot-39",
+      "unsupported_or_unreliable": false
+    },
+    {
+      "accepted": 17,
+      "direction_swap_changes_journeys": null,
+      "effect": "separates",
+      "exact_boundary_journeys": 1,
+      "index": 1,
+      "marginal_exclusions": 1,
+      "ordering_exclusions_beyond_stop_presence": null,
+      "pool_size": 64,
+      "rule": {
+        "direction": "outbound",
+        "requirement": "earliest_departure",
+        "target": 29722
+      },
+      "same_request_equivalent_clause_indices": [],
+      "scenario_id": "pilot-39",
+      "unsupported_or_unreliable": false
+    },
+    {
+      "accepted": 256,
+      "direction_swap_changes_journeys": 0,
+      "effect": "always_true",
+      "exact_boundary_journeys": null,
+      "index": 0,
+      "marginal_exclusions": 0,
+      "ordering_exclusions_beyond_stop_presence": null,
+      "pool_size": 256,
+      "rule": {
+        "direction": "return",
+        "requirement": "transfer_limit",
+        "target": 1
+      },
+      "same_request_equivalent_clause_indices": [
+        1
+      ],
+      "scenario_id": "pilot-40",
+      "unsupported_or_unreliable": false
+    },
+    {
+      "accepted": 256,
+      "direction_swap_changes_journeys": 256,
+      "effect": "always_true",
+      "exact_boundary_journeys": 123,
+      "index": 1,
+      "marginal_exclusions": 0,
+      "ordering_exclusions_beyond_stop_presence": null,
+      "pool_size": 256,
+      "rule": {
+        "direction": "return",
+        "requirement": "earliest_departure",
+        "target": 33120
+      },
+      "same_request_equivalent_clause_indices": [
+        0
+      ],
+      "scenario_id": "pilot-40",
+      "unsupported_or_unreliable": false
+    },
+    {
+      "accepted": 9,
+      "direction_swap_changes_journeys": null,
+      "effect": "separates",
+      "exact_boundary_journeys": 0,
+      "index": 0,
+      "marginal_exclusions": 1,
+      "ordering_exclusions_beyond_stop_presence": null,
+      "pool_size": 25,
+      "rule": {
+        "direction": "outbound",
+        "requirement": "earliest_departure",
+        "target": 30600
+      },
+      "same_request_equivalent_clause_indices": [],
+      "scenario_id": "pilot-41",
+      "unsupported_or_unreliable": false
+    },
+    {
+      "accepted": 1,
+      "direction_swap_changes_journeys": null,
+      "effect": "separates",
+      "exact_boundary_journeys": 0,
+      "index": 1,
+      "marginal_exclusions": 9,
+      "ordering_exclusions_beyond_stop_presence": null,
+      "pool_size": 25,
+      "rule": {
+        "direction": "outbound",
+        "requirement": "latest_arrival",
+        "target": 28800
+      },
+      "same_request_equivalent_clause_indices": [],
+      "scenario_id": "pilot-41",
+      "unsupported_or_unreliable": false
+    },
+    {
+      "accepted": 64,
+      "direction_swap_changes_journeys": null,
+      "effect": "always_true",
+      "exact_boundary_journeys": null,
+      "index": 0,
+      "marginal_exclusions": 0,
+      "ordering_exclusions_beyond_stop_presence": null,
+      "pool_size": 64,
+      "rule": {
+        "direction": "outbound",
+        "requirement": "forbidden_modes",
+        "target": [
+          "rail",
+          "tram"
+        ]
+      },
+      "same_request_equivalent_clause_indices": [
+        2
+      ],
+      "scenario_id": "pilot-42",
+      "unsupported_or_unreliable": false
+    },
+    {
+      "accepted": 28,
+      "direction_swap_changes_journeys": null,
+      "effect": "separates",
+      "exact_boundary_journeys": 4,
+      "index": 1,
+      "marginal_exclusions": 36,
+      "ordering_exclusions_beyond_stop_presence": null,
+      "pool_size": 64,
+      "rule": {
+        "direction": "outbound",
+        "requirement": "latest_departure",
+        "target": 26967
+      },
+      "same_request_equivalent_clause_indices": [],
+      "scenario_id": "pilot-42",
+      "unsupported_or_unreliable": false
+    },
+    {
+      "accepted": 64,
+      "direction_swap_changes_journeys": null,
+      "effect": "always_true",
+      "exact_boundary_journeys": null,
+      "index": 2,
+      "marginal_exclusions": 0,
+      "ordering_exclusions_beyond_stop_presence": null,
+      "pool_size": 64,
+      "rule": {
+        "direction": "outbound",
+        "requirement": "transfer_limit",
+        "target": 1
+      },
+      "same_request_equivalent_clause_indices": [
+        0
+      ],
+      "scenario_id": "pilot-42",
+      "unsupported_or_unreliable": false
+    },
+    {
+      "accepted": 64,
+      "direction_swap_changes_journeys": null,
+      "effect": "always_true",
+      "exact_boundary_journeys": null,
+      "index": 0,
+      "marginal_exclusions": 0,
+      "ordering_exclusions_beyond_stop_presence": 0,
+      "pool_size": 64,
+      "rule": {
+        "direction": "outbound",
+        "requirement": "ordered_calls",
+        "target": [
+          "6008",
+          "6009"
+        ]
+      },
+      "same_request_equivalent_clause_indices": [
+        1
+      ],
+      "scenario_id": "pilot-43",
+      "unsupported_or_unreliable": false
+    },
+    {
+      "accepted": 64,
+      "direction_swap_changes_journeys": null,
+      "effect": "always_true",
+      "exact_boundary_journeys": null,
+      "index": 1,
+      "marginal_exclusions": 0,
+      "ordering_exclusions_beyond_stop_presence": null,
+      "pool_size": 64,
+      "rule": {
+        "direction": "outbound",
+        "requirement": "allowed_modes",
+        "target": [
+          "bus"
+        ]
+      },
+      "same_request_equivalent_clause_indices": [
+        0
+      ],
+      "scenario_id": "pilot-43",
+      "unsupported_or_unreliable": false
+    },
+    {
+      "accepted": 16,
+      "direction_swap_changes_journeys": null,
+      "effect": "separates",
+      "exact_boundary_journeys": 7,
+      "index": 0,
+      "marginal_exclusions": 7,
+      "ordering_exclusions_beyond_stop_presence": null,
+      "pool_size": 25,
+      "rule": {
+        "direction": "outbound",
+        "requirement": "earliest_departure",
+        "target": 29607
+      },
+      "same_request_equivalent_clause_indices": [],
+      "scenario_id": "pilot-44",
+      "unsupported_or_unreliable": false
+    },
+    {
+      "accepted": 16,
+      "direction_swap_changes_journeys": null,
+      "effect": "separates",
+      "exact_boundary_journeys": 7,
+      "index": 1,
+      "marginal_exclusions": 7,
+      "ordering_exclusions_beyond_stop_presence": null,
+      "pool_size": 25,
+      "rule": {
+        "direction": "outbound",
+        "requirement": "latest_arrival",
+        "target": 33483
+      },
+      "same_request_equivalent_clause_indices": [],
+      "scenario_id": "pilot-44",
+      "unsupported_or_unreliable": false
+    },
+    {
+      "accepted": 256,
+      "direction_swap_changes_journeys": 0,
+      "effect": "always_true",
+      "exact_boundary_journeys": null,
+      "index": 0,
+      "marginal_exclusions": 0,
+      "ordering_exclusions_beyond_stop_presence": null,
+      "pool_size": 256,
+      "rule": {
+        "direction": "outbound",
+        "requirement": "transfer_limit",
+        "target": 1
+      },
+      "same_request_equivalent_clause_indices": [],
+      "scenario_id": "pilot-45",
+      "unsupported_or_unreliable": false
+    },
+    {
+      "accepted": 204,
+      "direction_swap_changes_journeys": 204,
+      "effect": "separates",
+      "exact_boundary_journeys": 20,
+      "index": 1,
+      "marginal_exclusions": 52,
+      "ordering_exclusions_beyond_stop_presence": null,
+      "pool_size": 256,
+      "rule": {
+        "direction": "return",
+        "requirement": "earliest_departure",
+        "target": 32586
+      },
+      "same_request_equivalent_clause_indices": [],
+      "scenario_id": "pilot-45",
+      "unsupported_or_unreliable": false
+    },
+    {
+      "accepted": 0,
+      "direction_swap_changes_journeys": null,
+      "effect": "always_false",
+      "exact_boundary_journeys": null,
+      "index": 0,
+      "marginal_exclusions": 64,
+      "ordering_exclusions_beyond_stop_presence": null,
+      "pool_size": 64,
+      "rule": {
+        "direction": "outbound",
+        "requirement": "forbidden_modes",
+        "target": [
+          "bus"
+        ]
+      },
+      "same_request_equivalent_clause_indices": [],
+      "scenario_id": "pilot-46",
+      "unsupported_or_unreliable": false
+    },
+    {
+      "accepted": 25,
+      "direction_swap_changes_journeys": null,
+      "effect": "always_true",
+      "exact_boundary_journeys": null,
+      "index": 0,
+      "marginal_exclusions": 0,
+      "ordering_exclusions_beyond_stop_presence": null,
+      "pool_size": 25,
+      "rule": {
+        "direction": "outbound",
+        "requirement": "transfer_limit",
+        "target": 1
+      },
+      "same_request_equivalent_clause_indices": [],
+      "scenario_id": "pilot-47",
+      "unsupported_or_unreliable": false
+    },
+    {
+      "accepted": 16,
+      "direction_swap_changes_journeys": null,
+      "effect": "separates",
+      "exact_boundary_journeys": 7,
+      "index": 1,
+      "marginal_exclusions": 9,
+      "ordering_exclusions_beyond_stop_presence": null,
+      "pool_size": 25,
+      "rule": {
+        "direction": "outbound",
+        "requirement": "earliest_departure",
+        "target": 29479
+      },
+      "same_request_equivalent_clause_indices": [],
+      "scenario_id": "pilot-47",
+      "unsupported_or_unreliable": false
+    }
+  ],
+  "pool_capabilities": [
+    {
+      "scenario_id": "pilot-00",
+      "segments": [
+        {
+          "distinct_call_sequences": 9,
+          "distinct_stop_sets": 3,
+          "scope": "outbound",
+          "transfer_memberships": {
+            "route_change": 25,
+            "same_route": 36
+          },
+          "transfer_values": [
+            0,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "scenario_id": "pilot-01",
+      "segments": [
+        {
+          "distinct_call_sequences": 3,
+          "distinct_stop_sets": 1,
+          "scope": "outbound",
+          "transfer_memberships": {
+            "same_route": 59
+          },
+          "transfer_values": [
+            0,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "scenario_id": "pilot-02",
+      "segments": [
+        {
+          "distinct_call_sequences": 13,
+          "distinct_stop_sets": 2,
+          "scope": "outbound",
+          "transfer_memberships": {
+            "route_change": 39,
+            "same_route": 24
+          },
+          "transfer_values": [
+            0,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "scenario_id": "pilot-03",
+      "segments": [
+        {
+          "distinct_call_sequences": 6,
+          "distinct_stop_sets": 2,
+          "scope": "outbound",
+          "transfer_memberships": {
+            "route_change": 23,
+            "same_route": 39
+          },
+          "transfer_values": [
+            0,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "scenario_id": "pilot-04",
+      "segments": [
+        {
+          "distinct_call_sequences": 3,
+          "distinct_stop_sets": 1,
+          "scope": "outbound",
+          "transfer_memberships": {
+            "same_route": 222
+          },
+          "transfer_values": [
+            0,
+            1
+          ]
+        },
+        {
+          "distinct_call_sequences": 3,
+          "distinct_stop_sets": 1,
+          "scope": "return",
+          "transfer_memberships": {
+            "route_change": 131,
+            "same_route": 75
+          },
+          "transfer_values": [
+            0,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "scenario_id": "pilot-05",
+      "segments": [
+        {
+          "distinct_call_sequences": 9,
+          "distinct_stop_sets": 2,
+          "scope": "outbound",
+          "transfer_memberships": {
+            "same_route": 61
+          },
+          "transfer_values": [
+            0,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "scenario_id": "pilot-06",
+      "segments": [
+        {
+          "distinct_call_sequences": 9,
+          "distinct_stop_sets": 2,
+          "scope": "outbound",
+          "transfer_memberships": {
+            "route_change": 35,
+            "same_route": 27
+          },
+          "transfer_values": [
+            0,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "scenario_id": "pilot-07",
+      "segments": [
+        {
+          "distinct_call_sequences": 3,
+          "distinct_stop_sets": 1,
+          "scope": "outbound",
+          "transfer_memberships": {
+            "route_change": 18,
+            "same_route": 42
+          },
+          "transfer_values": [
+            0,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "scenario_id": "pilot-08",
+      "segments": [
+        {
+          "distinct_call_sequences": 4,
+          "distinct_stop_sets": 1,
+          "scope": "outbound",
+          "transfer_memberships": {
+            "route_change": 34,
+            "same_route": 28
+          },
+          "transfer_values": [
+            0,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "scenario_id": "pilot-09",
+      "segments": [
+        {
+          "distinct_call_sequences": 3,
+          "distinct_stop_sets": 1,
+          "scope": "outbound",
+          "transfer_memberships": {
+            "same_route": 237
+          },
+          "transfer_values": [
+            0,
+            1
+          ]
+        },
+        {
+          "distinct_call_sequences": 10,
+          "distinct_stop_sets": 3,
+          "scope": "return",
+          "transfer_memberships": {
+            "route_change": 86,
+            "same_route": 123
+          },
+          "transfer_values": [
+            0,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "scenario_id": "pilot-10",
+      "segments": [
+        {
+          "distinct_call_sequences": 4,
+          "distinct_stop_sets": 1,
+          "scope": "outbound",
+          "transfer_memberships": {
+            "route_change": 12,
+            "same_route": 51
+          },
+          "transfer_values": [
+            0,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "scenario_id": "pilot-11",
+      "segments": [
+        {
+          "distinct_call_sequences": 3,
+          "distinct_stop_sets": 1,
+          "scope": "outbound",
+          "transfer_memberships": {
+            "route_change": 43,
+            "same_route": 19
+          },
+          "transfer_values": [
+            0,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "scenario_id": "pilot-12",
+      "segments": [
+        {
+          "distinct_call_sequences": 5,
+          "distinct_stop_sets": 1,
+          "scope": "outbound",
+          "transfer_memberships": {
+            "route_change": 26,
+            "same_route": 38
+          },
+          "transfer_values": [
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "scenario_id": "pilot-13",
+      "segments": [
+        {
+          "distinct_call_sequences": 6,
+          "distinct_stop_sets": 1,
+          "scope": "outbound",
+          "transfer_memberships": {
+            "same_route": 63
+          },
+          "transfer_values": [
+            0,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "scenario_id": "pilot-14",
+      "segments": [
+        {
+          "distinct_call_sequences": 6,
+          "distinct_stop_sets": 1,
+          "scope": "outbound",
+          "transfer_memberships": {
+            "route_change": 18,
+            "same_route": 44
+          },
+          "transfer_values": [
+            0,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "scenario_id": "pilot-15",
+      "segments": [
+        {
+          "distinct_call_sequences": 7,
+          "distinct_stop_sets": 1,
+          "scope": "outbound",
+          "transfer_memberships": {
+            "same_route": 63
+          },
+          "transfer_values": [
+            0,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "scenario_id": "pilot-16",
+      "segments": [
+        {
+          "distinct_call_sequences": 3,
+          "distinct_stop_sets": 1,
+          "scope": "outbound",
+          "transfer_memberships": {
+            "same_route": 51
+          },
+          "transfer_values": [
+            0,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "scenario_id": "pilot-17",
+      "segments": [
+        {
+          "distinct_call_sequences": 3,
+          "distinct_stop_sets": 1,
+          "scope": "outbound",
+          "transfer_memberships": {
+            "same_route": 225
+          },
+          "transfer_values": [
+            0,
+            1
+          ]
+        },
+        {
+          "distinct_call_sequences": 3,
+          "distinct_stop_sets": 1,
+          "scope": "return",
+          "transfer_memberships": {
+            "route_change": 190,
+            "same_route": 42
+          },
+          "transfer_values": [
+            0,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "scenario_id": "pilot-18",
+      "segments": [
+        {
+          "distinct_call_sequences": 5,
+          "distinct_stop_sets": 1,
+          "scope": "outbound",
+          "transfer_memberships": {
+            "same_route": 61
+          },
+          "transfer_values": [
+            0,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "scenario_id": "pilot-19",
+      "segments": [
+        {
+          "distinct_call_sequences": 15,
+          "distinct_stop_sets": 1,
+          "scope": "outbound",
+          "transfer_memberships": {
+            "same_route": 62
+          },
+          "transfer_values": [
+            0,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "scenario_id": "pilot-20",
+      "segments": [
+        {
+          "distinct_call_sequences": 7,
+          "distinct_stop_sets": 1,
+          "scope": "outbound",
+          "transfer_memberships": {
+            "route_change": 21,
+            "same_route": 42
+          },
+          "transfer_values": [
+            0,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "scenario_id": "pilot-21",
+      "segments": [
+        {
+          "distinct_call_sequences": 9,
+          "distinct_stop_sets": 1,
+          "scope": "outbound",
+          "transfer_memberships": {
+            "same_route": 16
+          },
+          "transfer_values": [
+            0,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "scenario_id": "pilot-22",
+      "segments": [
+        {
+          "distinct_call_sequences": 7,
+          "distinct_stop_sets": 1,
+          "scope": "outbound",
+          "transfer_memberships": {
+            "same_route": 240
+          },
+          "transfer_values": [
+            0,
+            1
+          ]
+        },
+        {
+          "distinct_call_sequences": 7,
+          "distinct_stop_sets": 1,
+          "scope": "return",
+          "transfer_memberships": {
+            "same_route": 223
+          },
+          "transfer_values": [
+            0,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "scenario_id": "pilot-23",
+      "segments": [
+        {
+          "distinct_call_sequences": 6,
+          "distinct_stop_sets": 1,
+          "scope": "outbound",
+          "transfer_memberships": {
+            "route_change": 23,
+            "same_route": 41
+          },
+          "transfer_values": [
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "scenario_id": "pilot-24",
+      "segments": [
+        {
+          "distinct_call_sequences": 3,
+          "distinct_stop_sets": 1,
+          "scope": "outbound",
+          "transfer_memberships": {
+            "route_change": 22,
+            "same_route": 37
+          },
+          "transfer_values": [
+            0,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "scenario_id": "pilot-25",
+      "segments": [
+        {
+          "distinct_call_sequences": 4,
+          "distinct_stop_sets": 1,
+          "scope": "outbound",
+          "transfer_memberships": {
+            "route_change": 43,
+            "same_route": 17
+          },
+          "transfer_values": [
+            0,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "scenario_id": "pilot-26",
+      "segments": [
+        {
+          "distinct_call_sequences": 4,
+          "distinct_stop_sets": 1,
+          "scope": "outbound",
+          "transfer_memberships": {
+            "same_route": 45
+          },
+          "transfer_values": [
+            0,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "scenario_id": "pilot-27",
+      "segments": [
+        {
+          "distinct_call_sequences": 4,
+          "distinct_stop_sets": 1,
+          "scope": "outbound",
+          "transfer_memberships": {
+            "same_route": 240
+          },
+          "transfer_values": [
+            0,
+            1
+          ]
+        },
+        {
+          "distinct_call_sequences": 4,
+          "distinct_stop_sets": 1,
+          "scope": "return",
+          "transfer_memberships": {
+            "route_change": 137,
+            "same_route": 95
+          },
+          "transfer_values": [
+            0,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "scenario_id": "pilot-28",
+      "segments": [
+        {
+          "distinct_call_sequences": 6,
+          "distinct_stop_sets": 1,
+          "scope": "outbound",
+          "transfer_memberships": {
+            "route_change": 8,
+            "same_route": 53
+          },
+          "transfer_values": [
+            0,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "scenario_id": "pilot-29",
+      "segments": [
+        {
+          "distinct_call_sequences": 7,
+          "distinct_stop_sets": 1,
+          "scope": "outbound",
+          "transfer_memberships": {
+            "same_route": 61
+          },
+          "transfer_values": [
+            0,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "scenario_id": "pilot-30",
+      "segments": [
+        {
+          "distinct_call_sequences": 8,
+          "distinct_stop_sets": 2,
+          "scope": "outbound",
+          "transfer_memberships": {
+            "route_change": 39,
+            "same_route": 21
+          },
+          "transfer_values": [
+            0,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "scenario_id": "pilot-31",
+      "segments": [
+        {
+          "distinct_call_sequences": 4,
+          "distinct_stop_sets": 1,
+          "scope": "outbound",
+          "transfer_memberships": {
+            "same_route": 58
+          },
+          "transfer_values": [
+            0,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "scenario_id": "pilot-32",
+      "segments": [
+        {
+          "distinct_call_sequences": 5,
+          "distinct_stop_sets": 1,
+          "scope": "outbound",
+          "transfer_memberships": {
+            "same_route": 40
+          },
+          "transfer_values": [
+            0,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "scenario_id": "pilot-33",
+      "segments": [
+        {
+          "distinct_call_sequences": 8,
+          "distinct_stop_sets": 2,
+          "scope": "outbound",
+          "transfer_memberships": {
+            "route_change": 23,
+            "same_route": 36
+          },
+          "transfer_values": [
+            0,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "scenario_id": "pilot-34",
+      "segments": [
+        {
+          "distinct_call_sequences": 3,
+          "distinct_stop_sets": 1,
+          "scope": "outbound",
+          "transfer_memberships": {
+            "route_change": 24,
+            "same_route": 36
+          },
+          "transfer_values": [
+            0,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "scenario_id": "pilot-35",
+      "segments": [
+        {
+          "distinct_call_sequences": 11,
+          "distinct_stop_sets": 1,
+          "scope": "outbound",
+          "transfer_memberships": {
+            "same_route": 256
+          },
+          "transfer_values": [
+            1
+          ]
+        },
+        {
+          "distinct_call_sequences": 18,
+          "distinct_stop_sets": 2,
+          "scope": "return",
+          "transfer_memberships": {
+            "route_change": 65,
+            "same_route": 167
+          },
+          "transfer_values": [
+            0,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "scenario_id": "pilot-36",
+      "segments": [
+        {
+          "distinct_call_sequences": 3,
+          "distinct_stop_sets": 1,
+          "scope": "outbound",
+          "transfer_memberships": {
+            "same_route": 61
+          },
+          "transfer_values": [
+            0,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "scenario_id": "pilot-37",
+      "segments": [
+        {
+          "distinct_call_sequences": 3,
+          "distinct_stop_sets": 1,
+          "scope": "outbound",
+          "transfer_memberships": {
+            "route_change": 12,
+            "same_route": 49
+          },
+          "transfer_values": [
+            0,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "scenario_id": "pilot-38",
+      "segments": [
+        {
+          "distinct_call_sequences": 3,
+          "distinct_stop_sets": 1,
+          "scope": "outbound",
+          "transfer_memberships": {
+            "same_route": 20
+          },
+          "transfer_values": [
+            0,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "scenario_id": "pilot-39",
+      "segments": [
+        {
+          "distinct_call_sequences": 3,
+          "distinct_stop_sets": 1,
+          "scope": "outbound",
+          "transfer_memberships": {
+            "route_change": 16,
+            "same_route": 45
+          },
+          "transfer_values": [
+            0,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "scenario_id": "pilot-40",
+      "segments": [
+        {
+          "distinct_call_sequences": 5,
+          "distinct_stop_sets": 2,
+          "scope": "outbound",
+          "transfer_memberships": {
+            "route_change": 74,
+            "same_route": 160
+          },
+          "transfer_values": [
+            0,
+            1
+          ]
+        },
+        {
+          "distinct_call_sequences": 3,
+          "distinct_stop_sets": 1,
+          "scope": "return",
+          "transfer_memberships": {
+            "route_change": 110,
+            "same_route": 89
+          },
+          "transfer_values": [
+            0,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "scenario_id": "pilot-41",
+      "segments": [
+        {
+          "distinct_call_sequences": 3,
+          "distinct_stop_sets": 1,
+          "scope": "outbound",
+          "transfer_memberships": {
+            "same_route": 20
+          },
+          "transfer_values": [
+            0,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "scenario_id": "pilot-42",
+      "segments": [
+        {
+          "distinct_call_sequences": 4,
+          "distinct_stop_sets": 1,
+          "scope": "outbound",
+          "transfer_memberships": {
+            "route_change": 34,
+            "same_route": 28
+          },
+          "transfer_values": [
+            0,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "scenario_id": "pilot-43",
+      "segments": [
+        {
+          "distinct_call_sequences": 5,
+          "distinct_stop_sets": 1,
+          "scope": "outbound",
+          "transfer_memberships": {
+            "same_route": 64
+          },
+          "transfer_values": [
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "scenario_id": "pilot-44",
+      "segments": [
+        {
+          "distinct_call_sequences": 3,
+          "distinct_stop_sets": 1,
+          "scope": "outbound",
+          "transfer_memberships": {
+            "same_route": 20
+          },
+          "transfer_values": [
+            0,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "scenario_id": "pilot-45",
+      "segments": [
+        {
+          "distinct_call_sequences": 8,
+          "distinct_stop_sets": 1,
+          "scope": "outbound",
+          "transfer_memberships": {
+            "same_route": 256
+          },
+          "transfer_values": [
+            1
+          ]
+        },
+        {
+          "distinct_call_sequences": 18,
+          "distinct_stop_sets": 5,
+          "scope": "return",
+          "transfer_memberships": {
+            "route_change": 130,
+            "same_route": 113
+          },
+          "transfer_values": [
+            0,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "scenario_id": "pilot-46",
+      "segments": [
+        {
+          "distinct_call_sequences": 3,
+          "distinct_stop_sets": 1,
+          "scope": "outbound",
+          "transfer_memberships": {
+            "route_change": 19,
+            "same_route": 41
+          },
+          "transfer_values": [
+            0,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "scenario_id": "pilot-47",
+      "segments": [
+        {
+          "distinct_call_sequences": 3,
+          "distinct_stop_sets": 1,
+          "scope": "outbound",
+          "transfer_memberships": {
+            "same_route": 20
+          },
+          "transfer_values": [
+            0,
+            1
+          ]
+        }
+      ]
+    }
+  ],
+  "source": {
+    "active_service_ids": [
+      "7.734",
+      "A.734",
+      "D.734",
+      "Q.734",
+      "W.734",
+      "k.734"
+    ],
+    "active_trips_with_beyond_midnight_calls": 190,
+    "bbox_count_definition": "At least two in-bbox departure calls in that window on one active trip; eligibility only, not proof of usable OD alternatives",
+    "exceptions_on_pilot_day": 0,
+    "invalid_ride_identities_or_calls": [],
+    "modes": [
+      {
+        "active_trips_on_pilot_day": 4727,
+        "active_trips_with_a_07_10_departure": 1105,
+        "mode": "bus",
+        "routes_with_two_bbox_window_calls": 24,
+        "selected_routes": 3,
+        "source_routes": 71
+      },
+      {
+        "active_trips_on_pilot_day": 384,
+        "active_trips_with_a_07_10_departure": 74,
+        "mode": "gondola",
+        "routes_with_two_bbox_window_calls": 0,
+        "selected_routes": 0,
+        "source_routes": 1
+      },
+      {
+        "active_trips_on_pilot_day": 20,
+        "active_trips_with_a_07_10_departure": 7,
+        "mode": "rail",
+        "routes_with_two_bbox_window_calls": 0,
+        "selected_routes": 0,
+        "source_routes": 1
+      },
+      {
+        "active_trips_on_pilot_day": 1022,
+        "active_trips_with_a_07_10_departure": 204,
+        "mode": "tram",
+        "routes_with_two_bbox_window_calls": 7,
+        "selected_routes": 0,
+        "source_routes": 8
+      }
+    ],
+    "non_bus_routes": [
+      {
+        "gtfs_route_type": 0,
+        "mode": "tram",
+        "name": "MAX Red Line",
+        "route_id": "90"
+      },
+      {
+        "gtfs_route_type": 0,
+        "mode": "tram",
+        "name": "MAX Blue Line",
+        "route_id": "100"
+      },
+      {
+        "gtfs_route_type": 0,
+        "mode": "tram",
+        "name": "MAX Yellow Line",
+        "route_id": "190"
+      },
+      {
+        "gtfs_route_type": 0,
+        "mode": "tram",
+        "name": "Portland Streetcar - NS Line",
+        "route_id": "193"
+      },
+      {
+        "gtfs_route_type": 0,
+        "mode": "tram",
+        "name": "Portland Streetcar - A Loop",
+        "route_id": "194"
+      },
+      {
+        "gtfs_route_type": 0,
+        "mode": "tram",
+        "name": "Portland Streetcar - B Loop",
+        "route_id": "195"
+      },
+      {
+        "gtfs_route_type": 0,
+        "mode": "tram",
+        "name": "MAX Green Line",
+        "route_id": "200"
+      },
+      {
+        "gtfs_route_type": 2,
+        "mode": "rail",
+        "name": "WES Commuter Rail",
+        "route_id": "203"
+      },
+      {
+        "gtfs_route_type": 6,
+        "mode": "gondola",
+        "name": "Portland Aerial Tram",
+        "route_id": "208"
+      },
+      {
+        "gtfs_route_type": 0,
+        "mode": "tram",
+        "name": "MAX Orange Line",
+        "route_id": "290"
+      }
+    ],
+    "selected_routes": [
+      "17",
+      "2",
+      "4"
+    ],
+    "timezone": [
+      "America/Los_Angeles"
+    ],
+    "unique_audited_rides": 2363,
+    "window_count_definition": "At least one departure in 07:00–10:00 on the active service day; not a journey count"
+  }
+}

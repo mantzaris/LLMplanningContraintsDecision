@@ -1,0 +1,9 @@
+{
+  "changed_reference_replay": "not applicable: zero corrections",
+  "corrections": [],
+  "excluded_ids": [],
+  "original_reference_sha256": "7c41c9b77ace6e82a2ef4713851752c88fb146d773fdb3b4d4e815ceb15910d6",
+  "original_reference_version": "stage2-provisional-v1",
+  "unresolved": [],
+  "version": "stage2-closeout-reference-audit-v1"
+}

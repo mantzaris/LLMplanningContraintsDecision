@@ -1,0 +1,32 @@
+{
+  "annotation_rows_checked": 48,
+  "distinct_rides_checked": 2363,
+  "external_model_api_calls": 0,
+  "files": {
+    "artifacts/stage2/closeout-v1/annotation-review.csv": "7200a574a6c056c178c9824aa8f6fd6821b5052c0bc7fff4e2706d14c2942564",
+    "artifacts/stage2/closeout-v1/annotations.json": "cd3c585162fa781324736be45caae560f6077d33261300a5b57d26ca04f4ca6b",
+    "artifacts/stage2/closeout-v1/constraint-coverage.csv": "aecf0dbcb81741321d6efbe60cc3b9f917ace83eb24c410f6a53242721e62a1f",
+    "artifacts/stage2/closeout-v1/corrections-v1.json": "261e7353ed35d8f4214b0b025cc0b806f846577830f451ebccf4ff8a4305b475",
+    "artifacts/stage2/closeout-v1/coverage.json": "ccd7c381fa584345176b939a2c0eab6e391154543619d3945343d5453066e7fa",
+    "artifacts/stage2/closeout-v1/provenance.json": "8b20445330f57da36a7388951d6b4767e42ddddfa4698dfd6769c36ca238b7a6",
+    "artifacts/stage2/closeout-v1/report-reproduction.json": "6ed1272dff3f0d83d19c710e2eef91df647def00c4b45e261e33d48974e761f1",
+    "artifacts/stage2/closeout-v1/rescored-outputs.json": "4e4084676e3aeb02c7e0b55cdc0f8c2f1f445922dedbd30afaede81d019172c4",
+    "artifacts/stage2/closeout-v1/summary.json": "8ed54fb6aae55f9d3cfe45cb2036b9b1b55930aa6b0d23daf43c2424b12aafbe",
+    "artifacts/stage2/closeout-v1/tables.md": "00db1dea984603b73d28477b13e677b36be59f4ab3c97cf528fbfb1336032ecb",
+    "reports/STAGE2_ANNOTATION_COVERAGE_AUDIT.md": "c2f72417b334f129ba02c4524cd5a282661ebc88549ec1a4b7f710228454aee5",
+    "scripts/stage2_closeout_audit.py": "ca4ad3b719e17de461c437429897f38d16341d3d96baac531240dc21a95f48ea",
+    "scripts/stage2_closeout_report.md": "070239662d8d3b2430c0492b165037a7f8a903eeab1086fc86e8762046721358",
+    "scripts/stage2_closeout_report.py": "4608cc6c26bfbc27cf1ff378c3b5e748a9488f988fb43fd4c3f86167a2f0046e"
+  },
+  "new_gpu_generations": 0,
+  "new_gpu_seconds": 0,
+  "original_raw_files_matching_manifest": 152,
+  "outcome_changes": 0,
+  "public_journey_memberships_checked": 4366,
+  "report_aggregate_assertions_passed": true,
+  "report_regenerated_byte_identically": true,
+  "ruff_exit_code": 0,
+  "runtime_regression_tests": "not needed: no runtime or reference correction",
+  "saved_outcomes_rescored": 432,
+  "starting_revision": "7e79d7c7f0e5b960313b1aa60969fa64f161ae36"
+}

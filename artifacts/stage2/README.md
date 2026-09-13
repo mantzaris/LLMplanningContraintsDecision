@@ -12,6 +12,10 @@ outcomes differ. See the [execution report](../../reports/STAGE2_GPU_EXECUTION.m
   failures and judge errors, source-only time-value sensitivity, and an uncapped-pool
   diagnostic. Counterfactual and oracle results are separate from the frozen pilot.
   See the [mechanism report](../../reports/STAGE2_MECHANISM_DIAGNOSIS.md).
+- `closeout-v1/`: final developer/automated annotation and transport-coverage audit;
+  no clear reference corrections, 432 unchanged rescored outputs, and source/pool
+  coverage counts. [Closeout report](../../reports/STAGE2_ANNOTATION_COVERAGE_AUDIT.md):
+  further inference for the original weighting method is paused; no retest is justified.
 - `prior-reanalysis/` and `figures/`: historical four-case Stage 1 reanalysis only.
 - `execution-attempt-20260912/`: immutable pre-GPU access diagnosis, annotation checks
   and local-preservation inventory from the earlier blocked attempt.

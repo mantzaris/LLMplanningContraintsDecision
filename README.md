@@ -1,6 +1,8 @@
 # Validating LLM Planning Constraints Through Decision-Relevant Examples
 
-Stage 1: a finite-domain civilian public-transport research implementation. See
+An implemented finite-domain civilian public-transport research package: typed
+constraints, GTFS acquisition/parsing, symbolic planning, independent evaluation,
+paired experiment execution, budget guards, and offline replay. See
 [methodology](docs/methodology.md), [data provenance](docs/data.md), and
 [Stage 1 evidence and limitations](docs/stage1-report.md).
 
@@ -25,9 +27,19 @@ both. The run used 358 generations and 681.62 measured GPU seconds; all 48 pairs
 replayed exactly. No consequence-selection advantage was demonstrated.
 
 The [CPU mechanism diagnosis](reports/STAGE2_MECHANISM_DIAGNOSIS.md) compares budget 0
-with validation: 31/48 → 33/48, with three recoveries and one deterioration. It explains
-the rare selector divergence and recommends an annotation and data-coverage gate
-before further inference. No new GPU work was used for that diagnosis.
+with validation: 31/48 → 33/48, with three recoveries and one deterioration.
+The [final annotation/coverage audit](reports/STAGE2_ANNOTATION_COVERAGE_AUDIT.md)
+found no clear reference error or unresolved case under the documented conventions;
+all 432 rescored outputs retained their categories. Bus-only service, vacuous mode
+clauses, and weak visit-order coverage limit generalization. Annotations remain
+provisional; the checks are not independent human adjudication.
+
+**Further inference and expansion of the original consequence-weighting method are
+paused.** The audit found no material defect warranting a retest. The pilot supports
+a small observed benefit from generic validation and reusable infrastructure; it
+does not demonstrate a consequence-selection advantage or a positive methodological
+contribution. Time normalization remains an engineering baseline. Both final CPU
+audits used zero new GPU generations or external model API calls.
 See [compact fresh results](artifacts/stage2/pilot-v1),
 [figures](artifacts/stage2/pilot-figures), [frozen protocol](docs/stage2-protocol.md),
 [provisional annotation review](data/pilot/annotation-review.csv), and

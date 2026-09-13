@@ -1,0 +1,1921 @@
+[
+  {
+    "audit_type": "developer/automated consistency audit; no independent human adjudication",
+    "clear_reference_error": false,
+    "date_timezone_agree": true,
+    "endpoints_names_and_public_windows_agree": true,
+    "expressible": true,
+    "family": "timing",
+    "feasibility_label_agrees": true,
+    "feasible_journeys": 11,
+    "human_audited": false,
+    "human_correction": "",
+    "human_question": "",
+    "human_reviewer": "",
+    "invalid_public_journeys": [],
+    "pool_size": 64,
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "earliest_departure",
+          "target": 30317
+        },
+        {
+          "direction": "outbound",
+          "requirement": "latest_arrival",
+          "target": 34225
+        }
+      ]
+    },
+    "reference_version": "stage2-provisional-v1",
+    "request": "On 2026-09-14, plan the outbound journey from NW 5th & Davis [stop_id=9301] to SW 5th & Columbia [stop_id=7594]. Depart no earlier than 08:25:17 and arrive by 09:30:25, both inclusive.",
+    "scenario_id": "pilot-00",
+    "scope_agrees": true,
+    "times_units_inclusive_boundaries_agree": true,
+    "unresolved_ambiguity": false,
+    "visits_and_order_agree": "not_applicable",
+    "wording_supports_reference": true
+  },
+  {
+    "audit_type": "developer/automated consistency audit; no independent human adjudication",
+    "clear_reference_error": false,
+    "date_timezone_agree": true,
+    "endpoints_names_and_public_windows_agree": true,
+    "expressible": true,
+    "family": "mode_exclusion",
+    "feasibility_label_agrees": true,
+    "feasible_journeys": 4,
+    "human_audited": false,
+    "human_correction": "",
+    "human_question": "",
+    "human_reviewer": "",
+    "invalid_public_journeys": [],
+    "pool_size": 64,
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "forbidden_modes",
+          "target": [
+            "rail",
+            "tram"
+          ]
+        },
+        {
+          "direction": "outbound",
+          "requirement": "latest_departure",
+          "target": 32880
+        },
+        {
+          "direction": "outbound",
+          "requirement": "transfer_limit",
+          "target": 0
+        }
+      ]
+    },
+    "reference_version": "stage2-provisional-v1",
+    "request": "On 2026-09-14, plan the outbound journey from Rose Quarter Transit Center [stop_id=1097] to N Williams & NE Tillamook [stop_id=6370]. Do not use rail or tram. Depart no later than 09:08:00, inclusive. Make at most 0 transfers.",
+    "scenario_id": "pilot-01",
+    "scope_agrees": true,
+    "times_units_inclusive_boundaries_agree": true,
+    "unresolved_ambiguity": false,
+    "visits_and_order_agree": "not_applicable",
+    "wording_supports_reference": true
+  },
+  {
+    "audit_type": "developer/automated consistency audit; no independent human adjudication",
+    "clear_reference_error": false,
+    "date_timezone_agree": true,
+    "endpoints_names_and_public_windows_agree": true,
+    "expressible": true,
+    "family": "ordered_visits",
+    "feasibility_label_agrees": true,
+    "feasible_journeys": 64,
+    "human_audited": false,
+    "human_correction": "",
+    "human_question": "",
+    "human_reviewer": "",
+    "invalid_public_journeys": [],
+    "pool_size": 64,
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "ordered_calls",
+          "target": [
+            "3398",
+            "13780"
+          ]
+        },
+        {
+          "direction": "outbound",
+          "requirement": "allowed_modes",
+          "target": [
+            "bus"
+          ]
+        }
+      ]
+    },
+    "reference_version": "stage2-provisional-v1",
+    "request": "On 2026-09-14, plan the outbound journey from South Waterfront/S Moody [stop_id=13733] to NW Everett & 5th [stop_id=8886]. Call at stop 3398 and then stop 13780, in that order; remaining aboard counts. Use only buses.",
+    "scenario_id": "pilot-02",
+    "scope_agrees": true,
+    "times_units_inclusive_boundaries_agree": true,
+    "unresolved_ambiguity": false,
+    "visits_and_order_agree": true,
+    "wording_supports_reference": true
+  },
+  {
+    "audit_type": "developer/automated consistency audit; no independent human adjudication",
+    "clear_reference_error": false,
+    "date_timezone_agree": true,
+    "endpoints_names_and_public_windows_agree": true,
+    "expressible": true,
+    "family": "transfers",
+    "feasibility_label_agrees": true,
+    "feasible_journeys": 1,
+    "human_audited": false,
+    "human_correction": "",
+    "human_question": "",
+    "human_reviewer": "",
+    "invalid_public_journeys": [],
+    "pool_size": 64,
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "transfer_limit",
+          "target": 0
+        },
+        {
+          "direction": "outbound",
+          "requirement": "earliest_departure",
+          "target": 29880
+        }
+      ]
+    },
+    "reference_version": "stage2-provisional-v1",
+    "request": "On 2026-09-14, plan the outbound journey from SW 5th & Salmon [stop_id=7634] to 300 Block SW Lincoln [stop_id=3397]. Make at most 0 transfers. Do not depart before 08:18:00.",
+    "scenario_id": "pilot-03",
+    "scope_agrees": true,
+    "times_units_inclusive_boundaries_agree": true,
+    "unresolved_ambiguity": false,
+    "visits_and_order_agree": "not_applicable",
+    "wording_supports_reference": true
+  },
+  {
+    "audit_type": "developer/automated consistency audit; no independent human adjudication",
+    "clear_reference_error": false,
+    "date_timezone_agree": true,
+    "endpoints_names_and_public_windows_agree": true,
+    "expressible": true,
+    "family": "scope",
+    "feasibility_label_agrees": true,
+    "feasible_journeys": 141,
+    "human_audited": false,
+    "human_correction": "",
+    "human_question": "",
+    "human_reviewer": "",
+    "invalid_public_journeys": [],
+    "pool_size": 256,
+    "reference": {
+      "and": [
+        {
+          "direction": "return",
+          "requirement": "transfer_limit",
+          "target": 1
+        },
+        {
+          "direction": "return",
+          "requirement": "earliest_departure",
+          "target": 34014
+        }
+      ]
+    },
+    "reference_version": "stage2-provisional-v1",
+    "request": "On 2026-09-14, plan the outbound journey from NW Everett & 2nd [stop_id=1612] to N Williams & NE Broadway [stop_id=6357]. Also plan a return segment from N Vancouver & Weidler [stop_id=6009] to NW 5th & Davis [stop_id=9301] within 09:00:00–10:00:00. I handle movement between the outbound destination and return origin myself outside these journeys. On the return segment only, make at most 1 transfers. On the return segment only, depart no earlier than 09:26:54.",
+    "scenario_id": "pilot-04",
+    "scope_agrees": true,
+    "times_units_inclusive_boundaries_agree": true,
+    "unresolved_ambiguity": false,
+    "visits_and_order_agree": "not_applicable",
+    "wording_supports_reference": true
+  },
+  {
+    "audit_type": "developer/automated consistency audit; no independent human adjudication",
+    "clear_reference_error": false,
+    "date_timezone_agree": true,
+    "endpoints_names_and_public_windows_agree": true,
+    "expressible": true,
+    "family": "infeasible",
+    "feasibility_label_agrees": true,
+    "feasible_journeys": 0,
+    "human_audited": false,
+    "human_correction": "",
+    "human_question": "",
+    "human_reviewer": "",
+    "invalid_public_journeys": [],
+    "pool_size": 64,
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "earliest_departure",
+          "target": 30600
+        },
+        {
+          "direction": "outbound",
+          "requirement": "latest_arrival",
+          "target": 28800
+        }
+      ]
+    },
+    "reference_version": "stage2-provisional-v1",
+    "request": "On 2026-09-14, plan the outbound journey from SW Hall & 5th [stop_id=13780] to SW 6th & W Burnside [stop_id=7751]. Depart no earlier than 08:30:00 and arrive by 08:00:00, both inclusive.",
+    "scenario_id": "pilot-05",
+    "scope_agrees": true,
+    "times_units_inclusive_boundaries_agree": true,
+    "unresolved_ambiguity": false,
+    "visits_and_order_agree": "not_applicable",
+    "wording_supports_reference": true
+  },
+  {
+    "audit_type": "developer/automated consistency audit; no independent human adjudication",
+    "clear_reference_error": false,
+    "date_timezone_agree": true,
+    "endpoints_names_and_public_windows_agree": true,
+    "expressible": true,
+    "family": "mode_exclusion",
+    "feasibility_label_agrees": true,
+    "feasible_journeys": 35,
+    "human_audited": false,
+    "human_correction": "",
+    "human_question": "",
+    "human_reviewer": "",
+    "invalid_public_journeys": [],
+    "pool_size": 64,
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "forbidden_modes",
+          "target": [
+            "rail",
+            "tram"
+          ]
+        },
+        {
+          "direction": "outbound",
+          "requirement": "latest_departure",
+          "target": 28302
+        },
+        {
+          "direction": "outbound",
+          "requirement": "transfer_limit",
+          "target": 1
+        }
+      ]
+    },
+    "reference_version": "stage2-provisional-v1",
+    "request": "On 2026-09-14, plan the outbound journey from SW 5th & Washington [stop_id=7642] to South Waterfront/S Moody [stop_id=13732]. Do not use rail or tram. Depart no later than 07:51:42, inclusive. Make at most 1 transfers.",
+    "scenario_id": "pilot-06",
+    "scope_agrees": true,
+    "times_units_inclusive_boundaries_agree": true,
+    "unresolved_ambiguity": false,
+    "visits_and_order_agree": "not_applicable",
+    "wording_supports_reference": true
+  },
+  {
+    "audit_type": "developer/automated consistency audit; no independent human adjudication",
+    "clear_reference_error": false,
+    "date_timezone_agree": true,
+    "endpoints_names_and_public_windows_agree": true,
+    "expressible": true,
+    "family": "ordered_visits",
+    "feasibility_label_agrees": true,
+    "feasible_journeys": 64,
+    "human_audited": false,
+    "human_correction": "",
+    "human_question": "",
+    "human_reviewer": "",
+    "invalid_public_journeys": [],
+    "pool_size": 64,
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "ordered_calls",
+          "target": [
+            "9311",
+            "9301"
+          ]
+        },
+        {
+          "direction": "outbound",
+          "requirement": "allowed_modes",
+          "target": [
+            "bus"
+          ]
+        }
+      ]
+    },
+    "reference_version": "stage2-provisional-v1",
+    "request": "On 2026-09-14, plan the outbound journey from Rose Quarter Transit Center [stop_id=2592] to SW 5th & Pine [stop_id=7631]. Call at stop 9311 and then stop 9301, in that order; remaining aboard counts. Use only buses.",
+    "scenario_id": "pilot-07",
+    "scope_agrees": true,
+    "times_units_inclusive_boundaries_agree": true,
+    "unresolved_ambiguity": false,
+    "visits_and_order_agree": true,
+    "wording_supports_reference": true
+  },
+  {
+    "audit_type": "developer/automated consistency audit; no independent human adjudication",
+    "clear_reference_error": false,
+    "date_timezone_agree": true,
+    "endpoints_names_and_public_windows_agree": true,
+    "expressible": true,
+    "family": "timing",
+    "feasibility_label_agrees": true,
+    "feasible_journeys": 18,
+    "human_audited": false,
+    "human_correction": "",
+    "human_question": "",
+    "human_reviewer": "",
+    "invalid_public_journeys": [],
+    "pool_size": 64,
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "earliest_departure",
+          "target": 28260
+        },
+        {
+          "direction": "outbound",
+          "requirement": "latest_arrival",
+          "target": 32549
+        }
+      ]
+    },
+    "reference_version": "stage2-provisional-v1",
+    "request": "On 2026-09-14, plan the outbound journey from SE Powell & Milwaukie [stop_id=4538] to SW Lincoln & 1st [stop_id=3398]. Depart no earlier than 07:51:00 and arrive by 09:02:29, both inclusive.",
+    "scenario_id": "pilot-08",
+    "scope_agrees": true,
+    "times_units_inclusive_boundaries_agree": true,
+    "unresolved_ambiguity": false,
+    "visits_and_order_agree": "not_applicable",
+    "wording_supports_reference": true
+  },
+  {
+    "audit_type": "developer/automated consistency audit; no independent human adjudication",
+    "clear_reference_error": false,
+    "date_timezone_agree": true,
+    "endpoints_names_and_public_windows_agree": true,
+    "expressible": true,
+    "family": "scope",
+    "feasibility_label_agrees": true,
+    "feasible_journeys": 18,
+    "human_audited": false,
+    "human_correction": "",
+    "human_question": "",
+    "human_reviewer": "",
+    "invalid_public_journeys": [],
+    "pool_size": 256,
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "transfer_limit",
+          "target": 1
+        },
+        {
+          "direction": "return",
+          "requirement": "earliest_departure",
+          "target": 34787
+        }
+      ]
+    },
+    "reference_version": "stage2-provisional-v1",
+    "request": "On 2026-09-14, plan the outbound journey from SW 6th & Columbia [stop_id=11486] to NW 6th & Flanders [stop_id=9300]. Also plan a return segment from NW 5th & Davis [stop_id=9301] to SW 5th & Columbia [stop_id=7594] within 09:00:00–10:00:00. I handle movement between the outbound destination and return origin myself outside these journeys. On the outbound segment only, make at most 1 transfers. On the return segment only, depart no earlier than 09:39:47.",
+    "scenario_id": "pilot-09",
+    "scope_agrees": true,
+    "times_units_inclusive_boundaries_agree": true,
+    "unresolved_ambiguity": false,
+    "visits_and_order_agree": "not_applicable",
+    "wording_supports_reference": true
+  },
+  {
+    "audit_type": "developer/automated consistency audit; no independent human adjudication",
+    "clear_reference_error": false,
+    "date_timezone_agree": true,
+    "endpoints_names_and_public_windows_agree": true,
+    "expressible": true,
+    "family": "infeasible",
+    "feasibility_label_agrees": true,
+    "feasible_journeys": 0,
+    "human_audited": false,
+    "human_correction": "",
+    "human_question": "",
+    "human_reviewer": "",
+    "invalid_public_journeys": [],
+    "pool_size": 64,
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "forbidden_modes",
+          "target": [
+            "bus"
+          ]
+        }
+      ]
+    },
+    "reference_version": "stage2-provisional-v1",
+    "request": "On 2026-09-14, plan the outbound journey from N Vancouver & Page [stop_id=6001] to NW Glisan & 3rd [stop_id=9311]. Do not use buses.",
+    "scenario_id": "pilot-10",
+    "scope_agrees": true,
+    "times_units_inclusive_boundaries_agree": true,
+    "unresolved_ambiguity": false,
+    "visits_and_order_agree": "not_applicable",
+    "wording_supports_reference": true
+  },
+  {
+    "audit_type": "developer/automated consistency audit; no independent human adjudication",
+    "clear_reference_error": false,
+    "date_timezone_agree": true,
+    "endpoints_names_and_public_windows_agree": true,
+    "expressible": true,
+    "family": "transfers",
+    "feasibility_label_agrees": true,
+    "feasible_journeys": 64,
+    "human_audited": false,
+    "human_correction": "",
+    "human_question": "",
+    "human_reviewer": "",
+    "invalid_public_journeys": [],
+    "pool_size": 64,
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "transfer_limit",
+          "target": 1
+        },
+        {
+          "direction": "outbound",
+          "requirement": "earliest_departure",
+          "target": 26168
+        }
+      ]
+    },
+    "reference_version": "stage2-provisional-v1",
+    "request": "On 2026-09-14, plan the outbound journey from SW 5th & Harrison [stop_id=7602] to OMSI/SE Water [stop_id=13772]. Make at most 1 transfers. Do not depart before 07:16:08.",
+    "scenario_id": "pilot-11",
+    "scope_agrees": true,
+    "times_units_inclusive_boundaries_agree": true,
+    "unresolved_ambiguity": false,
+    "visits_and_order_agree": "not_applicable",
+    "wording_supports_reference": true
+  },
+  {
+    "audit_type": "developer/automated consistency audit; no independent human adjudication",
+    "clear_reference_error": false,
+    "date_timezone_agree": true,
+    "endpoints_names_and_public_windows_agree": true,
+    "expressible": true,
+    "family": "ordered_visits",
+    "feasibility_label_agrees": true,
+    "feasible_journeys": 64,
+    "human_audited": false,
+    "human_correction": "",
+    "human_question": "",
+    "human_reviewer": "",
+    "invalid_public_journeys": [],
+    "pool_size": 64,
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "ordered_calls",
+          "target": [
+            "13733",
+            "3398"
+          ]
+        },
+        {
+          "direction": "outbound",
+          "requirement": "allowed_modes",
+          "target": [
+            "bus"
+          ]
+        }
+      ]
+    },
+    "reference_version": "stage2-provisional-v1",
+    "request": "On 2026-09-14, plan the outbound journey from OMSI/SE Water [stop_id=13773] to SW 6th & Harvey Milk [stop_id=7797]. Call at stop 13733 and then stop 3398, in that order; remaining aboard counts. Use only buses.",
+    "scenario_id": "pilot-12",
+    "scope_agrees": true,
+    "times_units_inclusive_boundaries_agree": true,
+    "unresolved_ambiguity": false,
+    "visits_and_order_agree": true,
+    "wording_supports_reference": true
+  },
+  {
+    "audit_type": "developer/automated consistency audit; no independent human adjudication",
+    "clear_reference_error": false,
+    "date_timezone_agree": true,
+    "endpoints_names_and_public_windows_agree": true,
+    "expressible": true,
+    "family": "timing",
+    "feasibility_label_agrees": true,
+    "feasible_journeys": 5,
+    "human_audited": false,
+    "human_correction": "",
+    "human_question": "",
+    "human_reviewer": "",
+    "invalid_public_journeys": [],
+    "pool_size": 64,
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "earliest_departure",
+          "target": 29520
+        },
+        {
+          "direction": "outbound",
+          "requirement": "latest_arrival",
+          "target": 32966
+        }
+      ]
+    },
+    "reference_version": "stage2-provisional-v1",
+    "request": "On 2026-09-14, plan the outbound journey from SW 6th & Salmon [stop_id=7789] to N Williams & NE Weidler [stop_id=11480]. Depart no earlier than 08:12:00 and arrive by 09:09:26, both inclusive.",
+    "scenario_id": "pilot-13",
+    "scope_agrees": true,
+    "times_units_inclusive_boundaries_agree": true,
+    "unresolved_ambiguity": false,
+    "visits_and_order_agree": "not_applicable",
+    "wording_supports_reference": true
+  },
+  {
+    "audit_type": "developer/automated consistency audit; no independent human adjudication",
+    "clear_reference_error": false,
+    "date_timezone_agree": true,
+    "endpoints_names_and_public_windows_agree": true,
+    "expressible": true,
+    "family": "mode_exclusion",
+    "feasibility_label_agrees": true,
+    "feasible_journeys": 22,
+    "human_audited": false,
+    "human_correction": "",
+    "human_question": "",
+    "human_reviewer": "",
+    "invalid_public_journeys": [],
+    "pool_size": 64,
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "forbidden_modes",
+          "target": [
+            "rail",
+            "tram"
+          ]
+        },
+        {
+          "direction": "outbound",
+          "requirement": "latest_departure",
+          "target": 26894
+        },
+        {
+          "direction": "outbound",
+          "requirement": "transfer_limit",
+          "target": 1
+        }
+      ]
+    },
+    "reference_version": "stage2-provisional-v1",
+    "request": "On 2026-09-14, plan the outbound journey from SE 7th & Tilikum Way [stop_id=13825] to SW 6th & Clay [stop_id=7756]. Do not use rail or tram. Depart no later than 07:28:14, inclusive. Make at most 1 transfers.",
+    "scenario_id": "pilot-14",
+    "scope_agrees": true,
+    "times_units_inclusive_boundaries_agree": true,
+    "unresolved_ambiguity": false,
+    "visits_and_order_agree": "not_applicable",
+    "wording_supports_reference": true
+  },
+  {
+    "audit_type": "developer/automated consistency audit; no independent human adjudication",
+    "clear_reference_error": false,
+    "date_timezone_agree": true,
+    "endpoints_names_and_public_windows_agree": true,
+    "expressible": true,
+    "family": "infeasible",
+    "feasibility_label_agrees": true,
+    "feasible_journeys": 0,
+    "human_audited": false,
+    "human_correction": "",
+    "human_question": "",
+    "human_reviewer": "",
+    "invalid_public_journeys": [],
+    "pool_size": 64,
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "earliest_departure",
+          "target": 30600
+        },
+        {
+          "direction": "outbound",
+          "requirement": "latest_arrival",
+          "target": 28800
+        }
+      ]
+    },
+    "reference_version": "stage2-provisional-v1",
+    "request": "On 2026-09-14, plan the outbound journey from SE Division & 20th Ave [stop_id=14243] to SW 6th & Taylor [stop_id=7800]. Depart no earlier than 08:30:00 and arrive by 08:00:00, both inclusive.",
+    "scenario_id": "pilot-15",
+    "scope_agrees": true,
+    "times_units_inclusive_boundaries_agree": true,
+    "unresolved_ambiguity": false,
+    "visits_and_order_agree": "not_applicable",
+    "wording_supports_reference": true
+  },
+  {
+    "audit_type": "developer/automated consistency audit; no independent human adjudication",
+    "clear_reference_error": false,
+    "date_timezone_agree": true,
+    "endpoints_names_and_public_windows_agree": true,
+    "expressible": true,
+    "family": "transfers",
+    "feasibility_label_agrees": true,
+    "feasible_journeys": 6,
+    "human_audited": false,
+    "human_correction": "",
+    "human_question": "",
+    "human_reviewer": "",
+    "invalid_public_journeys": [],
+    "pool_size": 57,
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "transfer_limit",
+          "target": 0
+        },
+        {
+          "direction": "outbound",
+          "requirement": "earliest_departure",
+          "target": 25799
+        }
+      ]
+    },
+    "reference_version": "stage2-provisional-v1",
+    "request": "On 2026-09-14, plan the outbound journey from SW 6th & Market [stop_id=7772] to SW 6th & Washington [stop_id=7803]. Make at most 0 transfers. Do not depart before 07:09:59.",
+    "scenario_id": "pilot-16",
+    "scope_agrees": true,
+    "times_units_inclusive_boundaries_agree": true,
+    "unresolved_ambiguity": false,
+    "visits_and_order_agree": "not_applicable",
+    "wording_supports_reference": true
+  },
+  {
+    "audit_type": "developer/automated consistency audit; no independent human adjudication",
+    "clear_reference_error": false,
+    "date_timezone_agree": true,
+    "endpoints_names_and_public_windows_agree": true,
+    "expressible": true,
+    "family": "scope",
+    "feasibility_label_agrees": true,
+    "feasible_journeys": 31,
+    "human_audited": false,
+    "human_correction": "",
+    "human_question": "",
+    "human_reviewer": "",
+    "invalid_public_journeys": [],
+    "pool_size": 256,
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "transfer_limit",
+          "target": 0
+        },
+        {
+          "direction": "return",
+          "requirement": "earliest_departure",
+          "target": 32645
+        }
+      ]
+    },
+    "reference_version": "stage2-provisional-v1",
+    "request": "On 2026-09-14, plan the outbound journey from SW 6th & Mill [stop_id=7773] to SW 6th & Alder [stop_id=7747]. Also plan a return segment from SW 5th & Washington [stop_id=7642] to SW 5th & Harrison [stop_id=7602] within 09:00:00–10:00:00. I handle movement between the outbound destination and return origin myself outside these journeys. On the outbound segment only, make at most 0 transfers. On the return segment only, depart no earlier than 09:04:05.",
+    "scenario_id": "pilot-17",
+    "scope_agrees": true,
+    "times_units_inclusive_boundaries_agree": true,
+    "unresolved_ambiguity": false,
+    "visits_and_order_agree": "not_applicable",
+    "wording_supports_reference": true
+  },
+  {
+    "audit_type": "developer/automated consistency audit; no independent human adjudication",
+    "clear_reference_error": false,
+    "date_timezone_agree": true,
+    "endpoints_names_and_public_windows_agree": true,
+    "expressible": true,
+    "family": "timing",
+    "feasibility_label_agrees": true,
+    "feasible_journeys": 17,
+    "human_audited": false,
+    "human_correction": "",
+    "human_question": "",
+    "human_reviewer": "",
+    "invalid_public_journeys": [],
+    "pool_size": 64,
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "earliest_departure",
+          "target": 27360
+        },
+        {
+          "direction": "outbound",
+          "requirement": "latest_arrival",
+          "target": 32911
+        }
+      ]
+    },
+    "reference_version": "stage2-provisional-v1",
+    "request": "On 2026-09-14, plan the outbound journey from NW 5th & Hoyt [stop_id=9302] to SW 5th & Hall [stop_id=10491]. Depart no earlier than 07:36:00 and arrive by 09:08:31, both inclusive.",
+    "scenario_id": "pilot-18",
+    "scope_agrees": true,
+    "times_units_inclusive_boundaries_agree": true,
+    "unresolved_ambiguity": false,
+    "visits_and_order_agree": "not_applicable",
+    "wording_supports_reference": true
+  },
+  {
+    "audit_type": "developer/automated consistency audit; no independent human adjudication",
+    "clear_reference_error": false,
+    "date_timezone_agree": true,
+    "endpoints_names_and_public_windows_agree": true,
+    "expressible": true,
+    "family": "mode_exclusion",
+    "feasibility_label_agrees": true,
+    "feasible_journeys": 45,
+    "human_audited": false,
+    "human_correction": "",
+    "human_question": "",
+    "human_reviewer": "",
+    "invalid_public_journeys": [],
+    "pool_size": 64,
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "forbidden_modes",
+          "target": [
+            "rail",
+            "tram"
+          ]
+        },
+        {
+          "direction": "outbound",
+          "requirement": "latest_departure",
+          "target": 28586
+        },
+        {
+          "direction": "outbound",
+          "requirement": "transfer_limit",
+          "target": 1
+        }
+      ]
+    },
+    "reference_version": "stage2-provisional-v1",
+    "request": "On 2026-09-14, plan the outbound journey from N Vancouver & Tillamook [stop_id=6008] to SE Milwaukie & Powell [stop_id=10472]. Do not use rail or tram. Depart no later than 07:56:26, inclusive. Make at most 1 transfers.",
+    "scenario_id": "pilot-19",
+    "scope_agrees": true,
+    "times_units_inclusive_boundaries_agree": true,
+    "unresolved_ambiguity": false,
+    "visits_and_order_agree": "not_applicable",
+    "wording_supports_reference": true
+  },
+  {
+    "audit_type": "developer/automated consistency audit; no independent human adjudication",
+    "clear_reference_error": false,
+    "date_timezone_agree": true,
+    "endpoints_names_and_public_windows_agree": true,
+    "expressible": true,
+    "family": "ordered_visits",
+    "feasibility_label_agrees": true,
+    "feasible_journeys": 64,
+    "human_audited": false,
+    "human_correction": "",
+    "human_question": "",
+    "human_reviewer": "",
+    "invalid_public_journeys": [],
+    "pool_size": 64,
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "ordered_calls",
+          "target": [
+            "7640",
+            "7594"
+          ]
+        },
+        {
+          "direction": "outbound",
+          "requirement": "allowed_modes",
+          "target": [
+            "bus"
+          ]
+        }
+      ]
+    },
+    "reference_version": "stage2-provisional-v1",
+    "request": "On 2026-09-14, plan the outbound journey from SW 5th & Harvey Milk [stop_id=7636] to SE Division Pl & 8th [stop_id=13778]. Call at stop 7640 and then stop 7594, in that order; remaining aboard counts. Use only buses.",
+    "scenario_id": "pilot-20",
+    "scope_agrees": true,
+    "times_units_inclusive_boundaries_agree": true,
+    "unresolved_ambiguity": false,
+    "visits_and_order_agree": true,
+    "wording_supports_reference": true
+  },
+  {
+    "audit_type": "developer/automated consistency audit; no independent human adjudication",
+    "clear_reference_error": false,
+    "date_timezone_agree": true,
+    "endpoints_names_and_public_windows_agree": true,
+    "expressible": true,
+    "family": "transfers",
+    "feasibility_label_agrees": true,
+    "feasible_journeys": 17,
+    "human_audited": false,
+    "human_correction": "",
+    "human_question": "",
+    "human_reviewer": "",
+    "invalid_public_journeys": [],
+    "pool_size": 17,
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "transfer_limit",
+          "target": 1
+        },
+        {
+          "direction": "outbound",
+          "requirement": "earliest_departure",
+          "target": 25500
+        }
+      ]
+    },
+    "reference_version": "stage2-provisional-v1",
+    "request": "On 2026-09-14, plan the outbound journey from SE Division & 11th Ave [stop_id=14244] to NW Irving & 5th [stop_id=3007]. Make at most 1 transfers. Do not depart before 07:05:00.",
+    "scenario_id": "pilot-21",
+    "scope_agrees": true,
+    "times_units_inclusive_boundaries_agree": true,
+    "unresolved_ambiguity": false,
+    "visits_and_order_agree": "not_applicable",
+    "wording_supports_reference": true
+  },
+  {
+    "audit_type": "developer/automated consistency audit; no independent human adjudication",
+    "clear_reference_error": false,
+    "date_timezone_agree": true,
+    "endpoints_names_and_public_windows_agree": true,
+    "expressible": true,
+    "family": "scope",
+    "feasibility_label_agrees": true,
+    "feasible_journeys": 256,
+    "human_audited": false,
+    "human_correction": "",
+    "human_question": "",
+    "human_reviewer": "",
+    "invalid_public_journeys": [],
+    "pool_size": 256,
+    "reference": {
+      "and": [
+        {
+          "direction": "return",
+          "requirement": "transfer_limit",
+          "target": 1
+        },
+        {
+          "direction": "return",
+          "requirement": "earliest_departure",
+          "target": 33900
+        }
+      ]
+    },
+    "reference_version": "stage2-provisional-v1",
+    "request": "On 2026-09-14, plan the outbound journey from N Vancouver & Weidler [stop_id=6009] to SW Jefferson & 5th [stop_id=12791]. Also plan a return segment from SW Jefferson & 5th [stop_id=12791] to N Williams & NE Weidler [stop_id=11480] within 09:00:00–10:00:00. I handle movement between the outbound destination and return origin myself outside these journeys. On the return segment only, make at most 1 transfers. On the return segment only, depart no earlier than 09:25:00.",
+    "scenario_id": "pilot-22",
+    "scope_agrees": true,
+    "times_units_inclusive_boundaries_agree": true,
+    "unresolved_ambiguity": false,
+    "visits_and_order_agree": "not_applicable",
+    "wording_supports_reference": true
+  },
+  {
+    "audit_type": "developer/automated consistency audit; no independent human adjudication",
+    "clear_reference_error": false,
+    "date_timezone_agree": true,
+    "endpoints_names_and_public_windows_agree": true,
+    "expressible": true,
+    "family": "infeasible",
+    "feasibility_label_agrees": true,
+    "feasible_journeys": 0,
+    "human_audited": false,
+    "human_correction": "",
+    "human_question": "",
+    "human_reviewer": "",
+    "invalid_public_journeys": [],
+    "pool_size": 64,
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "earliest_departure",
+          "target": 30600
+        },
+        {
+          "direction": "outbound",
+          "requirement": "latest_arrival",
+          "target": 28800
+        }
+      ]
+    },
+    "reference_version": "stage2-provisional-v1",
+    "request": "On 2026-09-14, plan the outbound journey from SW 5th & Taylor [stop_id=7640] to SE Milwaukie & Gideon [stop_id=13791]. Depart no earlier than 08:30:00 and arrive by 08:00:00, both inclusive.",
+    "scenario_id": "pilot-23",
+    "scope_agrees": true,
+    "times_units_inclusive_boundaries_agree": true,
+    "unresolved_ambiguity": false,
+    "visits_and_order_agree": "not_applicable",
+    "wording_supports_reference": true
+  },
+  {
+    "audit_type": "developer/automated consistency audit; no independent human adjudication",
+    "clear_reference_error": false,
+    "date_timezone_agree": true,
+    "endpoints_names_and_public_windows_agree": true,
+    "expressible": true,
+    "family": "mode_exclusion",
+    "feasibility_label_agrees": true,
+    "feasible_journeys": 14,
+    "human_audited": false,
+    "human_correction": "",
+    "human_question": "",
+    "human_reviewer": "",
+    "invalid_public_journeys": [],
+    "pool_size": 64,
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "forbidden_modes",
+          "target": [
+            "rail",
+            "tram"
+          ]
+        },
+        {
+          "direction": "outbound",
+          "requirement": "latest_departure",
+          "target": 25958
+        },
+        {
+          "direction": "outbound",
+          "requirement": "transfer_limit",
+          "target": 1
+        }
+      ]
+    },
+    "reference_version": "stage2-provisional-v1",
+    "request": "On 2026-09-14, plan the outbound journey from South Waterfront/S Moody [stop_id=13732] to SE Division & 20th Ave [stop_id=1435]. Do not use rail or tram. Depart no later than 07:12:38, inclusive. Make at most 1 transfers.",
+    "scenario_id": "pilot-24",
+    "scope_agrees": true,
+    "times_units_inclusive_boundaries_agree": true,
+    "unresolved_ambiguity": false,
+    "visits_and_order_agree": "not_applicable",
+    "wording_supports_reference": true
+  },
+  {
+    "audit_type": "developer/automated consistency audit; no independent human adjudication",
+    "clear_reference_error": false,
+    "date_timezone_agree": true,
+    "endpoints_names_and_public_windows_agree": true,
+    "expressible": true,
+    "family": "ordered_visits",
+    "feasibility_label_agrees": true,
+    "feasible_journeys": 64,
+    "human_audited": false,
+    "human_correction": "",
+    "human_question": "",
+    "human_reviewer": "",
+    "invalid_public_journeys": [],
+    "pool_size": 64,
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "ordered_calls",
+          "target": [
+            "3398",
+            "13780"
+          ]
+        },
+        {
+          "direction": "outbound",
+          "requirement": "allowed_modes",
+          "target": [
+            "bus"
+          ]
+        }
+      ]
+    },
+    "reference_version": "stage2-provisional-v1",
+    "request": "On 2026-09-14, plan the outbound journey from South Waterfront/S Moody [stop_id=13733] to SW 6th & Jefferson [stop_id=7765]. Call at stop 3398 and then stop 13780, in that order; remaining aboard counts. Use only buses.",
+    "scenario_id": "pilot-25",
+    "scope_agrees": true,
+    "times_units_inclusive_boundaries_agree": true,
+    "unresolved_ambiguity": false,
+    "visits_and_order_agree": true,
+    "wording_supports_reference": true
+  },
+  {
+    "audit_type": "developer/automated consistency audit; no independent human adjudication",
+    "clear_reference_error": false,
+    "date_timezone_agree": true,
+    "endpoints_names_and_public_windows_agree": true,
+    "expressible": true,
+    "family": "timing",
+    "feasibility_label_agrees": true,
+    "feasible_journeys": 35,
+    "human_audited": false,
+    "human_correction": "",
+    "human_question": "",
+    "human_reviewer": "",
+    "invalid_public_journeys": [],
+    "pool_size": 51,
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "earliest_departure",
+          "target": 25200
+        },
+        {
+          "direction": "outbound",
+          "requirement": "latest_arrival",
+          "target": 33574
+        }
+      ]
+    },
+    "reference_version": "stage2-provisional-v1",
+    "request": "On 2026-09-14, plan the outbound journey from NE Broadway & 12th [stop_id=629] to NE Multnomah & 3rd [stop_id=11492]. Depart no earlier than 07:00:00 and arrive by 09:19:34, both inclusive.",
+    "scenario_id": "pilot-26",
+    "scope_agrees": true,
+    "times_units_inclusive_boundaries_agree": true,
+    "unresolved_ambiguity": false,
+    "visits_and_order_agree": "not_applicable",
+    "wording_supports_reference": true
+  },
+  {
+    "audit_type": "developer/automated consistency audit; no independent human adjudication",
+    "clear_reference_error": false,
+    "date_timezone_agree": true,
+    "endpoints_names_and_public_windows_agree": true,
+    "expressible": true,
+    "family": "scope",
+    "feasibility_label_agrees": true,
+    "feasible_journeys": 35,
+    "human_audited": false,
+    "human_correction": "",
+    "human_question": "",
+    "human_reviewer": "",
+    "invalid_public_journeys": [],
+    "pool_size": 256,
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "transfer_limit",
+          "target": 1
+        },
+        {
+          "direction": "return",
+          "requirement": "earliest_departure",
+          "target": 34800
+        }
+      ]
+    },
+    "reference_version": "stage2-provisional-v1",
+    "request": "On 2026-09-14, plan the outbound journey from SW 5th & Hall [stop_id=10491] to SE Division & 12th Ave [stop_id=1375]. Also plan a return segment from SE Division & 11th Ave [stop_id=14244] to SW Hall & 5th [stop_id=13780] within 09:00:00–10:00:00. I handle movement between the outbound destination and return origin myself outside these journeys. On the outbound segment only, make at most 1 transfers. On the return segment only, depart no earlier than 09:40:00.",
+    "scenario_id": "pilot-27",
+    "scope_agrees": true,
+    "times_units_inclusive_boundaries_agree": true,
+    "unresolved_ambiguity": false,
+    "visits_and_order_agree": "not_applicable",
+    "wording_supports_reference": true
+  },
+  {
+    "audit_type": "developer/automated consistency audit; no independent human adjudication",
+    "clear_reference_error": false,
+    "date_timezone_agree": true,
+    "endpoints_names_and_public_windows_agree": true,
+    "expressible": true,
+    "family": "infeasible",
+    "feasibility_label_agrees": true,
+    "feasible_journeys": 0,
+    "human_audited": false,
+    "human_correction": "",
+    "human_question": "",
+    "human_reviewer": "",
+    "invalid_public_journeys": [],
+    "pool_size": 64,
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "forbidden_modes",
+          "target": [
+            "bus"
+          ]
+        }
+      ]
+    },
+    "reference_version": "stage2-provisional-v1",
+    "request": "On 2026-09-14, plan the outbound journey from Rose Quarter Transit Center [stop_id=2592] to SW Madison & 4th [stop_id=3639]. Do not use buses.",
+    "scenario_id": "pilot-28",
+    "scope_agrees": true,
+    "times_units_inclusive_boundaries_agree": true,
+    "unresolved_ambiguity": false,
+    "visits_and_order_agree": "not_applicable",
+    "wording_supports_reference": true
+  },
+  {
+    "audit_type": "developer/automated consistency audit; no independent human adjudication",
+    "clear_reference_error": false,
+    "date_timezone_agree": true,
+    "endpoints_names_and_public_windows_agree": true,
+    "expressible": true,
+    "family": "transfers",
+    "feasibility_label_agrees": true,
+    "feasible_journeys": 2,
+    "human_audited": false,
+    "human_correction": "",
+    "human_question": "",
+    "human_reviewer": "",
+    "invalid_public_journeys": [],
+    "pool_size": 64,
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "transfer_limit",
+          "target": 0
+        },
+        {
+          "direction": "outbound",
+          "requirement": "earliest_departure",
+          "target": 28181
+        }
+      ]
+    },
+    "reference_version": "stage2-provisional-v1",
+    "request": "On 2026-09-14, plan the outbound journey from SW 6th & Main [stop_id=7767] to NE Grand & Wasco [stop_id=10953]. Make at most 0 transfers. Do not depart before 07:49:41.",
+    "scenario_id": "pilot-29",
+    "scope_agrees": true,
+    "times_units_inclusive_boundaries_agree": true,
+    "unresolved_ambiguity": false,
+    "visits_and_order_agree": "not_applicable",
+    "wording_supports_reference": true
+  },
+  {
+    "audit_type": "developer/automated consistency audit; no independent human adjudication",
+    "clear_reference_error": false,
+    "date_timezone_agree": true,
+    "endpoints_names_and_public_windows_agree": true,
+    "expressible": true,
+    "family": "ordered_visits",
+    "feasibility_label_agrees": true,
+    "feasible_journeys": 31,
+    "human_audited": false,
+    "human_correction": "",
+    "human_question": "",
+    "human_reviewer": "",
+    "invalid_public_journeys": [],
+    "pool_size": 64,
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "ordered_calls",
+          "target": [
+            "7602",
+            "3397"
+          ]
+        },
+        {
+          "direction": "outbound",
+          "requirement": "allowed_modes",
+          "target": [
+            "bus"
+          ]
+        }
+      ]
+    },
+    "reference_version": "stage2-provisional-v1",
+    "request": "On 2026-09-14, plan the outbound journey from SW 5th & Columbia [stop_id=7594] to OMSI/SE Water [stop_id=13772]. Call at stop 7602 and then stop 3397, in that order; remaining aboard counts. Use only buses.",
+    "scenario_id": "pilot-30",
+    "scope_agrees": true,
+    "times_units_inclusive_boundaries_agree": true,
+    "unresolved_ambiguity": false,
+    "visits_and_order_agree": true,
+    "wording_supports_reference": true
+  },
+  {
+    "audit_type": "developer/automated consistency audit; no independent human adjudication",
+    "clear_reference_error": false,
+    "date_timezone_agree": true,
+    "endpoints_names_and_public_windows_agree": true,
+    "expressible": true,
+    "family": "timing",
+    "feasibility_label_agrees": true,
+    "feasible_journeys": 4,
+    "human_audited": false,
+    "human_correction": "",
+    "human_question": "",
+    "human_reviewer": "",
+    "invalid_public_journeys": [],
+    "pool_size": 64,
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "earliest_departure",
+          "target": 31662
+        },
+        {
+          "direction": "outbound",
+          "requirement": "latest_arrival",
+          "target": 33060
+        }
+      ]
+    },
+    "reference_version": "stage2-provisional-v1",
+    "request": "On 2026-09-14, plan the outbound journey from NW Everett & 2nd [stop_id=1612] to N Williams & NE Tillamook [stop_id=6370]. Depart no earlier than 08:47:42 and arrive by 09:11:00, both inclusive.",
+    "scenario_id": "pilot-31",
+    "scope_agrees": true,
+    "times_units_inclusive_boundaries_agree": true,
+    "unresolved_ambiguity": false,
+    "visits_and_order_agree": "not_applicable",
+    "wording_supports_reference": true
+  },
+  {
+    "audit_type": "developer/automated consistency audit; no independent human adjudication",
+    "clear_reference_error": false,
+    "date_timezone_agree": true,
+    "endpoints_names_and_public_windows_agree": true,
+    "expressible": true,
+    "family": "mode_exclusion",
+    "feasibility_label_agrees": true,
+    "feasible_journeys": 30,
+    "human_audited": false,
+    "human_correction": "",
+    "human_question": "",
+    "human_reviewer": "",
+    "invalid_public_journeys": [],
+    "pool_size": 45,
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "forbidden_modes",
+          "target": [
+            "rail",
+            "tram"
+          ]
+        },
+        {
+          "direction": "outbound",
+          "requirement": "latest_departure",
+          "target": 28794
+        },
+        {
+          "direction": "outbound",
+          "requirement": "transfer_limit",
+          "target": 1
+        }
+      ]
+    },
+    "reference_version": "stage2-provisional-v1",
+    "request": "On 2026-09-14, plan the outbound journey from Rose Quarter Transit Center [stop_id=11817] to NE Weidler & 15th [stop_id=10425]. Do not use rail or tram. Depart no later than 07:59:54, inclusive. Make at most 1 transfers.",
+    "scenario_id": "pilot-32",
+    "scope_agrees": true,
+    "times_units_inclusive_boundaries_agree": true,
+    "unresolved_ambiguity": false,
+    "visits_and_order_agree": "not_applicable",
+    "wording_supports_reference": true
+  },
+  {
+    "audit_type": "developer/automated consistency audit; no independent human adjudication",
+    "clear_reference_error": false,
+    "date_timezone_agree": true,
+    "endpoints_names_and_public_windows_agree": true,
+    "expressible": true,
+    "family": "infeasible",
+    "feasibility_label_agrees": true,
+    "feasible_journeys": 0,
+    "human_audited": false,
+    "human_correction": "",
+    "human_question": "",
+    "human_reviewer": "",
+    "invalid_public_journeys": [],
+    "pool_size": 64,
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "earliest_departure",
+          "target": 30600
+        },
+        {
+          "direction": "outbound",
+          "requirement": "latest_arrival",
+          "target": 28800
+        }
+      ]
+    },
+    "reference_version": "stage2-provisional-v1",
+    "request": "On 2026-09-14, plan the outbound journey from SW 5th & Washington [stop_id=7642] to 300 Block SW Lincoln [stop_id=3397]. Depart no earlier than 08:30:00 and arrive by 08:00:00, both inclusive.",
+    "scenario_id": "pilot-33",
+    "scope_agrees": true,
+    "times_units_inclusive_boundaries_agree": true,
+    "unresolved_ambiguity": false,
+    "visits_and_order_agree": "not_applicable",
+    "wording_supports_reference": true
+  },
+  {
+    "audit_type": "developer/automated consistency audit; no independent human adjudication",
+    "clear_reference_error": false,
+    "date_timezone_agree": true,
+    "endpoints_names_and_public_windows_agree": true,
+    "expressible": true,
+    "family": "transfers",
+    "feasibility_label_agrees": true,
+    "feasible_journeys": 13,
+    "human_audited": false,
+    "human_correction": "",
+    "human_question": "",
+    "human_reviewer": "",
+    "invalid_public_journeys": [],
+    "pool_size": 64,
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "transfer_limit",
+          "target": 1
+        },
+        {
+          "direction": "outbound",
+          "requirement": "earliest_departure",
+          "target": 31327
+        }
+      ]
+    },
+    "reference_version": "stage2-provisional-v1",
+    "request": "On 2026-09-14, plan the outbound journey from SW 6th & W Burnside [stop_id=7751] to Rose Quarter Transit Center [stop_id=1097]. Make at most 1 transfers. Do not depart before 08:42:07.",
+    "scenario_id": "pilot-34",
+    "scope_agrees": true,
+    "times_units_inclusive_boundaries_agree": true,
+    "unresolved_ambiguity": false,
+    "visits_and_order_agree": "not_applicable",
+    "wording_supports_reference": true
+  },
+  {
+    "audit_type": "developer/automated consistency audit; no independent human adjudication",
+    "clear_reference_error": false,
+    "date_timezone_agree": true,
+    "endpoints_names_and_public_windows_agree": true,
+    "expressible": true,
+    "family": "scope",
+    "feasibility_label_agrees": true,
+    "feasible_journeys": 168,
+    "human_audited": false,
+    "human_correction": "",
+    "human_question": "",
+    "human_reviewer": "",
+    "invalid_public_journeys": [],
+    "pool_size": 256,
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "transfer_limit",
+          "target": 1
+        },
+        {
+          "direction": "return",
+          "requirement": "earliest_departure",
+          "target": 33360
+        }
+      ]
+    },
+    "reference_version": "stage2-provisional-v1",
+    "request": "On 2026-09-14, plan the outbound journey from NE M L King & Wasco [stop_id=5958] to SE Powell & 12th [stop_id=13792]. Also plan a return segment from SE Powell & Milwaukie [stop_id=4538] to NE Grand & Wasco [stop_id=10953] within 09:00:00–10:00:00. I handle movement between the outbound destination and return origin myself outside these journeys. On the outbound segment only, make at most 1 transfers. On the return segment only, depart no earlier than 09:16:00.",
+    "scenario_id": "pilot-35",
+    "scope_agrees": true,
+    "times_units_inclusive_boundaries_agree": true,
+    "unresolved_ambiguity": false,
+    "visits_and_order_agree": "not_applicable",
+    "wording_supports_reference": true
+  },
+  {
+    "audit_type": "developer/automated consistency audit; no independent human adjudication",
+    "clear_reference_error": false,
+    "date_timezone_agree": true,
+    "endpoints_names_and_public_windows_agree": true,
+    "expressible": true,
+    "family": "timing",
+    "feasibility_label_agrees": true,
+    "feasible_journeys": 18,
+    "human_audited": false,
+    "human_correction": "",
+    "human_question": "",
+    "human_reviewer": "",
+    "invalid_public_journeys": [],
+    "pool_size": 64,
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "earliest_departure",
+          "target": 27675
+        },
+        {
+          "direction": "outbound",
+          "requirement": "latest_arrival",
+          "target": 33743
+        }
+      ]
+    },
+    "reference_version": "stage2-provisional-v1",
+    "request": "On 2026-09-14, plan the outbound journey from SW Hall & 5th [stop_id=13780] to SW 6th & Harvey Milk [stop_id=7797]. Depart no earlier than 07:41:15 and arrive by 09:22:23, both inclusive.",
+    "scenario_id": "pilot-36",
+    "scope_agrees": true,
+    "times_units_inclusive_boundaries_agree": true,
+    "unresolved_ambiguity": false,
+    "visits_and_order_agree": "not_applicable",
+    "wording_supports_reference": true
+  },
+  {
+    "audit_type": "developer/automated consistency audit; no independent human adjudication",
+    "clear_reference_error": false,
+    "date_timezone_agree": true,
+    "endpoints_names_and_public_windows_agree": true,
+    "expressible": true,
+    "family": "mode_exclusion",
+    "feasibility_label_agrees": true,
+    "feasible_journeys": 59,
+    "human_audited": false,
+    "human_correction": "",
+    "human_question": "",
+    "human_reviewer": "",
+    "invalid_public_journeys": [],
+    "pool_size": 64,
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "forbidden_modes",
+          "target": [
+            "rail",
+            "tram"
+          ]
+        },
+        {
+          "direction": "outbound",
+          "requirement": "latest_departure",
+          "target": 32269
+        },
+        {
+          "direction": "outbound",
+          "requirement": "transfer_limit",
+          "target": 1
+        }
+      ]
+    },
+    "reference_version": "stage2-provisional-v1",
+    "request": "On 2026-09-14, plan the outbound journey from NW Everett & 5th [stop_id=8886] to N Williams & NE Weidler [stop_id=11480]. Do not use rail or tram. Depart no later than 08:57:49, inclusive. Make at most 1 transfers.",
+    "scenario_id": "pilot-37",
+    "scope_agrees": true,
+    "times_units_inclusive_boundaries_agree": true,
+    "unresolved_ambiguity": false,
+    "visits_and_order_agree": "not_applicable",
+    "wording_supports_reference": true
+  },
+  {
+    "audit_type": "developer/automated consistency audit; no independent human adjudication",
+    "clear_reference_error": false,
+    "date_timezone_agree": true,
+    "endpoints_names_and_public_windows_agree": true,
+    "expressible": true,
+    "family": "ordered_visits",
+    "feasibility_label_agrees": true,
+    "feasible_journeys": 25,
+    "human_audited": false,
+    "human_correction": "",
+    "human_question": "",
+    "human_reviewer": "",
+    "invalid_public_journeys": [],
+    "pool_size": 25,
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "ordered_calls",
+          "target": [
+            "10425",
+            "6235"
+          ]
+        },
+        {
+          "direction": "outbound",
+          "requirement": "allowed_modes",
+          "target": [
+            "bus"
+          ]
+        }
+      ]
+    },
+    "reference_version": "stage2-provisional-v1",
+    "request": "On 2026-09-14, plan the outbound journey from NE Weidler & Lloyd Center [stop_id=6216] to 2200 Block NE Weidler [stop_id=14656]. Call at stop 10425 and then stop 6235, in that order; remaining aboard counts. Use only buses.",
+    "scenario_id": "pilot-38",
+    "scope_agrees": true,
+    "times_units_inclusive_boundaries_agree": true,
+    "unresolved_ambiguity": false,
+    "visits_and_order_agree": true,
+    "wording_supports_reference": true
+  },
+  {
+    "audit_type": "developer/automated consistency audit; no independent human adjudication",
+    "clear_reference_error": false,
+    "date_timezone_agree": true,
+    "endpoints_names_and_public_windows_agree": true,
+    "expressible": true,
+    "family": "transfers",
+    "feasibility_label_agrees": true,
+    "feasible_journeys": 2,
+    "human_audited": false,
+    "human_correction": "",
+    "human_question": "",
+    "human_reviewer": "",
+    "invalid_public_journeys": [],
+    "pool_size": 64,
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "transfer_limit",
+          "target": 0
+        },
+        {
+          "direction": "outbound",
+          "requirement": "earliest_departure",
+          "target": 29722
+        }
+      ]
+    },
+    "reference_version": "stage2-provisional-v1",
+    "request": "On 2026-09-14, plan the outbound journey from SW Lincoln & 1st [stop_id=3398] to SW 6th & Taylor [stop_id=7800]. Make at most 0 transfers. Do not depart before 08:15:22.",
+    "scenario_id": "pilot-39",
+    "scope_agrees": true,
+    "times_units_inclusive_boundaries_agree": true,
+    "unresolved_ambiguity": false,
+    "visits_and_order_agree": "not_applicable",
+    "wording_supports_reference": true
+  },
+  {
+    "audit_type": "developer/automated consistency audit; no independent human adjudication",
+    "clear_reference_error": false,
+    "date_timezone_agree": true,
+    "endpoints_names_and_public_windows_agree": true,
+    "expressible": true,
+    "family": "scope",
+    "feasibility_label_agrees": true,
+    "feasible_journeys": 256,
+    "human_audited": false,
+    "human_correction": "",
+    "human_question": "",
+    "human_reviewer": "",
+    "invalid_public_journeys": [],
+    "pool_size": 256,
+    "reference": {
+      "and": [
+        {
+          "direction": "return",
+          "requirement": "transfer_limit",
+          "target": 1
+        },
+        {
+          "direction": "return",
+          "requirement": "earliest_departure",
+          "target": 33120
+        }
+      ]
+    },
+    "reference_version": "stage2-provisional-v1",
+    "request": "On 2026-09-14, plan the outbound journey from NW 5th & Davis [stop_id=9301] to SW 5th & Salmon [stop_id=7634]. Also plan a return segment from SW 6th & Salmon [stop_id=7789] to NW Everett & 5th [stop_id=8886] within 09:00:00–10:00:00. I handle movement between the outbound destination and return origin myself outside these journeys. On the return segment only, make at most 1 transfers. On the return segment only, depart no earlier than 09:12:00.",
+    "scenario_id": "pilot-40",
+    "scope_agrees": true,
+    "times_units_inclusive_boundaries_agree": true,
+    "unresolved_ambiguity": false,
+    "visits_and_order_agree": "not_applicable",
+    "wording_supports_reference": true
+  },
+  {
+    "audit_type": "developer/automated consistency audit; no independent human adjudication",
+    "clear_reference_error": false,
+    "date_timezone_agree": true,
+    "endpoints_names_and_public_windows_agree": true,
+    "expressible": true,
+    "family": "infeasible",
+    "feasibility_label_agrees": true,
+    "feasible_journeys": 0,
+    "human_audited": false,
+    "human_correction": "",
+    "human_question": "",
+    "human_reviewer": "",
+    "invalid_public_journeys": [],
+    "pool_size": 25,
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "earliest_departure",
+          "target": 30600
+        },
+        {
+          "direction": "outbound",
+          "requirement": "latest_arrival",
+          "target": 28800
+        }
+      ]
+    },
+    "reference_version": "stage2-provisional-v1",
+    "request": "On 2026-09-14, plan the outbound journey from NE Weidler & 7th [stop_id=6240] to NE Weidler & 21st [stop_id=6235]. Depart no earlier than 08:30:00 and arrive by 08:00:00, both inclusive.",
+    "scenario_id": "pilot-41",
+    "scope_agrees": true,
+    "times_units_inclusive_boundaries_agree": true,
+    "unresolved_ambiguity": false,
+    "visits_and_order_agree": "not_applicable",
+    "wording_supports_reference": true
+  },
+  {
+    "audit_type": "developer/automated consistency audit; no independent human adjudication",
+    "clear_reference_error": false,
+    "date_timezone_agree": true,
+    "endpoints_names_and_public_windows_agree": true,
+    "expressible": true,
+    "family": "mode_exclusion",
+    "feasibility_label_agrees": true,
+    "feasible_journeys": 28,
+    "human_audited": false,
+    "human_correction": "",
+    "human_question": "",
+    "human_reviewer": "",
+    "invalid_public_journeys": [],
+    "pool_size": 64,
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "forbidden_modes",
+          "target": [
+            "rail",
+            "tram"
+          ]
+        },
+        {
+          "direction": "outbound",
+          "requirement": "latest_departure",
+          "target": 26967
+        },
+        {
+          "direction": "outbound",
+          "requirement": "transfer_limit",
+          "target": 1
+        }
+      ]
+    },
+    "reference_version": "stage2-provisional-v1",
+    "request": "On 2026-09-14, plan the outbound journey from OMSI/SE Water [stop_id=13773] to SW 6th & Columbia [stop_id=11486]. Do not use rail or tram. Depart no later than 07:29:27, inclusive. Make at most 1 transfers.",
+    "scenario_id": "pilot-42",
+    "scope_agrees": true,
+    "times_units_inclusive_boundaries_agree": true,
+    "unresolved_ambiguity": false,
+    "visits_and_order_agree": "not_applicable",
+    "wording_supports_reference": true
+  },
+  {
+    "audit_type": "developer/automated consistency audit; no independent human adjudication",
+    "clear_reference_error": false,
+    "date_timezone_agree": true,
+    "endpoints_names_and_public_windows_agree": true,
+    "expressible": true,
+    "family": "ordered_visits",
+    "feasibility_label_agrees": true,
+    "feasible_journeys": 64,
+    "human_audited": false,
+    "human_correction": "",
+    "human_question": "",
+    "human_reviewer": "",
+    "invalid_public_journeys": [],
+    "pool_size": 64,
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "ordered_calls",
+          "target": [
+            "6008",
+            "6009"
+          ]
+        },
+        {
+          "direction": "outbound",
+          "requirement": "allowed_modes",
+          "target": [
+            "bus"
+          ]
+        }
+      ]
+    },
+    "reference_version": "stage2-provisional-v1",
+    "request": "On 2026-09-14, plan the outbound journey from N Vancouver & Page [stop_id=6001] to SW 5th & Pine [stop_id=7631]. Call at stop 6008 and then stop 6009, in that order; remaining aboard counts. Use only buses.",
+    "scenario_id": "pilot-43",
+    "scope_agrees": true,
+    "times_units_inclusive_boundaries_agree": true,
+    "unresolved_ambiguity": false,
+    "visits_and_order_agree": true,
+    "wording_supports_reference": true
+  },
+  {
+    "audit_type": "developer/automated consistency audit; no independent human adjudication",
+    "clear_reference_error": false,
+    "date_timezone_agree": true,
+    "endpoints_names_and_public_windows_agree": true,
+    "expressible": true,
+    "family": "timing",
+    "feasibility_label_agrees": true,
+    "feasible_journeys": 9,
+    "human_audited": false,
+    "human_correction": "",
+    "human_question": "",
+    "human_reviewer": "",
+    "invalid_public_journeys": [],
+    "pool_size": 25,
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "earliest_departure",
+          "target": 29607
+        },
+        {
+          "direction": "outbound",
+          "requirement": "latest_arrival",
+          "target": 33483
+        }
+      ]
+    },
+    "reference_version": "stage2-provisional-v1",
+    "request": "On 2026-09-14, plan the outbound journey from NE Broadway & 16th [stop_id=631] to NE M L King & Weidler [stop_id=5960]. Depart no earlier than 08:13:27 and arrive by 09:18:03, both inclusive.",
+    "scenario_id": "pilot-44",
+    "scope_agrees": true,
+    "times_units_inclusive_boundaries_agree": true,
+    "unresolved_ambiguity": false,
+    "visits_and_order_agree": "not_applicable",
+    "wording_supports_reference": true
+  },
+  {
+    "audit_type": "developer/automated consistency audit; no independent human adjudication",
+    "clear_reference_error": false,
+    "date_timezone_agree": true,
+    "endpoints_names_and_public_windows_agree": true,
+    "expressible": true,
+    "family": "scope",
+    "feasibility_label_agrees": true,
+    "feasible_journeys": 204,
+    "human_audited": false,
+    "human_correction": "",
+    "human_question": "",
+    "human_reviewer": "",
+    "invalid_public_journeys": [],
+    "pool_size": 256,
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "transfer_limit",
+          "target": 1
+        },
+        {
+          "direction": "return",
+          "requirement": "earliest_departure",
+          "target": 32586
+        }
+      ]
+    },
+    "reference_version": "stage2-provisional-v1",
+    "request": "On 2026-09-14, plan the outbound journey from SE Division & 20th Ave [stop_id=14243] to NW 6th & Flanders [stop_id=9300]. Also plan a return segment from NW 5th & Davis [stop_id=9301] to SE Division & 20th Ave [stop_id=1435] within 09:00:00–10:00:00. I handle movement between the outbound destination and return origin myself outside these journeys. On the outbound segment only, make at most 1 transfers. On the return segment only, depart no earlier than 09:03:06.",
+    "scenario_id": "pilot-45",
+    "scope_agrees": true,
+    "times_units_inclusive_boundaries_agree": true,
+    "unresolved_ambiguity": false,
+    "visits_and_order_agree": "not_applicable",
+    "wording_supports_reference": true
+  },
+  {
+    "audit_type": "developer/automated consistency audit; no independent human adjudication",
+    "clear_reference_error": false,
+    "date_timezone_agree": true,
+    "endpoints_names_and_public_windows_agree": true,
+    "expressible": true,
+    "family": "infeasible",
+    "feasibility_label_agrees": true,
+    "feasible_journeys": 0,
+    "human_audited": false,
+    "human_correction": "",
+    "human_question": "",
+    "human_reviewer": "",
+    "invalid_public_journeys": [],
+    "pool_size": 64,
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "forbidden_modes",
+          "target": [
+            "bus"
+          ]
+        }
+      ]
+    },
+    "reference_version": "stage2-provisional-v1",
+    "request": "On 2026-09-14, plan the outbound journey from N Vancouver & Tillamook [stop_id=6008] to NW Glisan & 3rd [stop_id=9311]. Do not use buses.",
+    "scenario_id": "pilot-46",
+    "scope_agrees": true,
+    "times_units_inclusive_boundaries_agree": true,
+    "unresolved_ambiguity": false,
+    "visits_and_order_agree": "not_applicable",
+    "wording_supports_reference": true
+  },
+  {
+    "audit_type": "developer/automated consistency audit; no independent human adjudication",
+    "clear_reference_error": false,
+    "date_timezone_agree": true,
+    "endpoints_names_and_public_windows_agree": true,
+    "expressible": true,
+    "family": "transfers",
+    "feasibility_label_agrees": true,
+    "feasible_journeys": 16,
+    "human_audited": false,
+    "human_correction": "",
+    "human_question": "",
+    "human_reviewer": "",
+    "invalid_public_journeys": [],
+    "pool_size": 25,
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "transfer_limit",
+          "target": 1
+        },
+        {
+          "direction": "outbound",
+          "requirement": "earliest_departure",
+          "target": 29479
+        }
+      ]
+    },
+    "reference_version": "stage2-provisional-v1",
+    "request": "On 2026-09-14, plan the outbound journey from NE Broadway & 21st [stop_id=634] to NE Broadway & 7th [stop_id=655]. Make at most 1 transfers. Do not depart before 08:11:19.",
+    "scenario_id": "pilot-47",
+    "scope_agrees": true,
+    "times_units_inclusive_boundaries_agree": true,
+    "unresolved_ambiguity": false,
+    "visits_and_order_agree": "not_applicable",
+    "wording_supports_reference": true
+  }
+]
