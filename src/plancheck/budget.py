@@ -48,7 +48,7 @@ class GPUBudget:
         *,
         stage: str = "stage1",
     ):
-        ceilings = {"stage1": (100, 3600), "stage2": (1500, 7200)}
+        ceilings = {"stage1": (100, 3600), "stage2": (1500, 7200), "stage3": (1500, 7200)}
         if stage not in ceilings:
             raise ValueError("Unknown authorized GPU allocation")
         requests, seconds = ceilings[stage]

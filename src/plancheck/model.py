@@ -98,6 +98,12 @@ class TransformersGPU:
     def _expired(*args):
         raise TimeoutError("Allocated GPU wall-time ceiling reached")
 
+    def count_prompt_tokens(self, prompt: str) -> int:
+        text = self.tokenizer.apply_chat_template(
+            [{"role": "user", "content": prompt}], tokenize=False, add_generation_prompt=True
+        )
+        return len(self.tokenizer(text).input_ids)
+
     def generate(self, prompt: str, seed: int, max_new_tokens: int, temperature: float) -> dict:
         import torch
         from transformers import set_seed

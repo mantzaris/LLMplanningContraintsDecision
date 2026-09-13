@@ -1,0 +1,21 @@
+{
+  "model_id": "Qwen/Qwen2.5-7B-Instruct",
+  "model_revision": "a09a35458c702b33eeacc393d103063234e8bc28",
+  "max_new_tokens": 768,
+  "temperature": 0.7,
+  "solver_timeout_ms": 5000,
+  "phase": "historical_development",
+  "scenario_ids": [
+    "pilot-00",
+    "pilot-17",
+    "pilot-34"
+  ],
+  "seed": 31000,
+  "checkpoints": [
+    2,
+    4
+  ],
+  "generation_tokens": 48000,
+  "validation_tokens_per_prefix": 8000,
+  "validation_tokens_total": 16000
+}
