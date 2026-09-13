@@ -43,7 +43,7 @@ Checked **13 September 2026** against official 2027 pages:
 | AI assistance | Disclose tool, affected parts, and use; tools are not authors. Pages specify acknowledgments, while the AI page also permits an appropriate section. [AI tools](https://icaart.scitevents.org/AiTools.aspx) |
 | Public posting | Do not publicly post the submitted manuscript during review. [Guidelines](https://icaart.scitevents.org/Guidelines.aspx) |
 
-Characters are counted from the full PDF with `pdftotext -layout`, retaining every non-Unicode-whitespace character, including captions, references, and vector-figure labels. Printed line-break hyphens remain counted. This reproducible approximation is comfortably within range; the submission system may differ. The revised abstract is 177 whitespace-delimited words, within the official template's 70–200 recommendation. Exact checks: [build-validation.json](analysis/build-validation.json).
+Characters are counted from the full PDF with `pdftotext -layout`, retaining every non-Unicode-whitespace character, including captions, references, and vector-figure labels. Printed line-break hyphens remain counted. This reproducible approximation is comfortably within range; the submission system may differ. The revised abstract is 172 whitespace-delimited words, within the official template's 70–200 recommendation. Exact checks: [build-validation.json](analysis/build-validation.json).
 
 ## Anonymity, disclosure, and artifact release
 

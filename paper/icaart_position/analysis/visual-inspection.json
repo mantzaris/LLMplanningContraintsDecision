@@ -1,36 +1,36 @@
 {
-  "main_pdf_sha256": "63b9880a3a08822ff22a14d580d35d15643c6723d7914380c2f4a12aa6d71d0e",
+  "main_pdf_sha256": "ad99efeb6527f9118ea1ebdd0d4cd9cebf247d09f2a258215a265281b9c6eab2",
   "renderer": "pdftoppm -r 115 -png",
   "inspection": "assistant visual inspection; not human annotation review",
   "pages": [
     {
       "page": 1,
-      "render_sha256": "4b687b07e817bdbdec59a88e600e4e73a3302dc19f8d9f0d3aaeaa452d86199e",
+      "render_sha256": "5640369639dffb405e40781942de05cd2cea529c9559d2bd03b51ee95ced91bf",
       "inspected": true
     },
     {
       "page": 2,
-      "render_sha256": "89a17d061dc936dff3ed10a41fde337a22306b8559cde17eccdfef72f221a150",
+      "render_sha256": "ecb3a8d77fefa9d63fe5def2f5b46210459d0b183c0c4384a494ca4f11c7068c",
       "inspected": true
     },
     {
       "page": 3,
-      "render_sha256": "fb9733ba9517a47d2037d934dd21ad0367aa5b94d4ba1310e7b5d5565e805f57",
+      "render_sha256": "ff53c52e7eff85cbdc7cffa784e80bcb69fa38e1794ae5fb43c5cfde94d98d24",
       "inspected": true
     },
     {
       "page": 4,
-      "render_sha256": "7b9c18605b592e9585e00a0989777694c2dd01cac0a295fb4e7c5b7ff1545007",
+      "render_sha256": "3c31f8d8c2020f03b2de2644b4fd93ad986055e89b994fb1e9f3766971505cfd",
       "inspected": true
     },
     {
       "page": 5,
-      "render_sha256": "023ed3acff60fc6cb327b104e2e002c42ca160661a48b501fe882e51d030c8e6",
+      "render_sha256": "5a1c9121146bf6ba77671f938557fcbf2572b1bdd4097b9c81b51bbc4aa5b02d",
       "inspected": true
     },
     {
       "page": 6,
-      "render_sha256": "211a955606ca66222d1722d3f1aa710a5d12d949b0220c058680ca105a6c4968",
+      "render_sha256": "7548db5fd9d7851673bf87b3827eaaf045898b133e97edea86bd9f21afdd7786",
       "inspected": true
     },
     {
@@ -44,5 +44,5 @@
       "inspected": true
     }
   ],
-  "findings": "All eight revised pages inspected: title, abstract, equations, figures, captions, references and disclosure are legible; no clipped material or visible author identity. After shortening the joint-figure title for readability, pages 6\u20138 were rendered and inspected again. Official template formatting is unchanged."
+  "findings": "All eight pages inspected after rewriting the abstract and introduction: practical example and new terminology are legible; subsequent text flow, equations, figures, captions, references and disclosure remain unclipped. No visible author identity. Official template formatting and all figure assets are unchanged."
 }
