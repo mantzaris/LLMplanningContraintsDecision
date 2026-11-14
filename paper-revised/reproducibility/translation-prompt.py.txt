@@ -1,0 +1,22 @@
+def translation_prompt(scenario: PublicScenario) -> str:
+    metadata = scenario.model_dump(
+        mode="json",
+        exclude={
+            "request",
+            "authorship",
+            "pool_hash",
+            "feed_hash",
+            "split",
+            "base_id",
+            "pool_complete",
+        },
+    )
+    return (
+        LANGUAGE
+        + "\nExact JSON schema:\n"
+        + canonical(Interpretation.model_json_schema())
+        + "\nPublic metadata:\n"
+        + canonical(metadata)
+        + "\nORIGINAL request:\n"
+        + scenario.request
+    )

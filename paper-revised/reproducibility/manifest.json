@@ -1,0 +1,24 @@
+{
+  "example_parser_check": "passed",
+  "frozen_prompt_manifest_checks": {
+    "data/pilot/prompts.json": "passed",
+    "data/sampling/prompts.json": "passed"
+  },
+  "experimental_inference_calls": 0,
+  "files": {
+    "example-display.json": "e0f0af5d589a0d6c8bd5e4ef98ebf351ff7e7ba2ae2302771347b94a9b6f84df",
+    "example-scenario.json": "9650c6a04ecb34600d8b12f4322f3408532ce70023c0e5382ac54edaf20f30e1",
+    "example-translation-prompt.txt": "a56b49cca758fe48613cb7d62962278eeb8d94300fd955e24d8fb806eb0380a3",
+    "example.json": "91bfef0e1f6f1ea714f9399e23ab6059ce90f9367805c406a90f04db12d54b35",
+    "export.py": "ef93a3219306159b1b436553f9e428b962df97f47dab10568de976eb04272dc4",
+    "feedback.py.txt": "3c81a916d4adbd670fe8ae4db2062d3df2271441d1878d49f324aa95b084d39b",
+    "journey-renderer.py.txt": "efd131027c5de1ec0ec269fedd1367f5dceee547268a65ed3c9af3bd1a8d6d0e",
+    "judgment-prompt.py.txt": "8ca9abaa7152724d94063392e54bb265d5c04a0a762a7e166db6c2338fb4b8d2",
+    "normalization.py.txt": "e0cff6003f5b40ba09678114eca11fafe09727b677a630888f1eb76d80ab9d42",
+    "perspectives.json": "9cfca12a4a6c6c78ce123659a80a15c427a2071a8c3f26cb2321bdcb1b7e40c3",
+    "sampling-prompt.py.txt": "14951a8a0408c00790cd4ab8a36189ef188e6f1b9f6f79fabbea38913faa9c76",
+    "schema.json": "56fb2a07a078b318fae0f9ed6ee1d32670c9578146167e52b340ae89de0f1982",
+    "translation-instructions.txt": "cd95bf0b9f6e478f12d483936ce7216a913461c77abf08f2915f3bde9d0a6402",
+    "translation-prompt.py.txt": "ab5a1f82ad7509dc0b9f6de47b81d326ddfce106e9ffa3fa475d7a3a0a4955b8"
+  }
+}

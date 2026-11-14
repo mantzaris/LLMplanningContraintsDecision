@@ -1,0 +1,74 @@
+\documentclass[11pt,a4paper]{scrartcl}
+\usepackage[T1]{fontenc}
+\usepackage[margin=22mm]{geometry}
+\usepackage{lmodern}
+\usepackage{amsmath}
+\usepackage[hidelinks,breaklinks]{hyperref}
+\usepackage{xurl}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.4em}
+\hypersetup{pdftitle={Response to reviewers: ICAART 2027 paper 128},pdfauthor={}}
+\title{Response to reviewers}
+\subtitle{ICAART 2027, paper 128\\Linking Candidate Coverage to Decision Quality:\\A Framework for LLM Planning Evaluation}
+\author{}
+\date{November 2026}
+\begin{document}
+\begin{center}
+{\Large\sffamily\bfseries Response to reviewers}\\[0.5em]
+{\bfseries ICAART 2027, paper 128}\\
+Linking Candidate Coverage to Decision Quality:\\
+A Framework for LLM Planning Evaluation\\[0.4em]
+November 2026
+\end{center}
+
+Thank you for the comments. We revised the explanation of the pipeline, defined the terms and scores, and added implementation details in a separate reproducibility companion. The title, abstract, and experimental results are unchanged. No new experimental inference or human adjudication was performed. Section numbers below refer to the revised paper; companion sections refer to \texttt{reproducibility.pdf}.
+
+\section*{Reviewer 1}
+
+\textbf{1(a), 1(g): Uninformative pools, masked clauses, families, truth vectors, and public metadata.}
+Section 2 now states that the pool is the finite planning universe and lists the public metadata that defines it. It explains a truth vector as the ordered list of a candidate's acceptance values. Section 2.3 distinguishes a constant clause from a varying clause whose effect is masked by other clauses. It explains that an uninformative pool can conceal other differences too, and gives examples of requirement families.
+
+\textbf{1(b), 1(c), 1(i): Validity, checkpoints, and behavioral signatures.}
+Section 2 replaces ambiguous candidate ``validity'' with ``well-formed,'' meaning that syntax, type, unit, entity, and source-span checks pass. This does not establish correctness. A prose definition precedes the signature equation. Section 2.1 defines a checkpoint as a sample allowance fixed before evaluation and gives the values used in both studies.
+
+\textbf{1(d), 1(e), 1(f): Witnesses, selectors, updates, shared states, and consequential disagreement.}
+Section 1.1 introduces the witness selector. Section 2 defines a witness, a candidate update, a validation sequence, and a shared state alongside Algorithm 1. Section 2.2 defines distinguishable candidate sets and consequential disagreement, and states that witness cost is one model judgment in both studies.
+
+\textbf{1(h): Bundles, classes, partitions, trajectories, and prefixes.}
+Section 2 defines a bundle as one request's candidate set and a behavioral class as candidates with the same signature. Section 2.2 explains the partition into accepting and rejecting candidates. Sections 3.2--3.3 describe the ordered validation or sampling sequences and define a prefix as their initial part. We use these descriptions in place of unexplained ``trajectory'' terminology.
+
+\textbf{2(a)--2(e): Consistent names and distinct uses of coverage and selection.}
+Section 2 defines ``candidate formalization'' as a machine checkable translation, shortened to ``candidate,'' and equates pool with planning universe. We use ``candidate coverage'' for $G$ and ``clause testing'' for the checks in Section 2.3. We distinguish witness selection from final candidate choice. The Section 4.2 heading and figure labels now use candidate coverage and final correctness consistently.
+
+\textbf{3: Complete pipeline, pseudocode, and LLM-as-formalizer framing.}
+Algorithm 1 at the start of Section 2 describes generation, deduplication, candidate planning, witness choice, judgment, elimination, and final choice. The highest-scoring unused separating journey is selected, with journey-ID tie-breaking. Uncertain or malformed judgments eliminate nothing, but the witness is not queried again. Validation stops at its judgment allowance, when no unused separating journey remains, or when the token allowance prevents another call. Because each witness separates the survivors, either definite label leaves at least one survivor; these studies do not replace or repair candidates. Section 1.1 adopts the LLM-as-formalizer framing and cites Tantakoun et al. (2025).
+
+\newpage
+\textbf{4: Which candidates enter $G_x$?}
+Section 2.1 now explicitly defines $\mathcal C_x$ as the well-formed candidates generated up to the checkpoint, after deduplication but before validation. Candidates later eliminated still count toward $G_x$.
+
+\textbf{5(a), 5(b): Unnecessary decomposition and notation.}
+We removed the total-probability equation while retaining the point that marginal totals do not determine the joint cells. Section 2.2 calls $I_{ij}$ a cross-rejection count, with possible values 0, 1, and 2. Journeys use $w$, leaving $i,j$ for candidate indices.
+
+\textbf{5(c), 5(e): Formal scores, cost, choice rule, and motivation.}
+Section 2.2 defines the separated-pair set $P_A(w)$ and both scores in Equation 4, including positive cost, eligible journeys, maximization, and tie-breaking. Both studies use unit witness cost; token accounting is separate. The motivation is to prioritize disagreements that affect whether one candidate accepts another's selected plan. The text does not claim that this improves correctness.
+
+\textbf{6: Reference authorship, checking, audit, and attribution.}
+Section 3.1 explains that assistant-authored template code constructed requests and references together before model generation. A separate narrow wording parser checked the reference clauses, and a separate evaluator checked outcomes. The automated Study 1 audit checked all 48 requests and saved journeys; rescoring 432 outputs changed no category.
+
+These checks are not independent human adjudication. The references and disagreeing judgments have not received such adjudication, and the 80-request worksheet has no completed human-review decisions. We state this directly in Sections 3.1 and 6. Section 4.3 reports judgments that disagree with provisional references, and describes replay using reference labels. Sections 5 and 7 make independent review the next step before a firm attribution of judge error. The revision therefore narrows the diagnosis; it does not claim that the reference-validation limitation has been resolved.
+
+\textbf{7(i)--7(iv): Language, prompts, normalization, and availability.}
+Section 3 gives the recursive language grammar and a complete example formula. Companion Section 1 supplies the schema, types, semantics, and full response example. Companion Sections 2--3 provide exact translation and judgment templates, all diversification perspectives, prompt assembly, journey rendering, and feedback formatting. Section 3.3 and companion Section 4 explain source-only time normalization, including its limits. The paper's Code and Data Availability statement links the public repository; companion Section 6 maps the source files and reproduction commands. Full historical logs and the frozen raw feed are outside the public repository, so a public checkout alone does not support complete raw-call replay.
+
+\textbf{7: Preserved outputs, throughput rule, and continuation thresholds.}
+Section 3.1 identifies the project's September 2026 Qwen runs as the source of the preserved outputs. Section 3.2 states the timing forecast, call reserve, and fixed order for reducing replicates or requests. Section 4.2 states both continuation thresholds and that they were fixed before fresh outputs. Companion Section 5 supplies the freeze dates, commits, numerical allowances, and run provenance.
+
+\textbf{Presentation and conclusions.}
+We shortened dense passages, corrected sentence structure, and reduced repeated explanations. Sections 5--7 separate what the current analysis shows from the next steps: independent reference review, followed by tests with other models and more varied pools.
+
+\section*{Reviewer 2}
+
+Thank you for recognizing the value of reporting candidate coverage and final correctness jointly. We retained that position and the two studies. The English and terminology edits, the pipeline description in Section 2, and the clearer conclusions address the suggested presentation improvements without changing the reported results.
+
+\end{document}

@@ -1,0 +1,72 @@
+def feedback(scenario, pool, samples):
+    """Whitelist public sample fields; no labels, preferred output or reference access."""
+    groups, clause_variants = {}, []
+    for index, sample in enumerate(samples):
+        if sample.get("signature") is None:
+            continue
+        key = sample["signature_hash"]
+        group = groups.setdefault(
+            key,
+            {
+                "first_attempt": index + 1,
+                "attempts": [],
+                "accepts": sum(sample["signature"]),
+                "signature_hash": key,
+            },
+        )
+        group["attempts"].append(index + 1)
+        for clause in sample["clauses"]:
+            variant = {
+                "formula": clause["formula"],
+                "accepts": sum(clause["signature"]),
+                "signature_hash": clause["signature_hash"],
+                "source_association": clause["source_association"],
+            }
+            if variant not in clause_variants:
+                clause_variants.append(variant)
+    parts = [
+        "Executable feedback about YOUR EARLIER GENERATED INTERPRETATIONS, not correctness labels.",
+        f"Exact evaluation over the shared bounded universe of {len(pool)} scheduled journeys. "
+        "Matching full signatures mean agreement only here, not agreement with the source request.",
+        f"Attempts so far: {len(samples)}; unparsed/failed: {sum(s.get('signature') is None for s in samples)}.",
+        "Represented full behaviors (all groups; attempt lists show repetitions): "
+        + canonical(list(groups.values())),
+        "Separate conjunct behaviors follow so an always-false conjunct does not hide other differences. "
+        "Source associations are traceability aids, not proof of faithful interpretation.",
+    ]
+    for variant in clause_variants:
+        addition = canonical(variant)
+        if len("\n".join(parts)) + len(addition) > FEEDBACK_LIMIT - 600:
+            parts.append("Additional conjunct details omitted under the fixed feedback size limit.")
+            break
+        parts.append(addition)
+    # First ID with a full disagreement; otherwise a conjunct disagreement, otherwise
+    # first pool journey. No reference or natural-language correctness test is involved.
+    valid = [s for s in samples if s.get("signature") is not None]
+    vectors = [s["signature"] for s in valid]
+    if len({tuple(v) for v in vectors}) < 2:
+        vectors = [c["signature"] for s in valid for c in s["clauses"]]
+    ordered = sorted(range(len(pool)), key=lambda i: pool[i].journey_id)
+    example = next((i for i in ordered if len({v[i] for v in vectors}) > 1), ordered[0])
+    concrete = render_journey(pool[example], scenario)
+    labels = [s["signature"][example] if s.get("signature") is not None else None for s in samples]
+    addition = (
+        "Illustrative scheduled journey:\n"
+        + concrete
+        + "\nEarlier full predictions by attempt: "
+        + canonical(labels)
+    )
+    if len("\n".join(parts)) + len(addition) <= FEEDBACK_LIMIT - 350:
+        parts.append(addition)
+    else:
+        parts.append(
+            "Concrete journey omitted under the fixed feedback limit; no partial schedule is shown."
+        )
+    parts.append(
+        "Reconsider the ORIGINAL request, using this feedback only to inspect repeated interpretations. "
+        "Do not force disagreement. Repeating any interpretation is permitted when it remains best supported. "
+        "Return a complete source-faithful formula, not a plan or an invented extra requirement."
+    )
+    result = "\n".join(parts)
+    assert len(result) <= FEEDBACK_LIMIT
+    return result

@@ -1,0 +1,10 @@
+[
+  "",
+  "",
+  "Check temporal relations against the exact original words: earliest versus latest, departure versus arrival, and inclusive boundaries.",
+  "Check which named journey segment each requirement applies to. Preserve explicit scope and do not add requirements for another segment.",
+  "Check negation and inequality direction. A logically infeasible conjunction can still be a supported formalization; do not delete a requirement to make it feasible.",
+  "Check transfer counting and each explicit resource restriction, if present. Count transfers within the named segment and do not add absent preferences.",
+  "Read each source requirement in order and check that the complete formula preserves it, including any dependencies or visits that the language supports.",
+  "Re-read the source literally. Check for omissions and invented restrictions. Return the best-supported complete interpretation; agreement with earlier attempts is allowed."
+]

@@ -1,0 +1,149 @@
+\documentclass[11pt,a4paper]{scrartcl}
+\usepackage[T1]{fontenc}
+\usepackage[margin=25mm]{geometry}
+\usepackage{lmodern}
+\usepackage{amsmath,amssymb,booktabs,longtable}
+\usepackage{fvextra}
+\usepackage[hidelinks,breaklinks]{hyperref}
+\usepackage{xurl}
+\DefineVerbatimEnvironment{Code}{Verbatim}{fontsize=\small,breaklines=true,breakanywhere=true}
+\newcommand{\codefile}[1]{\VerbatimInput[fontsize=\small,breaklines=true,breakanywhere=true]{reproducibility/#1}}
+\hypersetup{pdftitle={Reproducibility companion: Linking Candidate Coverage to Decision Quality},pdfauthor={}}
+\title{Reproducibility companion}
+\subtitle{Linking Candidate Coverage to Decision Quality:\\A Framework for LLM Planning Evaluation}
+\author{}
+\date{Camera-ready revision, November 2026}
+\begin{document}
+\maketitle
+\noindent This companion records implementation details requested in review. It documents the two existing studies and introduces no new model runs or experimental results. Study~1 is called Stage~2 in the code; Study~2 is Stage~3. References remain provisional, without independent human adjudication.
+
+\section{Constraint language and a complete example}
+The implementation uses JSON objects validated by Pydantic. Its recursive structure is:
+\begin{Code}
+Expression := {"kind":"all", "children":[Expression, ...]}
+            | {"kind":"not", "child":Expression}
+            | {"kind":"atom", "op":Operator,
+               "scope":Scope, "value":Value, "unit":Unit}
+Response   := {"status":"ok", "formula":Expression,
+               "unsupported":[]}
+            | {"status":"unsupported", "formula":null,
+               "unsupported":[description, ...]}
+\end{Code}
+Every expression node may also have \texttt{source:null} or \texttt{source:\{start:i,end:j\}}. Offsets are zero-based and half-open in the original request, with $0\leq i<j\leq$ its length. A source pointer provides traceability, not evidence of correctness. Scope is \texttt{all} or a segment declared in the public scenario. Extra object keys are rejected. An empty conjunction is permitted by the schema and evaluates to true. The actual machine-readable schema is supplied as \path{reproducibility/schema.json}; the parser additionally checks units, nonnegative integers, nonempty entity lists, entity names, and source offsets.
+
+\begin{center}
+\begin{tabular}{lll}
+\toprule
+Operator & Value type & Unit \\
+\midrule
+\texttt{arrive\_by}, \texttt{depart\_ge}, \texttt{depart\_le} & nonnegative integer & \texttt{seconds} \\
+\texttt{max\_transfers} & nonnegative integer & \texttt{count} \\
+\texttt{permit\_modes}, \texttt{exclude\_modes} & nonempty mode list & \texttt{mode} \\
+\texttt{visits} & nonempty stop-ID list & \texttt{stop\_id} \\
+\bottomrule
+\end{tabular}
+\end{center}
+Allowed modes are bus, tram, rail, subway, ferry, cable, gondola, and funicular. The studies use bus journeys only. Times are integer seconds since the service-day origin; bounds are inclusive. Arrival and departure use the last arrival and first departure within the named scope. Transfers sum additional boardings within each segment; the outbound/return turnaround is not a transfer. A visit means a scheduled stop call, including remaining aboard, with no promised dwell time. Adjacent duplicate calls at transfers collapse before ordered visits are checked. An atom with no ride in its scope is false. Conjunction and Boolean negation have their usual meanings. Unsupported requirements, malformed outputs, and unknown entities remain distinct outcomes.
+
+For the illustrative request ``On the outbound segment only, arrive by 09:00:00 with at most one transfer,'' a complete response is below. This example is not an additional experimental request. It passes the repository's \texttt{parse\_interpretation} function using the supplied illustrative public scenario.
+\codefile{example-display.json}
+
+\section{Exact translation and judgment prompts}
+The following text is copied directly from \path{src/plancheck/prompts.py}. The translation prompt consists, in order, of these instructions, a JSON schema, public metadata, and the original request. JSON is serialized with sorted keys, no separator whitespace, and Unicode characters retained. No reference requirements enter the prompt.
+\codefile{translation-instructions.txt}
+
+The exact assembly function follows. Its excluded metadata fields are not passed to the model. \path{reproducibility/example-translation-prompt.txt} contains a complete assembled prompt for the illustrative example, including the schema. That file is an illustration, not a saved experimental call.
+\codefile{translation-prompt.py.txt}
+
+The same model judges a journey in a fresh invocation. The exact judgment prompt is:
+\codefile{judgment-prompt.py.txt}
+The renderer supplies all scheduled calls, not just endpoints. The exact formatting is:
+\codefile{journey-renderer.py.txt}
+Each prompt is sent as a single user message through the model tokenizer's chat template, with \texttt{add\_generation\_prompt=True}. There is no conversation history. Both studies use Qwen2.5-7B-Instruct revision \path{a09a35458c702b33eeacc393d103063234e8bc28}, BF16, Transformers~4.51.3, and PyTorch~2.8.0/CUDA~12.8. Translation uses temperature~0.7 and top-$p$~0.95, with inherited top-$k$~20 and repetition penalty~1.05. Judgment uses temperature~0 (greedy decoding). The output limit is 768 tokens per call. The source records effective generation settings and charges cached calls logically to each method that uses them.
+
+\section{Study 2 diversification and feedback}
+Independent sampling repeats the base translation prompt. Diversified and solver-guided sampling append the perspective for the corresponding attempt; the first two perspectives are empty and those exact calls are shared. This is the complete perspective sequence, in attempt order:
+\codefile{perspectives.json}
+The following function defines the exact concatenation and when feedback begins. Arms A, B, and C denote independent, diversified, and solver-guided sampling.
+\codefile{sampling-prompt.py.txt}
+
+Feedback is limited to 6,000 characters, not tokens. It groups earlier parsed samples by their full acceptance-vector hash. Each group lists its first attempt, all member attempts, accepted-journey count, and hash. Top-level conjunct records include the formula, accepted-journey count, hash, and source association. The full vectors remain in records; the prompt carries their hashes and counts. A source association is either a unique source operator/scope match or an unverified model span. Neither certifies that the clause expresses the request.
+
+The illustrative journey is the first journey ID on which full sample signatures disagree. If there is only one full behavior, the code checks conjunct signatures instead. If those do not disagree either, it uses the first journey ID. This example is separate from the scored validation witness. The feedback includes no reference labels or ordinary judge decisions. Repeating an earlier interpretation is explicitly allowed.
+
+Conjunct details stop before the current text plus the next record would exceed 5,400 characters. The complete journey and per-attempt predictions are included only if they fit below 5,650 characters. Otherwise an omission sentence is used; no partial schedule is shown. The final instruction is then appended and the complete feedback is checked against the 6,000-character limit. The exact code below specifies boundary counting and all literal text.
+\codefile{feedback.py.txt}
+
+\section{Source-based time normalization}
+Study~2 applies the same normalizer to every arm, immediately after a response parses. It recognizes exactly four case-insensitive phrases followed by a clock literal \texttt{HH:MM:SS} (two or three hour digits, with minutes and seconds from 00 to 59):
+\begin{center}
+\begin{tabular}{ll}
+\toprule
+Phrase & Operator \\
+\midrule
+\texttt{depart no earlier than} & \texttt{depart\_ge} \\
+\texttt{do not depart before} & \texttt{depart\_ge} \\
+\texttt{depart no later than} & \texttt{depart\_le} \\
+\texttt{arrive by} & \texttt{arrive\_by} \\
+\bottomrule
+\end{tabular}
+\end{center}
+The scope comes from the last ``On the outbound/return segment only,'' phrase in the same sentence before the time phrase; otherwise it defaults to outbound. For an existing time atom with unit \texttt{seconds}, the normalizer changes its value only when exactly one source mention has the same operator and scope. The replacement is $3600\times\mathrm{HH}+60\times\mathrm{MM}+\mathrm{SS}$. The raw formula and each replacement remain recorded.
+
+It does not add a missing requirement, change an operator or scope, or repair malformed JSON. For example, a \texttt{depart\_ge} atom is not changed into \texttt{depart\_le} merely because the request says ``depart no later than.'' No reference data is read. The exact functions are supplied in \path{reproducibility/normalization.py.txt} and implemented in \path{src/plancheck/source_normalization.py}.
+
+\section{Frozen rules and origin of the saved outputs}
+The saved outputs were generated for this project in September 2026. The original Study~1 run is \path{runs/stage2-pilot-v1}, created on 12 September 2026 at 18:16:23 UTC; Study~2 is \path{runs/stage3-fresh}, created on 13 September 2026 at 02:52:45 UTC. These dates are recorded in their \texttt{manifest.json} files. The service date, 14 September 2026, describes the published schedule being planned over, not the time inference was executed. Manuscript preparation and this revision use offline analysis of these records; they do not repeat model inference.
+
+Study~1's rule was specified in \path{docs/stage2-protocol.md} and \path{data/pilot/protocol.json} before comparative evaluation (freeze commit \texttt{1aa2ad1}, 12 September 2026 at 16:33 UTC). After 16 translations for the first four requests, but before judging, it used the larger of their 95th-percentile latency and the historical 2.8164 seconds, multiplied by 1.5. For $n$ requests and $r$ replicates the conservative call count was $n(13r+3)$, including secondary comparisons. The forecast added $2nr+120$ seconds to that call count times the reserved per-call duration. It had to fit the remaining 7,170-second measured guard and the 1,500-call limit less a 64-call reserve. The rule tried two replicates, then one, then removed six-request blocks from the end of the fixed request order. It selected 48 requests and one replicate: measured 95th-percentile latency 3.8442 seconds and forecast 4,644.47 seconds. No comparison of method outcomes determined this choice.
+
+Study~2's development and continuation rules were specified before fresh evaluation in \path{docs/stage3-semantic-sampling.md}; the pre-fresh freeze was commit \texttt{e58c160d}, 13 September 2026 at 02:51:59 UTC, before the 02:52:45 UTC fresh run. The resulting settings are frozen in \path{data/sampling/protocol.json} and \path{configs/sampling.json}. Development used three historical requests and 24 actual calls. The generation allocation rounded $8(3509+768)$ up to the next multiple of 1,000: 35,000 input-plus-output tokens per request and arm. Each validation prefix rounded $2(905+768)$ similarly: 4,000 tokens. The 905-input-token maximum was measured from possible judgment prompts using the same tokenizer, because development triggered no judgments. Prefix allowances are separate and nontransferable. Calls are admitted only if known input plus maximum output fits; successful calls charge actual input plus output. All fresh trajectories reached eight attempts.
+
+The Study~2 throughput rule used $38n$ calls, 1.5 times development 95th-percentile latency, plus $120+2n$ seconds. It tried 32 requests, then 24 if necessary, within the remaining measured guard of 7,080 seconds and 1,500-call limit; 32 fit. The continuation rule required solver-guided sampling to improve candidate coverage by at least 10 percentage points \emph{and} final correctness by at least 5 points over \emph{each} baseline at the final allowance. These were practical screening thresholds fixed before the fresh outputs, not significance tests. They were not met.
+
+Both studies use unit witness cost in their selection scores: one model judgment per witness. Study~2's token admission is an additional resource guard; it is not a different witness-score denominator. Study~1 evaluates judgment budgets 0, 1, 2, and 4 using prefixes of one validation sequence. Study~2 validates the first 2, 4, and 8 generated attempts separately, with balanced witness choice and at most two judgments per prefix. Neither principal comparison generates repaired candidates during validation.
+
+The historical resource totals include checks at earlier prefixes. In Study~2, counting generation once per trajectory and each prefix's judgments gives 833 logical calls and 2,081,931 input-plus-output tokens. Exact caching reduced fresh execution to 659 actual calls and 1,743,059 tokens; the 24 development calls bring the actual total to 683. Fresh sampling used 1,207.31 measured GPU-resident seconds, with a further 53.37 seconds for development and a conservative 60-second uncertainty allowance. Study~1 used 358 actual calls and 681.62 measured GPU-resident seconds, plus a 30-second allowance. Shared responses retain their full logical charge for each arm; these logical totals and physical execution totals answer different cost questions. These are preserved run totals, not compute spent on this revision.
+
+\section{Source map, availability, and reproduction}
+The repository URL is \url{https://github.com/mantzaris/LLMplanningContraintsDecision}. The following paths identify the implementation and retained compact evidence. Full model caches, full run directories, model weights, and the frozen raw feed are excluded from Git. A repository checkout alone therefore supports inspection of code, prompts, references, and derived tables, but not a complete exact replay of every raw call. Archive checksums and historical storage records document preserved material; they are not a public download service. This companion does not claim that those private archives are publicly available.
+
+\begin{longtable}{@{}p{0.33\linewidth}p{0.62\linewidth}@{}}
+\toprule
+Item & Repository path \\
+\midrule\endhead
+Language, parsing, compiler & \path{src/plancheck/constraints.py}; \path{src/plancheck/compiler.py} \\
+Independent reference evaluator & \path{src/plancheck/reference.py} \\
+Base prompts and rendering & \path{src/plancheck/prompts.py}; \path{src/plancheck/render.py} \\
+Witness ranking and candidate grouping & \path{src/plancheck/selection.py} \\
+Sampling, feedback, prefix validation & \path{src/plancheck/semantic_sampling.py} \\
+Time normalization & \path{src/plancheck/source_normalization.py} \\
+Request/reference constructors and wording checks & \path{src/plancheck/pilot_data.py}; \path{src/plancheck/sampling_data.py}; \path{src/plancheck/pilot_review.py} \\
+Frozen requests, references, prompt manifests, protocols & \path{data/pilot/}; \path{data/sampling/} \\
+Run reports & \path{reports/STAGE2_GPU_EXECUTION.md}; \path{reports/STAGE3_SEMANTIC_SAMPLING_PILOT.md} \\
+Reference audit & \path{reports/STAGE2_ANNOTATION_COVERAGE_AUDIT.md}; \path{artifacts/stage2/closeout-v1/} \\
+Paper tables, traces, hashes & \path{paper/icaart_position/analysis/} \\
+Paper analysis and figure code & \path{paper/icaart_position/scripts/} \\
+Revised figure labels and layout & \path{paper-revised/scripts/figures.py} \\
+Archive records & \path{artifacts/stage3/pilot-v1/storage.json}; \path{paper/icaart_position/analysis/verified-storage.json} \\
+\bottomrule
+\end{longtable}
+
+The public reference files were constructed with coding-assistant support before generation. Separate code reparses the narrow request grammar and checks it against the stored requirements; another evaluator checks journeys. These checks do not constitute independent human adjudication. The retained review sheet contains blank human-review decisions. Disagreements between judge outputs and references, and outcomes of reference-label replay, remain conditional on these provisional references.
+
+With Python~3.11 and the repository's locked dependencies available, the original offline analysis is reproduced from the repository root by:
+\begin{Code}
+uv sync --frozen --extra dev --extra analysis
+.venv/bin/python paper/icaart_position/scripts/analyze.py
+.venv/bin/pytest -q paper/icaart_position/scripts/test_analysis.py
+\end{Code}
+The analysis requires the preserved run files and verifies their hashes. Without those files, the committed tables can still be inspected and figures can be redrawn using \path{paper/icaart_position/scripts/figures.py}; this does not reconstruct missing raw calls. Instructions for exact CPU replay and restoring prepared inputs are in \path{paper/icaart_position/README.md}. Re-downloading a current transit feed is not a replacement for the frozen September 2026 feed.
+
+To regenerate this companion's exact prompt extracts and parser-check its illustrative example, run:
+\begin{Code}
+.venv/bin/python paper-revised/reproducibility/export.py
+latexmk -pdf -interaction=nonstopmode -halt-on-error \
+  -cd paper-revised/reproducibility.tex
+\end{Code}
+The extraction script imports the implementation without loading a model. Its output manifest records file hashes and the parser-check result. The supplied exact-text files preserve literal prompt strings; line wrapping in this PDF is for reading only.
+\end{document}

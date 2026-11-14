@@ -1,0 +1,1493 @@
+{
+  "sampling-12": {
+    "arm": "B",
+    "oracle": {
+      "candidates": [
+        {
+          "acceptance_bits": "10111111010010111100111111101010111111111111111111111011101111101100011110101111010010111011110110110111101011011001110010011101",
+          "aliases": [
+            "c0",
+            "c1",
+            "c2",
+            "c3",
+            "c4"
+          ],
+          "candidate_id": "c0",
+          "formula": {
+            "kind": "atom",
+            "op": "depart_ge",
+            "scope": "outbound",
+            "source": null,
+            "unit": "seconds",
+            "value": 37281
+          },
+          "plan": {
+            "plan_id": "3d2ac4bc9b683d64bff9",
+            "reason": null,
+            "solver_seconds": 0.0062574169132858515,
+            "status": "satisfiable"
+          },
+          "reference_equivalent": false
+        },
+        {
+          "acceptance_bits": "01000000100100000010000000000101000000000000000000000000010000010000100001010000101100000100000001000000000000100100000100000000",
+          "aliases": [
+            "c5"
+          ],
+          "candidate_id": "c5",
+          "formula": {
+            "children": [
+              {
+                "kind": "atom",
+                "op": "depart_le",
+                "scope": "outbound",
+                "source": null,
+                "unit": "seconds",
+                "value": 36511
+              }
+            ],
+            "kind": "all",
+            "source": null
+          },
+          "plan": {
+            "plan_id": "23dc77966eb67609fd49",
+            "reason": null,
+            "solver_seconds": 0.003102818038314581,
+            "status": "satisfiable"
+          },
+          "reference_equivalent": true
+        },
+        {
+          "acceptance_bits": "10101111010010111100111111101010110111110101111111111011101011101100010110101011000010111010110110100111101011011000010010011001",
+          "aliases": [
+            "c6"
+          ],
+          "candidate_id": "c6",
+          "formula": {
+            "children": [
+              {
+                "kind": "atom",
+                "op": "depart_ge",
+                "scope": "outbound",
+                "source": null,
+                "unit": "seconds",
+                "value": 38431
+              }
+            ],
+            "kind": "all",
+            "source": null
+          },
+          "plan": {
+            "plan_id": "369b184b9fad63c15d8b",
+            "reason": null,
+            "solver_seconds": 0.0058336020447313786,
+            "status": "satisfiable"
+          },
+          "reference_equivalent": false
+        },
+        {
+          "acceptance_bits": "11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111",
+          "aliases": [
+            "c7"
+          ],
+          "candidate_id": "c7",
+          "formula": {
+            "children": [
+              {
+                "kind": "atom",
+                "op": "depart_ge",
+                "scope": "outbound",
+                "source": null,
+                "unit": "seconds",
+                "value": 36491
+              }
+            ],
+            "kind": "all",
+            "source": null
+          },
+          "plan": {
+            "plan_id": "3d2ac4bc9b683d64bff9",
+            "reason": null,
+            "solver_seconds": 0.007996981963515282,
+            "status": "satisfiable"
+          },
+          "reference_equivalent": false
+        }
+      ],
+      "events": [],
+      "final_plan_id": "23dc77966eb67609fd49",
+      "journeys": [
+        {
+          "journey_id": "004977e99b44fd327c54",
+          "rides": [
+            {
+              "calls": [
+                {
+                  "arrival_s": 41562,
+                  "departure_s": 41562,
+                  "stop_id": "10491"
+                },
+                {
+                  "arrival_s": 42063,
+                  "departure_s": 42063,
+                  "stop_id": "13772"
+                }
+              ],
+              "route_id": "2",
+              "scope": "outbound"
+            },
+            {
+              "calls": [
+                {
+                  "arrival_s": 43503,
+                  "departure_s": 43503,
+                  "stop_id": "13772"
+                },
+                {
+                  "arrival_s": 43765,
+                  "departure_s": 43765,
+                  "stop_id": "1435"
+                }
+              ],
+              "route_id": "2",
+              "scope": "outbound"
+            }
+          ]
+        },
+        {
+          "journey_id": "00de85f0851f9bd12d64",
+          "rides": [
+            {
+              "calls": [
+                {
+                  "arrival_s": 36511,
+                  "departure_s": 36511,
+                  "stop_id": "10491"
+                },
+                {
+                  "arrival_s": 37140,
+                  "departure_s": 37140,
+                  "stop_id": "1375"
+                }
+              ],
+              "route_id": "2",
+              "scope": "outbound"
+            },
+            {
+              "calls": [
+                {
+                  "arrival_s": 39300,
+                  "departure_s": 39300,
+                  "stop_id": "1375"
+                },
+                {
+                  "arrival_s": 39385,
+                  "departure_s": 39385,
+                  "stop_id": "1435"
+                }
+              ],
+              "route_id": "2",
+              "scope": "outbound"
+            }
+          ]
+        },
+        {
+          "journey_id": "23dc77966eb67609fd49",
+          "rides": [
+            {
+              "calls": [
+                {
+                  "arrival_s": 36511,
+                  "departure_s": 36511,
+                  "stop_id": "10491"
+                },
+                {
+                  "arrival_s": 36975,
+                  "departure_s": 36975,
+                  "stop_id": "13772"
+                }
+              ],
+              "route_id": "2",
+              "scope": "outbound"
+            },
+            {
+              "calls": [
+                {
+                  "arrival_s": 38415,
+                  "departure_s": 38415,
+                  "stop_id": "13772"
+                },
+                {
+                  "arrival_s": 38665,
+                  "departure_s": 38665,
+                  "stop_id": "1435"
+                }
+              ],
+              "route_id": "2",
+              "scope": "outbound"
+            }
+          ]
+        },
+        {
+          "journey_id": "369b184b9fad63c15d8b",
+          "rides": [
+            {
+              "calls": [
+                {
+                  "arrival_s": 39391,
+                  "departure_s": 39391,
+                  "stop_id": "10491"
+                },
+                {
+                  "arrival_s": 40105,
+                  "departure_s": 40105,
+                  "stop_id": "1435"
+                }
+              ],
+              "route_id": "2",
+              "scope": "outbound"
+            }
+          ]
+        },
+        {
+          "journey_id": "3d2ac4bc9b683d64bff9",
+          "rides": [
+            {
+              "calls": [
+                {
+                  "arrival_s": 37951,
+                  "departure_s": 37951,
+                  "stop_id": "10491"
+                },
+                {
+                  "arrival_s": 38665,
+                  "departure_s": 38665,
+                  "stop_id": "1435"
+                }
+              ],
+              "route_id": "2",
+              "scope": "outbound"
+            }
+          ]
+        }
+      ],
+      "remaining_ids": [
+        "c5"
+      ],
+      "updates": [
+        {
+          "after": [
+            "c5",
+            "c7"
+          ],
+          "before": [
+            "c0",
+            "c5",
+            "c6",
+            "c7"
+          ],
+          "journey_id": "00de85f0851f9bd12d64",
+          "judgment": {
+            "reason": "privileged independent reference evaluator",
+            "spans": [],
+            "verdict": "satisfied"
+          },
+          "reference_accepts": true,
+          "reference_candidates_after": [
+            "c5"
+          ]
+        },
+        {
+          "after": [
+            "c5"
+          ],
+          "before": [
+            "c5",
+            "c7"
+          ],
+          "journey_id": "004977e99b44fd327c54",
+          "judgment": {
+            "reason": "privileged independent reference evaluator",
+            "spans": [],
+            "verdict": "violated"
+          },
+          "reference_accepts": false,
+          "reference_candidates_after": [
+            "c5"
+          ]
+        }
+      ],
+      "witnesses": [
+        {
+          "cost": 1,
+          "journey_id": "00de85f0851f9bd12d64",
+          "policy": "balanced",
+          "score": 4.0,
+          "score_numerator": 4,
+          "separated_pairs": [
+            [
+              "c0",
+              "c5",
+              2
+            ],
+            [
+              "c0",
+              "c7",
+              0
+            ],
+            [
+              "c5",
+              "c6",
+              2
+            ],
+            [
+              "c6",
+              "c7",
+              1
+            ]
+          ]
+        },
+        {
+          "cost": 1,
+          "journey_id": "004977e99b44fd327c54",
+          "policy": "balanced",
+          "score": 1.0,
+          "score_numerator": 1,
+          "separated_pairs": [
+            [
+              "c5",
+              "c7",
+              1
+            ]
+          ]
+        }
+      ]
+    },
+    "ordinary": {
+      "candidates": [
+        {
+          "acceptance_bits": "10111111010010111100111111101010111111111111111111111011101111101100011110101111010010111011110110110111101011011001110010011101",
+          "aliases": [
+            "c0",
+            "c1",
+            "c2",
+            "c3",
+            "c4"
+          ],
+          "candidate_id": "c0",
+          "formula": {
+            "kind": "atom",
+            "op": "depart_ge",
+            "scope": "outbound",
+            "source": null,
+            "unit": "seconds",
+            "value": 37281
+          },
+          "plan": {
+            "plan_id": "3d2ac4bc9b683d64bff9",
+            "reason": null,
+            "solver_seconds": 0.0062574169132858515,
+            "status": "satisfiable"
+          },
+          "reference_equivalent": false
+        },
+        {
+          "acceptance_bits": "01000000100100000010000000000101000000000000000000000000010000010000100001010000101100000100000001000000000000100100000100000000",
+          "aliases": [
+            "c5"
+          ],
+          "candidate_id": "c5",
+          "formula": {
+            "children": [
+              {
+                "kind": "atom",
+                "op": "depart_le",
+                "scope": "outbound",
+                "source": null,
+                "unit": "seconds",
+                "value": 36511
+              }
+            ],
+            "kind": "all",
+            "source": null
+          },
+          "plan": {
+            "plan_id": "23dc77966eb67609fd49",
+            "reason": null,
+            "solver_seconds": 0.003102818038314581,
+            "status": "satisfiable"
+          },
+          "reference_equivalent": true
+        },
+        {
+          "acceptance_bits": "10101111010010111100111111101010110111110101111111111011101011101100010110101011000010111010110110100111101011011000010010011001",
+          "aliases": [
+            "c6"
+          ],
+          "candidate_id": "c6",
+          "formula": {
+            "children": [
+              {
+                "kind": "atom",
+                "op": "depart_ge",
+                "scope": "outbound",
+                "source": null,
+                "unit": "seconds",
+                "value": 38431
+              }
+            ],
+            "kind": "all",
+            "source": null
+          },
+          "plan": {
+            "plan_id": "369b184b9fad63c15d8b",
+            "reason": null,
+            "solver_seconds": 0.0058336020447313786,
+            "status": "satisfiable"
+          },
+          "reference_equivalent": false
+        },
+        {
+          "acceptance_bits": "11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111",
+          "aliases": [
+            "c7"
+          ],
+          "candidate_id": "c7",
+          "formula": {
+            "children": [
+              {
+                "kind": "atom",
+                "op": "depart_ge",
+                "scope": "outbound",
+                "source": null,
+                "unit": "seconds",
+                "value": 36491
+              }
+            ],
+            "kind": "all",
+            "source": null
+          },
+          "plan": {
+            "plan_id": "3d2ac4bc9b683d64bff9",
+            "reason": null,
+            "solver_seconds": 0.007996981963515282,
+            "status": "satisfiable"
+          },
+          "reference_equivalent": false
+        }
+      ],
+      "events": [],
+      "final_plan_id": "3d2ac4bc9b683d64bff9",
+      "journeys": [
+        {
+          "journey_id": "004977e99b44fd327c54",
+          "rides": [
+            {
+              "calls": [
+                {
+                  "arrival_s": 41562,
+                  "departure_s": 41562,
+                  "stop_id": "10491"
+                },
+                {
+                  "arrival_s": 42063,
+                  "departure_s": 42063,
+                  "stop_id": "13772"
+                }
+              ],
+              "route_id": "2",
+              "scope": "outbound"
+            },
+            {
+              "calls": [
+                {
+                  "arrival_s": 43503,
+                  "departure_s": 43503,
+                  "stop_id": "13772"
+                },
+                {
+                  "arrival_s": 43765,
+                  "departure_s": 43765,
+                  "stop_id": "1435"
+                }
+              ],
+              "route_id": "2",
+              "scope": "outbound"
+            }
+          ]
+        },
+        {
+          "journey_id": "00de85f0851f9bd12d64",
+          "rides": [
+            {
+              "calls": [
+                {
+                  "arrival_s": 36511,
+                  "departure_s": 36511,
+                  "stop_id": "10491"
+                },
+                {
+                  "arrival_s": 37140,
+                  "departure_s": 37140,
+                  "stop_id": "1375"
+                }
+              ],
+              "route_id": "2",
+              "scope": "outbound"
+            },
+            {
+              "calls": [
+                {
+                  "arrival_s": 39300,
+                  "departure_s": 39300,
+                  "stop_id": "1375"
+                },
+                {
+                  "arrival_s": 39385,
+                  "departure_s": 39385,
+                  "stop_id": "1435"
+                }
+              ],
+              "route_id": "2",
+              "scope": "outbound"
+            }
+          ]
+        },
+        {
+          "journey_id": "23dc77966eb67609fd49",
+          "rides": [
+            {
+              "calls": [
+                {
+                  "arrival_s": 36511,
+                  "departure_s": 36511,
+                  "stop_id": "10491"
+                },
+                {
+                  "arrival_s": 36975,
+                  "departure_s": 36975,
+                  "stop_id": "13772"
+                }
+              ],
+              "route_id": "2",
+              "scope": "outbound"
+            },
+            {
+              "calls": [
+                {
+                  "arrival_s": 38415,
+                  "departure_s": 38415,
+                  "stop_id": "13772"
+                },
+                {
+                  "arrival_s": 38665,
+                  "departure_s": 38665,
+                  "stop_id": "1435"
+                }
+              ],
+              "route_id": "2",
+              "scope": "outbound"
+            }
+          ]
+        },
+        {
+          "journey_id": "369b184b9fad63c15d8b",
+          "rides": [
+            {
+              "calls": [
+                {
+                  "arrival_s": 39391,
+                  "departure_s": 39391,
+                  "stop_id": "10491"
+                },
+                {
+                  "arrival_s": 40105,
+                  "departure_s": 40105,
+                  "stop_id": "1435"
+                }
+              ],
+              "route_id": "2",
+              "scope": "outbound"
+            }
+          ]
+        },
+        {
+          "journey_id": "3d2ac4bc9b683d64bff9",
+          "rides": [
+            {
+              "calls": [
+                {
+                  "arrival_s": 37951,
+                  "departure_s": 37951,
+                  "stop_id": "10491"
+                },
+                {
+                  "arrival_s": 38665,
+                  "departure_s": 38665,
+                  "stop_id": "1435"
+                }
+              ],
+              "route_id": "2",
+              "scope": "outbound"
+            }
+          ]
+        }
+      ],
+      "remaining_ids": [
+        "c7"
+      ],
+      "updates": [
+        {
+          "after": [
+            "c5",
+            "c7"
+          ],
+          "before": [
+            "c0",
+            "c5",
+            "c6",
+            "c7"
+          ],
+          "journey_id": "00de85f0851f9bd12d64",
+          "judgment": {
+            "reason": "The journey starts exactly at the requested time and follows the correct route with the specified stops.",
+            "spans": [
+              {
+                "end": 5,
+                "start": 0
+              }
+            ],
+            "verdict": "satisfied"
+          },
+          "reference_accepts": true,
+          "reference_candidates_after": [
+            "c5"
+          ]
+        },
+        {
+          "after": [
+            "c7"
+          ],
+          "before": [
+            "c5",
+            "c7"
+          ],
+          "journey_id": "004977e99b44fd327c54",
+          "judgment": {
+            "reason": "The concrete journey meets all the requirements of the original request, including the correct stops, the number of transfers, and the arrival at SE Division & 20th Ave on time.",
+            "spans": [
+              {
+                "end": 5,
+                "start": 0
+              }
+            ],
+            "verdict": "satisfied"
+          },
+          "reference_accepts": false,
+          "reference_candidates_after": []
+        }
+      ],
+      "witnesses": [
+        {
+          "cost": 1,
+          "journey_id": "00de85f0851f9bd12d64",
+          "policy": "balanced",
+          "score": 4.0,
+          "score_numerator": 4,
+          "separated_pairs": [
+            [
+              "c0",
+              "c5",
+              2
+            ],
+            [
+              "c0",
+              "c7",
+              0
+            ],
+            [
+              "c5",
+              "c6",
+              2
+            ],
+            [
+              "c6",
+              "c7",
+              1
+            ]
+          ]
+        },
+        {
+          "cost": 1,
+          "journey_id": "004977e99b44fd327c54",
+          "policy": "balanced",
+          "score": 1.0,
+          "score_numerator": 1,
+          "separated_pairs": [
+            [
+              "c5",
+              "c7",
+              1
+            ]
+          ]
+        }
+      ]
+    },
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "latest_departure",
+          "target": 36511
+        }
+      ]
+    },
+    "request": "On 2026-09-14, plan the outbound journey from SW 5th & Hall [stop_id=10491] to SE Division & 20th Ave [stop_id=1435]. Depart no later than 10:08:31, inclusive.",
+    "row": {
+      "G": true,
+      "S": false,
+      "any_candidate_selected_plan_correct": true,
+      "arm": "B",
+      "candidate_count": 4,
+      "checkpoint": 8,
+      "final_plan_id": "3d2ac4bc9b683d64bff9",
+      "generation_tokens": 18746,
+      "judgments": 2,
+      "logical_calls": 10,
+      "logical_tokens": 20146,
+      "oracle_plan_id": "23dc77966eb67609fd49",
+      "oracle_witness_correct": true,
+      "oracle_witness_outcome": "correct_feasible_plan",
+      "outcome": "incorrect_plan",
+      "parsed": 8,
+      "pool_size": 128,
+      "reference_feasible": true,
+      "scenario_id": "sampling-12",
+      "validation_tokens": 1400
+    },
+    "stops": {
+      "10425": "NE Weidler & 15th",
+      "10472": "SE Milwaukie & Powell",
+      "10491": "SW 5th & Hall",
+      "10953": "NE Grand & Wasco",
+      "1097": "Rose Quarter Transit Center",
+      "11480": "N Williams & NE Weidler",
+      "11486": "SW 6th & Columbia",
+      "11492": "NE Multnomah & 3rd",
+      "11817": "Rose Quarter Transit Center",
+      "12791": "SW Jefferson & 5th",
+      "13732": "South Waterfront/S Moody",
+      "13733": "South Waterfront/S Moody",
+      "1375": "SE Division & 12th Ave",
+      "13772": "OMSI/SE Water",
+      "13773": "OMSI/SE Water",
+      "13778": "SE Division Pl & 8th",
+      "13780": "SW Hall & 5th",
+      "13791": "SE Milwaukie & Gideon",
+      "13792": "SE Powell & 12th",
+      "13825": "SE 7th & Tilikum Way",
+      "14243": "SE Division & 20th Ave",
+      "14244": "SE Division & 11th Ave",
+      "1435": "SE Division & 20th Ave",
+      "14656": "2200 Block NE Weidler",
+      "1612": "NW Everett & 2nd",
+      "2592": "Rose Quarter Transit Center",
+      "3007": "NW Irving & 5th",
+      "3397": "300 Block SW Lincoln",
+      "3398": "SW Lincoln & 1st",
+      "3639": "SW Madison & 4th",
+      "4538": "SE Powell & Milwaukie",
+      "5958": "NE M L King & Wasco",
+      "5960": "NE M L King & Weidler",
+      "6001": "N Vancouver & Page",
+      "6008": "N Vancouver & Tillamook",
+      "6009": "N Vancouver & Weidler",
+      "6216": "NE Weidler & Lloyd Center",
+      "6235": "NE Weidler & 21st",
+      "6240": "NE Weidler & 7th",
+      "629": "NE Broadway & 12th",
+      "631": "NE Broadway & 16th",
+      "634": "NE Broadway & 21st",
+      "635": "NE Broadway & 24th",
+      "6357": "N Williams & NE Broadway",
+      "6370": "N Williams & NE Tillamook",
+      "655": "NE Broadway & 7th",
+      "7594": "SW 5th & Columbia",
+      "7602": "SW 5th & Harrison",
+      "7631": "SW 5th & Pine",
+      "7634": "SW 5th & Salmon",
+      "7636": "SW 5th & Harvey Milk",
+      "7640": "SW 5th & Taylor",
+      "7642": "SW 5th & Washington",
+      "7747": "SW 6th & Alder",
+      "7751": "SW 6th & W Burnside",
+      "7756": "SW 6th & Clay",
+      "7765": "SW 6th & Jefferson",
+      "7767": "SW 6th & Main",
+      "7772": "SW 6th & Market",
+      "7773": "SW 6th & Mill",
+      "7789": "SW 6th & Salmon",
+      "7797": "SW 6th & Harvey Milk",
+      "7800": "SW 6th & Taylor",
+      "7803": "SW 6th & Washington",
+      "8886": "NW Everett & 5th",
+      "9300": "NW 6th & Flanders",
+      "9301": "NW 5th & Davis",
+      "9302": "NW 5th & Hoyt",
+      "9311": "NW Glisan & 3rd",
+      "9362": "NE Multnomah & 3rd"
+    }
+  },
+  "sampling-20": {
+    "arm": "A",
+    "oracle": {
+      "candidates": [
+        {
+          "acceptance_bits": "00100000000000000000000000000000000000000000000000000000000000000100100000000001000000000000000000000000000000001000000000000000",
+          "aliases": [
+            "c0"
+          ],
+          "candidate_id": "c0",
+          "formula": {
+            "children": [
+              {
+                "kind": "atom",
+                "op": "depart_ge",
+                "scope": "outbound",
+                "source": null,
+                "unit": "seconds",
+                "value": 39550
+              },
+              {
+                "kind": "atom",
+                "op": "arrive_by",
+                "scope": "outbound",
+                "source": null,
+                "unit": "seconds",
+                "value": 42300
+              }
+            ],
+            "kind": "all",
+            "source": null
+          },
+          "plan": {
+            "plan_id": "2ba084255b08719b7312",
+            "reason": null,
+            "solver_seconds": 0.0056639008689671755,
+            "status": "satisfiable"
+          },
+          "reference_equivalent": false
+        },
+        {
+          "acceptance_bits": "10110000011010100010000101000000010110111110000000000111101110010101111100000001111010100101001100000000110001101011000001000001",
+          "aliases": [
+            "c1",
+            "c2",
+            "c3",
+            "c4",
+            "c5",
+            "c7"
+          ],
+          "candidate_id": "c1",
+          "formula": {
+            "kind": "atom",
+            "op": "depart_ge",
+            "scope": "outbound",
+            "source": null,
+            "unit": "seconds",
+            "value": 39550
+          },
+          "plan": {
+            "plan_id": "2ba084255b08719b7312",
+            "reason": null,
+            "solver_seconds": 0.005537470104172826,
+            "status": "satisfiable"
+          },
+          "reference_equivalent": false
+        },
+        {
+          "acceptance_bits": "10110100011010100010011101000100110110111111000001000111101110010101111110100001111010100101001100000000110001101011000001000001",
+          "aliases": [
+            "c6"
+          ],
+          "candidate_id": "c6",
+          "formula": {
+            "kind": "atom",
+            "op": "depart_ge",
+            "scope": "outbound",
+            "source": null,
+            "unit": "seconds",
+            "value": 39300
+          },
+          "plan": {
+            "plan_id": "0ce2d0f97e8a8824a218",
+            "reason": null,
+            "solver_seconds": 0.005018085008487105,
+            "status": "satisfiable"
+          },
+          "reference_equivalent": false
+        }
+      ],
+      "events": [
+        "no_distinguishing_witness_in_completed_pool"
+      ],
+      "final_plan_id": "2ba084255b08719b7312",
+      "journeys": [
+        {
+          "journey_id": "0046a48e25e956543682",
+          "rides": [
+            {
+              "calls": [
+                {
+                  "arrival_s": 41100,
+                  "departure_s": 41100,
+                  "stop_id": "4538"
+                },
+                {
+                  "arrival_s": 41307,
+                  "departure_s": 41307,
+                  "stop_id": "13773"
+                }
+              ],
+              "route_id": "4",
+              "scope": "outbound"
+            },
+            {
+              "calls": [
+                {
+                  "arrival_s": 43497,
+                  "departure_s": 43497,
+                  "stop_id": "13773"
+                },
+                {
+                  "arrival_s": 44089,
+                  "departure_s": 44089,
+                  "stop_id": "7756"
+                }
+              ],
+              "route_id": "17",
+              "scope": "outbound"
+            }
+          ]
+        },
+        {
+          "journey_id": "0ce2d0f97e8a8824a218",
+          "rides": [
+            {
+              "calls": [
+                {
+                  "arrival_s": 39300,
+                  "departure_s": 39300,
+                  "stop_id": "4538"
+                },
+                {
+                  "arrival_s": 39660,
+                  "departure_s": 39660,
+                  "stop_id": "13733"
+                }
+              ],
+              "route_id": "4",
+              "scope": "outbound"
+            },
+            {
+              "calls": [
+                {
+                  "arrival_s": 40020,
+                  "departure_s": 40020,
+                  "stop_id": "13733"
+                },
+                {
+                  "arrival_s": 40489,
+                  "departure_s": 40489,
+                  "stop_id": "7756"
+                }
+              ],
+              "route_id": "17",
+              "scope": "outbound"
+            }
+          ]
+        },
+        {
+          "journey_id": "2ba084255b08719b7312",
+          "rides": [
+            {
+              "calls": [
+                {
+                  "arrival_s": 41460,
+                  "departure_s": 41460,
+                  "stop_id": "4538"
+                },
+                {
+                  "arrival_s": 42289,
+                  "departure_s": 42289,
+                  "stop_id": "7756"
+                }
+              ],
+              "route_id": "17",
+              "scope": "outbound"
+            }
+          ]
+        }
+      ],
+      "remaining_ids": [
+        "c0"
+      ],
+      "updates": [
+        {
+          "after": [
+            "c0"
+          ],
+          "before": [
+            "c0",
+            "c1",
+            "c6"
+          ],
+          "journey_id": "0046a48e25e956543682",
+          "judgment": {
+            "reason": "privileged independent reference evaluator",
+            "spans": [],
+            "verdict": "violated"
+          },
+          "reference_accepts": false,
+          "reference_candidates_after": []
+        }
+      ],
+      "witnesses": [
+        {
+          "cost": 1,
+          "journey_id": "0046a48e25e956543682",
+          "policy": "balanced",
+          "score": 2.0,
+          "score_numerator": 2,
+          "separated_pairs": [
+            [
+              "c0",
+              "c1",
+              0
+            ],
+            [
+              "c0",
+              "c6",
+              1
+            ]
+          ]
+        }
+      ]
+    },
+    "ordinary": {
+      "candidates": [
+        {
+          "acceptance_bits": "00100000000000000000000000000000000000000000000000000000000000000100100000000001000000000000000000000000000000001000000000000000",
+          "aliases": [
+            "c0"
+          ],
+          "candidate_id": "c0",
+          "formula": {
+            "children": [
+              {
+                "kind": "atom",
+                "op": "depart_ge",
+                "scope": "outbound",
+                "source": null,
+                "unit": "seconds",
+                "value": 39550
+              },
+              {
+                "kind": "atom",
+                "op": "arrive_by",
+                "scope": "outbound",
+                "source": null,
+                "unit": "seconds",
+                "value": 42300
+              }
+            ],
+            "kind": "all",
+            "source": null
+          },
+          "plan": {
+            "plan_id": "2ba084255b08719b7312",
+            "reason": null,
+            "solver_seconds": 0.0056639008689671755,
+            "status": "satisfiable"
+          },
+          "reference_equivalent": false
+        },
+        {
+          "acceptance_bits": "10110000011010100010000101000000010110111110000000000111101110010101111100000001111010100101001100000000110001101011000001000001",
+          "aliases": [
+            "c1",
+            "c2",
+            "c3",
+            "c4",
+            "c5",
+            "c7"
+          ],
+          "candidate_id": "c1",
+          "formula": {
+            "kind": "atom",
+            "op": "depart_ge",
+            "scope": "outbound",
+            "source": null,
+            "unit": "seconds",
+            "value": 39550
+          },
+          "plan": {
+            "plan_id": "2ba084255b08719b7312",
+            "reason": null,
+            "solver_seconds": 0.005537470104172826,
+            "status": "satisfiable"
+          },
+          "reference_equivalent": false
+        },
+        {
+          "acceptance_bits": "10110100011010100010011101000100110110111111000001000111101110010101111110100001111010100101001100000000110001101011000001000001",
+          "aliases": [
+            "c6"
+          ],
+          "candidate_id": "c6",
+          "formula": {
+            "kind": "atom",
+            "op": "depart_ge",
+            "scope": "outbound",
+            "source": null,
+            "unit": "seconds",
+            "value": 39300
+          },
+          "plan": {
+            "plan_id": "0ce2d0f97e8a8824a218",
+            "reason": null,
+            "solver_seconds": 0.005018085008487105,
+            "status": "satisfiable"
+          },
+          "reference_equivalent": false
+        }
+      ],
+      "events": [],
+      "final_plan_id": "0ce2d0f97e8a8824a218",
+      "journeys": [
+        {
+          "journey_id": "0046a48e25e956543682",
+          "rides": [
+            {
+              "calls": [
+                {
+                  "arrival_s": 41100,
+                  "departure_s": 41100,
+                  "stop_id": "4538"
+                },
+                {
+                  "arrival_s": 41307,
+                  "departure_s": 41307,
+                  "stop_id": "13773"
+                }
+              ],
+              "route_id": "4",
+              "scope": "outbound"
+            },
+            {
+              "calls": [
+                {
+                  "arrival_s": 43497,
+                  "departure_s": 43497,
+                  "stop_id": "13773"
+                },
+                {
+                  "arrival_s": 44089,
+                  "departure_s": 44089,
+                  "stop_id": "7756"
+                }
+              ],
+              "route_id": "17",
+              "scope": "outbound"
+            }
+          ]
+        },
+        {
+          "journey_id": "03c572f19409b8bd2a6c",
+          "rides": [
+            {
+              "calls": [
+                {
+                  "arrival_s": 39300,
+                  "departure_s": 39300,
+                  "stop_id": "4538"
+                },
+                {
+                  "arrival_s": 39660,
+                  "departure_s": 39660,
+                  "stop_id": "13733"
+                }
+              ],
+              "route_id": "4",
+              "scope": "outbound"
+            },
+            {
+              "calls": [
+                {
+                  "arrival_s": 43620,
+                  "departure_s": 43620,
+                  "stop_id": "13733"
+                },
+                {
+                  "arrival_s": 44089,
+                  "departure_s": 44089,
+                  "stop_id": "7756"
+                }
+              ],
+              "route_id": "17",
+              "scope": "outbound"
+            }
+          ]
+        },
+        {
+          "journey_id": "0ce2d0f97e8a8824a218",
+          "rides": [
+            {
+              "calls": [
+                {
+                  "arrival_s": 39300,
+                  "departure_s": 39300,
+                  "stop_id": "4538"
+                },
+                {
+                  "arrival_s": 39660,
+                  "departure_s": 39660,
+                  "stop_id": "13733"
+                }
+              ],
+              "route_id": "4",
+              "scope": "outbound"
+            },
+            {
+              "calls": [
+                {
+                  "arrival_s": 40020,
+                  "departure_s": 40020,
+                  "stop_id": "13733"
+                },
+                {
+                  "arrival_s": 40489,
+                  "departure_s": 40489,
+                  "stop_id": "7756"
+                }
+              ],
+              "route_id": "17",
+              "scope": "outbound"
+            }
+          ]
+        },
+        {
+          "journey_id": "2ba084255b08719b7312",
+          "rides": [
+            {
+              "calls": [
+                {
+                  "arrival_s": 41460,
+                  "departure_s": 41460,
+                  "stop_id": "4538"
+                },
+                {
+                  "arrival_s": 42289,
+                  "departure_s": 42289,
+                  "stop_id": "7756"
+                }
+              ],
+              "route_id": "17",
+              "scope": "outbound"
+            }
+          ]
+        }
+      ],
+      "remaining_ids": [
+        "c6"
+      ],
+      "updates": [
+        {
+          "after": [
+            "c1",
+            "c6"
+          ],
+          "before": [
+            "c0",
+            "c1",
+            "c6"
+          ],
+          "journey_id": "0046a48e25e956543682",
+          "judgment": {
+            "reason": "The concrete journey meets all the requirements of the original request, including the correct stops, route, and departure time.",
+            "spans": [
+              {
+                "end": 5,
+                "start": 0
+              }
+            ],
+            "verdict": "satisfied"
+          },
+          "reference_accepts": false,
+          "reference_candidates_after": []
+        },
+        {
+          "after": [
+            "c6"
+          ],
+          "before": [
+            "c1",
+            "c6"
+          ],
+          "journey_id": "03c572f19409b8bd2a6c",
+          "judgment": {
+            "reason": "The journey starts on the correct date, departs from the correct stop, arrives at the destination, and adheres to the departure time constraint.",
+            "spans": [
+              {
+                "end": 5,
+                "start": 0
+              }
+            ],
+            "verdict": "satisfied"
+          },
+          "reference_accepts": true,
+          "reference_candidates_after": []
+        }
+      ],
+      "witnesses": [
+        {
+          "cost": 1,
+          "journey_id": "0046a48e25e956543682",
+          "policy": "balanced",
+          "score": 2.0,
+          "score_numerator": 2,
+          "separated_pairs": [
+            [
+              "c0",
+              "c1",
+              0
+            ],
+            [
+              "c0",
+              "c6",
+              1
+            ]
+          ]
+        },
+        {
+          "cost": 1,
+          "journey_id": "03c572f19409b8bd2a6c",
+          "policy": "balanced",
+          "score": 1.0,
+          "score_numerator": 1,
+          "separated_pairs": [
+            [
+              "c1",
+              "c6",
+              1
+            ]
+          ]
+        }
+      ]
+    },
+    "reference": {
+      "and": [
+        {
+          "direction": "outbound",
+          "requirement": "latest_departure",
+          "target": 39300
+        }
+      ]
+    },
+    "request": "On 2026-09-14, plan the outbound journey from SE Powell & Milwaukie [stop_id=4538] to SW 6th & Clay [stop_id=7756]. Depart no later than 10:55:00, inclusive.",
+    "row": {
+      "G": false,
+      "S": true,
+      "any_candidate_selected_plan_correct": true,
+      "arm": "A",
+      "candidate_count": 3,
+      "checkpoint": 8,
+      "final_plan_id": "0ce2d0f97e8a8824a218",
+      "generation_tokens": 18556,
+      "judgments": 2,
+      "logical_calls": 10,
+      "logical_tokens": 20099,
+      "oracle_plan_id": "2ba084255b08719b7312",
+      "oracle_witness_correct": false,
+      "oracle_witness_outcome": "incorrect_plan",
+      "outcome": "correct_feasible_plan",
+      "parsed": 8,
+      "pool_size": 128,
+      "reference_feasible": true,
+      "scenario_id": "sampling-20",
+      "validation_tokens": 1543
+    },
+    "stops": {
+      "10425": "NE Weidler & 15th",
+      "10472": "SE Milwaukie & Powell",
+      "10491": "SW 5th & Hall",
+      "10953": "NE Grand & Wasco",
+      "1097": "Rose Quarter Transit Center",
+      "11480": "N Williams & NE Weidler",
+      "11486": "SW 6th & Columbia",
+      "11492": "NE Multnomah & 3rd",
+      "11817": "Rose Quarter Transit Center",
+      "12791": "SW Jefferson & 5th",
+      "13732": "South Waterfront/S Moody",
+      "13733": "South Waterfront/S Moody",
+      "1375": "SE Division & 12th Ave",
+      "13772": "OMSI/SE Water",
+      "13773": "OMSI/SE Water",
+      "13778": "SE Division Pl & 8th",
+      "13780": "SW Hall & 5th",
+      "13791": "SE Milwaukie & Gideon",
+      "13792": "SE Powell & 12th",
+      "13825": "SE 7th & Tilikum Way",
+      "14243": "SE Division & 20th Ave",
+      "14244": "SE Division & 11th Ave",
+      "1435": "SE Division & 20th Ave",
+      "14656": "2200 Block NE Weidler",
+      "1612": "NW Everett & 2nd",
+      "2592": "Rose Quarter Transit Center",
+      "3007": "NW Irving & 5th",
+      "3397": "300 Block SW Lincoln",
+      "3398": "SW Lincoln & 1st",
+      "3639": "SW Madison & 4th",
+      "4538": "SE Powell & Milwaukie",
+      "5958": "NE M L King & Wasco",
+      "5960": "NE M L King & Weidler",
+      "6001": "N Vancouver & Page",
+      "6008": "N Vancouver & Tillamook",
+      "6009": "N Vancouver & Weidler",
+      "6216": "NE Weidler & Lloyd Center",
+      "6235": "NE Weidler & 21st",
+      "6240": "NE Weidler & 7th",
+      "629": "NE Broadway & 12th",
+      "631": "NE Broadway & 16th",
+      "634": "NE Broadway & 21st",
+      "635": "NE Broadway & 24th",
+      "6357": "N Williams & NE Broadway",
+      "6370": "N Williams & NE Tillamook",
+      "655": "NE Broadway & 7th",
+      "7594": "SW 5th & Columbia",
+      "7602": "SW 5th & Harrison",
+      "7631": "SW 5th & Pine",
+      "7634": "SW 5th & Salmon",
+      "7636": "SW 5th & Harvey Milk",
+      "7640": "SW 5th & Taylor",
+      "7642": "SW 5th & Washington",
+      "7747": "SW 6th & Alder",
+      "7751": "SW 6th & W Burnside",
+      "7756": "SW 6th & Clay",
+      "7765": "SW 6th & Jefferson",
+      "7767": "SW 6th & Main",
+      "7772": "SW 6th & Market",
+      "7773": "SW 6th & Mill",
+      "7789": "SW 6th & Salmon",
+      "7797": "SW 6th & Harvey Milk",
+      "7800": "SW 6th & Taylor",
+      "7803": "SW 6th & Washington",
+      "8886": "NW Everett & 5th",
+      "9300": "NW 6th & Flanders",
+      "9301": "NW 5th & Davis",
+      "9302": "NW 5th & Hoyt",
+      "9311": "NW Glisan & 3rd",
+      "9362": "NE Multnomah & 3rd"
+    }
+  }
+}

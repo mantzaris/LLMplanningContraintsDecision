@@ -1,0 +1,48 @@
+{
+  "main": {
+    "pages": 8,
+    "characters_excluding_whitespace": 26880,
+    "all_fonts_embedded": true,
+    "overfull_boxes": 0,
+    "unresolved_references": 0,
+    "sha256": "f3a34683c3d8dd1f06515dea3a96485603503dfdeac9f21ae198b92b455fc124"
+  },
+  "diff": {
+    "pages": 12,
+    "characters_excluding_whitespace": 51659,
+    "all_fonts_embedded": true,
+    "overfull_boxes": 0,
+    "unresolved_references": 0,
+    "sha256": "d8a095bf6ca52a9616cdc38e40fb60f3a4c077a569382247f6b6b629d3af7c33"
+  },
+  "response-to-reviewers": {
+    "pages": 2,
+    "characters_excluding_whitespace": 6431,
+    "all_fonts_embedded": true,
+    "overfull_boxes": 0,
+    "unresolved_references": 0,
+    "sha256": "0f1320bec6ceffc12eb1024f34fb70d631869721b4ee01db3c63e2c9cbf69a6f"
+  },
+  "reproducibility": {
+    "pages": 9,
+    "characters_excluding_whitespace": 21214,
+    "all_fonts_embedded": true,
+    "overfull_boxes": 0,
+    "unresolved_references": 0,
+    "sha256": "4c2b1f5d4a36b071e72fd8c102876e3df863b079a08df4d61cb164d38da44e30"
+  },
+  "title_unchanged": true,
+  "abstract_unchanged": true,
+  "template_dependencies_unchanged": true,
+  "figure_input_data_unchanged": true,
+  "isolated_main_build": true,
+  "new_experimental_generations": 0,
+  "human_reference_adjudication": false,
+  "original_analysis_tests": "4 passed",
+  "visual_inspection": "All main and diff pages rendered and inspected; companion and response pages inspected.",
+  "sources_checked": {
+    "added_reference": "https://aclanthology.org/2025.findings-acl.1291/",
+    "conference_guidelines": "https://icaart.scitevents.org/Guidelines.aspx",
+    "public_repository": "https://github.com/mantzaris/LLMplanningContraintsDecision"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "method": "LaTeX body from first section to bibliography, tokens \\w+|[^\\w\\s]; SequenceMatcher(autojunk=False). Excludes title, abstract, author block, bibliography. Source-token metric, not a semantic similarity score.",
+  "paper-revised": {
+    "original_tokens": 5228,
+    "revised_tokens": 5807,
+    "retained_original_tokens": 3285,
+    "deleted_or_replaced_tokens": 1943,
+    "added_tokens": 2522,
+    "original_body_retained_percent": 62.83
+  },
+  "paper-revised2": {
+    "original_tokens": 5228,
+    "revised_tokens": 6328,
+    "retained_original_tokens": 4984,
+    "deleted_or_replaced_tokens": 244,
+    "added_tokens": 1344,
+    "original_body_retained_percent": 95.33
+  },
+  "reduction_in_changed_tokens_percent": 64.43
+}

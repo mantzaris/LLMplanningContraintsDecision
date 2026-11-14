@@ -1,0 +1,34 @@
+Translate the original request into the specified JSON constraint language, not Python.
+Return one JSON object only: status ok, formula, unsupported []; or status unsupported,
+formula null, unsupported [description]. Never omit an unsupported requirement silently.
+Formula nodes: {kind:all,children:[...]}, {kind:not,child:...}, or
+{kind:atom,op:...,scope:...,value:...,unit:...,source:null or {start:...,end:...}}.
+IMPORTANT: Every leaf must have "kind":"atom" AND a separate "op" key.
+An operation such as arrive_by or depart_ge is NEVER a kind.
+For example, a standalone requirement to leave at or after 01:02:00 is:
+{"status":"ok","formula":{"kind":"atom","op":"depart_ge","scope":"outbound",
+"value":3720,"unit":"seconds","source":null},"unsupported":[]}.
+Do not copy that example's time; translate the actual request. Convert HH:MM:SS
+using HH*3600 + MM*60 + SS, without a timezone offset or AM/PM conversion.
+Source offsets are zero-based half-open character offsets into the ORIGINAL request.
+Use source:null if unsure. Scope is all or an explicitly named public segment.
+Ops: arrive_by (arrival <= seconds), depart_ge (departure >= seconds),
+depart_le (departure <= seconds), max_transfers (<= count), permit_modes (all modes in list),
+exclude_modes (no mode in list), visits (ordered list of stop_id scheduled calls).
+Units: seconds for times since service-day origin, count for transfers, mode for mode lists,
+stop_id for visits. Time bounds are inclusive. 07:30:00 = 27000 seconds.
+Modes: bus, tram, rail, subway, ferry, cable, gondola, funicular.
+Transfers are boardings minus one within each public segment; all sums those counts.
+A visit is a scheduled call including remaining aboard, without a dwell guarantee.
+All time atoms over scope all use the first departure or final arrival of the entire itinerary.
+Only conjunction and negation are supported: conditions, accessibility, fares, capacity,
+walking and arbitrary duration/dwell constraints are unsupported.
+Public segment endpoints/horizons define the common universe and need not be copied into constraints.
+Include every additional requirement of the original request. Do not solve or guess a journey.
+
+Exact JSON schema:
+{"$defs":{"All":{"additionalProperties":false,"properties":{"children":{"items":{"discriminator":{"mapping":{"all":"#/$defs/All","atom":"#/$defs/Atom","not":"#/$defs/Not"},"propertyName":"kind"},"oneOf":[{"$ref":"#/$defs/Atom"},{"$ref":"#/$defs/All"},{"$ref":"#/$defs/Not"}]},"title":"Children","type":"array"},"kind":{"const":"all","title":"Kind","type":"string"},"source":{"anyOf":[{"$ref":"#/$defs/Span"},{"type":"null"}],"default":null}},"required":["kind","children"],"title":"All","type":"object"},"Atom":{"additionalProperties":false,"properties":{"kind":{"const":"atom","title":"Kind","type":"string"},"op":{"enum":["arrive_by","depart_ge","depart_le","max_transfers","permit_modes","exclude_modes","visits"],"title":"Op","type":"string"},"scope":{"title":"Scope","type":"string"},"source":{"anyOf":[{"$ref":"#/$defs/Span"},{"type":"null"}],"default":null},"unit":{"enum":["seconds","count","mode","stop_id"],"title":"Unit","type":"string"},"value":{"anyOf":[{"type":"integer"},{"items":{"enum":["bus","tram","rail","subway","ferry","cable","gondola","funicular"],"type":"string"},"type":"array"},{"items":{"type":"string"},"type":"array"}],"title":"Value"}},"required":["kind","op","scope","value","unit"],"title":"Atom","type":"object"},"Not":{"additionalProperties":false,"properties":{"child":{"discriminator":{"mapping":{"all":"#/$defs/All","atom":"#/$defs/Atom","not":"#/$defs/Not"},"propertyName":"kind"},"oneOf":[{"$ref":"#/$defs/Atom"},{"$ref":"#/$defs/All"},{"$ref":"#/$defs/Not"}],"title":"Child"},"kind":{"const":"not","title":"Kind","type":"string"},"source":{"anyOf":[{"$ref":"#/$defs/Span"},{"type":"null"}],"default":null}},"required":["kind","child"],"title":"Not","type":"object"},"Span":{"additionalProperties":false,"properties":{"end":{"minimum":0,"title":"End","type":"integer"},"start":{"minimum":0,"title":"Start","type":"integer"}},"required":["start","end"],"title":"Span","type":"object"}},"additionalProperties":false,"properties":{"formula":{"anyOf":[{"discriminator":{"mapping":{"all":"#/$defs/All","atom":"#/$defs/Atom","not":"#/$defs/Not"},"propertyName":"kind"},"oneOf":[{"$ref":"#/$defs/Atom"},{"$ref":"#/$defs/All"},{"$ref":"#/$defs/Not"}]},{"type":"null"}],"title":"Formula"},"status":{"enum":["ok","unsupported"],"title":"Status","type":"string"},"unsupported":{"default":[],"items":{"type":"string"},"title":"Unsupported","type":"array"}},"required":["status","formula"],"title":"Interpretation","type":"object"}
+Public metadata:
+{"max_rides_per_segment":2,"minimum_connection_s":120,"scenario_id":"illustration","segments":[{"destination":"destination","end_s":36000,"origin":"origin","scope":"outbound","start_s":25200}],"service_date":"2026-09-14","stops":{"destination":"Destination","origin":"Origin"},"timezone":"America/Los_Angeles"}
+ORIGINAL request:
+On the outbound segment only, arrive by 09:00:00 with at most one transfer.

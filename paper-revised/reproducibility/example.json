@@ -1,0 +1,25 @@
+{
+  "status": "ok",
+  "formula": {
+    "kind": "all",
+    "children": [
+      {
+        "kind": "atom",
+        "op": "arrive_by",
+        "scope": "outbound",
+        "value": 32400,
+        "unit": "seconds",
+        "source": null
+      },
+      {
+        "kind": "atom",
+        "op": "max_transfers",
+        "scope": "outbound",
+        "value": 1,
+        "unit": "count",
+        "source": null
+      }
+    ]
+  },
+  "unsupported": []
+}

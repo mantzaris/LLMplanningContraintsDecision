@@ -1,0 +1,43 @@
+{
+  "main": {
+    "pages": 9,
+    "characters_excluding_whitespace": 31436,
+    "all_fonts_embedded": true,
+    "overfull_boxes": 0,
+    "unresolved_references": 0,
+    "sha256": "a143f0661267e8b01f5017a45ee5d9f05b75a31962348368394a4bd38a25ce40"
+  },
+  "diff": {
+    "pages": 10,
+    "characters_excluding_whitespace": 37445,
+    "all_fonts_embedded": true,
+    "overfull_boxes": 0,
+    "unresolved_references": 0,
+    "sha256": "6e085aa1a45d0c9573a8345ad11ecb0eb2c740e5968b863ff541d0bf053b8166"
+  },
+  "response-to-reviewers": {
+    "pages": 2,
+    "characters_excluding_whitespace": 6462,
+    "all_fonts_embedded": true,
+    "overfull_boxes": 0,
+    "unresolved_references": 0,
+    "sha256": "481c4b8357661fc51856ef2073030dedcf2bdc8c6ba19bb83bca19310be9f701"
+  },
+  "reproducibility": {
+    "pages": 9,
+    "characters_excluding_whitespace": 21213,
+    "all_fonts_embedded": true,
+    "overfull_boxes": 0,
+    "unresolved_references": 0,
+    "sha256": "8a1cb10a87459376dece40ffc9d8a7c9b5ec05992ad9e081987413274780a6ff"
+  },
+  "title_unchanged": true,
+  "abstract_unchanged": true,
+  "original_figures_unchanged": 4,
+  "figure_inclusion_sizes_unchanged": true,
+  "template_dependencies_unchanged": true,
+  "isolated_main_build": true,
+  "new_experimental_inference": 0,
+  "human_reference_adjudication": false,
+  "page_limit_note": "9 pages. Official normal short-paper allowance is 8; extra pages require the conference extra-page allowance and fee. No fee or submission action was taken."
+}

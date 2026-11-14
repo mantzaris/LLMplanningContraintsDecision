@@ -1,0 +1,7 @@
+def sampling_prompt(arm, index, scenario, pool, samples):
+    prompt = translation_prompt(scenario)
+    if arm != "A" and PERSPECTIVES[index]:
+        prompt += "\nSource-focused perspective:\n" + PERSPECTIVES[index]
+    if arm == "C" and index >= 2:
+        prompt += "\n" + feedback(scenario, pool, samples)
+    return prompt

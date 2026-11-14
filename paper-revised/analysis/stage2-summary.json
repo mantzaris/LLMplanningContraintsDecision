@@ -1,0 +1,142 @@
+{
+  "budgets": [
+    {
+      "budget": 0,
+      "correct": 31,
+      "method": "D",
+      "oracle_correct": 31,
+      "outcomes": {
+        "correct_feasible_plan": 28,
+        "correct_infeasibility": 3,
+        "false_infeasibility": 7,
+        "incorrect_plan": 5,
+        "invalid_model_output": 5
+      }
+    },
+    {
+      "budget": 1,
+      "correct": 33,
+      "method": "D",
+      "oracle_correct": 34,
+      "outcomes": {
+        "correct_feasible_plan": 30,
+        "correct_infeasibility": 3,
+        "false_infeasibility": 5,
+        "incorrect_plan": 5,
+        "invalid_model_output": 5
+      }
+    },
+    {
+      "budget": 2,
+      "correct": 33,
+      "method": "D",
+      "oracle_correct": 35,
+      "outcomes": {
+        "correct_feasible_plan": 30,
+        "correct_infeasibility": 3,
+        "false_infeasibility": 5,
+        "incorrect_plan": 5,
+        "invalid_model_output": 5
+      }
+    },
+    {
+      "budget": 4,
+      "correct": 33,
+      "method": "D",
+      "oracle_correct": 35,
+      "outcomes": {
+        "correct_feasible_plan": 30,
+        "correct_infeasibility": 3,
+        "false_infeasibility": 5,
+        "incorrect_plan": 5,
+        "invalid_model_output": 5
+      }
+    },
+    {
+      "budget": 0,
+      "correct": 31,
+      "method": "E",
+      "oracle_correct": 31,
+      "outcomes": {
+        "correct_feasible_plan": 28,
+        "correct_infeasibility": 3,
+        "false_infeasibility": 7,
+        "incorrect_plan": 5,
+        "invalid_model_output": 5
+      }
+    },
+    {
+      "budget": 1,
+      "correct": 33,
+      "method": "E",
+      "oracle_correct": 34,
+      "outcomes": {
+        "correct_feasible_plan": 30,
+        "correct_infeasibility": 3,
+        "false_infeasibility": 5,
+        "incorrect_plan": 5,
+        "invalid_model_output": 5
+      }
+    },
+    {
+      "budget": 2,
+      "correct": 33,
+      "method": "E",
+      "oracle_correct": 35,
+      "outcomes": {
+        "correct_feasible_plan": 30,
+        "correct_infeasibility": 3,
+        "false_infeasibility": 5,
+        "incorrect_plan": 5,
+        "invalid_model_output": 5
+      }
+    },
+    {
+      "budget": 4,
+      "correct": 33,
+      "method": "E",
+      "oracle_correct": 35,
+      "outcomes": {
+        "correct_feasible_plan": 30,
+        "correct_infeasibility": 3,
+        "false_infeasibility": 5,
+        "incorrect_plan": 5,
+        "invalid_model_output": 5
+      }
+    }
+  ],
+  "clause_coverage": {
+    "allowed_modes": {
+      "always_true": 8
+    },
+    "earliest_departure": {
+      "always_true": 7,
+      "separates": 22
+    },
+    "forbidden_modes": {
+      "always_false": 3,
+      "always_true": 8
+    },
+    "latest_arrival": {
+      "separates": 13
+    },
+    "latest_departure": {
+      "separates": 8
+    },
+    "ordered_calls": {
+      "always_true": 7,
+      "separates": 1
+    },
+    "transfer_limit": {
+      "always_true": 18,
+      "separates": 6
+    }
+  },
+  "n": 48,
+  "opportunity": {
+    "consequential": 18,
+    "distinguishable": 25,
+    "divergent_sequences": 2
+  },
+  "uniform_among_consequential": 14
+}

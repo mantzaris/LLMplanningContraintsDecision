@@ -1,0 +1,74 @@
+\documentclass[11pt,a4paper]{scrartcl}
+\usepackage[T1]{fontenc}
+\usepackage[margin=22mm]{geometry}
+\usepackage{lmodern}
+\usepackage{amsmath}
+\usepackage[hidelinks,breaklinks]{hyperref}
+\usepackage{xurl}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.4em}
+\hypersetup{pdftitle={Response to reviewers: ICAART 2027 paper 128},pdfauthor={}}
+\title{Response to reviewers}
+\subtitle{ICAART 2027, paper 128\\Linking Candidate Coverage to Decision Quality:\\A Framework for LLM Planning Evaluation}
+\author{}
+\date{November 2026}
+\begin{document}
+\begin{center}
+{\Large\sffamily\bfseries Response to reviewers}\\[0.5em]
+{\bfseries ICAART 2027, paper 128}\\
+Linking Candidate Coverage to Decision Quality:\\
+A Framework for LLM Planning Evaluation\\[0.4em]
+November 2026
+\end{center}
+
+Thank you for the comments. We added targeted definitions, pseudocode, and score descriptions, with longer implementation details in a separate reproducibility companion. The original structure, figures, title, abstract, and experimental results are unchanged. No new experimental inference or human adjudication was performed. Section numbers below refer to the revised paper; companion sections refer to \texttt{reproducibility.pdf}.
+
+\section*{Reviewer 1}
+
+\textbf{1(a), 1(g): Uninformative pools, masked clauses, families, truth vectors, and public metadata.}
+Section 2 now states that the pool is the finite planning universe and lists the public metadata that defines it. It explains a truth vector as the ordered list of a candidate's acceptance values. Section 2.3 distinguishes a constant clause from a varying clause whose effect is masked by other clauses. It explains that an uninformative pool can conceal other differences too, and gives examples of requirement families.
+
+\textbf{1(b), 1(c), 1(i): Validity, checkpoints, and behavioral signatures.}
+Section 2 defines a ``valid'' candidate as one that passes syntax, type, unit, entity, and source-span checks. This does not establish correctness. A prose definition precedes the signature equation. Section 2.1 defines a checkpoint as a sample allowance fixed before evaluation and gives the values used in both studies.
+
+\textbf{1(d), 1(e), 1(f): Witnesses, selectors, updates, shared states, and consequential disagreement.}
+Section 1.1 introduces the witness selector. Section 2 defines a witness, a candidate update, a validation sequence, and a shared state alongside Algorithm 1. Section 2.2 defines distinguishable candidate sets and consequential disagreement, and states that witness cost is one model judgment in both studies.
+
+\textbf{1(h): Bundles, classes, partitions, trajectories, and prefixes.}
+Section 2 defines a bundle as one request's candidate set and a behavioral class as candidates with the same signature. Section 2 explains the witness partition into accepting and rejecting candidates. It defines a trajectory or sequence as ordered sampling or validation steps, and a prefix as its initial part. These definitions apply to their uses in Sections 3--4.
+
+\textbf{2(a)--2(e): Consistent names and distinct uses of coverage and selection.}
+Section 2 equates candidate interpretation, formalization, and translation, and equates pool with planning universe. We use ``candidate coverage'' for $G$ and ``clause testing'' for the checks in Section 2.3. We distinguish witness selection from final candidate choice. Section 2.1 equates candidate coverage with availability, including the retained figure wording. The original figures are unchanged; the captions clarify $G$, and Section 4.2 now names final choice explicitly.
+
+\textbf{3: Complete pipeline, pseudocode, and LLM-as-formalizer framing.}
+Algorithm 1 at the start of Section 2 describes generation, deduplication, candidate planning, witness choice, judgment, elimination, and final choice. The highest-scoring unused separating journey is selected, with journey-ID tie-breaking. Uncertain or malformed judgments eliminate nothing, but the witness is not queried again. Validation stops at its judgment allowance, when no unused separating journey remains, or when the token allowance prevents another call. Because each witness separates the survivors, either definite label leaves at least one survivor; these studies do not replace or repair candidates. Section 1.1 adopts the LLM-as-formalizer framing and cites Tantakoun et al. (2025).
+
+\newpage
+\textbf{4: Which candidates enter $G_x$?}
+Section 2.1 now explicitly defines $\mathcal C_x$ as the valid candidates generated up to the checkpoint, after deduplication but before validation. Candidates later eliminated still count toward $G_x$.
+
+\textbf{5(a), 5(b): Unnecessary decomposition and notation.}
+We removed the total-probability equation while retaining the point that marginal totals do not determine the joint cells. Section 2.2 calls $I_{ij}$ a count rather than an indicator, with possible values 0, 1, and 2. Journeys use $w$, leaving $i,j$ for candidate indices.
+
+\textbf{5(c), 5(e): Formal scores, cost, choice rule, and motivation.}
+Section 2.2 defines the separated-pair set $P_A(w)$ and both scores in Equation 4, including positive cost, eligible journeys, maximization, and tie-breaking. Both studies use unit witness cost; token accounting is separate. The motivation is to prioritize disagreements that affect whether one candidate accepts another's selected plan. The text does not claim that this improves correctness.
+
+\textbf{6: Reference authorship, checking, audit, and attribution.}
+Section 3.1 explains that assistant-authored template code constructed requests and references together before model generation. A separate narrow wording parser checked the reference clauses, and a separate evaluator checked outcomes. The automated Study 1 audit checked all 48 requests and saved journeys; rescoring 432 outputs changed no category.
+
+These checks are not independent human adjudication. The references and disagreeing judgments have not received such adjudication, and the 80-request worksheet has no completed human-review decisions. We state this directly in Sections 3.1 and 6. Section 4.3 reports judgments that disagree with provisional references, and describes replay using reference labels. Section 5 conditions the diagnostic suggestion on reference correctness; Section 7 calls for independent review first. The revision therefore narrows the diagnosis; it does not claim that the reference-validation limitation has been resolved.
+
+\textbf{7(i)--7(iv): Language, prompts, normalization, and availability.}
+Section 3 gives the recursive language grammar and a complete symbolic atom example. Companion Section 1 supplies the JSON schema, types, semantics, and a complete parser-checked JSON response. Companion Sections 2--3 provide exact translation and judgment templates, all diversification perspectives, prompt assembly, journey rendering, and feedback formatting. Section 3.3 and companion Section 4 explain source-only time normalization, including its limits. The paper's Code and Data Availability statement links the public repository; companion Section 6 maps the source files and reproduction commands. Full historical logs and the frozen raw feed are outside the public repository, so a public checkout alone does not support complete raw-call replay.
+
+\textbf{7: Preserved outputs, throughput rule, and continuation thresholds.}
+Section 3.1 identifies the project's September 2026 Qwen runs as the source of the preserved outputs. Section 3.2 summarizes the timing forecast and fixed order for reducing replicates or requests. Section 4.2 states both continuation thresholds and that they were fixed before fresh outputs. Companion Section 5 supplies the exact forecast, reserves, freeze dates, commits, numerical allowances, and run provenance.
+
+\textbf{Presentation and conclusions.}
+We corrected specific grammatical errors and clarified terms without broadly rewriting the introduction, results, discussion, or conclusion. Sections 5--7 retain the original argument while making its dependence on provisional references explicit and identifying independent review as the first next step.
+
+\section*{Reviewer 2}
+
+Thank you. We retained both studies and their findings. The added definitions, pipeline description, and targeted English corrections address the presentation suggestions without changing the results.
+
+\end{document}

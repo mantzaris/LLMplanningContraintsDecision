@@ -1,0 +1,27 @@
+{
+  "scenario_id": "illustration",
+  "base_id": "illustration",
+  "split": "development",
+  "request": "On the outbound segment only, arrive by 09:00:00 with at most one transfer.",
+  "authorship": "illustrative example for reproducibility companion, not an experimental request",
+  "service_date": "2026-09-14",
+  "timezone": "America/Los_Angeles",
+  "stops": {
+    "origin": "Origin",
+    "destination": "Destination"
+  },
+  "segments": [
+    {
+      "scope": "outbound",
+      "origin": "origin",
+      "destination": "destination",
+      "start_s": 25200,
+      "end_s": 36000
+    }
+  ],
+  "pool_hash": "illustrative",
+  "feed_hash": "illustrative",
+  "max_rides_per_segment": 2,
+  "minimum_connection_s": 120,
+  "pool_complete": false
+}
