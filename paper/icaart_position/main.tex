@@ -17,161 +17,158 @@
 \title{Linking Candidate Coverage to Decision Quality: A Framework for LLM Planning Evaluation}
 \author{}
 \keywords{LLM Planning, Semantic Validation, Candidate Coverage, Decision Correctness, Evaluation.}
-\abstract{A traveler might ask a planning assistant for a journey arriving by 09:00 with at most one transfer. A language model translates the request into machine-checkable requirements that planning software uses to choose a journey. Confusing the arrival deadline with a departure deadline could produce a journey that passes those checks yet arrives late. An overall success rate cannot explain whether the system understood the request or selected well among possible translations. We propose an evaluation framework examining whether available journeys test the requirements, whether a correct translation was considered, whether example journeys distinguished relevant alternatives, and whether the selected outcome satisfied the request. Two exploratory transit case studies show how these measurements separate limited opportunities to change validation behavior from difficulties using available correct translations. Greater availability of matching translations did not necessarily increase final accuracy. Using constructed requests over published schedules and provisional reference requirements, the analysis connects interpretation, selection, outcomes, and computational cost. These measurements provide a structured basis for diagnosing outcomes and choosing which component to investigate next.}
+\abstract{A traveler might ask a planning assistant for a journey arriving by a certain time with at most one transfer. A language model translates the request into machine checkable requirements that planning software uses to choose a journey. Confusing the arrival deadline with a departure deadline could produce a journey that passes those checks yet arrives late. An overall success rate cannot explain whether the system understood the request or selected well among possible translations. We propose an evaluation framework examining whether available journeys test the requirements, whether a correct translation was considered, whether example journeys distinguished relevant alternatives, and whether the selected outcome satisfied the request. Two exploratory transit case studies show how these measurements separate limited opportunities to change validation behavior from difficulties using available correct translations. Greater availability of matching translations did not necessarily increase final accuracy. Using constructed requests over published schedules and provisional reference requirements, the analysis connects interpretation, selection, outcomes, and computational cost. These measurements provide a structured basis for diagnosing outcomes and choosing which component to investigate next.}
 \onecolumn \maketitle \normalsize \setcounter{footnote}{0} \vfill
 
 \section{\uppercase{Position and Contribution}}
 \label{sec:position}
-\noindent A traveler might ask an assistant: ``Find a journey arriving by 09:00 with no more than one transfer.'' In this illustrative task, people express requirements in ordinary language, while planning software needs precise conditions to check scheduled journeys. A language model translates the request into machine-checkable requirements so the system can choose a suitable journey.
-
-The system may consider several candidate interpretations, each a possible machine-checkable translation, and check them using validation examples: concrete journeys. Translating the arrival deadline into a departure deadline could allow a journey that arrives late to pass its checks. Conversely, that wrong translation could still select an on-time journey; success would not certify the translation. Checking examples can also mistakenly reject a correct translation. Understanding the outcome therefore requires following both the interpretations considered and the choices made among them.
-
+\noindent A traveler might ask an assistant to ``Find a journey arriving by 09:00 with no more than one transfer.'' In this illustrative task, people express requirements in ordinary language, while planning software needs precise conditions to check scheduled journeys. A language model translates the request into machine checkable requirements so the system can choose a suitable journey.
+The system may consider several candidate interpretations, each a possible machine checkable translation, and check them using validation examples of concrete journeys. Translating the arrival deadline into a departure deadline could allow a journey that arrives late to pass its checks. Conversely, that wrong translation could still select an on time journey, success would not certify the translation. Checking examples can also mistakenly reject a correct translation. Understanding the outcome therefore requires following both the interpretations considered and the choices made among them.
 We propose an evaluation framework examining these steps separately and linking them to final outcomes and the cost of model calls. Two exploratory transit case studies demonstrate how it separates opportunities to distinguish interpretations from the ability to use a correct translation successfully. The analysis helps researchers decide whether to investigate the available journey examples, translation, or selection. We organize the contribution into three elements.
+First is a linked evaluation framework that measures whether the translations include one matching separately specified reference requirements (a candidate coverage), and whether the returned outcome satisfies the reference evaluation (the final correctness). Both measures concern a stated set of possible journeys and connect to validation and cost.
+Second, two empirical demonstrations use these measurements to explain patterns hidden by aggregate accuracy.
+Third is a reproducible evaluation procedure which specifies request level records, coverage checks, trace inspection, and resource accounting for other planning pipelines.
 
-\textbf{First, a linked evaluation framework} measures whether the translations include one matching separately specified reference requirements (candidate coverage), and whether the returned outcome satisfies the reference evaluation (final correctness). Both measures concern a stated set of possible journeys and connect to validation and cost.
-
-\textbf{Second, two empirical demonstrations} use these measurements to explain patterns hidden by aggregate accuracy.
-
-\textbf{Third, a reproducible evaluation procedure} specifies request-level records, coverage checks, trace inspection, and resource accounting for other planning pipelines.
 
 \subsection{Relationship to Prior Evaluation Work}
 
 Comparisons of models as formalizers and solvers identify a translation bottleneck \cite{amonkar}. Our focus is the subsequent relationship between executable candidate sets and selected decisions.
+'Semantic Self-Verification' (SSV) checks and repairs formalizations using concrete instantiations, reporting accuracy, verification precision, and coverage \cite{ssv}. Its coverage measures receipt of verification and ours measures availability of reference matching behavior and connects it to decision correctness.
+'ARTEMIS' assesses accuracy and validation effort using low-complexity distinguishing traces \cite{artemis}. Our balanced selector adapts this idea to finite journey pools and model judgments, a different setting from human-assisted ARTEMIS.
+Sampling diversity research already distinguishes generating a correct solution from selecting it, including limits of majority voting \cite{diversity}. We instantiate that concern with journey acceptance vectors and both off-diagonal outcomes by losing a matching candidate and producing a correct plan without one.
+'VERGE' combines a equivalence based consensus, semantic alignment, solver feedback, and routing, reporting a formalization funnel, failure modes, and matched token comparisons \cite{verge}. These precedents inform our integration of candidate availability, final decisions, and benchmark semantic coverage on the same requests. The individual techniques are established, their connection in a concrete evaluation procedure is our focus.
 
-Semantic Self-Verification (SSV) checks and repairs formalizations using concrete instantiations, reporting accuracy, verification precision, and coverage \cite{ssv}. Its coverage measures receipt of verification; ours measures availability of reference-matching behavior and connects it to decision correctness.
 
-ARTEMIS assesses accuracy and validation effort using low-complexity distinguishing traces \cite{artemis}. Our balanced selector adapts this idea to finite journey pools and model judgments, a different setting from human-assisted ARTEMIS.
-
-Sampling-diversity research already distinguishes generating a correct solution from selecting it, including limits of majority voting \cite{diversity}. We instantiate that concern with journey acceptance vectors and both off-diagonal outcomes: losing a matching candidate and producing a correct plan without one.
-
-VERGE combines equivalence-based consensus, semantic alignment, solver feedback, and routing, reporting a formalization funnel, failure modes, and matched-token comparisons \cite{verge}. These precedents inform our integration of candidate availability, final decisions, and benchmark semantic coverage on the same requests. The individual techniques are established; their connection in a concrete evaluation procedure is our focus.
 
 \section{\uppercase{A Linked Evaluation Framework}}
 \label{sec:framework}
-\noindent Let $x$ be a request and $J_x$ its finite planning universe, constructed from published schedules and public scenario metadata. Each valid interpretation $C$ maps journeys to Boolean acceptance; $R_x$ denotes a separately specified reference evaluator. The behavioral signature is
+
+\noindent Let, $x$, be a request and $J_x$ its finite planning universe, constructed from published schedules and public scenario metadata. Each valid interpretation, $C$, maps journeys to Boolean acceptance, $R_x$, denotes a separately specified reference evaluator. The behavioral signature is
 \begin{equation}
   \sigma_{J_x}(C)=(C(j))_{j\in J_x}.
 \end{equation}
-Matching signatures establish equivalence only within $J_x$, not unrestricted logical equivalence or source fidelity. An uninformative universe can make different meanings behaviorally identical. References can also be wrong; their provenance must remain visible.
+Matching signatures establish equivalence only within, $J_x$, not unrestricted logical equivalence or source fidelity. An uninformative universe can make different meanings behaviorally identical. References can also be wrong; their provenance must remain visible.
+
+
 
 \subsection{Availability and Final Correctness}
 
-For the valid candidates $\mathcal{C}_x$ available at a frozen checkpoint, define
+For the valid candidates, $\mathcal{C}_x$, available at a frozen checkpoint, define
 \begin{equation}
  G_x=\mathbf{1}\{\exists C\in\mathcal{C}_x:
                  \sigma_{J_x}(C)=\sigma_{J_x}(R_x)\}.
 \end{equation}
-Let $S_x=1$ when the final output is either a journey satisfying $R_x$ or a correct conclusion that no journey in $J_x$ satisfies it. A timeout, malformed output, abstention, or false infeasibility claim is not a correct resolution. These categories should also be reported separately so that a method cannot appear better merely by returning fewer plans.
+Let, $S_x=1$, when the final output is either a journey satisfying, $R_x$, or a correct conclusion that no journey in, $J_x$, satisfies it. A timeout, malformed output, abstention, or false infeasibility claim is not a correct resolution. These categories should also be reported separately so that a method cannot appear better merely by returning fewer plans.
 
-The joint cells distinguish conversion $(1,1)$, loss despite availability $(1,0)$, success without a match $(0,1)$, and failure without one $(0,0)$. The ordinary probability decomposition
+The joint cells distinguish conversion, $(1,1)$, loss despite availability, $(1,0)$, success without a match, $(0,1)$, and failure without one, $(0,0)$. The ordinary probability decomposition
 \begin{align}
  P(S=1)={}&P(G=1)P(S=1\mid G=1)\nonumber\\
           &+P(G=0)P(S=1\mid G=0)
 \end{align}
 organizes availability and conditional correctness. Marginals do not determine the joint table. A formalization can accept wrong journeys while selecting a valid one. That success need not be accidental, but cannot certify the whole formalization.
+The cells guide trace inspection. A $(1,0)$ loss requires identifying its cause of judgment, tie-breaking, budget exhaustion, or candidate update. Similarly, $(0,0)$, requires checking candidate selected plans before concluding none was correct.
 
-The cells guide trace inspection. A $(1,0)$ loss requires identifying its cause: judgment, tie-breaking, budget exhaustion, or candidate update. Likewise, $(0,0)$ requires checking candidate-selected plans before concluding none was correct.
 
 \subsection{Consequential Distinguishability}
 
-Let $\pi_i$ be the deterministic plan selected under candidate $C_i$. A journey distinguishes $i$ and $j$ when their acceptance values differ. We used the consequence indicator
+Let, $\pi_i$, be the deterministic plan selected under candidate, $C_i$. A journey distinguishes $i$, and $j$ when their acceptance values differ. We used the consequence indicator
 \begin{equation}
  I_{ij}=\mathbf{1}\{\neg C_j(\pi_i)\}
        +\mathbf{1}\{\neg C_i(\pi_j)\},
 \end{equation}
 where a missing plan contributes zero to its term. The score describes cross-interpretation incompatibility, not correctness.
+The balanced score sums one over separated pairs and divides by positive witness cost, the weighted score substitutes $1+I_{ij}$. With uniform positive pair weights, shared costs, and shared tie-breaking, one objective is a positive scalar multiple of the other, rankings are identical. Two candidates have only one pair. Identical sequences additionally require identical judgments and updates at shared states. This explains these implemented objectives, not every consequence-sensitive method.
 
-The balanced score sums one over separated pairs and divides by positive witness cost; the weighted score substitutes $1+I_{ij}$. With uniform positive pair weights, shared costs, and shared tie-breaking, one objective is a positive scalar multiple of the other: rankings are identical. Two candidates have only one pair. Identical sequences additionally require identical judgments and updates at shared states. This explains these implemented objectives, not every consequence-sensitive method.
+
 
 \subsection{Coverage Before Interpretation}
 
-A requirement appearing in a request does not establish that the pool tests it. Record whether each reference clause accepts some journeys and rejects others. Then check conditional relevance: can it exclude a journey satisfying the other clauses? This distinguishes informative requirements from constant or masked restrictions.
+A requirement appearing in a request does not establish that the pool tests it. Record whether each reference clause accepts some journeys and rejects others. Then check conditional relevance, can it exclude a journey satisfying the other clauses? This distinguishes informative requirements from constant or masked restrictions.
+Stronger contrasts may be necessary. Testing ordered visits requires distinguishing the requested order from another order while holding stop presence fixed. Variation in ``visit these stops in this order'' alone does not demonstrate order sensitivity. Coverage is family-specific, truth-vector variation is a minimum, not a complete semantic audit.
 
-Stronger contrasts may be necessary. Testing ordered visits requires distinguishing the requested order from another order while holding stop presence fixed. Variation in ``visit these stops in this order'' alone does not demonstrate order sensitivity. Coverage is family-specific; truth-vector variation is a minimum, not a complete semantic audit.
+
 
 \section{\uppercase{Two Exploratory Transit Studies}}
 \label{sec:setup}
+
 \noindent Both studies use constructed requests over a frozen September 2026 TriMet GTFS feed \cite{trimet,gtfs}, not passenger records or observed movements. Service is evaluated on 14 September 2026 in \texttt{America/Los\_Angeles}, with calendars, exceptions, service-day seconds, and inclusive boundaries.
-
 A pre-output coverage rule selected connected bus routes 2, 4, and 17 in downtown Portland. Journeys have at most two rides per segment and exact-stop transfers with a 120-second minimum. Walking, through-service, capacity, and accessibility guarantees are excluded. Public endpoints and horizons define the universe; references and predictions never prune it. Plans optimize arrival, boardings, departure, then journey ID. Enumeration caps make every feasibility and equivalence claim pool-relative.
+The typed language supports time bounds, transfers, modes, scoped segments, ordered visits, and Boolean composition. A deterministic Z3 compiler plans, separate reference code evaluates outcomes. Exact and behavioral duplicates are removed; raw attempts are preserved. Selection retains the first surviving candidate in generation order, without reference guidance.
 
-The typed language supports time bounds, transfers, modes, scoped segments, ordered visits, and Boolean composition. A deterministic Z3 compiler plans; separate reference code evaluates outcomes. Exact and behavioral duplicates are removed; raw attempts are preserved. Selection retains the first surviving candidate in generation order, without reference guidance.
 
 \subsection{Shared Model and Validation}
 
 Both use Qwen2.5-7B-Instruct \cite{qwen}, revision \texttt{a09a35458c702b33eeac\allowbreak{}c393d103063234e8bc28}, BF16, Transformers 4.51.3, and PyTorch 2.8.0/CUDA 12.8. Sampling uses temperature 0.7, top-$p$ 0.95, top-$k$ 20, repetition penalty 1.05, and at most 768 output tokens. Each base has one replicate.
-
 The judge receives only the request and a deterministic journey description with times, stops, and transfers. It returns satisfied, violated, or uncertain; definitive labels eliminate inconsistent candidates. Translation and judgment use the same model in fresh invocations, not an independent truth oracle. Comparisons use elimination without repair-generated candidates.
-
 References precede generation and remain separate from runtime inputs. Neither study has independent human adjudication. Preserved outputs and frozen protocols support offline replay; this paper used no new experimental inference.
 
 \subsection{Study 1: Selecting Validation Examples}
 
-The selector study comprises 48 fresh base requests, one replicate each, using 07:00--10:00 schedules. Eight requests each target timing, transfers, mode exclusions, outbound/return scope, ordered visits, and infeasibility. Forty are reference-feasible and eight infeasible within their pools. The 48 pools contain 4,366 journey memberships, capped at 64 per single segment and 256 for combined journeys; 40 pools were truncated.
-
+The selector study comprises 48 fresh base requests, one replicate each, using 07:00 to 10:00 schedules. Eight requests each target timing, transfers, mode exclusions, outbound/return scope, ordered visits, and infeasibility. Forty are reference-feasible and eight infeasible within their pools. The 48 pools contain 4,366 journey memberships, capped at 64 per single segment and 256 for combined journeys; 40 pools were truncated.
 Each request supplies the same four raw candidate attempts to the balanced and consequence-weighted selectors. The witness cost is one. Budgets of zero, one, two, and four judgments reuse trajectory prefixes. The original target of two replicates was reduced to one by a frozen throughput rule before comparative evaluation. No candidate errors were deliberately injected into the experiment.
 
 \subsection{Study 2: Sampling Interpretations}
 
-The sampling study uses 32 new base requests and 10:00--13:00 schedules. Prior origin--destination groups and their reverses are excluded, but routes, stops, date, and templates overlap. This separate protocol is not an independent replication. Twenty-eight requests are feasible and four infeasible. Timing, transfer, and scope requirements were selected for informative contrasts; modes and ordered visits were omitted. All 56 reference clauses vary and have conditional exclusions. Pools retain at most 128 journeys per segment and 256 combined journeys.
+The sampling study uses 32 new base requests and 10:00 to 13:00 schedules. Prior origin destination groups and their reverses are excluded, but routes, stops, date, and templates overlap. This separate protocol is not an independent replication. The 28 requests are feasible and four infeasible. Timing, transfer, and scope requirements were selected for informative contrasts, modes and ordered visits were omitted. All 56 reference clauses vary and have conditional exclusions. Pools retain at most 128 journeys per segment and 256 combined journeys.
+Independent sampling repeats the base prompt. Diversified sampling adds frozen source focused perspectives on timing and scope. Solver guided sampling adds deterministic summaries of prior formulas, full/clause signatures, and concrete journeys to the same perspectives, explicitly permitting repeated readings. Feedback excludes references and ordinary judgments. Shared source only time normalization corrects unambiguous values, but not missing constraints or wrong operators.
+The first two samples are shared across arms. Full trajectories precede evaluation of 2, 4, and 8 attempt prefixes, each with balanced selection and at most two judgments. Identical allocations permit 35,000 generation tokens per request and 4,000 validation tokens per prefix, counting input plus output. Calls require enough allowance for their input and maximum output. No allowance was exhausted, 8 attempts stopped every trajectory. These are equal ceilings, not equal actual compute.
 
-Independent sampling repeats the base prompt. Diversified sampling adds frozen source-focused perspectives on timing and scope. Solver-guided sampling adds deterministic summaries of prior formulas, full/clause signatures, and concrete journeys to the same perspectives, explicitly permitting repeated readings. Feedback excludes references and ordinary judgments. Shared source-only time normalization corrects unambiguous values, but not missing constraints or wrong operators.
 
-The first two samples are shared across arms. Full trajectories precede evaluation of two-, four-, and eight-attempt prefixes, each with balanced selection and at most two judgments. Identical allocations permit 35,000 generation tokens per request and 4,000 validation tokens per prefix, counting input plus output. Calls require enough allowance for their input and maximum output. No allowance was exhausted: eight attempts stopped every trajectory. These are equal ceilings, not equal actual compute.
 
 \section{\uppercase{Explanatory Value in Two Studies}}
 \label{sec:findings}
-\noindent Base requests are the observational unit; study denominators remain separate. Attempts, checkpoints, and reused judgments are not independent observations. Joint outcomes and privileged-label replay derive from preserved outputs.\footnote{Reconstruction and plotting code used Codex assistance \cite{codex}; figures are deterministic plots of saved records.}
+
+\noindent Base requests are the observational unit, study denominators remain separate. Attempts, checkpoints, and reused judgments are not independent observations. Joint outcomes and privileged label replay derive from preserved outputs.
 
 \subsection{Characterizing Selection Opportunity}
 
-In Study 1, 25 of 48 bundles contain distinguishable interpretations, and 18 contain consequential plan disagreements. Figure~\ref{fig:opportunity} connects these nested sets to observed validation behavior. Fourteen consequential bundles have uniform pair weights; of the remaining four, two select the same initial witness through shared tie-breaking and then have at most two surviving classes. Two witness sequences differ, with equal correctness and one different final plan identifier. The framework thus characterizes when weighting can influence a decision, separating the presence of disagreement from an opportunity to change selection.
+In Study 1, 25 of 48 bundles contain distinguishable interpretations, and 18 contain consequential plan disagreements. Figure~\ref{fig:opportunity} connects these nested sets to observed validation behavior. Fourteen consequential bundles have uniform pair weights of the remaining 4, two select the same initial witness through shared tie breaking and then have at most two surviving classes. Two witness sequences differ, with equal correctness and one different final plan identifier. The framework thus characterizes when weighting can influence a decision, separating the presence of disagreement from an opportunity to change selection.
 
 \begin{figure*}[t]
 \centering
 \includegraphics[width=\textwidth]{figures/selector-opportunity.pdf}
-\caption{When does query selection change validation behavior? Study 1 connects 48 requests to two divergent sequences through distinguishable and consequential bundles. Uniform weights and tie-breaking explain identical choices. The coverage panel shows variation among 101 clauses; no visit clause tests order beyond stop presence. These measurements separate algorithmic opportunity from semantic coverage in the bus-only setting.}
+\caption{When does query selection change validation behavior? Study 1 connects 48 requests to two divergent sequences through distinguishable and consequential bundles. Uniform weights and tie-breaking explain identical choices. The coverage panel shows variation among 101 clauses; no visit clause tests order beyond stop presence. These measurements separate algorithmic opportunity from semantic coverage in the bus only setting.}
 \label{fig:opportunity}
 \end{figure*}
 
-Both selectors resolve 31/48 requests at budget zero and 33/48 at budgets one, two, and four: three recoveries and one deterioration, a net 4.17-point gain. The linked records distinguish this benefit of generic validation from the absence of a weighting advantage. In the deteriorated case, a correct negative judgment removes a wrong formalization whose initial plan was valid, exposing a dependency between candidate availability and preservation of a successful decision.
-
+Both selectors resolve 31/48 requests at budget zero and 33/48 at budgets 1, 2, and 4, three recoveries and one deterioration, a net 4.17-point gain. The linked records distinguish this benefit of generic validation from the absence of a weighting advantage. In the deteriorated case, a correct negative judgment removes a wrong formalization whose initial plan was valid, exposing a dependency between candidate availability and preservation of a successful decision.
 Each selector returns 30/40 valid feasible plans, five invalid plans, and five false infeasibility conclusions. It identifies 3/8 infeasible requests; five give invalid interpretation outputs. No unresolved or infrastructure failures occur. Budget two adds four judgments per method but changes no plan; budget four adds no judgments. These stopping records explain the flat accuracy curve through exhausted distinctions. Oracle-witness replay reaches 35/48 for both selectors, identifying a shared opportunity in validation rather than an advantage of weighting.
+Coverage checks identify which requirements the benchmark exercises. Of 101 reference clauses, 50 vary, 48 are always satisfied, and three always violated. Six of 24 transfer clauses vary although 45/48 pools offer zero and one transfer journeys, the two ride bound makes a most one transfer clause vacuous. All 19 mode clauses are constant, and visits never distinguish ordering beyond stop presence. Removing enumeration caps increases memberships to 77,871 without adding candidate classes or witness partitions for the saved bundles. These measurements direct benchmark development toward meaningful semantic contrasts, rather than simply larger pools.
 
-Coverage checks identify which requirements the benchmark exercises. Of 101 reference clauses, 50 vary, 48 are always satisfied, and three always violated. Six of 24 transfer clauses vary although 45/48 pools offer zero- and one-transfer journeys: the two-ride bound makes an at-most-one-transfer clause vacuous. All 19 mode clauses are constant, and visits never distinguish ordering beyond stop presence. Removing enumeration caps increases memberships to 77,871 without adding candidate classes or witness partitions for the saved bundles. These measurements direct benchmark development toward meaningful semantic contrasts, rather than simply larger pools.
+
 
 \subsection{Separating Acquisition from Selection}
 
-In Study 2, diversified sampling reaches 31/32 bounded candidate coverage compared with 27/32 for independent sampling, while both produce 28/32 correct final outcomes. Figure~\ref{fig:cost} separates acquisition and decision trajectories against consumed tokens. All arms begin at 25/32 coverage and correctness; solver-guided sampling stays there through eight attempts, adding no matching behavior after the shared samples. Mean distinct signatures are 1.41, 1.59, and 1.19 for independent, diversified, and solver-guided sampling. Measuring both trajectories establishes a gain in candidate acquisition and motivates examination of downstream selection.
+In Study 2, diversified sampling reaches 31/32 bounded candidate coverage compared with 27/32 for independent sampling, while both produce 28/32 correct final outcomes. Figure~\ref{fig:cost} separates acquisition and decision trajectories against consumed tokens. All arms begin at 25/32 coverage and correctness, solver-guided sampling stays there through eight attempts, adding no matching behavior after the shared samples. Mean distinct signatures are 1.41, 1.59, and 1.19 for independent, diversified, and solver-guided sampling. Measuring both trajectories establishes a gain in candidate acquisition and motivates examination of downstream selection.
 
 \begin{figure*}[t]
 \centering
 \includegraphics[width=\textwidth]{figures/cost-outcomes.pdf}
-\caption{Where do sampling strategies differ in coverage and cost? Study 2 separates matching-candidate availability from final correctness over 32 requests. Labels mark two-, four-, and eight-attempt checkpoints; lines connect only observations. Cost is mean logical input plus output tokens for generation and prefix validation. Diversification increases coverage without changing aggregate final accuracy. Initial samples are shared; allowances remain unexhausted. Paired uncertainty appears in the text.}
+\caption{Where do sampling strategies differ in coverage and cost? Study 2 separates matching candidate availability from final correctness over 32 requests. Labels mark 2, 2, and 8 attempt checkpoints, lines connect only observations. Cost is mean logical input plus output tokens for generation and prefix validation. Diversification increases coverage without changing aggregate final accuracy. Initial samples are shared, allowances remain unexhausted. Paired uncertainty appears in the text.}
 \label{fig:cost}
 \end{figure*}
 
-Request-level pairing reveals a further distinction behind equal totals: independent sampling wins on one request, loses on one, and ties on 30 against diversified sampling. Solver-guided sampling has zero wins, three losses, and 29 ties against each baseline, with different losing sets. Its correctness difference is $-9.38$ percentage points in each comparison. A 10,000-draw base-request bootstrap gives a descriptive 95\% interval of $[-21.88,0]$ points; independent minus diversified gives $[-9.38,9.38]$. Pairing identifies which decisions change while preserving uncertainty about these small, route-dependent samples.
+Request level pairing reveals a further distinction behind equal totals, independent sampling wins on one request, loses on one, and ties on 30 against diversified sampling. Solver guided sampling has zero wins, three losses, and 29 ties against each baseline, with different losing sets. Its correctness difference is $-9.38$ percentage points in each comparison. A 10,000 draw base-request bootstrap gives a descriptive 95\% interval of $[-21.88,0]$ points  independent minus diversified gives $[-9.38,9.38]$. Pairing identifies which decisions change while preserving uncertainty about these small, route dependent samples.
+The baselines return 24/28 valid feasible plans, solver-guided sampling returns 21/28. All identify four infeasible requests correctly, remaining outputs are invalid plans. No final output is unresolved, malformed, or an infrastructure failure; two malformed candidate attempts remain charged. Solver-guided sampling misses the frozen continuation thresholds of ten points more coverage and five points more correctness over both baselines.
 
-The baselines return 24/28 valid feasible plans; solver-guided sampling returns 21/28. All identify four infeasible requests correctly; remaining outputs are invalid plans. No final output is unresolved, malformed, or an infrastructure failure; two malformed candidate attempts remain charged. Solver-guided sampling misses the frozen continuation thresholds of ten points more coverage and five points more correctness over both baselines.
+
 
 \subsection{Locating Candidate-to-Decision Transitions}
 
 \begin{figure}[t]
 \centering
 \includegraphics[width=\columnwidth]{figures/joint-outcomes.pdf}
-\caption{How does candidate availability relate to final outcomes? At eight attempts, each Study 2 arm contains 32 requests. $G$ denotes bounded reference-matching availability and $S$ final correctness. The off-diagonal cells identify three diversified-sampling selection losses and one independent-sampling success without a matching formalization. These joint request-level counts distinguish acquisition from use of candidates; references remain provisional.}
+\caption{How does candidate availability relate to final outcomes? At 8 attempts, each Study 2 arm contains 32 requests. $G$ denotes bounded reference matching availability and $S$ final correctness. The off diagonal cells identify three diversified sampling selection losses and one independent sampling success without a matching formalization. These joint request level counts distinguish acquisition from use of candidates, references remain provisional.}
 \label{fig:joint}
 \end{figure}
 
-Figure~\ref{fig:joint} shows how candidate availability relates to final outcomes. In $(1,1),(1,0),(0,1),(0,0)$ order, the final counts are $(27,0,1,4)$ for independent, $(28,3,0,1)$ for diversified, and $(25,0,0,7)$ for solver-guided sampling. At four attempts, diversification has $(24,1,1,6)$: equal marginal coverage and correctness of 25 conceal both off-diagonal outcomes. The joint analysis makes acquisition and selection separate development targets instead of treating a common total as a common explanation.
-
-Trace inspection identifies incorrect judgments eliminating the match in all three diversified final $(1,0)$ cases: two false positives and one false negative. A fourth loss appears at four attempts. Each final case ends with one class, so an unresolved tie or unused validation opportunity is not the immediate cause. Truthful labels recover all three. Across selected witnesses, 11/19 distinct Study 2 judgments and 7/31 Study 1 judgments disagree with provisional references; these are not general judge-accuracy estimates. Figure~\ref{fig:worked} illustrates how tracing judgments and plans identifies both a lost matching interpretation and a correct decision without one.
+Figure~\ref{fig:joint} shows how candidate availability relates to final outcomes. In $(1,1),(1,0),(0,1),(0,0)$ order the final counts are $(27,0,1,4)$ for independent, $(28,3,0,1)$ for diversified, and $(25,0,0,7)$ for solver-guided sampling. At four attempts, diversification has $(24,1,1,6)$ as equal marginal coverage and correctness of 25 conceal both off-diagonal outcomes. The joint analysis makes acquisition and selection separate development targets instead of treating a common total as a common explanation.
+Trace inspection identifies incorrect judgments eliminating the match in all three diversified final $(1,0)$ cases, 2 false positives and one false negative. A fourth loss appears at four attempts. Each final case ends with one class, so an unresolved tie or unused validation opportunity is not the immediate cause. Truthful labels recover all three. Across selected witnesses, 11/19 distinct Study 2 judgments and 7/31 Study 1 judgments disagree with provisional references that these are not general judge accuracy estimates. Figure~\ref{fig:worked} illustrates how tracing judgments and plans identifies both a lost matching interpretation and a correct decision without one.
 
 \begin{figure*}[t]
 \centering
 \includegraphics[width=\textwidth]{figures/worked-transit.pdf}
-\caption{Separating interpretation from decision correctness in Study 2. The first diversified $(G=1,S=0)$ case at eight attempts (left) shows a false positive discarding the matching upper bound. The sole independent $(G=0,S=1)$ case there (right) shows a lower-bound formalization producing a departure exactly at the requested upper bound; truthful first-witness rejection takes another path. Times are scheduled local service times on 14 September 2026; arrows mark endpoints, not a scaled time axis. These illustrative cases explain distinct joint cells, not their population prevalence.}
+\caption{Separating interpretation from decision correctness in Study 2. The first diversified $(G=1,S=0)$ case at eight attempts (left) shows a false positive discarding the matching upper bound. The sole independent $(G=0,S=1)$ case there (right) shows a lower-bound formalization producing a departure exactly at the requested upper bound, truthful first witness rejection takes another path. Times are scheduled local service times on 14 September 2026 arrows mark endpoints, not a scaled time axis. These illustrative cases explain distinct joint cells, not their population prevalence.}
 \label{fig:worked}
 \end{figure*}
 
@@ -179,51 +176,52 @@ The left example requests departure by 10:08:31. A correct first judgment leaves
 
 \subsection{Distinguishing Oracle Measurements}
 
-Oracle-witness replay substitutes reference labels while retaining bounded elimination and the first surviving candidate. Correctness is 27/32, 31/32, and 25/32: equal to coverage totals here, but measuring a different procedure.
-
-Figure~\ref{fig:worked} (right) explains independent sampling's 28 ordinary versus 27 oracle-witness successes. The request requires departure by 10:55; no candidate matches throughout the pool. A wrong positive on an 11:25 departure removes one candidate. A correct second positive retains a lower-bound candidate, whose optimal plan leaves exactly at 10:55 and satisfies the request. Truthful first-witness rejection instead retains a candidate producing an 11:31 departure. Thus truthful labels can change the elimination path and lose a valid decision: this procedure is not an accuracy ceiling.
-
-A separate diagnostic asks whether \emph{any existing candidate's deterministically selected output} is correct: 28/32, 31/32, and 25/32 at eight attempts. This restricted best-of-candidate-outputs measure is neither an ordinary selector nor an unrestricted planning bound. Distinguishing it from $G$ and oracle-witness correctness avoids interpreting ordinary success as exceeding an oracle ceiling.
+Oracle witness replay substitutes reference labels while retaining bounded elimination and the first surviving candidate. Correctness is 27/32, 31/32, and 25/32: equal to coverage totals here, but measuring a different procedure.
+Figure~\ref{fig:worked} (right) explains independent sampling's 28 ordinary versus 27 oracle witness successes. The request requires departure by 10:55, no candidate matches throughout the pool. A wrong positive on an 11:25 departure removes one candidate. A correct second positive retains a lower-bound candidate, whose optimal plan leaves exactly at 10:55 and satisfies the request. Truthful first witness rejection instead retains a candidate producing an 11:31 departure. Thus truthful labels can change the elimination path and lose a valid decision: this procedure is not an accuracy ceiling.
+A separate diagnostic asks whether \emph{any existing candidate's deterministically selected output} is correct,  28/32, 31/32, and 25/32 at eight attempts. This restricted best of candidate outputs measure is neither an ordinary selector nor an unrestricted planning bound. Distinguishing it from $G$ and oracle-witness correctness avoids interpreting ordinary success as exceeding an oracle ceiling.
 
 \subsection{Relating Inference Cost to Discovery}
 
-Final-prefix logical input/output tokens total 617,643, 626,497, and 811,760 for independent, diversified, and solver-guided sampling across 32 requests each. Solver-guided overhead is 31.43\% and 29.57\%, relative to the corresponding baseline's consumed generation-plus-validation total. Logical calls are 266, 269, and 262. Together with the discovery curves, these measurements locate additional expenditure without additional matching candidates in this feedback variant; equal allowances or fewer calls alone would not expose that tradeoff.
-
+Final prefix logical input/output tokens total 617,643, 626,497, and 811,760 for independent, diversified, and solver-guided sampling across 32 requests each. Solver guided overhead is 31.43\% and 29.57\%, relative to the corresponding baseline's consumed generation plus validation total. Logical calls are 266, 269, and 262. Together with the discovery curves, these measurements locate additional expenditure without additional matching candidates in this feedback variant; equal allowances or fewer calls alone would not expose that tradeoff.
 Across prefixes, counting generation once per trajectory and each prefix's judgments gives 833 logical calls and 2,081,931 tokens. Exact caching reduces actual fresh compute to 659 calls and 1,743,059 tokens. Sampling used 1,207.31 measured GPU-resident seconds plus 53.37 for development and a conservative 60-second allowance. The selector study used 358 calls and 681.62 seconds plus 30 seconds. Shared outputs retain full per-arm logical charges.
+
+
 
 \section{\uppercase{Applying the Framework}}
 \label{sec:recommendations}
+
 \noindent For each base request, retain the universe, source requirements, separate references, raw candidates, signatures, plans, witnesses, judgments, updates, and cost. Joint $(G,S)$ cells and separate output categories then connect aggregate differences to the intermediate behaviors producing them. This reusable procedure supports three recommendations.
-
-\textbf{Construct informative tasks.} Check clause variation and conditional relevance before model evaluation. Identify journeys exposing intended distinctions: different orders with the same stops, transfers around a limit, or departures around a boundary. Pool size alone cannot certify coverage. Contrast-based inclusion rules improve informativeness without selecting cases for a preferred method.
-
-\textbf{Target components using evidence.} Diversification's increased coverage and three traced selection losses motivate investigating validation before adding candidates. Conversely, check candidate-selected plans in $(0,0)$ cases before attributing failure to missing alternatives.
-
-The $(0,1)$ cell preserves a correct plan's value without certifying its formalization. Precise oracle interventions clarify the remaining opportunity: truthful-witness selection tests an altered validation path, whereas best-of-candidate outputs measures available decisions.
-
-\textbf{Connect cost to observable change.} Report tokens, logical charges, caching, and stopping reasons alongside attempt budgets. These distinguish feedback expenditure without new matches, unused allowances, and checks leaving plans unchanged. Shared time normalization remains a useful engineering baseline. Freeze resource rules and assess component changes on fresh data.
-
+Construct informative tasks, which  checks clause variation and conditional relevance before model evaluation. Identify journeys exposing intended distinctions: different orders with the same stops, transfers around a limit, or departures around a boundary. Pool size alone cannot certify coverage across experiments. Contrast based inclusion rules improve informativeness without selecting cases for a preferred method.
+Target components using evidence for diversification's increased coverage and three traced selection losses motivate investigating validation before adding candidates. Conversely, check candidate selected plans in $(0,0)$ cases before attributing failure to missing alternatives.
+The $(0,1)$ cell preserves a correct plan's value without certifying its formalization. Precise oracle interventions clarify the remaining opportunity, truthful witness selection tests an altered validation path, whereas best-of-candidate outputs measures available decisions.
+Connect cost to observable change, toreport tokens, logical charges, caching, and stopping reasons alongside attempt budgets. These distinguish feedback expenditure without new matches, unused allowances, and checks leaving plans unchanged. Shared time normalization remains a useful engineering baseline. Freeze resource rules and assess component changes on fresh data.
 Aggregate accuracy remains valuable, and a component gain can precede an accuracy gain. The framework helps interpret both. Although the tested weighting and feedback variants do not justify expansion, their analysis identifies measurement requirements and component targets. Applying the framework has not itself been shown to improve accuracy or reduce cost.
+
+
 
 \section{\uppercase{Limitations}}
 \label{sec:limitations}
+
+
 \noindent The studies contain 48 and 32 bases, one model, and one replicate. Constructed wording, overlapping services, and a shared translation/judgment model constrain generalization. Selection and normalization differ across studies; accuracies must not be pooled. Bootstrap intervals exclude annotation uncertainty, route dependence, and variation over models and prompts.
-
 Separate reference code reduces implementation dependence; developer checks do not establish independent annotation validity. Systematic wording errors could affect $G$ and $S$ together. No clear correction was found in the selector audit. A worksheet awaits actual author or collaborator review.
-
 The universe is not the full network. Conditional infeasibility is weaker than real-world impossibility. The subset excludes available non-bus services; transfer clauses can be vacuous, visit clauses do not independently test order, and daytime requests do not test midnight or daylight saving. Study 2's stronger clause checks improve informativeness without broadening these claims.
+Matching signatures can conceal semantic differences lacking counterexamples. Clause level signatures expose variation masked by a rejecting conjunct, but source clause associations are not always available. This framework therefore measures bounded behavior, not unrestricted source fidelity  selected witness disagreements are not general judge error rates.
+A stronger or independently trained judge, different prompts, or broader coverage could change the comparisons. Repeated lower-bound readings do not establish feedback anchoring. This position developed through exploratory studies, not as a preregistered reporting hypothesis. Its demonstrated value is the diagnostic information obtained here applicability across models and domains remains open.
 
-Matching signatures can conceal semantic differences lacking counterexamples. Clause-level signatures expose variation masked by a rejecting conjunct, but source-clause associations are not always available. This framework therefore measures bounded behavior, not unrestricted source fidelity; selected-witness disagreements are not general judge error rates.
 
-A stronger or independently trained judge, different prompts, or broader coverage could change the comparisons. Repeated lower-bound readings do not establish feedback anchoring. This position developed through exploratory studies, not as a preregistered reporting hypothesis. Its demonstrated value is the diagnostic information obtained here; applicability across models and domains remains open.
 
 \section{\uppercase{Conclusion}}
 \label{sec:conclusion}
-\noindent We propose a framework linking tested constraints, available interpretations, validation behavior, decisions, and cost. The transit studies demonstrate its explanatory value: opportunity analysis characterizes when selectors can act differently, and joint outcomes separate candidate acquisition from decision selection. The reproducible procedure makes these distinctions available to other planning evaluations. Future studies should measure both available interpretations and selected decisions, stating semantic coverage and resource use explicitly. These connections support targeted development and clearer interpretation of progress beyond aggregate accuracy.
+
+\noindent We propose a framework linking tested constraints, available interpretations, validation behavior, decisions, and cost. The transit studies demonstrate its explanatory value that opportunity analysis characterizes when selectors can act differently, and joint outcomes separate candidate acquisition from decision selection. The reproducible procedure makes these distinctions available to other planning evaluations. Future studies should measure both available interpretations and selected decisions, stating semantic coverage and resource use explicitly. These connections support targeted development and clearer interpretation of progress beyond aggregate accuracy.
+
+
 
 \subsection*{AI Assistance Disclosure}
 \label{sec:ai}
-OpenAI Codex \cite{codex} assisted prose throughout, offline analysis/plotting code, and artifact checks. Underlying requests and implementation also used AI assistance. Numbers derive from saved outputs, with no new experimental inference. Figures use deterministic plotting, not image generation. References lack independent human adjudication. Submitting authors remain responsible for the content and final declarations.
+OpenAI Codex \cite{codex} assisted with the code and environment setup.
+
 
 \begin{thebibliography}{99}
 \bibitem[Amonkar et~al., 2026]{amonkar}
